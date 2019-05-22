@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 096d6a368965ecedcff3807bbbf3e90649eb8562
-ms.sourcegitcommit: 6145cfe372725bedab7bc6a80adab100561f74fd
+ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
+ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34106895"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250390"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -85,6 +85,9 @@ Mēs saprotam, ka varat vēlēties noteikt, kādu veidu saistītie līdzekļi ir
 - Atļaut Office izmantot saistītos līdzekļus
 
 Ja nekonfigurēsit šos politikas iestatījumus, būs pieejami visi saistītie līdzekļi. Tādējādi lietotājiem būs pieejami visi Office 365 ProPlus ietvaros pieejamie līdzekļi un funkcijas. Tomēr mēs saprotam, ka jums var būt nepieciešams izslēgt dažus vai visus saistītos līdzekļus, lai ievērotu organizācijā noteiktās prasības.
+
+> [!IMPORTANT]
+> Pašlaik pastāv problēma ar šiem 4 politikas iestatījumiem, un šobrīd strādājam, lai to novērstu. Pagaidām, lai atspējotu vienu no šiem politikas iestatījumiem, izmantojot grupas politikas pārvaldības rīku, ir jāatlasa radiopoga **Iespējots** un pēc tam sadaļas **Opcijas** nolaižamajā sarakstā ir jāizvēlas **Atspējots**. Atlasot radiopogu **Atspējots**, šie politikas iestatījumi netiks atspējoti.
 
 Ja izvēlaties lietotājiem nenodrošināt noteiktu veidu saistītos līdzekļus, to komandas lentē vai izvēlnē būs pelēkotas vai arī lietotāji saņems kļūdas ziņojumu, kad mēģinās lietot šos saistītos līdzekļus. Šādos gadījumos korporācijai Microsoft netiks nosūtīti [nepieciešamie pakalpojuma dati](required-service-data.md) par šiem saistītajiem līdzekļiem.
 
