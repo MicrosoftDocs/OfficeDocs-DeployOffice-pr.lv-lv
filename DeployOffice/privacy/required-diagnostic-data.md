@@ -1719,7 +1719,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** pārbauda, vai ja dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
@@ -1853,7 +1853,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
@@ -1975,7 +1975,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
@@ -2295,7 +2295,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
@@ -2987,7 +2987,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -3079,7 +3079,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -3175,7 +3175,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -3291,7 +3291,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -3621,7 +3621,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** patiess, ja šis ir servera dokuments, kas pastāv lokāli, un ir sinhronizēta ar serveri (piemēram, izmantojot OneDrive vai ODB klienta programmām)
 
@@ -4053,7 +4053,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
@@ -4413,7 +4413,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -4535,7 +4535,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -4656,7 +4656,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -4779,7 +4779,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (RTC) šim failam vienmēr ir ieslēgts.
+  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
 
   - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
@@ -5225,7 +5225,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeperformanceboot"></a>Office.Performance.Boot
 
-Tiek apkopots, palaižot Office programmu. Ietver informāciju par to, vai palaišana tika sākta, atverot failu vai palaižot no sākuma izvēlnes, vai tā bija pirmā programmas palaišana, cik daudz atmiņas programma izmanto un vai lietotājam tika rādīts bloķēšanas UI. Izmanto, lai noteiktu, cik ātri Office programmas tiek palaistas un cik daudz atmiņas tās izmanto, kad tiek startētas, lai nodrošinātu pieņemamas lietošanas iespējas.
+Tiek apkopots, palaižot Office programmu. Ietver informāciju par to, vai palaišana tika sākta, atverot failu vai palaižot no sākuma izvēlnes, vai tā bija pirmā programmas palaišana, cik daudz atmiņas programma izmanto un vai lietotājam tika rādīts bloķēšanas UI. Tiek izmantots, lai noteiktu, cik ātri Office programmas tiek palaistas un cik daudz atmiņas tās izmanto, kad tiek startētas, lai nodrošinātu pieņemamu lietotāja pieredzi.
 
 Tiek apkopoti šādi lauki:
 
@@ -5263,7 +5263,7 @@ Darbība, kas izseko Office Insider dialoga lietojumu un veiktspēju.
 
 Tiek apkopoti šādi lauki:
 
-  - **Data_AcceptedContactMeNew** — izlemjot piedalīties Insider līmenī un ja lietotāja izvēle tika sekmīgi reģistrēta, norāda, vai lietotājs akceptēja saziņu ar to no Microsoft puses.
+  - **Data_AcceptedContactMeNew** — norāda, vai lietotājs ir akceptējis saziņu no Microsoft puses, ja lietotājs ir izlēmis piedalīties Insider līmenī un šī izvēle ir sekmīgi reģistrēta.
 
   - **Data_DialogChoice** — netiek izmantots
   
@@ -5275,13 +5275,13 @@ Tiek apkopoti šādi lauki:
   
   - **Data_InsiderLevel** — Insider līmenis, kad dialogs pirmo reizi tiek parādīts lietotājam.
   
-  - **Data_InsiderLevelNew** — jaunais Insider līmenis, ko atlasīja lietotājs.
+  - **Data_InsiderLevelNew** — jaunais lietotāja atlasītais Insider līmenis.
   
   - **Data_IsInternalUser** — norāda, vai programma darbojas ar @microsoft.com konta akreditācijas datiem.
   
   - **Data_IsInternalUserInit** — norāda, vai kods varēja noteikt to, vai programma darbojas ar @microsoft.com konta akreditācijas datiem.
   
-  - **Data_OpenNewsletterWebpage** — kad ir iespējots Office Insider biļetena abonēšanas līdzeklis un lietotājs pārslēdzas uz Insider līmeni no ražošanas līmeņa, norāda, vai tika izraisīta pārlūka navigācija uz Office Insider biļetena abonēšanas saiti.
+  - **Data_OpenNewsletterWebpage** — norāda, vai tika izraisīta pārlūka navigācija uz Office Insider biļetena abonēšanas saiti, ja ir iespējots Office Insider biļetena abonēšanas līdzeklis un lietotājs pārslēdzas uz Insider līmeni no ražošanas līmeņa.
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
 
