@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
-ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
+ms.openlocfilehash: a28da8a54ecb37f6fd26576ce2dfb4614521dd19
+ms.sourcegitcommit: c4147043c5e6581d58a6d09edbf95266e67dd796
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250390"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34545465"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -87,7 +87,7 @@ Mēs saprotam, ka varat vēlēties noteikt, kādu veidu saistītie līdzekļi ir
 Ja nekonfigurēsit šos politikas iestatījumus, būs pieejami visi saistītie līdzekļi. Tādējādi lietotājiem būs pieejami visi Office 365 ProPlus ietvaros pieejamie līdzekļi un funkcijas. Tomēr mēs saprotam, ka jums var būt nepieciešams izslēgt dažus vai visus saistītos līdzekļus, lai ievērotu organizācijā noteiktās prasības.
 
 > [!IMPORTANT]
-> Pašlaik pastāv problēma ar šiem 4 politikas iestatījumiem, un šobrīd strādājam, lai to novērstu. Pagaidām, lai atspējotu vienu no šiem politikas iestatījumiem, izmantojot grupas politikas pārvaldības rīku, ir jāatlasa radiopoga **Iespējots** un pēc tam sadaļas **Opcijas** nolaižamajā sarakstā ir jāizvēlas **Atspējots**. Atlasot radiopogu **Atspējots**, šie politikas iestatījumi netiks atspējoti.
+> 2019. gada 28. maijā tika publicēti jauni administratīvās veidnes faili (ADMX/ADML), kas izlaboja kļūdu saistībā ar šo četru politikas iestatījumu atspējošanu. Noteikti lejupielādējiet un instalējiet atjauninātos grupas politikas failus no [Microsoft lejupielādes centra](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 Ja izvēlaties lietotājiem nenodrošināt noteiktu veidu saistītos līdzekļus, to komandas lentē vai izvēlnē būs pelēkotas vai arī lietotāji saņems kļūdas ziņojumu, kad mēģinās lietot šos saistītos līdzekļus. Šādos gadījumos korporācijai Microsoft netiks nosūtīti [nepieciešamie pakalpojuma dati](required-service-data.md) par šiem saistītajiem līdzekļiem.
 
@@ -207,8 +207,8 @@ Daži administratori izvēlas mainīt iestatījumus tieši reģistrā, piemēram
 |Konfigurēt to klienta programmatūras diagnostikas datu līmeni, kurus Office nosūta korporācijai Microsoft  | SendTelemetry |1=nepieciešams <br/> 2=neobligāts <br/> 3=Ne viens, ne otrs|
 |Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu  | UserContentDisabled | 1=iespējots <br/> 2=atspējots|
 |Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu  | DownloadContentDisabled | 1=iespējots <br/> 2=atspējots|
-|Atļaut Office izmantot papildu neobligātos saistītos līdzekļus   |  DisconnectedState |1=iespējots <br/> 2=atspējots|
-|Atļaut Office izmantot saistītos līdzekļus | ControllerConnectedServicesEnabled  | 1=iespējots <br/> 2=atspējots|
+|Atļaut Office izmantot papildu neobligātos saistītos līdzekļus   | ControllerConnectedServicesEnabled  |1=iespējots <br/> 2=atspējots|
+|Atļaut Office izmantot saistītos līdzekļus | DisconnectedState  | 1=iespējots <br/> 2=atspējots|
 
 Lai izveidotu .reg failu konfidencialitātes iestatījumiem, atveriet programmu Piezīmjbloks un kopējiet tālāk norādītās rindiņas. Pielāgojiet vērtības atbilstoši savām vajadzībām un pēc tam saglabājiet failu. Pārliecinieties, vai faila nosaukuma paplašinājums ir .reg
 
