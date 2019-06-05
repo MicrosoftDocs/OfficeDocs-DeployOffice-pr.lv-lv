@@ -3,7 +3,7 @@ title: Office būtiskie pakalpojumi
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 31a0eb94d96e43eddb400670437b0d618eb5f30e
-ms.sourcegitcommit: 9956e9e774e334a1894f1bb95e628eb71e0b5b2d
+ms.openlocfilehash: 81b5ff2e1451f910f2e9695dba488d39d27b7241
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33559222"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701284"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
