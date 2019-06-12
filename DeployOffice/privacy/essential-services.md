@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 81b5ff2e1451f910f2e9695dba488d39d27b7241
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701284"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813345"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -2717,6 +2717,14 @@ Tiek apkopoti tālāk norādītie lauki.
   - **IdentityChanged** — vienmēr patiess. Identitāte ir mainīta.
 
   - **TimerDetectedChange** — vai izmaiņas konstatēja regulāra laika programma Ping.
+
+### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
+
+Tiek izmantots, lai noteiktu, vai radušās kļūmes, lasot lietotāja konfidencialitātes iestatījumus Viesabonēšanas krātuvē.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+  - **Tags —** koda atzīme, kas norāda, kurš iestatījums ir atgriezies atpakaļ iestatījumu krātuvē.
 
 ### <a name="officesystemsessiondatao365"></a>Office.System.SessionDataO365
 
