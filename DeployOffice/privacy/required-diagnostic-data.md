@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: a5ac5dfded3dbb51693b5d15616675b067c59dc3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701705"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813309"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -65,6 +65,7 @@ Tālāk tabulā ir sniegts saraksts, kurā ir norādītas nepieciešamo diagnost
 | **Produktu un pakalpojumu lietojums**    | [Lietojumprogrammas līdzekļu sekmju novērtējums](#application-feature-success-subtype)   | Informācija par sekmīgu lietojumprogrammas funkcionalitāti. Attiecas tikai uz programmas un dokumentu atvēršanu un aizvēršanu, failu rediģēšana un failu koplietošanu (sadarbību). |
 | | [Lietojumprogrammas statuss un palaišana](#application-status-and-boot-subtype)    | Nosaka, vai ir notikuši konkrēti līdzekļu notikumi, piemēram, startēšana vai apturēšana, un vai līdzeklis darbojas.   |
 | | [Office pieejamības konfigurācija](#office-accessibility-configuration-subtype)  | Office pieejamības līdzekļi       |
+| | [Konfidencialitāte](#privacy-subtype)| Office konfidencialitātes iestatījumi|
 | **Produktu un pakalpojumu veiktspēja**       | [Neparedzēts lietojumprogrammas darbības pārtraukums (avārijas)](#unexpected-application-exit-crash-subtype)  | Neparedzēts lietojumprogrammas darbības pārtraukums un programmas statuss brīdī, kad tas notika.    |
 |  | [Lietojumprogrammas līdzekļu novērtējums](#application-feature-performance-subtype)  | Slikts atbildes laiks vai slikta veiktspēja tādos scenārijos kā programmas startēšana vai faila atvēršana. |
 |  | [Lietojumprogrammas darbības kļūda](#application-activity-error-subtype)   | Līdzekļa funkcionalitātes vai lietošanas iespēju kļūdas.  |
@@ -971,6 +972,7 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 - [Lietojumprogrammas līdzekļu sekmju novērtējums](#application-feature-success-subtype)
 - [Lietojumprogrammas statuss un palaišana](#application-status-and-boot-subtype)
 - [Office pieejamības konfigurācija](#office-accessibility-configuration-subtype)
+- [Konfidencialitāte](#privacy-subtype)
 
 
 ### <a name="application-feature-success-subtype"></a>*Lietojumprogrammas līdzekļu sekmju apakštips*
@@ -4000,8 +4002,12 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_CheckRequiredPartsLoaded —** metodes CheckRequiredPartsLoaded izpildes laiks milisekundēs
 
   - **Data\_CheckWebSharingViolationForIncOpen —** metodes CheckWebSharingViolationForIncOpen izpildes laiks milisekundēs
+   
+  - **Data_CloseAndReopenWithoutDiscard —** Vai dokuments tika aizvērts un atkārtoti atvērts atvērtā procesa laikā, to neizdzēšot.
 
-  - **Data\_ContentTransaction —** iepriekš definētu vērtību kopa, kad iespējams izveidot transakciju (AllowedOnLoadDocument AllowedOnOpenComplete utt.)
+  - **Data\_ContentTransaction —** Iepriekš definētu vērtību kopa, kad iespējams izveidot transakciju (AllowedOnLoadDocument, AllowedOnOpenComplete, utt.)
+
+  - **Data_CorrelationId -** GUID, kuru ProtocolHandler nodevis programmai PowerPoint, lai korelētu telemetriju. ProtocolHandler ir atsevišķs process, kas apstrādā operētājsistēmas Office saites.
 
   - **Data\_CppUncaughtExceptionCount:long —** nenotverti vietējie izņēmumi darbības izpildes laikā
 
@@ -4911,6 +4917,50 @@ Tiek apkopoti tālāk norādītie lauki.
 Tiek apkopoti tālāk norādītie lauki.
 
   - Nav
+
+### <a name="privacy-subtype"></a>*Konfidencialitātes apakštips*
+
+Office konfidencialitātes iestatījumi 
+
+#### <a name="officeintelligentserviceprivacyconsentprivacyevent"></a>Office.IntelligentService.PrivacyConsent.PrivacyEvent
+
+Šis notikums apzīmē lietotāja vai sistēmas iniciētu darbību, kas ir daļa no Office lietotāju pieredzes ar konfidencialitāti. Tas tiek aktivizēts konfidencialitātes dialogos Pirmā palaišana, dialogā Konta konfidencialitāte un konfidencialitātes paziņojumos. Notikums tiek izmantots, lai izprastu šādus faktorus: lietotāju piekrišana Office konfidencialitātes iestatījumiem, lietotāju veiktas Office konfidencialitātes iestatījumu izmaiņas un Office konfidencialitātes iestatījumu atjaunināšana lietotāju sesijās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+  - **Data_ActionId —** lietotāja darbība konfidencialitātes dialogā
+
+  - **Data_ControllerConnectedServicesState —** lietotāju politikas iestatījums papildu savienotajām pieredzēm pēc izvēles
+
+  - **Data_DownloadedContentServiceGroupState —** lietotāja iestatījums lejupielādētajam saturam 
+ 
+  - **Data_ForwardLinkId —** saite uz konfidencialitātes dokumentiem saistībā ar lietotāja scenāriju
+
+  - **Data_HRESULT —** kļūdu ieraksts mijiedarbības laikā ar konfidencialitātes dialogu
+
+  - **Data_IsEnterpriseUser —** lietotāja licences kategorija
+
+  - **Data_OfficeServiceConnectionState —** lietotāja iestatījums savienotajiem pakalpojumiem
+
+  - **Data_RecordRegistry —** uzņēmumu konfidencialitātes dialoga rādīšanas ieraksts
+
+  - **Data_Scenario —** pirmās palaišanas scenārijs saistībā ar lietotāja licenci un kategoriju
+
+  - **Data_SeenInsidersDialog —** Insider programmas dalībnieku dialoga rādīšanas ieraksts
+
+  - **Data_SendTelemetryOption —** lietotāja iestatījums telemetrijai
+
+  - **Data_SendTelemetryOptionPolicy —** lietotāja politikas iestatījums telemetrijai
+
+  - **Data_UserCategory —** lietotāja konta veids  
+
+  - **Data_UserCCSDisabled —** lietotāja iestatīta ignorēšana papildu savienotajām pieredzēm pēc izvēles
+
+   - **Data_UserContentServiceGroupState —** lietotāja iestatījums satura analīzei
+
+  - **Data_WillShowDialogs —** reižu skaits, kad lietotājam bijusi nepieciešamība skatīt konfidencialitātes dialogus Pirmā palaišana
+
+
 
 ## <a name="product-and-service-performance-data-events"></a>Produktu un pakalpojumu izpildes datu notikumi
 
