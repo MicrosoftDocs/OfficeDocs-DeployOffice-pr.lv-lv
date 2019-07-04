@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz informāciju par neobligātajiem Office diagnostikas datiem, tostarp dažus notikumu piemērus.
 hideEdit: true
-ms.openlocfilehash: 852c53ad208cf02150de2e64e9e55d69015dda14
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: cf3a2488d985dd238456e86466688036c0c61ccb
+ms.sourcegitcommit: e6135e9937ef07785f0ce0eb6282ceece401f96e
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701188"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35430090"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Neobligātie Office diagnostikas dati
 
@@ -36,7 +36,7 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 
 Ja izvēlaties nosūtīt mums neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati.
 
-Neobligātās diagnostikas datu piemēri ietver datus, kurus iegūstam par attēliem, ko lietotāji ievieto Word dokumentos, un kuri ļauj mums sniegt labākas attēlu opcijas, kā arī datus, kurus apkopojam par laiku, kas nepieciešams PowerPoint slaida parādīšanai ekrānā, un kuri ļauj mums uzlabot lietošanas iespējas, ja tas notiek lēni.
+Neobligātās diagnostikas datu piemēri ietver datus, kurus iegūstam par attēliem, ko lietotāji ievieto Word dokumentos, un kuri ļauj mums sniegt labākas opcijas, kā arī datus, kurus apkopojam par laiku, kas nepieciešams PowerPoint slaida parādīšanai ekrānā, un kuri ļauj mums uzlabot lietošanas pieredzi, ja tas notiek lēni.
 
 Papildinformāciju par diagnostikas datiem lasiet šajos rakstos:
 
@@ -73,7 +73,7 @@ Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikum
 
 | **Notikuma nosaukums**   | **Notikuma apraksts**  |
 | ---- | ---- |
-| Office\_Extensibility\_AppCommands\_GetRibbonUpdatesForUserId | Šis notikums norāda, vai Word sekmīgi atjaunina lenti Word lietotāja interfeisā, kad lietotājs maina savu identitāti. Šo gadījumu izmantojam, lai noteiktu nepareizas iestatīšanas un citas problēmas, kas var ietekmēt Office lietotāja interfeisu. |
+| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Šis notikums norāda, vai Word sekmīgi atjaunina lenti Word lietotāja interfeisā, kad lietotājs maina savu identitāti. Šo gadījumu izmantojam, lai noteiktu nepareizas iestatīšanas un citas problēmas, kas var ietekmēt Office lietotāja interfeisu. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Šis notikums sniedz informāciju par Office pievienojumprogrammu, kas lietotājam ir instalēta, tostarp programma ID, operētājsistēmas būvējumu un versiju, instalēšanas sekmēm un instalēšanas ilgumu.  |
 
 ## <a name="product-and-service-usage-events"></a>Produktu un pakalpojumu lietojuma notikumi
@@ -90,7 +90,7 @@ Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikum
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | Šis notikums norāda, ka programma Word ir izpildījusi komandu, lai iezīmētu tekstu. Šo notikumu izmantojam kļūdu noteikšanai teksta iezīmēšana komandā.  |
 | Office.Translator.AddInLoaded   | Periodiskais kontrolziņojums, lai norādītu, ka tulkošanas līdzeklis ir ielādēts un sekmīgi atveidots.  |
-| Office.Graphics.InsertPictureCommandActivity  | Izseko attēla ievietošanas līdzekļa darbības izdošanos vai neizdošanos, kā arī ziņo, norādot detalizētu informāciju par ievietoto attēlu tipiem un attēlu avotu.|
+| Office.Graphics.GVizInsertShape |Izseko attēla ievietošanas līdzekļa darbības programmā Word, kā arī ziņo, norādot detalizētu informāciju par ievietoto attēlu veidiem un attēlu avotu.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | Šis notikums nosaka, vai dokumentā ir kādas sadaļas, kad lietotājs ievieto kopsavilkuma tuvinājumu, un to, vai lietotājs izvēlas dzēst esošās sadaļas. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Seko, kad un kāpēc fails tiek atvērts aizsargātā skatā. Tiek izmantots, lai noteiktu nosacījumus, kur aizsargātais skats, iespējams, netiek pareizi izraisīts, lai pārliecinātos, vai šis līdzeklis darbojas pareizi. |
 
@@ -106,7 +106,7 @@ Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikum
 
 | **Notikuma nosaukums**    | **Notikuma apraksts**   |
 | --------------- | -------------- |
-| Office\_Word\_Word\_CoreSaveTime100ns     | Šis notikums reģistrē dokumenta saglabāšanas darbības veiktspēju programmā Word. Šo notikumu izmantojam, lai noteiktu kļūdas un veiktspējas problēmas saistībā ar Word dokumenta saglabāšanas darbību.|
+| Office.Word.Word.CoreSaveTime100ns     | Šis notikums reģistrē dokumenta saglabāšanas darbības veiktspēju programmā Word. Šo notikumu izmantojam, lai noteiktu kļūdas un veiktspējas problēmas saistībā ar Word dokumenta saglabāšanas darbību.|
 | Office.Identity.SignInForWamAccountAad  | Šis notikums tiek nosūtīts, ja lietotājs Azure Active Directory kontā ir pierakstījies ar tīmekļa konta pārvaldnieka (WAM) bibliotēku. Šis notikums nosūta tādus metadatus kā AppName, AppVersion un ErrorCode, ja notikums neizdevās. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | Šis notikums apkopo pirmā slaidu šablona sīktēla atveidei programmā PowerPoint nepieciešamo laika ilgumu.  |
 | Office.Extensibility.Diagnostics   | Šis notikums sniedz vispārīgu diagnostikas informāciju par Office pievienojumprogrammām, piemēram, avārijas atskaites atkļūdošanas vajadzībām.|
@@ -121,6 +121,6 @@ Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikum
 
 | **Notikuma nosaukums**                    | **Notikuma apraksts**                                                                                                                                                     |
 | ------ | ----- |
-| Office\_Graphics\_ArtViewValidate | Šis notikums reģistrē grafiskā skata, kas atbalsta grafikas lietotāja interfeisu, validācijas rezultātus. Šo notikumu izmantojam, lai apkopotu lietojuma un kļūdu datus saistībā ar grafikas atveidi. |
+| Office.Graphics.ArtViewValidate | Šis notikums reģistrē grafiskā skata, kas atbalsta grafikas lietotāja interfeisu, validācijas rezultātus. Šo notikumu izmantojam, lai apkopotu lietojuma un kļūdu datus saistībā ar grafikas atveidi. |
 | Office.Graphics.ARCExceptionScope | Šis notikums izseko atveides kļūmes, kas rodas atveides programmā. |
 | Office.Extensibility.ODPLatency   | Šis notikums sniedz informāciju par lietotāja tīkla savienojumu un ātrumu.     |
