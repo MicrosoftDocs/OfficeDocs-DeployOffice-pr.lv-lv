@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
+ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813345"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35817973"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -50,7 +50,7 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 | ------ | ---- |
 | [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti.  Tā ir nepieciešama, lai jums sniegtu iespēju pierakstīties sistēmā Office, aktivizēt jūsu Office licenci, piekļūtu jūsu mākonī saglabātajiem failiem, kā arī nodrošinātu konsekventu pieredzi vairākās Office sesijās un jūsu ierīcēs.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to. Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
-| [Uzlabotās konfigurācijas pakalpojums (ECS)](#experimentation-and-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
+| [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
 | [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
 | [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Tas ir arī atbildīgs par Office nepieciešamo pakalpojuma datu pakalpojuma diagnostikas datu daļas apkopošanu.  |
@@ -2395,7 +2395,7 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_targetBuild —** Office versija, uz kuru mēģinām veikt atjaunināšanu
 
 
-## <a name="experimentation-and-configuration-service-ecs-events"></a>Eksperimentēšanas un konfigurēšanas pakalpojuma (ECS) notikumi
+## <a name="enhanced-configuration-service-ecs-events"></a>Uzlabotās konfigurācijas pakalpojuma (ECS) notikumi
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2556,7 +2556,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
-Ja sistēmas Office darbība tiek beigta/tā avarē licencēšanas kļūdas dēļ, mēs izsūtām šo signālu, lai norādītu to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Ja sistēmas Office darbība tiek beigta vai tā avarē licencēšanas kļūdas dēļ, mēs izsūtām šo signālu, lai norādītu to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2616,7 +2616,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingofficeclientlicensingdolicensevalidation"></a>Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
-Tie ir licencēšanas metadati, kas tiek apkopoti no ierīces katrā sāknēšanas reizē, kas ziņo licences ACID, licences statusu, veidu un citus licences rekvizītus, kas ir kritiski svarīgi, lai identificētu līdzekļus, kas ir iestatīti kā pieejami lietotājam. Tas ir kritiski svarīgi, lai identificētu līdzekļu kopu, kas ir pieejama lietotājam, un vai lietotājam trūkst kāda funkcionalitāte. Tas tiek izmantots arī dienas aktīvo lietotāju/mēneša aktīvo lietotāju aprēķiniem un dažādām citām atskaitēm, ko izmanto dažādas grupas sistēmā Office (mārketings/DIG/licencēšana), jo tas norāda tipa produktu, ko lietotājs izmanto, vai tas ir abonementa produkts un vai tam trūkst kāda kritiski svarīga funkcionalitāte.
+Tie ir licencēšanas metadati, kas tiek apkopoti no ierīces katrā sāknēšanas reizē, kas ziņo licences ACID, licences statusu, veidu un citus licences rekvizītus, kas ir kritiski svarīgi, lai identificētu līdzekļus, kas ir iestatīti kā pieejami lietotājam. Tas ir kritiski svarīgi, lai identificētu līdzekļu kopu, kas ir pieejama lietotājam, un vai lietotājam trūkst kāda funkcionalitāte. Tas tiek izmantots arī dienas aktīvo lietotāju/mēneša aktīvo lietotāju aprēķiniem un dažādām citām atskaitēm, ko izmanto dažādas grupas sistēmā Office, jo tas norāda tipa produktu, ko lietotājs izmanto, vai tas ir abonementa produkts un vai tam trūkst kāda kritiski svarīga funkcionalitāte.
 
 Tiek apkopoti tālāk norādītie lauki.
 
