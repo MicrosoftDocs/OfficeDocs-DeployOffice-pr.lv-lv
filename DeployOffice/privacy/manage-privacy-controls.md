@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 5d38a944c7fe0c2c17cb6cd50339908b1cb7ae6e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701247"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238977"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -41,6 +41,9 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 - Atļaut Office izmantot saistītos līdzekļus
 
 Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
+
+> [!NOTE]
+> Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
 
 Ja izmantojat grupas politikas pārvaldības rīku, visi šie politikas iestatījumi atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
 
@@ -117,7 +120,7 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti paka
 
 Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, jūsu lietotājiem būs pieejami šie papildu saistītie līdzekļi.
 
-Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz **Fails** > **Konts** > **Konta konfidencialitāte** > **Pārvaldīt iestatījumus**. Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
+Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
 Turklāt daži no šiem neobligātajiem saistītajiem līdzekļiem tiek uzskatīti arī par saistītajiem līdzekļiem, kuri analizē saturu vai lejupielādē tiešsaistes saturu. Piemēram, Tiešsaistes attēlu ievietošana ir neobligāts saistītais līdzeklis, kura darbību nodrošina Microsoft Bing, bet tas tiek uzskatīts arī par saistīto līdzekli, kurš lejupielādē tiešsaistes saturu. Tāpēc ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*, lietotājiem nav pieejams līdzeklis Tiešsaistes attēlu ievietošana. Tas nav pieejams pat tad, ja esat iespējojis politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*. Papildinformāciju par to, kuri saistītie līdzekļi analizē saturu vai lejupielādē tiešsaistes saturu, skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
@@ -174,7 +177,7 @@ Office 365 ProPlus lietotāja interfeisā ir ieviestas dažas ar konfidencialit
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialoglodziņš par neobligātajiem saistītajiem līdzekļiem
 
-Ja esat izvēlējies nodrošināt lietotājiem [neobligātos saistītos līdzekļus](optional-connected-experiences.md), tad, lietotājiem pēc atjaunināšanas uz versiju 1904 pirmo reizi atverot Office programmu, tiks parādīts informatīvs dialoglodziņš. Šis dialoglodziņš informē lietotājus par to, ka viņiem ir piešķirta iespēja izmantot šos neobligātos saistītos līdzekļus, kā arī norāda, ka šo iestatījumu var mainīt sadaļā **Fails** > **Konts** > **Konta konfidencialitāte**.
+Ja esat izvēlējies nodrošināt lietotājiem [neobligātos saistītos līdzekļus](optional-connected-experiences.md), tad, lietotājiem pēc atjaunināšanas uz versiju 1904 vai jaunāku versiju pirmo reizi atverot Office programmu, tiks parādīts informatīvs dialoglodziņš. Šis dialoglodziņš informē lietotājus par to, ka viņiem ir piešķirta iespēja izmantot šos neobligātos saistītos līdzekļus, kā arī norāda, ka šo iestatījumu var mainīt sadaļā **Fails** > **Konts** > **Konta konfidencialitāte**.
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>No Office lietotāja interfeisa noņemtie konfidencialitātes iestatījumi
 

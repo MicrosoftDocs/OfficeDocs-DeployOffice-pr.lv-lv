@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: a65fd2a6b7169c9098d233a926041d9cbc599886
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701122"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238934"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
 
@@ -34,9 +34,11 @@ Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika i
 
 > [!IMPORTANT]
 > - Šīs izmaiņas tiek lietotas programmā Access, Excel, OneNote, Outlook, PowerPoint, Publisher un Word.
-> - Šīs izmaiņas tiek lietotas arī datora programmas Project un Visio versijās, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
-> - Paredzams, ka versija 1904 septembrī būs pieejama pusgada kanālā (atlasīta versija), bet 2020. gada janvārī būs pieejama pusgada kanālā.
-> - Šīs jaunās un uzlabotās konfidencialitātes kontroles iespējas ieviesīsim arī papildu Office klientos, tostarp Teams, Office darbam ar Mac un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
+> - Šīs izmaiņas attiecas arī uz tālāk norādīto programmatūru.
+>   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
+>   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, plāns Project Online Professional vai Visio Online 2. plāns, versija 1904 vai jaunākas versijas.
+> - Paredzams, ka versijā 1904 nodrošinātie konfidencialitātes kontroles līdzekļi būs pieejami pusgada kanālā (atlasīta versija) 2019. gada septembrī, bet pusgada kanālā tie būs pieejami 2020. gada janvārī.
+> - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti korporācijai Microsoft
 
@@ -63,12 +65,12 @@ Jūsu lietotāji nevarēs mainīt savas ierīces diagnostikas datu līmeni, ja b
 Šie diagnostikas dati neietver lietotāju vārdus, e-pasta adreses un viņu Office failu saturu. Mūsu sistēma izveido unikālu ID, kas tiek saistīts ar lietotāja diagnostikas datiem. Ja saņemam diagnostikas datus, kuros redzams, ka kāda no mūsu programmām avarēja 100 reizes, šis unikālais ID ļauj noteikt, vai tas bija viens lietotājs, kas avarēja 100 reizes, vai tie bija 100 dažādi lietotāji, kas avarēja katrs pa vienai reizei. Mēs neizmantojam šo unikālo ID, lai identificētu konkrētu lietotāju.
 
 Lai skatītu, kādi diagnostikas dati tiek nosūtīti korporācijai Microsoft, varat izmantot diagnostikas datu skatītāju, kuru varat lejupielādēt un instalēt no veikala Microsoft Store.
-
-Papildinformāciju skatiet šeit:
+7 Papildinformāciju skatiet šeit:
 
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus saistītie līdzekļi
@@ -92,7 +94,8 @@ Jūsu lietotāji nevarēs izvēlēties, vai ieslēgt vai izslēgt šos saistīto
 Papildinformāciju skatiet šeit:
 
 - [Office saistītie līdzekļi](connected-experiences.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus neobligātie saistītie līdzekļi
 
@@ -102,12 +105,13 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti paka
 
 Tā kā šo papildu saistīto līdzekļu darbību nosaka atsevišķi nosacījumi un noteikumi, jūs tos pārvaldās atsevišķi no iepriekš minētajiem saistītajiem līdzekļiem. Kā organizācijas administrators varēsit lietot politikas iestatījumu, lai izvēlētos, vai šos papildu saistītos līdzekļus padarīt pieejamus saviem lietotājiem kā līdzekļu grupu. Ja nekonfigurēsit šo politikas iestatījumu, jūsu lietotājiem būs pieejami šie papildu saistītie līdzekļi.
 
-Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos neobligātos saistītos līdzekļus kā grupu, dodoties uz **Fails** > ** Konts** > **Konta konfidencialitāte** > **Iestatījumu pārvaldība**. Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies Office produktā ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
+Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos neobligātos saistītos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies Office produktā ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
 Papildinformāciju skatiet šeit:
 
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Saistītajiem līdzekļiem nepieciešamie pakalpojuma dati
 

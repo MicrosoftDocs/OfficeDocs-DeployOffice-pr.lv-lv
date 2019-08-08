@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par nepieciešamajiem pakalpojuma datiem, kas tiek apkopoti saistībā ar Office saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 9a276e00f5c852ffda00844c5e1aaa9187f581c3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 76c30eddecbb84fecc5cb49c9691edcebc7c13b7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701011"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238487"
 ---
 # <a name="required-service-data-for-office"></a>Office nepieciešamie pakalpojuma dati 
 
@@ -27,6 +27,8 @@ ms.locfileid: "34701011"
 > - Office 365 ProPlus un Office 365 Business
 > - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
 > - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+>
+> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
 Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive darbam krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemēri.
 
@@ -64,6 +66,7 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 
 - [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles pārvaldībai](mac-privacy-preferences.md)
 
 ## <a name="examples-of-events-for-service-diagnostic-data"></a>Pakalpojuma diagnostikas datu notikumu piemēri
 
