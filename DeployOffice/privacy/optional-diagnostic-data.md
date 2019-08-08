@@ -36,7 +36,7 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 
 Ja izvēlaties nosūtīt mums neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati.
 
-Neobligātās diagnostikas datu piemēri ietver datus, kurus iegūstam par attēliem, ko lietotāji ievieto Word dokumentos, un kuri ļauj mums sniegt labākas opcijas, kā arī datus, kurus apkopojam par laiku, kas nepieciešams PowerPoint slaida parādīšanai ekrānā, un kuri ļauj mums uzlabot lietošanas pieredzi, ja tas notiek lēni.
+Neobligātās diagnostikas datu piemēri ietver datus, kurus iegūstam par formām, ko lietotāji ievieto Word dokumentos, un kuri ļauj mums sniegt labākas opcijas, kā arī datus, kurus apkopojam par laiku, kas nepieciešams PowerPoint slaida parādīšanai ekrānā (ja tas notiek lēni), lai tā varētu uzlabot lietošanas pieredzi.
 
 Papildinformāciju par diagnostikas datiem lasiet šajos rakstos:
 
@@ -90,7 +90,7 @@ Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikum
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | Šis notikums norāda, ka programma Word ir izpildījusi komandu, lai iezīmētu tekstu. Šo notikumu izmantojam kļūdu noteikšanai teksta iezīmēšana komandā.  |
 | Office.Translator.AddInLoaded   | Periodiskais kontrolziņojums, lai norādītu, ka tulkošanas līdzeklis ir ielādēts un sekmīgi atveidots.  |
-| Office.Graphics.GVizInsertShape |Izseko attēla ievietošanas līdzekļa darbības programmā Word, kā arī ziņo, norādot detalizētu informāciju par ievietoto attēlu veidiem un attēlu avotu.| 
+| Office.Graphics.GVizInsertShape |Izseko formas ievietošanas līdzekļa darbības programmā Word, kā arī ziņo, norādot detalizētu informāciju par ievietoto formu veidiem un avotu.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | Šis notikums nosaka, vai dokumentā ir kādas sadaļas, kad lietotājs ievieto kopsavilkuma tuvinājumu, un to, vai lietotājs izvēlas dzēst esošās sadaļas. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Seko, kad un kāpēc fails tiek atvērts aizsargātā skatā. Tiek izmantots, lai noteiktu nosacījumus, kur aizsargātais skats, iespējams, netiek pareizi izraisīts, lai pārliecinātos, vai šis līdzeklis darbojas pareizi. |
 
