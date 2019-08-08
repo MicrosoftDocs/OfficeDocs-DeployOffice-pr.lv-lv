@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 3b0ac61cf01a588e3af85d1eb83d4b2fd7e8b63e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701791"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238228"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -27,8 +27,10 @@ ms.locfileid: "34701791"
 > - Office 365 ProPlus un Office 365 Business
 > - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
 > - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+>
+> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
-Office sastāv no klienta lietojumprogrammām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemērs.
+Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemērs.
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Saistīti līdzekļi, kas analizē jūsu saturu
 
@@ -129,7 +131,10 @@ Ja esat pierakstījies ar Microsoft kontu, atveriet Office programmu, piemēram,
 
 Ja esat pierakstījies ar darba vai mācību kontu, jūsu organizācijas administrators var izlemt, vai šie saistītie līdzekļi ir jums pieejami. Jūs neredzat izvēles iespējas šiem saistītajiem līdzekļiem, ja dodaties uz **Fails** > **Konts** > **Konta privātums** > **Iestatījumu pārvaldība**.
 
-Ja esat savas organizācijas administrators, varat izmantot politikas iestatījumus, lai noteiktu, vai šie saistītie līdzekļi ir pieejami jūsu lietotājiem. Ja neizmantojat šos politikas iestatījumus, jūsu lietotājiem būs pieejami visi saistītie līdzekļi. Papildinformāciju par šo politikas iestatījumu izmantošanu skatiet rakstā [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md).
+> [!NOTE]
+> Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
+
+Ja esat savas organizācijas administrators, varat izmantot politikas iestatījumus, lai noteiktu, vai šie saistītie līdzekļi ir pieejami jūsu lietotājiem. Ja neizmantojat šos politikas iestatījumus, jūsu lietotājiem būs pieejami visi saistītie līdzekļi. Papildinformāciju par šo politikas iestatījumu izmantošanu skatiet rakstos [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md) un [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
 
 Ja izvēlaties izslēgt noteiktus saistītos līdzekļus, to lentes vai izvēlnes komanda būs pelēkota vai arī saņemsit kļūdas ziņojumu, kad mēģināsit lietot šos saistītos līdzekļus.
 
@@ -141,3 +146,4 @@ Pat tad, ja vēlaties izslēgt šos saistītos līdzekļus, dažas Office funkci
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
 - [Office obligātais datu pakalpojums](required-service-data.md)
 - [Office būtiskie pakalpojumi](essential-services.md)
+- [Konta konfidencialitātes iestatījumi](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

@@ -13,19 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: f1d8c16b7e267d49735814ee9d393c578dbf3c28
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: e20a2cd70b8c5fbc47abac7288627cd2783855e7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701331"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239142"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
 Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par "neobligātajiem saistītajiem līdzekļiem"), izmantojot Office 365 ProPlus lietojumprogrammas. Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
 
 > [!NOTE]
-> Ja esat administrators, skatiet rakstu [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md), lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus.
+> Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus.
+> - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+> - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ja izmantojat šos pakalpojumus, kādiem lietošanas noteikumiem ir jāpiekrīt?
 
@@ -50,6 +52,10 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 ### <a name="insert-online-video"></a>Tiešsaistes video ievietošana
 
 [Tiešsaistes video ievietošana](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) sniedz iespēju ievietot video failus dokumentā. Uz tiešsaistes video ievietošanas līdzekli attiecas [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement) un [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Var tikt piemēroti papildu lietošanas noteikumi, ja piekļūstat saturam no trešās puses avotiem. Piemēram, kad izveidojat savienojumu ar YouTube, ir spēkā šī pakalpojuma [lietošanas noteikumi](https://www.youtube.com/t/terms) un [paziņojums par konfidencialitāti](https://policies.google.com/privacy). Microsoft var pievienot citus video materiālu sniedzējus nākotnē.
+
+### <a name="microsoft-error-reporting-program-merp"></a>Microsoft kļūdu atskaišu veidošanas programma (MERP) 
+
+MERP izveido savienojumu ar pakalpojumu Watson.microsoft.com, lai nosūtītu diagnostikas datus, kad Office klienta programmas, kas darbojas Mac ierīcēs, avarē. Tā pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. MERP neattiecas uz Office klienta programmām, kas darbojas sistēmā Windows.
 
 ### <a name="research"></a>Izpēte
 
@@ -80,9 +86,13 @@ Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook
 
 Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office 365 ProPlus lietojumprogrammā Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
 
+Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
+
 ## <a name="your-privacy-settings"></a>Jūsu konfidencialitātes iestatījumi
 
 Ja jūsu administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus jūsu Office 365 ProPlus lietojumprogrammā Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā brīdī pārvaldītu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
+
+Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
 ## <a name="diagnostic-data"></a>Diagnostikas dati
 
@@ -93,3 +103,4 @@ Ja izmantojat kādu no šajā rakstā aprakstītajiem neobligātajiem mākoņa p
 
 - [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
 - [Office nepieciešamais datu pakalpojums](required-service-data.md)
+- [Konta konfidencialitātes iestatījumi](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
