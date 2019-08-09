@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
-ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
+ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35817973"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239178"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -27,7 +27,8 @@ ms.locfileid: "35817973"
 > - Office 365 ProPlus un Office 365 Business
 > - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
 > - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
-
+>
+> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
 Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Lai gan varat kontrolēt daudzas savienotās iespējas, kas ir pieejamas jums vai jūsu lietotājiem, ja esat savas organizācijas administrators, pastāv pakalpojumu kopa, kas ir būtiski attiecībā uz to, kā Office darbojas, tāpēc tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai esat pareizi licencēts Office izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kas saistīti ar konfidencialitāti un kurus esat konfigurējis. Šos datus varat skatīt, izmantojot diagnostikas datu skatītāju.
 
@@ -41,6 +42,7 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 
 - [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Office būtisko pakalpojumu saraksts 
 
@@ -52,7 +54,9 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 | [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to. Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
 | [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
-| [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
+|[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS vajadzībām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
+|[OneNote sinhronizācija](#onenote-sync-events)|Programma OneNote darbam ar Mac atbalsta tikai tādas piezīmju grāmatiņas, kas tiek glabātas internetā — OneDrive krātuvē vai SharePoint Online. Programma OneNote darbam ar Mac pastāvīgi sinhronizē visas lietotāja piezīmes ar OneDrive krātuvi vai SharePoint Online. Tādējādi lietotāji var atvērt, skatīt un rediģēt savas piezīmju grāmatiņas visās savās ierīcēs, un viņu piezīmju grāmatiņas vienmēr ir atjauninātas.
+ [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
 | [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Tas ir arī atbildīgs par Office nepieciešamo pakalpojuma datu pakalpojuma diagnostikas datu daļas apkopošanu.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Office būtisko pakalpojumu notikumu un datu lauki
@@ -2362,6 +2366,51 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Version —** Office versija 
 
+### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
+
+Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, veiktās lejupielādes tipu un diagnostikas informāciju.
+
+
+- **BytesFromGroupPeers —** baiti no grupas vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju
+
+- **BytesFromHttp —** baiti no http, tikai lejupielādēm, izmantojot piegādes optimizāciju
+
+- **ByteFromInternetPeers —** baiti no interneta vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
+
+- **BytesFromLanPeers —** baiti no LAN vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
+
+- **CancelledJobs —** atcelto pieprasījumu skaits sesijā
+
+- **Connected —** vai ir izveidots savienojums ar avotu
+
+- **ErrorCode —** pēdējās kļūdas kods
+
+- **ErrorDetails —** pēdējās kļūdas detalizētā informācija
+
+- **ErrorMessage —** pēdējās kļūdas ziņojums 
+
+- **ErrorSource —** pēdējās kļūdas cēlonis, piemēram, Connection, LoadFile vai LoadRange
+
+- **FailedJob —** neizdevušos pieprasījumu skaits sesijā
+
+- **FileSize —** resursa lielums
+
+- **SourcePathNoFilePath —** resursa avota ceļš, tiek ziņots tikai par http avotu, lokālā faila ceļš un UNC ceļš tiek filtrēts
+
+- **SucceededJobs —** sekmīgu pieprasījumu skaits sesijā
+
+- **TotalJobs —** kopējais pieprasījumu skaits sesijā
+
+- **TotalRequestedBytes —** kopējais pieprasīto baitu skaits sesijā
+
+- **TotalTransferTime —** kopējais pārsūtīšanas laiks sesijā
+
+- **TransferredBytes —** kopējais pārnesto baitu skaits sesijā
+
+- **TransportType —** transporta veids, piemēram, piegādes optimizācija atmiņā, HTTP, fona režīma intelektiskās pārsūtīšanas pakalpojums
+
+
+
 ### <a name="officeclicktoruntransportexperimentaltransportpipelinecreatetransport"></a>Office.ClickToRun.Transport.ExperimentalTransport.PipelineCreateTransport
 
 Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veido transportēšanas straumi, lai lejupielādētu Office failus. Tiek izmantoti, lai noteiktu dažādu transportēšanas tehnoloģiju (piemēram, HTTP, BITS, DO) darbspēju, kas ir kritiski svarīgi, lai pareizi lejupielādētu Office instalēšanai un atjauninājumiem.
@@ -2393,6 +2442,190 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_status** — īss statuss par to, kas notika atjaunināšanas laikā, piemēram, Izdevās vai Lejupielādēts
 
   - **Data\_targetBuild —** Office versija, uz kuru mēģinām veikt atjaunināšanu
+
+
+### <a name="officeclicktorununiversalbootstrapperapplication"></a>Office.ClickToRun.UniversalBootstrapper.Application
+
+Ziņo par gala-gala instalācijas mēģinājuma rezultātu
+
+ - **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+
+ - **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+
+ - **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+
+ - **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+
+ - **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
+
+### <a name="officeclicktorununiversalbootstrappercalculateparameters"></a>Office.ClickToRun.UniversalBootstrapper.CalculateParameters
+
+Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectParameters
+
+- **BitField** — argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+
+- **ChannelID —** vesels skaitlis, kas norāda atlasītā atjaunināšanas/instalēšanas kanāla uzskaitījuma vērtību (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos.
+
+- **C2RClientUICulture —** instalējamā C2R klienta kultūra
+
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, izsaucēja iestatītie papildu parametri)
+
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+
+- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
+
+- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
+
+- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
+
+- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+
+- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
+
+- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
+
+- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+
+- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
+
+- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
+
+- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+
+- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
+
+- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
+
+- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
+
+- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+
+- **PRID —** virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas scenārijā (piemēram, O365ProPlusRetail)
+
+- **ProductsToAdd —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāinstalē
+
+- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
+
+- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
+
+- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
+ 
+
+### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
+
+Atskaites par darbībām, kas lasa atzīmēto ievadi no .exe faila iegultā paraksta.  Šī ir nepierādīta koncepcija, kuru iepriekšējā programmas setup.exe versija neimplementēja, un uz to mēs paļaujamies, lai pārnestu lietotāja produkta/valodas/bitu skaita izvēles no tīmekļa lapas uz iekšējo procesu programmā setup.exe.
+ 
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+
+### <a name="officeclicktorununiversalbootstrappercollectparameters"></a>Office.ClickToRun.UniversalBootstrapper.CollectParameters
+
+Ziņo par Office instalēšanai izmantotajiem parametriem
+
+- **BitField** — argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+
+- **ChannelID —** vesels skaitlis, kas norāda atlasītā atjaunināšanas/instalēšanas kanāla uzskaitījuma vērtību (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+
+- **C2RClientUICulture —** instalējamā C2R klienta kultūra
+
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+
+- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
+
+- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
+
+- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
+
+- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+
+- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
+
+- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
+
+- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+
+- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
+
+- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
+
+- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+
+- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
+
+- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
+
+- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
+
+- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office
+
+- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
+
+- **PRID —** virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas scenārijā (piemēram, O365ProPlusRetail)
+
+- **ProductsToAdd —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāinstalē
+
+- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
+
+- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
+
+### <a name="officeclicktorununiversalbootstrapperexecute"></a>Office.ClickToRun.UniversalBootstrapper.Execute
+
+Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie dati no CalculateParameters
+
+- **AvailableClientVersionText —** tās C2R klienta versijas formātā “16.0.xxxxx.yyyyy” virknes vērtība, kas atrasta versijas deskriptora XML failā, kurš tiek izmantots, lai noteiktu, vai šobrīd instalētais C2R klients ir jāatjaunina
+
+- **CleanFireflyAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanFireflyAction izpilde
+
+- **CleanO15Action —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanO15Action izpilde
+
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+
+- **DeliveryMechanism —** “FFNRoot” GUID, kas izvilkts no versijas deskriptora XML faila (apzīmogots ar RDX), kurš norāda, no kuras auditorijas/kanāla ir nācis būvējuma avots
+
+- **DownloadC2RClientAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma DownloadC2RClientAction izpilde
+
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+
+- **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas izpildes fāzes darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
+
+- **LaunchAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchAction izpilde
+
+- **LaunchUpdateAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchUpdateAction izpilde
+
+- **PreReqResult —** rezultāta vesela skaitļa uzskaitījuma vērtība, ja tika veiktas PreReq pārbaudes (izturēja/neizturēja/atkārtota palaišana)
+
+- **UnexpectedAction —**“patiess”, ja uzdevumam UnexpectedAction (kļūdas gadījums) ir ieplānota veikšana šīs instalēšanas laikā
+
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
 
 ## <a name="enhanced-configuration-service-ecs-events"></a>Uzlabotās konfigurācijas pakalpojuma (ECS) notikumi
@@ -2582,7 +2815,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **OptInShown** — norāda, vai piekrišanas dialogs, kas tiek rādīts lietojumprogrammas pirmajā sāknēšanas reizē, jau ir rādīts
 
-  - **Office.Licensing.NextUserLicensingEligible —** šis signāls mums norāda, vai lietotājs ir kvalificēts pāriet uz mūsu jauno licencēšanas steku. Tas ir kritiski svarīgi, lai kvantificētu ietekmi uz esošajiem lietotājiem, kamēr ieviešam mūsu jauno licencēšanas steku un nodrošinām, ka lietotājiem nezūd funkcionalitāte
+### <a name="officelicensingnextuserlicensingeligible"></a>Office.Licensing.NextUserLicensingEligible 
+
+Šis signāls mums norāda, vai lietotājs ir kvalificēts pāriet uz mūsu jauno licencēšanas steku. Tas ir kritiski svarīgi, lai kvantificētu ietekmi uz esošajiem lietotājiem, kamēr ieviešam mūsu jauno licencēšanas steku un nodrošinām, ka lietotājiem nezūd funkcionalitāte.
 
 Šis notikums neapkopo laukus.
 
@@ -2701,6 +2936,7093 @@ Tiek apkopoti tālāk norādītie lauki.
   - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām oportūnistisku atjaunošanu lietotājam koplietojamā datora aktivizācijas režīmā
 
   - **ReArmResult** — norāda instalētās atslēgas atkārtotu aktivizēšanu, kas var pagarināt pašreizējās licences derīgumu
+
+## <a name="microsoft-autoupdate-mau-events"></a>Microsoft AutoUpdate (MAU) notikumi
+
+### <a name="appdelegate_launch"></a>appdelegate_launch
+
+Šis notikums norāda, ka notika mēģinājums palaist programmu. Mēs reģistrējam tā rezultātu (kļūme vai sekmīgi). Šis notikums tiek izmantots, lai noteiktu gadījumus, kuros MAU neizdodas palaist
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppversionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+ - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statiska teksta kopa, kas norāda palaišanas statusu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="appdelegate_terminate"></a>appdelegate_terminate
+
+Šis notikums norāda, ka ir notikusi labvēlīga iziešana no programmas. Šis notikums tiek izmantots, lai atšķirtu labvēlīgu iziešanu no programmas no nelabvēlīgas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+    
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+    
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts, kas norāda Microsoft AutoUpdate darbības pārtraukšanu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+
+Šis notikums norāda, ka, veidojot savienojumu ar MAU palīgu (komponents, kas veic programmu instalēšanu), radās kļūdas.  Šis notikums norāda iespējamu MAU programmas bojājumu. Ierīce nevarēs instalēt atjauninājumus.
+
+Tiek apkopoti šādi lauki: 
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver kļūdas informāciju par savienojuma problēmu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="appregistry_info"></a>appregistry_info
+
+Šis notikums norāda, ka programma ir palaista. Šis notikums tiek izmantots, lai uzskaitītu programmas, kurām MAU var kontrolēt atjauninājumus, pieejamo kopiju skaitu, kā arī to versiju un instalācijas atrašanās vietu (noklusējuma vai cita).
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver informāciju par identifikatoru sarakstu, ko programma izmanto, lai reģistrētos Microsoft AutoUpdate pakalpojumos, un programmai reģistrēto instalāciju skaitu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="appregistry_remove"></a>appregistry_remove
+
+Šis notikums norāda, ka notika mēģinājums noņemt programmu no MAU pārvaldīto programmu saraksta. Šis notikums tiek izmantots, lai apstiprinātu, ka ar MAU palīdzību tiek pārvaldītas tikai MAU izlaistas programmas (šeit nebūtu jābūt nevienai AppStore programmai).
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — noņemamās programmas nosaukums un identifikators neatkarīgi no tā, vai programma joprojām pastāv reģistrētajā atrašanās vietā un vai programma tika instalēta no AppStore.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="catalog_errorsignature"></a>catalog_errorsignature
+
+Šis notikums norāda, ka, atjauninājuma papildmateriālu failam veicot koda parakstīšanas validāciju, radās kļūme.  Visi papildmateriāli, kuriem radušās koda parakstīšanas verifikācijas kļūmes, ir jāuzskata par nederīgiem.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver tā kataloga faila nosaukumu, kuram ir nederīgs paraksts. Cits statisks teksts apraksta atšķirīgus kļūdas nosacījumus.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+
+Šis notikums reģistrē problēmas ar instalēšanu klonā (t.i., vai nu neizdodas izveidot savienojumu ar palīgu, lai lietotu atjauninājumu, vai savienojums ir izveidot, bet palīgs nevar lietot atjauninājumu). Ja tiek ziņots par kādu ierakstu, tas nozīmē, ka instalēšana klonā neizdevās un ka tagad ir jāveic atkāpšanās uz atjauninājumu atrašanās vietā.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver ID, kas identificē vienu atjaunināšanas darbību, un klonēšanas procesa laikā ziņoto starpniekservera kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="configuration_channel"></a>configuration_channel
+
+Šis notikums reģistrē mēģinājumus rīkā MAU pārslēgt kanālus (auditorijas grupu).  Mēs to izmantojam, lai reģistrētu mēģinājumus un to rezultātus (sekmīgi vai kļūme).
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver atlasītā kanāla nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="configuration_metadata"></a>configuration_metadata
+
+Šis notikums tiek reģistrēts ikreiz, kad notiek MAU inicializēšana. Tas ir MAU periodiskā kontrolziņojuma notikuma veids
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts, kurš norāda, ka tiek inicializēti atsevišķi metadati vai ka tiek inicializēta konfigurācija.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators.
+
+
+### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+
+Šis notikums norāda, ka rīks MAU nonāca nelietojamā/neatkopjamā stāvoklī un ka ir nepieciešama atkārtota tā instalēšana. Šis notikums norāda neatkopjamu kļūdu, un ir nepieciešama lietotāja iejaukšanās.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur uzskaitīto lietotāju atlasi.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+
+Šis notikums norāda, ka diskā nav pietiekami daudz vietas. Nevarēsim instalēt atjauninājumus, jo diskā trūkst vietas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+
+Šis notikums norāda, ka pēc nepietiekama brīvas vietas diskā apjoma noteikšanas tika sākts atkārtots mēģinājums instalēt atjauninājumu. Veicam atkārtotu instalēšanas mēģinājumu pēc tam, kad nespējām instalēt atjauninājumus, jo diskā nav pietiekami daudz brīvas vietas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+    
+
+### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+
+Šis notikums norāda, ka pēc nepietiekama brīvas vietas diskā apjoma noteikšanas notika atkārtota mēģinājuma instalēt atcelšana. Šis notikums tiek izmantots, lai noteiktu, vai ar mūsu atkāpšanās mehānismu pietika, lai lietotājam palīdzētu veikt atjaunināšanu gadījumā, kad diskā tika noteikts nepietiekams brīvās vietas apjoms.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+    
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+    
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+
+Šis notikums norāda, ka, veicot pārbaudi, vai nav atjauninājumu, neviens atjauninājums netika atrasts. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+
+### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+
+Šis notikums norāda, ka tika veikta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+    
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+
+Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, process tika atcelts (to izdarīja lietotājs vai sistēma). Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+
+Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+    
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+
+Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesa rezultātā tika atrasti atjauninājumi.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+
+Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, veikšanas procesā netika atrasti atjauninājumi, jo ierīcē esošās programmas ir atjauninātas.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+
+Šis notikums norāda, ka tika palaista programma, kurai notiek atjauninājumu iegūšanas process. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību. Nedrīkstam ļaut atjaunināt atvērtas programmas. Pirms atjaunināšanas programmas ir jāaizver.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+    
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+
+Šis notikums norāda, ka tika palaista programma, kurai notiek atjauninājumu iegūšanas process. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību. Nedrīkstam ļaut atjaunināt atvērtas programmas. Pirms atjaunināšanas programmas ir jāaizver.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+
+Šis notikums norāda, ka, mēģinot lietot atjauninājumu, radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+
+Šis notikums norāda, ka lejupielādes procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — statisks teksts. 
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda un lietotājs tika brīdināts. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvājuma un lejupielādes pareizību un lai kļūmes gadījumā lietotājam tiktu parādīts paziņojums.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. Šis notikums norāda, ka trūkst lejupielādes vietrāža URL.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. Šis notikums norāda, ka rīkam Microsoft AutoUpdate tika lūgts pauzēt/atsākt lejupielādi, bet nevarēja atrast atbilstošo lejupielādes pārvaldnieku.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums norāda, ka Microsoft AutoUpdate nevarēja pārbaudīt, vai šo atjauninājumu publicēja Microsoft. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. 
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kurā ir iekļauts lejupielādes vietrādis URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+
+Šis notikums norāda, ka visu Microsoft AutoUpdate piedāvāto atjauninājumu instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. 
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+    
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība.  Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība. Tas arī norāda, ka lietotājam tika paziņots par šo kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība. Tas arī norāda, ka lietotājam tika paziņots par šo kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+
+Šis notikums norāda, ka atjaunināšanas process neizdevās. Tas arī norāda, ka atjauninājums tika pabeigts, bet Microsoft AutoUpdate atrada problēmu saistībā ar atjauninātu programmu, un ir nepieciešama labošana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+    
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+    
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+
+Šis notikums norāda, ka atjaunināšanas process tika priekšlaikus pārtraukts. Tas arī norāda to, ka dēmons jau veica atjaunināšanu, bet lietotājs noklikšķināja uz Labi, lai priekšlaikus pārtrauktu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+
+Šis notikums norāda, ka viens vai vairāki pašreizējās paketes atjauninājumi neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+
+Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+
+Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+
+Šis notikums norāda, ka atjauninājumu lejupielādes process tika sekmīgi atsākts pēc pauzes. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+
+Šis notikums norāda, ka ierīce tika reģistrēta automātiskās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+
+Šis notikums norāda, ka ierīce tika reģistrēta manuālās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+
+Šis notikums norāda, ka lietotājs izvēlējās atcelt vai ignorēt norādīto brīdinājuma ziņojumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+
+Šis notikums norāda, ka lietotājs izvēlējās ievērot brīdinājumā norādīto ieteikumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+    
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+
+### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+
+Šis notikums norāda, ka lietotājs izvēlējās ievērot brīdinājumā norādīto ieteikumu saistībā ar programmatūras instalēšanas darbības uzsākšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+
+Šis notikums norāda, ka atjauninājumu lejupielāde tika sākta, izmantojot atjaunināšanas logu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un norādi, vai lietotājs ir izvēlējās instalētu atbilstošo ierakstu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+
+Šis notikums norāda, ka tīkla kļūmes dēļ atjaunināšanas lapā tika izraisīts atkārtots mēģinājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+
+Šis notikums norāda, ka tīkla kļūmes dēļ atjaunināšanas lapā nevarēja izraisīt atkārtotu mēģinājumu. Šis notikums norāda, ka lietotājs izvēlējās atcelt atjauninājumus pēc brīdinājuma saņemšanas par to, ka tīkls kļūst nepieejams. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+
+Šis notikums norāda, ka pēkšņi zuda tīkla savienojamība. Šis notikums norāda, ka, mēģinot lejupielādēt atjauninājumu pakotni, serveris nav sasniedzams. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+
+Šis notikums norāda, ka, meklējot atjauninājumus, neviens atjauninājums nebija pieejams. Šis notikums norāda, ka Microsoft AutoUpdate neatrada nevienu pieejamu atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+
+Šis notikums norāda, ka radās kļūda, izraisot tukšu atjauninājumu sarakstu. Šis notikums norāda, ka Microsoft AutoUpdate rāda tukšu atjauninājumu lapu. Tam nebūtu jānotiek. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+
+Šis notikums norāda, ka atjauninājumu meklēšanas rezultātā tika piedāvāti atjauninājumi. Šis notikums tiek izmantots, lai noteiktu, vai lietotājam skatīšanai tiek piedāvāti atjauninājumi, vai tiek rādīti atbilstoši atjauninājumi un vai atjauninājumu bloķēšana darbojas, kā paredzēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un katras pakotnes lietotāja atlases statusu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+
+Šis notikums norāda, ka lietotājs atcēla darbību pēc tam, kad parādījām atjauninājumu lapu, uzskaitot atjauninājumus. To izmantojam pat tam, lai izskaidrotu neatjaunināšanas iemeslus (piemēram, lietotājs labprāt atceļ darbību). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadactor_pause"></a>downloadactor_pause
+
+Šis notikums norāda, ka lietotājs izdeva pieprasījumu pauzēt lejupielādi. Mēs to izmantojam pat tam, lai izskaidrotu iemeslus, kāpēc atjaunināšana netiek pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadactor_redirect"></a>downloadactor_redirect
+
+Šis notikums norāda, ka lejupielādētāja aģents norādīja uz galapunktu, kas izdod URL novirzīšanu lejupielādes pieprasījumam. Šo notikumu izmantojam pat tam, lai izskaidrotu lejupielādes kļūmes un diagnosticētu starpniekservera problēmas. Tas var arī palīdzēt diagnosticēt iemeslus, kāpēc lietotāji instalē vecākus būvējumus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur novirzītu vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="downloadactor_resume"></a>downloadactor_resume
+
+Šis notikums norāda, ka lietotājs izdeva pieprasījumu atsākt pauzētu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+
+Šis notikums norāda, ka lietotājs izdeva pieprasījumu atsākt pauzētu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur lejupielādes vietrāža URL ceļu. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="downloadactor_status"></a>downloadactor_status
+
+Šis notikums reģistrē mēģinājumus ienest papildmateriālu failus un to rezultātus (sekmīgi vai kļūme). Vēlamies zināt, kādi papildmateriāli un paketes tiek ienesti. Nepareiza faila ienešana var norādīt uz būvējuma/papildmateriālu problēmu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes vietrādi URL un kļūdas kodu kļūmes gadījumā. Lejupielādes vietrādis URL ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+
+Šis notikums norāda uz lejupielādes kļūmi. Tiek reģistrēt fails, kuru neizdevās lejupielādēt. Vēlamies zināt, kādi papildmateriāli un paketes tiek ienesti. Manifesta lejupielādes kļūme var norādīt uz būvējuma papildmateriālu ģenerēšanas kļūmi, CDN konfigurācijas kļūdu, klienta konfigurācijas kļūdu vai tīkla kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+
+Šis notikums norāda, ka fails ir sekmīgi lejupielādēts. Manifesta lejupielādes kļūme var norādīt uz būvējuma papildmateriālu ģenerēšanas kļūmi, CDN konfigurācijas kļūdu, klienta konfigurācijas kļūdu vai tīkla kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+
+Šis notikums norāda, ka radās lejupielādes kļūda. Tiek reģistrēts manifesta vai pakotnes fails, kuru neizdevās lejupielādēt, kā arī kļūdas detaļas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+
+Šis notikums norāda, ka ir sākta kataloga faila lejupielāde. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts kataloga fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+
+Šis notikums norāda, ka ir sākta kataloga faila lejupielāde. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts kataloga fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+
+Šis notikums norāda, ka XML un pakotnes faila lejupielāde bija sekmīga. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+
+Šis notikums norāda, ka radās pieprasījums lejupielādēt failu. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+
+Šis notikums norāda, ka radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+
+Šis notikums norāda, ka failu drošības validācija neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+
+Šis notikums norāda, ka lietotājs mēģināja pārbaudīt, vai nav atjauninājumu, un mēs atklājām, ka rīkam MAU trūkst pamatkomponenta (dēmona). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+
+Šis notikums norāda, ka pakotnei neizdevās koda paraksta pārbaude. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmanifest_status"></a>downloadmanifest_status
+
+Šis notikums reģistrē tādu apkopotu mēģinājumu/kļūmju kopsavilkumu, kas notika manifesta un pakotnes failu lejupielādes procesā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+
+Šis notikums reģistrē marķieri, kas norāda, ka lejupielādes process tika pabeigts patstāvīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+
+Šis notikums reģistrē atjauninājumu, kas tūlīt tiks lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+
+Šis notikums reģistrē to, ka pakotnes faila lejupielādes laikā radās kļūda. Reģistrējam atjauninājuma ceļu un kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu un novēroto kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+
+Sekmīga pakotnes faila lejupielāde. Reģistrējam izmantoto atjauninājuma ceļu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur sekmīgas lejupielādes atjauninājuma ceļu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_checkforupdate"></a>fba_checkforupdate
+
+Šis notikums norāda, ka fona process pārbauda, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+
+Šis notikums norāda, ka fona process izlaida atjauninājumu, jo ir atvērts MAU GUI. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_launchstatus"></a>fba_launchstatus
+
+Šis notikums reģistrē MAU dēmona kļūmes, mēģinot veikt palaišanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+
+Šis notikums norāda, ka lietotājs piekrīt klusajai atjaunināšanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+
+Šis notikums norāda piespiedu pārbaudes, vai nav atjauninājumu, izlaišanu atvērtu programmu dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+
+Šis notikums norāda, ka ir noticis mēģinājums lietot piespiedu atjaunināšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_terminate"></a>fba_terminate
+
+Šis notikums norāda, ka MAU dēmona darbība tika izbeigta normāli. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fba_updatefound"></a>fba_updatefound
+
+Šis notikums norāda, ka MAU dēmons ir atradis pieejamus atjauninājumus, ko piedāvāt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="fba_updatetimer"></a>fba_updatetimer
+
+Šis notikums norāda, ka pēc iestatīta miega laika perioda Microsoft AutoUpdate dēmona process aktivizējās, lai pārbaudītu, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur pašreizējo datuma un laika informāciju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+
+Šis notikums reģistrē, vai pirms instalēšanas bija aizvērtas visas programmas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+    
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+
+Šis notikums reģistrē mēģinājumu atkārtoti palaist programmu pēc klusās atjaunināšanas un atjaunināšanas režīmu (klons vai nav klons). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un palaižamās programmas nosaukumu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+    
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+
+Reģistrējam, ja atjauninājuma instalēšanas laikā tika veikta programmas palaišana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+
+Reģistrējam, ja tika sākta atjaunināšana un ir atvērta atjaunināmā programma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un programmu komplekta ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+
+Šis notikums norāda, ka Microsoft AutoUpdate saņēma Apple notikumu, kas informē par programmas darbības pārtraukšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID. Var saturēt arī kļūdas virkni, ja Microsoft AutoUpdate nosaka, ka programma joprojām darbojas, lai gan tika saņemts darbības pārtraukšanas notikums.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+
+Šis notikums reģistrē koda paraksta verifikācijas rezultātu pēc atjauninājuma lietošanas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur koda paraksta verifikācijas darbības rezultātu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+
+Šis notikums norāda, ka atjauninājums tiek lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+
+Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+
+Šis notikums norāda, ka sākam atjauninājumu kopas lejupielādi fona režīmā (reģistrējam vienlaikus lejupielādējamo atjauninājumu skaitu). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur rindā iekļauto atjauninājumu skaitu.
+
+    - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+
+Šis notikums norāda, ka esam uzsākuši mēģinājumu lejupielādēt labojumu nesekmīgam atjauninājumam. Reģistrējam versiju un atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+
+Šis notikums norāda, ka radās kļūda. Norādītajai programmai vienlaikus ir jāveic tikai viena atjauninājuma lejupielāde. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+
+Šis notikums norāda, ka atjauninājuma (versija) instalēšanas mēģinājums neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+
+Šis notikums norāda, ka visu paketē iekļauto atjauninājumu instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+
+Šis notikums norāda, ka atsevišķs atjauninājums tika sekmīgi instalēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu. Ietver atjauninājuma identifikatoru.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+
+Šis notikums norāda, ka tika uzsākts atsevišķs atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un atjauninājumu pakotnes nosaukumu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+
+Šis notikums norāda, ka bloķēts atjauninājums vairs nav bloķēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver iepriekš bloķētas programmas ID (identifikators, ko programma izmanto, lai reģistrētos pakalpojumā Microsoft AutoUpdate)
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+
+Šis notikums norāda, ka atjauninājums tiks iekļauts klusās instalēšanas rindā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+
+Reģistrējam, kad tiek aizvērta programma, kurai ir gaidošs atjauninājums. Tiek norādīts laiks, kad var turpināt ar faktisko instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+
+Šis notikums norāda, ka tiek izraisīts paziņojums par pieejamu atjauninājumu. Ir jānodrošina plūsma uzvednes par atjauninājumu izraisīšanai, kad tiek atrasts atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+
+Šis notikums norāda, ka lietotājs noklikšķināja paziņojuma par atjauninājuma pieejamību satura sadaļā un tiek palaists Microsoft AutoUpdate GUI. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+
+Šis notikums norāda, ka lietotājs pēc paziņojuma par pieejamu atjauninājumu parādīšanas ir izvēlējies instalēt vēlāk. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+
+Šis notikums norāda, ka lietotājs pēc paziņojuma par pieejamu atjauninājumu parādīšanas ir izvēlējies instalēt tūlīt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installdata_checkrunning"></a>installdata_checkrunning
+
+Šis notikums reģistrē instalējamo programmu un tā, vai notiks instalēšanas mēģinājums, pamatojoties uz to, vai programma ir atvērta, pārbaudes rezultātus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installdata_cleanup"></a>installdata_cleanup
+
+Pakotnes faili pēc instalēšanas ir jānoņem. Šis notikums reģistrē gadījumus, kad tos neizdodas noņemt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur lejupielādētā faila nosaukumu un detalizētu informāciju par kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+
+Šis notikums norāda, ka Microsoft AutoUpdate norādītajā ceļā nevarēja izgūt reģistrētās programmas komplekta informāciju. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+
+Šis notikums reģistrē gadījumus, kad lietotāja preferencē ir iekļauts nederīgs programmas ieraksts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+
+Šis notikums reģistrē gadījumus, kad programmai trūkst komplekta ID. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+
+Šis notikums reģistrē gadījumus, kad programmai trūkst komplekta nosaukuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installstatus_codesign"></a>installstatus_codesign
+
+Šis notikums reģistrē operētājsistēmas binārā koda paraksta statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installstatus_daemon"></a>installstatus_daemon
+
+Šis notikums reģistrē Microsoft AutoUpdate dēmona statusa statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur norādi, vai dēmona komponents pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installstatus_helper"></a>installstatus_helper
+
+Šis notikums reģistrē Microsoft AutoUpdate palīga rīka statusa statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur norādi, vai komponents PrivilegedHelperTool pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+
+Šis notikums norāda, ka Microsoft AutoUpdate noteica programmas palaišanu bloķētam atjauninājumam, bet nevarēja atrast atbilstošo instalēšanas programmu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur palaistās programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+
+Šis notikums norāda, ka Microsoft AutoUpdate noteica programmas palaišanu tādai programmai, kurai tiek gaidīts atjauninājums. Palaistās programmas darbība tiks priekšlaikus pārtraukta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+
+Šis notikums norāda, ka programmas atjauninājumam neizdevās koda paraksta verifikācija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninātās programmas nosaukumu un kļūmes kodu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+
+Šis notikums norāda, ka programmas atjauninājumam tika sākta koda paraksta verifikācija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+
+Šis notikums norāda, ka programmas atjauninājuma koda paraksta verifikācija bija sekmīga. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+
+Šis notikums reģistrē kļūmes, kas rodas, lietojot kluso atjaunināšanu, kā arī to, vai tā bija klonētā vai parastā instalēšana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+    
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma tipu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+
+Šis notikums norāda, ka Microsoft AutoUpdate lejupielādētajā manifestā norādītajai atjauninājumu pakotnei atrada vairākas programmas ieraksta instances. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+
+Šis notikums norāda, ka klons ir noņemts. Klons tiek noņemts, ja instalēšanas klonā process ir pabeigts vai ja tiek sākts jauns process, un datorā ir atrasta vecāka klonēta versija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, atjauninājumu pakotnes nosaukumu, klona noņemšanas statusu/detalizētu informāciju par kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+
+Šis notikums norāda, ka atkārtota instalēšanas mēģinājuma laikā radās kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un informāciju par to, vai instalēšana ir jāveic, izmantojot instalēšanu klonā
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un detalizētu informācija par ziņoto starpniekservera kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un detalizētu informācija par ziņoto starpniekservera kļūdu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+
+### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+
+Šis notikums reģistrē atkārtota mēģinājuma neizdošanos. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā, vai instalēšana notika sekmīgi, kā arī kļūmes gadījumā visas ziņotās kļūdas.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+
+Šis notikums reģistrē sekmīgu atjauninājumu instalēšanu pēc atkārtota mēģinājuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+
+Šis notikums norāda, vai iestatījuma preference pēc instalēšanas atkārtoti atvērt GUI bija sekmīga. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda darbības sekmīgumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+
+Šis notikums norāda, ka tika izdota CLI (klienta rindas interfeiss) komanda, lai lietotu atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atjaunināmo programmu ID sarakstu.
+    
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+
+Šis notikums norāda, ka Microsoft AutoUpdate komandrindas interfeisa modulis saņēma Apple notikumu, lai veiktu konfigurēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+
+Šis notikums norāda, ka Microsoft AutoUpdate komandrindas interfeisa modulis saņēma Apple notikumu, lai uzskaitītu atjauninājumus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+
+Šis notikums norāda, ka atjauninājumi ir lejupielādēti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur lejupielādēto atjauninājumu sarakstus
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+
+Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem, kurus neizdevās lietot. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atjauninājumu sarakstus.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+
+Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem, kuru instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atjauninājumu sarakstus.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+
+Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atjauninājumu sarakstus.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="optinnotificationaction"></a>Optinnotificationaction
+
+Šis notikums reģistrē lietotāja atbildi uz piekrišanas dialogu, lai izmantotu kluso atjaunināšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur statisku tekstu, kas norāda lietotāja atlasi piekrišanai automātiski lejupielādēt un instalēt.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="sauupdateinfoprovider"></a>sauupdateinfoprovider
+
+Šis notikums reģistrē manifesta atslēgas iztrūkumu papildmateriālos. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur virkni, kas izmantota, lai meklētu atjauninājuma atrašanās vietu vai lielumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatecore_appregistration"></a>updatecore_appregistration
+
+Šis notikums reģistrē mēģinājumus reģistrēt programmu un rezultātu/iemeslu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, norādi par to, vai ir pieejama preference, norādi par to, vai tā ir atkārtota reģistrācija, un norādi par to, vai ir nepieciešama reģistrācija.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+
+Šis notikums norāda palaišanas aģenta ielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+
+Šis notikums reģistrē kļūdas, kas rodas, sazinoties ar CDN. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver informāciju par servera nosaukumu, vai serveris ir derīgs un vai serveris ir sasniedzams.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+
+Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka no programmas metadatiem nevarējām izgūt datumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+
+Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka programmas metadatos trūkst datuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+    
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+
+Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka programmas metadatos trūkst datuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+
+Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam pakalpojuma apiešanu sena atjauninājuma datuma dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_check_start"></a>updatefinder_check_start
+
+Šis notikums reģistrē gadījumus, kad tiek sākta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+    
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_check_status"></a>updatefinder_check_status
+
+Šis notikums apkopo pārbaužu, vai nav atjauninājumu, statusu (piltuve no meklēšanas līdz lejupielādei). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+
+Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā tiek atrasti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+
+Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā netiek piedāvāti atjauninājumi, jo neviens atjauninājums nav atrasts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+
+Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā netiek piedāvāti atjauninājumi, jo visas programmas jau ir atjauninātas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+
+Reģistrējam ikreiz, kad bloķējam kādu atjauninājumu, jo nav atbilstības operētājsistēmas prasībām. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver minimālo nepieciešamo operētājsistēmas versiju, kā tas ir norādīts lejupielādētā manifesta failā.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+
+Šis notikums norāda, ka Microsoft AutoUpdate lejupielādētajā manifestā norādītajam programmas ID nevarēja ielādēt komplekta informāciju. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+
+Šis notikums norāda, ka programmai un bāzlīnijai tika atrasts atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver programmas ID un komplekta versijas informāciju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+
+Reģistrējam programmas, kas tiek instalētas/reģistrētas/MAU kontrolētas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver programmas ID un komplekta versijas informāciju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo trūkst papildmateriālu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo bāzes versija ir pārāk veca. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana ir lietojama. Reģistrējam bāzlīnijas versiju un komplekta AppId. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas tiek instalētas, izmantojot noklusējuma ceļu. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas ir vienā bāzes versijā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo komplekta lielums pārsniedz atsevišķo atjauninājumu lielumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana tiek piedāvāta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+
+Šis notikums reģistrē vairākus atjauninājumus, kurus Microsoft AutoUpdate atrada pārbaudot, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+
+Šis notikums norāda, ka atjauninājumi ir atrasti un gaida instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur norādi, vai uzdevums tiek izpildīts galvenajā pavedienā, un gaidāmo atjauninājumu skaitu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+
+Šis notikums norāda, ka ir atrasti klusās atjaunināšanas kandidāti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — ietver atrasto atjauninājumu skaitu un programmas ID.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+
+Šis notikums reģistrē mijiedarbību starp klienta kodu un līdzekļu vārteju, kas kontrolē, vai klientam ir jāatļauj delta atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur atbildi no tīmekļa pakalpojumiem un lietojamā atjauninātāja tipu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Reģistrējam visas kļūdas, kas rodas neparedzētas tīmekļa pakalpojuma atbildes dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur detalizētu informāciju par darbībām, kas tiek stumtas no tīmekļa pakalpojumiem.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Reģistrējam visas kļūdas, kas rodas neparedzētas tīmekļa pakalpojuma atbildes dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur detalizētu informāciju par darbībām, kas tiek stumtas no tīmekļa pakalpojumiem.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+
+Šis notikums reģistrē pieprasījumus MAU pakalpojumam, atbilžu laikus un kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+    
+### <a name="webservices_silentupdate"></a>webservices_silentupdate
+
+Reģistrējam pieprasījumus, lai pārbaudītu, vai nav piespiedu atjauninājumu lietošanas kārtulu, t.i., vai lietotājam no būvējuma N nav jāpāriet uz būvējumu N+1, jo pastāv kāda liela problēma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
+
+### <a name="webservices_webcontent"></a>webservices_webcontent
+
+Reģistrējam tīmekļa pakalpojumā saņemtos pieprasījumus un atbildes. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kādā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur tīmekļa pakalpojuma izsaucēja ID
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+## <a name="onenote-sync-events"></a>OneNote sinhronizācijas notikumi
+
+### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
+ 
+Šis notikums reģistrē piezīmju grāmatiņas sinhronizācijas rezultātu. Tas tiek lietots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu.
+ 
+Tiek apkopoti tālāk norādītie lauki
+
+- **CachedError_Code**A— numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kešatmiņā saglabātās kļūdas raksturu un/vai to, kāpēc tā radās
+
+- **CachedError_Description** — kešatmiņā saglabātās kļūdas apraksts
+
+- **CachedError_Tag** — norāda, kur kodā rodas kešatmiņā saglabātā kļūda
+
+- **CachedError_Type** — kešatmiņā saglabātās kļūdas tips, piemēram, Win32Error u.tml.
+
+- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu piezīmju grāmatiņu
+
+- **Gosid** — globālais objektu telpas ID
+
+- **IdentityType** — identitātes tips, piemēram, Windows Live, organizācijas ID utt.
+
+- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
+
+- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
+
+- **IsCachedErrorSuppressed** — norāda, vai kešatmiņā saglabātā kļūda tiek apspiesta
+
+- **IsCachedErrorUnexpected** — norāda, vai kešatmiņā saglabātā kļūda ir neparedzēta
+
+- **IsNotebookErrorSuppressed** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda tiek apspiesta
+
+- **IsNotebookErrorUnexpected** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda ir neparedzēta
+
+- **IsSectionErrorSuppressed** — norāda, vai sadaļu sinhronizācijas kļūdas tiek apspiestas
+
+- **IsSectionErrorUnexpected** — norāda, vai sadaļas sinhronizācijas kļūda bija paredzēta
+
+- **IsUsingRealtimeSync** — norāda, vai piezīmju grāmatiņas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
+
+- **LastAttemptedSync** — laikspiedols, kad piezīmju grāmatiņu tika mēģināts sinhronizēt iepriekšējo reizi
+
+- **LastBackgroundSync** — laikspiedols, kad notika pēdējais mēģinājums veikt sinhronizāciju fona režīmā
+
+- **LastNotebookViewedDate** — datums, kad piezīmju grāmatiņa pēdējoreiz tika skatīta
+
+- **LastSuccessfulSync** — laikspiedols, kad piezīmju grāmatiņa iepriekš sekmīgi sinhronizēta
+
+- **NeedToRestartBecauseOfInconsistencies** — norāda, vai sinhronizācija ir jārestartē, jo pastāv nekonsekvences
+
+- **NotebookErrorCode** — piezīmju grāmatiņas līmeņa sinhronizācijas kļūdas kods, kas saglabāts piezīmju grāmatiņas diagrammas apgabalā
+
+- **NotebookId** — piezīmju grāmatiņas ID
+
+- **NotebookType** — piezīmju grāmatiņas tips
+
+- **ReplicatingAgainBecauseOfInconsistencies** — norāda, vai sinhronizācija tiek restartēta nekonsekvenču dēļ
+
+- **SectionError_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu sadaļas sinhronizācijas kļūdas raksturu un/vai to, kāpēc tā radās
+
+- **SectionError_Description** — sadaļas sinhronizācijas kļūdas apraksts
+
+- **SectionError_Tag** — norāda, kur kodā rodas sadaļas sinhronizācijas kļūda
+
+- **SectionError_Type** — sadaļas sinhronizācijas kļūdas tips, piemēram, Win32Error u.tml.
+
+- **Success** — norāda, vai piezīmju grāmatiņas sinhronizācija izdevās
+
+- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
+
+- **SyncId** — katrai piezīmju grāmatiņas sinhronizācijai unikāls numurs
+
+- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
+
+- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
+
+- **TenantId** — SharePoint nomnieka ID
+
+- **TimeSinceLastAttemptedSync** — laiks, kas pagājis kopš pēdējā piezīmju grāmatiņas sinhronizācijas mēģinājuma
+
+- **TimeSinceLastSuccessfulSync** — laiks, kas pagājis kopš pēdējās sekmīgās piezīmju grāmatiņas sinhronizēšanas
+
+### <a name="officeonenotestoragerealtimewebsocketsessioninfo"></a>Office.OneNote.Storage.RealTime.WebSocketSessionInfo
+ 
+Šis notikums reģistrē WebSocket sinhronizācijas rezultātu gan OneNote modernā lapas satura sinhronizācijai, gan modernās hierarhijas sinhronizācijai. Tas tiek lietots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu. Tas tiek izmantots arī OneNote modernās sinhronizācijas veiktspējas informācijas paneļa vajadzībām.
+ 
+Tiek apkopoti šādi lauki:
+ 
+- **CloseReason** — WebSocket aizvēršanas iemesls, piemēram, anormāla aizvēršana utt.
+
+- **DataIsFreshCount** — sekmīgo atgādāšanas pieprasījumu skaits WebSocket sesijā
+
+- **DeviceSessionId** — ierīces sesijas ID
+
+- **DownloadCount** — lejupielāžu skaits WebSocket sesijā
+
+- **Error** — tas pamatā ir Exception_Type+Exception_Description+Exception_Code+Exception_Tag
+
+- **Exception_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+
+- **Exception_Description** — kļūdas apraksts
+
+- **Exception_Tag** — norāda, kur kodā rodas kļūda
+
+- **Exception_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+
+- **FirstUpdateSize** — pirmā atjaunināšanas ziņojuma garums
+
+- **HasError** — norāda, vai WebSocket sesijas laikā radās kļūda 
+
+- **IsEducationNotebook** — norāda, vai pašreizējā piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+
+- **IsHierarchyResource** — norāda, vai pašreizējais resurss ir lapa vai sadaļa
+
+- **NotebookId** — OneNote piezīmju grāmatiņas ID
+
+- **OperationWithError** — kuras operācijas laikā notika kļūda, piemēram, WebSocket.Close, WebSocket.Open u.tml.
+
+- **ResourceId** — OneNote lapas vai sadaļas resursa ID
+
+- **SectionId** — OneNote sadaļas ID
+
+- **ServerSessionId** — sesijas ID, kas tiek izmantota savstarpējai WebSocket pieprasījuma un onenote.com saistīšanai
+
+- **SessionDurationInMs** — WebSocket sesijas ilgums milisekundēs
+
+- **TenantId** — SharePoint nomnieka ID
+
+- **TimeToFirstUpdateInMs** — laiks milisekundēs, kas bija nepieciešams, lai saņemtu pirmo atjauninājumu no servera puses pēc tam, kad tika izveidota WebSocket sesija
+
+- **UploadAckCount** — augšupielādes apstiprinājumu skaits WebSocket sesijā
+
+- **Web URL** — PII notīrītais tīmekļa vietrādis URL 
+
+### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
+ 
+Šis notikums reģistrē sadaļas sinhronizācijas rezultātu. Tas tiek lietots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu. Tas tiek izmantots arī OneNote modernās sinhronizācijas veiktspējas informācijas paneļa vajadzībām.
+ 
+Tiek apkopoti tālāk norādītie lauki
+
+- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+
+- **Error_Description** — kļūdas apraksts
+
+- **Error_Tag** — norāda, kur kodā rodas kļūda
+
+- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+
+- **ErrorLast** — pēdējās radušās kļūdas kods 
+
+- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu sadaļu
+
+- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
+
+- **IsAttachedViaShortcut** — norāda, vai sadaļa tika pievienota, izmantojot saīsni
+
+- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
+
+- **IsEncrypted** — norāda, vai sadaļa ir šifrēta
+
+- **IsErrorSuppressed** — norāda, vai šī kļūda tika apspiesta 
+
+- **IsErrorTransient** — norāda, vai šī kļūda ir pārejoša
+
+- **IsErrorUnexpected** — norāda, vai šī kļūda ir neparedzēta
+
+- **IsUsingRealtimeSync** — norāda, vai sadaļas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
+
+- **NotebookId** — piezīmju grāmatiņas ID
+
+- **NotebookPath** — PII notīrītais piezīmju grāmatiņas vietrādis URL
+
+- **SectionPath** — PII notīrītais sadaļas vietrādis URL
+
+- **SectionReplicatingIsOutbound** — norāda, vai šī ir izejošā replicēšana
+
+- **SectionReplicatingIsSameIdentity** — norāda, vai šīs replicēšanas pamatā ir tā paša pašu faila identitāte
+
+- **SectionResourceId** — OneNote sadaļas resursa ID
+
+- **Success** — norāda, vai sadaļas sinhronizācija izdevās
+
+- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
+
+- **SyncId** — katrai sadaļas sinhronizācijai unikāls numurs
+
+- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
+
+- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
+
+- **TenantId** — SharePoint nomnieka ID
+
+- **UnmappedGosid** — sadaļas ID pirms kartēšanas GUID lietošanas
+
+
+### <a name="officeonenotestoragesyncscore"></a>Office.OneNote.Storage.SyncScore
+ 
+Šis notikums reģistrē visus lietotājiem redzamos negatīvos sinhronizācijas iespēju apstākļus. Tas tiek lietots, lai aprēķinātu OneNote sinhronizācijas vērtējumu, kas ir kritisks rādītājs, novērtējot OneNote lietotāju sinhronizācijas iespējas.
+ 
+Tiek apkopoti tālāk norādītie lauki
+
+- **AutoShowSyncStatus** — norāda, vai sinhronizācijas statuss tiek rādīts automātiski
+
+- **Cause** — kas izraisīja OneNote lapu/sadaļu pārvietošanu uz nesakārtotām sadaļām
+
+- **Context** — uzskaitījums kategorizē, ko lietotājs cenšas veikt, piemēram, sadaļas pārdēvēšana, piezīmju grāmatiņas atkārtota atvēršana utt.
+
+- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+
+- **Error_Description** — kļūdas apraksts
+
+- **Error_Tag** — norāda, kur kodā rodas kļūda
+
+- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+
+- **ErrorText** — kļūdas teksts, kas redzams lietotāja interfeisā
+
+- **Explanation** — paskaidro, kāda veida ir gaidošas izejošās izmaiņas, kas ir jāpārvieto uz nesakārtotām sadaļām
+
+- **fishbowlType** — akvārija tips, piemēram, lapas akvārijs, sadaļas akvārijs utt.
+
+- **IDS** — lietotāja interfeisā redzamā teksta vesela skaitļa identifikators
+
+- **idsFishbowl** — lietotāja interfeisā redzamās akvārija kļūdas vesela skaitļa identifikators
+
+- **IsUsingRealtimeHierarchySync** — norāda, vai tiek izmantota modernās hierarhijas sinhronizācija
+
+- **NotebookId** — piezīmju grāmatiņas ID
+
+- **PageSyncUIState** — lapas sinhronizācijas statusa virkne, piemēram, UpToDate, Syncing, SaveOffline, SyncError utt. 
+
+- **ServerGosid** — jaunizveidotās konflikta lapas resursa ID
+
+- **Source** — uzskaitījums, kas norāda, kurš notikums izraisīja UI, t.i., izveidoja jaunu redx attēlu, sinhronizācijas kļūda sinhronizācijas lietotāja interfeisā, parādīja kļūdas dialogu utt.
+
 
 ## <a name="services-configuration-events"></a>Pakalpojumu konfigurācijas notikumi
 
