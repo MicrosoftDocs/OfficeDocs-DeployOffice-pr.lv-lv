@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz informāciju par neobligātajiem Office diagnostikas datiem, tostarp dažus notikumu piemērus.
 hideEdit: true
-ms.openlocfilehash: cf3a2488d985dd238456e86466688036c0c61ccb
-ms.sourcegitcommit: e6135e9937ef07785f0ce0eb6282ceece401f96e
+ms.openlocfilehash: e4b42e97d7d954a968ad2a1366c6f64235c1d7f0
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35430090"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239013"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Neobligātie Office diagnostikas dati
 
@@ -26,7 +26,9 @@ ms.locfileid: "35430090"
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
 > - Office 365 ProPlus un Office 365 Business
 > - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
-> - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+> - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+>
+> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac programmu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
@@ -47,6 +49,7 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 
 - [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 
 ## <a name="categories-of-optional-diagnostic-data"></a>Neobligāto diagnostikas datu kategorijas
 
