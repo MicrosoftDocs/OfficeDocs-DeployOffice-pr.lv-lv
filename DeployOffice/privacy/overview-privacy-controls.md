@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
+ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238934"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36441604"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
 
@@ -65,7 +65,8 @@ Jūsu lietotāji nevarēs mainīt savas ierīces diagnostikas datu līmeni, ja b
 Šie diagnostikas dati neietver lietotāju vārdus, e-pasta adreses un viņu Office failu saturu. Mūsu sistēma izveido unikālu ID, kas tiek saistīts ar lietotāja diagnostikas datiem. Ja saņemam diagnostikas datus, kuros redzams, ka kāda no mūsu programmām avarēja 100 reizes, šis unikālais ID ļauj noteikt, vai tas bija viens lietotājs, kas avarēja 100 reizes, vai tie bija 100 dažādi lietotāji, kas avarēja katrs pa vienai reizei. Mēs neizmantojam šo unikālo ID, lai identificētu konkrētu lietotāju.
 
 Lai skatītu, kādi diagnostikas dati tiek nosūtīti korporācijai Microsoft, varat izmantot diagnostikas datu skatītāju, kuru varat lejupielādēt un instalēt no veikala Microsoft Store.
-7 Papildinformāciju skatiet šeit:
+
+Papildinformāciju skatiet šeit:
 
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
