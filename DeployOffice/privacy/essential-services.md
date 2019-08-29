@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239178"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656197"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -2472,7 +2472,7 @@ Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectPar
 
 - **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
-- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, izsaucēja iestatītie papildu parametri)
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
 - **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
@@ -7499,7 +7499,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -10504,8 +10504,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **sysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
 
-<!-- end list -->
-
   - **WindowsErrorReportingMachineId** — ierīces, kurā Office darbojas, Windows kļūdu uzrādīšanas piešķirtais datora identifikators.
 
   - **WindowsSqmMachineId** — ierīces, kurā Office darbojas, Windows piešķirtais datora identifikators.
@@ -11163,6 +11161,12 @@ Tiek apkopoti tālāk norādītie lauki.
   - **ErrorMessage** — parsēšanas kļūdas ziņojums
 
   - **NodeName** — mezgls, kuru neizdevās parsēt
+
+### <a name="officetelemetrydynamicconfigpopulatedrequestignored"></a>Office.Telemetry.DynamicConfig.PopulatedRequestIgnored
+
+Šis notikums tiek ģenerēts, kad mums neizdodas izveidot telemetrijas konfigurācijas konveijeru.
+
+Šis notikums neapkopo laukus.
 
 ### <a name="officetelemetrydynamicconfigpopulatetreecalledagain"></a>Office.Telemetry.DynamicConfig.PopulateTreeCalledAgain
 
