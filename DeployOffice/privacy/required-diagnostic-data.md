@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238898"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656125"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -954,27 +954,19 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Notikums, kas tiek ģenerēts, ja COM pievienojumprogramma tiek ielādēta uzņēmuma ierīcē. Desktop Analytics: ielāžu skaits tiek izmantots kā darbspējas aprēķina daļskaitļa saucējs (avāriju skaits/ielāžu skaits ) darbspējas rādītāju aprēķinam izmēģinājuma un ražošanas lokiem uzņēmuma scenārijos. Datiem ir jābūt precīziem un neiztvertiem, jo ierīču skaits ir mazāks (100–1 tūkst.).
+Notikums, kas tiek ģenerēts, ja COM pievienojumprogramma tiek ielādēta uzņēmuma ierīcē. 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Add-inconnectFlag** — pašreizējās ielādes darbība
+  - **Activity Result** — savienojuma izveidošanas stāvoklis.
 
-  - **Add-inDescription** — pievienojumprogrammas apraksts
+  - **Add-inconnectFlag** — pašreizējās ielādes darbība.
 
-  - **Add-inFileName** — pievienojumprogrammas faila nosaukums bez faila ceļa
+  - **Add-inId** — pievienojumprogrammas klases ID.
 
-  - **Add-inFriendlyName** — pievienojumprogrammas draudzīgais nosaukums
+  - **Add-inTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
-  - **Add-inId** — pievienojumprogrammas klases ID
-
-  - **Add-inProgId** — pievienojumprogrammas Prog ID
-
-  - **Add-inProvider** — pievienojumprogrammas nodrošinātājs
-
-  - **Add-inTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem
-
-  - **Add-inVersion** — pievienojumprogrammas versija
+  - **IsBootInProgress** — norāda, vai Office lietojumprogramma ir ielādes procesā.
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -2653,7 +2645,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_SessionId:long** — ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
 
-- **Data_DstDoc_SharePointServiceContext:string** — necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu
+- **Data_DstDoc_SharePointServiceContext:string**— necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_DstDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
@@ -3016,13 +3008,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-Tiek apkopots katru reizi, kad tiek pabeigta PDF drukāšanas vai eksportēšanas darbība, un satur informāciju par izkārtojuma veidu, kā arī darbības rezultātu. Mūsu lietojumprogrammā šī informācija ir kritiski svarīga PDF drukāšanas vai eksportēšanas darbību veiksmīgas izpildes noteikšanai.
+Tiek apkopots katru reizi, kad tiek veikta PDF eksportēšanas darbība, un satur informāciju par darbības rezultātu. Mūsu lietojumprogrammā šī informācija ir kritiski svarīga PDF eksportēšanas darbību veiksmīgas izpildes noteikšanai.
 
 Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_ExportAsPDFSucceed** — būla, kas norāda, ka PDF eksportēšana bija veiksmīga.
-
-- **Data_SavePrintLayoutType** — drukas izkārtojuma veids brīdī, kad tiek uzsākta drukāšanas vai eksportēšanas darbība. 
 
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -5602,10 +5592,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
-Notikums, kas tiek ģenerēts, ja COM pievienojumprogramma avarē
+Šis notikums tiek ģenerēts, kad Office lietotāju versijā notiek COM pievienojumprogrammas avārija. 
 
-Datora analīze: to izmanto kā uzņēmuma darbspējas statusa izskaitļošanas skaitītāju tām pievienojumprogrammām, kas tiek izmantotas secinājumu veikšanai izmēģinājuma laikā, ja pievienojumprogrammas ir gatavas jaunināšanai ražošanas ciklā.  
-Globālie ieskati: tos izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu pievienojumprogrammu gatavību, kas tiek publicēta vietnē readyforwindows.com, un citiem rīkiem, piemēram, Readiness Toolkit
+Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus gatavību, kas tiek publicēta vietnē readyforwindows.com, un citiem rīkiem, piemēram, Readiness Toolkit Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -5617,15 +5606,15 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AddinId** — pievienojumprogrammas klases ID
 
-- **AddinProgId** — pievienojumprogrammas Prog ID
+- **AddinProgId** — novecojis.
 
-- **AddinFriendlyName** — pievienojumprogrammas draudzīgais nosaukums
+- **AddinFriendlyName** — novecojis.
 
-- **AddinTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem
+- **AddinTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
-- **AddinVersion** — pievienojumprogrammas versija
+- **AddinVersion** — novecojis.
 
-- **AddinFileName** — pievienojumprogrammas faila nosaukums bez faila ceļa
+- **AddinFileName** — novecojis.
 
 - **VSTOAddIn** — vai pievienojumprogramma ir VSTO
 
@@ -5635,34 +5624,33 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
-Notikums, kas tiek ģenerēts, ja COM pievienojumprogramma avarē.  Izmanto kā uzņēmuma darbspējas statusa izskaitļošanas skaitītāju tām pievienojumprogrammām, kas tiek izmantotas secinājumu veikšanai izmēģinājuma laikā, ja pievienojumprogrammas ir gatavas jaunināšanai ražošanas ciklā.
+Šis notikums tiek ģenerēts, kad Office biznesa versijā notiek COM pievienojumprogrammas avārija.
 
-Tiek apkopoti tālāk norādītie lauki (ņemiet vērā, ka šie lauki ir rakstīti kā vietturi, lai nepieļautu esošo skriptu darbības traucējumus: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName).
+Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus gatavību, kas tiek publicēta vietnē readyforwindows.com, un citiem rīkiem, piemēram, Readiness Toolkit Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
 
+- **ScopeId** — pašreizējā pavediena tvērums
 
-- **AddinConnectFlag** — pašreizējās ielādes darbība.
+- **Method** — Office metode, kurā radās izņēmums
 
-- **AddinFileName** — tukšs lauks — novecojis.
+- **Interface** — Office interfeiss, kurā radās izņēmums
 
-- **AddinFriendlyName** — tukšs lauks — novecojis.
+- **AddinId** — pievienojumprogrammas klases ID
 
-- **AddinId** — pievienojumprogrammas klases ID.
+- **AddinProgId** — novecojis.
 
-- **AddinProgId** — tukšs lauks — novecojis.
+- **AddinFriendlyName** — novecojis.
 
 - **AddinTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
-- **AddinVersion** — tukšs lauks — novecojis.
+- **AddinVersion** — novecojis.
 
-- **Interface** — Office interfeiss, kurā radās izņēmums.
+- **AddinFileName** — novecojis.
 
-- **LoadAttempts** — pievienojumprogrammas ielādes mēģinājumu skaits.
+- **VSTOAddIn** — vai pievienojumprogramma ir VSTO
 
-- **Method** — Office metode, kurā radās izņēmums.
+- **AddinConnectFlag** — pašreizējās ielādes darbība
 
-- **ScopeId** — pašreizējā pavediena tvērums.
-
-- **VSTOAddIn** — vai pievienojumprogramma ir VSTO.
+- **LoadAttempts** — pievienojumprogrammas ielādes mēģinājumu skaits
 
 #### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
@@ -6051,6 +6039,10 @@ Tiek apkopots, palaižot Office programmu. Ietver informāciju par to, vai palai
 Tiek apkopoti šādi lauki:
 
   - **ActivationKind** — vai programma tika startēta, palaižot no sākuma izvēlnes, atverot failu vai izmantojot OLE automatizāciju.
+  
+  - **BootToStart** — vai lietotājs ir izvēlējies sākuma ekrāna parādīšanu lietojumprogrammas startēšanas laikā.
+
+  - **DocLocation** —  dokumenta atvēršanas brīdī norāda uz dokumenta izcelsmes pakalpojumu (OneDrive, File Server, SharePoint, u. tml.).
 
   - **FirstBoot** — vai šī bija pirmā programmas palaišana.
 
@@ -6062,7 +6054,37 @@ Tiek apkopoti šādi lauki:
 
   - **VirtualSetMB** — atmiņas apjoms megabaitos procesa virtuālajā kopā. (Tikai MacOS/iOS)
 
-  - **WorkingSetPeakMB** — lielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
+  - **WorkingSetPeakMB** — vislielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
+
+#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Darbība, kas izseko, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
+
+Tiek apkopoti šādi lauki:
+
+  - **Data_CanShow** — norāda, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
+  
+  - **Data_Event** — netiek izmantots
+
+  - **Data_EventInfo** — netiek izmantots
+
+  - **Data_Reason** — netiek izmantots.
+ 
+
+#### <a name="officeuxofficeinsiderregistercurrentinsider"></a>Office.UX.OfficeInsider.RegisterCurrentInsider
+
+Kritisks signāls, kas ļauj izsekot veiksmīgu vai neveiksmīgu iepriekš nereģistrētu Office Insider versiju lietotāju reģistrāciju. Tas ir paredzēts Office Insider lietotājiem, kas pievienojās Office Insider programmai pirms tika ieviesta Office Insider reģistrācija.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Data_RegisterInsider** — Office Insider reģistrācijas statuss.
+
+- **Data_RegisterInsiderHr** — Office Insider reģistrācijas rezultāta kods.
+
+- **Data_RegistrationStateCurrent** — pašreizējais reģistrācijas stāvoklis.
+
+- **Data_RegistrationStateDesired** — pieprasītais reģistrācijas stāvoklis.
+
 
 #### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
@@ -6086,19 +6108,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_RegisterInsiderHr** — Office Insider reģistrācijas rezultāta kods.
 
-#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+- **Data_RegistrationStateCurrent** — pašreizējais reģistrācijas stāvoklis.
 
-Darbība, kas izseko, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
+- **Data_RegistrationStateDesired** — pieprasītais reģistrācijas stāvoklis.
 
-Tiek apkopoti šādi lauki:
 
-  - **Data_CanShow** — norāda, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
-  
-  - **Data_Event** — netiek izmantots
-
-  - **Data_EventInfo** — netiek izmantots
-
-  - **Data_Reason** — netiek izmantots
 
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
