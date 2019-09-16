@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
-ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
+ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
+ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36441604"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980342"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
 
@@ -37,7 +37,8 @@ Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika i
 > - Šīs izmaiņas attiecas arī uz tālāk norādīto programmatūru.
 >   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
 >   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, plāns Project Online Professional vai Visio Online 2. plāns, versija 1904 vai jaunākas versijas.
-> - Paredzams, ka versijā 1904 nodrošinātie konfidencialitātes kontroles līdzekļi būs pieejami pusgada kanālā (atlasīta versija) 2019. gada septembrī, bet pusgada kanālā tie būs pieejami 2020. gada janvārī.
+> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908, kura tika izlaista 2019. gada 10. septembrī. Tos ir paredzēts publiskot pusgada kanālā 2020. gada janvārī.
+> - Šos konfidencialitātes kontroles līdzekļus ir plānots izlaist 2019. gada oktobra otrajā pusē programmu Excel, OneNote, PowerPoint, Visio un Word operētājsistēmas iOS versijai. Mēs sniegsim vairāk informācijas oktobra sākumā.
 > - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti korporācijai Microsoft
