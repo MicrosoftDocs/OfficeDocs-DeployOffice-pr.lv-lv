@@ -53,7 +53,7 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 
 [Tiešsaistes video ievietošana](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) sniedz iespēju ievietot video failus dokumentā. Uz tiešsaistes video ievietošanas līdzekli attiecas [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement) un [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Var tikt piemēroti papildu lietošanas noteikumi, ja piekļūstat saturam no trešās puses avotiem. Piemēram, kad izveidojat savienojumu ar YouTube, ir spēkā šī pakalpojuma [lietošanas noteikumi](https://www.youtube.com/t/terms) un [paziņojums par konfidencialitāti](https://policies.google.com/privacy). Microsoft var pievienot citus video materiālu sniedzējus nākotnē.
 
-### <a name="microsoft-error-reporting-program-merp"></a>Microsoft kļūdu atskaišu veidošanas programma (MERP) 
+### <a name="microsoft-error-reporting-program-merp"></a>Microsoft kļūdu uzrādīšanas programma (MERP) 
 
 MERP izveido savienojumu ar pakalpojumu Watson.microsoft.com, lai nosūtītu diagnostikas datus, kad Office klienta programmas, kas darbojas Mac ierīcēs, avarē. Tā pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. MERP neattiecas uz Office klienta programmām, kas darbojas sistēmā Windows.
 
