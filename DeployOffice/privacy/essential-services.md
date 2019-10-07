@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656197"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386926"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -585,6 +585,27 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_PrereqFailure\_Type —** priekšnosacījumu kļūme, kas rodas
 
   - **Data\_ProductReleaseId —** produkts, ko instalējam, t.i., Office 365 ProPlus
+
+### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
+
+Ziņo par jaunā Click-to-Run atjauninājumu konveijera statusu (“Repoman”) un par to, vai tas veiksmīgi lejupielādē un instalē Office atjauninājumus.
+
+Tiek apkopoti šādi lauki.
+
+  - **ApplySucceeded —** patiess, ja konveijers veiksmīgi lietoja Office atjauninājumu, pretējā gadījumā — aplams.
+  
+  - **DownloadSucceeded —** patiess, ja konveijers veiksmīgi lietoja Office atjauninājumu, pretējā gadījumā — aplams.
+
+  - **ErrorCode —** pēdējās kļūdas kods, kura radās Click-to-Run Repoman konveijerā.
+
+  - **ErrorDetails —** papildu informācija par kļūdu, kura radās Click-to-Run Repoman konveijerā.
+ 
+  - **ErrorMessage —** pēdējās kļūdas ziņa, kura radās Click-to-Run Repoman konveijerā.
+
+  - **OpenStreamSessionSucceeded —** patiess, ja konveijerā veiksmīgi tiek radīta sesija Office atjauninājuma straumēšanai, pretējā gadījumā — aplams.
+
+  - **RepomanErrorMessage —** kļūdas ziņojums, kurš saņemts no repoman.dll.
+ 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
@@ -2658,6 +2679,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **UnmergedConfigs** — nesapludināto konfigurāciju saraksts
 
+### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
+
+Šis pasākums palīdz analizēt produktu lietojuma un veiktspējas rādītāju apjomu (piemēram, avārijas, uzkāršanos) lietotāju vai ierīču apakškopā, kura drīkst izmantot līdzekli, nodrošinot pareizu produkta darbību.
+
+Tiek apkopoti šādi lauki.
+
+  - **FeatureGate —** nosaka līdzekļu kopu, kura atbilst cēloņu analīzei.
 
 ## <a name="licensing-events"></a>Licencēšanas notikumi
 
@@ -3111,7 +3139,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3316,7 +3344,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3357,7 +3385,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3398,7 +3426,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3439,7 +3467,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3480,7 +3508,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3522,7 +3550,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3563,7 +3591,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3604,7 +3632,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
     
@@ -3645,7 +3673,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3682,11 +3710,11 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, veikšanas procesā netika atrasti atjauninājumi, jo ierīcē esošās programmas ir atjauninātas.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3727,7 +3755,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3768,7 +3796,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3809,7 +3837,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3850,7 +3878,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3891,7 +3919,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3932,7 +3960,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3973,7 +4001,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4014,7 +4042,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4055,7 +4083,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4096,7 +4124,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
 - **AppVersionLong** — programmas versija
 
@@ -4137,7 +4165,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4178,7 +4206,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4219,7 +4247,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4260,7 +4288,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4300,7 +4328,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4341,7 +4369,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4382,7 +4410,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4423,7 +4451,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4464,7 +4492,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4505,7 +4533,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4546,7 +4574,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4587,7 +4615,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4628,7 +4656,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4670,7 +4698,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4711,7 +4739,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4752,7 +4780,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4793,7 +4821,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4834,7 +4862,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4875,7 +4903,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4916,7 +4944,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4957,7 +4985,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4998,7 +5026,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5039,7 +5067,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5080,7 +5108,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5121,7 +5149,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5162,7 +5190,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5203,7 +5231,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5244,7 +5272,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5285,7 +5313,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5326,7 +5354,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5367,7 +5395,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5408,7 +5436,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5449,7 +5477,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5490,7 +5518,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5531,7 +5559,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5572,7 +5600,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5613,7 +5641,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5654,7 +5682,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5695,7 +5723,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5736,7 +5764,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5777,7 +5805,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5818,7 +5846,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5859,7 +5887,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5900,7 +5928,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5941,7 +5969,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5982,7 +6010,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6023,7 +6051,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6064,7 +6092,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6105,7 +6133,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6146,7 +6174,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6187,7 +6215,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6228,7 +6256,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6269,7 +6297,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6310,7 +6338,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6351,7 +6379,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6392,7 +6420,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6433,7 +6461,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6474,7 +6502,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6515,7 +6543,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6556,7 +6584,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6597,7 +6625,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6638,7 +6666,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6679,7 +6707,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6720,7 +6748,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6761,7 +6789,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6802,7 +6830,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6843,7 +6871,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6884,7 +6912,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6925,7 +6953,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -6966,7 +6994,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7007,7 +7035,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7048,7 +7076,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7089,7 +7117,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7130,7 +7158,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7171,7 +7199,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7212,7 +7240,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7253,7 +7281,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7294,7 +7322,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7335,7 +7363,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7417,7 +7445,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7458,7 +7486,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7540,7 +7568,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7581,7 +7609,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7622,7 +7650,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7663,7 +7691,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7704,7 +7732,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7745,7 +7773,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7786,7 +7814,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7827,7 +7855,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7868,7 +7896,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7909,7 +7937,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7950,7 +7978,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7992,7 +8020,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8033,7 +8061,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8074,7 +8102,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8115,7 +8143,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8156,7 +8184,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8197,7 +8225,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8238,7 +8266,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8279,7 +8307,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8320,7 +8348,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8361,7 +8389,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8402,7 +8430,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8443,7 +8471,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8484,7 +8512,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8525,7 +8553,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8566,7 +8594,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8607,7 +8635,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8648,7 +8676,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8689,7 +8717,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8730,7 +8758,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8771,7 +8799,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8812,7 +8840,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8853,7 +8881,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8894,7 +8922,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8935,7 +8963,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8976,7 +9004,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9017,7 +9045,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9058,7 +9086,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9099,7 +9127,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9140,7 +9168,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9181,7 +9209,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9222,7 +9250,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9263,7 +9291,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9304,7 +9332,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9345,7 +9373,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9386,7 +9414,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9427,7 +9455,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9468,7 +9496,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9509,7 +9537,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9550,7 +9578,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9591,7 +9619,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9632,7 +9660,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9673,7 +9701,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9714,7 +9742,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9756,7 +9784,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -10920,7 +10948,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Tiek izmantots, lai tvertu avāriju metriku.
+Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzdevumu pārvaldnieks, uzkaras programma utt.) Office klienta programmām, ieskaitot, bet ne tikai, Word, Excel, PowerPoint un Outlook. Mēs izmantojam rādītājus par nelabvēlīgu iziešanu no programmas, lai mērītu Office klienta produktu darbspēju. Tas ir uzņēmējdarbībā svarīgs signāls, kuru izmanto Office inženieri, lai noteiktu produktu stabilitāti.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -10932,11 +10960,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **CrashedAppRevision —** būvējuma versijas identifikators ietekmētajam procesam.
 
-  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
-
   - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
-
-  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
 
   - **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
@@ -10951,6 +10975,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **ExceptionAddress —** adrese programmā, kur kļūme radās.
 
   - **ExceptionCode —** izņēmuma intervāla identifikators.
+
+  - **HexCrashTag —** unikālais avārijas koda identifikators.
 
   - **HexExceptionAddress —** adrese heksadecimālā formātā programmā, kur kļūme radās.
 
@@ -10977,6 +11003,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **PreviousBuild —** iepriekš instalētā būvējuma versija
 
   - **UAEOSEnvironment —** operētājsistēmas vides identifikators.
+
+  - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
 
   - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja.
 
