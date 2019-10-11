@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238977"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417325"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -119,6 +119,16 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti paka
 Šie saistītie līdzekļi var atšķirties, jo uz tiem neattiecas jūsu organizācijas komerclīgums ar korporāciju Microsoft. Neobligātos saistītos līdzekļus Microsoft piedāvā tieši lietotājiem, un to darbību regulē [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement), nevis [tiešsaistes pakalpojumu nosacījumi](https://www.microsoft.com/licensing/product-licensing/products). Dažos gadījumos šo neobligāto saistīto līdzekļu ietvaros tiek nodrošināts trešo pušu saturs vai funkcijas un ir spēkā citi nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
 
 Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, jūsu lietotājiem būs pieejami šie papildu saistītie līdzekļi.
+
+> [!NOTE]
+> Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* iespējams konfigurēt lietošanai arī šādās Office darbam tīmeklī lietojumprogrammām:
+> - Excel darbam tīmeklī
+> - OneNote darbam tīmeklī
+> - PowerPoint darbam tīmeklī
+> - Visio darbam tīmeklī
+> - Word darbam tīmeklī
+>
+> Šajās Office tīmekļa lietojumprogrammās ir ieplānots sākt izmantot jauno privātuma kontroli papildu pievienotajām iespējām 2019. gada oktobra vidū, taču varat konfigurēt politikas iestatījumu jau tagad. Lai konfigurētu šo politikas iestatījumu šīm Office darbam tīmeklī lietojumprogrammām, ir jāizmanto [Office mākoņa politikas pakalpojums](../overview-office-cloud-policy-service.md).
 
 Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 

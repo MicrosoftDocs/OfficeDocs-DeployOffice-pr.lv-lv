@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: a5770d3ed30f86dfbf1cb1dfc4a45bbb15179da8
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656125"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386972"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -124,31 +124,31 @@ Informācija saistībā ar lietotāja piekrišanu diagnostikas datiem un saistī
 
   - **DiagnosticConsentSourceLocation** — norāda, kā lietotājs ir iesniedzis atļauju diagnostikas datiem
 
-  - **DiagnosticConsentConsentTime** — norāda, kad lietotājs ir iesniedzis atļauju diagnostikas datiem
+  - **DiagnosticConsentConsentTime** — norāda, kad lietotājs ir iesniedzis atļauju diagnostikas datiem. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
   - **ServiceConnectionState** — norāda, vai lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
 
   - **ServiceConnectionStateSourceLocation** — norāda, kā lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
 
-  - **ServiceConnectionStateConsentTime** — norāda, kad lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
+  - **ServiceConnectionStateConsentTime** — norāda, kad lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
   - **ControllerConnectedServicesState** — norāda, vai lietotājam ir piekļuve neobligātajiem saistītajiem līdzekļiem
 
   - **ControllerConnectedServicesStateSourceLocation** — norāda, kā tika veikta lietotāja izvēle lietot neobligātos saistītos līdzekļus
 
-  - **ControllerConnectedServicesStateConsentTime** — norāda, kad lietotājs izvēlējās neobligāto saistīto līdzekļu statusu
+  - **ControllerConnectedServicesStateConsentTime** — norāda, kad lietotājs izvēlējās neobligāto saistīto līdzekļu statusu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
   - **UserContentDependentState** — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
 
   - **UserContentDependentStateSourceLocation** — norāda, kā tika veikta lietotāja izvēle iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
 
-  - **UserContentDependentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
+  - **UserContentDependentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas analizē saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
   - **DownloadContentState** — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
 
   - **DownloadContentStateSourceLocation** — norāda, kā lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
 
-  - **DownloadContentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu.
+  - **DownloadContentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
 #### <a name="device"></a>Ierīce 
 
@@ -305,6 +305,10 @@ Informācija par ierīces konfigurāciju un iespējām.
   - **MotherboardUUIDHash** — mātesplates unikālā identifikatora jaucējkods. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
   - **Name** — ierīces nosaukums. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  
+  - **NetworkCost** — norāda tīkla izmaksas vai tipu, piemēram, mērāms vai mērāms virs ierobežojuma.
+  
+  - **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
 
   - **NumProcPhysCores** — fizisko kodolu skaits mašīnā. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
@@ -613,7 +617,66 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **sessionID** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
-- **UTCReplace_AppSessionGuid** — konstanta Būla vērtība. Vienmēr True.
+- **UTCReplace_AppSessionGuid** — konstanta Būla vērtība. Vienmēr patiess.
+
+#### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
+
+Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji var sekmīgi palaist un lietot OneNote pirmo reizi.  Telemetrija, kas tiek apkopota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
+
+- **AfterOneDriveFrozenAccountError** — norāda kļūdu no OneDrive, kad konts ir sasaldēts.
+
+- **Attempt** — reižu skaits, cik ir jāatkārto pirmās palaišanas pieredze.
+
+- **IsDefaultNotebookCreated** — norāda, vai programma OneNote ir izveidojusi lietotāja noklusējuma piezīmju grāmatiņu.
+
+- **IsDelayedSignIn** — norāda, vai pirmā palaišana ir aizkavētas pierakstīšanās režīmā, kur lietotājam nav nepieciešams pierakstīties.
+
+- **IsMSA** — norāda, vai konts ir Microsoft konts.
+
+#### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
+
+Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.
+Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Attempt** — reižu skaits, cik ir jāatkārto pirmās palaišanas pieredze.
+
+- **Error A** — OneNote kļūdas objekts norāda kļūdu, kas radusies pirmās palaišanas laikā.
+
+- **FAllowAddingGuide** — norāda, vai OneNote ļauj izveidot piezīmju grāmatiņu.
+
+- **FrozenOneDriveAccount** — norāda, vai OneDrive konts ir sasaldēts.
+
+- **IsDefaultNotebookCreated** — norāda, vai programma OneNote ir izveidojusi lietotāja noklusējuma piezīmju grāmatiņu.
+
+- **NoInternetConnection** — norāda, vai ierīcei nav interneta savienojuma.
+
+- **ProvisioningFailure** — OneNote kļūdas objekts, kas norāda nodrošinājuma kļūdu, ja tāda ir.
+
+- **ProvisioningFinishedTime** — norāda beigu laiku, kad programma OneNote pabeigs savas piezīmju grāmatiņas nodrošināšanu pirmās palaišanas laikā.
+
+- **ProvisioningStartedTime** — norāda sākuma laiku, kad programma OneNote sāk savas piezīmju grāmatiņas nodrošināšanu pirmās palaišanas laikā.
+
+- **ShowSuggestedNotebooks** — norāda, vai OneNote parādīs ieteikto piezīmju grāmatiņas līdzekli.
+
+#### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
+
+Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie uzņēmuma lietotāji (AAD/OrganizācijasID) var sekmīgi palaist un lietot OneNote pirmo reizi.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
+
+- **Attempt** — reižu skaits, cik ir jāatkārto pirmās palaišanas pieredze.
+
+- **Error** — OneNote kļūdas objekts norāda kļūdu, kas radusies pirmās palaišanas laikā.
+
+- **FAllowAddingGuide** — norāda, vai OneNote ļauj izveidot piezīmju grāmatiņu.
+
+- **IsDefaultNotebookCreated** — norāda, vai programma OneNote ir izveidojusi lietotāja noklusējuma piezīmju grāmatiņu.
+
+- **ProvisioningFailure** — OneNote kļūdas objekts, kas norāda nodrošinājuma kļūdu, ja tāda ir.
+
+- **ProvisioningFinishedTime** — norāda beigu laiku, kad programma OneNote pabeigs savas piezīmju grāmatiņas nodrošināšanu pirmās palaišanas laikā.
+
+- **ProvisioningStartedTime** — norāda sākuma laiku, kad programma OneNote sāk savas piezīmju grāmatiņas nodrošināšanu pirmās palaišanas laikā.
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1173,6 +1236,489 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 
 Informācija par sekmīgu lietojumprogrammas funkcionalitāti. Attiecas tikai uz programmas un dokumentu atvēršanu un aizvēršanu, failu rediģēšana un failu koplietošanu (sadarbību).
 
+#### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcCreateRepublishingLicense API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+#### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcGetLicenseProperty API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicensePropertyType** — licences rekvizīta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+#### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcGetSerializedLicenseProperty API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicensePropertyType** — licences rekvizīta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+#### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcGetTemplateIssuerList API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionInfo.ExtranetUrl** — ārtīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionInfo.IntranetUrl** — iekštīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+ 
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID
+
+#### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcGetTemplateList API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionInfo.ExtranetUrl** — ārtīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionInfo.IntranetUrl** — iekštīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+ 
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TemplatesCount** — veidņu skaits
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID
+
+#### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpCreateLicenseFromScratch API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID 
+
+#### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpCreateLicenseFromTemplate API izsaukuma laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+#### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpGetTemplateListForUser API izsaukuma laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionInfo.ExtranetUrl** — ārtīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionInfo.IntranetUrl** — iekštīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TemplatesCount** — veidņu skaits
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+    
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID 
+
+#### <a name="ipcpserializelicense"></a>IpcpSerializeLicense
+
+Tiek apkopots, kad lietotājs mēģina lietot IRM aizsardzību dokumentā. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpSerializeLicense API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.ContentId** — dokumenta satura ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.KeyHandle** — atslēgas tura atmiņas adrese
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID 
+
+#### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcSetLicenseProperty API izsaukuma laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma 
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.LicensePropertyType** — licences rekvizīta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — scenārija ID, ko definē API
+
+
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
 Tiek ģenerēts klienta palaišanas laikā, ja gala lietotājs ir iespējojis Office telemetrijas informācijas paneli.  Apkopo informāciju par to, kad Office telemetrijas aģents augšupielādē datus koplietošanas mapē. Šī notikuma primārais izmantošanas veids ir uzraudzīt Office telemetrijas aģenta stāvokli, bet sekundārais izmantošanas veids ir noteikt Office telemetrijas informācijas paneļa izmantošanu.
@@ -1201,6 +1747,20 @@ Tiek apkopts tikai tad, ja lietotājs (parasti administrators) ir iespējojis Of
 Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
+
+#### <a name="office_apple_cisauthticketwithidentity"></a>Office.AppCompat.AppCompat.AgentUpload
+
+Šis notikums tiek apkopots Office lietojumprogrammām, kas tiek darbinātas Apple platformās. Šis notikums tiek izmantots, lai tvertu autorizācijas marķiera ģenerēšanas kļūmes InAppPurchase notikuma laikā Mac datorā (notikums reģistrē saņemto kļūdas kodu).  Šis notikums tiek izmantots, lai noteiktu un palīdzētu novērst problēmas ar autorizācijas marķiera ģenerēšanas kļūmēm
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Data_EmptyAuthToken** — mēs apkopojam virkni, kas norāda, kur pastāvīgās licences plūsmas aktivizēšanā radās kļūme.
+
+- **Data_TicketAuthError** — kļūdas kods, kas norāda kļūmes cēloni
+
+- **Data_ValidIdentity** — ja klientam ir derīga identitāte
+
+
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1310,6 +1870,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.Doc.AssistedReadingReasons —** tiek iestatīts, ja dokumentā ir iespējota elektronisko datu aizsardzība
 
+  - **Data.Doc.AsyncOpenKind —** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data.Doc.ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā
 
   - **Data.Doc.EdpState —** dokumenta elektronisko datu aizsardzības iestatījums
@@ -1416,7 +1978,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.FullyQualifiedDomainName —** novecojis, to aizvieto Data\_Doc\_Fqdn
 
-  - **Data.Input.FileOpenState —** statuss, ko pieprasa programma (lasīšana/lasīšana un rakstīšana utt.) **-**
+  - **Data.Input.FileOpenState —** statuss, ko pieprasa programma (lasīšana/lasīšana un rakstīšana utt.)
 
   - **Data.Input.OpenAsync —** asinhronā atvēršana, ko pieprasa programma
 
@@ -1561,6 +2123,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data.Doc.AccessMode —** dokuments ir tikai lasāms
 
   - **Data.Doc.AssistedReadingReasons —** tiek iestatīts, ja dokumentā ir iespējota elektronisko datu aizsardzība
+
+  - **Data.Doc.AsyncOpenKind —** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
 
   - **Data.Doc.ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā
 
@@ -1817,6 +2381,84 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **EventName** — reģistrētā notikuma nosaukums
 
+#### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
+
+Reģistrēts, kad lietotājs atver personas kartīti. To izmanto, lai konstatētu kritiskas anomālijas neveiksmes gadījumā, palaižot reāllaika personas kartīti.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā programmā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces tips, kurā tiek palaista programma.
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.exportName** — lietotāja darbības notikuma lasāmais nosaukums, piemēram, "OpenedPersonaCard"
+
+- **Data.exportType** — pasākuma kategorija VDAR eksporta pieprasījumam
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.hostAppRing** — aplis, kurā programma tika izplatīta
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam 
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **Data.viewType** — nosaka attēlotās profila kartītes tipu
+
+- **NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
+
+- **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kā aprakstīts tālāk.
+
+    - **bandwidthEstimateMbps** — efektīvo joslas platuma aprēķini Mb/s
+
+    - **cardCorrelationId** — Data.appContextId dublikāts 
+
+    - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+
+    - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
+
+    - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
+    - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+
+    - **networkEffectiveType** — efektīvā tīkla savienojuma tips, piemēram, "slow-2g Online", lai noteiktu, vai lietotājam ir izveidots savienojums ar internetu brīdī, kad tiek parādīta personas kartīte
+
+    - **networkType** — izmantotās ierīces tīkla savienojamības tips
+
+    - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+    - **roundTripEstimateMs** — aprēķinātais efektīvais pašreizējā savienojuma cikls milisekundēs
+
+    - **wasOpenedAsCompactCard** — izmanto, lai noteiktu, vai kartīte sākotnēji tika atvērta kā kompakts skats
+
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -1957,6 +2599,34 @@ Tiek apkopoti tālāk norādītie lauki.
 -  **TimeToMedianResultInMs** — norāda vidējo laiku, kas ir nepieciešams OneNote, lai atrastu visus atbilstošo rezultātus.
 
 
+#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+
+Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **NoteLocalId** — atšķirams unikāls identifikators, kas piešķirts piezīmei laikā, kad lietotājs izveido piezīmi programmā.
+
+- **IsExportable** — karodziņš, kas norāda, vai šis notikums bija lietotāja darbības rezultāts. Jābūt iestatītam kā “True”, jo “NoteCreated” ir lietotāja izraisīta darbība.
+
+- **StickyNotes-SDKVersion** — versijas numurs, kurā norādīta lietotāja izmantoto līmpiezīmju versija. Ļauj mums noteikt, kurās produkta versijās ir radusies problēma, lai mēs varētu pareizi noteikt tās prioritāti.
+
+
+#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+
+Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **HasImages** — karodziņš, kas norāda, vai skatītajā piezīmē ir saglabāti attēli.
+
+- **IsExportable** — karodziņš, kas norāda, vai šis notikums bija lietotāja darbības rezultāts. Jābūt iestatītam kā “True”, jo “NoteViewed” ir lietotāja izraisīta darbība.
+
+- **NoteLocalId** — atšķirams unikāls identifikators, kas piešķirts piezīmei laikā, kad lietotājs izveido piezīmi programmā.
+
+- **StickyNotes-SDKVersion** — versijas numurs, kurā norādīta lietotāja izmantoto līmpiezīmju versija. Ļauj mums noteikt, kurās produkta versijās ir radusies problēma, lai mēs varētu pareizi noteikt tās prioritāti.
+
+
 #### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
  
 Šis notikums reģistrē piezīmju grāmatiņas sinhronizācijas rezultātu. Tas tiek lietots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu.
@@ -2040,8 +2710,7 @@ Tiek apkopoti tālāk norādītie lauki
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Kritiskais signāls, kas tiek izmantots, lai OneNote lietotāji varētu veiksmīgi palaist lietojumprogrammu.
-Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas palaist lietojumprogrammu mūsu veiktspējas logā, tiks aktivizēts kritiskais incidents.
+Kritiskais signāls, kas tiek izmantots, lai OneNote lietotāji varētu veiksmīgi palaist lietojumprogrammu. Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas palaist lietojumprogrammu mūsu veiktspējas logā, tiks aktivizēts kritiskais incidents.
 
 Tiek apkopoti tālāk norādītie lauki:     Nav
 
@@ -2091,13 +2760,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Result** — paroles atjaunināšanas mēģinājuma rezultāts Piemēram: "Success" vai "Fail\_AllowLessSecureAppsDisabled"
 
-#### <a name="officeoutlookdesktopprovidersloadproviderlibrary"></a>Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-Šis notikums reģistrē MAPI panākumus ielādēt pakalpojumu sniedzēja DLL (piemēram, contab32.dll, emsmdb32.dll vai pievienojumprogrammas izmantotu DLL). MAPI darbība, kas atbild par pakalpojuma sniedzēja DLL ielādi, ir būtiski svarīga Outlook nepieciešamajām darbībām, kā arī paplašināšanai (izmantojot pievienojumprogrammas vai pielāgotus krātuves/transportēšanas/adrešu grāmatas nodrošinātājus). Mēs aktīvi pārraugām šīs darbības panākumus, lai nodrošinātu, ka pamata MAPI funkcionalitāte turpina pareizi darboties.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-  - **Standarta HVA darbība** ar lietderīgajiem datiem, kas nav pielāgoti
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
 
@@ -2193,6 +2855,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_AssistedReadingReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā
 
+  - **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data\_Doc\_ChunkingType:long —** kā dokuments ir saglabāts pakalpojumā SharePoint
 
   - **Data\_Doc\_EdpState:long —** dokumenta uzņēmuma datu aizsardzība statuss
@@ -2223,8 +2887,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
   - **Data\_Doc\_IsSyncBacked:bool —** pārbauda, vai ja dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
   - **Data\_Doc\_Location:long —** iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.)
@@ -2238,6 +2900,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ReadOnlyReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc šis dokuments ir atzīmēts kā tikai lasāms (bloķēts serverī, pabeigts dokuments, aizsargāts ar paroli rediģēšanai utt.)
 
   - **Data\_Doc\_ResourceIdHash:string —** resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
@@ -2327,6 +2991,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_AssistedReadingReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā
 
+  - **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data\_Doc\_ChunkingType:long —** kā dokuments ir saglabāts pakalpojumā SharePoint
 
   - **Data\_Doc\_EdpState:long —** dokumenta uzņēmuma datu aizsardzība statuss
@@ -2357,8 +3023,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
   - **Data\_Doc\_Location:long —** iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.)
@@ -2372,6 +3036,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ReadOnlyReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc šis dokuments ir atzīmēts kā tikai lasāms (bloķēts serverī, pabeigts dokuments, aizsargāts ar paroli rediģēšanai utt.)
 
   - **Data\_Doc\_ResourceIdHash:string —** resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
@@ -2449,6 +3115,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_AssistedReadingReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā
 
+  - **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data\_Doc\_ChunkingType:long —** kā dokuments ir saglabāts pakalpojumā SharePoint
 
   - **Data\_Doc\_EdpState:long —** dokumenta uzņēmuma datu aizsardzība statuss
@@ -2479,8 +3147,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
   - **Data\_Doc\_Location:long —** iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.)
@@ -2494,6 +3160,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ReadOnlyReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc šis dokuments ir atzīmēts kā tikai lasāms (bloķēts serverī, pabeigts dokuments, aizsargāts ar paroli rediģēšanai utt.)
 
   - **Data\_Doc\_ResourceIdHash:string —** resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
@@ -2591,6 +3259,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_AssistedReadingReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_DstDoc_AsyncOpenKind:long — ** norāda, vai tika atvērta jaunā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_DstDoc_ChunkingType:long** — kā dokuments ir saglabāts pakalpojumā SharePoint.
 
 - **Data_DstDoc_EdpState:long** — dokumenta uzņēmuma datu aizsardzība statuss.
@@ -2674,6 +3344,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_SrcDoc_AccessMode:long** — kā šis dokuments tika atvērts (tikai lasāms | lasīšana un rakstīšana).
 
 - **Data_SrcDoc_AssistedReadingReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
+
+- **Data_SrcDoc_AsyncOpenKind:long — ** norāda, vai tika atvērta oriģinālā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
 
 - **Data_SrcDoc_ChunkingType:long** — kā dokuments ir saglabāts pakalpojumā SharePoint. 
 
@@ -2768,6 +3440,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType:long** — kā dokuments ir saglabāts pakalpojumā SharePoint.
 
 - **Data_Doc_EdpState:long** — dokumenta uzņēmuma datu aizsardzība statuss.
@@ -2798,8 +3472,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** — pārbauda, vai dokuments tiek atvērts no lokālās kešatmiņas.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked:bool** — vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu.
 
 - **Data_Doc_Location:long** — iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.).
@@ -2813,6 +3485,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc šis dokuments ir atzīmēts kā tikai lasāms (bloķēts serverī, pabeigts dokuments, aizsargāts ar paroli rediģēšanai utt.).
 
 - **Data_Doc_ResourceIdHash:string** — resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId:string** — nemainīgs identifikators mākonī saglabātajiem dokumentiem.
 
@@ -2843,6 +3517,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_DstDoc_AccessMode:long** — kā šis dokuments tika atvērts (tikai lasāms | lasīšana un rakstīšana).
 
 - **Data_DstDoc_AssistedReadingReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
+
+- **Data_DstDoc_AsyncOpenKind:long — ** norāda, vai tika atvērta jaunā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
 
 - **Data_DstDoc_ChunkingType:long** — kā dokuments ir saglabāts pakalpojumā SharePoint.
 
@@ -2925,6 +3601,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_SrcDoc_AccessMode:long** — kā šis dokuments tika atvērts (tikai lasāms | lasīšana un rakstīšana).
 
 - **Data_SrcDoc_AssistedReadingReasons:long** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
+
+- **Data_SrcDoc_AsyncOpenKind:long — ** norāda, vai tika atvērta oriģinālā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
 
 - **Data_SrcDoc_ChunkingType:long** — kā dokuments ir saglabāts pakalpojumā SharePoint.
 
@@ -3398,6 +4076,68 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.warningMessage —** pakalpojuma reģistrētais brīdinājuma ziņojums.
 
+
+#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
+
+Reģistrē līdzekļu izmēģinājumus lietotājiem. Šis notikums palīdz mums noteikt līdzekļa izmēģinājuma izdošanos vai neveiksmi.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+  - **Data\_Enable:bool**— patiess norāda, ka līdzeklis ir iespējots pašreizējam lietotājam
+
+  - **Data\_Feature:string** — līdzekļa nosaukums
+
+  - **Data\_Flighted:bool** — patiess norāda, ka šis līdzeklis ir iespējots
+
+  - **Data\_Licensed:bool** — patiess norāda, ka šim līdzeklim tiek veikta licences pārbaude
+
+  - **Data\_Subscriber:bool** — patiess norāda, ka lietotājam ir abonementa licence
+
+#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
+
+Fiksē diagrammas atsvaidzināšanas kļūmes, kad fails tiek izveidots, izmantojot DV. Tas palīdz mums atkļūdot kļūmes un problēmas ar datu atsvaidzināšanu DV shēmā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+  - **Data\_ConnectorsBasedOnSequence:bool** — patiess, ja atsvaidzinātā shēma tika izveidota, izmantojot savienotāju, kura pamatā ir secības opcija
+
+  - **Data\_DialogError**:**string** — kļūda viedās shēmas atsvaidzināšanas laikā
+
+  - **Data\_FileError:string** — kļūdas virkne, ja pievienotais Excel fails ir nederīgs
+
+  - **Data\_OverwriteSelected**:**bool** — patiess, ja lietotājs atlasīja shēmas pārrakstīšanas opciju atsvaidzināšanas laikā
+
+  - **Data\_WarningShown**:**bool** — patiess, ja lietotājam tika parādīts brīdinājums datu atsvaidzināšanas laikā
+
+#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
+
+Fiksē Excel pārrakstīšanas kļūmes, kad fails tiek izveidots, izmantojot DV. Tas palīdz mums atkļūdot kļūmes un problēmas ar Excel datu pārrakstīšanu DV shēmā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+  - **Data\_ConnectorsBasedOnSequence:bool** — patiess nozīmē, ka savienojumi ir izveidoti, pamatojoties uz secības iestatījumiem
+
+  - **Data\_DataSourceType:string** — šis aizpildītais lauks norāda, vai shēma tiek izveidota no tabulas vai pielāgota diapazona
+
+  - **Data\_DialogError:string** — pielāgots kļūdas tips, izveidojot viedo shēmu programmā Excel
+
+  - **Data\_NoOfShapesAdded:int** — formu skaits, kas pievienotas pārrakstīšanas laikā Excel funkcionalitātē
+
+  - **Data\_NoOfShapesDeleted:int** — formu skaits, kas izdzēstas pārrakstīšanas laikā Excel funkcionalitātē
+
+  - **Data\_OverwriteSelected:bool** — patiess norāda, ka lietotājs atlasīja datu pārrakstīšanas opciju
+
+  - **Data\_SourceDataModified:bool** — patiess norāda, ka tiek mainīti avota dati
+
+  - **Data\_WarningShown:bool** — patiess norāda, ka lietotājam tiek parādīts datu atjaunināšanas brīdinājums
+
+  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, jo programmā Excel ir ievietota formula
+
+  - **Data\_WarningShownToAddNextStepID:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, jo programmā Excel trūkst nākamās darbības identifikators
+
+  - **Data\_WarningShownToConvertToTable:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, lai pārvērstu Excel datus tabulas formātā
+
+
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
 Šis notikums reģistrē katra dokumenta statistiku, kad Office Word ir aizvērts vai aizturēts.  Notikumu izmanto, lai saistītu dokumenta rediģēšanu, lielumu utt. ar dokumenta saglabāšanas, dokumenta kopīgošanas un dokumenta tiešsaistes koprediģēšanas kļūdām.
@@ -3474,6 +4214,130 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_UsesCustomTemplate** — norāda, vai dokuments ir izveidots, izmantojot pielāgotu veidni
 
+#### <a name="officewordfileopenuserinitiatedopen"></a>Office.Word.FileOpen.UserInitiatedOpen 
+
+Šis notikums norāda, ka Office Word atver dokumentu pēc lietotāja iniciētas darbības, nevis izmantojot Office Word programmiski. Tas satur arī kritiski svarīgus faila atvēršanas izpildes datus, un no lietotāja skatpunkta ir programmas startēšanas notikums.  Notikums pārrauga, vai faila atvēršana darbojas pareizi. To izmanto arī, lai aprēķinātu mēneša aktīvos lietotājus/ierīces un mākoņpakalpojumu uzticamības rādītājus. 
+ 
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai. 
+
+- **Data_BytesAsynchronous** — baitu skaits (saspiests), bez kura uzskatām, ka varēsim atvērt failu, ja tos iegūstam pirms lietotājs vēlas sākt rediģēšanu vai saglabāšanu. 
+
+- **Data_BytesAsynchronousWithWork** — baitu skaits (saspiests), bez kura, iespējams, varēsim atvērt failu, taču tam būs nepieciešamas būtiskas koda izmaiņas. 
+
+- **Data_BytesSynchronous** — baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu. 
+
+- **Data_BytesUnknown**— baitu skaits dokumenta daļās, kuras neplānojam atrast. 
+
+- **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams. 
+
+- **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā. 
+
+- **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā. 
+
+- **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums. 
+
+- **Data_Doc_Ext —** dokumenta paplašinājums (docx/xlsb/pptx utt.) 
+
+- **Data_Doc_FileFormat —** faila formāta protokola versija. 
+
+- **Data_Doc_Fqdn —** OneDrive vai SharePoint Online domēna nosaukums. 
+
+- **Data_Doc_FqdnHash —** klientu identificējama domēna nosaukuma vienvirziena jaukšana. 
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā. 
+
+- **Data_Doc_InitializationScenario —** dokumenta atvēršanas ieraksti. 
+
+- **Data_Doc_IOFlags —** atskaites par kešotajiem karodziņiem, kas tiek izmantoti atvēršanas pieprasījuma opciju iestatīšanai. 
+
+- **Data_Doc_IrmRights —** dokumentam/lietotājam piemērotās elektronisko datu politikas atļautās darbības. 
+
+- **Data_Doc_IsIncrementalOpen —** karodziņš, kas norāda, ka dokuments tika atvērts inkrementāli. 
+
+- **Data_Doc_IsOcsSupported —** karodziņš, kas norāda, ka dokuments tiek atbalstīts sadarbības pakalpojumā. 
+
+- **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija. 
+
+- **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija. 
+
+- **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint) 
+
+- **Data_Doc_LocationDetails —** norāda, kurā zināmajā mapē atrodas lokāli saglabātais dokuments. 
+
+- **Data_Doc_NumberCoAuthors —** citu lietotāju skaits koprediģēšanas sesijā. 
+
+- **Data_Doc_PasswordFlags —** norāda lasīšanas/rakstīšanas paroles karodziņu kopu. 
+
+- **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā. 
+
+- **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā. 
+
+- **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā. 
+
+- **Data_Doc_ServerProtocol —** protokola versija, ko izmanto, lai sazinātos ar pakalpojumu. 
+
+- **Data_Doc_ServerType —** servera tips, kas nodrošina pakalpojumu (OneDrive, SharePoint, WOPI utt.). 
+
+- **Data_Doc_ServerVersion —** servera versija, kas nodrošina pakalpojumu. 
+
+- **Data_Doc_SessionId** — tā servera versija, kas nodrošina pakalpojumu 
+
+- **Data_Doc_SharePointServiceContext —** diagnostikas informācija no SharePoint Online pieprasījumiem. 
+
+- **Data_Doc_SizeInBytes —** dokumenta lieluma rādītājs. 
+
+- **Data_Doc_SpecialChars —** speciālo rakstzīmju rādītājs dokumenta vietrādī URL vai ceļā. 
+
+- **Data_Doc_StreamAvailability —** norāda, vai ir pieejama/atspējota dokumenta plūsma. 
+
+- **Data_Doc_SyncBackedType —** norāda dokumenta veidu (lokālais vai servera). 
+
+- **Data_UrlHash —** vienvirziena jaukšana vienkāršota dokumenta identifikatora izveidei. 
+
+- **Data.Doc.WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru. 
+
+- **Data_EditorDisablingRename** — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu. 
+
+- **Data_EditorsCount** — redaktoru skaits dokumentā. 
+
+- **Data_ForceReadWriteReason** — vesela skaitļa vērtība, kas attēlo iemeslu, kāpēc fails tika atvērts lasīšanas/rakstīšanas režīmā. 
+
+- **Data_FSucceededAfterRecoverableFailure** — norāda, ka atvēršana izdevās pēc kļūmes izlabošanas, kas radās dokumenta atvēršanas laikā. 
+
+- **Data_LastLoggedTag** — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai). 
+
+- **Data_LinkStyles** — norāda, vai ir saite ar veidņu stiliem. 
+
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā. 
+
+- **Data_Measurements** — kodēta virkne, kas satur dažādu daļu atvēršanas laika sadalījumu. Izmanto, lai diagnosticētu atvēršanas izpildi. 
+
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu. 
+
+- **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota. 
+
+- **Data_OpenInitiateKind** — tāda scenārija tips, kur lietotāji sāka šo failu atvēršanas darbību. 
+
+- **Data_PartsUnknown** — dokumenta daļu skaits, kurām mēs nevarējām iegūt datus. 
+
+- **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas. 
+
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana. 
+
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota. 
+
+- **Data_SecondaryTag** — unikāla atzīme koda izsaukšanas vietai, kas tiek izmantota, lai pievienotu papildu kļūmes datus atvēršanai. 
+
+- **Data_TemplateFormat** — tās veidnes faila formāts, kas ir dokumenta pamatā. 
+
+- **Data_UsesNormal** — norāda, vai atvērtā dokumenta pamatā ir parasta veidne. 
+
+- **Data_VerboseMeasurements** — kodēta virkne, kas satur detalizētu dažādu daļu atvēršanas laika sadalījumu.  Tiek izmantota, lai mērītu veiktspēju, kas iespējota tikai iekšējiem apļiem. 
+
+
+
 #### <a name="officewordfilesaveactcmdgosubsaveas"></a>Office.Word.FileSave.ActCmdGosubSaveAs
 
 Šis notikums norāda, ka lietotājs saglabā izmaiņas jaunā dokumentā. Notikums pārrauga jauna dokumenta saglabāšanas pareizu darbību. To izmanto arī, lai aprēķinātu mēneša aktīvos lietotājus/ierīces un mākoņpakalpojumu uzticamības rādītājus.
@@ -3487,7 +4351,9 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
-    
+
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -3514,8 +4380,6 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -3529,6 +4393,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -3578,6 +4444,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
+
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
     
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
@@ -3605,8 +4473,6 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -3620,6 +4486,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -3676,6 +4544,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -3702,8 +4572,6 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -3717,6 +4585,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -3795,6 +4665,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -3819,8 +4691,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -3832,6 +4702,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -3856,6 +4728,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_DstDoc_AccessMode** — mērķa dokuments ir tikai lasāms/rediģējams.
 
 - **Data_DstDoc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc mērķa dokuments ir atvērts pieejamā lasīšanas režīmā.
+
+- **Data_DstDoc_AsyncOpenKind —** norāda, vai tika atvērta jaunā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
     
 - **Data_DstDoc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
@@ -3943,6 +4817,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_SrcDoc_AsyncOpenKind —** norāda, vai tika atvērta oriģinālā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_SrcDoc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_SrcDoc_EdpState** — avota dokumenta elektronisko datu aizsardzības iestatījums.
@@ -4010,66 +4886,6 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_SrcDocIsUnnamedOrNew** — norāda, vai saglabājamais dokuments ir jauns.
 
 
-#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
-
-Reģistrē līdzekļu izmēģinājumus lietotājiem. Šis notikums palīdz mums noteikt līdzekļa izmēģinājuma izdošanos vai neveiksmi.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-  - **Data\_Enable:bool**— patiess norāda, ka līdzeklis ir iespējots pašreizējam lietotājam
-
-  - **Data\_Feature:string** — līdzekļa nosaukums
-
-  - **Data\_Flighted:bool** — patiess norāda, ka šis līdzeklis ir iespējots
-
-  - **Data\_Licensed:bool** — patiess norāda, ka šim līdzeklim tiek veikta licences pārbaude
-
-  - **Data\_Subscriber:bool** — patiess norāda, ka lietotājam ir abonementa licence
-
-#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
-
-Fiksē diagrammas atsvaidzināšanas kļūmes, kad fails tiek izveidots, izmantojot DV. Tas palīdz mums atkļūdot kļūmes un problēmas ar datu atsvaidzināšanu DV shēmā.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-  - **Data\_ConnectorsBasedOnSequence:bool** — patiess, ja atsvaidzinātā shēma tika izveidota, izmantojot savienotāju, kura pamatā ir secības opcija
-
-  - **Data\_DialogError**:**string** — kļūda viedās shēmas atsvaidzināšanas laikā
-
-  - **Data\_FileError:string** — kļūdas virkne, ja pievienotais Excel fails ir nederīgs
-
-  - **Data\_OverwriteSelected**:**bool** — patiess, ja lietotājs atlasīja shēmas pārrakstīšanas opciju atsvaidzināšanas laikā
-
-  - **Data\_WarningShown**:**bool** — patiess, ja lietotājam tika parādīts brīdinājums datu atsvaidzināšanas laikā
-
-#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
-
-Fiksē Excel pārrakstīšanas kļūmes, kad fails tiek izveidots, izmantojot DV. Tas palīdz mums atkļūdot kļūmes un problēmas ar Excel datu pārrakstīšanu DV shēmā.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-  - **Data\_ConnectorsBasedOnSequence:bool** — patiess nozīmē, ka savienojumi ir izveidoti, pamatojoties uz secības iestatījumiem
-
-  - **Data\_DataSourceType:string** — šis aizpildītais lauks norāda, vai shēma tiek izveidota no tabulas vai pielāgota diapazona
-
-  - **Data\_DialogError:string** — pielāgots kļūdas tips, izveidojot viedo shēmu programmā Excel
-
-  - **Data\_NoOfShapesAdded:int** — formu skaits, kas pievienotas pārrakstīšanas laikā Excel funkcionalitātē
-
-  - **Data\_NoOfShapesDeleted:int** — formu skaits, kas izdzēstas pārrakstīšanas laikā Excel funkcionalitātē
-
-  - **Data\_OverwriteSelected:bool** — patiess norāda, ka lietotājs atlasīja datu pārrakstīšanas opciju
-
-  - **Data\_SourceDataModified:bool** — patiess norāda, ka tiek mainīti avota dati
-
-  - **Data\_WarningShown:bool** — patiess norāda, ka lietotājam tiek parādīts datu atjaunināšanas brīdinājums
-
-  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, jo programmā Excel ir ievietota formula
-
-  - **Data\_WarningShownToAddNextStepID:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, jo programmā Excel trūkst nākamās darbības identifikators
-
-  - **Data\_WarningShownToConvertToTable:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, lai pārvērstu Excel datus tabulas formātā
-
 #### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
 
 Šis notikums norāda, ka Office Word rediģē dokumentu, kas dokumenta iekšējo stāvokli padara "netīru". Tas ļauj Microsoft novērtēt dokumenta rediģēšanas līdzekļa darbspēju. Notikums ir lietotāja veikto rediģējumu periodiskais kontrolziņojums. To izmanto arī, lai aprēķinātu mēneša aktīvos lietotājus/ierīces.
@@ -4095,9 +4911,254 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_UrlHash —** dokumenta ceļa jaukšana
 
   - **Data\_ViewKind —** Word skata tips
+
+
+#### <a name="parselicenseop"></a>ParseLicenseOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek licenču parsēšanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — reģistrētāja servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+- **RMS.VerifyCertChainDuration** — laiks, lai verificētu sertifikātu ķēdi
+
+- **RMS.VerifySignatureDuration** — laiks, lai verificētu parakstu
+
+#### <a name="storeop"></a>StoreOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek tiesību pārvaldības pakalpojuma licences saglabāšanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.ContentId** — satura ID lietotāja licencē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.OperationName** — darbības nosaukums
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+- **RMS.Url** — tiesību pārvaldības pakalpojuma servera vietrādis URL
+
+
 ### <a name="application-status-and-boot-subtype"></a>*Lietojumprogrammas statuss un palaišanas apakštips*
 
 Nosaka, vai ir notikuši konkrēti līdzekļu notikumi, piemēram, startēšana vai apturēšana, un vai līdzeklis darbojas.
+
+#### <a name="dnslookupop"></a>DnsLookupOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek DNS informācijas uzmeklēšanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.NoOfDomainsSearched** — meklēto domēnu skaits  
+
+- **RMS.NoOfDomainsSkipped** — izlaisto domēnu skaits 
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+#### <a name="getuserop"></a>GetUserOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek lietotāja sertifikātu iegūšanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.ContentId** — satura ID
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods no darbības
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+- **RMS.Type** — lietotāja informācijas tips
+
+#### <a name="httpop"></a>HttpOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek http pieprasījuma darbības laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+    
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.CallBackStatus** — autentifikācijas atzvanīšanas atgrieztā rezultāta statuss
+
+- **RMS.CallbackTime** — autentifikācijas atzvanīšanas patērētais laiks 
+
+- **RMS.CorrelationId** — http pieprasījuma korelācijas ID
+
+- **RMS.DataSize** — HTTP pieprasījuma datu lielums
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai pastāv ligzdota HTTP operācija 
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.OperationName** — darbības nosaukums
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+- **RMS.Url** — tiesību pārvaldības pakalpojuma servera vietrādis URL
+
+- **RMS.WinhttpCallbackStatus** — WinHTTP atzvanīšanas rezultāta statuss
+
+#### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcCreateOauth2Token API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+    
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
@@ -4116,6 +5177,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_AppSizeWidth —** pievienojumprogrammas**-** loga platums
 
   - **Data\_AppURL —** pievienojumprogrammas URL; reģistrē pilnu URL krātuves pievienojumprogrammām un URL domēnu pievienojumprogrammām, kas nav krātuves pievienojumprogrammas
+
+  - **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
 
   - **Data\_AuthorsCount:integer —** autoru skaits, kuri rediģēja dokumentu šajā sesijā
 
@@ -4149,8 +5212,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
   - **Data\_Doc\_IsSyncBacked:bool —** patiess, ja šis ir servera dokuments, kas pastāv lokāli, un ir sinhronizēta ar serveri (piemēram, izmantojot OneDrive vai ODB klienta programmām)
 
   - **Data\_Doc\_Location:long —** iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.)
@@ -4158,6 +5219,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_LocationDetails:long —** iepriekš definētu detalizētākas atrašanās vietas vērtību kopa (mape Temp, lejupielāžu mape, OneDrive dokumenti, OneDrive attēli)
 
   - **Data\_Doc\_ResourceIdHash:string —** resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
@@ -4495,6 +5558,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_AssistedReadingReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā
 
+  - **Data_Doc_AsyncOpenKind:long — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data\_Doc\_ChunkingType:long —** kā dokuments ir saglabāts pakalpojumā SharePoint
 
   - **Data\_Doc\_EdpState:long —** dokumenta uzņēmuma datu aizsardzība statuss
@@ -4525,8 +5590,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool —** vai dokuments tiek atvērts no lokālās kešatmiņas?
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
   - **Data\_Doc\_IsSyncBacked:bool —** vai dokuments tiek atvērts no mapes, kas izmanto OneDrive sinhronizācijas programmu
 
   - **Data\_Doc\_Location:long —** iepriekš definētu vērtību kopa, kas norāda dokumenta glabāšanas vietu (lokālā, SharePoint, WOPI, tīkls utt.)
@@ -4540,6 +5603,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ReadOnlyReasons:long —** iepriekš definētu vērtību kopa, kas norāda, kāpēc šis dokuments ir atzīmēts kā tikai lasāms (bloķēts serverī, pabeigts dokuments, aizsargāts ar paroli rediģēšanai utt.)
 
   - **Data\_Doc\_ResourceIdHash:string —** resursu identifikatora jaukšana mākonī saglabātajiem dokumentiem
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
@@ -4959,6 +6024,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -4985,8 +6052,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -5000,6 +6065,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā. 
 
@@ -5082,6 +6149,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -5108,8 +6177,6 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -5123,6 +6190,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -5203,6 +6272,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_AssistedReadingReasons —** iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā
 
+  - **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
   - **Data\_Doc\_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā
 
   - **Data\_Doc\_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums
@@ -5229,9 +6300,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Doc\_IsOpeningOfflineCopy —** atzīme, kas norāda, ka tika atvērta dokumenta bezsaistes kopija
 
-  - **Data_Doc_IsRtcAlwaysOn —** patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
-  - **Data\_Doc\_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
+  - **Data\_Doc\_IsSyncBacked —** atzīme, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija
 
   - **Data\_Doc\_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint)
 
@@ -5244,6 +6313,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā
 
   - **Data\_Doc\_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā
+
+  - **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
   - **Data\_Doc\_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā
 
@@ -5326,6 +6397,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
+- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
+
 - **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
 - **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
@@ -5352,8 +6425,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
 
-- **Data_Doc_IsRtcAlwaysOn**— patiess, ja reāllaika kanāls (real time channel — RTC) šim failam vienmēr ir ieslēgts.
-
 - **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
 - **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
@@ -5367,6 +6438,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
 
 - **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
+
+- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
 
 - **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā. 
 
@@ -5423,6 +6496,83 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_TemplateFormat** — tās veidnes faila formāts, kas ir dokumenta pamatā.
 
 - **Data_UsesNormal** — norāda, vai atvērtā dokumenta pamatā ir parasta veidne.
+
+
+#### <a name="renewuserop"></a>RenewUserOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek lietotāja sertifikātu atjaunošanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — reģistrētāja servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
+
+- **RMS.Type** — lietotāja informācijas tips
+
+#### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek pakalpojuma atklāšanas darbības laikā. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.Duration** — kopējais laiks darbības veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no darbības
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.OperationName** — darbības nosaukums
+
+- **RMS.Result** — darbība sekmīga vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — darbības rezultāta statusa kods
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*Office pieejamības konfigurācijas apakštips*
@@ -5737,7 +6887,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ElapsedHanging** — izsaukumā pavadītais laiks bez reaģēšanas
 
-#### <a name="officepowerpointsession"></a>**Office.PowerPoint.Session**
+#### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
 Apkopo informāciju par līdzekļu izmantošanu katrā PowerPoint sesijā. Šie dati tiek izmantoti, lai aprēķinātu PowerPoint neparedzētas aizvēršanas gadījumu proporciju, izmantojot līdzekli. PowerPoint neparedzētas aizvēršanas gadījumu proporcija ir būtisks signāls, lai nodrošinātu pareizu PowerPoint darbību.
 
@@ -5889,6 +7039,12 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ProgID** — pievienojumprogrammas Prog identifikators
 
+#### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
+
+Tiek izraisīts, atverot makro (VBA) saturošu failu ierīcē, kurā IT administrators ir iekļāvis Office lietojumprogrammas kā pakalpojumu (OAAS) un kurā ir aktivizēts Office 365 ProPlus ar Enterprise licenci. Notikums tiek izmantots, lai izprastu makro (VBA) saturošu failu darbspēju nomniekā, un tas tiek salīdzināts ar Office.Programmability.Telemetry.VbaTelemetryBreak, kas izseko kļūdas VBA saturošos failos. 
+
+Netiek apkopoti nekādi lauki.
+
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 Sāknēšanas notikums, kas tālākai izpētei uzskaita nelabvēlīgas iziešanas no lietojumprogrammas.
@@ -5948,8 +7104,77 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="application-feature-performance-subtype"></a>*Lietojumprogrammas līdzekļu izpildes apakštips*
 
-Slikts atbildes laiks vai slikta izpilde tādos scenārijos kā programmas startēšana vai faila atvēršana.
+Slikts atbildes laiks vai slikta veiktspēja tādos scenārijos kā programmas startēšana vai faila atvēršana.
 
+#### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpBootstrapUser API izsaukuma laikā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionInfo.ExtranetUrl** — ārtīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionInfo.IntranetUrl** — iekštīkla savienojuma informācijas vietrādis URL
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai ir HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu  
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TemplatesCount** — veidņu skaits
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Šis notikums aktivizējas, kad klients izmanto Office pievienojumprogrammu un sazinās ar Rich API pakalpojuma sniegšanai. Izmanto, lai izmērītu pakalpojuma uzticamību, veiktspēju un lietojumu Rich API metodes izsaukšanai.
@@ -6493,6 +7718,35 @@ Tiek apkopoti tālāk norādītie lauki.
   - **FirstTimeStamp** — pirmā reize, kad radās kļūda
 
   - **Trackback** — konkrētas kļūdas unikālais identifikators
+
+#### <a name="renewidentityfailure"></a>RenewIdentityFailure
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek, kad neizdodas lietotāja sertifikātu atjaunošana.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **Failure.Category** — kļūmes kategorija "UnhandledError"
+
+- **Failure.Detail** — detalizēta informācija par kļūmi
+
+- **Failure.Id** — kļūmes ID
+
+- **Failure.Signature** — kļūmes paraksts, kas ir tāds pats kā notikuma nosaukums
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.HRESULT** — lietotāja sertifikāta atjaunošanas rezultāts
+
+- **RMS.ScenarioId** — scenārija ID, ko definē tiesību pārvaldības pakalpojuma klients
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Ierīču savienojamības un konfigurācijas datu notikumi
 

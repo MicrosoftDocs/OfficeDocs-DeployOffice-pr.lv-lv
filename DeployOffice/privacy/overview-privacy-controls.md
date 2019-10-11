@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
-ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
+ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980342"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417415"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
 
@@ -39,6 +39,7 @@ Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika i
 >   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, plāns Project Online Professional vai Visio Online 2. plāns, versija 1904 vai jaunākas versijas.
 > - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908, kura tika izlaista 2019. gada 10. septembrī. Tos ir paredzēts publiskot pusgada kanālā 2020. gada janvārī.
 > - Šos konfidencialitātes kontroles līdzekļus ir plānots izlaist 2019. gada oktobra otrajā pusē programmu Excel, OneNote, PowerPoint, Visio un Word operētājsistēmas iOS versijai. Mēs sniegsim vairāk informācijas oktobra sākumā.
+> - Lielākajā daļā Office tīmekļa lietojumprogrammu ir ieplānota darba sākšana, izmantojot jauno privātuma kontroli [papildu pievienotajām iespējām](optional-connected-experiences.md) 2019. gada oktobra vidū. Šīs lietojumprogrammas ir: Excel darbam tīmeklī, OneNote darbam tīmeklī, PowerPoint darbam tīmeklī, Visio darbam tīmeklī, kā arī Word darbam tīmeklī. Pirms tam varat izmantot [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md), lai konfigurētu atbilstošo [politikas iestatījumu](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
 > - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti korporācijai Microsoft
