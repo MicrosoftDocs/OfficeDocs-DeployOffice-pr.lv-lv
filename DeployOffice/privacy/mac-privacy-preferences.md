@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Office darbam ar Mac.
 hideEdit: true
-ms.openlocfilehash: 01bb31f3b6c307ec1dc4762b54fea17185dcf27d
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: a1fdd9f7d0fe2095b3a32f61f885f724f2259188
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246298"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510220"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -31,10 +31,11 @@ Sākot ar Office versiju 16.28 darbam ar Mac, ir jauni politikas iestatījumi,
 
 Papildus pastāv jauns preferenču iestatījums, kas saistīts ar **Nepieciešamo datu paziņojumu** dialogu Microsoft AutoUpdate (MAU).
 
-Papildinformāciju par diagnostikas datiem un saistītajām darbībām skatiet rakstā [Pārskats par konfidencialitātes vadīklām](overview-privacy-controls.md).
+Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet rakstā [Pārskats par konfidencialitātes līdzekļiem](overview-privacy-controls.md).
 
 > [!NOTE]
-> Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuros darbojas ar Windows operētājsistēmu, skatiet rakstā [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuri darbojas ar Windows operētājsistēmu, skatiet rakstā [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md).
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs, skatiet rakstā [Office politikas iestatījumu izmantošana iOS ierīcēs konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md).
 
 ## <a name="setting-preferences"></a>Preferenču iestatīšana
 
@@ -52,14 +53,13 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 |**Iespējamās vērtības**  | `BasicDiagnosticData` *(tiek iestatīts līmenis, kas nepieciešams)* <br/> `FullDiagnosticData` *(tiek iestatīts līmenis kā neobligāts)* <br/> `ZeroDiagnosticData` *(līmenis netiek iestatīts)* |
 |**Pieejamība** |16.28 un jaunākas versijas |
 
+Sākot ar jaunām 16.30 versijas instalācijām, ja jūs neredzat šo preferenci, Microsoft tiek sūtīti nepieciešamie diagnostikas dati, ja lietotāji ar Office 365 abonementu ir pierakstījušies, izmantojot darba vai mācību kontu, vai ja lietotājiem ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
+
 > [!NOTE]
-> Ja iestatāt šo preferenci, tas attiecas arī uz šādiem produktiem:
-> - Teams versija 1.00.217856 un jaunākas versijas darbam ar Mac
-> - Skype darbam versija 16.28 un jaunāka versija darbam ar Mac
+> - Ja instalējat versiju 16.28 vai 16.29 un neiestatīsit šo preferenci, korporācijai Microsoft tiek sūtīti neobligātie un nepieciešamie diagnostikas dati. Ja pēc tam jauniniet uz versiju 16.30 vai jaunāku, neobligātie un nepieciešamie diagnostikas dati joprojām tiek sūtīti korporācijai Microsoft, ja vien neizmantojat šo preferenci, lai iestatītu citu vērtību.
+> - Ja iestatāt šo preferenci, tas attiecas arī uz versiju 1.00.217856 un jaunākām komandām, kas paredzētas Teams darbam ar Mac, un uz versiju 16.28 un jaunākām versijām Skype darbam Mac datoriem.
 
-Ja neiestatīsit šo preferenci, Microsoft tiek sūtīti neobligātie un nepieciešamie diagnostikas dati, ja lietotāji ar Office 365 abonementu ir pierakstījušies, izmantojot darba vai mācību kontu, vai ja lietotājiem ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
-
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai nepieciešamie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt neobligātus diagnostikas datus, dodoties uz **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai nepieciešamie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt neobligātos diagnostikas datus, dodoties uz **Preferences** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Preferences iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
 

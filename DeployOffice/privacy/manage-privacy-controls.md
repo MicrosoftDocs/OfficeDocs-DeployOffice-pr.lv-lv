@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 5f3b63c65d43827befe58ba600c7957410f2d3c0
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417325"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510281"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -43,7 +43,9 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
 
 > [!NOTE]
-> Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
+> - Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs, skatiet rakstā [Preferenču izmantošana iOS ierīcēs konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md).
+
 
 Ja izmantojat grupas politikas pārvaldības rīku, visi šie politikas iestatījumi atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
 
