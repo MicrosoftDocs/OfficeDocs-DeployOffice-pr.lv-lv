@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 24a3d30d05fb2a1456e10d8a8036f31c25c14db7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417415"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510703"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
 
@@ -38,7 +38,7 @@ Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika i
 >   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
 >   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, plāns Project Online Professional vai Visio Online 2. plāns, versija 1904 vai jaunākas versijas.
 > - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908, kura tika izlaista 2019. gada 10. septembrī. Tos ir paredzēts publiskot pusgada kanālā 2020. gada janvārī.
-> - Šos konfidencialitātes kontroles līdzekļus ir plānots izlaist 2019. gada oktobra otrajā pusē programmu Excel, OneNote, PowerPoint, Visio un Word operētājsistēmas iOS versijai. Mēs sniegsim vairāk informācijas oktobra sākumā.
+> - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 2.30 un jaunākās versijās, piemēram, programmas Excel, OneNote, PowerPoint un Word iOS versijās, kā arī Visio Viewer darbam ar iOS versijā 1.17 un jaunākās versijās.
 > - Lielākajā daļā Office tīmekļa lietojumprogrammu ir ieplānota darba sākšana, izmantojot jauno privātuma kontroli [papildu pievienotajām iespējām](optional-connected-experiences.md) 2019. gada oktobra vidū. Šīs lietojumprogrammas ir: Excel darbam tīmeklī, OneNote darbam tīmeklī, PowerPoint darbam tīmeklī, Visio darbam tīmeklī, kā arī Word darbam tīmeklī. Pirms tam varat izmantot [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md), lai konfigurētu atbilstošo [politikas iestatījumu](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
 > - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
 
@@ -73,7 +73,8 @@ Papildinformāciju skatiet šeit:
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
-- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus saistītie līdzekļi
@@ -98,7 +99,8 @@ Papildinformāciju skatiet šeit:
 
 - [Office saistītie līdzekļi](connected-experiences.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
-- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus neobligātie saistītie līdzekļi
 
@@ -114,7 +116,8 @@ Papildinformāciju skatiet šeit:
 
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
-- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles lidzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Saistītajiem līdzekļiem nepieciešamie pakalpojuma dati
 
