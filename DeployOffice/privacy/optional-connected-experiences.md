@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: f59c737a41c3075f9c29c49f623d88f9876bf32d
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
+ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067266"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38276482"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -47,9 +47,9 @@ Piezīme. Tālāk aprakstītais privātuma iestatījums nekontrolē pieredzi, ka
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Līdzekļi, kuri izmanto citus Microsoft tiešsaistes pakalpojumus un/vai trešo pušu pakalpojumus
 
-### <a name="office-store"></a>Office veikals 
+### <a name="help--suggest-a-feature"></a>Palīdzība > Līdzekļa ieteikšana
 
-Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Microsoft pakalpojumu līgumu](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/). Tomēr uz visām [Office pievienojumprogrammām](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D), kuras lejupielādējat no Office veikala, attiecas pievienojumprogrammas sniedzēja lietošanas noteikumi. Tās var būt dažādas organizācijas vai uzņēmumi, un daži var piemērot lietošanas maksu. Jums jāpārbauda katras pievienojumprogrammas atļaujas, paziņojums par konfidencialitāti un licences nosacījumi, lai zinātu, kādi noteikumi ir spēkā, un izlemtu, vai vēlaties piekrist organizācijas piedāvātajiem lietošanas noteikumiem.
+Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti [UserVoice pakalpojuma noteikumi un privātuma politika](https://outlook.uservoice.com/tos).
 
 ### <a name="insert-online-video"></a>Tiešsaistes video ievietošana
 
@@ -58,6 +58,10 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 ### <a name="microsoft-error-reporting-program-merp"></a>Microsoft kļūdu uzrādīšanas programma (MERP) 
 
 MERP izveido savienojumu ar pakalpojumu Watson.microsoft.com, lai nosūtītu diagnostikas datus, kad Office klienta programmas, kas darbojas Mac ierīcēs, avarē. Tā pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. MERP neattiecas uz Office klienta programmām, kas darbojas sistēmā Windows.
+
+### <a name="office-store"></a>Office veikals 
+
+Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Microsoft pakalpojumu līgumu](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/). Tomēr uz visām [Office pievienojumprogrammām](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D), kuras lejupielādējat no Office veikala, attiecas pievienojumprogrammas sniedzēja lietošanas noteikumi. Tās var būt dažādas organizācijas vai uzņēmumi, un daži var piemērot lietošanas maksu. Jums jāpārbauda katras pievienojumprogrammas atļaujas, paziņojums par konfidencialitāti un licences nosacījumi, lai zinātu, kādi noteikumi ir spēkā, un izlemtu, vai vēlaties piekrist organizācijas piedāvātajiem lietošanas noteikumiem.
 
 ### <a name="research"></a>Izpēte
 
@@ -70,19 +74,6 @@ MERP izveido savienojumu ar pakalpojumu Watson.microsoft.com, lai nosūtītu dia
 
 [Laikapstākļu josla](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc5d727b06b) programmā Outlook parāda laikapstākļu prognozes jūsu izvēlētajās ģeogrāfiskajās atrašanās vietās. Lietošanas laikā laikapstākļu joslu programmā Outlook pēc noklusējuma izveido savienojumu ar MSN laika ziņām. MSN pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. Kad izmantojat laikapstākļu joslu ar MSN laika ziņām, Microsoft nevar noteikt jūsu atrašanās vietu un pilsētas, kuras izvēlaties parādīt, netiek saistītas ar jums. Varat [mainīt šo noklusējuma iestatījumu](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook), lai izveidotu savienojumu ar citiem laikapstākļu pakalpojumu sniedzējiem. Ja vēlaties izmantot citu laikapstākļu pakalpojumu sniedzēju, skatiet šī pakalpojumu sniedzēja paziņojumu par konfidencialitāti un licences nosacījumus, lai zinātu, kādi nosacījumi būs spēkā.
 
-## <a name="experiences-that-allow-you-to-submit-feedback"></a>Līdzekļi, kas ļauj sniegt atsauksmes
-
-### <a name="help--feedback"></a>Palīdzība > Atsauksmes
-
-Kad dodaties uz sadaļu **Palīdzība** > **Atsauksmes** un sniedzat atsauksmes vai izvēlaties atbildēt uz vienu no mūsu “Mēs labprāt uzklausīsim jūsu atsauksmes” aptauju pieprasījumiem, izmantojot Office 365 ProPlus lietojumprogrammu, jūsu sniegtā informācija tiek nosūtīta korporācijai Microsoft un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. Kad iesniedzat atsauksmes, izmantojot pogu Atsauksmes, varat pēc izvēles iesniegt savu e-pasta adresi un/vai ekrāna ekrānuzņēmumu. Tā nav obligāta informācija.  
-
-#### <a name="outlook-is-an-exception"></a>Outlook ir izņēmums
-
-Opcija **Palīdzība** > **Atsauksmes** programmā Outlook atšķiras no opcijas **Palīdzība** > **Atsauksmes** citās Office 365 ProPlus lietojumprogrammās. Kad iesniedzat atsauksmes, izmantojot opciju **Palīdzība** > **Atsauksmes** programmā Outlook, jūs atļaujat korporācijai Microsoft apkopot Outlook žurnālus, lai novērstu potenciālas veiktspējas problēmas. Šie žurnāli var saturēt personas informāciju, piemēram, jūsu vārdu, e-pasta adresi, jūsu e-pasta saturu vai meklējamos vārdus. Šis pakalpojums tiek nodrošināts saskaņā ar jūsu organizācijas licenci no Microsoft. Ja izvēlaties iesniegt atsauksmes, izmantojot pogu Atsauksmes programmā Outlook, jums nav jāakceptē atsevišķs līgums ar Microsoft un, netiek piemērots šajā rakstā aprakstītais konfidencialitātes iestatījums.
-
-### <a name="help--suggest-a-feature"></a>Palīdzība > Līdzekļa ieteikšana
-
-Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti [UserVoice pakalpojuma noteikumi un privātuma politika](https://outlook.uservoice.com/tos).
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kā noteikt, vai administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus
 
