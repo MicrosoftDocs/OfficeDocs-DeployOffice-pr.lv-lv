@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
+ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510472"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310687"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -44,6 +44,7 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
+- [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Office būtisko pakalpojumu saraksts 
 
@@ -6456,7 +6457,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
 
-Šis notikums norāda, ka Microsoft AutoUpdate saņēma Apple notikumu, kas informē par programmas darbības pārtraukšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka Microsoft AutoUpdate saņēma Apple notikumu, informējot par programmas darbības pārtraukšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
@@ -10058,6 +10059,15 @@ Tiek apkopoti tālāk norādītie lauki
 Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu diagnostikas datu notikumus.
 
 ## <a name="telemetry-events"></a>Telemetrijas notikumi
+
+### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+
+Šo notikumu apkopo Office programmām, kas tiek darbinātas Apple platformās. Pasākumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmajā palaišanas pieredzē. Mēs apkopojam kodu, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
+
+Tiek apkopoti šādi lauki:
+
+ - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu kolekcijas preferenci.
+
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
