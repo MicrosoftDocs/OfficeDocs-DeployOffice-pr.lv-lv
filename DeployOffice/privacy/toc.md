@@ -1,9 +1,12 @@
 # Office 365 ProPlus konfidencialitāte
+
 ## [Pārskats par konfidencialitātes kontroles līdzekļiem](overview-privacy-controls.md)
-## [Konfidencialitātes kontroles līdzekļu pārvaldība ar politikas iestatījumiem](manage-privacy-controls.md)
-## [Konfidencialitātes kontroles līdzekļu pārvaldība ar preferencēm (Mac)](mac-privacy-preferences.md)
-## [Konfidencialitātes kontroles līdzekļu pārvaldība ar preferencēm (iOS)](ios-privacy-preferences.md)
-## [Konfidencialitātes kontroles līdzekļu pārvaldība ar politikas iestatījumiem (Android)](android-privacy-controls.md)
+
+## Pārvaldiet konfidencialitātes kontroles līdzekļus
+### [Windows politikas iestatījumi](manage-privacy-controls.md)
+### [Mac preferences](mac-privacy-preferences.md)
+### [iOS preferences](ios-privacy-preferences.md)
+### [Android politikas iestatījumi](android-privacy-controls.md)
 
 ## Diagnostikas dati
 ### [Nepieciešamie diagnostikas dati](required-diagnostic-data.md)
