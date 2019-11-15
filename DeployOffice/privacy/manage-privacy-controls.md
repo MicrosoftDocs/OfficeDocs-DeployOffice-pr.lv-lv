@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067447"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639322"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -92,9 +92,6 @@ Mēs saprotam, ka varat vēlēties noteikt, kādu veidu saistītie līdzekļi ir
 
 Ja nekonfigurēsit šos politikas iestatījumus, būs pieejami visi saistītie līdzekļi. Tādējādi lietotājiem būs pieejami visi Office 365 ProPlus ietvaros pieejamie līdzekļi un funkcijas. Tomēr mēs saprotam, ka jums var būt nepieciešams izslēgt dažus vai visus saistītos līdzekļus, lai ievērotu organizācijā noteiktās prasības.
 
-> [!IMPORTANT]
-> 2019. gada 28. maijā tika publicēti jauni administratīvās veidnes faili (ADMX/ADML), kas izlaboja kļūdu saistībā ar šo četru politikas iestatījumu atspējošanu. Noteikti lejupielādējiet un instalējiet atjauninātos grupas politikas failus no [Microsoft lejupielādes centra](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
-
 Ja izvēlaties lietotājiem nenodrošināt noteiktu veidu saistītos līdzekļus, to komandas lentē vai izvēlnē būs pelēkotas vai arī lietotāji saņems kļūdas ziņojumu, kad mēģinās lietot šos saistītos līdzekļus. Šādos gadījumos korporācijai Microsoft netiks nosūtīti [nepieciešamie pakalpojuma dati](required-service-data.md) par šiem saistītajiem līdzekļiem.
 
 Jūsu lietotāji nevarēs izvēlēties ieslēgt vai izslēgt šos Office 365 ProPlus iekļautos saistītos līdzekļus, ja tie būs pierakstījušies pakalpojumā Office ar savas organizācijas akreditācijas datiem, kas dažkārt tiek dēvēti par darba vai mācību kontu.
@@ -131,7 +128,7 @@ Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos 
 > - Visio darbam tīmeklī
 > - Word darbam tīmeklī
 >
-> Šajās Office tīmekļa lietojumprogrammās ir ieplānots sākt izmantot jauno privātuma kontroli papildu pievienotajām iespējām 2019. gada oktobra vidū, taču varat konfigurēt politikas iestatījumu jau tagad. Lai konfigurētu šo politikas iestatījumu šīm Office darbam tīmeklī lietojumprogrammām, ir jāizmanto [Office mākoņa politikas pakalpojums](../overview-office-cloud-policy-service.md).
+> Lai konfigurētu šo politikas iestatījumu šīm Office darbam tīmeklī lietojumprogrammām, ir jāizmanto [Office mākoņa politikas pakalpojums](../overview-office-cloud-policy-service.md).
 
 Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
