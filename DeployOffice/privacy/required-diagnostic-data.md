@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 71b05ab46c7aa6aee2c7dbc2aa88201f50fc8b99
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510004"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639387"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -48,7 +48,8 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 - [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
 - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
-- [Preferenču izmantošana Office darbam ar iOS konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
+- [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Nepieciešamo diagnostikas datu kategorijas, datu apakštipi, notikumi un datu lauki
 
@@ -1237,6 +1238,7 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 
 Informācija par sekmīgu lietojumprogrammas funkcionalitāti. Attiecas tikai uz programmas un dokumentu atvēršanu un aizvēršanu, failu rediģēšana un failu koplietošanu (sadarbību).
 
+
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
 Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcCreateRepublishingLicense API izsaukuma laikā.
@@ -1553,7 +1555,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpGetTemplateListForUser API izsaukuma laikā. 
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
@@ -1749,6 +1751,24 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
 
+#### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu pastāvīgā aktivizēšanas plūsmas darbspēju, kā arī izskatītu neveiksmes iemeslus, pārskatot FailedAt vērtības.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FailedAt** — mēs apkopojam virkni, kas norāda, kur pastāvīgās licences plūsmas aktivizēšanā radās kļūme.
+
+#### <a name="office_apple_activatesubscription"></a>Office_Apple_ActivateSubscription
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Mēs apkopojam informāciju, kas saistīta ar migrāciju no mantotā licencēšanas koda steka uz vNext licencēšanas koda steku. To var izmantot, lai pārraudzītu abonementa aktivizēšanas plūsmas darbspēju, kā arī izsekošanu, ja šī ir migrācija uz licencēšanas vNext, un, ja tiek lietota primārā identitāte.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivatingPrimaryIdentity** — Patiesa/Nepatiesa vērtība, kas norāda, vai primārā identitāte tika lietota. 
+
+- **Data_NULSubscriptionLicensed** — Patiesa/Nepatiesa, kas apzīmē abonementa statusu
+
 #### <a name="office_apple_cisauthticketwithidentity"></a>Office.AppCompat.AppCompat.AgentUpload
 
 Šis notikums tiek apkopots Office lietojumprogrammām, kas tiek darbinātas Apple platformās. Šis notikums tiek izmantots, lai tvertu autorizācijas marķiera ģenerēšanas kļūmes InAppPurchase notikuma laikā Mac datorā (notikums reģistrē saņemto kļūdas kodu).  Šis notikums tiek izmantots, lai noteiktu un palīdzētu novērst problēmas ar autorizācijas marķiera ģenerēšanas kļūmēm
@@ -1761,7 +1781,51 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_ValidIdentity** — ja klientam ir derīga identitāte
 
+#### <a name="office_apple_inappassociationactivity"></a>Office_Apple_InAppAssociationActivity
 
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Mēs apkopojam informāciju, kas saistīta ar produktu asociāciju pēc iegādes programmā. Mēs reģistrējam, kuru abonementu SKU apvienojam.  Šis līdzeklis tiek lietots, lai pārraudzītu, kāda ir iepirkuma produktu asociāciju darbspēja programmā.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ProductID** — abonementu SKU, ko cenšamies piesaistīt produktam.
+
+#### <a name="office_apple_inapppurchaseactivity"></a>Office_Apple_InAppPurchaseActivity
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. 
+
+Mēs apkopojam informāciju, kas saistīta ar produktu pirkumiem AppStore. Mēs izsekojam iegādes rezultātu (neveiksmes, izdošanās, maksājuma problēma utt.), pirkšanas pieprasījuma tipu (atjaunošana, iepirkums) un iegādāto SKU/produktu (Office 365 mājas lietošanai utt.).  Šie dati tiek izmantoti, lai pārraudzītu iegādes plūsmas darbspēju programmā.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ Data_PurchaseResult** — pirkšanas rezultāts
+
+- **Data_ProductID** — iegādātais produkts
+
+- **Data_PurchaseRequestType** — pirkšanas pieprasījuma tips
+
+#### <a name="office_apple_intune"></a>Office_Apple_InTune
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Mēs apkopojam, vai pašreizējai sesijai ir veikta Intune pārvaldība. Šis līdzeklis tiek lietots, lai rādītu rakursā/filtrētu Intune pārvldītās sesijas un ļauj mums izpētīt iespējamās problēmas, kas saistītas ar Office kā Intune pārvaldītai programmai.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_EventID** — mēs apkopojam virkni, kas apzīmē kodu, kas norāda, vai sesija ir pārvaldīta kā Intune.
+
+#### <a name="office_apple_licensing_mac_licensingstate"></a>Office_Apple_Licensing_Mac_LicensingState
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tver pašreizējās sesijas licences statusu, kas tiek lietota sesijā (OLS licences ID, tiek lietots SKU, pagarinājuma periods vai nē, RFM utt.). Apkopotie dati tiek izmantoti kļūdu noteikšanai un neveiksmes cēloņu novēršanai. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_DidRunPreview** — virkne, kas norāda, vai šī sesija tiek palaista sadaļā priekšskatījums
+
+- **Data_LicensingACID** — virkne, kas apzīmē licencēšanas sistēmas iekšējo identifikatoru
+
+- **Data_LicensingType** — virkne, kas apzīmē licences tipu
+
+- **Data_OLSLicenseId** — virkne, kas apzīmē licences identifikatoru
+
+- **Data_State** — virkne, kas norāda licences pašreizējo statusu
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1798,6 +1862,258 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Activity_StartStopType** — apturēšana
 
 - **Activity_DateTimeTicks** — darbības datums un laiks
+
+#### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākumu ieraksti, veicot darbību "Saglabāt kā" un tiek izmantoti, lai izprastu un noteiktu lietotāja pieredzes prioritāti, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijām.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunajā atrašanās vietā.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_OriginServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt. un kas nav faila faktiskā atrašanās vieta.
+
+- **Data_ServiceType** — abstrakta jaunās atrašanās vietas kategorizēšana pēc saglabāšanas, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt. un kas nav faila faktiskā atrašanās vieta.
+
+#### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, kad lietotājs "@" piemin citu lietotāju un izmanto, lai izprastu un noteiktu prioritāti lietotāja pieredzei, pamatojoties uz to, kā lietotāji sadarbojas ar citiem lietotājiem.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CharactersTyped** — skaitliska vērtība, kas norāda kopējo rakstzīmju skaitu "@" pieminēšanas tekstā.
+
+#### <a name="office_docs_apple_docsuxmacodspsharingwebviewsharingcompleted"></a>Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, ja lietotājs izvēlas koplietot mākoņa dokumentu, izmantojot OneDrive koplietošanas pieredzi, un tas tiek izmantots, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz dokumentu koplietošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ShareType** — stingri kodēta virkne, kas norāda, kāda veida kopīgošanas darbība ir pabeigta, tostarp, bet ne tikai, "Kopēt saiti", "Citas programmas", "Teams".
+
+- **Data_ShareWebViewMode** — stingri kodēta virkne, kas norāda, kāda veida kopīgošana bija aktīva, kad kopīgošana bija pabeigta, ieskaitot ne tikai "Piekļuves pārvaldība", "@pieminēšana", "Kopīgot".
+
+#### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šī notikums ieraksta, kad lietotājs atlasa, lai aplūkotu pašreizējo līdzautoru sarakstu.  Šie dati tiek izmantoti, lai labāk izprastu un noteiktu prioritātes lietotājam, kas saistīti ar dokumentu vienlaicīgu koprediģēšanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CoauthorCount** — skaitliska vērtība, kas apzīmē kopējo personu skaitu, kuras pašlaik rediģē to pašu dokumentu, ko lietotājs.
+
+#### <a name="office_docsui_collaboration_collabcornerpeoplegallerycoauthorsupdated"></a>Office_DocsUI_Collaboration_CollabCornerPeopleGalleryCoauthorsUpdated 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad tiek mainīts aktīvo līdzautoru skaits mākonī.  Šie dati tiek izmantoti, lai labāk izprastu un noteiktu prioritātes lietotājam, kas saistīti ar dokumentu vienlaicīgu koprediģēšanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CoauthorsJoined** — līdzautoru skaits, kas pievienojās dokumentam.
+
+- **Data_CoauthorsJoined** — līdzautoru skaits, kas pameta dokumentu.
+
+- **Data_NewCoauthorCount** — jaunais aktīvo līdzautoru skaits dokumentā. 
+
+- **Data_OldCoauthorCount** — iepriekšējo aktīvo līdzautoru skaits pirms atjauninājuma.
+
+- **Data_ServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+#### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad tiek izveidots jauns fails, no darbības "Jauns no veidnes", un to izmanto, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzei, pamatojoties uz dokumentu izveides informāciju.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_InHomeTab** — Būla vērtība, kas norāda, vai jaunais fails no veidnes tika izveidots no faila jaunās pieredzes cilnes Sākums.
+
+- **Data_InSearch** — Būla vērtība, kas norāda, vai fails tika izveidots, kad lietotājs meklēja veidni.
+
+- **Data_IsHomeTabEnabled** — Būla vērtība, kas norāda, ja cilne Sākums pašlaik ir pieejama lietotājam.
+
+- **Data_IsRecommendedEnabled** — Būla vērtība, kas norāda, ja pieredze "Ieteicams" pašlaik ir pieejama lietotājam.
+
+- **Data_TemplateIndex** — veidnes faila skaitliskais indekss, kas tiek rādīts vizuāli lietotājam.
+
+- **Data_TemplateType** — klasifikācija, kas palīdz atšķirt veidnes tipu, piemēram, bet ne tikai "Tiešsaistes" veidnes, "Tiešsaistes meklēšanas" veidnes, "Lokālās" veidnes.
+
+#### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, ja fails tiek atvērts, izmantojot dokumentu galerijas ieteicamo failu sadaļas, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāju pieredzei, pamatojoties uz informāciju par failu atvēršanas darbību.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_Success** — Būla vērtība, kas norāda, vai operācija bija sekmīga.
+
+#### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek failu atvēršanas darbība, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un paplašinājuma pirmās četras rakstzīmes.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_Ext** — faila paplašinājums attiecas tikai uz pirmajiem četriem paplašinājuma simboliem vai mazāk.
+
+- **Data_ServiceType** — faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt.
+
+#### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek failu atvēršana, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un no kurienes lietotājs pieprasīja atvērt failu programmā.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_IsCandidateDropboxFile** — šī ir Būla vērtība, kas tiek reģistrēta, ja, pārbaudot faila ceļu, mūsuprāt, tas var būt no mapes, kas tiek sinhronizēta ar Dropbox.
+
+- **Data_IsSignedIn** — neatkarīgi no tā, vai tiek pierakstīts lietotājs, kad fails ir saglabāts.
+
+- **Data_OpenReason** — atvērtais iemesls ir skaitliska vērtība, kas norāda, no kurienes programmā lietotājs ir atvēris failu.
+
+- **Data_ServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+#### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek darbība "saglabāt kā", un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijas un paplašinājuma pirmās četras rakstzīmes.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunā atrašanās vietā.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FileExtension** — pirmās četras rakstzīmes jaunā faila paplašinājumā.
+
+- **Data_IsNewFileCreation** — norāda, vai saglabāšanas darbība ir paredzēta jaunam failam vai esoša faila kopijai.
+
+- **Data_IsSignedIn** — neatkarīgi no tā, vai tiek pierakstīts lietotājs, kad fails ir saglabāts.
+
+- **Data_SaveErrorCode** — skaitliska vērtība, kas ir iestatīta, ja ir kļūda, kas palīdz noteikt kļūdas veidu.
+
+- **Data_SaveErrorDomain** — norāda tā SaveErrorCode domēnu, ko Apple SaveErrorCode domēns definē kā "patvaļīgas virknes, kas tiek izmantotas, lai diferencētu kodu grupas".
+
+- **Data_SaveLocation** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+- **Data_SaveOperationType** — skaitliska vērtība, ko definē Apple NSSaveOperationType vērtību grupa.
+
+#### <a name="office_docsui_sharingui_cloudupsellshown"></a>Office_DocsUI_SharingUI_CloudUpsellShown 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, kad lietotājs dodas caur dokumentu papildu pārdošanai uz mākoņa plūsmu.  Šie dati tiek izmantoti, lai labāk izprastu un noteiktu prioritātes lietotājam, kas saistītas ar dokumentu vienlaicīgu koprediģēšanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FileStyle** — skaitliska vērtība, kas norāda, kādā scenārijā papildu pārdošanas pieredze tika parādīta kā no automātiskās saglabāšanas slēdža vai kopīgošanas pogas.
+
+- **Data_FileType** — pirmās četras rakstzīmes pašreizējā faila paplašinājumā.
+
+- **Data_InDocStage** — Būla izteiksme, kas norāda, vai papildu pārdošanas pieredze tiek parādīta dokumentu galerijā vai dokumenta logā.
+
+- **Data_IsDocumentOpened** — Būla izteiksme, kas norāda, vai ir atvērts pašreizējais dokuments, kurā redzama papildu pārdošanas pieredze.
+
+- **Data_IsDraft** — Būla izteiksme, kas norāda, vai pašreizējais fails kaut kad ir saglabāts.
+
+- **Data_IsSheetModal** — Būla izteiksme, kas norāda, vai papildu pārdošanas pieredze tika prezentēta modāli vai nē.
+
+#### <a name="office_docsui_sharingui_cloudupsellupload"></a>Office_DocsUI_SharingUI_CloudUpsellUpload 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, kad lietotājs izvēlas augšupielādēt jaunu vai lokālo failu mākonī un šīs darbības rezultātu.  Šie dati tiek izmantoti, lai labāk izprastu un noteiktu prioritātes lietotājam, kas saistītas ar dokumentu vienlaicīgu koprediģēšanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FileStyle** — skaitliska vērtība, kas norāda, kādā scenārijā papildu pārdošanas pieredze tika parādīta kā no automātiskās saglabāšanas slēdža vai kopīgošanas pogas.
+
+- **Data_FileType** — pirmās četras rakstzīmes pašreizējā faila paplašinājumā.
+
+- **Data_InDocStage** — Būla izteiksme, kas norāda, vai papildu pārdošanas pieredze tiek parādīta dokumentu galerijā vai dokumenta logā.
+
+- **Data_IsDefaultServiceLocation** — Būla vērtība, kas norāda, vai atlasītā atrašanās vieta, kur augšupielādēt dokumentu, ir noklusējuma atrašanās vieta.
+
+- **Data_IsDocumentOpened** — Būla izteiksme, kas norāda, vai ir atvērts pašreizējais dokuments, kurā redzama papildu pārdošanas pieredze.
+
+- **Data_IsDraft** — Būla izteiksme, kas norāda, vai pašreizējais fails kaut kad ir saglabāts.
+
+- **Data_IsSheetModal** — Būla izteiksme, kas norāda, vai papildu pārdošanas pieredze tika prezentēta modāli vai nē.
+
+- **Data_LocationServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+- **Data_UploadAction** — cietā kodētā virkne, kas norāda, vai augšupielāde bija pārvietošanas vai kopēšanas darbība.
+
+- **Data_UploadResult** — cieta kodēta virkne, kas norāda mēģinājuma rezultātu, tostarp, bet ne tikai, "Izdevās", "UserCancelledUpload" un "PreAuthFailed".
+
+#### <a name="office_docsui_sharingui_copylinkoperation"></a>Office_DocsUI_SharingUI_CopyLinkOperation
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šī notikums ieraksta, kad lietotājs izvēlas kopīgot dokumentu, ģenerējot saiti uz mākoņa dokumentu, un tiek izmantots, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz dokumentu koplietošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ ServiceType** — abstrakta faila atrašanās vietas kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., nevis faktiskā faila atrašanās vieta.
+
+- **Data_LinkType** — cietā kodētā virkne, kas apraksta uzaicināšanas darbības veidu, piemēram, "ViewOnly" un "ViewAndEdit".
+
+- **Data_ShareScenario** — iekodēts virknes apraksts, kur programmas lietotāja interfeisā fails tiek koplietots, ieskaitot, bet neaprobežojoties ar "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+
+#### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, ja lietotājs izvēlas koplietot mākoņa dokumentu, izmantojot OneDrive koplietošanas pieredzi, un tas tiek izmantots, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz dokumentu koplietošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ODSPShareWebviewShareError** — Ja koplietošanas pieredze atklāj kļūdu, tā ir skaitliska vērtība, kas palīdz noteikt kļūmes iemeslu.
+
+- **Data_ODSPShareWebviewShareGrantAccessResult** — Būla vērtība, kas norāda, ka vieglā koplietošanas darbība ir sekmīgi pabeigta.
+
+- **Data_ODSPShareWebviewShareSuccessType** — ja kopīgošanas darbība ir veiksmīgi pabeigta, šī ir skaitliska vērtība, kas tiek lietota, lai noteiktu, kāda veida koplietošanas darbība tika pabeigta.
+
+- **Data_WebViewInfoResult** — ja lietotāja interfeiss nav ielādēts, šī ir skaitliska vērtība, kas palīdz identificēt kļūmes iemeslu. 
+
+- **Data_WebViewLoadTimeInMs** — skaitliska vērtība, kas ieraksta, cik daudz laika ir nepieciešams, lai tīmekļa lietotāja interfeiss tiktu ielādēts.
+
+#### <a name="office_docsui_sharingui_invitepeople"></a>Office_DocsUI_SharingUI_InvitePeople 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, ja lietotājs izvēlas uzaicināt lietotājus uz mākoņa dokumentu un tiek izmantots, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz dokumentu koplietošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ ServiceType** — abstrakta faila atrašanās vietas kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., nevis faktiskā faila atrašanās vieta.
+
+- **Data_InviteeCount** — kopējais kontaktpersonu skaits, kas uzaicināti uz dokumentu vienā uzaicinājuma darbībā.
+
+- **Data_LinkType** — cietā kodētā virkne, kas apraksta uzaicināšanas darbības veidu, piemēram, "ViewOnly" un "ViewAndEdit".
+
+- **Data_MessageLength** — uzaicinājuma ziņojumā nosūtīto rakstzīmju kopējais skaitlisks skaits.
+
+- **Data_ShareScenario** — cieti kodēts virknes apraksts, kur programmas lietotāja interfeisā fails tiek koplietots, ieskaitot, bet ne tikai "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+
+#### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad lietotājs izvēlas sūtīt dokumenta kopiju, un tiek izmantots, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz dokumentu koplietošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_IsHomeTabEnabled** — Būla vērtība, kas norāda, ja cilne Sākums pašlaik ir pieejama lietotājam.
+
+- **Data_IsRecommendedEnabled** — Būla vērtība, kas norāda, ja pieredze "Ieteicams" pašlaik ir pieejama lietotājam.
+
+- **Data_OperationType** — skaitliska vērtība, kas norāda, kāda veida kopijas nosūtīšanas darbība tiek veikta, piemēram, nosūtot kopiju e-pastā vai nosūtot kopiju, izmantojot Apple kopīgošanas vadību.
+
+- **Data_ServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+- **Data_ShareFileType** — cietais kodētais virknes apraksts par to, kāda tipa objektu koplieto, tostarp, bet ne tikai, "Dokuments", "PDF", "Attēls".
+
+- **Data_ShareScenario** — cieti kodēts virknes apraksts, kur programmas lietotāja interfeisā fails tiek koplietots, ieskaitot, bet ne tikai "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+
+- **Data_SharingService** — Būla vērtība, kas norāda, vai fails tika izveidots, kad lietotājs meklēja veidni.
+
+#### <a name="office_docsui_sharingui_upsellshare"></a>Office_DocsUI_SharingUI_UpsellShare 
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, kad lietotājs dodas caur dokumentu papildu pārdošanai uz mākoņa plūsmu, mēģinot kopīgot dokumentu.  Šie dati tiek izmantoti, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzi, kas saistīta ar dokumentu pārvietošanu uz mākoņa vietām.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FileOperationResult** — skaitliska vērtība, kas norāda, vai operācija bija sekmīga.
+
+- **Data_HostedFromDocStage** — Būla izteiksme, kas norāda, vai lietotājs izmanto papildu pārdošanu, lai izveidotu mākoņa plūsmu no DocStage pieredzes vai atvērta dokumenta.
+
+- **Data_isLocalCopyOn** — Būla izteiksme, kas norāda, vai, ja izmantojat, izvēlējās saglabāt lokālu dokumentu, kas tiek augšupielādēts mākoņa atrašanās vietā, vai pārvietojat esošo dokumentu uz mākoņa atrašanās vietu.
+
+- **Data_NewFileType** — faila jaunas atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+
+- **Data_OriginalFileType** — abstrakta faila atrašanās vietas kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., nevis faktiskā faila atrašanās vieta.
+
+- **Data_UploadButtonPressed** — Būla izteiksme, kas norāda, vai lietotājs ir izvēlējies augšupielādēt pašreizējo dokumentu mākoņa atrašanās vietā.
+
+- **Data_UploadError** — skaitliska vērtība, kas norāda, kāda veida kļūda radās, ja augšupielādes darbība neizdodas.
+
+- **Data_UpsellAppearsFromDelegate** — Būla vērtība, kas norāda, vai skats ir redzams koplietošanas izvēlnē.
 
 #### <a name="officeextensibilitycatalogexchangeprocessentitlement"></a>Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -1856,7 +2172,11 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data.AsyncOpen —** karodziņš, kas norāda atvērto saturu, kas ir pieejams pēc galvenā satura atvēršanas
 
   - **Data.CacheFileId —** izveido savienojumu ar Office dokumentu kešatmiņas telemetriju, lai iespējotu analīzi saistībā ar kešatmiņas problēmu ietekmi uz lietotāju pieredzi
+ 
+  - **Dati.CFREnabled** — norāda, ka sesijai ir iespējota CacheFileRuntime.
 
+  - **Dati.CFRFailure** — norāda, ka CacheFileRuntime radās kļūda.
+  
   - **Data.CoauthStatus —** reģistrē atvērta dokumenta sadarbības statusu
 
   - **Data.CountOfMultiRoundTripsDownload —** to servera apmeklējumu skaits, kas tiek izmantoti veiktspējas un tīkla problēmu novēršanai
@@ -2083,6 +2403,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.UseClientIdAsSchemaLockId —** karodziņš, kas kontrolē, kā dokuments ir bloķēts pakalpojumā
 
+  - **Dati. VersionType** — norāda, kura versijas tipa ir pašreizējā atvērtā darbība.
+
   - **Data.WopiServiceId —** novecojis, to aizvietoja Data\_Doc\_WopiServiceId
 
 #### <a name="officefileiocsiccachedfilecsisavefilebasic"></a>Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
@@ -2114,6 +2436,10 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data.CountOfMultiRoundTripsDownload —** to servera apmeklējumu skaits, kas tiek izmantoti veiktspējas un tīkla problēmu novēršanai
 
   - **Data.CountOfMultiRoundTripsUpload —** to servera apmeklējumu skaits, kas tiek izmantoti veiktspējas un tīkla problēmu novēršanai
+  
+  - **Dati.CFREnabled** — norāda, ka sesijai ir iespējota CacheFileRuntime.
+
+  - **Dati.CFRFailure** — norāda, ka CacheFileRuntime radās kļūda.
 
   - **Data.DialogChoice —** ierakstu izvēle kļūdu dialoglodziņos
 
@@ -2381,6 +2707,198 @@ Tiek apkopoti tālāk norādītie lauki.
 - **DateTime** — notikuma reģistrēšanas laikspiedols
 
 - **EventName** — reģistrētā notikuma nosaukums
+
+#### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu O365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.).
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivationStatusCollectionTime** — laikspiedols
+
+- **Data_ActivationStatusError** — aktivizācijas kļūdas kods.
+
+- **Data_ActivationStatusFlowType** – skaitliska vērtība, kas norāda aktivizēšanas plūsmas tipu
+
+#### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Mēs apkopojam datus, lai noskaidrotu O365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (PPP, Programmas plūsma, Iegāde utt.). Mēs apkopojam datus, kas satur aktivizācijas tipu, plūsmas tipu (Pirmā palaišanas plūsma/DocStage/Iegāde) un Office licencēšanas pakalpojuma ID.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivationTypeCollectionTime** — laikspiedols
+
+- **Data_ActivationTypeFlowType** — skaitliska vērtība, kas norāda aktivizēšanas plūsmas tipu
+
+- **Data_ActivationTypeOLSLicense** — licences identifikators
+
+- **Data_ActivationTypeStatus** — aktivizācijas statusa kods.
+
+#### <a name="office_firstrun_apple_firstruncomplete"></a>Office_FirstRun_Apple_FirstRunComplete
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums mūs informē, vai lietotājs izmanto freemium plūsmas tipu (PPP/DocStage/Iegāde) un identitātes tipu (PPL/OrgID). Šis notikums tiek izmantots, lai noskaidrotu, vai pirmā palaišanas pieredze (PPP) ir pabeigta un identitātes tipu, kas tiek izmantots, lai pierakstītos (MSA/OrgID).
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunCompletedCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika pabeigta
+
+- **Data_FirstRunCompletedFlowType** — kods, kas apzīmē pabeigto lietotāja plūsmas tipu 
+
+- **Data_FirstRunCompletedFreemiumStatus** — kods, kas apzīmē freemium lietotāja plūsmas pabeigšanas statusu
+
+- **Data_FirstRunCompletedIdentityType** — tā lietotāja identitātes tips, kas pabeidzis plūsmu
+
+#### <a name="office_firstrun_apple_firstrunstart"></a>Office_FirstRun_Apple_FirstRunStart
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis pasākums mūs informē, ka lietotājs ir iegājis pirmā palaišanas pieredze un tiek palaists plūsmas tips (PPP/DocStage/Iegāde). Šis notikums tiek izmantots, lai noskaidrotu, vai pirmā palaišanas pieredze (PPP) tika sākta sekmīgi.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunStartedCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika pabeigta
+
+- **Data_FirstRunStartedFlowType** — kods, kas apzīmē pabeigto lietotāja plūsmas tipu 
+
+#### <a name="office_firstrun_apple_firstrunstartedandcompleted"></a>Office_FirstRun_Apple_FirstRunStartedAndCompleted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums mūs informē, vai lietotājs izmanto freemium plūsmas tipu (PPP/DocStage/Iegāde) un identitātes tipu (PPL/OrgID). Mēs izmantojam šo notikumu, lai noskaidrotu, cik mūsu pirmā palaišanas pieredzes (PPP) plūsmas darbspēju un efektivitāti.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunCompletedCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika pabeigta
+
+- **Data_FirstRunCompletedFlowType** — kods, kas apzīmē pabeigto lietotāja plūsmas tipu  
+
+- **Data_FirstRunCompletedFreemiumStatus** — kods, kas apzīmē freemium lietotāja plūsmas pabeigšanas statusu
+
+- **Data_FirstRunCompletedIdentityType** — tā lietotāja identitātes tips, kas pabeidzis plūsmu
+
+- **Data_FirstRunCompletedCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika pabeigta
+
+- **Data_FirstRunCompletedFlowType** — kods, kas apzīmē pabeigto lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationfail"></a>Office_FirstRun_Apple_InAppPurchaseActivationFail
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu programmas iegādes aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.). 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivationFailCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika aktivizēšanas kļūme 
+
+- **Data_ActivationFailFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AssoicatedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika saistīšanas kļūme 
+
+- **Data_AssoicatedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseActivationSuccess
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu programmas iegādes aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.). 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivatedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika aktivizēšanas kļūme 
+
+- **Data_ActivatedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AssoicatedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika saistīšanas kļūme 
+
+- **Data_AssoicatedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationfailed"></a>Office_FirstRun_Apple_InAppPurchaseAssociationFailed
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu programmas iegādes aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.). 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppChargedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad tika iekasēta maksa par pirkumu
+
+- **Data_AppChargedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AssoicationFailedCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika programmas piesaistes kļūme
+
+- **Data_AssoicationFailedFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AssoicationFailedResult** — kods, kas norāda neveiksmes tipu
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseAssociationSuccess
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu programmas iegādes aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.). 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppChargedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad tika iekasēta maksa par pirkumu
+
+- **Data_AppChargedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AssoicatedSuccessfullyCollectionTime** — laikspiedols, kas reģistrē laiku, kad notika programmas saistīšanas kļūme
+
+- **Data_AssoicatedSuccessfullyFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapppurchasefailures"></a>Office_FirstRun_Apple_InAppPurchaseFailures
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam informāciju par programmas iegādes plūsmas rezultātu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppStoreFailureFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_AppStoreFailureResult** — novērotais neveiksmes rezultāts
+
+- **Data_CancelRequesFlowType** — kods, kas apzīmē izmantoto lietotāja plūsmas tipu
+
+- **Data_EventId** — kods, kas apzīmē neveiksmes tipu
+
+#### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas iegādes plūsmas darbspēju. Mēs apkopojam datus, lai izsekotu programmas pirkumus un to tipu, ko esat iegādājies (mēneša/gada/mājas/individuālai lietošanai).
+
+Tiek apkopoti šādi lauki:
+
+- **Data_EventId** — kods, kas apzīmē rezultāta tipu
+
+- **Data_PurchasedClickedOfferType** — izmēģinātā SKU tips
+
+- **Data_PurchaseSuccessfulFlowType** — kods, kas apzīmē izmantotā lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapprestoreattempted"></a>Office_FirstRun_Apple_InAppRestoreAttempted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas iegādes plūsmas darbspēju. Mēs apkopojam datus, lai izsekotu programmas atjaunošanas mēģinājumus
+
+Tiek apkopoti šādi lauki:
+
+- **Data_EventId** — kods, kas apzīmē mēģinājuma rezultāta tipu
+
+- **Data_RestoreAttemptFlowType** — kods, kas apzīmē izmantotā lietotāja plūsmas tipu
+
+#### <a name="office_firstrun_apple_inapprestoreattemptfailed"></a>Office_FirstRun_Apple_InAppRestoreAttemptFailed
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas iegādes plūsmas darbspēju. Mēs apkopojam datus, lai izsekotu to, kā notiek programmu atjaunošanai un ar to saistītām plūsmām un kļūdām.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_RestoreButtonFlowType** — kods, kas apzīmē izmantotā lietotāja plūsmas tipu
+
+- **Data_RestoredFailedPaymentCancelledFlowType** — kods, kas apzīmē izmantotā maksājuma atcelšanas plūsmas tipu
+
+- **Data_RestoredFailedUnKnownFlowType** — vai mēģinājums neizdevās negaidītas lietotāja plūsmas dēļ
+
+- **Data_RestoredFailedUnKnownResult** — vai mēģinājums neizdevās nezināmu iemeslu dēļ
+
+#### <a name="office_firstrun_apple_macfirstruncompleted"></a>Office_FirstRun_Apple_MacFirstRunCompleted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis pasākums mūs informē, ka lietotājs ir veicis pirmo palaišanas pieredzi. Šis notikums tiek izmantots, lai noskaidrotu, vai pirmā palaišanas pieredze (PPP) bija sekmīga.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika pabeigta.
+
+#### <a name="office_firstrun_apple_macwxpfirstrunstarted"></a>Office_FirstRun_Apple_MacWXPFirstRunStarted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis pasākums mūs informē, ka lietotājs ir veicis pirmo palaišanas pieredzi. Šis notikums tiek izmantots, lai noskaidrotu, vai pirmā palaišanas pieredze (PPP) tika sākta sekmīgi.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -2795,7 +3313,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Konta pievienošanas Outlook programmā rezultāts, izmantojot jauna konta konfigurēšanas pieredzi. Dati tiek uzraudzīti, lai nodrošinātu, ka kļūmju skaits nepalielinās. Mēs arī analizējam datus, lai atrastu jomas, kurās nepieciešami uzlabojumi. Mēs strādājam pie tā, lai uzlabotu panākumu rādītājus katrā laidienā. 
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **AccountConfigAutoSignIn** — administratora iestatītā automātiskā konfigurācija.
 
@@ -5968,6 +6486,14 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **UTCReplace_AppSessionGuid** — konstanta Būla vērtība. Vienmēr patiess.
 
+#### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
+
+Norāda, ka pašreizējā Office sesija ir nodošanas sesija. Tas nozīmē, ka darbs ar lietotāja pieprasījumu, lai atvērtu dokumentu, tiek pārsūtīts uz jau darbojošos instanci tajā pašā programmā.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **ParentSessionId** — tās sesijas ID, kas veiks lietotāju pieprasījuma apstrādi.
+
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
 Attiecas uz Office UWP lietojumprogrammām.  Šis notikums tiek palaists, kad Office lietojumprogramma tiek inicializēta pirmo reizi pēc jaunināšanas/instalēšanas no veikala. Tā ir daļa no pamata diagnostikas datiem, kas tiek izmantoti, lai izsekotu, vai sesija ir palaišanas sesija.
@@ -6002,6 +6528,21 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **parentSessionId** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
+#### <a name="officevisiovisioiosappboottime"></a>Office.Visio.VisioIosAppBootTime
+
+Tas tiek aktivizēts katru reizi, kad tiek sāknēta Visio iOS programma. Ir svarīgi saprast, kāda ir Visio iOS programmas sāknēšanas veiktspēja. Izmanto vājas veiktspējas problēmu novēršanai. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppBootTime** — programmas sāknēšanas ilgums milisekundēs.
+
+#### <a name="officevisiovisioiosappresumetime"></a>Office.Visio.VisioIosAppResumeTime 
+
+Tas tiek aktivizēts katru reizi, kad Visio iOS programma atsāk darboties. Ir svarīgi mērīt programmas atsākšanas veiktspēju un novērst Visio iOS programma veiktspējas problēmas.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppResumeTime** — ilgums, līdz programma atsāk darboties milisekundēs.
 
 #### <a name="officewordfileopenopencmdfilemrupriv"></a>Office.Word.FileOpen.OpenCmdFileMruPriv
 
@@ -6604,6 +7145,72 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Data\_ZoomText —** norāda, vai ZoomText darbojās sesijas laikā
 
+#### <a name="office_apple_darkmode"></a>Office_Apple_DarkMode
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums norāda, vai lietotājs darbina sistēmu DarkMode, un vai lietotājs ir pārrakstījis DarkMode sistēmas iestatījumu programmā Office.  Šis notikums tiek izmantots, lai nodrošinātu pieejamību un noteiktu prioritāti lietotāju ērtību optimizācijai.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_DarkModeIsEnabled** — vai DarkMode sistēma ir iespējota.
+
+- **Data_RequiresAquaSystemAppearanceEnabled** — vai DarkMode sistēma ir pārrakstīta programmā Office.
+
+#### <a name="office_apple_hardwarekeyboardinuse_apple"></a>Office_Apple_HardwareKeyboardInUse_Apple
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums norāda, ka lietotājs pievieno tastatūru savā mobilajā ierīcē. Šis pasākums palīdz mums uzlabot pieejamību un optimizēt mūsu lietotāja pieredzi.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CollectionTime** — laikspiedols, kas apzīmē notikumu vākšanas laiku.
+
+#### <a name="office_apple_mbuinstrument_deviceaccessibilitysettings"></a>Office_Apple_MbuInstrument_DeviceAccessibilitySettings
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums apkopo dažādas pieejamības opcijas, kas pieejamas sesijas laikā. Šis notikums tiek izmantots, lai nodrošinātu pieejamību un noteiktu prioritāti lietotāju ērtību optimizācijai.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AccessibilityContentSize** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_AssistiveTouchRunning** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_BoldTextEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_CollectionTime** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_DarkerSystemColorsEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_DifferentiateWithoutColor** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_GrayscaleEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_GuidedAccessEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_IncreaseContrast** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_InvertColorsEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_PreferredContentSizeCategory** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_ReduceMotionEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_ReduceTransparency** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_ReduceTransparencyEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_ShakeToUndeEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots. (Novecojis — tiek izmantots tikai vecajos būvējumos.)
+
+- **Data_ShakeToUndoEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots.
+
+- **Data_SpeakScreenEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_SpeakSelectionEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_SwitchControlRunning** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_UAZoomEnabled** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
+- **Data_VoiceOverRunning** — karodziņš, kas norāda, vai šis iestatījums ir iespējots
+
 #### <a name="officewordaccessibilitylearningtoolsreadaloudplayreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
 
 Šis notikums norāda, vai Office Word lasa dokumenta tekstu. Šis notikums ir pieejamības līdzekļa periodiskais kontrolziņojums, kas ļauj Microsoft izvērtēt teksta lasīšanas līdzekļa darbspēju.
@@ -6701,45 +7308,51 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Event Name** — notikuma nosaukums ir notikuma kategorija un notikuma etiķete.
 
-#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
+#### <a name="office_apple_identitydomainname"></a>Office_Apple_IdentityDomainName
 
-Sāknēšanas notikums, kas tālākai izpētei uzskaita labvēlīgas un nelabvēlīgas iziešanas no lietojumprogrammas.
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu sistēmas darbspēju, kā arī noteiktu domēna lietotāju neveiksmes iemeslus. Mēs apkopojam domēnu, ko izmanto mūsu lietotāji autentificēšanas laikā.  Šie dati tiek izmantoti, lai palīdzētu noteikt un novērst problēmas, kas var neradīt pārāk lielu iespaidu plašākā līmenī, bet ir ļoti iespaidīgas noteiktiem lietotāju domēniem.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
-- **AffectedProcessResidentMemoryOnCrash** — avarējušās lietojumprogrammas iekšējā atmiņa.
+- **Data_Domain** — autentifikācijai izmantotais domēns
 
-- **AffectedProcessSessionID** — iepriekšējās iziešanas procesa sesijas ID.
+- **Data_IdentityProvider** — autentifikācijas identitātes nodrošinātāja nosaukums. (piem., LiveId vai ADAL)
 
-- **AffectedProcessUnsymbolicatedChecksum** — tiek izmantots simbolizācijai kopā ar steka jaukšanu.
+- **Data_IdentityProviderEnum** — autentifikācijas identitātes nodrošinātāja nosaukums. (Skaitlis)
 
-- **AffectedProcessVirtualMemoryOnCrash** — avarējušās lietojumprogrammas virtuālā atmiņa.
+#### <a name="office_apple_systemhealthappexitmacandios"></a>Office_Apple_SystemHealthAppExitMacAndiOS
 
-- **AffectedSessionBuildNumber** — lietojumprogrammas versija.
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu Office programmu darbspēju, kā arī noteiktu kļūmju iemeslus. Mēs apkopojam datus katras programmas iziešanas laikā, lai noteiktu, vai no programmas ir iziets bez aizķeršanās.
 
-- **AffectedSessionDuration** — sesijas ilgums sekundēs pirms avārijas.
+Tiek apkopoti šādi lauki:
 
-- **AffectedSessionIDSMatch** — būla, lai pārliecinātos par to, ka atskaites sesijas ID ir tāds pats kā MERP fiksētais. 
+- **Data_AffectedProcessSessionID** — sesijas identifikators, kas veic programmas iziešanu.
 
-- **AffectedSessionLongBuildNumber** — garais būvējuma numurs.
+- **Data_AffectedSessionBuildNumber** — tās programmas sekundārā versija, kurā tika novērota programmas iziešana.
 
-- **AffectedSessionMERPSessionID** — MERP sesijas ID.
+- **Data_AffectedSessionDuration** — sesijas ilgums no sākuma līdz beigām
 
-- **AffectedSessionOSLocale** — OS lokalizācija.
+- **Data_AffectedSessionIDSMatch** — telemetrijas darbspējas rādītājs.
 
-- **AffectedSessionOSVersion** — OS versija.
+- **Data_AffectedSessionMERPSessionID** — telemetrijas darbspējas rādītājs.
 
-- **AffectedSessionStackHash** — avarējušās lietojumprogrammas steka trasēšanas jaukšana.
+- **Data_AffectedSessionOSLocale** — tās operētājsistēmas lokalizācija, ar kuru tika novērota programmas iziešana.
 
-- **AffectedSessionStartTime** — sesijas sākuma datums/laiks.
+- **Data_AffectedSessionOSVersion** — tās operētājsistēmas lokalizācija, ar kuru tika novērota programmas iziešana.
 
-- **AffectedSessionUAEType** — uzskaitījums, kas sniedz mums informāciju par notikušās avārijas veidu.
+- **Data_AffectedSessionResidentMemoryOnCrash** — rezidenta atmiņas apjoms, kas tika patērēts, kad tika veikta lietojumprogrammas iziešana
 
-- **AffectedSessionVersion** — lietojumprogrammas versija.
+- **Data_AffectedSessionStackHash** — identifikators, kas aprakstīs konkrētās kļūdas trāpījums.
 
-- **DeviceModel** — aparatūras modelis.
+- **Data_AffectedSessionStartTime** — laiks, kad sesija sākās.
 
-- **ExitWasGraceful** — vai iepriekšējā iziešana no lietojumprogrammas bija labvēlīga?
+- **Data_AffectedSessionUAEType** — novērotais programmas iziešanas veids (ja tas bija ar aizķeršanos iziešanas gadījumā, šis kods apzīmēs novērotās kļūdas tipu)
+
+- **Data_AffectedSessionBuildNumber** — programmas galvenā versija, kurā tika novērota programmas iziešana.
+
+- **Data_AffectedSessionResidentMemoryOnCrash** — virtuālās atmiņas apjoms, kas tika patērēts, kad notika programmas iziešana.
+
+- **Data_ExitWasGraceful** — vai programmas iziešana bija bez aizķeršanās vai ar aizķeršanos.
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
@@ -6824,6 +7437,11 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RemoterType** — norāda pievienojumprogrammas aktivēšanai izmantotā attālinātāja veidu (uzticams, neuzticams, Win32webView, uzticams UDF utt.).
 
 - **StoreType** — lietojumprogrammas izcelsme.
+
+- **Atzīme**— norāda, kur tieši kodam radās kļūme, izmantojot ar to saistīto unikālo atzīmi.
+
+- **UsesSharedRuntime** — norāda, ka programma izmanto sharedRuntime vai nē.
+
 
 #### <a name="officeextensibilityvbatelemetrybreak"></a>Office.Extensibility.VbaTelemetryBreak
 
@@ -7107,6 +7725,20 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Slikts atbildes laiks vai slikta veiktspēja tādos scenārijos kā programmas startēšana vai faila atvēršana.
 
+#### <a name="initial_page_landing"></a>Initial_page_landing 
+ 
+Šis pasākums palīdz izsekot, kāda veida pieredze lietotājiem tiek rādīta, kad tie nonāk mūsu programmas lapā.  Šie dati tiek izmantoti, lai noteiktu lietotāju plūsmu katrā programmas lietošanas pieredzē, kā arī palīdz mums viegli konsolidēt eksperimentu rezultātus.
+ 
+Tiek apkopoti šādi lauki: 
+
+- **Lapa** — tā tiek lietota, lai izsekotu, kāda veida pieredzi lietotājs pirmo reizi redz, kad nonāk lapā. Iespējamās vērtības ir "Izmēģinājumversija", "izlaist", "Salikts", "Abonements" utt.
+
+- **storeExperience** — var izmantot, lai noteiktu, vai lietotājs ir tiesīgs skatīt veikala SDK pieredzi.
+
+- **stringVariant** — var izmantot, lai noteiktu, kāda veida virknes lietotājs redz, kad nonāk lapā. Ņemiet vērā, ka jebkurai lapai, piemēram, "Izmēģinājumversija", lietotājs var būt tiesīgs skatīt dažādas virknes atkarībā no tā, vai viņiem ir instalēta mantota sistēma Office vai ja lietotājs iepriekš aktivizēja sistēmu Office. Iespējamie šī rekvizīta uzskaitījumi ir "LegacyUpsell", "OfficeOpened", "Noklusējums", "YesIntent", "NoIntent" utt.
+
+- **windowsBuildType** — var izmantot, lai izsekotu WindowsBuildType, ko lietotājs ir ieplānojis. t.i., "RS4", "RS5", "RS19H1", "Vibranium" u.c. Tā kā mūsu pieredze parasti ir vērsta uz dažādiem WindowsBuildTypes, šis rekvizīts ir svarīgs, lai atšķirtu ieviešanu. 
+
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
 Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpBootstrapUser API izsaukuma laikā.
@@ -7176,6 +7808,211 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
 
 - **UserInfo.UserObjectId** — lietotāja objekta ID
+
+#### <a name="json_parse_error"></a>json_parse_error 
+ 
+Šis notikums norāda, ka JSON parsētājs rāda kļūdu.  Mēs nevarēsim atkļūdot to, kas tiek nosūtīts uz JSON parsētāju, lai nodrošinātu mūsu lietotājiem vienmērīgu lietošanu.
+ 
+Tiek apkopoti šādi lauki: 
+
+- **Kļūda** — tiek parādīts kļūdas ziņojums par to, ka kļūdu objekts atgriežas.
+
+#### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek izmantots, lai apkopotu laiku, kas nepieciešams, lai sāknētu programmu, kā arī sniegtu detalizētu informāciju par to, kāda veida sāknēšana ir pabeigta. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ Data_EvtBootTimerDocStageReady** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_DocumentRecoveryInvoked** — vai sāknēšanas laikā tika izsaukta dokumentu atkopšana.
+
+- **Data_EvtBootTimerBootIdle** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtBootTimerFinishLaunchEnd** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtBootTimerLaunchDidFinish** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtBootTimerLaunchStart** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtBootTimerMainStart** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtBootTimerMainStart** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_EvtDockStageReady** — pagājušais laiks, līdz tiek sasniegts konkrēts punkts kodā.
+
+- **Data_IsFileOpenAttempted** — vai ir mēģināts atvērt failu, veicot sāknēšanu.
+
+- **Data_IsFirstRunAttempted** — vai programmas sāknēšana izzuda, izmantojot pirmo palaišanu.
+
+- **Data_SentToBackground** — vai programma tika nosūtīta uz fonu sāknēšanas laikā.
+
+#### <a name="office_apple_diskruleresultserializererroronstreamop"></a>Office_Apple_DiskRuleResultSerializerErrorOnStreamOp
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu telemetrijas infrastruktūras darbspēju. Šis notikums norāda, ka radās kļūda.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActualBytesModified** — modificēto baitu skaits.
+
+- **Data_BytesRequested** — baitu skaits, kas tiek apstrādāti.
+
+- **Data_IsWriteOp** — vai mēs tūlīt veiksim ierakstīšanas darbību
+
+#### <a name="office_apple_macbootresourceusage"></a>Office_Apple_MacBootResourceUsage
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek izmantots, lai apkopotu vairākus indikatorus ap resursiem, kas tiek patērēti sāknēšanas laikā, izmantojot Office programmas. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_BlockInputOperations** — bloka ievades darbību skaits
+
+- **Data_BlockInputOperations** — bloka izvades darbību skaits
+
+- **Data_InvoluntaryContextSwitches** — piespiedu konteksta pārslēgšanās skaits
+
+- **Data_MainThreadCPUTime** — pagājušā laika mērījums
+
+- **Data_MaxResidentSize** — atmiņas lieluma mērījums
+
+- **Data_MessagesReceived** — saņemto ziņojumu skaits
+
+- **Data_MessagesSent** — nosūtīto ziņojumu skaits
+
+- **Data_PageFaults** — lapas atkārtotā pieprasīšana
+
+- **Data_PageReclaims** — lapas atkārtotā pieprasīšana
+
+- **Data_ProcessCPUTime** — pagājušā laika mērījums
+
+- **Data_SharedTextMemorySize** — atmiņas lieluma mērījums
+
+- **Data_SignalsReceived** — saņemto signālu skaits
+
+- **Data_Swaps** — datu apmaiņas reižu skaits
+
+- **Data_SystemCPUTime** — pagājušā laika mērījums
+
+- **Data_SystemUpTime** — pagājušā laika mērījums
+
+- **Data_UnsharedDataSize** — datu lieluma mērījums
+
+- **Data_UnsharedStackSize** — steka lieluma mērījums
+
+- **Data_UserCPUTime** — pagājušā laika mērījums
+
+- **Data_VoluntaryContextSwitchesNvcsw** — piespiedu konteksta pārslēgšanās skaits
+
+#### <a name="office_apple_mau_validation"></a>Office_Apple_MAU_Validation
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu Microsoft AutoUpdate komponenta darbspēju, kas tiek lietots, lai izplatītu un instalētu programmu atjauninājumus. Apkopotie dati tiek izmantoti kļūdu noteikšanai un neveiksmes cēloņu novēršanai.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_EventID** — mēs apkopojam virkni, kas norāda kļūdas kodu
+
+- **Data_Message** — mēs apkopojam virkni, kurā ir kļūdas apraksts.
+
+#### <a name="office_apple_mbuinstrument_hang_detection_spin_control"></a>Office_Apple_MbuInstrument_Hang_Detection_Spin_Control
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums tiek reģistrēts, kad programma izskatās nereaģējoša. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CountSpinControlStart** — marķieris, kas norāda, ka programma izskatās nereaģējoša (vai reaģē lēni)
+
+#### <a name="office_apple_mbuinstrument_vmondocumentclose"></a>Office_Apple_MbuInstrument_VMOnDocumentClose
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai apkopotu atmiņas stāvokļa momentuzņēmumu dokumentu aizvēršanas laikā. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CollectionTime** — laikspiedols no datu vākšanas brīža
+
+- **Data_ResidentMemory** — novērotā rezidenta atmiņas apjoma vērtība
+
+- **Data_VirtualMemory** — novērotā virtuālā atmiņa
+
+#### <a name="office_apple_mbuinstrument_vmonshutdown"></a>Office_Apple_MbuInstrument_VMOnShutdown
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai apkopotu atmiņas stāvokļa momentuzņēmumu dokumentu aizvēršanas laikā. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CollectionTime** — laikspiedols no datu vākšanas brīža
+
+- **Data_ResidentMemory** — novērotā rezidenta atmiņas apjoma vērtība
+
+- **Data_VirtualMemory** — novērotā virtuālā atmiņa
+
+#### <a name="office_apple_mbuinstrument_vmonstart"></a>Office_Apple_MbuInstrument_VMOnStart
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai apkopotu atmiņas stāvokļa momentuzņēmumu dokumentu atvēršanas laikā. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_CollectionTime** — laikspiedols no datu vākšanas brīža
+
+- **Data_ResidentMemory** — novērotā rezidenta atmiņas apjoma vērtība
+
+- **Data_VirtualMemory** — novērotā virtuālā atmiņa
+
+#### <a name="office_apple_msoappdelegate_bootperf"></a>Office_Apple_MsoAppDelegate_BootPerf
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek izmantots, lai apkopotu laiku un patērēto atmiņu, izmantojot Office programmas, kā arī detalizētu informāciju par to, kāda veida sāknēšana ir pabeigta. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppLaunchDurationMicroSec** — sāknēšanas procesa ilgums
+
+- **Data_AppLaunchFinishSystemTime** — laikspiedols konkrētajā sāknēšanas koda marķierī
+
+- **Data_AppLaunchStartSystemTime** — laikspiedols konkrētajā sāknēšanas koda marķierī
+
+- **Data_ResidentMemory** — pieejamās rezidenta atmiņas momentuzņēmums sāknēšanas laikā
+
+- **Data_VirtualMemory** — pieejamās virtuālās atmiņas momentuzņēmums sāknēšanas laikā
+
+#### <a name="office_apple_ungracefulappexithangsinprevioussession"></a>Office_Apple_UngracefulAppExitHangsInPreviousSession
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu Office programmu darbspēju, kā arī noteiktu kļūmju iemeslus. Mēs apkopojam, cik reizes programma izrādījās nereaģējoša pirms iziešanas no programmas ar aizķeršanos.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_HangsDetected** — cik reizes programma izrādījās nereaģējoša pirms iziešanas no programmas ar aizķeršanos.
+
+- **Data_LastSessionId** — tās sesijas identifikators, kurā tika novērota iziešana no programmas ar aizķeršanos.
+
+- **Data_SessionBuildNumber** — tās programmas sekundārā versija, kurā tika novērota iziešana no programmas ar aizķeršanos.
+
+- **Data_SessionVersion** — programmas galvenā versija, kurā tika novērota iziešana no programmas ar aizķeršanos.
+
+#### <a name="office_apple_whatsnewerrorandwarning"></a>Office_Apple_WhatsNewErrorAndWarning
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu, kas ir jaunā līdzekļa darbspēju. Šis notikums norāda, ka, parsējot jaunumu saturu, radās kļūda/brīdinājums, norādot uz potenciālām satura autorēšanas problēmām.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ContentKey** — rādītājs uz satura sadaļu, kas visticamāk izraisīja kļūdu.
+
+- **Data_ErrorCode** — novērotais kļūdas kods (ja pieejams)
+
+- **Data_ErrorDescription** — kļūdas apraksts (ja pieejams)
+
+- **Data_EventID** — mēs apkopojam virkni, kas norāda novērotās kļūdas tipu.
+
+- **Data_IncludesHTMLTag** — vai saturā ir bagātināts html
+
+- **Data_IncludesItemsTag** — vai saturā ir vienumu hierarhija
+
+- **Data_LengthOfRawData** — satura lielums
+
+- **Data_RequestURL** — vietrādis URL, no kura saturs tika lejupielādēts
+
+- **Data_ServerLanguageTag** — valoda, kurā bija saturs.
+
+- **Data_StatusCode** — kļūdas statuss (ja pieejams)
+
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Šis notikums aktivizējas, kad klients izmanto Office pievienojumprogrammu un sazinās ar Rich API pakalpojuma sniegšanai. Izmanto, lai izmērītu pakalpojuma uzticamību, veiktspēju un lietojumu Rich API metodes izsaukšanai.
@@ -7439,6 +8276,28 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Timeout** — cik ilgi nereaģēja
 
+#### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots Digital River aktivizēšanas kļūmju novēršanai (notikums reģistrē galveno un produktu, kas tika lietots aktivizācijai, kā arī saņemtās kļūdas kodu).  Šis notikums tiek lietots, lai noteiktu un palīdzētu novērst aktivizācijas kļūmes (Digital River problēmas).
+
+Tiek apkopoti šādi lauki:
+
+- **Data_DigitalRiverID** — Digital River produkta ID, kas kartē uz šo Office produkta SKY
+
+- **Data_Error** — virkne, kas norāda aktivizācijas kļūdas kodu.
+
+- **Data_ProductKey** — produkta atslēga, ko bija mēģināts aktivizēt
+
+- **Data_ProductKeyHash** — aktivizēta kodētā produkta atslēga
+
+#### <a name="office_apple_licensing_mac_getmachinestatuserrors"></a>Office_Apple_Licensing_Mac_GetMachineStatusErrors
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums apkopo kļūdas kodu, kas tiek atgriezts, periodiski pārbaudot abonementa licences derīgumu. Kļūdas kods var nozīmēt servera nepieejamību, kā arī licenču derīguma beigu datumu, datoru skaita ierobežojumu, uaparatūras ID utt.  Šis notikums tiek lietots, lai pārraudzītu Office licencēšanas pakalpojuma darbspēju, kā arī izmeklētu problēmas, kas saistītas ar abonementu datoru pārvaldību.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_Error** — mēs apkopojam virkni, kas norāda kļūdas kodu.
+
 #### <a name="officeextensibilitysandboxodperrornotification"></a>Office.Extensibility.Sandbox.ODPErrorNotification
 
 Izseko dažādus no smilškastes saņemtos kļūdu paziņojumus. Izmanto, lai atklātu un labotu kļūdu scenārijus smilškastē, uzlabojot lietotāja produktivitāti. 
@@ -7451,6 +8310,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Result** — rezultāta kļūdas kods.
 
+#### <a name="office_firstrun_apple_maconiolkfirstrunstarted"></a>Office_FirstRun_Apple_MacONIOLKFirstRunStarted
+
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis pasākums mūs informē, ka lietotājs ir veicis pirmo palaišanas pieredzi. Šis notikums tiek izmantots, lai noskaidrotu, vai pirmā palaišanas pieredze (PPP) tika sākta sekmīgi.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FirstRunCollectionTime** — laikspiedols, kas reģistrē laiku, kad plūsma tika sākta.
 
 #### <a name="officegraphicsarcexceptions"></a>Office.Graphics.ARCExceptions 
 
