@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
-ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
+ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639387"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837685"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -3118,7 +3118,7 @@ Tiek apkopoti tālāk norādītie lauki.
 -  **TimeToMedianResultInMs** — norāda vidējo laiku, kas ir nepieciešams OneNote, lai atrastu visus atbilstošo rezultātus.
 
 
-#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+#### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated (iOS operētājsistēmā), OneNote.StickyNotes.NoteCreated (Android operētājsistēmā)
 
 Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
 
@@ -3131,7 +3131,7 @@ Tiek apkopoti tālāk norādītie lauki.
 - **StickyNotes-SDKVersion** — versijas numurs, kurā norādīta lietotāja izmantoto līmpiezīmju versija. Ļauj mums noteikt, kurās produkta versijās ir radusies problēma, lai mēs varētu pareizi noteikt tās prioritāti.
 
 
-#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+#### <a name="officeonenotestickynotesnoteviewed-on-ios-onenotestickynotesnoteviewed-on-android"></a>Office.OneNote.StickyNotes.NoteViewed (iOS operētājsistēmā), OneNote.StickyNotes.NoteViewed ( Android operētājsistēmā)
 
 Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
 
@@ -4657,68 +4657,6 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_WarningShownToConvertToTable:bool** — patiess norāda, ka lietotājam tiek parādīts brīdinājums, lai pārvērstu Excel datus tabulas formātā
 
 
-#### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
-
-Šis notikums reģistrē katra dokumenta statistiku, kad Office Word ir aizvērts vai aizturēts.  Notikumu izmanto, lai saistītu dokumenta rediģēšanu, lielumu utt. ar dokumenta saglabāšanas, dokumenta kopīgošanas un dokumenta tiešsaistes koprediģēšanas kļūdām.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-- **Data_BkmkRefCount** — grāmatzīmju atsauču skaits dokumentā.
-
-- **Data_CharacterCount** — rakstzīmju skaits dokumentā.
-
-- **Data_CharactersWithSpaceCount** — rakstzīmju un atstarpju skaits dokumentā.
-
-- **Data_ChartCount** — diagrammu skaits dokumentā.
-
-- **Data_CitationCount** — citātu skaits dokumentā.
-
-- **Data_DocumentLocation** — norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
-
-- **Data_ETW_TrackbackTag** — norāda vietu kodā, kur šis notikums ir aktivizēts (aizvēršana vai aizturēšana).
-
-- **Data_EndnoteDocCount** — beigu vēru skaits dokumentā.
-
-- **Data_FootnoteDocCount** — vēru skaits dokumentā.
-
-- **Data_HasBibliography** — norāda, vai dokumentā ir bibliogrāfija.
-
-- **Data_HasHeader** — norāda, vai dokumentā ir galvene.
-
-- **Data_IsImeUsed** — norāda, vai dokumentā tiek izmantots ievades metodes redaktors.
-
-- **Data_IsPageCountInProgress** — norāda, vai pašlaik dokumentā notiek lappušu skaitīšana.
-    
-- **Data_IsTouchUsed** — norāda, vai dokumentā tika izmantota skārienievade.
-
-- **Data_IsTrackChangesOn** — norāda, vai dokumentā tiek reģistrētas izmaiņas.
-
-- **Data_LineCount** — rindiņu skaits dokumentā.
-
-- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
-
-- **Data_PageCount** — lapu skaits dokumentā.
-
-- **Data_PageNumberFieldCount** — lappušu numuru lauku skaits dokumentā.
-
-- **Data_ParagraphCount** — rindkopu skaits dokumentā.
-
-- **Data_PicCount** — attēlu skaits dokumentā.
-
-- **Data_RsidCount**— labojumu saglabāšanas identifikatoru skaits dokumentā.
-
-- **Data_TocCount** — satura rādītāju skaits dokumentā.
-
-- **Data_UrlHash** — vienvirziena jaukšana vienkāršota dokumenta identifikatora izveidei.
-
-- **Data_UserActionID** — šis datu lauks netiek lietots (vērtība vienmēr ir 0).
-
-- **Data_UserActionName** — vienmēr "DocumentStatsOnCloseAndSuspend".
-
-- **Data_UserInteractionTimeMsec** — cik milisekunžu lietotājs aktīvi mijiedarbojās ar dokumentu.
-    
-- **Data_WordCount** — vārdu skaits dokumentā.
-
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
 Šis notikums norāda, ka ir izveidots jauns Office Word dokuments un seko šīs darbības panākumu statusam. Notikums tiek izmantots, lai pārraudzītu jaunā dokumenta izveides pareizu darbību. To izmanto arī, lai aprēķinātu mēneša aktīvos lietotājus/ierīces un mākoņpakalpojumu uzticamības rādītājus.
@@ -4952,102 +4890,6 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
     
-#### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
-
-Šis notikums norāda, ka Office Word saglabā automātiski atkoptu dokumentu, kas nav bijis saglabāts iepriekš. Tādējādi Microsoft var noteikt automātiskās atkopšanas kļūdas, kam ir būtiska nozīme dokumenta datu aizsardzībā.  Notikums pārrauga automātiski atkopta dokumenta saglabāšanas pareizu darbību. To izmanto arī, lai aprēķinātu mēneša aktīvos lietotājus/ierīces un mākoņpakalpojumu uzticamības rādītājus.
-
-Tiek apkopoti tālāk norādītie lauki.
-
-- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
-
-- **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
-
-- **Data_Doc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
-
-- **Data_Doc_AsyncOpenKind — ** norāda, vai tika atvērta mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
-    
-- **Data_Doc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
-
-- **Data_Doc_EdpState —** dokumenta elektronisko datu aizsardzības iestatījums.
-
-- **Data_Doc_Ext —** dokumenta paplašinājums (docx/xlsb/pptx utt.).
-
-- **Data_Doc_FileFormat —** faila formāta protokola versija.
-
-- **Data_Doc_Fqdn —** OneDrive vai SharePoint Online domēna nosaukums.
-
-- **Data_Doc_FqdnHash —** klientu identificējama domēna nosaukuma vienvirziena jaukšana.
-
-- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
-
-- **Data_Doc_InitializationScenario —** dokumenta atvēršanas ieraksti.
-
-- **Data_Doc_IOFlags —** atskaites par kešotajiem karodziņiem, kas tiek izmantoti atvēršanas pieprasījuma opciju iestatīšanai.
-
-- **Data_Doc_IrmRights —** dokumentam/lietotājam piemērotās elektronisko datu politikas atļautās darbības.
-
-- **Data_Doc_IsIncrementalOpen —** karodziņš, kas norāda, ka dokuments tika atvērts inkrementāli.
-
-- **Data_Doc_IsOcsSupported —** karodziņš, kas norāda, ka dokuments tiek atbalstīts sadarbības pakalpojumā.
-    
-- **Data_Doc_IsOpeningOfflineCopy —** karodziņš, kas norāda, ka tika atvērta dokumenta bezsaistes kopija.
-
-- **Data_Doc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
-
-- **Data_Doc_Location —** norāda pakalpojumu, kurā atrodas dokuments (OneDrive, File Server, SharePoint utt.).
-
-- **Data_Doc_LocationDetails —** norāda, kurā zināmajā mapē atrodas lokāli saglabātais dokuments.
-
-- **Data_Doc_NumberCoAuthors —** citu lietotāju skaits koprediģēšanas sesijā.
-
-- **Data_Doc_PasswordFlags —** norāda lasīšanas/rakstīšanas paroles karodziņu kopu.
-
-- **Data_Doc_ReadOnlyReasons —** iemesli, kāpēc dokuments ir atvērts tikai lasāmajā režīmā.
-
-- **Data_Doc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
-
-- **Data_Doc_RtcType —** norāda, kā reāllaika kanāls (RTC) bija iestatīts pašreizējam failam (atspējots, neatbalstīts, pēc pieprasījuma, vienmēr ieslēgts utt.).
-
-- **Data_Doc_ServerDocId —** nemainīgs anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
-
-- **Data_Doc_ServerProtocol —** protokola versija, ko izmanto, lai sazinātos ar pakalpojumu.
-
-- **Data_Doc_ServerType —** servera tips, kas nodrošina pakalpojumu (OneDrive, SharePoint, WOPI utt.).
-
-- **Data_Doc_ServerVersion —** servera versija, kas nodrošina pakalpojumu.
-
-- **Data_Doc_SessionId —** identificē konkrētu dokumenta rediģēšanas sesiju pilnā sesijā.
-
-- **Data_Doc_SharePointServiceContext —** diagnostikas informācija no SharePoint Online pieprasījumiem.
-
-- **Data_Doc_SizeInBytes —** dokumenta lieluma rādītājs.
-
-- **Data_Doc_SpecialChars —** speciālo rakstzīmju rādītājs dokumenta vietrādī URL vai ceļā.
-
-- **Data_Doc_StreamAvailability —** norāda, vai ir pieejama/atspējota dokumenta plūsma.
-
-- **Data_Doc_SyncBackedType —** norāda dokumenta veidu (lokālais vai servera).
-
-- **Data_UrlHash —** vienvirziena jaukšana vienkāršota dokumenta identifikatora izveidei.
-
-- **Data.Doc.WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru.
-
-- **Data_FailureClass** — skaitlis, kas atspoguļo Office sadarbības pakalpojumu (Office Collaboration Services — OCS) pārejas kļūmju kļūmes klasi.
-    
-- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
-
-- **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
-
-- **Data_OCSSyncbackSaveStarted** — karodziņš, kas norāda, ka saglabātais dokuments ir saistīts ar sinhronizēto saglabāšanu.
-
-- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
-
-- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
-
-- **Data_SaveInitiateKind** — vesels skaitlis, kas norāda, kā tika sākta saglabāšana.
-
-- **Data_SrcDocIsUnnamedOrNew** — norāda, vai saglabājamais dokuments ir jauns.
-
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -7358,7 +7200,7 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums tiek ģenerēts, kad Office lietotāju versijā notiek COM pievienojumprogrammas avārija. 
 
-Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus gatavību, kas tiek publicēta vietnē readyforwindows.com, un citiem rīkiem, piemēram, Readiness Toolkit Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
+Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus pievienojumprogrammas ieviešanu, tālāk izmantojot ar tādiem rīkiem kā Readiness Toolkit. Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -7390,7 +7232,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Šis notikums tiek ģenerēts, kad Office biznesa versijā notiek COM pievienojumprogrammas avārija.
 
-Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus gatavību, kas tiek publicēta vietnē readyforwindows.com, un citiem rīkiem, piemēram, Readiness Toolkit Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
+Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesaistītu Office 365 ProPlus pievienojumprogrammas ieviešanu, tālāk izmantojot ar tādiem rīkiem kā Readiness Toolkit. Ļauj biznesa versiju klientiem pārbaudīt, vai viņu organizācijā uzstādītās pievienojumprogrammas ir saderīgas ar jaunākajām Office 365 ProPlus versijām, ļaujot plānot tālākos atjauninājumus. 
 
 - **ScopeId** — pašreizējā pavediena tvērums
 
@@ -7430,7 +7272,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AssetId** — lietojumprogrammas līdzekļa ID.
 
-- **ErrorCodeime** — iztērētais laiks kopā. 
+- **ErrorCodeime** — iztērētais laiks kopā.
+
+- **IsDebug** - norāda, vai sesija ir atkļūdošanas sesija
 
 - **NumberOfAddinsActivated** — aktivēto pievienojumprogrammu skaitītājs.
 
