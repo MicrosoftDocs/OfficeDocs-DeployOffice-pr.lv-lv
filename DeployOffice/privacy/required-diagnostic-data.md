@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
-ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
+ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
+ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39837685"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39906619"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -540,7 +540,7 @@ Instalētais produkts, versija un instalēšanas statuss.
 
 Attiecas uz visām win32 lietojumprogrammām. Palīdz mums noteikt Office komplekta atjaunināšanas procesa statusu (izdošanās vai neizdošanās ar detalizētu informāciju par kļūdām)
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **build** — pašreiz instalētā Office versija
 
@@ -680,6 +680,16 @@ Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie uzņēmuma l
 
 - **ProvisioningStartedTime** — norāda sākuma laiku, kad programma OneNote sāk savas piezīmju grāmatiņas nodrošināšanu pirmās palaišanas laikā.
 
+#### <a name="officeonenotefirstrunmrureadernotebookentries"></a>Office.OneNote.FirstRun.MruReaderNoteBookEntries 
+
+Šis signāls tiek izmantots, lai fiksētu jebkādas problēmas piezīmju grāmatiņu pirmajā palaišanas reizē.  Telemetriju izmanto, lai pirmajā palaišanas reizē pārraudzītu, noteiktu un novērstu jebkādas problēmas.
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **OnPremNBCount** — Piezīmju grāmatiņu skaits On Prem serverī
+
+- **TotalNBCount** — Ar lietotāja kontu saistīto piezīmju grāmatiņu kopējais skaits
+
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
 Izseko, vai tika lejupielādēta dinamiskās pamatnes pakotne. Tiek uzskatīta par programmatūras konfigurāciju, jo pakotne ir sekmīgi jālejupielādē, lai iespējotu klientu atveidot pareizās iespējas. Tas ir īpaši būtiski patērētāju abonementos, kur mēs izmantojam pamatni, lai paziņotu lietotājam par licences derīguma termiņa beigām. Izmanto, lai izsekotu produkta lejupielādētās un kešotās dinamiskā satura pakotnes metadatiem, kā arī to darbību rezultātiem, kam tika pakļauta pakotne: lejupielādes kļūmēm, pakotnes atvēršanas kļūmēm, konsekvences pārbaudes kļūmēm, kešatmiņas trāpījumiem, pakotnes lietojumam un lejupielādes avotiem.
@@ -738,6 +748,63 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_VisioSKU**:**integer** — Standard SKU ir 0, bet Professional SKU — 1
 
+#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+
+Ieraksta informācija par lietojumprogrammas aktivizēšanas statusu.  Dati tiek pārraudzīti, lai garantētu, ka mēs identificējam aktivizēšanas problēmu pieaugumu. Mēs arī analizējam datus, lai atrastu jomas, kurās nepieciešami uzlabojumi.
+
+Tiek apkopoti šādi lauki: 
+
+- **INSTALL_LOCATION** — norāda, vai lietojumprogramma ir sākotnēji instalēta vai lejupielādēta veikalā
+
+#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+
+Šis signāls tiek izmantots, lai fiksētu jebkādas problēmas, kad lietotājs mēģina atiestatīt lietojumprogrammu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas atiestatīšanas laikā radušās problēmas. 
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **Accounts** — norāda uz kontu veidiem, kas tiek izmantoti, lai pieteiktos lietojumprogrammā
+
+- **Generic String Type** — atgriež, ja tā ir pilna notes_light_data atiestatīšana
+
+- **LaunchPoint** — punkts, no kura tiek sākta atiestatīšana. Iespējamās vērtības: poga Izrakstīties, izrakstīšanās kļūme, nostrādāja Intune
+
+- **Pass** — norāda, vai atiestatīšana bija sekmīga
+
+#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+
+Kritiskais signāls, kas tiek izmantots, lai nodrošinātu, ka pierakstīšanās ir sekmīga vai nē. Telemetrija, kas tiek apkopota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **CompletionState** — pierakstīšanās beigu stāvoklis, sekmīga vai nesekmīga. Un kļūmju gadījumi
+
+- **EntryPoint**— norāda pierakstīšanās sākuma vietu
+
+- **Hresult** — kļūdas kods
+
+- **Provider Package ID** — automātiskās pierakstīšanās gadījumā
+
+- **Rezultāts** — izdevās, neizdevās, nezināms, atcelts
+
+- **ServerType** — atgriež tā servera tipu, kas piedāvā pakalpojumu 
+
+- **SignInMode** — paātrināta pierakstīšanās vai reģistrācija vai automātiska pierakstīšanās vai reģistrācija
+
+#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+
+Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **EntryPoint**— norāda pierakstīšanās sākuma vietu
+
+- **Result** — pierakstīšanās plūsmas rezultāts
+
+- **ServerType** — atgriež tā servera tipu, kas piedāvā pakalpojumu 
+
+- **SignInMode** — paātrināta pierakstīšanās vai reģistrācija vai automātiska pierakstīšanās vai reģistrācija
+
+
 ### <a name="office-add-in-configuration-subtype"></a>*Office pievienojumprogrammu konfigurācijas apakštips*
 
 Programmatūras pievienojumprogrammas un to iestatījumi.
@@ -774,9 +841,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilityappcommandsaddsolution"></a>Office.Extensibility.AppCommands.AddSolution
 
-Apkopo instalēšanas informāciju par Office pievienojumprogrammām, kas pielāgo lenti.  Tiek izmantots, lai atklātu problēmas veidā, kādā pielāgotās pievienojumprogrammas modificē Office lenti.
+Apkopo instalēšanas informāciju par Office pievienojumprogrammām, kas pielāgo lenti.  Tiek izmantots, lai atklātu problēmas ar to, kā pielāgotās pievienojumprogrammas modificē Office lenti.
  
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **AppVersion** — lietojumprogrammas versija.
 
@@ -1721,6 +1788,75 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.StatusCode** — scenārija ID, ko definē API
 
+#### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
+
+Šis notikums palīdz izprast, ar kuru citu Microsoft lietojumprogrammu ierīcē mūsu lietojumprogramma saņēma kluso pierakstīšanos, no kura ieejas punkta un tā tālāk. Palīdz izprast klusās pierakstīšanās kļūmes iemeslu.  Mēs saņemam plašāku ieskatu par to, no kuras Microsoft lietojumprogramma ierīcē mēs saņemam vienotu pierakstīšanās pieredzi. Rīkoties reaģējot uz kļūmēm, kad vienotā pierakstīšanās nedarbojas, kā paredzēts.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccountType** — norāda konta veidu, ar kuru notiek vienotā pierakstīšanās, piemēram, personiskais Microsoft konts vai darba konts.
+
+- **EntryPoint** — norāda ieejas punktu lietojumprogrammā, no kura tika uzsākts vienotās pierakstīšanās mēģinājums.
+
+- **ErrorCode** — norāda vienotās pierakstīšanās mēģinājuma kļūdas kodu.
+
+- **ErrorDescription** — norāda vienotās pierakstīšanās mēģinājuma kļūdas ziņojumu.
+
+- **HResult**— norāda vienotās pierakstīšanās mēģinājuma rezultāta statusa kodu.
+
+- **ProviderPackageId** — cita Microsoft lietojumprogramma ierīcē, no kuras notiek vienotā pierakstīšanās.
+
+#### <a name="officeandroidphonenumbersignins"></a>Office.Android.PhoneNumberSignIns
+
+Šis notikums palīdz saprast, vai lietotājs ir pierakstījies vai pierakstījies ar tālruņa numuru saistītu kontu, vai ar personisko e-astu saistītu Microsoft kontu.  Šis notikums palīdz noteikt lietotāju pierakstīšanos vai reģistrāciju ar mobilo tālruņa numuru saistītu personisko Microsoft kontu.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **EntryPoint** — norāda ieejas punktu lietojumprogrammā, no kura tika uzsākts pierakstīšanās mēģinājums.
+
+- **IsEmailMissing** — vai konta profila informācijā trūkst e-pasta adreses?
+
+- **IsPhoneNumberMissing** — vai konta profila informācijā trūkst tālruņa numura?
+
+- **UserDecision** — norāda lietotāja veikto izvēli, piemēram, pierakstīšanās vai reģistrācija, vai pierakstīties vēlāk.
+
+#### <a name="officeandroidusersignindecision"></a>Office.Android.UserSignInDecision
+
+Šis notikums palīdz saprast, kura posmā lietotājs pārtrauc pierakstīšanās plūsmu, kāpēc pierakstīšanās neizdodas, cik daudz lietotājiem izdodas veiksmīgi pierakstīties no kura lietojumprogrammas ieejas punkta un tā tālāk.  Šis pasākums palīdz ar pierakstīšanās piltuves datiem, kas palīdz saprast, kurā posmā rodas kļūmes lielākam lietotāju skaitam un tā tālāk.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccountType** — norāda konta veidu, ar kuru notiek pierakstīšanās mēģinājums, piemēram, personiskais konts vai darba konts.
+
+- **AfterLicensingState** — norāda lietojumprogrammas licencēšanas statusu pēc pierakstīšanās pabeigšanas.
+
+- **AllowedEditsWithoutSignIn** — norāda bezmaksas rediģējumu skaitu pirms pierakstīšanās mēģinājuma.
+
+- **BeforeLicensingState** — norāda lietojumprogrammas licencēšanas statusu pirms pierakstīšanās mēģinājuma.
+
+- **CompletionState** — norāda pierakstīšanās pabeigšanas posmu.
+
+- **EntryPoint** — norāda ieejas punktu lietojumprogrammā, no kura tika uzsākts pierakstīšanās mēģinājums.
+
+- **HRDAutoAcceleratedSignUpAttemptCount** — norāda uz paātrinātās pierakstīšanās mēģinājumu skaitu.
+
+- **HRDAutoAcceleratedSignUpQuitCount** — norāda uz atcelto paātrinātās pierakstīšanās mēģinājumu skaitu.
+
+- **HResult** — norāda pierakstīšanās darbības rezultāta statusa kodu.
+
+- **IsPhoneOnlyAuthFeatureEnabled** — vai pierakstīšanās ar tālruņa numuru ir atļauta?
+
+- **LicenseActivationHResult** — norāda licences aktivizēšanas mēģinājuma statusa kodu.
+
+- **LicenseActivationMessageCode** — norāda licencēšanas pakalpojuma ziņojuma kodu.
+
+- **NoFreeEditsTreatmentValue** — vai bezmaksas rediģēšana ir atļauta?
+
+- **SignUpAttemptCount** — norāda uz pierakstīšanās mēģinājumu skaitu.
+
+- **StartMode** — norāda režīmu, kurā tika sākts pierakstīšanās mēģinājums.
+
+- **UserDecision** — norāda lietotāja veikto izvēli, piemēram, pierakstīšanās vai reģistrācija, vai pierakstīties vēlāk.
 
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
@@ -1950,6 +2086,102 @@ Tiek apkopoti šādi lauki:
 - **Data_Ext** — faila paplašinājums attiecas tikai uz pirmajiem četriem paplašinājuma simboliem vai mazāk.
 
 - **Data_ServiceType** — faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt.
+
+#### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Šis notikums tiek apkopots Office lietojumprogrammām, kas darbojas iOS platformā. Notikuma ieraksti brīdī, kad notiek faila atvēršanas darbība, tiek izmantoti, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu, it īpaši veiktspējas informāciju. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Data_AppDuration** — lietojumprogrammā, kas veic faila atvēršanu, pavadītais laiks.
+
+- **Data_BootDuration** — faila atvēršanas palaišanas procesa ilgums.
+
+- **Data_ClickOrigin** — virkne, kas norāda uz saites daļas izcelsmi brīdī, kad lietotājs noklikšķināja uz saites iOS Outlook, lai atvērtu failu Office lietojumprogrammā.
+
+- **Data_ClickTime** — Unix diskretizācijas laiks, kad lietotājs noklikšķināja uz saites iOS Outlook, lai atvērtu failu Office lietojumprogrammā.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājums.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId** — GUID, kas unikāli identificē identitāti, kas tika izmantota, lai atvērtu failu.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_InclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_InitializationReason** — uzskaitījums, kas norāda uz faila atvēršanas veidu, piemēram, no lietotāja interfeisa elementa vai citas lietojumprogrammas izsaukuma rezultātā.
+
+- **Data_Measurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_OpenInPlace** — vai fails ir jākopē Office smilškastes konteinerā, pirms lietotājs var to atvērt.
+
+- **Data_OpenStartTime** — Unix diskretizācijas laiks, kad tika sākta faila atvēršana.
+
+- **Data_SilhouetteDuration** — faila atvēršanas renderēšanas ilgums.
+
+- **Data_SourceApplication** — virkne, kas norāda avota lietojumprogrammas komplekta ID, kad faila atvēršanu uzsāk cita lietojumprogramma.
+
+- **Data_StopwatchDuration** — laiks no notikuma sākuma līdz notikuma beigām.
+
+- **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu.
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
@@ -2999,6 +3231,32 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.Log** — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
 
+
+#### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
+
+Šis notikums tiek izmantots, lai atklātu un diagnosticētu augstfrekvences kļūdu, ar ko saskaras lietotājs, izmantojot rokraksta funkciju.  Tas tiks izmantots, lai noteiktu atbilstošāko šīs problēmas novēršanas veidu. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **CurrentCanvasZoomFactor** — pašreizējais kanvas tālummaiņas faktors.
+
+- **CurrentNotebook** — pašreiz aktīvās piezīmju grāmatiņas identifikators.
+
+- **CurrentPage** — pašreiz aktīvās lapas identifikators
+
+- **CurrentSection** — pašreiz aktīvās sadaļas identifikators.
+
+- **DefaultCanvasZoomFactor** — noklusējuma kanvas tālummaiņas faktors.
+
+- **InkStrokeCount** — kopējais rokraksta vilkumu skaits kopš pēdējā žurnāla.
+
+- **InkStrokeWithLayerInkEffect** — rokraksta vilkumu skaits ar slāņa efektu kopš pēdējā žurnāla.
+
+- **InkStrokeWithoutPressureCount** — rokraksta vilkumu bez spiediena skaits kopš pēdējā žurnāla.
+
+- **InkStrokeWithPencilInkEffect** — rokraksta vilkumu skaits ar zīmuļa efektu kopš pēdējā žurnāla.
+
+- **InkStrokeWithTilt** — rokraksta vilkumu ar slīpumu skaits kopš pēdējā žurnāla.
 
 #### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
 
@@ -5273,6 +5531,25 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ViewKind —** Word skata tips
 
+#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+
+Signāls tiek izmantots, lai ierakstītu brīdi, kad tiek atvērta lapa.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas problēmas. kas rodas brīdī, kad lapa tiek atvērta OneNote
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **JOT_ID** — atvērtās lapas objekts
+
+- **TIME_TAKEN_IN_MS** — lapas atvēršanai veltītais laiks
+
+#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+
+Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **Message_Bar_Type** — atgriež, ja lietotājs izmanto veco vai jauno ziņojumu joslu
+
+- **Message_Type** — atgriež kļūdas ziņojuma ID
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
@@ -5521,13 +5798,33 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.StatusCode** — atgrieztā rezultāta statusa kods
 
+#### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
+
+Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AppLaunchResponsiveTimeInMilliSec** — lietojumprogrammas sāknēšanas atbildes laiks
+
+- **AppSuspendedDuringBoot** — būla, kas norāda, vai lietotne tika aizturēta sāknēšanas laikā
+
+- **CollectionTime** — notikuma laiks
+
+- **FileActivationAttempted** — būla, kas norāda, vai notika faila aktivizēšanas mēģinājums
+
+- **FirstIdleOnAppThreadTimeInMilliSec** — lietojumprogrammas pavediena dīkstāves laiks
+
+- **IsThisFirstLaunch** — būla, kas norāda, vai lietojumprogrammu tiek sāknēta pirmo reizi
+
+- **UserDialogInterruptionDuringBoot** — būla, kas norāda, vai notika lietotāja interfeisa bloķēšana sāknēšanas laikā
+
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
 Ieraksta informāciju par neparedzētu Office izslēgšanu. Tas ļauj mums noteikt produkta avārijas vai, ja tas pārstāj reaģēt, un atrisināt šīs problēmas.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti tālāk norādītie lauki:
 
-  - **Data\_AirspaceInitTime:integer — ** laiks, lai inicializētu Airspace Office komponentu
+  - **Data\_AirspaceInitTime:integer — ** Airspace Office komponentes inicializācijai veltītais laiks
 
   - **Data\_AllShapes:integer —** formu skaits dokumentā
 
@@ -5653,7 +5950,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_InitMsoUtilsTime:integer —** MSOUTILS Office komponenta inicializācijas laiks
 
-  - **Data\_InitPerfTime:integer —** izpildes Office komponenta inicializācijas laiks
+  - **Data\_InitPerfTime:integer —** Office veiktspējas komponenta inicializācijas laiks
 
   - **Data\_InitTCOTime:integer —** nepieciešamais laiks, lai inicializētu Office komponenta pārvaldnieku
 
@@ -5831,6 +6128,125 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **TotalTime** — iztērētais laiks kopā.
 
+#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+
+Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.  Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **ACTIVITY_BOOT_TIME_IN_MS** — aktivitātes izveides pabeigšanai veltītais laiks
+
+- **ACTIVITY_NAME** — aktivitātes, kas tiek atvērta pēc sāknēšanas, nosaukums 
+
+- **ANY_DIALOG_SHOWN** — norāda, vai sāknēšanas laikā tiek rādīts dialoglodziņš
+
+- **APP_SUSPEND_DURING_EVENT** — norāda, vai sāknēšana bija paredzēta
+
+- **APP_THREAD_CREATION_WAIT_TIME_TIME_FOR_APP_THREAD_CREATION** — laiks, kas tika veltīts lietojumprogrammas pavedienu izveidošanai
+
+- **AVAILABLE_MEMORY_IN_MB** — ierīces kopējā pieejamā atmiņa 
+
+- **AVG_SNAPSHOT_POPULATION_TIME** — vidējais laiks, kas veltīts piezīmju grāmatiņas struktūru ienešanai, izmantojot lietojumprogrammu
+
+- **BOOT_END_AT_VIEW** — aktivitātes nosaukuma apakškategorija (skata nosaukums)
+
+- **BOOT_SNAPSHOTS** — detalizēta informācija par piezīmju grāmatiņas struktūru ienešanu lietojumprogrammā izmantotajam kontam(-iem)
+
+- **COREAPP_STARTUP_ACCOUNT_SETUP_STARTUP_ACCOUNT_SETUP** — SSO pieredzes pārbaudei un iniciēšanai nepieciešamais laiks
+
+- **CRASH_INTERACTION_DURING_BOOT> 0** — norāda, vai lietojumprogramma avarēja pēdējās sesijas laikā
+
+- **DALVIK_HEAP_LIMIT_IN_MB** — novecojis
+
+- **DELAY_LOAD_STICKY_NOTES** — norāda, vai piezīmju lapiņas ir aizkavētas
+
+- **FISHBOWL_SHOWN_DURING_EVENT** — norāda uz gadījumiem, kuros saturs nav sinhronizēts
+
+- **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** — norāda, ka sāknēšanas laiku ietekmē žurnāli
+
+- **INIT_SNAPSHOT_DURATION** — piezīmju grāmatiņas struktūras iegūšanai lietotāja kontam(iem) veltītais laiks
+
+- **IS_COLD_BOOT** — norāda, vai lietojumprogramma tiek sāknēta, kad lietojumprogramma nedarbojas fonā
+
+- **IS_FIRST_LAUNCH** — norāda, vai šī ir pirmā reize, kad lietojumprogramma ir palaista ierīcē. 
+
+- **IS_PHONE** — norāda, vai ierīce ir tālrunis vai planšetdators
+
+- **IS_RECENT_PAGES_AVAILABLE_ON_FRAGMENT_CREATION** — norāda, vai lietotāja interfeiss ir gatavs, un gaida, kad saturs būs pieejams 
+
+- **IS_REHYDRATE_LAUNCH** — norāda, vai sistēma apturēja lietojumprogrammas darbību
+
+- **IS_UPGRADE** — norāda, vai lietojumprogramma tiek palaista pēc jaunināšanas
+
+- **JOT_MAIN_APP_CREATE_TIME_MAIN_APP_CREATE_TIME** — JOT komponenta (kopīgotā koda komponents) izveidei veltītais laiks 
+
+- **JOT_MAIN_APP_INIT_TIME_MAIN_APP_INIT_TIME** — JOT komponenta inicializācijas laiks
+
+- **LAUNCH_POINT** — norāda, vai lietojumprogramma ir atvērta no logrīka vai lietojumprogrammas ikonas vai hipersaites, vai koplietota utt.
+
+- **MSO_ACTIVATION_TIME_ACTIVATION_TIME** — MSO inicializācijas laiks
+
+- **NATIVE_LIBRARIES_LOAD_TIME** — bibliotēku ielādei veltītais laiks
+
+- **NAVIGATION_CREATE_TO_NAVIGATION_RESUME_CREATE_TO_NAVIGATION_RESUME** — navigācijas pabeigšanas laiks
+
+- **NAVIGATION_RESUME_TO_BOOT_END_RESUME_TO_BOOT_END** — lapas ielādes aizkaves pēc sāknēšanas noteikšanai veltītais laiks
+
+- **NAVIGATION_SET_CONTENT_VIEW_TIME_SET_CONTENT_VIEW_TIME** — satura ienešanai veltītais laiks
+
+- **NUMBER_Of_RUNNING_PROCESSES** — norāda aktīvo procesu skaitu
+
+- **NUMBER_OF_SNAPSHOTS** — piezīmju grāmatiņas struktūras ielādēšanu sāknēšanas laikā skaits
+
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME**— līdzekļu pārvaldnieka izgūšanai no arhīva un inicializācijai veltītais laiks
+
+- **PROCESS_BOOT_TIME_IN_MS** — procesa izveides pabeigšanai veltītais laiks
+
+- **ROOT_ACTIVITY_CREATE_ACTIVITY_CREATE** — pārejai no saknes slāņa veltītais laiks 
+
+- **ROOT_ACTIVITY_DISK_CHECK_ACTIVITY_DISK_CHECK** — novecojis
+
+- **ROOT_ACTIVITY_LAUNCH_NEXTACTIVITY_ACTIVITY_LAUNCH_NEXTACTIVITY** — novecojis
+
+- **ROOT_ACTIVITY_PROCESS_INTENT_ACTIVITY_PROCESS_INTENT** — novecojis 
+
+- **ROOT_ACTIVITY_SESSION_ACTIVITY_SESSION** — pārejai no saknes slāņa veltītais laiks 
+
+- **ROOT_TO_NAVIGATION_TRANSITION_TO_NAVIGATION_TRANSITION** — navigācijas no saknes apstrādei veltītais laiks
+
+- **SNAPSHOT_PUBLISH_TO_RENDERING_END_PUBLISH_TO_RENDERING_END** — laiks satura renderēšanas pabeigšanai
+
+- **SPLASH_ACTIVITY_SESSION_ACTIVITY_SESSION** — uzplaiksnījuma ekrāna parādīšanai veltītais laiks
+
+- **SPLASH_TO_ROOT_TRANSITION_TO_ROOT_TRANSITION** — pārejai no saknes slāņa veltītais laiks 
+
+- **TIME_BETWEEN_PROCESS_BOOT_AND_ACTIVITY_BEGIN_IN_MS** — laiks starp procesa un aktivitātes izveidi 
+
+- **TIME_TAKEN_IN_MS** — sāknēšanas pabeigšanai veltītais laiks
+ 
+- **TOTAL_MEMORY_IN_MB** — ierīces kopējā atmiņa
+ 
+- **USER_INTERACTED_DURING_EVENT** — norāda, vai lietotājs ir mijiedarbojies sāknēšanas laikā
+
+#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+
+Signāls, kas norāda, vai OneNote lietojumprogramma ir priekšplānā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
+
+Tiek apkopoti tālāk norādītie lauki: nav
+
+#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+
+Kritiskais signāls, kas tiek izmantots, lai OneNote lietotāji varētu veiksmīgi palaist lietojumprogrammu.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **FirstLaunchTime** — reģistrē laiku, kad lietojumprogramma tika palaista pirmo reizi
+
+- **InstallLocation** — norāda, vai lietojumprogramma ir sākotnēji instalēta vai lejupielādēta veikalā
+
+- **is_boot_completed_ever** — norāda, vai iepriekš lietojumprogramma ir veiksmīgi sāknēta ierīcē 
+
+- **NewOneNoteUser** — Identificē, vai lietotājs ir jauns lietotājs
 
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
@@ -7661,6 +8077,67 @@ Tiek apkopoti šādi lauki:
 
 - **Kļūda** — tiek parādīts kļūdas ziņojums par to, ka kļūdu objekts atgriežas.
 
+#### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
+
+Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **AnyCrashInteractionDuringBoot** — būla jebkurai avārijai, kas rodas sāknēšanas laikā
+
+- **AppActivationTimeInMs** — lietojumprogrammas fāzes laiks
+
+- **AppSuspendedDuringBoot** — būla lietojumprogrammas atlikšanai sāknēšanas laikā
+
+- **AvailableMemoryInMB** — pieejamā atmiņa
+
+- **CollectionTime** — notikuma laiks
+
+- **DalvikHeapLimitInMB** — kaudzes informācija
+
+- **DocumentRecoveryInvoked** — būla, kas norāda, vai dokuments ir atgūts
+
+- **ExtractionDone** — vietējās bibliotēkas izvilkšanas laiks
+
+- **FastBootGainTimeInMs** — ātrās sāknēšanas pabeigšanas laiks
+
+- **FileActivationAttempted** — būla, kas norāda, vai lietojumprogramma tika palaista faila aktivācijas dēļ
+
+- **HasLogcatLoggingImpactOnBoot** — būla, kas norāda, vai logcat rīks ietekmēja sāknēšanas laiku
+
+- **IsThisFirstLaunch** — būla, kas norāda, vai tā ir pirmā lietojumprogrammas sāknēšanas reize
+
+- **LatencyTimeInMilliSec** — latentums milisekundēs
+
+- **LibrarySharingTimeInMs** — bibliotēku koplietošanas laiks
+
+- **LoadMinLibsTimeInMs** — minimālās bibliotēku kopas ielādes laiks
+
+- **MruListingTimeInMs** — MRU ielādes laiks
+
+- **NativeLibrariesLoadTime** — CPP bibliotēkas ielādes laiks
+
+- **NumberOfRunningProcesses** — darbībā esošu procesu skaits
+
+- **NumberOfRunningProcesses** — darbībā esošu procesu skaits
+
+- **NumberOfRunningServices** — darbībā esošo pakalpojumu skaits
+
+- **OfficeActivityTimeInMs** — OfficeActivity inicializācijas laiks
+
+- **PostAppInitTimeInMs**— lietojumprogrammas fāzes laiks
+
+- **PreAppInitializationTime** — lietojumprogrammas fāzes inicializācijas laiks
+
+- **PreAppInitTimeInMs** — lietojumprogrammas fāzes laiks
+
+- **TotalMemoryInMB** — kopējā atmiņa
+
+- **UIRaaSDownloadLanguagePackageBoot** — ar valodas pakotnes lejupielādi saistītā informācija
+
+- **UserDialogInterruptionDuringBoot** — būla jebkuram bloķēšanas dialogam, kas tika parādīts sāknēšanas laikā
+
+
 #### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
 
 Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek izmantots, lai apkopotu laiku, kas nepieciešams, lai sāknētu programmu, kā arī sniegtu detalizētu informāciju par to, kāda veida sāknēšana ir pabeigta. Šis notikums palīdz mums uzraudzīt mūsu sniegumu un nodrošināt veiktspējas uzlabojumus.
@@ -8120,6 +8597,655 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_Timeout** — cik ilgi nereaģēja
 
+  #### <a name="officeandroidadalsigninuiprompts"></a>Office.Android.ADALSignInUIPrompts
+
+Šīs notikums norāda, ka lietotājs saņēma pierakstīšanās uzvedni skolas vai darba kontam.  Šis notikums palīdz saprast mūsu lietojumprogrammu pierakstīšanās stāvokļa darbspēju un atbilstoši rīkoties, kad pamanām neparedzētas pierakstīšanās uzvednes. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās.
+
+- **PreviousIdentityCredProviderState** — norāda konta stāvokli.
+
+- **PreviousIdentityState** — norāda konta stāvokli, piemēram, sesijas laiks beidzies. 
+
+- **SignInResultCode** — norāda pierakstīšanās uzvednes beigu rezultātā kodu.
+
+- **UseCache**— norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
+
+- **UserType** — norāda, vai tas ir esošs konts vai jauns konts
+
+#### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
+
+Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās WXP lietojumprogrammu kļūme.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccessMode** — faila piekļuves režīma uzskaitījuma vērtība. Vērtības — nav, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** — būla, kas norāda, vai jebkurā vietā plūsmā tika parādīts bloķēšanas lietotāja interfeiss.
+
+- **ContentUriAuthority** — satura URL no SAF iestādes
+
+- **Correlation** — GUID ar darbību saistītajam sasaistes ID
+
+- **DocId** — AppDocs ģenerētais dokumenta ID
+
+- **DocInstanceId** — AppDocs ģenerētā dokumenta instances ID, kas ir ietverta darbības instancē dokumentā
+
+- **DocIsEnterpriseProtected** — būla, kas norāda, vai dokuments ir aizsargāts.
+
+- **DocUserId** — lietotāja ID no MS autentifikācijas slāņa
+
+- **DocUserIdProvider** — uzskaitījums, kas apzīmē lietotāja ID nodrošinātāju, 0 = nezināms, 1 = LiveId, 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** — faila darbības beigšanās laiks milisekundēs
+
+- **EndReason** — uzskaitījuma vērtība, kas apzīmē beigu iemeslu.  Vērtības — nav, izdevās, neizdevās, atcelt
+
+- **ErrorCode** — faila darbības kļūdas kods
+
+- **Extension** — faila, kas tiek atvērts, paplašinājums.
+
+- **FileSourceLocation** — faila atrašanās vietas uzskaitījuma vērtība. Iespējamās vērtības: nav, lokāls, UncOrMappedNetworkDrive, SkyDrive, lietojumprogramma, SharePoint, UnknownServer
+
+- **FILETIME** — notikuma laiks
+
+- **FirstBCSClientError_Info** — kļūdas koda informācija, kas saistīta ar failu konvertēšanu
+
+- **HttpStatusCode** — http atbildes kods tīmekļa pakalpojuma pieprasījumam
+
+- **InitalizationReason** — faila atvēršanas ieejas punkts
+
+- **K2FileIOHresult** — Hresult kods faila atvēršanas darbības beigām
+
+- **LastBCSClientError_TagId** — pēdējā BCS (binārā konvertēšanas pakalpojums) klienta kļūda
+
+- **OfficeWebServiceApiStatusFlag** — statusa karodziņš tīmekļa pakalpojuma pieprasījumam
+
+- **OpEndEventId** — atzīme, kas norāda, kur faktiski beidzās darbība
+
+- **OpFlags** — dokumenta darbību param. karodziņi, ko izmanto AppDocs slānis.
+
+- **OpSeqNum** — skaitlis, kas norāda ar failu darbību saistīto pieprasījumu secību AppDocs slānī
+
+- **OpType** — darbības veida uzskaitījums. Vērtības: "nav", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** — uzskaitījums jaunu failu izveides darbību vedņu iepriekšējās ieneses stāvoklim.
+
+- **ProviderApp** — tās lietojumprogrammas pakotnes nosaukums, no kuras tiek atvērts fails
+
+- **ScopeInstanceId** — tvēruma instances ID, kas tiek lietots datu konteksta pievienošanai darbībām
+
+- **Size** — faila lielums
+
+- **State** — faila stāvokļa uzskaitījuma vērtība. Vērtības: nav, notiek izveide, izveidots, neizdevās izveidot, atvēršana, atvērts, atvēršana neizdevās, notiek kopēšana, kopēšana neizdevās, notiek aizvēršana, aizvērts, aizvēršana neizdevās
+
+- **TemplateName** — binārais dokumenta veidnes no veidņu pakalpojuma nosaukums, piemēram, TF10002009.dotx
+
+- **UriScheme** — URL shēma
+
+#### <a name="officeandroidandroidautherror"></a>Office.Android.AndroidAuthError
+
+Šis notikums apzīmē pamata autentifikācijas kļūmes klusās marķiera atsvaidzināšanas laikā, pakalpojuma pierakstīšanās lapas ielādes laikā un tā tālāk.  Šis notikums palīdz saprast mūsu lietojumprogrammu pierakstīšanās stāvokļa darbspēju, veiktos pierakstīšanās mēģinājumus, un atbilstoši rīkoties, kad pamanām neparedzētas kļūmes. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ADALErrorCode** — norāda kļūdas kodu, vienlaikus parādot pierakstīšanās uzvedni vai kluso marķiera ieneses mēģinājumu darba kontam.
+
+- **ADALErrorCode** — norāda neapstrādāto kļūdas kodu, vienlaikus parādot pierakstīšanās uzvedni vai kluso marķiera ieneses mēģinājumu darba kontam.
+
+- **ErrorGroup** — norāda konta veidu, piemēram, personiskais vai darba konts vai lokālo darba kontu.
+
+- **IDCRLErrorCode** — norāda kļūdas kodu, vienlaikus parādot pierakstīšanās uzvedni personiskajam kontam.
+
+- **IDCRLRawErrorCode** — norāda neapstrādātu kļūdas kodu, vienlaikus parādot pierakstīšanās uzvedni personiskajam kontam.
+
+- **LiveOAuthErrorCode** — norāda kļūdas kodu personiskā konta klusā marķiera atsvaidzināšanas mēģinājuma laikā.
+
+- **LiveOAuthRawErrorCode** — norāda neapstrādātu kļūdas kodu personiskā konta klusā marķiera atsvaidzināšanas mēģinājuma laikā.
+
+- **NTLMErrorCode** — norāda kļūdas kodu, vienlaikus parādot pierakstīšanās uzvedni lokālajam kontam.
+
+#### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
+
+Tver faila asinhronizācijas saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **FileExtension** — faila paplašinājums
+
+- **FileIOSaveHResult** — HResult faila saglabāšanas darbībai
+
+- **FileIOSaveIsCopy**— būla, kas norāda, ja darbība saglabā kopiju.
+
+- **FileSize** — faila lielums
+
+- **FileSourceLocation** — faila atrašanās vietas uzskaitījums. Vērtības: nav, lokāls, UncOrMappedNetworkDrive, SkyDrive, lietojumprogramma, SharePoint, UnknownServer
+
+#### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
+
+Tver faila atvēršanas statusa datus un dažādu kļūdu kodus, lai identificētu, kādas ir faila atvēršanas paredzētās un neparedzētās kļūmes un kura koda daļa ziņo par to.  Microsoft izmanto šos datus, lai analizētu faila atvēršanas kļūmju iemeslus un aprēķinātu kritisko metriku, piemēram, faila atvēršanas izdošanās pakāpi WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccessMode** — piekļuves režīma uzskaitījums
+
+- **AppDocsFileOpenErrorCode** — AppDocs faila atvēršanas kļūdas kods
+
+- **ContentUriAuthority** — satura URL no SAF iestādes
+
+- **DownloadCsiError** — lejupielādē kļūdas ziņojumu no CSI
+
+- **FileExtension** — faila paplašinājums
+
+- **FileOpenEndErrorCode** — faila atvēršanas kļūdas kods
+
+- **FileOpenStatus** — faila atvēršanas statusa uzskaitījums
+
+- **FileSize** — faila lielums
+
+- **FileSourceLocation** — faila atrašanās vietas uzskaitījums
+
+- **FirstBCSClientError_Info** — pēdējā BCS (binārā konvertēšanas pakalpojums) klienta kļūda
+
+- **IfWordFileOpenCancelled** — ja lietotājs atcēla faila atvēršanu Word lietojumprogrammā
+
+- **InitializationReason** — uzskaitījums, kas norāda faila atvēršanas ieejas punktu
+
+- **IsAutoSaveDisabled** — vai automātiskā saglabāšana ir atspējota faila atvēršanas laikā
+
+- **IsFileEmpty** — būla, kas norāda, vai fails ir tukšs
+
+- **K2FileIOHresult** — Hresult faila darbības beigām
+
+- **OpenCsiError** — faila atvēršanas kļūdas ziņojums CSI slānī
+
+- **OpEndEventId** — atzīme, kas norāda, kur faktiski beidzās darbība
+
+- **PPTHresult** — HRESULT programmā PPT
+
+- **PPTIsExpectedError** — PPT kļūdas klasifikācija faila atvēršanas paredzētajai/neparedzētajai kļūmei 
+
+- **PPTTag** — PPT kļūdas atzīme
+
+- **ProviderApp** — tās lietojumprogrammas pakotnes nosaukums, no kuras tiek atvērts fails
+
+- **ProviderFileSize** — faila lielums, kas notverts, atverot failu ar faila aktivāciju
+
+- **Stae** — faila atvēršanas stāvokļa uzskaitījums
+
+- **UriScheme** — URL shēma
+
+- **WordErrortag** — Word kļūdas atzīme
+
+- **WordFileCorruptionReason** — bojājuma iemesls, kura dēļ var neizdoties atvērt Word failu
+
+- **WordFileOpenErrorCode** — Word specifisks faila atvēršanas kļūdas kods.
+
+- **WordFileTypeFromDod** — faila tips, kuru Word nosaka balstoties, uz faktisko faila formātu
+
+- **WordFileTypeFromExtension** — faila veids, ko Word nosaka, balstoties uz faila paplašinājumu
+
+#### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
+
+Būtiski svarīgs, lai tvertu faila saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccessMode** — Vērtības** — nav, ReadOnly, ReadOnlyUpgradable, ReadWrite.
+
+- **AppDocsEndReason** — uzskaitījums failu saglabāšanai Appdoc EndReason.  Vērtības: nav, izdevās, neizdevās, atcelt.
+
+- **AppDocsErrorCode** — gala kļūdas kods faila saglabāšanas kļūmei.
+
+- **AppDocsTriggeringSaveDetails** — lauks, lai norādītu, vai saglabāšanu izraisa AppDocs virkne
+
+- **DocInstanceId** — AppDocs ģenerētā dokumenta instances ID, kas ir ietverta darbības instancē dokumentā
+
+- **ExcelFileSaveResult** — Excel specifisks HResult
+
+- **FileExtension** — faila paplašinājums.
+
+- **FileIOSaveErrorCode** — FileIO kļūdas kods
+
+- **FileIOSaveHResult** — FileIO Hresult
+
+- **FileIOSaveIsCopy**— būla, kas norāda, vai šī ir kopēšanas darbība.
+
+- **FileSize** — faila lielums
+
+- **FileSourceLocation** — faila atrašanās vietas uzskaitījums.  Vērtības: nav, lokāls, UncOrMappedNetworkDrive, SkyDrive, lietojumprogramma, SharePoint, UnknownServer
+
+- **OpFlags** — darbības karodziņi saglabāšanai
+
+- **PPTFileSaveFailHresult** — PPT Hresult saglabāšanas kļūmei
+
+- **PPTFileSaveFailTag** — PPT atzīme saglabāšanas kļūmei
+
+- **State** — faila atvēršanas stāvokļa uzskaitījums. 
+
+- **Values** — nav, notiek izveide, izveidots, neizdevās izveidot, atvēršana, atvērts, atvēršana neizdevās, notiek kopēšana, kopēšana neizdevās, notiek aizvēršana, aizvērts, aizvēršana neizdevās
+
+- **WordFileCopyErrorTrackbackTag** — atsauces atzīme CopyDocument posma kļūmei Word lietojumprogrammā
+
+- **WordFileSaveCancelReason** — atsauces atzīme atcelšanām Word lietojumprogrammā
+
+- **WordFileSaveEid** — Word specifisks kļūdas kods
+
+- **WordFileSaveErrorTrackbackTag** — atsauces atzīme saglabāšanas kļūmēm
+
+- **WordFileSaveOpResult** — uzskaitījums rezultāta statusam 0, ja izdevās, 1, ja neizdevās, 2, ja atcelts
+
+- **WordFileSaveSuccess** — uzskaitījums Word specifiskai detalizētajai informācijai veiksmīgas faila saglabāšanas darbībai.
+
+#### <a name="officeandroidandroidofficeactivationlatency"></a>Office.Android.AndroidOfficeActivationLatency
+
+Kritiski svarīgi dati, lai apkopotu pilnvērtīgu faila atvēršanas laiku visām faila atvēršanām Windows, Excel, PowerPoint lietojumprogrammās.  Microsoft to izmanto, lai noskaidrotu mūsu lietojumprogrammu failu atvēršanas metriku
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AppBootingOccured** — būla, lai pārbaudītu, vai lietojumprogrammas sāknēšana ir pabeigta
+
+- **ApplicationBootTime** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **AppSuspendedDuringBoot** — būla, lai pārbaudītu, vai lietojumprogramma tika aizturēta sāknēšanas laikā
+
+- **BlockingUIShownDuringFileOpen** — būla, lai norādītu, vai faila atvēršanas darbības laikā bija bloķēšanas dialogs
+
+- **CachedInfoAvailable** — būla, lai meklētu kešatmiņā saglabātu faila atvēršanai specifisku informāciju
+
+- **DocumentRecoveryInvoked** — būla, kas norāda, vai bija atgūšanu gaidošs dokuments
+
+- **EndToEndActivationTime** — laiks, kas veltīts faila renderēšanai failiem, kas atvērti ārpus lietojumprogrammas
+
+- **EndToEndFileOpenTime** — laiks, kas veltīts faila renderēšanai failiem, kas atvērti lietojumprogrammā
+
+- **FileOpenPhaseDurationInMs** — faila atvēršanas darbības laiks specifiskajā fāzē
+
+- **FileSourceLocation** — uzskaites vērtība faila atrašanās vietai, piemēram, nav, lokāls, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **InitalizationReason** — faila atvēršanas ieejas punkts
+
+- **InitialBootPhaseTime** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **IsThisFirstLaunch** — būla, kas norāda, vai šī ir pirmā lietojumprogrammas sāknēšanas reize
+
+- **MinimumLibraryLoadPhaseTime** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **MinimumLibraryLoadPhaseTime** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **MinimumLibraryLoadPhaseTime** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **PostAppInitTimeInMs** — lietojumprogrammas sāknēšanas specifiskajai fāzei nepieciešamais laiks
+
+- **PPTRenderPhase** — ar PPT renderēšanas specifisku fāzi saistītais laiks
+
+- **PreAppInitTimeInMs** — lietojumprogrammas sāknēšanai specifiskajai fāzei nepieciešamais laiks
+
+- **ProviderApp** — tās lietojumprogrammas pakotnes nosaukums, no kuras tiek atvērts fails
+
+- **TelemetryReason** — līdzīgs InitialisationReason, bet detalizētāka uzskaitījuma vērtība attiecībā uz faila atvēršanas ieejas punktu.
+
+- **UserDialogInterruptionDuringBoot** — būla, kas norāda, vai sāknēšanas laikā bija kāds bloķēšanas dialogs
+
+- **XLRenderPhase** — ar XL renderēšanai specifisku fāzi saistītais laiks
+
+#### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
+
+Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās WXP lietojumprogrammu kļūme.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AccessMode** — faila piekļuves režīma uzskaitījuma vērtība.  Vērtības: nav, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** — būla, kas norāda, vai jebkurā vietā plūsmā tika parādīts bloķēšanas lietotāja interfeiss.
+
+- **ContentUriAuthority** — satura URL no SAF iestādes
+
+- **Correlation** — GUID ar darbību saistītajam sasaistes ID
+
+- **DocId** — AppDocs ģenerētais dokumenta ID
+
+- **DocInstanceId** — AppDocs ģenerētā dokumenta instances ID, kas ir ietverta darbības instancē dokumentā
+
+- **DocIsEnterpriseProtected** — būla, kas norāda, vai dokuments ir aizsargāts.
+
+- **DocUserId** — lietotāja ID no MS autentifikācijas slāņa
+
+- **DocUserIdProvider** — uzskaitījums, kas apzīmē lietotāja ID nodrošinātāju, 0 = nezināms, 1 = LiveId, 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** — faila darbības pabeigšanas laiks milisekundēs
+
+- **EndReason** — uzskaitījuma vērtība, kas apzīmē beigu iemeslu.  Vērtības: nav, izdevās, neizdevās, atcelt
+
+- **ErrorCode** — faila darbības kļūdas kods
+
+- **Paplašinājums** — pirmās četras paplašinājuma rakstzīmes failam, kas tiek atvērts.
+
+- **FileSourceLocation** — faila atrašanās vietas uzskaitījuma vērtība. Iespējamās vērtības: nav, lokāls, UncOrMappedNetworkDrive, SkyDrive, lietojumprogramma, SharePoint, UnknownServer
+
+- **FILETIME** — notikuma laiks
+
+- **FirstBCSClientError_Info** — kļūdas koda informācija, kas saistīta ar failu konvertēšanu
+
+- **HttpStatusCode** — HTTP atbildes kods tīmekļa pakalpojuma pieprasījumam
+
+- **InitalizationReason** — faila atvēršanas ieejas punkts
+
+- **K2FileIOHresult** — Hresult kods faila atvēršanas darbības beigām
+
+- **LastBCSClientError_TagId** — pēdējā BCS (binārā konvertēšanas pakalpojums) klienta kļūda
+
+- **OfficeWebServiceApiStatusFlag** — statusa karodziņš tīmekļa pakalpojuma pieprasījumam
+
+- **OpEndEventId** — atzīme, kas norāda, kur faktiski beidzās darbība
+
+- **OpFlags** — dokumenta darbību param. karodziņi, ko izmanto AppDocs slānis.
+
+- **OpSeqNum** — skaitlis, kas norāda ar failu darbību saistīto pieprasījumu secību AppDocs slānī
+
+- **OpType** — darbības veida uzskaitījums. Vērtības: "nav", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** — uzskaitījums jaunu failu izveides darbību vedņu iepriekšējās ieneses stāvoklim.
+
+- **ProviderApp** — tās lietojumprogrammas pakotnes nosaukums, no kuras tiek atvērts fails
+
+- **ScopeInstanceId** — tvēruma instances ID, kas tiek lietots datu konteksta pievienošanai darbībām
+
+- **Size** — faila lielums
+
+- **State** — faila stāvokļa uzskaitījuma vērtība. Vērtības: nav, notiek izveide, izveidots, neizdevās izveidot, atvēršana, atvērts, atvēršana neizdevās, notiek kopēšana, kopēšana neizdevās, notiek aizvēršana, aizvērts, aizvēršana neizdevās
+
+- **TemplateName** — binārais dokumenta veidnes no veidņu pakalpojuma nosaukums, piemēram, TF10002009.dotx
+
+- **UriScheme** — URL shēma
+
+#### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
+
+Binārās konversijas kļūdu telemetrija PDF drukāšanai un koplietošanai.  Microsoft to izmanto, lai identificētu kļūmes punktus BCS konversijas laikā WXP lietojumprogrammās.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **DocumentFileSize** — faila lielums.
+
+- **FileExtension** — faila paplašinājuma pirmās četras rakstzīmes.
+
+- **IsFileDirty** — būla, kas norāda, vai failā ir nesaglabātas izmaiņas.
+
+- **Location** — faila atrašanās vietas uzskaitījums.  Vērtības: OneDrive, SharePoint, Dropbox, citi
+
+- **PDFConversionError** — atzīme, pie kuras rodas PDF konvertēšanas kļūda
+
+- **PdfConversionErrorCode** — PDF konvertēšanas kļūdas kods
+
+- **PdfConversionHRStatus** — PDF konvertēšanas statusa kods
+
+- **PdfConversionResult** — PDF konvertēšanas rezultāta uzskaitījums.  Vērtības: "izdevās", "neizdevās" un "atcelts"
+
+- **PdfFileSize** — PDF faila lielums
+
+#### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
+
+Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot WXP lietojumprogrammas. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ClientTransactionId** — GUID, kas tiek nodots DSC specifiskam izpirkšanas pieprasījumam.
+
+- **CollectionTime** — abonementa iegādes pabeigšanas laiks
+
+- **CountryCode** — klienta valsts kods, kas tiek nosūtīts DSC klienta izpirkšanas pieprasījumam
+
+- **GoPremiumEntryPoint** — pirkuma aktivizēšanas ieejas punkts 
+
+- **IsActivateExistingSubscription** — būla, kas norāda, vai bija iepriekš esošs abonements, kas tika aktivizēts
+
+- **IsErrorRetriable** — būla, kas norāda, vai izpirkšanu var atkārtot
+
+- **IsPreviousPurchase** — būla, kas norāda, vai aktivācija notika ar iepriekšējo abonementu iegādi
+
+- **IsProvisioningTriggeredByRetry** — būla, kas norāda, vai tika iesaistīts atkārtots mēģinājums
+
+- **LanguageCode** — klienta valodas kods, kas tiek nosūtīts DSC klienta izpirkšanas pieprasījumam
+
+- **ProductIdentifier** — SKU, kuru klients mēģina iegādāties, nosaukums
+
+- **ProvisioningHttpStatusCode** — nodrošināšanas http statusa kods
+
+- **ProvisioningStatusCode** — nodrošināšanas statusa kods
+
+- **PurchaseOrderId** — pirkšanas pasūtījuma identifikators no Google/Samsung veikala
+
+- **RedemptionTaskHR** — HResult abonementa izpirkšanas uzdevumam
+
+- **SubscriptionProvisioningSucceeded** — būla veiksmīgam abonementa nodrošināšanas rezultātam
+
+- **SubscriptionPurchaseHR**— Hresult abonementa iegādes uzdevumam
+
+- **SubscriptionType** — abonementa veida vai SKU uzskaitījums.
+
+- **TCID** — noklikšķināšana uz ikonas uzsāk abonementa plūsmu
+
+#### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
+
+Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot WXP lietojumprogrammas. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ErrorAt** — atzīmes vērtība: informācija par vietu, kurā notika kļūme
+
+- **ExceptionErrorMessage** — izvērsts kļūdas ziņojums
+
+#### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
+
+Mēs reģistrējam šo notikumu gadījumā, ja ir rodas kļūdas, ielādējot koplietojamās bibliotēkas. Bibliotēkas ielādes kļūdas var notikt divu iemeslu dēļ: 1) instalētais APK nav saderīgs ar ierīci. 2) bibliotēka, ko mēģinām ielādēt var būt bojāta kļūdu, kas rodas izvēršanas kļūdu rezultātā, kuru iemesls ir vietas trūkums diskā vai atmiņas trūkums.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Data_ExceptionMessage** — izņēmuma ziņojums, kuru parāda Android API System.loadlibrary
+
+- **Data_FreeSpaceInMB** — ierīcē pieejamā brīvā vieta
+
+- **Data_nickName** — bibliotēkas, kuru neizdevās ielādēt, nosaukums.
+
+#### <a name="officeandroidintuneintunejavacopyfailedattempts"></a>Office.Android.Intune.IntuneJavaCopyFailedAttempts
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas Intune aizsargāto mākoņa dokumentu lokālo kopiju saglabāšanā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Data_FileCreationFailedErrorCode** — ar plūsmu saistīts kļūdas kods
+
+#### <a name="officeandroidintuneintunejavaexceptionadaltokenformam"></a>Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas mēģinot iegūt ADAL marķieri Intune resursiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Data_ErrorCode** — ar plūsmu saistīts kļūdas kods
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicy"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicy
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējā procesa identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti šādi lauki:
+ 
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicyforcontext"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējās darbības identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki.
+ 
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionauthenticationcallback"></a>Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar reģistrāciju autentifikācijas atzvanīšanai pārvaldītajiem kontiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti šādi lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetaccountstatesync"></a>Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar pārvaldīto kontu saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti šādi lauki:
+ 
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetissavetolocationallowed"></a>Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas ar saglabāšanu lokāli saistītajā ienešanas politikā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti šādi lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetpolicyforidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti šādi lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofromdescriptor"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar aizsardzības informāciju saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+  
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofrompath"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar aizsardzības informāciju saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptiongetuipolicyidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pārvaldītā konta lietotāja interfeisa politiku ienešanu.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionisidentitymanaged"></a>Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar konta pārvaldības identificēšanu.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionnullenrollmentmanager"></a>Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar komponentu reģistrāciju atzvanīšanai.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionprotect"></a>Office.Android.Intune.IntuneJavaExceptionProtect
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar pārvaldītā dokumenta aizsardzību saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionprotectfromdescriptorifrequired"></a>Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar pārvaldītā dokumenta aizsardzību saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar Intune Management konta reģistrāciju.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionsetuipolicyidentitysync"></a>Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar iestatījumu politikām pārvaldītajam konta.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionunregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar Intune Management attālinātās dzēšanas scenārijiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidintuneintunejavaexceptionupdatetoken"></a>Office.Android.Intune.IntuneJavaExceptionUpdateToken
+
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pārvaldītā konta atjaunināšanas autorizācijas marķieri.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- Nav
+
+#### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
+
+Kritisko kļūdu telemetrija, kas tiek izmantota O365 kontu W/X/P lietojumprogrammās licencēšanas aktivizēšanas kļūmju izsekošanai.  Microsoft to izmanto, lai analizētu iegādāto O365 licenču aktivizēšanas kļūmes.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **EntryPoint** — ieejas punkta uzskaitījums licenču aktivizēšanas plūsmas aktivizēšanai
+
+- **HResult** — kļūmes kļūdas kods
+
+- **IsGallatin** — būla, kas tiek izmantota, lai pārbaudītu, vai tas ir Gallatin konts
+
+- **MessageCode**— uzskaitījums, kas norāda aktivizēšanas kļūmes punktu
+
+- **PreviousEntryPoint** — ieejas punkta uzskaitījums licenču aktivizēšanas plūsmas aktivizēšanai
+
+- **StateAfterActivation** — uzskaitījums, kas norāda lietojumprogrammas licencēšanas stāvokli pirms aktivizēšanas plūsmas sākuma
+
+- **StateBeforeActivation** — uzskaitījums, kas norāda lietojumprogrammas licencēšanas stāvokli pirms aktivizēšanas plūsmas sākuma
+
+- **UserAccountType** — uzskaitījums, kas norāda, vai konts ir personiskais vai uzņēmuma konts.
+
+#### <a name="officeandroidmsasigninuiprompts"></a>Office.Android.MSASignInUIPrompts
+
+Šīs notikums norāda, ka lietotājs saņēma pierakstīšanās uzvedni personiskajam kontam.  Šis notikums palīdz saprast mūsu lietojumprogrammu pierakstīšanās stāvokļa darbspēju un atbilstoši rīkoties, kad pamanām neparedzētas pierakstīšanās uzvednes. 
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ExternalCacheRefreshError** — marķiera atsvaidzināšanas mēģinājuma pirms pierakstīšanās uzvednes parādīšanas kļūdas kods.
+
+- **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās.
+
+- **MSAserverUAID** — korelācijas ID ar pakalpojuma telemetrijas datiem.
+
+- **PreviousIdentityState** — norāda konta stāvokli, piemēram, sesijas laiks beidzies. 
+
+- **SignInResultCode** — norāda pierakstīšanās uzvednes beigu rezultātā kodu.
+
+- **UseCache**— norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
+
+- **UserType** — norāda, vai tas ir esošs konts vai jauns konts
+
+- **WasIdentitySignedOut** — norāda, vai konts bija izrakstīšanās stāvoklī.
+
+
 #### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
 
 Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots Digital River aktivizēšanas kļūmju novēršanai (notikums reģistrē galveno un produktu, kas tika lietots aktivizācijai, kā arī saņemtās kļūdas kodu).  Šis notikums tiek lietots, lai noteiktu un palīdzētu novērst aktivizācijas kļūmes (Digital River problēmas).
@@ -8577,3 +9703,13 @@ Apkopo katru reizi, kad PowerPoint konstatē, ka nav interneta savienojuma. Micr
 Tiek apkopoti tālāk norādītie lauki.
 
 - **Data\_IsNexusDetected:bool** – redzams, vai ir interneta savienojuma statuss, izsaucot Nexus pakalpojumu (patiesa vērtība) vai izsaucot standarta tīmekļa pakalpojuma API (aplama vērtība)
+
+#### <a name="officeserviceabilitymanagerofficesvcmgrprofile"></a>Office.ServiceabilityManager.OfficeSvcMgrProfile
+
+Notikums sākas brīdi, kad tiek sāknēts Office Serviceability Manager, un ir kritiski svarīgs, lai sniegtu ieskatu saistībā ar izvietošanas statusu, lietojumprogrammu un pievienojumprogrammu avārijām klienta nomniekā, ļaujot mums ģenerēt ieskatus, lai IT administrators spētu pārliecināti veidot atjauninājumus sava uzņēmumam datoriem.  
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **DeviceIdJoinToken** — tiek izmantots, lai savienotu telemetrijas datus darbspējas un izvietošanas statusa ar citiem funkcionāliem datiem, kas tiek iegūti no pakalpojumu konveijera.
+
+- **TenantAssociationKeyStamped** — būlas karodziņš, kas tiek izmantots, lai noteiktu Office ekosistēmā pārvaldīto ierīču skaitu.

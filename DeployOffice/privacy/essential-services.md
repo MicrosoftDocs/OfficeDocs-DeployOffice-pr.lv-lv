@@ -10062,11 +10062,11 @@ Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu diagnostikas datu
 
 ### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
 
-Šo notikumu apkopo Office programmām, kas tiek darbinātas Apple platformās. Pasākumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmajā palaišanas pieredzē. Mēs apkopojam kodu, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
+Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Šo notikumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmās palaišanas programmā. Mēs vācam koda datus, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
 
 Tiek apkopoti šādi lauki:
 
- - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu kolekcijas preferenci.
+ - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu vākšanas preferenci.
 
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged

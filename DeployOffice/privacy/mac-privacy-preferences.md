@@ -35,7 +35,7 @@ Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet
 
 > [!NOTE]
 > - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuri darbojas ar Windows operētājsistēmu, skatiet rakstā [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md).
-> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs, skatiet rakstā [Office politikas iestatījumu izmantošana iOS ierīcēs konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md).
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs skatiet rakstā [Preferenču izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai iOS ierīcēs ](ios-privacy-preferences.md).
 
 ## <a name="setting-preferences"></a>Preferenču iestatīšana
 
@@ -53,13 +53,13 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 |**Iespējamās vērtības**  | `BasicDiagnosticData` *(tiek iestatīts līmenis, kas nepieciešams)* <br/> `FullDiagnosticData` *(tiek iestatīts līmenis kā neobligāts)* <br/> `ZeroDiagnosticData` *(līmenis netiek iestatīts)* |
 |**Pieejamība** |16.28 un jaunākas versijas |
 
-Sākot ar jaunām 16.30 versijas instalācijām, ja jūs neredzat šo preferenci, Microsoft tiek sūtīti nepieciešamie diagnostikas dati, ja lietotāji ar Office 365 abonementu ir pierakstījušies, izmantojot darba vai mācību kontu, vai ja lietotājiem ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
+Sākot ar jaunām versijas 16.30 instalācijām: ja jūs neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti tikai obligātie diagnostikas dati, ja Office 365 abonementa lietotāji tiek pierakstīti ar darba vai mācību kontu vai ja lietotāji izmanto Office 2019 darbam ar Mac lielapjoma licencēšanas versiju. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
 
 > [!NOTE]
-> - Ja instalējat versiju 16.28 vai 16.29 un neiestatīsit šo preferenci, korporācijai Microsoft tiek sūtīti neobligātie un nepieciešamie diagnostikas dati. Ja pēc tam jauniniet uz versiju 16.30 vai jaunāku, neobligātie un nepieciešamie diagnostikas dati joprojām tiek sūtīti korporācijai Microsoft, ja vien neizmantojat šo preferenci, lai iestatītu citu vērtību.
-> - Ja iestatāt šo preferenci, tas attiecas arī uz versiju 1.00.217856 un jaunākām komandām, kas paredzētas Teams darbam ar Mac, un uz versiju 16.28 un jaunākām versijām Skype darbam Mac datoriem.
+> - Ja instalējat versiju 16.28 vai 16.29 un neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti neobligātie un obligātie diagnostikas dati. Ja pēc tam jaunināt uz versiju 16.30 vai jaunāku, neobligātie un obligātie diagnostikas dati joprojām tiek sūtīti korporācijai Microsoft, ja vien neizmantojat šo preferenci, lai iestatītu citu vērtību.
+> - Ja iestatāt šo preferenci, tas attiecas arī uz Teams darbam ar Mac versiju 1.00.217856 un jaunākām versijām, kā arī uz Skype darbam Mac datoriem versiju 16.28 un jaunākām versijām.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai nepieciešamie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt neobligātos diagnostikas datus, dodoties uz **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai obligātie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt arī neobligātos diagnostikas datus, atverot **Preferences** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Preferences iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
 
