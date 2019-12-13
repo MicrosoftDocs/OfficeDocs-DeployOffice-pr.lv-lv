@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
-ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
+ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
+ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38310687"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962852"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -423,6 +423,37 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Wamapi** — norāda, kurš WAM API ir izsaukts
 
   - **Wamtelemetrybatch** — pašlaik netiek izmantots. Nākotnē sniedz WAM komponentam iespēju izsūtīt papildinformāciju par autentifikācijas notikumu.
+
+### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
+ 
+Šis notikums tiek reģistrēts, ja tiek atrasts derīgs atsvaidzināšanas marķieris kontu sarakstā, ko nodrošina TokenSharingManager.  Šis scenārijs attiecas uz vienoto pierakstīšanos (SSO).
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **AccountType** — reģistrē konta tipu
+
+- **ProviderPackageID** — reģistrē tās programmas pakotnes ID, kas nodrošināja šo kontu
+
+### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
+
+Šis notikums tiek reģistrēts, ja radās kļūda, mēģinot iegūt konta atsvaidzināšanas marķieri kontu sarakstā, ko nodrošina TokenSharingManager. Šis scenārijs attiecas uz vienoto pierakstīšanos (SSO)
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **RawError** — reģistrē RAW kļūdu, kas rodas, mēģinot iegūt atsvaidzināšanas marķieri ar norādīto kontu
+
+### <a name="onenotestickynotesfetchtokencompleted"></a>OneNote.StickyNotes.FetchTokenCompleted
+ 
+Šis notikums ir pieteicies ziņas autentifikācijai, kad ir pabeigta atsvaidzināšanas marķiera iegūšana.
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **ErrorMessage** — ja neizdevās ielādēt marķieri, tiks parādīts kļūdas ziņojums 
+
+- **Result** — reģistrē marķiera iegūšanas mēģinājuma rezultātu
+
+- **StickyNoteAccountType** — reģistrē konta tipu, kuram programma mēģināja izgūt atsvaidzināšanas marķieri
+
 
 ## <a name="click-to-run-events"></a>Click-to-Run notikumi
 
@@ -2531,13 +2562,19 @@ Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectPar
 
 - **PRID —** virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas scenārijā (piemēram, O365ProPlusRetail)
 
-- **ProductsToAdd —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāinstalē
+- **PridsToMigrateFromCentennial —** Office produktu virkne, lai migrētu no veikala instalācijām uz noklikšķināt, lai palaistu
+
+- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
+
+- **ProductsToMigrateFromO15C2R —**  Office produktu un kultūru virkne, lai migrētu no Office 2013 noklikšķināt, lai palaistu instalācijas
 
 - **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
 
 - **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
 
 - **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+
+- **ShouldUninstallCentennial —** Būla karodziņš, kas norāda, vai Office produkti no veikala ir jāatinstalē
 
 - **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
  
@@ -2602,15 +2639,21 @@ Ziņo par Office instalēšanai izmantotajiem parametriem
 
 - **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office
 
+- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
+
+- **PridsToMigrateFromCentennial —** Office produktu virkne, lai migrētu no veikala instalācijām uz noklikšķināt, lai palaistu
+
+- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
+
+- **ProductsToMigrateFromO15C2R —** Office produktu un kultūru virkne, lai migrētu no Office 2013 noklikšķināt, lai palaistu instalācijas
+
 - **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
-
-- **PRID —** virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas scenārijā (piemēram, O365ProPlusRetail)
-
-- **ProductsToAdd —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāinstalē
 
 - **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
 
 - **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+
+- **ShouldUninstallCentennial —** Būla karodziņš, kas norāda, vai Office produkti no veikala ir jāatinstalē
 
 - **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
@@ -2651,6 +2694,37 @@ Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie 
 - **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
 
+### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
+
+Šis notikums tiek reģistrēts, kad izsaukums uz tīmekļa pakalpojumu, kas veikts, izmantojot noklikšķināt, lai palaistu funkcionālo darbību pievienojumprogrammu, tiek pabeigts, neatkarīgi no tā, vai tas ir sekmīgs vai nē. Tā būtībā ir pēdējā operācija pievienojumprogrammā, lai izsekotu kopējo darbības statusu.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+-  **WebCallSource** — uzskaitījuma vērtība (norādīta kā vesels skaitlis), kas norāda, kāda ir apkalpojamības pārvaldnieka pievienojumprogramma, kas bija zvana avots:
+   - Krājumu saraksts: 0
+   - Krājumu konfigurācija: 1
+   - Krājumu politika: 2
+   - Krājumu tīkla statuss: 3
+
+- **Result** — skaitlisks kļūdas kodu karodziņi, ko atgriezis Office tīmekļa pakalpojumu zvanu API.
+
+### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
+
+Šis notikums tiek reģistrēts katru reizi, kad zvans uz tīmekļa pakalpojumu, kas izveidots, izmantojot noklikšķiniet, lai palaistu pievienojumprogrammu nav sekmīgs.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Pievienojumprogramma** — noklikšķināt, lai palaistu tehniskās apkopes pārvaldnieka pievienojumprogramma, no kuras tīmekļa pakalpojuma zvans tika veikts. Tam var būt vērtības, piemēram, krājums, pārvaldāmība utt., kas kodēta kā skaitliska vērtība.
+
+- **Korelācijas ID** — nejauši ģenerētu GUID, kas raksturīgs pašreizējai instancei, kas tiek nosūtīta tīmekļa pakalpojumam, lai saistītu zvanus starp klientu un serveri.
+
+- **Result** — skaitliska kļūdas kodu informācija, ko atgriezis Office tīmekļa pakalpojumu zvanu API.
+
+- **Funkcija** — funkcija kodā, no kura ir noticis pašreizējais zvans.
+
+- **Statusa** — HTTP statusa kods, ko atgriezis zvans uz tīmekļa pakalpojumu, piemēram, 404, 500 utt.
+
+
 ## <a name="enhanced-configuration-service-ecs-events"></a>Uzlabotās konfigurācijas pakalpojuma (ECS) notikumi
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
@@ -2688,6 +2762,14 @@ Tiek apkopoti tālāk norādītie lauki.
 Tiek apkopoti šādi lauki.
 
   - **FeatureGate —** nosaka līdzekļu kopu, kura atbilst cēloņu analīzei.
+
+### <a name="onenoteflightdefault"></a>OneNote.FlightDefault
+ 
+Šis notikums tiek reģistrēts, kad OneNote pieprasa ECS serveri lidojuma vērtībām.  To var izmantot, lai nodrošinātu eksperimentālus līdzekļus tiem lietotājiem, kuri ir pieteikušies saņemt šādus lidojumus.
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **ConfigParam** — konfigurācija, kurai tiek lietota vērtība
 
 ## <a name="licensing-events"></a>Licencēšanas notikumi
 
@@ -2757,7 +2839,10 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Mēs to apkopojam, kad lietotājs iestata ierīci un mēs izsaucam mūsu licencēšanas pakalpojumu, lai noteiktu, vai lietotājam, kas ir pieteicies, ir Office tiesības. Tādējādi tiek norādīts attiecīgā izsaukuma rezultāts Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam trūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
-Šis notikums neapkopo laukus.
+Tiek apkopoti tālāk norādītie lauki:
+
+- **EntitlementCount** — lietotājam piešķirto pilnvaru skaits
+
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
@@ -2766,6 +2851,26 @@ Katrā sesijā pārbaudām, vai ir pagājušas 72 stundas kopš pēdējās lice
 Tiek apkopoti tālāk norādītie lauki.
 
   - **Mode** — šajā datorā izmantotā Office licencēšanas steka skaitītāja attēlojums
+
+### <a name="officelicensinginclientpinredemptioncallpinredemptionapi"></a>Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
+
+Šī telemetrija izseko Office PIN izpirkšanas pakalpojuma zvana rezultātus.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ClientTransactionId** — unikāls pakalpojuma zvana identifikators.
+
+- **ErrorCategory** — katrs kļūdas tips var ietilpt vispārīgākā kategorijā, piemēram, "Atkārtojams".
+
+- **ErrorType** — kļūmes iemesls, piemēram, "AlreadyRedeemedByOther".
+
+- **InAFOFlow** — Būla izteiksme, kas norāda, vai mēs esam AFO izpirkšanas plūsmā.
+
+- **StatusCode** — viena vārda pakalpojuma zvana rezultāts, piemēram, "Izveidots".
+
+- **StatusMessage** — statusa koda detalizētā informācija, piemēram, "Veiksmīgi nodrošināta".
+
+- **UsingNulApi** — Būla izteiksme, kas norāda, vai mēs izmantojam jauno licencēšanas steku.
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
@@ -2915,6 +3020,26 @@ Ja kāda iemesla dēļ nevaram aktivizēt lietotāju un tam ir jārāda dialogs,
 
 Šis notikums neapkopo laukus.
 
+### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
+
+Lietotāji, kuriem ir sākotnēji instalēta sistēma Office jaunos datoros, kuriem nav tiesību uz Office, tiek parādīts dialoglodziņš, ar ko viņi var izmēģināt, iegādāties vai ievadīt produkta kodu, lai saņemtu licenci. Šis notikums ietver lietotāja darbību dialoglodziņā. Šis notikums tiek lietots, lai izsekotu lietotāja darbību, kas tiek veikta, kad tiek parādīts dialoglodziņš lietotājiem, kuriem nav Office tiesību, kur sistēma Office tika sākotnēji instalēta datorā, un tas palīdz noteikt, vai lietotājs ir licencēts vai nelicencēts, izmantojot noformēšanu.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **Buy** — norāda, vai lietotājs noklikšķināja uz pogas iegādāties vai nē
+
+- **ForceAutoActivate** — norāda, vai ir jāveic vai nav jāveic programmas aktivizācija
+
+- **GoBackToSignIn** — norāda, vai lietotājs vēlas pierakstīties vēlreiz (iespējams, ar citu kontu)
+
+- **IsPin** — norāda, vai lietotājs ir ievadījis PIN
+
+- **ProductKey** — norāda, vai lietotājs mēģināja ievadīt produkta kodu
+
+- **Try** — norāda, vai lietotājs noklikšķināja uz pogas izmēģināt vai nē
+
+- **UserDismissed** — norāda, vai lietotājs ir noraidīja dialogu, un tāpēc būtu pagarinātas vai samazinātas funkcionalitātes režīmā, jo viņi neizvēlas iegādāties Office vai saņemt izmēģinājumversiju
+
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
 Veicam eksperimentu, kas lietotājam sniedz iespēju izmēģināt un iestatīt automātisko maksāšanu par Office tieši no lietojumprogrammas, neizejot no lietojumprogrammas konteksta. Tas ziņo par šī eksperimenta sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
@@ -2957,6 +3082,149 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **UninstallProduct** — norāda, vai vecais produkts konvertēšanas ietvaros tiks atinstalēts
 
+### <a name="officelicensingtelemetryflowolsresults"></a>Office.Licensing.TelemetryFlow.OLSResults
+
+Kad lietotājs ir nelicencēts, mēs veicam vairākas pakalpojuma zvanus, lai lietotājam tiktu piešķirta licence, un lai aktivizētu savu Office produktu.  Šis notikums tiek izraisīts, zvanot Office licencēšanas pakalpojumam, lai pārbaudītu, vai lietotājam ir pilnvaras.  Šis pasākums tiks lietots, lai izsekotu lietotāja licencēšanas statusam pēc tam, kad tiek piezvanīts Office licencēšanas pakalpojumam un Office klienta statusam pēc mēģinājuma aktivizēt Office.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **EntitlementPickerShown** — norāda, vai lietotājam ir vairākas pilnvaras, un vai lietotājam bija manuāli jāizvēlas no tām, lai saņemtu licenci
+
+- **GetAuthResult** — norāda dažādus stāvokļus, kādos jūsu klients var būt, piemēram, ja iegādājās tukšu produkta kodu no Office licencēšanas pakalpojuma, vai ja bija tiesības izmantot citu produktu un Office ir jāpārvērš par jauno produktu
+
+- **EntitlementCount** — norāda lietotājam piešķirto pilnvaru skaitu
+
+- **GetEntitlementsSucceeded** — norāda, vai zvans uz Office licencēšanas pakalpojumu API, lai izgūtu lietotāja pilnvaras, ir sekmīgs vai nē
+
+- **GetKeySucceeded** — norāda, vai zvans uz Office licencēšanas pakalpojumu API, lai izgūtu produkta kodu, ir sekmīgs vai nē
+
+- **GetNextUserLicenseResult** — norāda, vai modernais licencēšanas steks varēja darboties, un vai lietotājam tika piešķirta licence vai nē
+
+- **InstallKeyResult** — norāda dažādus iemeslus, kāpēc lietotājs var būt sliktā stāvoklī, piemēram, ja aktivizācija neizdevās vai produkta koda instalēšana neizdevās
+
+- **NotInitializedBeforeWhileAdding** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties
+
+- **NotInitializedBeforeWhileSending** — šis ir tikai informatīvs, un norāda, vai tika mēģināts nosūtīt notikumu, pirms tam neveicot tiešu reģistrēšanos telemetrijas pārvaldnieka kartē
+
+- **SentOnDestruction** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties un netika nosūtīts tieši
+
+- **Tag** — tiek lietota, lai iegūtu informāciju par to, kur kods ir nosūtīts no
+
+- **VerifyEntitlementsResult** — norāda dažādus stāvokļus, kādos lietotājs var būt pēc tam, kad ir apstiprinātas pilnvaras, kas izgūtas no Office licencēšanas pakalpojuma
+
+### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
+
+OEM pārdod iekārtas, kurās ietilpst Office (viena gada abonementi vai mūžīgi).  Šie Office produkti tiek apmaksāti, kad klients iegādājas savu iekārtu. Iekārtās, kurās ir iestatīta īpaša reģistra atslēga (OOBEMode: OEMTA), iespējams, ir ar to saistīts Office.  Kad sāknējam Office šādās iekārtās, mēs veicam pakalpojumu pārbaudes, lai noskaidrotu, vai atrasta Office saistība, kas atbilst iekārtai.
+
+Šīs telemetrijas darbības izseko veiksmes un neveiksmes punktus, meklējot sasaisti, lai mēs varētu nodrošināt, ka iekārtas, kurās ir sasaiste, var tos veiksmīgi ienest, un šie pakalpojumi ir darbspējīgi.  Šī darbība neizseko iekārtas, kuriem nav saistījumu ar tām pēc tam, kad esam pārbaudījuši ar saviem pakalpojumiem.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **GenuineTicketFailure** — norāda kļūmi HRESULT, kas rodas, mēģinot iegūt iekārtas Windows orģināla biļeti/produkta atslēgu (WPK).
+
+- **PinValidationFailure** — norāda, kāpēc PIN validācijas process neizdevās. Iespējamās kļūdas:
+    - GeoBlocked
+    - InvalidFormat
+    - InvalidPin
+    - InvalidState
+    - InvalidVersion
+    - Unknown
+    - Used
+
+- **PinValidationResult** — norāda PIN validācijas rezultātu, ko neizdevās atkost.
+
+- **Pkpn** — Pkpn diapazons, kuram pieder PIN.
+
+- **Success** — norāda, ka mēs sekmīgi ienesām derīgu Office piesaisti (PIN) iekārtai.
+
+- **Tag** — norāda, kurā solī apstājāmies meklēt sasaistīšanu. Iespējamie tagi:
+  - 0x03113809  nav interneta savienojuma/pakalpojuma kļūdas, pārbaudot PIN
+   - 0x0311380a PIN validācijas kļūme, nosūtīta ar PinValidationFailure lauku
+  - 0x0310410f  izdevās, nosūtīts ar panākumu lauku
+  - 0x0311380d  kļūdu novēršana (interneta problēmas, nezināmas kļūdas)
+  - 0x0311380e  neiespējamu atkārtotu mēģinājumu kļūdas (saistošais piedāvājums beidzies)
+  - 0x0311380f   citas kļūdas (nevar licencēt)
+  - 0x03104111  neizdevās atkost Office PIN, kas nosūtīts ar PinValidationResult lauku
+
+- **WpkBindingFailure** — norāda kļūdas kodu, lai iegūtu Office PIN, kas saistīts ar ierīces WPK.
+
+### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
+
+Pēc sekmīgas Office PIN iegūšanas, kas ir saistīts ar iekārtu un iepriekš sasaistīts ar Office, mēs parādīsim lietotājam pierakstīšanās dialogu vai izpirkšanas dialogu.  Kad PIN kods ir izpirkts, tiek parādīts dialoglodziņš EULA.  Kā daļu no mūsu modernizācijas AFO līdzekļa mēs atsvaidzinājām abus dialogus, lai sniegtu papildinformāciju par Office produktu, kas ir komplektā ar iekārtu.  Šie telemetrijas dati seko, ja mūsu līdzeklis sekmīgi samazina lietotāju neērtības, izsekojot izpirkšanas procesa plūsmas un iziešanas punktus (kurš dialoglodziņš ir noraidīts).
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **ActionCreateAccount** — lietotājs izvēlējās izveidot kontu.
+
+- **ActionSignIn** — lietotājs izvēlējās pierakstīties.
+
+- **DialogRedemption** — norāda AFO izpirkšanas dialogu.
+
+- **DialogSignIn** — norāda AFO pierakstīšanās dialogu.
+
+- **OExDetails** — detalizēta informācija par kļūdu, kas tiek atgriezta, kad tiek noraidīts identitātes pierakstīšanās dialogs.
+
+- **OExType** — detalizēta informācija par kļūdu, kas tiek atgriezta, kad tiek noraidīts identitātes pierakstīšanās dialogs.
+
+- **Tag** — norāda, kurā solī lietotājs iziet no AFO izpirkšanas procesa. Iespējamie tagi:
+    - 0x0311380b    lietotājs noraidīja identitātes pierakstīšanās dialoglodziņu no izpirkšanas dialoglodziņa
+    - 0x0311380c    neizdevās automātiski ielādēt identitāti pēc lietotāja pierakstīšanās no izpirkšanas dialoglodziņa
+    - 0x03113810    neizdevās ielādēt konta demogrāfisko informāciju (valsts kodu, valodu, valūtu, izmēģinājuma piedāvājumu un mārketinga preferences)
+    - 0x03113805    lietotājs noraidīja identitātes pierakstīšanās dialoglodziņu no pierakstīšanās dialoglodziņa
+    - 0x03113806    neizdevās automātiski ielādēt identitāti pēc lietotāja pierakstīšanās no pierakstīšanās dialoglodziņa
+    - 0x03113807    neizdevās automātiski ielādēt identitāti
+    - 0x03113811    lietotājs aizvēra dialoglodziņu pierakstīšanās/izpirkšana
+    - 0x03113812    lietotājs aizvēra akceptēt EULA dialoglodziņu
+    - 0x03113808    lietotājs akceptēja EULA līgumu
+
+- **UseInAppRedemption** — norāda mums, vai mēs palīdzam lietotājiem programmā izpirkšanai vai nosūtīšanai uz tīmekļa vietni, lai izmantotu to ienesto PIN (iepriekš aizpildītu).
+
+- **UseModernAFO** — norāda mums, vai izmantojat jauno vai veco AFO pieredzi.
+
+### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
+
+Kad jaunās iekārtās ir instalēts Office, bet lietotājam nav pilnvaru, tiek parādīts dialoglodziņš, kurā lietotājam tiek piedāvāts izmēģināt, iegādāties vai ievadīt produkta kodu, lai lietotājs varētu saņemt licenci, un šis notikums seko, vai tiek parādīts dialoglodziņš. Šis pasākums palīdzēs saprast, vai dialoglodziņš bija redzams lietotājam, lai izmēģinātu, iegādātos vai ievadītu produkta kodu, un tādējādi palīdzēs mums noteikt, vai lietotājam bija iespēja saņemt licenci.
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **ActiveView** — norāda lietotājam redzamā dialoglodziņa ID
+
+- **CurrentOOBEMode** — norāda pirmsinstalēšanas režīmu (OOBE režīmu, piemēram, AFO, OEM u.c.)
+
+- **NotInitializedBeforeWhileAdding** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties
+
+- **SentOnDestruction** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties un netika nosūtīts tieši
+
+- **ShowTryButton** — norāda, vai izmēģināšanas poga bija redzama lietotājam dialoglodziņā vai nē
+
+- **Tag** — tiek lietota, lai iegūtu informāciju par to, kur kods ir nosūtīts no
+
+### <a name="officelicensingtelemetryflowtrialflow"></a>Office.Licensing.TelemetryFlow.TrialFlow
+
+Ja lietotājs ar nelicencētu Office, kas iepriekš ir instalēts iekārtā, mēģina saņemt izmēģinājumversiju, tiek aktivizēts šis notikums.  Tas tiek izmantots, lai redzētu, kurš lietotājs sekos, lai saņemtu izmēģinājumversiju, un vai rodas kļūdas, mēģinot saņemt izmēģinājumversiju, izmantojot programmas pirkumus.  Atkarībā no lietotāja darbības un programmas iegādes rezultāta lietotājs var netikt licencēts.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **HasConnectivity** — norāda, vai lietotājam ir interneta savienojums, un gadījumā, ja lietotājam nav, iespējams, ir jāizmanto pagarinājuma licence piecu dienu laikā, vai, iespējams, darbojas samazinātas funkcionalitātes režīmā
+
+- **InAppTrialPurchase** — norāda, vai ir iespējots lidojums veikala iegādes SDK palaišanai, lai tvertu PI un iegādātos izmēģinājumversiju programmā
+
+- **IsRS1OrGreater** — norāda, vai operētājsistēmas versija ir lielāka par RS1 vai nav, jo veikala iegādes SDK ir jāizmanto tikai tad, ja OS versija ir lielāka RS1
+
+- **NotInitializedBeforeWhileAdding** — tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties
+
+- **OEMSendToWebForTrial** — norāda, vai lidojums ir iespējots, lai nosūtītu lietotājus uz tīmekļa vietni un izpirktu izmēģinājumversiju
+
+- **StoreErrorConditions** — norāda dažādus nosacījumus, saskaņā ar kuriem veikalu iegādei SDK neizdevās
+
+- **StoreErrorHResult** — norāda, ka no veikala iegādes SDK tiek atgriezts kļūdas kods
+
+- **StorePurchaseStatusResult** — norāda, kā tiek zvanīts veikala iegādei SDK, un, ja lietotājs ir veicis pirkumu vai nē, kas palīdzēs noteikt, vai lietotājam ir jābūt licencētam izmantot Office
+
+- **Tag** — tiek lietota, lai iegūtu informāciju par to, kur kods ir nosūtīts no
+
+- **UserSignedInExplicitly** — norāda, vai lietotājs ir pierakstījies tieši, šādā gadījumā mēs atkārtoti novirzīsim lietotājus uz tīklu, lai veiktu izmēģinājumversijas
+
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
 Ja kāda iemesla dēļ nevaram lietotāju licencēt, instalējam pagarinājuma atslēgu un izsūtām signālu, kas to paziņo. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam trūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
@@ -2966,6 +3234,14 @@ Tiek apkopoti tālāk norādītie lauki.
   - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām oportūnistisku atjaunošanu lietotājam koplietojamā datora aktivizācijas režīmā
 
   - **ReArmResult** — norāda instalētās atslēgas atkārtotu aktivizēšanu, kas var pagarināt pašreizējās licences derīgumu
+
+### <a name="onenoteenrollmentresult"></a>OneNote.EnrollmentResult
+ 
+Šis notikums reģistrē statusu pēc Intune reģistrēšanas.  Šis scenārijs ir raksturīgs tikai Intune iespējotiem kontiem.
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **EnrollmentResult** — Intune reģistrācijas rezultāts
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Microsoft AutoUpdate (MAU) notikumi
 
@@ -10053,6 +10329,33 @@ Tiek apkopoti tālāk norādītie lauki
 
 - **Source** — uzskaitījums, kas norāda, kurš notikums izraisīja UI, t.i., izveidoja jaunu redx attēlu, sinhronizācijas kļūda sinhronizācijas lietotāja interfeisā, parādīja kļūdas dialogu utt.
 
+### <a name="onenoteappprovisioningmovelocalnotebooktoonlinenotebookfailed"></a>OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
+ 
+Šis notikums tiek reģistrēts, ja lokālās piezīmju grāmatiņas pārnešana uz disku neizdodas.  Šis scenārijs attiecas uz novēlotas pierakstīšanās lietotāju. Kad lietotājs pierakstās, lokālā piezīmju grāmatiņa tiek pārnesta uz viņu OneDrive krātuvi. 
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **ErrorMsg** — kļūdas ziņojums, kas atbilst kļūmei.
+
+### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
+ 
+Šis notikums tiek reģistrēts, ja neizdodas izveidot piezīmju grāmatiņu.  
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **NetworkConnection** — reģistrē savienojuma tipu, kurā ierīce pašlaik ir ieslēgta, piemēram, Wi-Fi, bezsaistē, 3G 
+
+- **ServerType** — reģistrē servera tipu, kur tiks izveidota piezīmju grāmatiņa.
+
+### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
+ 
+Šis notikums tiek reģistrēts, ja lietotājam, veicot pirmās palaišanas darbības ierīcē, neizdevās sinhronizēt ātrās piezīmes.  Šis ir raksturīgs pirmās palaišanas scenārijam.
+ 
+Tiek apkopoti tālāk norādītie lauki:
+ 
+- **NetworkConnection** — reģistrē savienojuma tipu, kurā ierīce pašlaik ir ieslēgta, piemēram, Wi-Fi, bezsaistē, 3G
+
+- **ServerType** — reģistrē servera tipu, kur tiks izveidota ātro piezīmju grāmatiņa.
 
 ## <a name="services-configuration-events"></a>Pakalpojumu konfigurācijas notikumi
 
