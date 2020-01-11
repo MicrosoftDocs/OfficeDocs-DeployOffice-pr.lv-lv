@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
-ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
+ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38276482"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024442"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -37,7 +37,15 @@ Ir svarīgi zināt, ka uz šiem neobligātajiem mākoņa pakalpojumiem neattieca
 
 ## <a name="experiences-that-rely-on-bing"></a>Līdzekļi, kas izmanto Bing
 
-Dažu mākoņa pakalpojumu darbību nodrošina Microsoft Bing. Microsoft Bing ir nodalīts no Office 365 ProPlus, un korporācija Microsoft to pārvalda neatkarīgi no Office 365 ProPlus. Līdzekļi, ko Bing nodrošina Office 365 ProPlus lietojumprogrammās, ir: [3D kartes](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartes diagrammas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Tiešsaistes attēlu ievietošana](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Tiešsaistes 3D modeļu ievietošana](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Pētnieks](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) un [Viedā uzmeklēšana](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). Šie līdzekļi ir licencēti jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz tiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Office 365 ProPlus organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
+Dažu mākoņa pakalpojumu darbību nodrošina Microsoft Bing. Microsoft Bing ir nodalīts no Office 365 ProPlus, un korporācija Microsoft to pārvalda neatkarīgi no Office 365 ProPlus. Līdzekļi, ko Bing nodrošina Office 365 ProPlus lietojumprogrammās, ir: [3D kartes](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartes diagrammas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Tiešsaistes attēlu ievietošana](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Tiešsaistes 3D modeļu ievietošana](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Pētnieks](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) un [Viedā uzmeklēšana](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+
+Bing nodrošina sekojošus līdzekļus programmām Outlook darbam ar iOS un Android:  
+
+- **Atrašanās vietas ieteikumi:** pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, laukā Atrašanās vieta tiek noradīta pilna adrese.
+- **Interesanti kalendāri:** varat [abonēt](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) savu mīļāko sporta komandu vai TV pārraižu kalendārus.
+
+
+ Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Office 365 ProPlus organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Līdzekļi, kas izmanto LinkedIn
 
@@ -47,9 +55,13 @@ Piezīme. Tālāk aprakstītais privātuma iestatījums nekontrolē pieredzi, ka
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Līdzekļi, kuri izmanto citus Microsoft tiešsaistes pakalpojumus un/vai trešo pušu pakalpojumus
 
+### <a name="help--contact-support"></a>Palīdzība > Sazināties ar atbalsta dienestu
+
+Programmā Outlook darbam ar iOS un Android varat ziņot par problēmām un sazināties ar mūsu atbalsta komandu, pārejot uz **Iestatījumi** > **Palīdzība un atsauksmes** > **Sazināties ar atbalsta dienestu**. Šo līdzekli nodrošina HelpShift izstrādātais pakalpojums, kam tiek attiecināti HelpShift [pakalpojuma sniegšanas noteikumi](https://www.helpshift.com/legal/terms/) un [konfidencialitātes politika](https://www.helpshift.com/legal/privacy/).
+
 ### <a name="help--suggest-a-feature"></a>Palīdzība > Līdzekļa ieteikšana
 
-Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti [UserVoice pakalpojuma noteikumi un privātuma politika](https://outlook.uservoice.com/tos).
+Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti UserVoice [pakalpojuma sniegšanas noteikumi](https://outlook.uservoice.com/tos) un [konfidencialitātes politika](https://outlook.uservoice.com/tos#privacy-policy).
 
 ### <a name="insert-online-video"></a>Tiešsaistes video ievietošana
 
