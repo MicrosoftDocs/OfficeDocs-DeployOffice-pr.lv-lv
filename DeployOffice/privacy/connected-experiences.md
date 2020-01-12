@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 5bf39e1fbe7e56b77496cfc0756484a9a1c051a0
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067537"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024352"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -29,6 +29,8 @@ ms.locfileid: "38067537"
 > - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
 >
 > Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
+>
+> Šī informācija attiecas uz Outlook versiju darbam ar iOS un Android, kas tiks izdota 2020. gada janvāra beigās.
 
 Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemērs.
 
@@ -49,13 +51,16 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint darbam ar Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Ievietojiet datus no attēla| [Ievietojiet datus no attēla](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Tiešraides titri un subtitri |  [Prezentācijas ar reāllaika automātiskajiem parakstiem vai subtitriem programmā PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| Atrašanās vietas ieteikumi | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
 | Kartes līdzeklī Power View   | [Kartes līdzeklī Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office prezentāciju pakalpojums  | [PowerPoint prezentācijas apraide tiešsaistē attāliem skatītājiem](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint noformētājs   | [Profesionālu slaidu izkārtojumu izveide, izmantojot PowerPoint noformētāju](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publicēšana rīkā Power BI   | [Publicēšana pakalpojumā Power BI no Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publicēšana pakalpojumā Microsoft Stream    | [Prezentācijas pārveide par video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Izpēte   | [Izpētes pakalpojumu pievienošana vai mainīšana](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Vizītkaršu skenēšana|  [Skenējiet vai pielieciet vizītkarti, lai pievienotu kontaktpersonas programmā Outlook darbam ar Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 | Viedā uzmeklēšana   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Pārvēršana par tīmekļa lapu   | [Word dokumenta pārvēršana par Sway tīmekļa lapu](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Tulkotājs   | [Teksta tulkošana citā valodā](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
@@ -68,14 +73,19 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 
 | **Nosaukums**      | **Papildinformācija**  |
 | ------------- | ------------- |
+| Kalendāra lietojumprogrammas| [Kas ir kalendāra lietojumprogrammas?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Mākoņa fonti                 | [Mākoņa fonti sistēmā Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | Datu tipi                  | [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| BUJ |Atlasot **Iestatījumi** > **Palīdzība un atsauksmes** > **BUJ** programmā Outlook darbam ar iOS un Android, nonāksiet pie [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Rokraksta efekti                 | [Zīmēšana un rakstīšana ar rokrakstu sistēmā Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Ikonu ievietošana                | [Ikonu ievietošana sistēmā Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Microsoft Forms ievietošana      | [Veidlapas vai kontroldarba ievietošana programmā PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Tiešsaistes 3D modeļu ievietošana     | [Radošas izpausmes ar 3D modeļiem](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Tiešsaistes attēlu ievietošana      | [Attēlu ievietošana](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Tiešsaistes video ievietošana     | [Video ievietošana no pakalpojuma YouTube vai citas tīmekļa vietnes](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Interesanti kalendāri| [Abonējiet](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) savu iecienītāko sporta komandu vai TV pārraižu kalendāru programmā Outlook darbam ar iOS un Android. |
+| Atrašanās vietas ieteikumi | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
+| Kartes pasākumu aprakstos | Uzziniet, kur jādodas ar [kartēm](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), kas ir norādītas pasākumu aprakstos programmā Outlook darbam ar iOS un Android. |
 | Office palīdzība                 | Kad Office programmas lentē izvēlaties opciju **Palīdzība** > **Palīdzība** vai izmantojat taustiņu F1   |
 | Formu meklēšana tiešsaistē (Visio) | [Papildu formu un šablonu atrašana](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | PowerPoint QuickStarter     | [Tēmas izpēte, izmantojot PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
