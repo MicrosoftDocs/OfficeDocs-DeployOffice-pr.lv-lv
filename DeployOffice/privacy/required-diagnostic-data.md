@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
-ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
+ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
+ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39906619"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41109506"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -2391,6 +2391,139 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **SolutionId** — risinājuma ID.
 
+#### <a name="officefeedeventsinitializing"></a>Office.Feed.Events.Initializing
+
+Šis notikums tiek apkopots brīdī, kad sākas plūsmas inicializācija. Šis notikums tiek izmantots, lai norādītu uz to, ka ir sākusies plūsma, un veiktu uzticamības problēmu diagnostiku plūsmas palaišanas laikā.
+
+- **AppInfo.Language** — lietojumprogrammas valoda IETF valodas atzīmes formātā.
+
+- **AppInfo.Name** — izmantojamā komponenta nosaukums (Office plūsma).
+
+- **AppInfo.Version** — lietojumprogrammas versija.
+
+- **clientCorrelationId** — lietojumprogrammas sesijas globāli unikālais identifikators.
+
+- **clientType** — lietojumprogramma, kurā darbojas komponents.
+
+- **DeviceInfo.Make** — ierīces ražotāja vai ierīces OEM nosaukums.
+
+- **DeviceInfo.NetworkProvider** — tīkla vai mobilo sakaru operators, piemēram, "AT&T".
+
+- **DeviceInfo.NetworkType** — izmantojamās ierīces pieslēguma tīklam, piemēram, "ar vadu", "WiFi" vai "WWAN" (datu/mobilo datu tīkls).
+
+- **DeviceInfo.OsName** — ierīces operētājsistēmas nosaukums.
+
+- **DeviceInfo.SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas.
+
+- **eventId** — notikuma nosaukuma identifikators. 
+
+- **EventInfo.SdkVersion** — klienta notikuma ģenerēšanā izmantotās telemetrijas SDK versija.
+
+- **eventpriority** — notikuma sūtīšanas prioritātes uzskaites vērtība.
+
+- **feature** — izmanto, lai grupētu dažādus viena līdzekļa notikumus.
+
+- **hostAppRing** — lietotāju, kuriem tika izplatīta lietojumprogramma, skaits.
+
+- **properties** — satur papildu katram notikumam apkopotos metadatu rekvizītus.
+        
+    - **ClientTimeStamp** — notikuma reģistrēšanas klientā laikspiedols.
+
+- **publicEventName** — publiski pieejamais notikuma nosaukums.  
+
+- **reģions** — plūsmas pakalpojuma, kuram ir pieslēdzies lietotājs, ģeogrāfiskais reģions. 
+
+- **tenantAadObjectId** — lietotāja uzņēmuma nomnieka globālais unikālais identifikators.
+
+- **type** — reģistrētā notikuma veids, piemēram, izsekošana, kļūda, notikums, QoS.
+
+- **userAadObjectId** — globāli unikāls lietotāja identifikators Microsoft uzņēmuma kontam.
+
+- **UserInfo.Id** — globāli unikāls lietotāja identifikators Microsoft uzņēmuma kontam.
+
+- **UserInfo.IdType** — norāda lietotāja ID veidu. 
+
+- **UserInfo.Language** — lietotāja valoda IETF valodas atzīmes formātā.
+
+- **UserInfo.MsaId** — globāli unikāls lietotāja identifikators Microsoft lietotāja kontam.
+
+- **UserInfo.OMSTenantId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+
+- **UserInfo.TimeZone** — lietotāja laika josla attiecībā pret UTC.
+
+- **userPuid** — globāli unikāls lietotāja identifikators Microsoft lietotāja kontam.
+
+- **version** — plūsmas klienta versija.
+
+#### <a name="officefeedeventsofficefeeddidappear"></a>Office.Feed.Events.OfficeFeedDidAppear
+
+Šis notikums tiek apkopots, kad plūsma tiek parādīta lietotājam. Šis notikums tiek izmantots, lai verificētu, vai plūsma pabeidza inicializācijas darbību, un diagnosticētu uzticamības problēmas plūsmas palaišanas laikā.
+
+- **AppInfo.Language** — lietojumprogrammas valoda IETF valodas atzīmes formātā.
+
+- **AppInfo.Name** — izmantojamā komponenta nosaukums (Office plūsma).
+
+- **AppInfo.Version** — lietojumprogrammas versija.
+
+- **clientCorrelationId** — lietojumprogrammas sesijas globāli unikālais identifikators.
+
+- **clientType** — lietojumprogramma, kurā darbojas komponents.
+
+- **DeviceInfo.Make** — ierīces ražotāja vai ierīces OEM nosaukums.
+
+- **DeviceInfo.NetworkProvider** — tīkla vai mobilo sakaru operators, piemēram, "AT&T".
+
+- **DeviceInfo.NetworkType** — izmantojamās ierīces pieslēguma tīklam, piemēram, "ar vadu", "WiFi" vai "WWAN" (datu/mobilo datu tīkls).
+
+- **DeviceInfo.OsName** — ierīces operētājsistēmas nosaukums.
+
+- **DeviceInfo.SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas.
+
+- **eventId** — notikuma nosaukuma identifikators.
+
+- **EventInfo.SdkVersion** — klienta notikuma ģenerēšanā izmantotās telemetrijas SDK versija.
+
+- **eventpriority** — notikuma sūtīšanas prioritātes uzskaites vērtība.
+
+- **feature** — izmanto, lai grupētu dažādus viena līdzekļa notikumus.
+
+- **hostAppRing** — lietotāju, kuriem tika izplatīta lietojumprogramma, skaits.
+
+- **properties** — satur papildu katram notikumam apkopotos metadatu rekvizītus.
+        
+  - **bridgeWaitingTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
+    
+  - **ClientTimeStamp** — notikuma reģistrēšanas klientā laikspiedols.
+        
+  - **renderTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
+
+- **publicEventName** — publiski pieejamais notikuma nosaukums.  
+
+- **reģions** — plūsmas pakalpojuma, kuram ir pieslēdzies lietotājs, ģeogrāfiskais reģions. 
+
+- **tenantAadObjectId** — lietotāja uzņēmuma nomnieka globālais unikālais identifikators.
+
+- **type** — reģistrētā notikuma veids, piemēram, izsekošana, kļūda, notikums, QoS.
+
+- **userAadObjectId** — globāli unikāls lietotāja identifikators Microsoft uzņēmuma kontam.
+
+- **UserInfo.Id** — globāli unikāls lietotāja identifikators Microsoft uzņēmuma kontam.
+
+- **UserInfo.IdType** — norāda lietotāja ID veidu. 
+
+- **UserInfo.Language** — lietotāja valoda IETF valodas atzīmes formātā.
+
+- **UserInfo.MsaId** — globāli unikāls lietotāja identifikators Microsoft lietotāja kontam.
+
+- **UserInfo.OMSTenantId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+
+- **UserInfo.TimeZone** — lietotāja laika josla attiecībā pret UTC.
+
+- **userPuid** — globāli unikāls lietotāja identifikators Microsoft lietotāja kontam.
+
+- **version** — plūsmas klienta versija.
+
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Ļauj uzzināt, vai fails ir veiksmīgi atvērts no FIO līmeņa. Izmanto līdzekļu darbspējas veicināšanai un pārraudzībai.
@@ -3131,6 +3264,191 @@ Tiek apkopoti šādi lauki:
 Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
+
+#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
+
+Mēs reģistrējam brīdi, kad lietotājs atrodas lietojumprogrammā, kas ielādē personas kartīti, sagaidot, ka lietotājs atvērs Live personas kartīti.   Šie dati tiek izmantoti, lai noteiktu, vai kartīte ir ielādēta pareizi. 
+
+Tiek apkopoti tālāk norādītie lauki: 
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā lietojumprogrammā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
+
+- **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** — notikuma sūtīšanas prioritātes uzskaites vērtība.
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+
+  - **accountType** — norāda, vai lietotājs pieder organizācijai vai ir patērētājs
+
+  - **cardCorrelationId** — Data.appContextId dublikāts
+
+  - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+
+  - **ClientTimeStamp** — notikuma reģistrācijas laiks lietojumprogrammā
+
+  - **consumerCorrelationId** — Data.clientCorrelationId dublikāts
+
+  - **contextType** — no kura konteksta (lietojumprogrammas) tika palaista kartīte
+
+  - **ecsConfigIds** — kartītē iespējoto līdzekļu versiju identifikatori
+
+  - **ecsTagId** — atzīmes ID līdzekļiem
+
+  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
+  - **flights** — kartītē iespējotie līdzekļi
+
+  - **fromCache** — vai dati tika ielādēti no atmiņas
+
+  - **hasFinePointer** — vai ierīcei ir peles rādītāja funkcionalitāte
+
+  - **hasHoverEvents** — vai ierīcei ir norādīšanas ar peli funkcionalitāte
+
+  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+
+  - **offlineResolved**— vai dati tika ielādēti bezsaistē
+
+  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **Data.workloadCulture** — resursdatora lietojumprogrammā iestatītā kultūra
+
+- **DeviceInfo_Id** — globāli unikālais ierīces identifikators
+
+- **DeviceInfo_Make** — operētājsistēmas zīmols
+
+- **DeviceInfo_Model** — ierīces modelis
+
+- **DeviceInfo_OsName** — ierīces operētājsistēmas nosaukums
+
+- **DeviceInfo_OsVersion** — operētājsistēmas versija
+
+- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
+
+#### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
+
+Reģistrē, kad lietotājs atver izvērstu personas kartīti. To izmanto, lai konstatētu kritiskas anomālijas neveiksmes gadījumā, palaižot reāllaika personas kartīti.
+
+Tiek apkopoti tālāk norādītie lauki:
+
+- **AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
+
+- **AppInfo_Version** — resursdatora lietojumprogrammas versija
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā programmā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.exportName** — lietotāja darbības notikuma lasāmais nosaukums, piemēram, "OpenedPersonaCard"
+
+- **Data.exportType** — pasākuma kategorija VDAR eksporta pieprasījumam
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.hostAppRing** — aplis, kurā programma tika izplatīta
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+
+  - **cardCorrelationId** — Data.appContextId dublikāts 
+
+  - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+
+  - **clientScenario** — izmanto, lai noteiktu līdzekli lietojumprogrammā, no kuras tika atvērta personas kartīte
+
+  - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
+
+  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
+  - **hasPersonalInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
+
+  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+
+  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+  - **section** — izvērstās kartītes aktīvā sadaļa
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam 
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **DeviceInfo_Id** — globāli unikālais ierīces identifikators
+
+- **DeviceInfo_Make** — operētājsistēmas zīmols
+
+- **DeviceInfo_Model** — ierīces modelis
+
+- **DeviceInfo_OsName** — ierīces operētājsistēmas nosaukums
+
+- **DeviceInfo_OsVersion** — operētājsistēmas versija
+
+- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
+
+- **NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
+
+- **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neanonimizēta klienta IP adrese.
+
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -4174,9 +4492,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_ServerType:long** — iepriekš definētu vērtību kopas servera tipam (SharePoint, DropBox, WOPI).
 
-- **Data_SrcDoc_ServerVersion:long** -— pārbauda, vai servera pamatā ir Office14, Office15 vai Office 16Data SrcDoc SessionId:long ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
+- **Data_SrcDoc_ServerVersion:long** — pārbauda, vai servera pamatā ir Office14, Office15 vai Office 16.
 
-- **Data_SrcDoc_SharePointServiceContext:string**— necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_SrcDoc_SessionId:long** — ģenerēts GUID, kas identificē dokumenta instanci tajā pašā procesa sesijā
+
+- **Data_SrcDoc_SharePointServiceContext:string**—necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_SrcDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
@@ -7690,6 +8010,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **ErrorCodeime** — iztērētais laiks kopā.
 
+- **IsAugmentationScenario**— norāda uz to, vai pieauguma cilpa ir atbildīga par Office Solutions struktūras vadības inicializēšanu.
+
 - **IsDebug** - norāda, vai sesija ir atkļūdošanas sesija
 
 - **NumberOfAddinsActivated** — aktivēto pievienojumprogrammu skaitītājs.
@@ -9069,7 +9391,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējā procesa identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki:
  
 - Nav
 
@@ -9077,7 +9399,7 @@ Tiek apkopoti šādi lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējās darbības identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti tālāk norādītie lauki:
  
 - Nav
 
@@ -9085,7 +9407,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar reģistrāciju autentifikācijas atzvanīšanai pārvaldītajiem kontiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki:
 
 - Nav
 
@@ -9101,7 +9423,7 @@ Tiek apkopoti šādi lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas ar saglabāšanu lokāli saistītajā ienešanas politikā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki:
 
 - Nav
 
@@ -9109,7 +9431,7 @@ Tiek apkopoti šādi lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki:
 
 - Nav
 
