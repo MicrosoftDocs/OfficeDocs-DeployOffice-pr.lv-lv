@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
-ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
+ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
+ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41024352"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41917603"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -42,8 +42,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 
 | **Nosaukums**   | **Papildinformācija**   |
 | ----------- | ------------------ |
-| 2D kartes    | [Kartes diagrammas izveide](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| 3D kartes    | [Darba sākšana ar 3D kartēm](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| 3D kartes\*    | [Darba sākšana ar 3D kartēm](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automātisks alternatīvais teksts   | [Viss, kas jāzina, lai rakstītu efektīvu alternatīvo tekstu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Diktēšana  | [Diktēšana sistēmā Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Redaktors    | [Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
@@ -51,19 +50,22 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint darbam ar Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Ievietojiet datus no attēla| [Ievietojiet datus no attēla](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Tiešraides titri un subtitri |  [Prezentācijas ar reāllaika automātiskajiem parakstiem vai subtitriem programmā PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
-| Atrašanās vietas ieteikumi | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
+| Kartes diagramma\*    | [Kartes diagrammas izveide](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Kartes līdzeklī Power View   | [Kartes līdzeklī Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office prezentāciju pakalpojums  | [PowerPoint prezentācijas apraide tiešsaistē attāliem skatītājiem](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint noformētājs   | [Profesionālu slaidu izkārtojumu izveide, izmantojot PowerPoint noformētāju](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publicēšana rīkā Power BI   | [Publicēšana pakalpojumā Power BI no Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publicēšana pakalpojumā Microsoft Stream    | [Prezentācijas pārveide par video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Izpēte   | [Izpētes pakalpojumu pievienošana vai mainīšana](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Izpēte\*   | [Izpētes pakalpojumu pievienošana vai mainīšana](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizītkaršu skenēšana|  [Skenējiet vai pielieciet vizītkarti, lai pievienotu kontaktpersonas programmā Outlook darbam ar Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
-| Viedā uzmeklēšana   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Viedā uzmeklēšana\*   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Pārvēršana par tīmekļa lapu   | [Word dokumenta pārvēršana par Sway tīmekļa lapu](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Tulkotājs   | [Teksta tulkošana citā valodā](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+> [!NOTE]
+> \*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šo saistīto pieredzi var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Saistīti līdzekļi, kas lejupielādē tiešsaistes saturu
 
@@ -80,19 +82,22 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Rokraksta efekti                 | [Zīmēšana un rakstīšana ar rokrakstu sistēmā Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Ikonu ievietošana                | [Ikonu ievietošana sistēmā Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Microsoft Forms ievietošana      | [Veidlapas vai kontroldarba ievietošana programmā PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| Tiešsaistes 3D modeļu ievietošana     | [Radošas izpausmes ar 3D modeļiem](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| Tiešsaistes attēlu ievietošana      | [Attēlu ievietošana](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
-| Tiešsaistes video ievietošana     | [Video ievietošana no pakalpojuma YouTube vai citas tīmekļa vietnes](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Interesanti kalendāri| [Abonējiet](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) savu iecienītāko sporta komandu vai TV pārraižu kalendāru programmā Outlook darbam ar iOS un Android. |
-| Atrašanās vietas ieteikumi | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
+| Tiešsaistes 3D modeļu ievietošana\*     | [Radošas izpausmes ar 3D modeļiem](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| Tiešsaistes attēlu ievietošana\*      | [Attēlu ievietošana](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
+| Tiešsaistes video ievietošana\*     | [Video ievietošana no pakalpojuma YouTube vai citas tīmekļa vietnes](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Interesanti kalendāri\*| [Abonējiet kalendāru](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) ar savām iecienītākajām sporta komandām vai TV pārraidēm programmā Outlook darbam ar iOS un Android. |
+| Atrašanās vietas ieteikumi\* | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
 | Kartes pasākumu aprakstos | Uzziniet, kur jādodas ar [kartēm](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), kas ir norādītas pasākumu aprakstos programmā Outlook darbam ar iOS un Android. |
 | Office palīdzība                 | Kad Office programmas lentē izvēlaties opciju **Palīdzība** > **Palīdzība** vai izmantojat taustiņu F1   |
 | Formu meklēšana tiešsaistē (Visio) | [Papildu formu un šablonu atrašana](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
-| PowerPoint QuickStarter     | [Tēmas izpēte, izmantojot PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
-| Pētnieks    | [Kā viegli rakstīt pētījumu programmā Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f). |
+| PowerPoint QuickStarter\*     | [Tēmas izpēte, izmantojot PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
+| Pētnieks\*    | [Kā viegli rakstīt pētījumu programmā Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f). |
 | Priekšāteikšana    | [Ātrāks darbs ar priekšāteikšanas līdzekli](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Veidnes  | [Iepriekš izveidotu bezmaksas veidņu lejupielāde](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-| Laikapstākļu josla (Outlook)| [Laikapstākļu prognozes pilsētas mainīšana kalendāra laikapstākļu joslā](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+| Laikapstākļu josla\* (Outlook)| [Laikapstākļu prognozes pilsētas mainīšana kalendāra laikapstākļu joslā](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+
+> [!NOTE]
+>\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šo saistīto pieredzi var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
 
 ## <a name="other-connected-experiences"></a>Citi saistīti līdzekļi
 
@@ -117,12 +122,12 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | LinkedIn kontaktpersonas vizītkarte |[LinkedIn un Microsoft kontu pievienošana](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
 | Atsauksmes par Office |[Kā var sniegt atsauksmes par Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office atbalsts (Sazināties ar mums) |Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu** |
-| Office 365 pievienojumprogrammas | [Office 365 pievienojumprogrammu izvietošanas pārvaldība Microsoft 365 administrēšanas centrā](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
+| Office 365 pievienojumprogrammas\* | [Office 365 pievienojumprogrammu izvietošanas pārvaldība Microsoft 365 administrēšanas centrā](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Organizācijas diagramma (Visio) |[Visio organizācijas diagrammas izveide](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Outlook Social Connector ieslēgšana](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
-| Outlook UserVoice | [Kā var sniegt atsauksmes par Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| Outlook UserVoice\* | [Kā var sniegt atsauksmes par Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Pēdējie dokumenti |[Failu atvēršana no izvēlnes Fails](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| CV palīgs |[Labāka CV rakstīšana, izmantojot LinkedIn un CV palīgu](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| CV palīgs\* |[Labāka CV rakstīšana, izmantojot LinkedIn un CV palīgu](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Telpas meklētājs (Outlook)|[Telpas meklētāja kontrole programmā Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
 | Drošās saites |[Office 365 ATP drošās saites](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Sensitivitātes etiķetes |[Sensitivitātes etiķešu lietošana dokumentos un e-pastā sistēmā Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
@@ -133,6 +138,8 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Versiju vēsture |[Office failu iepriekšējo versiju skatīšana](https://support.office.com/article/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
 | Kamēr bijāt prombūtnē |[Paziņojumu saņemšana, kad grupas dalībnieki atjaunina jūsu kopīgoto failu](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
+> [!NOTE]
+>\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šo saistīto pieredzi var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Izvēlieties, vai šie saistītie līdzekļi ir pieejami izmantošanai
 

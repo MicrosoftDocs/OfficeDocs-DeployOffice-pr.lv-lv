@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
-ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
+ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
+ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41024442"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41917693"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -30,6 +30,8 @@ Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespē
 > - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 > - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 > - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
+>
+> Lielāko daļu izvēles saistīto pieredzi var pārvaldīt arī ar saistīto līdzekļu privātuma kontroles līdzekļiem. Piemēram, tiešsaistes attēlu ievietošanu var arī pārvaldīt ar politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*.
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ja izmantojat šos pakalpojumus, kādiem lietošanas noteikumiem ir jāpiekrīt?
 
