@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
-ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
+ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
+ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962852"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42224999"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -56,7 +56,7 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 | [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to. Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
 | [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
-|[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS vajadzībām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
+|[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS operētājsistēmām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
 |[OneNote sinhronizācija](#onenote-sync-events)|Programma OneNote darbam ar Mac atbalsta tikai tādas piezīmju grāmatiņas, kas tiek glabātas internetā — OneDrive krātuvē vai SharePoint Online. Programma OneNote darbam ar Mac pastāvīgi sinhronizē visas lietotāja piezīmes ar OneDrive krātuvi vai SharePoint Online. Tādējādi lietotāji var atvērt, skatīt un rediģēt savas piezīmju grāmatiņas visās savās ierīcēs, un viņu piezīmju grāmatiņas vienmēr ir atjauninātas.
  [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
 | [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Tas ir arī atbildīgs par Office nepieciešamo pakalpojuma datu pakalpojuma diagnostikas datu daļas apkopošanu.  |
@@ -78,6 +78,17 @@ Nākamajās sadaļās ir sniegta tālāk norādītā informācija.
 
 Šie diagnostikas datu notikumi tiek apkopoti, kad Office mēģina iegūt autentifikācijas marķieri vai nu nemanāmi vai izmantojot uzvedni.
 
+### <a name="officeandroidmsaguesttoaad"></a>Office.Android.MSAGuestToAAD
+
+Šis notikums palīdz izprast, cik daudziem lietotajiem tiek lūgts norādīt personiskā konta paroli, piekļūstot darba resursiem, jo viņu personiskais konts var būt derīgs darbam ar konta nomnieku.
+
+Šie dati palīdz mums saprast, cik daudziem lietotajiem ir jāsaskaras ar atkārtotām pieteikšanās uzvednēm, lai prioritizētu nemanāmu AAD marķieru iegūšanu balstoties uz Microsoft konta SAML (drošības novērtējuma iezīmēšanas valoda) vērtējumu.
+
+Tiek apkopoti šādi lauki:
+
+- **Tag** — norāda, ka lietotājs, piekļūstot darba resursam, saņēma pierakstīšanās uzvedni personiskajam kontam.
+
+
 ### <a name="officeidentityfbapromptwin32"></a>Office.Identity.FbaPromptWin32
 
 Tiek apkopots, kad Office rāda lietotājam uz veidlapām balstītas pierakstīšanās uzvedni.
@@ -86,7 +97,7 @@ Kopā ar kluso pilnvaru iegūšanu autentifikācijas uzvednes tiek izmantotas, l
 
 Uz veidlapām balstītās autentifikācijas (FBA) pierakstīšanās uzvednes tiek izmantotas dažiem lokāliem autentifikācijas scenārijiem, un parasti mēs vēlamies nodrošināt, ka tā nenotiek, jo visiem vajadzētu lietot moderno autentifikāciju ar FBA saistīto drošības ievainojamību dēļ.
 
-**Tiek apkopoti tālāk norādītie lauki.**
+Tiek apkopoti šādi lauki:
 
   - **AuthScheme** — izmantotā autentifikācijas shēma
 
@@ -2433,7 +2444,7 @@ Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, v
 
 - **BytesFromLanPeers —** baiti no LAN vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
 
-- **CancelledJobs —** atcelto pieprasījumu skaits sesijā
+- **canceledJobs —** atcelto pieprasījumu skaits sesijā
 
 - **Connected —** vai ir izveidots savienojums ar avotu
 
@@ -2693,6 +2704,11 @@ Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie 
 
 - **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
+### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+Šis notikums tiek izmantots, lai iegūtu standarta metadatus par katru inventāra pievienojumprogrammas darbību, kas ir daļa no tehniskās apkopes pārvaldnieka un tiek izmantota Office informācijas uzskaitei datoros un ierīcēs, kurām administrators to ir iespējojis. Šeit īpaši interesanti sesijas ID metadati, kas tiek izmantoti, lai izveidotu saiti uz citiem datiem, kas ir saglabāti katra nomnieka mākoņa pakalpojumā.
+
+Šis notikums nesatur ekstra laukus, jo saistoši ir tikai metadati.
 
 ### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
 
@@ -3044,7 +3060,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Veicam eksperimentu, kas lietotājam sniedz iespēju izmēģināt un iestatīt automātisko maksāšanu par Office tieši no lietojumprogrammas, neizejot no lietojumprogrammas konteksta. Tas ziņo par šī eksperimenta sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **StorePurchaseStatus** — atspoguļo pirkuma izsaukuma, kas tika veikts, izmantojot Windows Store, kļūdas kodu/sekmīgas izpildes kodu
 
@@ -3052,7 +3068,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ja lietotājs strādā koplietojama datora aktivizācijas režīmā, mēs mēģinām meklēt sesijas marķieri datorā, kas lietotājam sniedz iespēju izmantot lietojumprogrammu. Šis notikums ziņo par scenārija sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **LoadLicenseResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām ielādēt licences pašreizējam lietotājam
 
@@ -3185,7 +3201,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kad jaunās iekārtās ir instalēts Office, bet lietotājam nav pilnvaru, tiek parādīts dialoglodziņš, kurā lietotājam tiek piedāvāts izmēģināt, iegādāties vai ievadīt produkta kodu, lai lietotājs varētu saņemt licenci, un šis notikums seko, vai tiek parādīts dialoglodziņš. Šis pasākums palīdzēs saprast, vai dialoglodziņš bija redzams lietotājam, lai izmēģinātu, iegādātos vai ievadītu produkta kodu, un tādējādi palīdzēs mums noteikt, vai lietotājam bija iespēja saņemt licenci.
 
-Tiek apkopoti tālāk norādītie lauki: 
+Tiek apkopoti šādi lauki: 
 
 - **ActiveView** — norāda lietotājam redzamā dialoglodziņa ID
 
@@ -10864,7 +10880,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **OsBuildRevision** — OS būvējuma pārskatījums
 
-  - **OSEnvironment** — Windows, iOS, Mac, Android utt.
+  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
 
   - **OsMajorVer** — operētājsistēmas galvenā versija.
 
@@ -11470,9 +11486,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Pārbauda, vai patērētāji var skatīt datus, kad tie tiek izvadīti no datora, izmantojot diagnostikas datu skatītāju.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
-  - **DialogCancelled** — vai diagnostikas datu skatītāja dialogs tika atcelts
+  - **Dialogcanceled** — vai diagnostikas datu skatītāja dialogs tika atcelts
 
   - **NewState** — jaunais diagnostikas datu skatītāja stāvoklis
 
