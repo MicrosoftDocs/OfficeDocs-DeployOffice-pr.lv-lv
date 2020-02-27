@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
-ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
+ms.openlocfilehash: bd9a5754a8741ee3cc96bf843c59f8f509bc1738
+ms.sourcegitcommit: de34e0fff15c3bd099df452d8f4771398f9dfaf6
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41109506"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265470"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -1305,6 +1305,321 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 
 Informācija par sekmīgu lietojumprogrammas funkcionalitāti. Attiecas tikai uz programmas un dokumentu atvēršanu un aizvēršanu, failu rediģēšana un failu koplietošanu (sadarbību).
 
+#### <a name="account_action"></a>account_action
+
+Nepieciešams, lai nodrošinātu veiksmīgu konta konfigurācijas darbību, un tiek izmantots, lai pārraudzītu konta izveides stāvokli, spēju pievienot jaunus e-pastu kontus un uzraudzītu mīkstos kontu atiestatījumus 
+
+Tiek apkopoti šādi lauki: 
+
+- **account_calendar_count** — cik daudz kalendāru ir kontam
+ 
+- **action** — veicamās darbības veids, piemēram, izveidot kontu, dzēst kontu.
+ 
+- **duration_seconds** — darbības ilgums
+ 
+- **entry_point** — darbības ievades punkts, kā lietotājs uzsāka darbību
+ 
+- **has_hx** — nosaka, vai ierīcei ir konts, kas izmanto jaunu e-pasta sinhronizācija pakalpojumu, bet ne obligāti konts, uz kuru tika vērsta darbība
+ 
+- **is_hx** — nosaka, vai konts izmantot mūsu jauno e-pastu sinhronizācijas pakalpojumu
+ 
+- **is_shared_mailbox** — vai darbība ir saistīta ar koplietotu pastkasti
+ 
+- **number_of_accounts** — kopējais kontu skaits, attiecībā uz kuriem tiek veikta darbība
+ 
+- **result** — darbības rezultāts, piemēram, izdevās, neizdevās.
+   
+- **server_type** — konta servera veids, līdzīgs konta tipam
+ 
+- **shared_type** — koplietotā konta tips (ja konts ir koplietots)
+ 
+- **scope** — darbības apjoms; konta dzēšanai šajā ierīcē vai visās ierīcēs
+ 
+- **total_calendar_accounts** — kalendāra kontu skaits lietojumprogrammā darbības veikšanas brīdī
+ 
+- **total_email_accounts** — e-pasta kontu skaits lietojumprogrammā darbības veikšanas brīdī
+ 
+- **total_file_accounts** — failu kontu skaits lietojumprogrammā darbības veikšanas brīdī
+
+#### <a name="app_error"></a>app_error
+
+Izseko kritiskās lietojumprogrammu kļūdas, lai mēs spētu novērst problēmas, kas var izraisīt jūsu lietojumprogrammu avārijas vai traucēt jums lasīt e-pasta ziņojumus.
+
+Tiek apkopoti šādi lauki: 
+
+- **clientName** — mākoņa faila, kurā notika kļūda, klienta nosaukums, ja attiecināms.
+
+- **cloudfile_error_type** — mākoņa failā notikušās kļūdas tips, ja attiecināms.
+
+- **cloudfile_response_name** — mākoņa failā notikušās kļūdas atbildes nosaukums, ja attiecināms.
+
+- **component_name** — lietojumprogrammas komponenta, kurā notika kļūda, nosaukums, piemēram, e-pasts vai kalendārs.
+
+- **debug_info** — informācija par mākoņa failā notikušo kļūdu, kas tiek izmantota, lai noteiktu kļūdas iemeslu.
+
+- **error_origin_identifier** — kļūdas, kas notika melnrakstā, izcelsme, ja attiecināms.
+
+- **error_type** — notikušās kļūdas tips. Daži no paraugiem iekļauj saglabāt melnrakstu, sūtīt melnrakstu un mākoņa faila kļūda.
+
+- **exrule** — paplašinātā kārtulas vērība (tiek pielietota tikai atkārtotām tikšanās kļūdām)
+
+- **exrule** — paplašinātais kārtulas datums (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+
+- **has_attachments** — parāda, vai melnraksts, kurā notika kļūda, satur pielikumus, ja attiecināms.
+
+- **is_IRM_protected** — parāda, ja melnraksts, kurā notika kļūda, ir aizsargāts ar informācijas tiesību pārvaldību, ja attiecināms.
+
+- **is_legitimate** — parāda, vai kļūdas iemesls ir programmēšanas kļūda. Programmēšanas kļūdas tiek uzskatītas par nederīgām.
+
+- **is_local** — parāda, vai melnraksts, kurā notika kļūda, tika sinhronizēts ar serveri, ja attiecināms.
+
+- **is_recoverable** — parāda, vai no kļūdas ir iespējams atkopties vai tā ir fatāla kļūda.
+
+- **rdate** — atkārtošanās kārtulas datums (tiek pielietots tikai atkārtotām tikšanās kļūdām) 
+
+- **rrule** — atkārtošanās kārtula (tiek pielietots tikai atkārtotām tikšanās kļūdām) 
+
+- **rrule_error_message** — atkārtošanās kārtulas parsēšanas kļūdas ziņojums (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+
+- **rrule_error_type** — atkārtošanās kārtulas parsēšanas kļūdas tips (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+
+- **status_code** — notikušās kļūdas statusa kods. Palīdz mums saprast kļūdas iemeslu.
+
+Visas rakstzīmes ir arī iespējamie rekvizīti. Tas palīdz mums saprast rakstzīmes melnraksta ziņojumā kļūdas rašanās brīdī. Piemēram, “a”, “b” un “c” ir iespējamie rekvizīti.
+
+#### <a name="app_launch_report"></a>app_launch_report
+
+Šis notikums ļauj mums atklāt un novērst problēmas, ja Outlook palaišana notiek lēni vai nepilnīgi, apgrūtinot mūsu lietotājiem mūsu lietojumprogrammas izmantošanu. Tiek iekļauta informācija par konkrētiem iespējotajiem līdzekļiem un to, cik ilgu laiku aizņēma atsevišķi palaišanas posmi.
+
+Tiek apkopoti šādi lauki: 
+
+- **is_agenda_widget_active** — norāda, vai darba kārtības logrīks ir aktīvs.
+
+- **is_alert_available** — norāda, vai lietojumprogramma ir konfigurēta, lai atļautu brīdinājumus paziņojumos.
+
+- **is_background_refresh_available** — norāda, vai lietojumprogramma ir konfigurēta atsvaidzināties fonā.
+
+- **is_badge_available** — norāda, vai lietojumprogramma ir konfigurēta, lai atļautu žetonus paziņojumos.
+
+- **is_intune_managed** — norāda, vai lietojumprogramma ir Intune pārvaldīta.
+
+- **is_registered_for_remote_notifications** — norāda, vai lietojumprogramma ir konfigurēta attālinātajiem paziņojumiem.
+
+- **is_sound_available** — norāda, vai lietojumprogramma ir konfigurēta, lai atļautu skaņu paziņojumos.
+
+- **is_watch_app_installed** — norāda, vai ir instalēta Outlook lietojumprogramma.
+
+- **is_watch_paired** — norāda, vai Outlook lietojumprogramma pulkstenī ir piesaistīta galvenajai Outlook lietojumprogrammai.
+
+- **launch_to_db_ready_ms** — norāda laiku, kas pagāja no Outlook lietojumprogrammas palaišanas brīža līdz datubāzes sagatavošanai.
+
+- **num_calendar_accounts** — norāda kalendāra kontu skaitu lietojumprogrammā.
+
+- **num_cloud_file_accounts** — norāda krātuves kontu skaitu lietojumprogrammā.
+
+- **num_hx_calendar_accounts** — norāda kalendāra kontu skaitu, kas ir pieslēgti pie mūsu jaunā sinhronizācijas pakalpojuma.
+
+- **num_hx_mail_accounts** — norāda e-pasta kontu skaitu, kas ir pieslēgti pie mūsu jaunā sinhronizācijas pakalpojuma.
+
+- **num_mail_accounts** — norāda e-pasta kontu skaitu lietojumprogrammā.
+
+#### <a name="calendar_action"></a>calendar_action
+
+Izmanto, lai uzraudzītu jebkādu iespējamo negatīvu ietekmi uz jūsu spēju veikt galvenās kalendāra darbības, piemēram, notikumu izveidošana vai rediģēšana.  Šis notikums var iekļaut arī rekvizītu nosaukumu sērijas un informāciju par to, vai tie ir mainījušies. Piemēram, “title_changed”, “online_meeting_changed” un “description_changed” ir rekvizītu nosaukumi, kas palīdz mums noteikt, vai pastāv problēmas ar noteiktu rekvizītu rediģēšanu.
+
+Tiek apkopoti šādi lauki: 
+
+- **account_sfb_enabled** — palīdz mums pārliecināties par to, ka Skype darbam ir konfigurēts pareizi. 
+
+- **action** — attiecībā pret kalendāru veiktās darbības veids. Iekļauj tādas darbības kā atvēršana, rediģēšana, saīsņu pievienošana, atlikšana utt. Palīdz mums nodrošināt atbilstošu kalendāra darbību un stabilitāti. 
+
+- **action_result** — attiecībā pret kalendāra komponentēm veiktās darbības rezultāts. Šeit var tikt iekļautas tādas vērtības kā sekmīga vai nesekmīga izpilde, nezināms un noilgums. Izmanto, lai izsekotu darbību sekmīgas izpildes attiecībai un noteiktu, vai pastāv liela apjoma problēma ar kalendāra darbībām. 
+
+- **attendee_busy_status** — ar darbību saistītā dalībnieka statuss brīvs/aizņemts. Šī vērtība var būt brīvs, aizņemts vai nezināms. Norāda, vai pastāv problēma ar darbībām, kas ir saistītas ar noteiktu aizņemtības statusu. 
+
+- **availability** — pieejamības vērtība, ja vērtība brīvs/aizņemts ir mainījusies sapulces laikā. Norāda, vai ir problēmas ar konkrētas pieejamības vērtības iestatīšanu. 
+
+- **calendar_onlinemeeting_default_provider** — satur noklusējuma tiešsaistes sapulču nodrošinātāju, izmantošanai ar servera atbalstītu tiešsaistes sapulču veidošanu. Iekļauj Skype, Skype darbam, Hangout un Teams darbam tipus. Palīdz atklāt potenciālās problēmas ar tiešsaistes sapulču veidošanu, izmantojot noteiktus nodrošinātājus. 
+
+- **calendar_onlinemeeting_enabled** — patiess, ja kalendārs atbalsta servera atbalstītu tiešsaistes sapulču izveidošanu, balstoties uz noklusējuma sapulces nodrošinātāja. Norāda, vai pastāv problēmas ar kalendāriem ar iespējotām tiešsaistes sapulcēm. 
+
+- **calendar_type** — kalendāra tips, kurā ir norādīts notikums pēc tam, kad lietotājs ir veicis sapulces rediģēšanu. Iespējamās vērtības iekļauj primārs, sekundārs, koplietots un grupas. Norāda, vai pastāv problēmas ar noteiktu kalendāru tipu. 
+
+- **delete_action_origin** — veiktās dzēšanas darbības izcelsme. Iekļauj tādas vērtības kā navigācijas joslas rīkjosla un kapsulas rīkjosla.  Norāda, vai pastāv problēma ar sapulces dzēšanu no noteiktas atrašanās vietas. 
+
+- **distribution_list_count** — adresātu sarakstā norādītais dalībnieku skaits. Palīdz mums noteikt, vai pastāv problēmas ar adresātu sarakstā esošajiem dalībniekiem. 
+
+- **guest_count** — sapulces viesu skaits.  Ļauj mums pārliecināties par to, ka viesi tiek pievienoti pareizi. 
+
+- **is_all_day** — izmanto kopā ar “meeting_duration”, lai norādītu, vai sapulce ilgst visu dienu. Norāda, vai pastāv problēmas ar darbībām, kas tiek veiktas attiecībā uz visu dienu ilgām sapulcēm. 
+
+- **is_organizer** — palīdz mums noteikt, vai organizators spēj rediģēt un veidot sapulces atbilstošā veidā. 
+
+- **is_recurring** — norāda, vai pastāv problēma, kas ietekmē tieši regulāri notiekošās sapulces. 
+
+- **launch_point** — darbības palaišanas punkts. Var būt tādas vērtības kā logrīka galvene, logrīka kājene, visas dienas logrīks un kalendāra saīsne.  Norāda uz kontekstu, no kura tika sākta darbība. 
+
+- **location_count** — atrašanās vietu skaits, kas ir iestatītas notikuma izveidošanas un rediģēšanas brīdī. Norāda, vai pastāv problēmas ar notikumu ar noteiktu atrašanās vietu skaitu veidošanu vai rediģēšanu. 
+
+- **location_selection_source_type** — atrašanās vietas atlases avota tips. Var iekļaut tādas vērtības kā atrašanās vietas ieteikums, pielāgots vai esošs. Palīdz mums atklāt jebkāda veida problēmas ar atrašanās vietas atlasi no noteikta avota. 
+
+- **location_session_id** — sapulces vietu atlasītāja ID. Palīdz mums atklāt problēmas ar atrašanās vietas pievienošanu sapulcei. 
+
+- **location_type** — atlasītās atrašanās vietas tips.  Satur tādus tipus kā pielāgota atrašanās vieta, konferenču telpa un Bing. Palīdz mums izprast problēmas ar noteiktu atrašanās vietu pievienošanu sapulcēm. 
+
+- **meeting_duration** — sapulces garums.  Palīdz mums pārliecināties par to, ka sapulces tiek konfigurētas ar pareizajiem laikiem. 
+
+- **meeting_insights_type** — sapulču ieskatu tips notikuma detalizētajā informācijā.  Iekļauj failu un ziņojumu. Palīdz mums noteikt parādīto sapulču ieskatu skaitu. 
+
+- **meeting_type** — ar darbību saistītās tiešsaistes sapulces tips.  Iekļauj Skype, Skype darbam, Hangout un Teams darbam tipus. Palīdz mums noteikt, vai tiešsaistes sapulces ir konfigurētas pareizi. 
+
+- **origin** — kalendāra darbības izcelsme. Iekļauj tādus tipus kā darba kārtība, kalendārs, darba kārtības logrīks utt. Palīdz mums pārliecināties par to, ka mijiedarbība ar kalendāra komponentēm darbojas pareizi. 
+
+- **recurrence_scope** — sapulces biežuma tips, regulāras vai sērijveida sapulces.  Palīdz noteikt, vai pastāv problēmas ar dažādu biežuma tipu sapulču rediģēšanu. 
+
+- **reminder_time** — sapulces atgādinājuma laiks, ja tas ir mainīts.  Izmanto, lai pārliecinātos par to, ka sapulces atgādinājuma laiks ir saglabāts pareizi. 
+
+- **reminders_count** — atgādinājumu skaits notikumā, ja atgādinājumi ir mainīti. Palīdz mums atklāt problēmas ar vairākiem atgādinājumiem notikumā. 
+
+- **sensitivity** — sapulces konfidencialitātes līmenis. Iekļauj tipus normāla, personiska, privāta un konfidenciāla. Palīdz mums noteikt, vai sapulces konfidencialitātes līmenis tiek konfigurēts pareizi. 
+
+- **session_duration** — sesijas ilgums milisekundēs. Palīdz mums noteikt, vai pastāv problēmas ar pieaugošo kalendāra darbību veikšanas laiku. 
+
+- **shared_calendar_result** — kopīgotā kalendārā veiktās darbības rezultāts. Iespējamās vērtības iekļauj labi, nav atļaujas, nezināms, lokālais īpašnieks vai īpašnieks ir grupa. Palīdz mums noteikt kopīgotajos kalendāros veikto darbību uzticamību. 
+
+- **time_picker_origin** — saglabāšanas darbības laika atlasītāja izcelsme. Iekļauj tādas vērtības kā vairāk opciju un mazāk opciju. Palīdz mums noteikt, kā lietotājs pārvietojās plūsmā, lai saglabātu sapulci, un nodrošināt pareizu darbību 
+
+- **nosaukums** — automātiski ieteiktais nosaukums no lietojumprogrammā definētajām vērtībām. Iekļauj tādas vērtības kā “zvans”, “pusdienas” un “Skype”. Palīdz noteikt, vai nosaukuma automātiskā ieteikšana ir konfigurēta pareizi. 
+
+- **txp** — rezervācijas vai notikuma rezervācijas tips, ja ir. Iekļauj tādus tipus kā pasākumu rezervācija, lidojumu rezervācija, automašīnu nomas rezervācija utt. Palīdz mums noteikt, vai rezervācijas/rezervēšanas kartītes darbojas pareizi. 
+
+- **upcoming_event_count** — plānoto notikumu skaits, kas tiek parādīts plānoto notikumu skatā. Norāda, vai pastāv problēmas ar plānoto notikumu skatu. 
+
+- **upcoming_event_seconds_until_event** — sekunžu skaits līdz nākamā plānotā notikuma sākumam. Palīdz mums noteikt tipiskos notikumus, kas tiek parādīti plānoto notikumu skatā. 
+
+- **value** — darbībai specifiska detalizēta informācija, piemēram, aizkaves likums vai “atkārtot līdz” kategorija.  Norāda uz kontekstu, kurā tika veikta darbība. 
+
+#### <a name="combined_search_use"></a>combined_search_use
+
+Izmanto, lai noteiktu iespējamo negatīvo ietekmi uz jūsu spēju izmantot galvenās meklēšanas funkcijas, piemēram, e-pastu, kontaktpersonu vai notikumu meklēšana.
+
+Tiek apkopoti šādi lauki:  
+
+- **account_switcher_action_type** – šis darbības tips seko tam, vai lietotājs izmantoja kontu pārslēdzēju, lai pārslēgtu kontus nejauši vai apzināti.
+
+- **action** — meklēšanai veiktās darbības tips. Nosaka, vai meklēšana tika sākta, notiek vai ir beigusies un kādas darbības notika meklēšanas laikā, piemēram, vai tika izmantots mikrofons. Kritiski svarīgs, lai nodrošinātu precīzu un lietderīgu meklēšanu.
+
+- **action_type** — meklēšanai veiktās darbības tips. Nosaka, vai meklēšana tika sākta, notiek vai ir beigusies un kādas darbības notika meklēšanas laikā, piemēram, vai tika izmantots mikrofons. Kritiski svarīgs, lai nodrošinātu precīzu un lietderīgu meklēšanu. 
+
+- **answer_result_selected_count** — izseko, cik daudz reižu meklēšana bija “veiksmīga”, t.i., vai lietotājs atrada meklēto personu? Uzrakstīja e-pasta ziņojumu? Atzīmēja ziņojumu ar grāmatzīmi? 
+
+- **contact_result_in_full_list_selected_count** — izseko, cik reizes lietotājs pieprasīja “apskatīt visas kontaktpersonas” pilnā sarakstā kombinētās meklēšanas sesijas laikā
+
+- **contact_result_selected_count** — izseko, cik kontaktpersonu rezultāti tika atlasīti kombinētās meklēšanas sesijas laikā
+
+- **conversation_result_selected_count** — izseko, cik sarunas tika atlasītas kombinētās meklēšanas sesijas laikā
+
+- **entrance_type** — nosaka, kā lietotājs uzsāka meklēšanas pieprasījumu, piemēram, no meklēšanas cilnes, nulles vaicājuma, meklēšanas galvenes vai meklēšanas rezultāta. 
+
+- **has_contact_results** — norāda, vai kontaktpersonu rezultāti tiek parādīti meklēšanas vaicājumā
+
+- **include_deleted** — norāda, vai meklēšana rāda dzēstās opcijas meklēšanas rezultātos 
+
+- **re_enter_search_tab** — Būla vērtība, kas norāda, vai lietotājs ir pārslēdzis cilnes pirms meklēšanas rezultāta atlases
+
+- **result_selected_type** — norāda attēloto datu veidu, ar kuru mijiedarbojas lietotājs, piemēram, skatīt visas kontaktpersonas, sarunas, notikumus utt. 
+
+- **search_conversation_result_data** — satur datus par no meklēšanas rezultātiem atlasīto sarunu, tai skaitā konta tips (hx, ac, utt.), vai ziņojums atrodas mākoņa pakalpojumā un vai parādītā lapas nobīde atrodas vienā lapā ar pirmo ziņojumu. 
+
+- **search_origin** — norāda uz meklēšanas izcelsmi, piemēram, balss asistents, Cortana, ievade ar tastatūru utt. 
+
+- **search_request_reason** — norāda iemeslu, kura dēļ meklēšanas pieprasījums tika nosūtīts no lietojumprogrammas, norādot komponentu vai lietotāja darbību, kas uzsāka meklēšanu.
+
+- **search_result_filter_type** — norāda, kāda veida filtrs tika piemērots meklēšanai, piem., rādīt visu vai tikai pielikumus
+
+- **search_scope** — virkne norāda, kāda veida kontu meklēja lietotājs (piem., Exchange, Gmail utt.) vai tas bija meklējums visos kontos. 
+
+- **search_session_ended_type** — norāda, kur beidzās meklēšana, jo tā tika atcelta vai vaicājums tika atjaunināts
+
+- **search_suggestion_type**— norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
+
+- **see_all_contacts_selected_count** — izseko, cik reizes kombinētās meklēšanas sesijas laikā tika atlasīts “skatīt visas kontaktpersonas”
+
+- **top_mail_result_selected_count** — izseko, cik reizes lietotājs atlasa populārākos rezultātus. 
+
+#### <a name="compose_mail_accessory"></a>compose_mail_accessory
+
+Šis notikums ļauj mums atklāt un novērst problēmas ar galvenajām e-pasta ziņojumu sastādīšanas darbībām, lai novērstu problēmas ar failu pievienošanu, fotoattēlu uzņemšanu un pievienošanu pielikumā vai jūsu pieejamības informācijas nosūtīšanu.
+
+Tiek apkopoti šādi lauki: 
+
+- **action** — norāda uz darbību, kuru bija mēģinājums veikt brīdī, kad darbība reģistrēta. Piemēram, faila pievienošana un papildu opciju piedāvāšana.
+
+- **icon_name** — norāda ikonas nosaukumu, kas tiek parādīta brīdī, kad darbība tiek reģistrēta.
+
+#### <a name="conversation_view_action"></a>conversation_view_action
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz jūsu spēju skatīt un atbildēt uz e-pasta ziņojumiem.
+
+Tiek apkopoti šādi lauki:
+
+- **contains_mention** — norāda, vai sarunā bija pielietots @ pieminējums, lai palīdzētu mums noteikt problēmas ar pieminējumiem e-pasta ziņojumos.
+
+- **conversation_type** — norāda, kāda veida e-pasta ziņojuma skats tika renderēts, piemēram, viena ziņojuma skats vai vairāku ziņojumu skats. Palīdz atklāt ar konkrētiem ziņojumu veidiem saistītas problēmas mūsu e-pasta sarunu skatā.
+
+- **suggested_reply_char_count** — parāda, cik rakstzīmes ieteiktās atbildes piedāvā (ja ir), lai palīdzētu mums atklāt ar ieteikumiem saistītas anomālijas un problēmas
+
+- **suggested_reply_click_pos** — norāda, kurā pozīcijā ir norādīta ieteiktā atbilde (ja pieejama), lai mēs spētu atklāt problēmas ar konkrēto ieteikumu
+
+- **use_default_quick_reply_mode** — norāda, vai tika izmantots ātrās noklusējuma atbildes režīms, lai palīdzētu mums atklāt ar ātrajām atbildēm e-pasta ziņojumos saistītās problēmas
+
+#### <a name="draft_action"></a>draft_action
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz jūsu spēju veidot un saglabāt e-pasta ziņojumu melnrakstus.
+
+Tiek apkopoti šādi lauki: 
+
+- **action** — darbības veids, piemēram, saglabāt, atmest.
+ 
+- **draft_message_id** — melnraksta ziņojuma ID
+
+- **is_groups** — norāda, vai melnraksts tiek sūtīts no/uz grupas mapi
+ 
+- **origin** — norāda melnraksta sākšanas vietu, piemēram, detalizēta ziņojuma informācija, sastādīšana.
+ 
+- **thread_id** — sarunas, ar kuru ir saistīts melnraksts, pavediena ID
+
+#### <a name="drawer_event"></a>drawer_event
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz jūsu piekļūt mapēm jūsu iesūtnē
+
+Tiek apkopoti šādi lauki:
+
+- **add_calendar_option** — norāda no atvilktnes pievienojamā kalendāra tipu, piemēram, interesējošais kalendārs, e-pasta kalendārs, kopīgots kalendārs, lai palīdzētu mums atklāt ar specifiskiem kalendāru veidiem saistītās problēmas
+
+- **calendar_accounts_count** — norāda kalendāra kontu skaitu, kas palīdz mums atklāt problēmas ar jūsu kontu skaitu saistītās problēmas
+
+- **calendar_apps_count** — norāda kalendāra lietojumprogrammu skaitu lietotāja ierīcē, lai palīdzētu mums atklāt ar kalendāra lietojumprogrammām saistītās problēmas
+
+- **drawer_type** — norāda atvilktnes tipu: kalendārs, e-pasts vai nulles vaicājums, lai palīdzētu mums atklāt ar atvilktnes tipu saistītās problēmas
+
+- **from_favorites** — norāda, vai darbība tika veikta no izlases, lai palīdzētu mums atklāt ar izlasi saistītās problēmas
+
+- **group_calendar_count** — norāda uz konta kalendāru skaitu, lai palīdzētu mums atklāt ar grupu kalendāriem saistītās problēmas
+
+- **inbox_unread_count** — norāda nelasīto ziņojumu skaitu iesūtnē, lai palīdzētu mums atklāt problēmas ar nelasīto ziņojumu skaita parādīšanu.
+
+- **interesting_calendar_accounts_count** — norāda kontu skaitu, kas ir piemēroti interesējošiem kalendāriem ierīcē, lai palīdzētu mums atklāt ar interesējošiem kalendāriem saistītās problēmas
+
+- **is_group_calendar** — norāda, vai kalendārs ir grupas kalendārs, lai palīdzētu mums atklāt ar grupas kalendāriem saistītās problēmas
+
+- **mail_folder_type** — norāda pasta mapes veidu, piemēram, iesūtne, melnraksti utt., lai palīdzētu mums atklāt ar mapju tipiem saistītās problēmas.
+
+- **mail_accounts_count** — norāda e-pasta kontu skaitu, lai palīdzētu mums atklāt ar e-pasta kontiem saistītās problēmas.
+
+- **selected_group_calendar_count** — norāda UI atlasīto un aktīvo grupas kalendāru skaitu
+
+- **visibility_toggle** — norāda, vai lietotājs ieslēdz vai izslēdz konkrētu kalendāru, lai palīdzētu mums atklāt ar kalendāru rādīšanu vai slēpšanu saistītās problēmas
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
@@ -1787,6 +2102,260 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
 
 - **RMS.StatusCode** — scenārija ID, ko definē API
+
+
+#### <a name="mail_action"></a>mail_action
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz jūsu spēju veikt kritiskas e-pasta darbības (piemēram, e-pasta darbība pavediena režīmā, pasta šķirošanas darbību izpilde), lai nodrošinātu mūsu lietojumprogrammas pareizu darbību ar e-pastu.
+
+Tiek apkopoti šādi lauki:
+
+- **account** — konts, kas veica darbību
+
+- **action** — izseko veiktās darbības veidu, piem., arhivēt, dzēst, atzīmēt kā lasītu utt. 
+
+- **attachment_content_type** — lejupielādētā pielikuma satura tips 
+
+- **attachment_content_type_with_count** — seko pielikumu skaitam e-pasta ziņojumā
+
+- **attachment_download_result** — pielikuma lejupielādes darbības rezultāts (piem., izdevās/neizdevās)
+
+- **attachment_download_time** — pielikuma lejupielādes darbības laiks
+
+- **attachment_extn** — lejupielādētā pielikuma faila paplašinājums
+
+- **attachment_id** — lejupielādētā pielikuma sistēmas identifikators 
+
+- **attachment_size** — lejupielādētā pielikuma izmērs
+
+- **domain** — atveramā dokumenta domēns
+
+- **duration** — izseko darbības ilgumam cilvēkam salasāmas virknes formātā (piem., 1 s, 4h) 
+
+- **error** — ar darbību saistītās kļūdas ziņojums 
+
+- **event_mode** — kāda veida notikuma režīmā tas bija, grupas vai cits. 
+
+- **Extension** — ar šo darbību saistītā faila paplašinājuma saite vai pielikums 
+
+- **internet_message_id** — ziņojuma izsekošanas ID
+
+- **is_group_escalation** — norāda, vai ziņojums par darbības veikšanu tika nosūtīts uz lietotāja pastkasti eskalācijas dēļ (abonēta grupa)
+
+- **is_rule** — norāda, vai veiktā e-pasta darbība atiestata svarīgo/citu klasifikāciju
+
+- **is_threaded_mode** — norāda, vai ziņojums bija pavediena režīmā, t.i., kā ir grupēti ziņojumi
+
+- **is_unread** — norāda, vai ziņojums, saistībā ar kuru tika veikta darbība, ir nelasīts
+
+- **left_swipe_setting** — norāda, kāda darbība ir iestatīta kā pavilkšana pa kreisi
+
+- **message_id** — servera ziņojuma ID, kas ir vērsts uz darbību, vai ar komatiem atdalīts saraksts, ja darbībā bija vairāki vienumi. 
+
+- **message_type** — norāda, kāda tipa ziņojumā tika veikta darbība* * — grupas vai cits
+
+- **origin** — darbības izcelsme, piem., šūnu pavilkšana, nulles vaicājums, dziļā saite, e-pasta skats, e-pastu saraksts utt.
+
+- **reported_to_msft** — izvēle ziņot Microsoft par darbību pēc e-pasta ziņojuma nosūtīšanas uz mēstuļu mapi (surogātpasts) vai atkritni (pikšķerēšana).
+
+- **retry** — norāda, vai darbība tika atkārtota
+
+- **right_swipe_setting** — norāda, kāda darbība ir iestatīta kā pavilkšana pa labi 
+
+- **shortcut** — norāda, vai tika izmantota saīsne un, kāda saīsne tika izmantota, lai ieplānotu ziņojumu, piemēram, vēlāk, rītdien, noteiktā laikā utt.
+
+- **size** — ar šo darbību saistītās saites vai pielikuma izmērs
+
+- **source_folder** — izseko avota mapes tipam, kad darbība norāda uz pārvietošanu no vienas mapes uz citu, piemēram, uz iesūtni, atkritni utt. 
+
+- **source_inbox** — norāda, kurā iesūtnē notiek pasta darbība (piemēram, galvenajā, citā utt.)
+state — darbības statuss, piem., izpildīta veiksmīgi vai neveiksmīgi
+
+- **target_folder** — norāda mērķa mapes tipu, pārvietojot e-pasta ziņojumus no vienas mapes uz citu
+
+- **thread_id** — darbībai pakļautās sarunas pavediena ID vai ar komatiem atdalīts saraksts, ja darbība tika piemērota vairākiem vienumiem. 
+
+- **time_taken_to_fetch_access_token** — laiks sistēmas piekļuves marķiera izgūšanai, lai atvērtu saiti
+
+- **time_taken_to_fetch_drive_item** — OneDrive resursa izgūšanas laiks noklikšķinot
+
+- **time_taken_to_fetch_embed_viewer_resource** — iegultā skatītāja inicializācijai nepieciešamais laiks, atverot saites
+
+- **time_taken_to_load_embed_viewer** — iegultā skatītāja inicializācijai nepieciešamais laiks, atverot saites
+
+- **time_taken_to_load_link** — saites ielādes darbības pabeigšanai nepieciešamais laiks
+
+- **time_taken_to_tap_attachment** — laiks no ziņojuma atvēršanas brīža līdz noklikšķināšanai uz pielikuma
+
+- **time_taken_to_tap_link** — laiks, kas lietotājam pagāja no ziņojuma apskatīšanas līdz noklikšķināšanai uz saites
+
+- **txp** — norāda, vai pastāv txp tipa vienums, kas ir saistīts ar e-pastu, kurā tika veikta darbība, piemēram, pasākuma rezervācija, lidojuma rezervācija utt. 
+
+- **type** — caur saiti atveramā dokumenta tips
+
+#### <a name="mail_compose"></a>mail_compose
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz jūsu spēju sastādīt un atbildēt uz e-pastiem, piemēram, problēmas ar atbildi visiem, jūsu e-pasta ziņojumu formatēšanu vai nosūtīšanu.
+
+Tiek apkopoti šādi lauki: 
+
+- **draft_message_id** — kā melnraksta izveidotās sarunas melnraksta ID, lai palīdzētu mums atklāt ar e-pastu ziņojumu melnrakstiem saistītās problēmas
+
+- **message_id** — ziņojuma ID sarunai, uz kuru tiek atbildēts vai no kuras tiek pārsūtīts, lai palīdzētu mums atklāt ar konkrētu ziņojumu saistītās problēmas
+
+- **origin** — norāda uz ziņojuma sastādīšanas izcelsmi, piemēram, atbildēt visiem, rakstīt jaunu vai ātrā atbilde. Palīdz mums atklāt problēmas, kas saistītas ar konkrētu atbildes izcelsmes tipu.
+
+- **is_group_escalation** — norāda, vai ziņojums ir eskalēts grupas ziņojums, lai mēs varētu atklāt ar grupām saistītas sastādīšanas problēmas.
+
+- **is_link** — norāda, vai jaunizveidotais melnraksts tika izveidots no saites. Palīdz mums atklāt problēmas, kas saistītas ar no saitēm veidotajiem melnrakstiem.
+
+- **is_force_touch** — norāda, vai jauns melnraksts tika izveidots no piespied darbības.  Palīdz mums atklāt problēmas, kas saistītas melnrakstiem no šīs konkrētās darbības.
+
+- **is_groups** — vai notikums tika sākts no grupu telpas, lai mēs varētu atklāt ar grupām saistītās sastādīšanas problēmas.
+
+- **source_inbox** — norāda avota iesūtni, piemēram, vai tā ir galvenā vai cita iesūtne
+
+- **thread_id** — pavedina ID sarunai, uz kuru tiek atbildēts vai no kuras tiek pārsūtīts, lai palīdzētu mums atklāt ar konkrētu pavedienu saistītās problēmas
+
+#### <a name="meeting_call_to_action"></a>meeting_call_to_action
+
+Izmanto, lai uzraudzīto iespējamo negatīvo ietekmi uz jūsu spēju veikt kritiskas sapulču darbības, piemēram, izveidošana, rediģēšana un atbilde uz sapulcēm.
+
+Tiek apkopoti šādi lauki:
+
+- **event_mode** — norāda, vai šis notikums ir no grupas, lai palīdzētu mums atklāt problēmas ar grupu notikumiem
+
+- **meeting_id** — sapulces ID, kas palīdz mums izsekot problēmām sanāksmes darbības laikā, lai palīdzētu mums atklāt problēmas ar konkrētām sapulcēm
+
+- **meeting_provider** — norāda tiešsaistes sapulces nodrošinātāju, piemēram, Teams, Skype darbam, lai palīdzētu mums atklāt problēmas ar konkrētiem sapulču nodrošinātājiem
+
+- **notify_type** — norāda atbildes tipu citu kontu tipiem, lai palīdzētu mums atklāt problēmas ar dažādiem kontu tipiem
+
+- **recurrence** — norāda, cik bieži notiek šī sapulce, piemēram, regulāri vai sērijveida, lai palīdzētu mums atklāt problēmas ar atkārtoti notiekošām sapulcēm
+
+- **response** — norāda atbildes tipu, piemēram, piekrist vai noraidīt noteiktos kontu tipos, lai palīdzētu mums atklāt ar atbildēm uz notikumiem saistītās problēmas
+
+- **response_message_length** — norāda ziņojuma garumu, lai palīdzētu mums atklāt problēmas ar sapulču atbildēm
+
+- **review_time_proposal_action_type** — norāda lietotāja atbildi uz jauna laika piedāvājumu, lai palīdzētu mums atklāt problēmas ar jauna laika piedāvāšanu
+
+- **send_response** — norāda, vai atbilde tika nosūtīta, lai palīdzētu mums atklāt problēmas ar atbilžu uz sapulču uzaicinājumiem nosūtīšanu
+
+- **txp** — norāda sapulces tipu, no kura tas tika ģenerēts, no lidojumu rezervācijām un piegādēm, lai palīdzētu mums atklāt problēmas ar šī tipa sapulcēm
+
+- **with_message_enabled** — norāda, vai lietotājs var atbildēt ar ziņojumu, lai palīdzētu mums atklāt problēmas ar atbildēšanu uz sapulču uzaicinājumiem
+
+#### <a name="office_android_docsui_fileoperations_opendocumentmeasurements"></a>Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Šis notikums tiek apkopots Office lietojumprogrammām, kas darbojas uz Android platformas, un reģistrē faila atvēršanas darbības. Šis notikums palīdz nodrošināt faila atvēršanas darbības drošību, atjauninājumus un pareizu darbību. Šo datu apkopošanas mērķis ir turpināt uzlabot failu atvēršanas veiktspēju. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppDocsOperationDuration** — apakšslānī pavadītais laiks faila atvēršanas darbības laikā.
+
+- **Data_AppDuration** — lietojumprogrammā, kas veic faila atvēršanu, pavadītais laiks. 
+
+- **Data_BootDuration** — lietojumprogrammas palaišanas ilgums faila atvēršanas procesā.
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājums.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — globāli unikāls identifikators (GUID), kas unikāli identificē servera resursdatoru.
+
+- **Data_Doc_IdentityTelemetryId** — GUID, kas unikāli identificē identitāti, kas tika izmantota, lai atvērtu failu. 
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokola (WOPI) fails.
+
+- **Data_ErrorId_Code** — kļūdas kods, kas norāda uz datu vākšanas darbības kļūmi
+
+- **Data_ErrorId_Tag** — atzīme kodā, kas palīdz noteikt kļūmes punktu
+
+- **Data_InclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu. 
+
+- **Data_InitializationReason** — uzskaitījums, kas norāda uz faila atvēršanas veidu, piemēram, lietotāja interfeisa elements vai citas lietojumprogrammas izsaukuma rezultātā utt.
+
+- **Data_Measurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_OfficeMobileInitReason** — uzskaitījums, kas norāda faila atvēršanas ieejas punktu. 
+
+- **Data_SilhouetteDuration** — faila atvēršanas renderēšanas ilgums.
+
+- **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu. 
+
+#### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
+
+Šis notikums tiek apkopots Office lietojumprogrammām, kas darbojas ar Android, tai skaitā Office mobilajām ierīcēm, Word, Excel, PowerPoint un OneNote. Šis notikums norāda uz mēģinājumu pierakstīties Intune licencētā organizācijas kontā, kuram organizācijas administrators ir konfigurējis politiku piekļuvei lietojumprogrammai ar nosacījumu. To izmanto, lai noteiktu gala lietotāju skaitu, kas mēģina izmantot lietojumprogrammas šajā politikas konfigurācijā, un šo notikumu apvieno ar citu notikumu, Office_Android_Intune_IntuneComplianceStatus, lai pārliecinātos par to, ka konfigurētā politika tiek ievērota. 
+
+Datu lauki netiek apkopoti.
+
+#### <a name="office_android_intune_intunecompliancestatus"></a>Office_Android_Intune_IntuneComplianceStatus
+
+Šis notikums tiek apkopots Office lietojumprogrammām, kas darbojas ar Android, tai skaitā Office mobilajām ierīcēm, Word, Excel, PowerPoint un OneNote. Šis notikums norāda uz mēģinājumu pierakstīties Intune licencētā organizācijas kontā, kuram organizācijas administrators ir konfigurējis politiku piekļuvei lietojumprogrammai ar nosacījumu. Šis notikums norāda uz lietojumprogrammas, kurā lietotājs ir pierakstījies, atbilstības statusu un tiek izmantots, lai izmeklētu kļūmes. Tas tiek apvienots ar citu notikumu, Office_Android_Intune_IntuneComplianceRequest, lai nodrošinātu konfigurētās politikas ievērošanu.
+  
+Tiek apkopoti šādi lauki:
+
+- **Data_ComplianceStatus** — norāda uz lietojumprogrammas atbilstības status pierakstīšanās laikā, izmantojot izdošanās vai kļūmes kodu.
+  - -1 – Nezināma kļūda
+  - 0 – lietojumprogramma atbilst organizācijas politikām
+  - 1 – lietojumprogramma neatbilst organizācijas politikām
+  - 2 — ar pakalpojumu saistītas kļūmes
+  - 3 — ar tīklu saistītas kļūmes
+  - 4 — lietojumprogrammai neizdevās izgūt autentifikācijas marķieri 
+  - 5 — atbilde no pakalpojuma vēl nav saņemta
+  - 6 — ir jāinstalē uzņēmuma portāla lietojumprogramma
 
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
@@ -3264,6 +3833,67 @@ Tiek apkopoti šādi lauki:
 Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
+
+#### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
+
+Mēs reģistrējam brīdi, kad lietotājs aizver personas kartīti.  Šie dati tiek izmantoti, lai noteiktu, vai kartīte ir aizvērta pareizi. 
+
+Tiek apkopoti šādi lauki: 
+
+- **BatchId** — globāli unikāls identifikators, ja tika veikta pieprasījumu kopa
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā programmā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
+
+- **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+  - **ClientTimeStamp** — notikuma reģistrācijas laiks lietojumprogrammā
+  - **cardCorrelationId** — Data.appContextId dublikāts
+  - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+  - **consumerCorrelationId** — Data.clientCorrelationId dublikāts
+  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **Data_hostAppRing** — personas kartītes ieviešanas loks
+
+- **Event_ReceivedTime** — notikuma reģistrēšanas laiks pakalpojumā
 
 #### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
@@ -5861,6 +6491,12 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **TIME_TAKEN_IN_MS** — lapas atvēršanai veltītais laiks
 
+#### <a name="onenotecapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken
+
+Šis signāls tiek izmantots, lai nodrošinātu to, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, piezīmju grāmatiņas tiek atbilstoši nodrošinātas un lietotājs ir veiksmīgi izveidojis jaunu piezīmi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
+
+Papildu lauki netiek apkopoti.
+
 #### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
 
 Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
@@ -5911,6 +6547,198 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.VerifySignatureDuration** — laiks, lai verificētu parakstu
 
+#### <a name="read_conversation"></a>read_conversation
+
+Izmanto, lai uzraudzītu iespējamo negatīvu ietekmi uz e-pasta ziņojumu renderēšanas darbspēju un veiktspēju
+
+Tiek apkopoti šādi lauki: 
+
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+ 
+- **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
+ 
+- **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+
+- **adal_id** — konta aktīvās direktorijas autentifikācijas ID, unikāls identifikators Microsoft autentifikācijas sistēmā 
+
+- **component_name** — tā komponenta/skata nosaukums, kas ir aktīvs filtrēšanas laikā
+
+- **event_mode** — vieta lietojumprogrammā, kuru lietotājs ir ievadījis sarunā (grupas vai cits)
+
+- **internet_message_id** — izsekošanas ID jaunākajam ziņojumam sarunā
+      
+- **orientation** — ekrāna orientācija (portrets vai ainava) notikuma laikā
+
+- **recent_message_id** — sarunā jaunāka ziņojuma ID
+
+- **suggested_reply_state** — šai sarunai ieteikto atbilžu stāvoklis (nav pieejams, pieejams, parādīts, izmantots vai atmests)
+  
+- **total_count** — kopējais komponenta attēloto kadru skaits
+ 
+- **view_duration** — kopējais laiks, ko komponenta skatīšanai veltīja lietotājs
+
+#### <a name="save_attempt"></a>save_attempt
+
+Ļauj mums noteikt problēmu, kuru iemesls ir lietotāju mēģinājumi saglabāt failu, ietekmi, izvērtējot ietekmēto sesiju skaitu un nosakot, vai šīm sesijām ir kopīgas pazīmes.
+
+Tiek apkopoti šādi lauki: 
+
+- **file_type** — faila tips, ko lietotājs mēģināja saglabāt (piemēram,. doc)
+
+- **origin** — norāda faila saglabāšanas mēģinājuma izcelsmi (piemēram, no e-pasta), ļaujot mums noteikt ar failu saglabāšanu konkrētajā vietā lietojumprogrammā saistītās problēmas
+
+- **token_type** — faila saglabāšanai veiktās konta autentifikācijas marķiera veids, lai palīdzētu mums atklāt ar faila saglabāšanu saistītās autentifikācijas problēmas
+
+#### <a name="send_message"></a>send_message
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz e-pasta ziņojumu sūtīšanas veiktspēju un darbspēju.
+
+Tiek apkopoti šādi lauki:
+  
+- **account** — izseko kontam, kas veica darbību
+
+- **compose_duration** — izseko kopējam laikam, ko lietotājs veltīja ziņojuma sastādīšanai, tai skaitā vairākas melnrakstu sesijas
+
+- **draft_message_id** — izseko nosūtāmā ziņojuma sastādīšanas ID
+
+- **event_mode** — izseko notikuma režīmam, ja attiecināms uz ziņojumu (“grupas” vai “cits”)
+
+- **has_attachment** — norāda, vai ziņojumam ir pielikumi
+
+- **has_mip_label** — norāda, vai ziņojums tika apzīmogots ar MIP etiķeti
+
+- **is_group_escalation** — norāda, vai šis ir grupas eskalēts ziņojums; “eskalēts ziņojums” ir ziņojums, kas nosūtīts uz lietotāja pastkasti eskalācijas dēļ (abonējis grupu)
+
+- **is_groups** — izseko, vai nosūtītais ziņojums ir grupas ziņojums vai nav
+
+- **key_stroke_count** — seko taustiņsitienu skaitam nosūtāmajā ziņojumā
+
+- **message_id** — izseko ziņojuma ID, uz kuru tiek atbildēts/kas tiek pārsūtīts
+
+- **origin** — norāda, kur tika sākta sastādīšana, piemēram, jauns, atbilde, ātrā atbilde utt.
+
+- **send_draft_origin** — norāda, kur tika sākta sūtīšana, piemēram, rakstīt vai ātrā atbilde utt.
+
+- **source_inbox** — norāda avota iesūtnes tipu atsauces ziņojumam 
+
+- **suggested_reply_state** — fiksē ieteiktās atbildes šim nosūtītajam e-pasta ziņojumam stāvokli, piem., nav pieejams, pieejams, parādīts, izmantots vai atmests.
+
+- **thread_id** — norāda sarunas, uz kuru tiek atbildēts/kas tiek pārsūtīta, pavediena ID
+
+#### <a name="session"></a>session
+
+Ļauj mums atklāt un novērst situācijas, kurās mēs pārmērīgi izmantojam jūsu ierīces akumulatoru, kā arī palīdz mums noteikt šādu situāciju iemeslu.
+
+Tiek apkopoti šādi lauki: 
+
+- **battery_level** — norāda jūsu ierīces akumulatora uzlādes līmeni, lai palīdzētu mums noteikt, vai mūsu lietojumprogramma negatīvi ietekmē jūsu ierīces akumulatora uzlādes līmeni
+
+- **has_hx** — norāda, vai konts izmanto jauno sinhronizācijas pakalpojumu, lai palīdzētu noteikt mūsu sinhronizācijas pakalpojuma radītās problēmas
+
+#### <a name="settings_action"></a>settings_action
+
+Ļauj mums noteikt situācijas, kad ir iespējami negatīva ietekme uz jūsu iespēju konfigurēt lietojumprogrammas iestatījumus, piemēram, paziņojumu iestatījumus, primāro pasta kontu un e-pasta paraksta konfigurēšanu.
+
+Tiek apkopoti šādi lauki: 
+
+- **account_order_changed** — ļauj pārbaudīt, vai jūs mainījāt savu kontu secību, lai nodrošinātu pareizu šīs konfigurācijas darbību 
+
+- **action** — iespējamās iestatījumos veicamās darbības, piemēram, konta dzēšana, palīdz mums atklāt problēmas un izvairīties no negatīvas ietekmes
+
+- **auth_type** — konta izmantotais autentifikācijas tips, lai mēs varētu saprast, kuru aizmugursistēmas slāni mēs izmantojam problēmu diagnostikai 
+
+- **auth_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto konta veidu
+
+- **badge_count_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt. 
+
+- **changed_folder** — reģistrē, vai mape ir mainīta, lai palīdzētu mums diagnosticēt problēmas. 
+
+- **changed_folder** — nosaka, vai šī darbība tika arhivēta, plānota vai cita darbība.
+
+- **delete_scope** — konta dzēšanas laikā norāda, vai jūs dzēšat kontu tikai šajā ierīcē vai visās ierīcēs ar Outlook.  
+
+- **delete_scope** — seko, vai šī darbība bija saistīta ar dzēšanu tikai šajā ierīcē vai visās ierīcēs, ja attiecināms. 
+
+- **enabled_state** — norāda, vai jūsu automātiskās atbildes, kontaktpersonu saglabāšanas un ārējo attēlu saglabāšanas iestatījumi ir konfigurēti pareizi  
+
+- **enabled_state** — norāda, vai ir iespējots ar darbību saistītais stāvoklis
+
+- **notification_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt.
+
+- **server_type** — līdzīgs auth_type, norāda jūsu konta veidu labākai problēmas noteikšanai. Piemēri** — Office365, Gmail, Outlook
+
+- **server_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto servera veidu
+
+- **setting_properties** — izseko rekvizīta saistībai ar iestatīšanas darbību 
+
+- **signature_setting** — norāda, vai iestatījums tika pielietots visiem kontiem vai atsevišķam kontam
+
+- **source** — norāda, kas ir paziņojumu avots, ja attiecināms, no iestatījumiem vai iestatījuma “netraucēt”
+
+- **state_changed_to** — lai pārbaudītu, vai jūsu galvenās iesūtnes iesl./izsl. iestatījums ir konfigurēts pareizi 
+
+- **swipe_action** — lai pārbaudītu, vai jūs konfigurējāt jebkādas pavilkšanas darbības e-pastu ziņojumu šķirošanai, un pārliecinātos, ka šis iestatījums darbojas pareizi 
+
+- **swipe_action** — norāda, ko lietotājs mēģināja izdarīt, piemēram, atzīmēt ar karodziņu, dzēst, arhivēt; ļauj mums noteikt, kādu darbību lietotājs vēlējās veikt, un, vai darbība izdevās. 
+
+- **swipe_direction** — lai pārbaudītu, vai jūsu pavilkšanas virzieni (pa kreisi vai pa labi) ir iestatīti pareizi
+
+- **swipe_direction** — norāda, kādā virzienā lietotājs iestatīja pavilkšanu, t.i., no kreisās uz labo vai no labās uz kreiso pusi.  Ļauj mums noteikt, vai pastāv problēmas ar konkrētu pavilkšanas virzienu.
+
+- **swipe_setting** — norāda uz ar šo darbību saistītās pavilkšanas iestatījumu detalizētu informāciju, ja attiecināms
+
+- **ui_mode_setting** — atlasītais UI režīms (tumšs, gaišs, sistēmas noklusējuma, zems akumulatora uzlādes līmenis utt.)
+
+#### <a name="sidebar_action"></a>sidebar_action
+
+Ļauj mums noteikt situācijas, kad ir iespējami negatīva ietekme uz jūsu iespēju konfigurēt lietojumprogrammas iestatījumus, piemēram, paziņojumu iestatījumus, primāro pasta kontu un e-pasta paraksta konfigurēšanu.
+
+Outlook Mobile datu lauki, kas šim notikumam ir kopīgi iOS un Android:
+
+- **Account** — izseko ar notikumu saistītajam kontam un tā datiem; šajos datos izsekotās vērtības ir norādītas vispārīgajā lauka dokumentācijā 
+
+- **action** — izseko sānu joslas darbības tipam, piemēram, noraidīts, atlasīta palīdzības poga, pasta sānu josla utt. 
+
+- **from_favorites** — izseko, vai darbība ir izcēlusies no izlasē esoša vienuma 
+
+- **mail_folder_type** — norāda mapes veidu, kas tika atlasīts sānu joslas darbības laikā, ja attiecināms.
+
+- **sidebar_type** — izseko ar šo notikumu saistītās sānu joslas tipu, piemēram, e-pasts vai kalendārs, lai palīdzētu mums nodrošināt pareizu navigācijas no izlases iestatījuma darbību
+
+Tiek apkopoti šādi lauki: 
+
+- **account_type** — norāda konta autentifikācijas tipu, piemēram, Gmail, Outlook utt. 
+
+- **account_has_groups** — palīdz mums pārliecināties par to, vai grupas ir konfigurētas pareizi, ja kontam tādas ir
+
+- **calendar_accounts_count** — jūsu kalendāra kontu skaits, lai palīdzētu mums pārliecināties par to, ka jūsu kalendāra konti ir konfigurēti pareizi 
+
+- **calendar_apps_count** — jūsu kalendāra lietojumprogrammu skaits, lai palīdzētu mums pārliecināties par to, ka jūs interesējošās kalendāra lietojumprogrammas ir konfigurētas pareizi 
+
+- **calendar_type** — jūsu kalendāra tips (primārais kalendārs, grupas kalendārs utt.) 
+
+- **cid_type** — norāda uz konta veidu, piemēram, komerciālais konts vai Outlook.com konts.
+
+- **has_favorite_folders** — palīdz mums pārliecināties par to, ka izlases mapes ir konfigurētas pareizi 
+
+- **has_favorite_people** — palīdz mums pārliecināties par to, ka izlases personas/kontaktpersonas ir konfigurētas pareizi 
+
+- **has_group_calendar** — palīdz mums pārliecināties par to, ka jūsu grupu kalendāri ir konfigurēti pareizi, ja tādi ir 
+
+- **has_group_calendar_account** — palīdz mums pārliecināties par to, ka jūsu grupu kalendāri ir konfigurēti pareizi, ja tādi ir 
+
+- **has_group_toggled** — ja jūs pārslēdzāt grupu kalendārus, palīdz mums pārliecināties par to, ka šis iestatījums ir konfigurēts pareizi 
+
+- **interesting_calendars_accounts_count** — jūsu interesējošo kalendāra kontu skaits, kas palīdz mums pārliecināties par to, ka jūsu interesējošo kalendāru konti ir konfigurēti pareizi 
+
+- **mail_accounts_count** — kopējais e-pasta kontu skaits sānu joslā, lai pārliecinātos par pareizu konfigurāciju 
+
+- **mail_folder_type** — mapes tips, kuru lietotājs nospieda, lai pārliecinātos, ka tā ir konfigurēta pareizi. Var iekļaut dzēsto ziņojumu mapi, mēstuļu mapi vai nosūtīto ziņojumu mapi. 
+
+- **mail_inbox_unread_count** — palīdz mums pārliecināties par to, ka nelasīto ziņojumu skaits tiek ir konfigurēts un tiek parādīts pareizi 
+
+- **mail_subfolder_depth** — palīdz mums nodrošināt sekmīgu lietotāja e-pasta apakšmapju konfigurācijas parādīšanu
+
 #### <a name="storeop"></a>StoreOp
 
 Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību.  Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek tiesību pārvaldības pakalpojuma licences saglabāšanas darbības laikā. 
@@ -5953,10 +6781,72 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.Url** — tiesību pārvaldības pakalpojuma servera vietrādis URL
 
+#### <a name="watchappv2"></a>watchAppV2
+
+Šis notikums ļauj mums atklāt un novērst iespējamās problēmas ar jūsu Apple Watch, piemēram, ziņojumu saņemšana vai atbildēšana uz e-pasta ziņojumiem.
+
+Tiek apkopoti šādi lauki: 
+
+- **app_action** — norāda uz darbībām, kuras lietotājs veica Apple Watch, piemēram, “archive_message”, kas palīdz mums atklāt ar konkrētu darbību saistītas problēmas, piemēram, veiksmīga ziņojumu arhivēšana ar Apple Watch
+
+- **is_watch_app_installed** — norāda, vai lietotājs ir instalējis mūsu Apple Watch lietojumprogrammu savā ierīcē
+
+- **is_complication_enabled** — norāda, vai lietotājs ir pievienojis Outlook savam Apple Watch ekrānam, lai palīdzētu mums atklāt ar Apple Watch ekrāniem saistītās problēmas
+
+- **watch_os** — norāda instalēto Apple Watch operētājsistēmas versiju, lai palīdzētu mums atklāt ar konkrētām Apple Watch operētājsistēmas versiju saistītās problēmas
+
 
 ### <a name="application-status-and-boot-subtype"></a>*Lietojumprogrammas statuss un palaišanas apakštips*
 
 Nosaka, vai ir notikuši konkrēti līdzekļu notikumi, piemēram, startēšana vai apturēšana, un vai līdzeklis darbojas.
+
+#### <a name="app_startup"></a>app_startup
+
+Šis notikums ļauj mums atklāt un novērst problēmas, ja Outlook palaišana notiek lēni vai nepilnīgi, apgrūtinot mūsu lietotājiem mūsu lietojumprogrammas izmantošanu.  Tiek iekļauta informācija par konkrētiem iespējotajiem līdzekļiem un to, cik ilgu laiku aizņēma atsevišķi palaišanas posmi.
+
+Tiek apkopoti šādi lauki: 
+
+- **attach_base_context_millis** — norāda laiku starp bāzes konteksta palaišanu un OnCreate() palaišanu
+
+- **device_ram_in_mb** — ierīcē pieejamā RAM atmiņa
+
+- **has_company_portal** — norāda, vai ir instalēta uzņēmuma portāla lietojumprogramma
+
+- **hx_okhttp_mode** — norāda, vai jaunā e-pasta sinhronizēšanas pakalpojuma komponents izmanto OKHttp, lai nosūtītu un saņemtu HTTP-balstītus tīkla pieprasījumus
+
+- **initial_activity_name** — Android darbība, kas palaida lietojumprogrammu
+
+- **manufacturer** — ierīces ražotājs
+
+- **model** — ierīces modelis.
+
+- **on_create_millis** — metodē onCreate() pavadītais laiks
+
+- **on_resume_millis** — metodē onResume() pavadītais laiks
+
+- **time_until_attach** — laiks starp klases ielādi un bāzes konteksta palaišanu
+
+- **total_millis** — kopējais laiks no klases ielādes sākuma līdz Android darbības atsākšanas pabeigšanas
+
+#### <a name="boot_time"></a>boot_time 
+
+Šis notikums ļauj mums noteikt, kad notiek kritiskas lietojumprogrammas kļūdas, kas izraisa jūsu lietojumprogrammas avāriju vai nopietnas problēmas, kuru rezultātā jūs redzat tukšas rindas jūsu iesūtnē. Šis notikums apkopo informāciju, kas ļauj mums kategorizēt un klasificēt problēmas, lai noteiktu problēmu ietekmes pakāpi uz klientiem. 
+
+Tiek apkopoti šādi lauki:
+
+- **black_list_reason** — norāda, vai pastāv iemesls šo datu atmešanai. Daži piemēri iekļauj palaišanu attālinātā paziņojuma dēļ un fona ieneses dēļ.
+
+- **step0_main** — norāda laiku, kas bija nepieciešams Outlook sasniegtu galveno “darbību”, kas ir Apple definēta darbība.
+
+- **step1_appWillFinishLaunching** — norāda mums laiku, kas bija nepieciešams Outlook, lai pārietu no “galvenās” darbības līdz “appWillFinishLaunching” darbībai, kas ir Apple definēta darbība.
+
+- **step2_appDidFinishLaunching** — norāda mums laiku, kas bija nepieciešams Outlook, lai pārietu no “appWillFinishLaunching” darbības līdz ““appDidFinishLaunching” darbībai, kas ir Apple definēta darbība.
+
+- **step3_engineStarted** — norāda mums laiku, ka bija nepieciešams Outlook, lai pārietu no “appDidFinishLaunching” darbības līdz lietojumprogrammas dzinēja palaišanas, kas veic datu uzglabāšanu un sinhronizēšanu. 
+
+- **step4_runLoopFirstIdle** — norāda mums laiku, kas bija nepieciešams Outlook, lai pārietu no “engineStarted” darbības līdz brīdim, kad vairs nav jāveic papildu darbi.
+
+- **total_time** — norāda kopējo laiku, kas bija nepieciešams Outlook, lai pabeigtu sāknēšanas procesu.
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
@@ -6087,6 +6977,14 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.Url** — tiesību pārvaldības pakalpojuma servera vietrādis URL
 
 - **RMS.WinhttpCallbackStatus** — WinHTTP atzvanīšanas rezultāta statuss
+
+#### <a name="initialized"></a>Initialized
+
+Ļauj mums analizēt saskarnes darbspēju, kas ļauj mobilajām lietojumprogrammām ienest lietotāja un konfidencialitātes iestatījumus no Office pakalpojumiem, un diagnosticēt savienojamības un konfidencialitātes iestatījumu pakalpojumu problēmas.
+
+Tiek apkopoti šādi lauki:
+
+- **roamingSettingType** — nosaka atrašanās vietu, no kuras tika veikts mēģinājums nolasīt iestatījumus
 
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
@@ -7793,25 +8691,13 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums norāda, vai Office Word lasa dokumenta tekstu. Šis notikums ir pieejamības līdzekļa periodiskais kontrolziņojums, kas ļauj Microsoft izvērtēt teksta lasīšanas līdzekļa darbspēju.
 
-Tiek apkopoti tālāk norādītie lauki.
-
-  - **Data\_CharacterCount —** rakstzīmju skaits dokumentā
-
-  - **Data\_CharactersWithSpaceCount —** dokumenta rakstzīmju un atstarpju skaits
-
-  - **Data\_IsPageCountInProgress —** vai notiek lappušu skaitīšana
-
-  - **Data\_LineCount —** rindiņu skaits dokumentā
-
-  - **Data\_PageCount —** lappušu skaits dokumentā
+Tiek apkopoti šādi lauki:
 
   - **Data\_ParagraphCount —** rindkopu skaits dokumentā
 
   - **Data\_Play —** vai šī ir pirmā reize, kad programma Word lasa balsī
 
   - **Data\_ViewKind —** dokumenta skatīšanas tips
-
-  - **Data\_WordCount —** vārdu skaits dokumentā
 
 #### <a name="officewordaccessibilitylearningtoolsreadaloudstopreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
@@ -7875,6 +8761,109 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 ### <a name="unexpected-application-exit-crash-subtype"></a>*Neparedzēts lietojumprogrammas darbības pārtraukums (avārijas) apakštips*
 
 Neparedzēts lietojumprogrammas darbības pārtraukums un programmas statuss brīdī, kad tas notika.
+
+#### <a name="app_startup_reason"></a>app_startup_reason
+
+Šis notikums ļauj mums atklāt un novērst problēmas, kuru dēļ notika Outlook avārija sāknēšanas laikā.  Šis notikums iekļauj informāciju par avārijas iemeslu, lai mēs spētu novērst problēmu pēc iespējas ātrāk.
+
+Tiek apkopoti šādi lauki: 
+
+- **app_background_time** — laiks, ko pēdējās sesijas laikā lietojumprogramma pavadīja fonā
+
+- **startup_reason_type** — norāda, kāpēc lietojumprogramma tiek sāknētā, kā arī norāda, vai iemesls ir piespiedu iziešana vai cits iemesls. 
+
+- **watch_status_info** — uzskaita tālāk noradīto informāciju, ja attiecināms. 
+
+  - **is_watch_app_installed** — nosaka, vai lietotājs ir instalējis pulksteņa lietojumprogrammu
+
+  - **is_watch_paired** — nosaka, vai iOS ierīce ir savienota ar pulksteni
+
+  - **is_watch_supported_and_active** — norāda, vai pulkstenis sesijas laikā nodrošina atbalstu un ir aktīvs
+
+Tālāk norādītie lauki tiek apkopoti tikai Outlook Mobile darbam ar iOS:
+
+- **clean_exit_reason** — vārdu virkne, kas norāda, vai ir iemesls lietojumprogrammas apturēšanai
+
+- **is_agenda_user** — norāda, vai lietotājs ir nesen atvēris dienas kārtību, kas norāda, vai notiek ierakstīšana diskā sāknēšanas laikā 
+
+- **is_watch_supported_and_active** — norāda, vai pulkstenis sesijas laikā nodrošina atbalstu un ir aktīvs
+
+
+#### <a name="application_crash"></a>application_crash
+
+Izmanto, lai uzraudzītu kritiskas lietojumprogrammu avārijas, un palīdz mums apkopot informāciju par to, kāpēc notika lietojumprogrammas avārija un kā to novērst.
+
+Tiek apkopoti šādi lauki: 
+
+- **android.hardware.** — (piem., android.hardware.bluetooth) Android platformas sniegtās aparatūras konfigurācijas vērtības
+
+- **android.software.** — (e.g. android.software.device_admin) Android platformas sniegtās programmatūras konfigurācijas vērtības
+
+- **android_version** — ierīces Android versijas nosaukums, kas norādīts android.os.Build.VERSION#RELEASE
+
+- **application_package_name** — lietojumprogrammas pakotnes nosaukums, kas norādīts android.content.Context#getPackageName()
+
+- **application_stack_trace** — avārijas izsekošanas steks
+
+- **application_version_code** — Outlook lietojumprogrammas noteiktais lietojumprogrammas versijas kods
+
+- **application_version_name** — Outlook lietojumprogrammas noteiktais lietojumprogrammas versijas nosaukums 
+
+- **com.** (piem., com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Android platformas nodrošinātās ražotājam specifiskas konfigurācijas vērtības
+
+- **device_brand** — ierīces zīmols (ražotājs vai operators), ko norāda android.os.Build#BRAND
+
+- **device_ID** — ierīces unikālais ID (IMEI)
+
+- **device_manufacturer** — ierīces ražotājs, ko norāda android.os.Build#MANUFACTURER
+
+- **device_model** — ierīces modelis, ko norāda android.os.Build#MODEL
+
+- **device_name** — ierīces nosaukums, ko norāda android.os.Build#DEVICE
+
+- **device_total_memory** — kopējā ierīces atmiņas apjoma novērtējums, pamatojoties uz filesystem datiem.
+
+- **glEsVersion** — OpenGL iegulto sistēmu versijas atslēga
+
+
+#### <a name="crash_event"></a>crash_event
+
+Palīdz mums atklāt un novērst situācijas, kurās notiek kritiskas lietojumprogrammas avārijas, un palīdz mums apkopot informāciju par lietojumprogrammas avārijas iemesliem un kā tos novērst.
+
+Tiek apkopoti šādi lauki: 
+
+- **crashTime** — avārijas datums un laiks, kas palīdz mūsu izmeklēšanai
+
+- **exceptionName** — izņēmuma, kas izraisīja avāriju, nosaukums, lai palīdzētu mūsu izmeklēšanai
+
+- **hasHx** — norāda, vai konts izmanto jauno sinhronizācijas pakalpojumu, lai palīdzētu noteikt mūsu sinhronizācijas pakalpojuma radītās problēmas
+
+- **incidentIdentifier** — unikāls ID avārijas ziņojumam, kas palīdz mums atklāt atbilstošo problēmu
+
+- **isAppKill** — palīdz mums noteikt, vai lietojumprogramma ierīcē tika apturēta vai aizvērta
+
+- **reportKey** — unikāls lietojumprogrammas instalēšanas ID ierīcē problēmu izmeklēšanai
+
+- **signal** — signāls, kas izraisīja avāriju, lai sniegtu mums papildu informāciju šīs avārijas izmeklēšanā
+
+
+#### <a name="error"></a>Error
+
+Ļauj mums noteikt problēmas, ar kurām saskaras mobilās lietojumprogrammas, kad tās mēģina izgūt konfidencialitātes iestatījumus no servera.
+
+Tiek apkopoti šādi lauki:
+
+- **correlationId** — unikāls identifikators pakalpojuma savienojumam, kas radīja kļūdu, ļauj mums diagnosticēt iespējamos kļūdas iemeslus
+
+- **errorCode** — identificē atbilstošo kļūdas kodu, kas saņemts no pakalpojuma un kuru var izmantot problēmas diagnosticēšanai
+
+- **exceptionType** — kļūdas tips, ar kuru saskārās bibliotēka iestatījuma ieneses laikā
+
+- **message** — identificē no pakalpojuma saņemto kļūdas ziņojumu
+
+- **roamingSettingType** — nosaka atrašanās vietu, no kuras tika veikts mēģinājums nolasīt iestatījumus
+
+- **settingId** — iestatījums, kuru mēģināja ienest
 
 #### <a name="officeappdomainunhandledexceptionhandlerfailed"></a>Office.AppDomain.UnhandledExceptionHandlerFailed
 
@@ -8302,10 +9291,165 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Event Name** — notikuma nosaukums ir notikuma kategorija un notikuma etiķete.
 
+#### <a name="telemetry_error"></a>telemetry_error
+
+Šis notikums ļauj mums noteikt un novērst problēmas, kas neļauj veikt nepieciešamo diagnostikas datu ģenerēšanu vai nosūtīšanu. Šie notikumi ļauj mums noteikt, vai mums pietrūkst kritiski svarīgi dati drošības problēmu vai būtisku lietojumprogrammas darbības problēmu noteikšanai. 
+
+Tiek apkopoti šādi lauki: 
+
+- **timer_name** — norāda, kur notiek telemetrijas problēma, piemēram, pastkastes komponentā vai kalendārā. Palīdz mums atklāt un novērst telemetrijas problēmas, kas notiek konkrētajā lietojumprogrammas daļā
+
+- **type** — norāda taimera kļūdas tipu, lai palīdzētu mums noteikt, kad mūsu lietojumprogrammai ir problēmas ar diagnostikas telemetrijas datu sūtīšanu
+
+
+#### <a name="watchdog_anr"></a>watchdog_anr
+
+Nepieciešams lietojumprogrammas veiktspējas kļūdu uzraudzībai, lai novērstu gadījumus, kad lietojumprogramma pārtrauc reaģēt un jūsu ekrāns lietojumprogrammā sastingst (saīsina kā ANR - lietojumprogramma nereaģē)
+
+Tiek apkopoti šādi lauki: 
+
+- **callstack** — koda izsaukumsteks, kurā notika ANR
+ 
+- **caused_restart** — norāda, vai ANR dēļ bija nepieciešama lietojumprogrammas restartēšana 
+ 
+- **duration** — cik ilgi ierīce bija sastingusi
+ 
+- **id** — unikāls ANR identifikators.
+ 
+- **interval** — ANR nostrādāšanai konfigurētais slieksnis
+ 
+- **is_application_object_initialized** — norāda, vai ANR notika pirms vai pēc pilnas lietojumprogrammas inicializācijas
+ 
+- **last_known_is_in_foreground** — norāda, vai lietojumprogramma nesen atradās priekšplānā vai fonā
+
 
 ### <a name="application-feature-performance-subtype"></a>*Lietojumprogrammas līdzekļu izpildes apakštips*
 
 Slikts atbildes laiks vai slikta veiktspēja tādos scenārijos kā programmas startēšana vai faila atvēršana.
+
+#### <a name="android_frame_metrics"></a>android_frame_metrics
+
+Ļauj mums noteikt un novērst situācijas, kad mūsu Android lietojumprogrammas komponenti izraisa veiktspējas problēmas, piemēram, ja jūsu iesūtnes ritināšana nenotiek vienmērīgi.
+
+Tiek apkopoti šādi lauki: 
+
+- **animation_duration** — animāciju renderēšanas ilgums milisekundēs
+
+- **command_issue_duration** — komandu došanas platformai ilgums milisekundēs 
+
+- **draw_duration** — UI zīmēšanas ilgums milisekundēs 
+
+- **input_handling_duration** — ievades apstrādes ilgums milisekundēs 
+
+- **layout_measure_duration** — izkārtojuma mērīšanas ilgums milisekundēs
+
+- **origin** — mērāmais lietojumprogrammas komponents, piemēram, kalendārs vai pasts
+
+- **sync_duration** — kadru sinhronizēšanas ilgums milisekundēs
+
+- **swap_buffers_duration** — buferu maiņas ilgums milisekundēs
+
+- **total_duration** — kopējais kadru renderēšanas laiks milisekundēs
+
+- **unknown_delay** — nezināmu avotu izraisīta aizkave, izņemot precīzi izsekotos ilgumus
+
+#### <a name="cal_component"></a>cal_component
+
+Šis notikums ļauj mums noteikt un novērst problēmas, ja pastāv jūtama ietekme uz mūsu kalendāra UI komponentu veiktspēju, kas var izraisīt problēmas ar jūsu kalendāra ritināšanu.
+
+Tiek apkopoti šādi lauki: 
+
+- **account_counter** — izseko ar katru kalendāra tipu saistīto kontu skaitam, piemēram, 2 konti Gmail kalendāram, kā arī norāda, vai konts izmanto mūsu jauno sinhronizācijas pakalpojumu
+
+- **component_name** — norāda kalendāra komponenta nosaukumu, piemēram, darba kārtības skats vai dienas skats, kas palīdz mums atklāt veiktspējas problēmas, kas ietekmē konkrētu kalendāra komponentu
+
+- **display_frame_data** — izseko laikam, kas tika veltīts katru 60 kadru parādīšanai, lai noteiktu, vai pastāv veiktspējas problēmas. 
+
+- **orientation** — norāda, vai ierīce ir portreta vai ainavas režīmā, lai palīdzētu mums atklāt veiktspējas problēmas, kas ietekmē konkrētu ierīces orientāciju
+
+- **view_duration** — norāda laiku, kas bija nepieciešams, lai renderētu dažādus kalendāra UI komponentus, kas palīdz mums atklāt veiktspējas problēmas, kas ietekmē jūsu kalendāra izmantošanas pieredzi
+
+#### <a name="conversation_load_time"></a>conversation_load_time
+
+Šis notikums ļauj mums noteikt un novērst problēmas, kad ir jūtama veiktspējas ietekme uz e-pasta sarunu ielādi, lai nodrošinātu, ka e-pasta ziņojumi tiek ielādēti atbilstoši paredzētajam.
+
+Tiek apkopoti šādi lauki: 
+
+- **cid_type** — norāda, kāda tipa kontam pieder CID
+
+- **time** — norāda laiku, kas bija nepieciešams e-pasta sarunas pilnai ielādei.
+
+#### <a name="core_data_migration"></a>core_data_migration
+
+Ļauj mums noteikt un novērst situācijas, kad jūsu ierīcē rodas kļūda, atjauninot e-pasta datus uz jaunāku versiju.
+
+Tiek apkopoti šādi lauki:
+
+- **db_size_megabytes** — izseko pamatdatu datubāzes izmēram, kas ir noapaļots līdz tuvākajiem 25 megabaitiem, ar maksimālo megabaitu 500
+
+- **db_wal_size_megabytes** — izseko pamatdatu datubāzes izmēram, kad galvenās krātuves fails ir noapaļots līdz tuvākajam 1 megabaitam ar maksimālo megabaitu 10
+
+- **free_space_megabytes** — izseko brīvo pieejamo vietu intervālos pa 10, 100, 1000, 10 000 un 100 000. 
+
+- **migration_duration_seconds** — izseko migrācijas laikam, kas noapaļots līdz vienam no šiem laika periodiem - 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 un vairāk tiks norādīts kā 180)
+
+#### <a name="core_data_performance"></a>core_data_performance
+
+Ļauj mums noteikt un novērst situācijas, kad e-pasta dati, kurus glabājam jūsu ierīcē, rada veiktspējas problēmas.
+
+Tiek apkopoti šādi lauki:
+
+- **Caller** — reģistrē elementa, kas izsauc saglabāšanas darbību, nosaukumu
+
+- **db_size_megabytes** — izseko pamatdatu datubāzes izmēram, kas ir noapaļots līdz tuvākajiem 25 megabaitiem, ar maksimālo megabaitu 500
+
+- **duration** — izseko laiku, kas ir nepieciešams darbības pabeigšanai
+
+- **entity** — reģistrē elementa, kas izsauca ieneses darbību, nosaukumu
+
+- **operation** — neapstrādāta darbības vērtība: saglabāt, ienest vai “lasīšanas/rakstīšansa rinda bloķēta”
+
+#### <a name="inbox_component"></a>inbox_component
+
+Šis notikums palīdz mums atklāt un novērst problēmas, ja pastāv redzama veiktspējas ietekme uz jūsu iesūtnes UI komponentiem, kas var traucēt atbilstošai e-pasta ziņojumu, avatāru, lasīts/nelasīts statusa ielādei vai parādīšanai.
+
+Tiek apkopoti šādi lauki: 
+
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+
+- **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
+
+- **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+
+- **account_counter** — katra ierīcē esošā konta tipa uzskaitījums, piemēram Office 365 konti = 1 konts, Outlook.com konti = 1 konts.
+
+- **ad_not_shown_reason** — iemesls, kāpēc reklāmas netiek parādītas
+
+- **ad_shown** — norāda, vai reklāma tika parādīta (ja reklāma ir iespējota)
+
+- **age** — cilvēka vecums (lai apstiprinātu atbilstību reklāmas vecuma ierobežojumam)
+
+- **component_name** — tā komponenta/skata nosaukums, kas ir aktīvs filtrēšanas laikā
+
+- **has_hx** — norāda, vai ierīcei ir vismaz viens Hx (mūsu jaunais e-pasta sinhronizēšanas pakalpojums) konts
+
+- **has_subscription** — norāda, vai ierīcei ir reklāmas abonements
+
+- **is_all_accounts_inbox** — norāda, vai pašreizējai iesūtnei ir mape “visi konti”
+
+- **is_current_account** — norāda, vai pašreiz aktīvais konts ir reklāmas konts
+
+- **load_error_code** — reklāmas ielādes kļūdas kods
+
+- **network_error_code** — tīkla kļūdas kods, pieprasot reklāmas
+
+- **orientation** — ekrāna orientācija (portrets vai ainava) notikuma laikā
+
+- **sub_error_type** — detalizēts kļūdas tips
+
+- **total_count** — kopējais komponenta attēloto kadru skaits
+
+- **view_duration** — kopējais laiks, ko komponenta skatīšanai veltīja lietotājs
 
 #### <a name="initial_page_landing"></a>Initial_page_landing 
  
@@ -8398,6 +9542,50 @@ Tiek apkopoti tālāk norādītie lauki.
 Tiek apkopoti šādi lauki: 
 
 - **Kļūda** — tiek parādīts kļūdas ziņojums par to, ka kļūdu objekts atgriežas.
+
+#### <a name="mail_filter_component"></a>mail_filter_component
+
+Šis notikums ļauj mums noteikt un novērst problēmas, ja pastāv redzama ietekme uz jūsu e-pasta filtrēšanu, kuras rezultātā jūsu filtri netiks ielādēti vai parādīti pareizi.
+
+Tiek apkopoti šādi lauki: 
+
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+ 
+- **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
+ 
+- **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+ 
+- **account_counter** — katra ierīcē esošā konta tipa uzskaitījums, piemēram Office 365 konti = 1 konts, Outlook.com konti = 1 konts.
+ 
+- **ad_not_shown_reason** — iemesls, kāpēc reklāmas netiek parādītas
+ 
+- **ad_shown** — norāda, vai reklāma tika parādīta (ja reklāma ir iespējota)
+ 
+- **age** — cilvēka vecums (lai apstiprinātu atbilstību reklāmas vecuma ierobežojumam)
+ 
+- **component_name** — tā komponenta/skata nosaukums, kas ir aktīvs filtrēšanas laikā
+ 
+- **folder_type** — norāda filtrējamās mapes tipu (piemēram, iesūtne, atkritne vai NonSystem)
+ 
+- **has_hx** — norāda, vai ierīcei ir vismaz viens Hx (jaunais e-pasta sinhronizēšanas pakalpojums) konts
+ 
+- **has_subscription** — norāda, vai ierīcei ir reklāmas abonements
+ 
+- **is_all_accounts_inbox** — norāda, vai pašreizējai iesūtnei ir mape “visi konti”
+ 
+- **is_current_account** — norāda, vai pašreiz aktīvais konts ir reklāmas konts
+ 
+- **load_error_code** — reklāmas ielādes kļūdas kods
+ 
+- **network_error_code** — tīkla kļūdas kods, pieprasot reklāmas
+ 
+- **orientation** — ekrāna orientācija (portrets vai ainava) notikuma laikā
+ 
+- **sub_error_type** — detalizēts kļūdas tips
+ 
+- **total_count** — kopējais komponenta attēloto kadru skaits
+ 
+- **view_duration** — kopējais laiks, ko komponenta skatīšanai veltīja lietotājs
 
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
@@ -8905,9 +10093,127 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_WasSuccessful: bool —** patiess, ja notikusi veiksmīga atvēršana
 
+#### <a name="onenotesyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted
+
+Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt. Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
+
+Tiek apkopoti šādi lauki: 
+
+- **AppSuspendedDuringEvent** — Būla izteiksme, kas norāda, vai lietojumprogramma tika aizturēta nodrošināšanas laikā
+
+- **NetworkConnection** — izmantotās ierīces tīkla savienojamības tips
+
+- **NetworkDataExchange** — reģistrē nodrošināšanas laikā apmainīto baitu skaitu.
+
+- **ServerType** — atgriež tā servera tipu, kas piedāvā pakalpojumu
+
+- **TimeTakenInMilliSeconds** — norāda nodrošināšanas pabeigšanai nepieciešamo laiku milisekundēs
+
+#### <a name="onenotesyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted
+
+Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
+
+Tiek apkopoti šādi lauki: 
+
+- **NetworkConnection** — izmantotās ierīces tīkla savienojamības tips
+
+- **ServerType** — atgriež tā servera tipu, kas piedāvā pakalpojumu
+
+#### <a name="perf_event"></a>perf_event
+
+Izmanto, lai uzraudzītu iespējamo negatīvo ietekmi uz dažādu lietojumprogrammas daļu ielādes veiktspēju, piemēram, lai nodrošinātu to, ka pirmajā lietojumprogrammas atvēršanas reizē jūsu iesūtne tiktu ielādēta tik ātri, cik iespējams.
+
+Tiek apkopoti šādi lauki: 
+
+- **app_start_show_message_list** — nozīmē to, ka notika lietojumprogrammas sāknēšanas veiktspējas problēma, kuras rezultātā jūsu iesūtnes ziņojumu saraksta ielādei bija nepieciešams ilgs laiks
+
+- **event_type** — norāda, kāda veida veiktspējas notikums izraisīja veiktspējas problēmu, lai palīdzētu mums atklāt problēmas, kas saistītas ar konkrētu tipu.   
+
+- **extra_params** — izstrādātājs šeit var pievienot papildu parametrus, lai sniegtu mums vairāk informācijas par šīs veiktspējas problēmas iemesliem, piemēram, kad šī darbība sākās un beidzās utt. 
+
+- **total_time_elapsed** — norāda veiktspējas notikuma ilgumu, lai palīdzētu mums noteikt veiktspējas problēmas nozīmīgumu
+
+#### <a name="performance_record"></a>performance_record
+
+Ļauj mums noteikt un novērst situācijas, kad lietojumprogrammas atmiņas izmantošana un procesora izmantošana kļūst kritiski augsta, kas var izraisīt jūsu ierīces darbības palēnināšanu
+
+Tiek apkopoti šādi lauki: 
+
+- **category** — norāda, vai lietojumprogramma konkrētajā laikā ir priekšplānā vai fonā. Iespējamās vērtības iekļauj priekšplānu un fonu.
+
+- **cpu_usage** — norāda, kādu daļu procesora procentu izteiksmē izmantoja lietojumprogramma, lai mums būtu pieejama salīdzināma informācija negatīvās ietekmes uz veiktspēju noteikšanai
+
+- **is_watch_app_installed** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir instalēts, lai palīdzētu mums izprast pulksteņa radīto negatīvo ietekmi uz veiktspēju
+
+- **is_watch_paired** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir savienots ar ierīci, lai palīdzētu mums noteikt Apple Watch radīto negatīvo ietekmi uz veiktspēju
+
+- **is_watch_supported_and_active** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir aktīvs, lai palīdzētu mums izprast pulksteņa radīto negatīvo ietekmi uz veiktspēju
+
+- **memoAry_used_percentage** — norāda, kādu daļu atmiņas procentu izteiksmē izmantoja lietojumprogramma, lai mums būtu pieejama salīdzināma informācija negatīvās ietekmes uz veiktspēju noteikšanai
+
+- **memory_used** — norāda, cik daudz atmiņas izmantoja lietojumprogramma, lai mums būtu pieejama salīdzināma informācija negatīvās ietekmes uz veiktspēju noteikšanai
+
+
 ### <a name="application-activity-error-subtype"></a>*Lietojumprogrammas darbības kļūdas apakštips*
 
 Līdzekļa funkcionalitātes vai lietošanas iespēju kļūdas.
+
+#### <a name="assertion"></a>assertion
+
+Šis notikums ļauj mums noteikt, kad notiek kritiskas lietojumprogrammas kļūdas, kas izraisa jūsu lietojumprogrammas avāriju vai nopietnas problēmas, kuru rezultātā jūs redzat tukšas rindas jūsu iesūtnē.
+
+Tiek apkopoti šādi lauki:
+
+- **count** — kopējais ar kļūdu saistīto vienumu skaits, piemēram, kalendāru ar kļūdām skaits
+
+- **has_hx** — norāda, vai konts izmanto jauno sinhronizācijas pakalpojumu, lai palīdzētu noteikt mūsu sinhronizācijas pakalpojuma radītās problēmas
+
+- **host_name** — ar kļūdu saistītā pakalpojuma resursdatora nosaukums, kas ļauj mums noteikt ar konkrēto resursdatoru saistītās kļūdas.
+
+- **host_name** — ar kļūdu saistītā resursdatora tips, lai palīdzētu mums atklāt ar konkrētu resursdatora tipu saistītās problēmas 
+
+- **message** — pielāgots ziņojums novērtējumam, kas tiek izmantots problēmas diagnosticēšanai 
+
+- **origin** — kļūdas izcelsme kodā, lai palīdzētu mums atklāt ar konkrēto koda daļu saistītās problēmas
+
+- **stacktrace** — izsekošanas steks, kurā notika novērtējums, lai palīdzētu mums atklāt ar konkrētu koda daļu saistītās problēmas
+
+- **type** — notikušās novērtējuma kļūdas tips, piemēram, null_folder_name, compose_selected_null_account, kas palīdz mums noteikt ar konkrētu koda daļu saistītās problēmas
+
+#### <a name="edit_contact_error"></a>edit_contact_error
+
+Ļauj mums noteikt un novērst situācijas, kad kļūdas notiek tad, kad mēģināt apskatīt vai rediģēt kontaktpersonas mūsu lietojumprogrammā.
+
+Tiek apkopoti šādi lauki: 
+
+- **errorType** — notikušās kļūdas tips, kas palīdz mums diagnosticēt problēmu
+
+- **field** — kontaktpersonas lauks, ko lietotājs mēģināja rediģēt, kas palīdz mums diagnosticēt problēmu
+
+- **version** — mūsu izmantotā kontaktpersonas kartītes pakalpojuma versija, kas palīdz mums diagnosticēt problēmu
+
+#### <a name="error_report"></a>error_report
+
+Šis notikums ļauj mums noteikt, kad notika kritiskās lietojumprogrammas kļūdas, lai mēs varētu novērst problēmas, kas izraisa jūsu lietojumprogrammas avārijas vai neļauj jums lasīt e-pasta ziņojumus. 
+
+Tiek apkopoti šādi lauki: 
+
+- **client-request-id** — klienta pieprasītais identifikators pieprasījumam, kas izraisīja kļūdu
+ 
+- **date** — pieprasījuma, kas izraisīja kļūdu, laikspiedols
+
+- **error** — kļūdas tips, piemēram, get_mailbox_location_failed
+ 
+- **error_body** — kļūdas ziņojuma pamatteksts
+ 
+- **is_x_mailbox_anchor_set** — norāda, vai pieprasījumā tika iestatīts rekvizīts X-AnchorMailbox
+ 
+- **reason** — norāda kļūdas iemeslu, piemēram, kļūdas ziņojums
+ 
+- **request-id** — servera pieprasījuma identifikators pieprasījumam, kas izraisīja kļūdu
+ 
+- **source** — kļūdas avots OM infrastruktūrā, parasti viens no 'BE' vai 'FE'
+
 
 #### <a name="officeairspacebackendwin32graphicsdriversofthang"></a>Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
 
@@ -9906,6 +11212,20 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
 
+#### <a name="save_error"></a>save_error
+
+Ļauj mums atklāt un novērst situācijas, kad kļūda notiek brīdī, kad mēģinājāt saglabāt failu.  Izseko kļūdām, kuru cēlonis ir failu saglabāšanas kļūmes, iekļaujot aprakstošos kļūdu ziņojumus, kas mums palīdz atrisināt problēmu.
+
+Tiek apkopoti šādi lauki: 
+
+- **error** — notikušās kļūdas tips, kas palīdz mums atklāt un atrisināt problēmas, kas ir saistītas ar konkrētu kļūdas tipu
+
+- **file_type** — faila tips, ko lietotājs mēģināja saglabāt (piemēram,. doc)
+
+- **origin** — norāda faila saglabāšanas mēģinājuma izcelsmi (piemēram, no e-pasta), ļaujot mums noteikt ar failu saglabāšanu konkrētajā vietā lietojumprogrammā saistītās problēmas
+
+- **token_type** — faila saglabāšanai veiktās konta autentifikācijas marķiera veids, lai palīdzētu mums atklāt ar faila saglabāšanu saistītās autentifikācijas problēmas
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Ierīču savienojamības un konfigurācijas datu notikumi
 
@@ -9917,6 +11237,124 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 ### <a name="device-connectivity-and-configuration-subtype"></a>*Ierīču savienojamības un konfigurācijas apakštips*
 
 Tīkla savienojuma statuss un ierīces iestatījumi, piemēram, atmiņas iestatījumi.
+
+#### <a name="application_did_receive_memory_warning"></a>application_did_receive_memory_warning
+
+Šis notikums tiek sūtīts, kad Apple norāda uz to, ka lietojumprogrammā sāk pietrūkt atmiņas. Tas norāda mums uz to, ka mērs jūsu ierīcē radījām atmiņas pārvaldības problēmu.
+
+Tiek apkopoti šādi lauki: 
+
+- **current_memory_used** — norāda uz lietojumprogrammas izmantotās atmiņas apjomu brīdī, kad lietojumprogrammā beidzās atmiņa.
+
+- **current_memory_used_percentage** — norāda uz lietojumprogrammas izmantotās atmiņas daudzumu procentu izteiksmē no kopējā pieejamā atmiņas apjoma brīdī, kad lietojumprogrammā beidzās atmiņa.
+
+- **currentVC** — norāda, kurš skats tika rādīts brīdī, kad lietojumprogrammā beidzās atmiņa.
+
+- **has_hx** — norāda, vai konts izmanto jauno sinhronizācijas pakalpojumu, lai palīdzētu noteikt mūsu sinhronizācijas pakalpojuma radītās problēmas
+
+- **is_watch_app_installed** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir instalēts, lai palīdzētu mums izprast pulksteņa radīto negatīvo ietekmi uz veiktspēju
+
+- **is_watch_paired** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir savienots ar ierīci, lai palīdzētu mums noteikt Apple Watch radīto negatīvo ietekmi uz veiktspēju
+
+- **is_watch_supported_and_active** — norāda, vai lietotājs pašlaik izmanto Apple Watch un vai tas ir aktīvs, lai palīdzētu mums izprast pulksteņa radīto negatīvo ietekmi uz veiktspēju
+
+- **rn_initialized** — norāda, vai brīdī, kad lietojumprogrammā beidzās atmiņa, tika inicializēts vietējais reaģēšanas modulis.
+
+- **running_time** — norāda uz laiku, ko lietojumprogrammai pavadīja darbībā brīdī, kad lietojumprogrammā beidzās atmiņa.
+
+#### <a name="conversation_memory_leak"></a>conversation_memory_leak
+
+Ļauj mums noteikt situācijas, kurās mūsu e-pasta sarunas skata dēļ tiek izmantots lielāks jūsu ierīces atmiņas apjoms nekā paredzēts.
+
+Tiek apkopoti šādi lauki:
+
+- Lauki vai pievienotie dati netiek apkopoti. Ja atmiņas noplūde ir saistīta ar sarunas pavedienu, tiek apkopoti tikai žurnāli.
+
+#### <a name="core_data_corruption"></a>core_data_corruption
+
+Ļauj mums noteikt situācijas, kad mēs nevaram jums parādīt jūsu e-pastu vai kalendāru, jo krātuve jūsu ierīcē, kurā mēs glabājam jūsu e-pastu, ir bojāta.
+
+Tiek apkopoti šādi lauki:
+
+- **errorSource** — norāda, vai kļūdas izcēlās no saglabāšanas vai izveidošanas darbības
+
+- **sqlError** — skaitlisks kļūdas kods, kas norādīts https://www.sqlite.org/c3ref/c_abort.html
+
+#### <a name="core_data_corruption_user_reset"></a>core_data_corruption_user_reset
+
+Ļauj mums noteikt situācijas, kad jūs dzēsāt vai atiestatījāt savu kontu mūsu lietotnē, kā iemesls bija e-pasta datu, kurus mēs saglabājām jūsu ierīcē, bojājumi.
+
+Tiek apkopoti šādi lauki:
+
+- **errorSource** — norāda, kur ir noticis bojājums, vai saglabāšanas vai izveidošanas laikā
+
+#### <a name="core_data_diagnostics"></a>core_data_diagnostics 
+
+Ļauj mums noteikt un novērst situācijas, kad mūsu e-pasta glabātuve izmanto pārāk lielu jūsu ierīces krātuves vietas apjomu
+
+Tiek apkopoti šādi lauki:
+
+- **db_size_megabytes** — izseko pamatdatu datubāzes izmēram, kas ir noapaļots līdz tuvākajiem 25 megabaitiem, ar maksimālo megabaitu 500
+
+#### <a name="general_properties_log"></a>general_properties_log
+
+Šis notikums apkopo informāciju, kas ļauj mums kategorizēt un klasificēt Outlook lietojumprogrammas problēmas, kas ir saistītas ar pieejamības un ierīces iestatījumiem.  Šī kategorizācija ir nepieciešama, lai noteiktu problēmu ietekmes uz klientiem līmeni.
+
+Tālāk norādītie lauki tiek apkopoti tikai iOS:
+
+- **bold_text** — norāda, vai ierīcei ir ieslēgts treknraksta teksts, lai palīdzētu mums atklāt treknraksta tekstu saistītās problēmas
+
+- **closed_captioning** — norāda, vai lietotājs ir ieslēdzis slēptos titrus savā ierīcē, lai palīdzētu mums atklāt ar slēptajiem titriem saistītās problēmas
+
+- **darker_system_colors** — norāda, vai lietotājs ir ieslēdzis tumšākas sistēmas krāsas savā ierīcē, lai palīdzētu mums noteikt ar šo iestatījumu saistītās problēmas
+
+- **gray_scale** — norāda, vai lietotājs ir ieslēdzis pelēktoņu sistēmas krāsas savā ierīcē, lai palīdzētu mums noteikt ar šo iestatījumu saistītās problēmas
+
+- **guided_access** — norāda, vai lietotājs ir ieslēdzis piekļuvi ar ceļvedi savā ierīcē, lai palīdzētu mums noteikt ar šo iestatījumu saistītās problēmas
+
+- **invert_colors** — norāda, vai lietotājs ir ieslēdzis krāsu inversijas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **mono_audio** — norāda, vai lietotājs ir ieslēdzis mono skaņas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **reduce_motion** — norāda, vai lietotājs ir ieslēdzis kustības samazināšanas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **reduce_transparency** — norāda, vai lietotājs ir ieslēdzis caurspīdības samazināšanas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **speak_screen** — norāda, vai lietotājs ir ieslēdzis mono skaņas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **speak_selection** — norāda, vai lietotājs ir ieslēdzis runas atlases iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **switch_control** — norāda, vai lietotājs ir ieslēdzis Switch Control iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **voice_over** — norāda, vai lietotājs ir ieslēdzis VoiceOver iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+Tālāk norādītie lauki tiek apkopoti tikai Android:
+
+- **braille** — norāda, vai lietotājs ir ieslēdzis Braila raksta iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **caption** — norāda, vai lietotājs ir ieslēdzis slēptos titrus savā ierīcē, lai palīdzētu mums atklāt ar slēptajiem titriem saistītās problēmas
+
+- **color_inversion** — norāda, vai lietotājs ir ieslēdzis krāsu inversijas iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **high_contrast** — norāda, vai lietotājs ir ieslēdzis augsta kontrasta iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **large_text** — norāda, vai ierīcē ir ieslēgts lielizmēra teksta iestatījums, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **oem_preinstall** — norāda, vai mūsu lietojumprogramma bija iepriekš instalēta ierīcē (attiecas tikai uz Samsung ierīcēm)
+
+- **supported_abis** — norāda, kāda veida lietojumprogrammu binārās saskarnes (ABI) tiek atbalstītas ierīces platformā, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **switch_access** — norāda, vai lietotājs ir ieslēdzis Switch Access iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **talkback** — norāda, vai lietotājs ir ieslēdzis TalkBack iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+#### <a name="low_storage_warning"></a>low_storage_warning
+
+Ir nepieciešams, lai uzraudzītu, vai mūsu lietojumprogramma pēkšņi neaizņem lielāko daļu jūsu ierīces krātuves palielināta atmiņas izmantošanas apjoma dēļ, norādot brīdi, kurā ierīcei trūkst krātuves apjoma.
+
+Tiek apkopoti šādi lauki: 
+
+- **free_bytes** — ierīcē pieejamās brīvās krātuves vietas apjoms
 
 #### <a name="officeairspaceairspacelocalblocklistdriverupdated"></a>Office.AirSpace.AirSpaceLocalBlocklistDriverUpdated
 
@@ -9952,7 +11390,7 @@ Vai tiek izmantota jaunākā Office zema līmeņa atveidošanas platforma, kuras
 
 Norit jaunākās Office zema līmeņa atveidošanas platformas izstrāde un piegāde klientiem, kas ļauj Microsoft redzēt, cik daudz lietotāju ir katrā versijā, lai nodrošinātu, ka platforma darbojas bez kļūdām.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Data\_WinCompEnabled** — vai tiek izmantota Windows salikuma aizmugursistēma
 
