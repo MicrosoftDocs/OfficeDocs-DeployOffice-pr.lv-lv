@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
+ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917693"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42340913"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -59,7 +59,7 @@ Piezīme. Tālāk aprakstītais privātuma iestatījums nekontrolē pieredzi, ka
 
 ### <a name="help--contact-support"></a>Palīdzība > Sazināties ar atbalsta dienestu
 
-Programmā Outlook darbam ar iOS un Android varat ziņot par problēmām un sazināties ar mūsu atbalsta komandu, pārejot uz **Iestatījumi** > **Palīdzība un atsauksmes** > **Sazināties ar atbalsta dienestu**. Šo līdzekli nodrošina HelpShift izstrādātais pakalpojums, kam tiek attiecināti HelpShift [pakalpojuma sniegšanas noteikumi](https://www.helpshift.com/legal/terms/) un [konfidencialitātes politika](https://www.helpshift.com/legal/privacy/).
+Programmā Outlook darbam ar iOS un Android varat ziņot par problēmām un sazināties ar mūsu atbalsta komandu, pārejot uz **Iestatījumi** > **Palīdzība un atsauksmes** > **Sazināties ar atbalsta dienestu**. Šai pieredzei ir nepieciešams Microsoft piederošs pakalpojums PowerLift un piemērojami [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi.
 
 ### <a name="help--suggest-a-feature"></a>Palīdzība > Līdzekļa ieteikšana
 
