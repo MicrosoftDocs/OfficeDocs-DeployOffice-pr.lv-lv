@@ -16,11 +16,11 @@ ms.custom:
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
 hideEdit: true
 ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: bec0b4de9d1e5444a5418d2c9d1434ee5489199a
+ms.sourcegitcommit: 6a091ca7e72cd7ce97793ebd0fdcfa2a6fa1a098
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42555995"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42687216"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
 
