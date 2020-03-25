@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
-ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
+ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
+ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42224999"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42939769"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -490,13 +490,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_PrereqFailure\_Type** — priekšnoteikumu kļūme, kāda rodas, t.i., operētājsistēma netiek atbalstīta
 
-  - **Data\_ProductReleaseId** — produkts, ko instalējam, t.i., Office 365 ProPlus
+  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Office 365 ProPlus
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
 Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veic bojājumu pārbaudi, lai nodrošinātu, ka Office binārie faili ir pareizi. Tiek izmantots, lai mērītu Office bināro failu bojājumu un to, kuri binārie faili ir bojāti.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Data\_Active —** pašreizējais straumes manifests, ko pārbaudām diskā
 
@@ -544,7 +544,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_KeepIncompleteFileFiles —** failu, ko paturam un kuri ir nepilnīgi, paraugs
 
-  - **Data\_MismatchSizeCount —** cik failu lielums neatbilst mūsu manifestam
+  - **Data\_MismatchSizeCount —** cik failu izmērs neatbilst mūsu manifestam
 
   - **Data\_MismatchSizeFiles —** failu, kam ir neatbilstošs lielums, paraugs
 
@@ -628,13 +628,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_PrereqFailure\_Type —** priekšnosacījumu kļūme, kas rodas
 
-  - **Data\_ProductReleaseId —** produkts, ko instalējam, t.i., Office 365 ProPlus
+  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Office 365 ProPlus
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
 Ziņo par jaunā Click-to-Run atjauninājumu konveijera statusu (“Repoman”) un par to, vai tas veiksmīgi lejupielādē un instalē Office atjauninājumus.
 
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
   - **ApplySucceeded —** patiess, ja konveijers veiksmīgi lietoja Office atjauninājumu, pretējā gadījumā — aplams.
   
@@ -675,7 +675,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -751,7 +751,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -827,7 +827,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -851,7 +851,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —**  kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
   - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
@@ -903,7 +903,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -979,7 +979,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1055,7 +1055,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1131,7 +1131,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1155,7 +1155,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —**  kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
   - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
@@ -1207,7 +1207,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1283,7 +1283,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1359,7 +1359,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1435,7 +1435,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1459,7 +1459,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —**  kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
   - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
@@ -1511,7 +1511,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1587,7 +1587,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1663,7 +1663,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1739,7 +1739,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1815,7 +1815,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1839,7 +1839,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —**  kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
   - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
@@ -1891,7 +1891,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -1967,7 +1967,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2043,11 +2043,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion to —** kāda Office versija ir pieejama atjaunināšanai
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, t.i., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2131,7 +2131,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2207,13 +2207,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
   - **Data\_ComAction —** int, kas atspoguļo com darbību, ko veicam
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, t.i., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2239,7 +2239,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —**  kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
   - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
@@ -2291,11 +2291,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, t.i., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2379,7 +2379,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums ir lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
@@ -2470,9 +2470,9 @@ Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, v
 
 - **TotalTransferTime —** kopējais pārsūtīšanas laiks sesijā
 
-- **TransferredBytes —** kopējais pārnesto baitu skaits sesijā
+- **TransferredBytes —** kopējais pārsūtīto baitu skaits sesijā
 
-- **TransportType —** transporta veids, piemēram, piegādes optimizācija atmiņā, HTTP, fona režīma intelektiskās pārsūtīšanas pakalpojums
+- **TransportType —** transporta veids, piemēram, piegādes optimizācija atmiņā, HTTP, fona režīma viedās pārsūtīšanas pakalpojums
 
 
 
@@ -2480,7 +2480,7 @@ Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, v
 
 Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veido transportēšanas straumi, lai lejupielādētu Office failus. Tiek izmantoti, lai noteiktu dažādu transportēšanas tehnoloģiju (piemēram, HTTP, BITS, DO) darbspēju, kas ir kritiski svarīgi, lai pareizi lejupielādētu Office instalēšanai un atjauninājumiem.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Data\_IsForeGroundStreaming**  — vai straumējam priekšplānā vai fonā
 
@@ -2569,9 +2569,9 @@ Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectPar
 
 - **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
 
-- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
 
-- **PRID —** virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas scenārijā (piemēram, O365ProPlusRetail)
+- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
 
 - **PridsToMigrateFromCentennial —** Office produktu virkne, lai migrētu no veikala instalācijām uz noklikšķināt, lai palaistu
 
@@ -2706,6 +2706,8 @@ Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie 
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
+*[Šis notikums ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
 Šis notikums tiek izmantots, lai iegūtu standarta metadatus par katru inventāra pievienojumprogrammas darbību, kas ir daļa no tehniskās apkopes pārvaldnieka un tiek izmantota Office informācijas uzskaitei datoros un ierīcēs, kurām administrators to ir iespējojis. Šeit īpaši interesanti sesijas ID metadati, kas tiek izmantoti, lai izveidotu saiti uz citiem datiem, kas ir saglabāti katra nomnieka mākoņa pakalpojumā.
 
 Šis notikums nesatur ekstra laukus, jo saistoši ir tikai metadati.
@@ -2726,15 +2728,17 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
-Šis notikums tiek reģistrēts katru reizi, kad zvans uz tīmekļa pakalpojumu, kas izveidots, izmantojot noklikšķiniet, lai palaistu pievienojumprogrammu nav sekmīgs.
+Šis paziņojums tiek reģistrēts, katru reizi, kad notiek kādas Office tehniskās apkopes pārvaldnieka pievienojumprogrammas kļūme. Kļūmju iemesls var būt iekšējās kļūmes vai nespēja izveidot savienojumu ar tīmekļa pakalpojumu.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **Pievienojumprogramma** — noklikšķināt, lai palaistu tehniskās apkopes pārvaldnieka pievienojumprogramma, no kuras tīmekļa pakalpojuma zvans tika veikts. Tam var būt vērtības, piemēram, krājums, pārvaldāmība utt., kas kodēta kā skaitliska vērtība.
 
 - **Korelācijas ID** — nejauši ģenerētu GUID, kas raksturīgs pašreizējai instancei, kas tiek nosūtīta tīmekļa pakalpojumam, lai saistītu zvanus starp klientu un serveri.
 
 - **Result** — skaitliska kļūdas kodu informācija, ko atgriezis Office tīmekļa pakalpojumu zvanu API.
+
+- **ErrorMessage** — ziņojums, kas sniedz papildu ieskatu par kļūmi. Katrs kļūdas tips tiek kartēts pie stingri kodētas virknes, bet daži kļūdu tipi var būt potenciāli kartēti ar vairākām virknēm, atkarībā no kļūmes specifikas.
 
 - **Funkcija** — funkcija kodā, no kura ir noticis pašreizējais zvans.
 
@@ -2872,7 +2876,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Šī telemetrija izseko Office PIN izpirkšanas pakalpojuma zvana rezultātus.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **ClientTransactionId** — unikāls pakalpojuma zvana identifikators.
 
@@ -3134,7 +3138,7 @@ OEM pārdod iekārtas, kurās ietilpst Office (viena gada abonementi vai mūžī
 
 Šīs telemetrijas darbības izseko veiksmes un neveiksmes punktus, meklējot sasaisti, lai mēs varētu nodrošināt, ka iekārtas, kurās ir sasaiste, var tos veiksmīgi ienest, un šie pakalpojumi ir darbspējīgi.  Šī darbība neizseko iekārtas, kuriem nav saistījumu ar tām pēc tam, kad esam pārbaudījuši ar saviem pakalpojumiem.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **GenuineTicketFailure** — norāda kļūmi HRESULT, kas rodas, mēģinot iegūt iekārtas Windows orģināla biļeti/produkta atslēgu (WPK).
 
@@ -3159,7 +3163,7 @@ Tiek apkopoti tālāk norādītie lauki:
   - 0x0310410f  izdevās, nosūtīts ar panākumu lauku
   - 0x0311380d  kļūdu novēršana (interneta problēmas, nezināmas kļūdas)
   - 0x0311380e  neiespējamu atkārtotu mēģinājumu kļūdas (saistošais piedāvājums beidzies)
-  - 0x0311380f   citas kļūdas (nevar licencēt)
+  - 0x0311380f   citas kļūdas (nav iespējams licencēt)
   - 0x03104111  neizdevās atkost Office PIN, kas nosūtīts ar PinValidationResult lauku
 
 - **WpkBindingFailure** — norāda kļūdas kodu, lai iegūtu Office PIN, kas saistīts ar ierīces WPK.
@@ -3219,7 +3223,7 @@ Tiek apkopoti šādi lauki:
 
 Ja lietotājs ar nelicencētu Office, kas iepriekš ir instalēts iekārtā, mēģina saņemt izmēģinājumversiju, tiek aktivizēts šis notikums.  Tas tiek izmantots, lai redzētu, kurš lietotājs sekos, lai saņemtu izmēģinājumversiju, un vai rodas kļūdas, mēģinot saņemt izmēģinājumversiju, izmantojot programmas pirkumus.  Atkarībā no lietotāja darbības un programmas iegādes rezultāta lietotājs var netikt licencēts.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **HasConnectivity** — norāda, vai lietotājam ir interneta savienojums, un gadījumā, ja lietotājam nav, iespējams, ir jāizmanto pagarinājuma licence piecu dienu laikā, vai, iespējams, darbojas samazinātas funkcionalitātes režīmā
 
@@ -3347,7 +3351,7 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums norāda, ka, veidojot savienojumu ar MAU palīgu (komponents, kas veic programmu instalēšanu), radās kļūdas.  Šis notikums norāda iespējamu MAU programmas bojājumu. Ierīce nevarēs instalēt atjauninājumus.
 
-Tiek apkopoti šādi lauki: 
+Tiek apkopoti šādi lauki:    
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -11280,7 +11284,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzdevumu pārvaldnieks, uzkaras programma utt.) Office klienta programmām, ieskaitot, bet ne tikai, Word, Excel, PowerPoint un Outlook. Mēs izmantojam rādītājus par nelabvēlīgu iziešanu no programmas, lai mērītu Office klienta produktu darbspēju. Tas ir uzņēmējdarbībā svarīgs signāls, kuru izmanto Office inženieri, lai noteiktu produktu stabilitāti.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
+
+  - **BootCompleted —** vai Office sāknēšana tika pabeigta avārijas brīdī.
 
   - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
 
@@ -11298,6 +11304,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
+  - **CrashTime —** laiks, kad klienta darbība tika pārtraukta neatbilstošā veidā.
+
   - **CrashType —** avārijas veida intervāla identifikators.
 
   - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja.
@@ -11305,6 +11313,12 @@ Tiek apkopoti tālāk norādītie lauki.
   - **ExceptionAddress —** adrese programmā, kur kļūme radās.
 
   - **ExceptionCode —** izņēmuma intervāla identifikators.
+
+  - **HandOff —** vai lietotājs izveidoja un nodeva Office procesu jaunajai sesijai.
+
+  - **HasEdit —** vai lietotājs rediģēja dokumentu avarējušajā klientā.
+
+  - **HasOpen —** vai avarējušajā klientā bija atvērts dokuments.
 
   - **HexCrashTag —** unikālais avārijas koda identifikators.
 
@@ -11330,13 +11344,17 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ModuleSize —** kļūdainā moduļa izmērs baitos.
 
+  - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
+
   - **PreviousBuild —** iepriekš instalētā būvējuma versija
+
+  - **SafeMode —** norāda, vai sesija tika sākta drošajā režīmā.
 
   - **UAEOSEnvironment —** operētājsistēmas vides identifikators.
 
   - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
 
-  - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja.
+  - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
