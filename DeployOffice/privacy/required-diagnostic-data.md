@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: bd9a5754a8741ee3cc96bf843c59f8f509bc1738
-ms.sourcegitcommit: de34e0fff15c3bd099df452d8f4771398f9dfaf6
+ms.openlocfilehash: 065fb887fe0af4bb68576310c3ceb4842b163bf1
+ms.sourcegitcommit: 95aa5a2587e7333dfbb2ab0d4d898789645a4275
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42265470"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42946191"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -519,7 +519,7 @@ Zemāk norādītie datu lauki ir kopīgi visiem OneNote notikumiem Mac, iOS un A
 
 - **UserInfo_IdType** — virkne, kas norāda lietotāja konta veidu.
 
-- **UserInfo_OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+- **UserInfo.OMSTenantId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
 
 - **UserInfo_OtherId** — lietotāja kontus identificējošo pseidonīmu identifikatoru, kas nav primāri, saraksts.
 
@@ -640,7 +640,7 @@ Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji v
 Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.
 Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **Attempt** — reižu skaits, cik ir jāatkārto pirmās palaišanas pieredze.
 
@@ -748,7 +748,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_VisioSKU**:**integer** — Standard SKU ir 0, bet Professional SKU — 1
 
-#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Ieraksta informācija par lietojumprogrammas aktivizēšanas statusu.  Dati tiek pārraudzīti, lai garantētu, ka mēs identificējam aktivizēšanas problēmu pieaugumu. Mēs arī analizējam datus, lai atrastu jomas, kurās nepieciešami uzlabojumi.
 
@@ -756,7 +756,7 @@ Tiek apkopoti šādi lauki:
 
 - **INSTALL_LOCATION** — norāda, vai lietojumprogramma ir sākotnēji instalēta vai lejupielādēta veikalā
 
-#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(iepriekšējais nosaukums)*, Office.OneNote.Android.ResetStatus
 
 Šis signāls tiek izmantots, lai fiksētu jebkādas problēmas, kad lietotājs mēģina atiestatīt lietojumprogrammu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas atiestatīšanas laikā radušās problēmas. 
 
@@ -770,7 +770,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Pass** — norāda, vai atiestatīšana bija sekmīga
 
-#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(iepriekšējais nosaukums)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 Kritiskais signāls, kas tiek izmantots, lai nodrošinātu, ka pierakstīšanās ir sekmīga vai nē. Telemetrija, kas tiek apkopota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
 
@@ -790,7 +790,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **SignInMode** — paātrināta pierakstīšanās vai reģistrācija vai automātiska pierakstīšanās vai reģistrācija
 
-#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(iepriekšējais nosaukums)*, Office.OneNote.Android.SignIn.SignInStarted
 
 Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
 
@@ -880,9 +880,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Dati par sekmīgu vai nesekmīgu atjaunināto datu vajadzības izgūšanu attiecībā uz Office 365 nomnieka administratora piešķirtajām pievienojumprogrammām. Izmanto darbspējas rādītājiem, diagrammām un klientu problēmu analīzei. ExchangeGetLastUpdate vienmēr tiek izpildīts palaišanas laikā kā daļa no resursa koda un nosaka, vai ir mainījušās pievienojumprogrammu piešķires lietotājam.  Ja tā ir, tad tiek ielādēts osf.DLL, lai mēs varētu izsaukt ExchangeGetEntitlements ar mērķi iegūt konkrētas piešķires (tiek izsaukts arī ExchangeGetManifests, lai izgūtu jebkuru jaunu nepieciešamo manifestu).  ExchangeGetEntitlements (un ExchangeGetManifests) var izsaukt arī pēc pieprasījuma pēc tam, kad ir darbojusies viesošanas lietojumprogramma.  Mērķis ir neielādēt lielu DLL, ja tas nav nepieciešams.  Ja šis notikums nebūtu nepieciešams, mēs nevarētu noteikt, vai lietotājiem izdodas iegūt viņiem piešķirtās pievienojumprogrammas, ja neizdodas pirmais pakalpojuma izsaukums.  Tas ir arī galvenais veids, kā mēs uzzinām, vai pastāv kādas autorizācijas problēmas saistībā ar mūsu pakalpojumu izsaukšanu.
+Dati par sekmīgu vai nesekmīgu atjaunināto datu vajadzības izgūšanu attiecībā uz Office 365 nomnieka administratora piešķirtajām pievienojumprogrammām. Izmanto darbspējas rādītājiem, diagrammām un klientu problēmu analīzei. ExchangeGetLastUpdate vienmēr tiek izpildīts palaišanas laikā kā daļa no resursa koda un nosaka, vai ir mainījušās pievienojumprogrammu piešķires lietotājam.  Ja tā ir, tad tiek ielādēts osf.DLL, lai mēs varētu izsaukt ExchangeGetEntitlements ar mērķi iegūt konkrētas piešķires (tiek izsaukts arī ExchangeGetManifests, lai izgūtu jebkuru jaunu nepieciešamo manifestu).  ExchangeGetEntitlements (un ExchangeGetManifests) var izsaukt arī pēc pieprasījuma pēc tam, kad ir darbojusies viesošanas lietojumprogramma. Mērķis ir neielādēt lielu DLL, ja tas nav nepieciešams.  Ja šis notikums nebūtu nepieciešams, mēs nevarētu noteikt, vai lietotājiem izdodas iegūt viņiem piešķirtās pievienojumprogrammas, ja neizdodas pirmais pakalpojuma izsaukums. Tas ir arī galvenais veids, kā mēs uzzinām, vai pastāv kādas autorizācijas problēmas saistībā ar mūsu pakalpojumu izsaukšanu.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Abort —** informācija par to, vai pakalpojuma izsaukuma laikā tika izslēgta viesošana
 
@@ -1341,6 +1341,22 @@ Tiek apkopoti šādi lauki:
  
 - **total_file_accounts** — failu kontu skaits lietojumprogrammā darbības veikšanas brīdī
 
+#### <a name="account_lifecycle"></a>account_lifecycle
+
+Šis notikums tiek apkopots, lai nodrošinātu veiksmīgu konta konfigurācijas darbību, un tiek izmantots, lai pārraudzītu konta izveides stāvokli, spēju pievienot jaunus e-pastu kontus un uzraudzītu mīkstos kontu atiestatījumus.
+
+Tiek apkopoti šādi lauki: 
+
+- **action** — kontā veiktās darbības veids, piemēram, pievienot, dzēst vai atiestatīt
+
+#### <a name="add_new_account_step"></a>add_new_account_step
+
+Šis pasākums ļauj mums noteikt, cik tālu lietotājs ir aizpildījis jauna konta izveides veidlapu.  Tas norāda, vai lietotājs ir pārgājis uz nākamo soli vai pārtraucis reģistrācijas procesu.  Šī informācija mums ir nepieciešama, lai noteiktu, vai visi soļi darbojas atbilstoši, un nodrošinātu veiksmīgu lietotāja konta izveidi. 
+
+Tiek apkopots tālāk norādītais lauks: 
+
+- **OTAddAccountCurrentStep** — tam var būt šādas vērtības: profile_form, redirect_mobile_check, mobile_check_success
+
 #### <a name="app_error"></a>app_error
 
 Izseko kritiskās lietojumprogrammu kļūdas, lai mēs spētu novērst problēmas, kas var izraisīt jūsu lietojumprogrammu avārijas vai traucēt jums lasīt e-pasta ziņojumus.
@@ -1545,6 +1561,8 @@ Tiek apkopoti šādi lauki:
 
 - **see_all_contacts_selected_count** — izseko, cik reizes kombinētās meklēšanas sesijas laikā tika atlasīts “skatīt visas kontaktpersonas”
 
+- **subtab_type** — izseko gadījumus, kad lietotājs atlasīja rezultātu no rezultātu cilnes
+
 - **top_mail_result_selected_count** — izseko, cik reizes lietotājs atlasa populārākos rezultātus. 
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
@@ -1588,6 +1606,16 @@ Tiek apkopoti šādi lauki:
 - **origin** — norāda melnraksta sākšanas vietu, piemēram, detalizēta ziņojuma informācija, sastādīšana.
  
 - **thread_id** — sarunas, ar kuru ir saistīts melnraksts, pavediena ID
+
+#### <a name="drag_and_drop"></a>drag_and_drop
+
+Šis notikums ļauj mums noteikt, vai vilkšanas un nomešanas darbība bija veiksmīga.  Tiek izmantots, lai pārliecinātos par to, ka vilkšanas un nomešanas funkcija darbojas pareizi visās lietojumprogrammās, tai skaitā kā nomešanas iekš Outlook notikums un vilkšanas ārpus Outlook notikums.  Ar šo datu palīdzību mēs varam pārliecināties par pilnvērtīgu darbību ar citām lietojumprogrammām.
+
+Tiek apkopoti šādi lauki: 
+
+- **action** — darbība būs vilkt vai nomest
+
+- **location** — vilkšanas darbības gadījumā informē mūs par vietu, kur lietotājs uzsāka vilkšanu.  Nomešanas darbības gadījumā informē mūs par vietu, kur lietotājs nometa vilkto failu. 
 
 #### <a name="drawer_event"></a>drawer_event
 
@@ -2053,6 +2081,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.LicenseFormat** — licences formāts: XrML vai JSON
 
+- **RMS.PL.KeyType** — vērtības 'vienkāršas' vai 'divkāršs'. Norāda, vai PL bija aizsargāts ar vienkāršas atslēgas vai divkāršas atslēgas aizsardzību.
+
 - **RMS.RACType** — tiesību konta sertifikāta tips
 
 - **RMS.Result** — API izsaukums sekmīgs vai neizdevās
@@ -2102,7 +2132,6 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
 
 - **RMS.StatusCode** — scenārija ID, ko definē API
-
 
 #### <a name="mail_action"></a>mail_action
 
@@ -2255,6 +2284,8 @@ Tiek apkopoti šādi lauki:
 
 - **Data_AppDuration** — lietojumprogrammā, kas veic faila atvēršanu, pavadītais laiks. 
 
+- **Data_AppWarmUpGain** — lietojumprogrammas startēšanas laika pieaugums, kas notiek tāpēc, ka veicam lietojumprogrammas pirmsāknēšanas daļu.
+
 - **Data_BootDuration** — lietojumprogrammas palaišanas ilgums faila atvēršanas procesā.
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
@@ -2335,6 +2366,23 @@ Tiek apkopoti šādi lauki:
 
 - **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu. 
 
+#### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
+
+Mēs iespējojam Android pakotņu komplektu (APK) paplašināšanas failus mobilajai Office lietojumprogrammai. APK paplašināšanas faili ir papildu resursu faili, kurus Android lietojumprogrammu izstrādātāji var publicēt kopā ar savu lietojumprogrammu. Lai noteiktu paplašināšanas failu uzticamību, mēs reģistrējam karodziņu, kas norāda uz to, vai paplašināšanas faili ir vai nav pieejami katrā sāknēšanas reizē.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ExpansionFilesAvailable** — Būla karodziņš, kas norāda vai APK izplešanās faili ir pieejami ierīcē lietojumprogrammas sāknēšanas brīdī.
+
+#### <a name="office_android_earlytelemetry_expansionfilesdownloader"></a>Office_Android_EarlyTelemetry_ExpansionFilesDownloader
+
+Mēs iespējojam Android pakotņu komplektu (APK) paplašināšanas failus mobilajai Office lietojumprogrammai. APK paplašināšanas faili ir papildu resursu faili, kurus Android lietojumprogrammu izstrādātāji var publicēt kopā ar savu lietojumprogrammu.  Lai izprastu mūsu paplašināšanas faila lejupielādes mehānisma uzticamību, mēs reģistrējam karodziņu, kurš norāda, vai mēs spējam veiksmīgi lejupielādēt paplašināšanas failus.
+
+Tiek apkopoti šādi lauki: 
+
+- **Data_DownloadSuccess** — Būla karodziņš, kas norāda, vai APK paplašināšanas failu lejupielāde ir veiksmīga katru reizi, kad mēģinām veikt lejupielādi lietojumprogrammas sāknēšanas laikā.
+
+
 #### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
 
 Šis notikums tiek apkopots Office lietojumprogrammām, kas darbojas ar Android, tai skaitā Office mobilajām ierīcēm, Word, Excel, PowerPoint un OneNote. Šis notikums norāda uz mēģinājumu pierakstīties Intune licencētā organizācijas kontā, kuram organizācijas administrators ir konfigurējis politiku piekļuvei lietojumprogrammai ar nosacījumu. To izmanto, lai noteiktu gala lietotāju skaitu, kas mēģina izmantot lietojumprogrammas šajā politikas konfigurācijā, un šo notikumu apvieno ar citu notikumu, Office_Android_Intune_IntuneComplianceStatus, lai pārliecinātos par to, ka konfigurētā politika tiek ievērota. 
@@ -2349,7 +2397,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_ComplianceStatus** — norāda uz lietojumprogrammas atbilstības status pierakstīšanās laikā, izmantojot izdošanās vai kļūmes kodu.
   - -1 – Nezināma kļūda
-  - 0 – lietojumprogramma atbilst organizācijas politikām
+  -    0 – lietojumprogramma atbilst organizācijas politikām
   - 1 – lietojumprogramma neatbilst organizācijas politikām
   - 2 — ar pakalpojumu saistītas kļūmes
   - 3 — ar tīklu saistītas kļūmes
@@ -2570,7 +2618,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākumu ieraksti, veicot darbību "Saglabāt kā" un tiek izmantoti, lai izprastu un noteiktu lietotāja pieredzes prioritāti, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijām.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunajā atrašanās vietā.
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Pasākumu ieraksti, veicot darbību "Saglabāt kā" un tiek izmantoti, lai izprastu un noteiktu lietotāja pieredzes prioritāti, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijām.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunā atrašanās vietā.
 
 Tiek apkopoti šādi lauki:
 
@@ -2580,7 +2628,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Šis notikums ieraksta, kad lietotājs "@" piemin citu lietotāju un izmanto, lai izprastu un noteiktu prioritāti lietotāja pieredzei, pamatojoties uz to, kā lietotāji sadarbojas ar citiem lietotājiem.
+Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Šis notikums ieraksta, kad lietotājs "@" piemin citu lietotāju un izmanto, lai izprastu un noteiktu prioritāti lietotāja pieredzei, pamatojoties uz to, kā lietotāji sadarbojas ar citiem lietotājiem.
 
 Tiek apkopoti šādi lauki:
 
@@ -2594,7 +2642,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_ShareType** — stingri kodēta virkne, kas norāda, kāda veida kopīgošanas darbība ir pabeigta, tostarp, bet ne tikai, "Kopēt saiti", "Citas programmas", "Teams".
 
-- **Data_ShareWebViewMode** — stingri kodēta virkne, kas norāda, kāda veida kopīgošana bija aktīva, kad kopīgošana bija pabeigta, ieskaitot ne tikai "Piekļuves pārvaldība", "@pieminēšana", "Kopīgot".
+- **Data_ShareWebViewMode** — stingri kodēta virkne, kas norāda, kāda veida kopīgošana bija aktīva, kad kopīgošana bija pabeigta, ieskaitot ne tikai "ManageAccess", "AtMentions", "Share".
 
 #### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
 
@@ -2618,11 +2666,11 @@ Tiek apkopoti šādi lauki:
 
 - **Data_OldCoauthorCount** — iepriekšējo aktīvo līdzautoru skaits pirms atjauninājuma.
 
-- **Data_ServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+- **Data_ ServiceType** — abstrakta faila atrašanās vietas kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., nevis faktiskā faila atrašanās vieta.
 
 #### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad tiek izveidots jauns fails, no darbības "Jauns no veidnes", un to izmanto, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzei, pamatojoties uz dokumentu izveides informāciju.
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Notikums ieraksta, kad tiek izveidots jauns fails, no darbības "Jauns no veidnes", un to izmanto, lai labāk izprastu un noteiktu prioritātes lietotāja pieredzei, pamatojoties uz dokumentu izveides informāciju.
 
 Tiek apkopoti šādi lauki:
 
@@ -2648,7 +2696,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek failu atvēršanas darbība, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un paplašinājuma pirmās četras rakstzīmes.
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Notikums ieraksta, kad notiek failu atvēršanas darbība, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un paplašinājuma pirmās četras rakstzīmes.
 
 Tiek apkopoti šādi lauki:
 
@@ -2669,6 +2717,8 @@ Tiek apkopoti tālāk norādītie lauki:
 - **Data_ClickOrigin** — virkne, kas norāda uz saites daļas izcelsmi brīdī, kad lietotājs noklikšķināja uz saites iOS Outlook, lai atvērtu failu Office lietojumprogrammā.
 
 - **Data_ClickTime** — Unix diskretizācijas laiks, kad lietotājs noklikšķināja uz saites iOS Outlook, lai atvērtu failu Office lietojumprogrammā.
+
+- **Data_ClosePreviouslyOpenedMarkers**— virknes vērtība, kas uzskaita ilgumu starp atsevišķu funkciju izsaukumiem formātā ar funkcijas ID un ilgumu.
 
 - **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
 
@@ -2754,7 +2804,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek failu atvēršana, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un no kurienes lietotājs pieprasīja atvērt failu programmā.
+Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Notikums ieraksta, kad notiek failu atvēršana, un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu atvēršanas informāciju, piemēram, atrašanās vietas kategorijas "Pakalpojuma tips" un no kurienes lietotājs pieprasīja atvērt failu programmā.
 
 Tiek apkopoti šādi lauki:
 
@@ -2768,7 +2818,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Notikums ieraksta, kad notiek darbība "saglabāt kā", un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijas un paplašinājuma pirmās četras rakstzīmes.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunā atrašanās vietā.
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Notikums ieraksta, kad notiek darbība "saglabāt kā", un tiek izmantots, lai izprastu un noteiktu prioritātes lietotāja pieredzi, pamatojoties uz failu darbības informāciju, piemēram, atrašanās vietas kategorijas un paplašinājuma pirmās četras rakstzīmes.  Darbība "Saglabāt kā" tiek veikta katru reizi, kad lietotājs izveido jaunu failu un saglabā to pirmo reizi vai saglabā esošā faila kopiju jaunā atrašanās vietā.
 
 Tiek apkopoti šādi lauki:
 
@@ -2840,7 +2890,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_LinkType** — cietā kodētā virkne, kas apraksta uzaicināšanas darbības veidu, piemēram, "ViewOnly" un "ViewAndEdit".
 
-- **Data_ShareScenario** — iekodēts virknes apraksts, kur programmas lietotāja interfeisā fails tiek koplietots, ieskaitot, bet neaprobežojoties ar "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+- **Data_ShareScenario** — cieti kodēts virknes apraksts, kur programmas lietotāja interfeisā fails tiek koplietots, ieskaitot, bet ne tikai "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
 
 #### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
 
@@ -2886,7 +2936,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_OperationType** — skaitliska vērtība, kas norāda, kāda veida kopijas nosūtīšanas darbība tiek veikta, piemēram, nosūtot kopiju e-pastā vai nosūtot kopiju, izmantojot Apple kopīgošanas vadību.
 
-- **Data_ServiceType** — sākotnējās faila atrašanās vietas abstrakta kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., un kas nav faila faktiskā atrašanās vieta.
+- **Data_ ServiceType** — abstrakta faila atrašanās vietas kategorizēšana, piemēram, "SharePoint", "OneDrive", "Local", "WOPI" utt., nevis faktiskā faila atrašanās vieta.
 
 - **Data_ShareFileType** — cietais kodētais virknes apraksts par to, kāda tipa objektu koplieto, tostarp, bet ne tikai, "Dokuments", "PDF", "Attēls".
 
@@ -2982,7 +3032,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **DeviceInfo.OsName** — ierīces operētājsistēmas nosaukums.
 
-- **DeviceInfo.SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas.
+- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
 
 - **eventId** — notikuma nosaukuma identifikators. 
 
@@ -3034,7 +3084,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.Version** — lietojumprogrammas versija.
 
+- **bridgeWaitingTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
+
 - **clientCorrelationId** — lietojumprogrammas sesijas globāli unikālais identifikators.
+
+- **ClientTimeStamp** — notikuma reģistrēšanas klientā laikspiedols.
 
 - **clientType** — lietojumprogramma, kurā darbojas komponents.
 
@@ -3046,7 +3100,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **DeviceInfo.OsName** — ierīces operētājsistēmas nosaukums.
 
-- **DeviceInfo.SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas.
+- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
 
 - **eventId** — notikuma nosaukuma identifikators.
 
@@ -3058,17 +3112,14 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **hostAppRing** — lietotāju, kuriem tika izplatīta lietojumprogramma, skaits.
 
-- **properties** — satur papildu katram notikumam apkopotos metadatu rekvizītus.
-        
-  - **bridgeWaitingTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
-    
+- **properties** — satur papildu katram notikumam apkopotos metadatu rekvizītus. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
   - **ClientTimeStamp** — notikuma reģistrēšanas klientā laikspiedols.
-        
-  - **renderTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
 
 - **publicEventName** — publiski pieejamais notikuma nosaukums.  
 
 - **reģions** — plūsmas pakalpojuma, kuram ir pieslēdzies lietotājs, ģeogrāfiskais reģions. 
+
+- **renderTime** — metrika, lai diagnosticētu plūsmas renderēšanas veiktspēju.
 
 - **tenantAadObjectId** — lietotāja uzņēmuma nomnieka globālais unikālais identifikators.
 
@@ -4179,6 +4230,67 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.Log** — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
 
+#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android. Reģistrē, kad notiek PDF atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par PDF failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu PDF atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot PDF failu darbības veiktspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai
+
+- **Data_Doc_URLHash** — GUID faila URL
+
+- **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos.
+
+- **Data_ErrorMessage** — atbilstošais ziņojuma par kļūdu kods
+
+- **Data_FailureReason** — atvēršanas kļūmes gadījumā, šie uzskaitījumi definē kļūmes iemeslu.
+
+- **Data_FileLocation** — faila atrašanās vieta, piemēram: lokāli, ODSP, iCloud utt.
+
+- **Data_FileOpenEntryPoint** — faila atvēršanas ievades punkts.
+
+- **Data_FileSize** — faila, kurā notiek darbība, izmērs
+
+- **Data_OpenMode** — kādā režīmā tika atvērts PDF, piem.: 0: skatīšanas režīms, 2: parakstīšanās režīms
+
+- **Data_PageCount** — lapu skaits PDF failā.
+
+- **Data_PasswordProtected** — marķieris, kas norāda, vai parole ir aizsargāta.
+
+- **Data_ProviderApp** — pašreiz nodrošina pakalpojuma sniedzēja lietojumprogrammu gadījumos, kad notiek tikai faila aktivācija 
+
+- **Data_ReadOnly** — marķieris, kas norāda, vai fails ir tikai lasāms.
+
+- **Data_Result** — veicamās darbības statuss, piemēram: patiess: izdevās, aplams: neizdevās.
+
+- **Data_Type** — faila darbības veids (atvēršana, aizvēršana vai saglabāšana) 
+
+#### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(iepriekšējais nosaukums)*
+
+Šis notikums apkopo kritiskos signālus, kas tiek izmantoti, lai nodrošinātu OneNote lietotāju veiksmīgu navigāciju lietojumprogrammā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
+
+Tiek apkopoti šādi lauki: 
+
+- **IS_SPANNED** — norāda, vai lietojumprogramma ir savienotā režīmā. Tiek īpaši uzskaitīts salokāmām ierīcēm.
+
+- **NEW_STATE** — norāda lietojumprogrammas stāvokli uzreiz pēc navigācijas
+
+- **OLD_STATE** — norāda lietojumprogrammas stāvokli tieši pirms navigācijas
+
+#### <a name="officeonenoteandroidlenssdkofficelenslaunched-onenotelenssdkofficelenslaunched-previous-name"></a>Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(iepriekšējais nosaukums)*
+
+Šis notikums apkopo kritisko signālu, kas tiek izmantots, lai nodrošinātu pareizu OfficeLens palaišanu.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
+
+Tiek apkopoti šādi lauki: 
+
+- **CAPTURE_MODE** — norāda, kurā režīmā tika palaists OfficeLens.  Iespējamie režīmi ir noklusējuma, rediģēšanas, ātrās ievietošanas vai video importēšanas režīms.
+
+- **ERROR_CODE** — norāda palaišanas kļūdas kodu gadījumā, ja palaišanas brīdī notika kļūda.
+
+- **IMAGE_COUNT** — norāda uzņemto attēlu skaitu
+
+- **LAUNCH_REASON** — norāda plūsmu, kurā tika palaists OfficeLens. Tas var notikt bloķēšanas ekrānā, StickyNotes kameras vai galerijas opcijās vai OneNote Canvas utt.
 
 #### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
@@ -4210,7 +4322,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisks signāls, kas tiek izmantots, lai uzraudzītu OneNote lietotāju spēju veidot lapas OneNote programmā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot lapu, tā aktivizēs kritisku incidentu.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **IsAtSectionEnd** — norāda, vai sadaļas beigās tiek izveidota jauna lapa.
 
@@ -4250,7 +4362,7 @@ Tiek apkopoti tālāk norādītie lauki
 
 Kritisks signāls, kas tiek izmantots, lai uzraudzītu OneNote lietotāju naviģēšanu starp OneNote lapām.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem naviģēšana neizdodas, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **FromNotebook** — unikālais piezīmju grāmatiņas identifikators.
 
@@ -4279,7 +4391,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Kritisks signāls, kas tiek izmantots, lai uzraudzītu OneNote lietotāju spēju veidot piezīmju grāmatiņas OneNote programmā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmju grāmatiņas, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
     
 - **NotebookID** — unikālais piezīmju grāmatiņas identifikators.
 
@@ -4288,7 +4400,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Kritisks signāls, kas tiek izmantots, lai uzraudzītu OneNote lietotāju spēju atvērt piezīmju grāmatiņas OneNote programmā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem neizdodas atvērt piezīmju grāmatiņas, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 -  **NotebookID** — unikālais piezīmju grāmatiņas identifikators.
 
@@ -4297,7 +4409,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Kritiskā signāla ID, kas tiek izmantots, lai uzraudzītu OneNote lietotāju spēju atrast informāciju lapu un piezīmju grāmatiņu tūkstošos.   Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem neizdodas atrast informāciju piezīmju grāmatiņās, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **PageSearchResultCount** — norāda lapā meklēšanas režīmā atrasto meklēšanas rezultātu skaitu.
 
@@ -4328,7 +4440,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **NoteLocalId** — atšķirams unikāls identifikators, kas piešķirts piezīmei laikā, kad lietotājs izveido piezīmi programmā.
 
@@ -4341,7 +4453,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Šis ir kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā izveidot piezīmes.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas izveidot piezīmi, tā aktivizēs kritisku incidentu.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **HasImages** — karodziņš, kas norāda, vai skatītajā piezīmē ir saglabāti attēli.
 
@@ -4490,7 +4602,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Apkopo rezultātus šim: jaunas krātuves izveide (ar tipu un versiju), kā arī rezultātu kodu. Mēs aktīvi pārraugām šo notikumu, lai izsekotu darbspējai, lietotāja spējai lokāli sinhronizēt pastu, arhivēt pastu (PST) vai izmantot grupas.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Standarta HVA darbība** ar lietderīgajiem datiem, kas ir pielāgoti
 
@@ -5470,7 +5582,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ļauj uzzināt, kad tiek sākta datu straumēšanas sesija.  Izmanto līdzekļu darbspējas veicināšanai un pārraudzībai. Šo notikumu ģenerē Microsoft Data Streamer Excel pievienojumprogrammai.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **Activity_Name** — darbības "Session" nosaukums
 
@@ -5484,7 +5596,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ļauj uzzināt, kad tiek pārtraukta datu straumēšanas sesija. Izmanto līdzekļa veiktspējas uzlabošanai un pārraudzībai. Šo notikumu ģenerē Microsoft Data Streamer Excel pievienojumprogrammai.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
 - **Activity_Name** — darbības "Session" nosaukums
 
@@ -6481,7 +6593,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ViewKind —** Word skata tips
 
-#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(iepriekšējais nosaukums)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signāls tiek izmantots, lai ierakstītu brīdi, kad tiek atvērta lapa.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas problēmas. kas rodas brīdī, kad lapa tiek atvērta OneNote
 
@@ -6491,13 +6603,13 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **TIME_TAKEN_IN_MS** — lapas atvēršanai veltītais laiks
 
-#### <a name="onenotecapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(iepriekšējais nosaukums)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Šis signāls tiek izmantots, lai nodrošinātu to, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, piezīmju grāmatiņas tiek atbilstoši nodrošinātas un lietotājs ir veiksmīgi izveidojis jaunu piezīmi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
 
 Papildu lauki netiek apkopoti.
 
-#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(iepriekšējais nosaukums)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
 
@@ -6588,6 +6700,18 @@ Tiek apkopoti šādi lauki:
 - **origin** — norāda faila saglabāšanas mēģinājuma izcelsmi (piemēram, no e-pasta), ļaujot mums noteikt ar failu saglabāšanu konkrētajā vietā lietojumprogrammā saistītās problēmas
 
 - **token_type** — faila saglabāšanai veiktās konta autentifikācijas marķiera veids, lai palīdzētu mums atklāt ar faila saglabāšanu saistītās autentifikācijas problēmas
+
+#### <a name="search_subtab_selected"></a>search_subtab_selected
+
+Šis notikums mums ļauj izsekot vienuma veida atzīmes (viss, pasts, kontakti un kalendārs), ko lietotāji izmanto meklēšanas laikā, lai mēs varētu nodrošināt atbilstošu meklēšanas filtru mehānismu darbību.
+
+Tiek apkopoti šādi lauki:
+
+- **properties_general** — vispārīgi rekvizīti, kurus apkopo visi Aria notikumi
+
+- **selected_reason** — tipa atzīmes atlases iemesls, kas var būt viena no šim trim vērtībām: tap_on_header, tap_on_see_all, enter_search_mode
+
+- **subtab_type** — tipa atzīme, kas tika atlasīta un varētu būt viena no šīm četrām vērtībām: viss, pasts, kontaktpersona, notikums.
 
 #### <a name="send_message"></a>send_message
 
@@ -6874,7 +6998,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.LicenseFormat** — licences formāts: XrML vai JSON
 
-- **RMS.NoOfDomainsSearched** — meklēto domēnu skaits  
+- **RMS.NoOfDomainsSearched** — meklēto domēnu skaits    
 
 - **RMS.NoOfDomainsSkipped** — izlaisto domēnu skaits 
 
@@ -6887,6 +7011,22 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
 
 - **RMS.StatusCode** — darbības rezultāta statusa kods
+
+#### <a name="first_visible"></a>first_visible
+
+Šis notikums ļauj mums atklāt pirmo reizi, kad lietotājs ar nodomu palaiž lietojumprogrammu. Šis notikums ir nepieciešams, lai nodrošinātu lietojumprogrammas veiksmīgu darbību oriģinālā aprīkojuma ražotāja (OEM) būvējumos. 
+
+Tiek apkopoti šādi lauki:
+
+- **is_oem** — izsekošanas lauks, kas norāda uz to, vai lietojumprogramma darbojas OEM variantā
+
+- **is_system_install** — izsekošanas lauks, kas izseko iepriekš instalēta rekvizītu failu esamību, kas norāda, ka šī instalācija ir OEM 
+
+- **manufacturer** — ierīces ražotājs
+
+- **model** — ierīces modelis
+
+- **systemFlagSet** — Android sistēmas karodziņa vērtība (ApplicationInfo. FLAG_SYSTEM), kas norāda, vai lietojumprogramma ir instalēta kā daļa no ierīces sistēmas
 
 #### <a name="getuserop"></a>GetUserOp
 
@@ -7346,11 +7486,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **TotalTime** — iztērētais laiks kopā.
 
-#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.AppBootComplete 
 
 Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.  Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki: 
+Tiek apkopoti šādi lauki: 
 
 - **ACTIVITY_BOOT_TIME_IN_MS** — aktivitātes izveides pabeigšanai veltītais laiks
 
@@ -7386,7 +7526,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **IS_COLD_BOOT** — norāda, vai lietojumprogramma tiek sāknēta, kad lietojumprogramma nedarbojas fonā
 
-- **IS_FIRST_LAUNCH** — norāda, vai šī ir pirmā reize, kad lietojumprogramma ir palaista ierīcē. 
+- **IS_FIRST_LAUNCH** — norāda, vai šī ir pirmā reize, kad lietojumprogramma ir palaista ierīcē.
+
+- **IS_FOLDABLE_TYPE** — norāda, vai ierīce ir salokāma ierīce
 
 - **IS_PHONE** — norāda, vai ierīce ir tālrunis vai planšetdators
 
@@ -7446,23 +7588,27 @@ Tiek apkopoti tālāk norādītie lauki:
  
 - **USER_INTERACTED_DURING_EVENT** — norāda, vai lietotājs ir mijiedarbojies sāknēšanas laikā
 
-#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.OneNoteAppForeground
 
 Signāls, kas norāda, vai OneNote lietojumprogramma ir priekšplānā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
 
 Tiek apkopoti tālāk norādītie lauki: nav
 
-#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch"></a>OneNote.AppLaunch *(iepriekšējais nosaukums)*, Office.Android.EarlyTelemetry.AppLaunch
 
 Kritiskais signāls, kas tiek izmantots, lai OneNote lietotāji varētu veiksmīgi palaist lietojumprogrammu.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
 
-Tiek apkopoti tālāk norādītie lauki: 
+Tiek apkopoti šādi lauki: 
+
+- **ANDROID_SDK_VERSION** — fiksē Android SDK versiju
 
 - **FirstLaunchTime** — reģistrē laiku, kad lietojumprogramma tika palaista pirmo reizi
 
 - **InstallLocation** — norāda, vai lietojumprogramma ir sākotnēji instalēta vai lejupielādēta veikalā
 
 - **is_boot_completed_ever** — norāda, vai iepriekš lietojumprogramma ir veiksmīgi sāknēta ierīcē 
+
+- **IS_DARK_MODE_ENABLED** — Būla, kas norāda, vai lietojumprogramma ir tumšajā režīmā
 
 - **NewOneNoteUser** — Identificē, vai lietotājs ir jauns lietotājs
 
@@ -7604,7 +7750,7 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_Doc\_ServerDocId:string —** nemainīgs identifikators mākonī saglabātajiem dokumentiem
 
   - **Data\_Doc\_ServerProtocol:long —** iepriekš definētu vērtību kopa, kas norāda, kurš protokols tiek izmantots, lai sazinātos ar serveri (HTTP, Cobalt, WOPI utt.)
-
+ 
   - **Data\_Doc\_ServerType:long —** iepriekš definētu vērtību kopas servera tipam (SharePoint, DropBox, WOPI)
 
   - **Data\_Doc\_ServerVersion:long —** vai servera pamatā ir Office14, Office15 vai Office16?
@@ -7732,6 +7878,10 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_NotRequiredExcludedParts —** kopējais to ZIP pakotnes daļu skaits, kas nav nepieciešamas pirmajai atveidei un ir izslēgtas
 
   - **Data\_NotRequiredExcludedPartsSize —** kopējais to ZIP pakotnes daļu lielums, kas nav nepieciešamas pirmajai atveidei un ir izslēgtas
+
+  - **Data_OngoingBlockingOpenCount —** norāda pašlaik darbībā esošo atvēršanas bloķēšanas protokolu skaitu.
+  
+  - **Data_OngoingOpenCount —** norāda pašlaik darbībā esošo atvēršanas protokolu skaitu.
 
   - **Data\_OpenCompleteFailureHR —** rezultāts, kāpēc neizdevās OpenComplete protokols
 
@@ -8284,7 +8434,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_BytesSynchronous —** baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu
 
-  - **Data\_BytesUnknown —** baitu skaits dokumenta daļās, kuras neplānojam atrast
+  - **Data\_BytesUnknown —** baitu skaits dokumenta daļās, kuras neplānojam atrast.
 
   - **Data\_Doc\_AccessMode —** dokuments ir tikai lasāms/rediģējams
 
@@ -9275,7 +9425,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **SessionBuildNumber** — avarējušās lietojumprogrammas versija.
 
-- **SessionIDSMatch** — būla, lai pārliecinātos par to, ka atskaites sesijas ID ir tāds pats kā MERP fiksētais.
+- **SessionIDSMatch** — Būla, lai pārliecinātos par to, ka atskaites sesijas ID ir tāds pats kā MERP fiksētais.
 
 - **SessionVersion** — avarējušās lietojumprogrammas versija — **StackHash** — avarējušas lietojumprogrammas steka trasēšanas jaukšana.
 
@@ -9457,7 +9607,7 @@ Tiek apkopoti šādi lauki:
  
 Tiek apkopoti šādi lauki: 
 
-- **Lapa** — tā tiek lietota, lai izsekotu, kāda veida pieredzi lietotājs pirmo reizi redz, kad nonāk lapā. Iespējamās vērtības ir "Izmēģinājumversija", "izlaist", "Salikts", "Abonements" utt.
+- **Lapa** — tā tiek lietota, lai izsekotu, kāda veida pieredzi lietotājs pirmo reizi redz, kad nonāk lapā. Iespējamās vērtības ir "Izmēģinājumversija", "Izlaist", "Salikts", "Abonements" utt.
 
 - **storeExperience** — var izmantot, lai noteiktu, vai lietotājs ir tiesīgs skatīt veikala SDK pieredzi.
 
@@ -9524,6 +9674,86 @@ Tiek apkopoti tālāk norādītie lauki.
 - **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
 
 - **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips 
+
+- **RMS.StatusCode** — atgrieztā rezultāta statusa kods
+
+- **RMS.TemplatesCount** — veidņu skaits
+
+- **RMS.TokenProvided** — norāda, vai ir nodrošināts marķieris kā API izsaukuma ievade 
+
+- **RMS.UserProvided** — norāda, vai ir nodrošināts klients kā API izsaukuma ievade 
+
+- **UserInfo.UserObjectId** — lietotāja objekta ID
+
+#### <a name="ipcpgetkey"></a>IpcpGetKey
+
+Tiek apkopots, kad lietotājs mēģina atvērt ar informācijas piekļuves tiesību pārvaldības (IRM) aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpGetKey API izsaukuma laikā.
+
+Tiek apkopoti šādi lauki:
+
+- **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
+
+- **AppInfo.Name** — lietojumprogrammas nosaukums
+
+- **AppInfo.Version** — lietojumprogrammas versija
+
+- **iKey** — pieteikšanās pakalpojuma servera ID
+
+- **RMS.ApplicationScenarioId** — scenārija ID, ko nodrošina lietojumprogramma
+
+- **RMS.AuthCallbackProvided** — norāda, vai autentificēšanas atzvanīšana tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.ConnectionMode** — savienojuma režīms starp tiesību pārvaldības pakalpojuma klientu un serveri: tiešsaistē vai bezsaistē
+
+- **RMS.ContentId** — dokumenta satura ID
+
+- **RMS.Duration** — kopējais laiks API izsaukuma veikšanai
+
+- **RMS.DurationWithoutExternalOps** — kopējais patērētais laiks mīnus ārējās operācijas, piemēram, tīkla latentums.
+
+- **RMS.ErrorCode** — atgrieztais kļūdas kods, ja tāds ir, no API izsaukuma
+
+- **RMS. EulId** — gala lietotāja licences ID
+
+- **RMS.EulProvided** — norāda, vai gala lietotāja licence tiek nodrošināta kā API izsaukuma ievade
+
+- **RMS.GuestTenant** — lietotāja viesa nomnieka ID 
+
+- **RMS.HomeTenant** — lietotāja vietējā nomnieka ID
+
+- **RMS.HttpCall** — norāda, vai pastāv HTTP operācija
+
+- **RMS.Identity.ExtranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera ārtīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.IntranetUrl** — lietotāja tiesību pārvaldības pakalpojuma servera iekštīkla URL, kas tiek apkopots, iegūstot jaunu tiesību konta sertifikātu no servera
+
+- **RMS.Identity.Status** — pirmā reize, lai iegūtu tiesību konta sertifikātu no servera vai atjaunotu tiesību konta sertifikātu 
+
+- **RMS.Identity.Type** — lietotāja konta tips, piemēram, Windows konts vai Live konts
+
+- **RMS.Identity.UserProvided** — norāda, vai lietotāja e-pasta adrese ir nodrošināta, kad saņemat jaunu tiesību konta sertifikātu no servera
+
+- **RMS.IssuerId** — tiesību pārvaldības pakalpojuma servera ID, kas izsniedz tiesību konta sertifikātu 
+
+- **RMS.KeyHandle** — atslēgas tura atmiņas adrese
+
+- **RMS.LicenseFormat** — licences formāts: XrML vai JSON
+
+- **RMS.PL.ExtranetUrl** — publicēšanas licences ārtīkla vietrādis URL
+
+- **RMS.PL.IntranetUrl** — publicēšanas licences iekštīkla vietrādis URL
+
+- **RMS.PL.KeyType** — norāda, vai PL bija aizsargāts ar vienkāršas atslēgas vai divkāršas atslēgas aizsardzību.
+
+- **RMS.RACType** — tiesību konta sertifikāta tips
+
+- **RMS.Result** — API izsaukums sekmīgs vai neizdevās
+
+- **RMS.ScenarioId** — scenārija ID, ko definē API
+
+- **RMS.SDKVersion** — tiesību pārvaldības pakalpojuma klienta versija
+
+- **RMS.ServerType** — tiesību pārvaldības pakalpojuma servera tips
 
 - **RMS.StatusCode** — atgrieztā rezultāta statusa kods
 
@@ -9820,7 +10050,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_apple_whatsnewerrorandwarning"></a>Office_Apple_WhatsNewErrorAndWarning
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu, kas ir jaunā līdzekļa darbspēju. Šis notikums norāda, ka, parsējot jaunumu saturu, radās kļūda/brīdinājums, norādot uz potenciālām satura autorēšanas problēmām.
+Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Pasākums tiek lietots, lai pārraudzītu, kas ir jaunā līdzekļa darbspēju. Šis notikums norāda, ka, parsējot jaunumu saturu, radās kļūda/brīdinājums, norādot uz potenciālām satura autorēšanas problēmām.
 
 Tiek apkopoti šādi lauki:
 
@@ -10093,7 +10323,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_WasSuccessful: bool —** patiess, ja notikusi veiksmīga atvēršana
 
-#### <a name="onenotesyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(iepriekšējais nosaukums)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt. Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
 
@@ -10109,7 +10339,7 @@ Tiek apkopoti šādi lauki:
 
 - **TimeTakenInMilliSeconds** — norāda nodrošināšanas pabeigšanai nepieciešamo laiku milisekundēs
 
-#### <a name="onenotesyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(iepriekšējais nosaukums)*, Office.OneNote.Android.Sync.ProvisioningStarted
 
 Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
 
@@ -10664,6 +10894,22 @@ Tiek apkopoti tālāk norādītie lauki:
 - **ErrorAt** — atzīmes vērtība: informācija par vietu, kurā notika kļūme
 
 - **ExceptionErrorMessage** — izvērsts kļūdas ziņojums
+
+#### <a name="office_android_earlytelemetry_expansionfileserrors"></a>Office_Android_EarlyTelemetry_ExpansionFilesErrors
+
+Android paplašināšanas failu komplekta (APK) paplašināšanas faili Office mobilajai lietojumprogrammai ir papildu resursu faili, kurus Android lietojumprogrammu izstrādātāji var publicēt kopā ar savu lietojumprogrammu. Lai padarītu mūsu paplašināšanas failu lejupielādes mehānismu par uzticamāku, mēs reģistrējam kļūdu iemeslus, kas rodas lejupielādējot paplašināšanas failus vai lasot lejupielādētos paplašināšanas failus.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ClassName** — teksts, kas norāda avota koda faila nosaukumu, kurā ir kļūda.
+
+- **Data_ErrorMessage** — teksts, kas norāda neveiksmīgo darbību.
+
+- **Data_ExceptionMessage** — neobligāts teksta lauks, kas norāda izņēmuma iemeslu.
+
+- **Data_ExceptionType** — neobligāts teksta lauks, kas norāda izņēmumu, kas tiek izmests avota koda.
+
+- **Data_MethodName** — teksts, kas norāda metodes nosaukumu avota kodā, kurā ir kļūda.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
