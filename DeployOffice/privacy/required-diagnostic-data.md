@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 065fb887fe0af4bb68576310c3ceb4842b163bf1
-ms.sourcegitcommit: 95aa5a2587e7333dfbb2ab0d4d898789645a4275
+ms.openlocfilehash: fbb0e7b095becb664ff05fef67cd47f3360130b2
+ms.sourcegitcommit: 269825241b1fa1831655ff599c97d5afa85b3895
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42946191"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42983741"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -524,6 +524,122 @@ Zemāk norādītie datu lauki ir kopīgi visiem OneNote notikumiem Mac, iOS un A
 - **UserInfo_OtherId** — lietotāja kontus identificējošo pseidonīmu identifikatoru, kas nav primāri, saraksts.
 
 - **UserInfo_OtherIdType** —  kontu veidu, kas nav primāri, saraksts.
+
+## <a name="data-fields-that-are-common-for-outlook-mobile-events"></a>Outlook mobilo notikumu kopīgie datu lauki
+
+Outlook mobilā versija apkopo kopīgos laukus katram mūsu notikumam, kas ļauj mums nodrošināt to, ka lietojumprogramma ir atjaunināta uz jaunāko versiju, darbojas atbilstošā un drošā veidā. 
+
+Tālāk norādītie datu lauki ir kopīgi visiem Outlook notikumiem iOS un Android operētājsistēmās.
+
+- **aad_tenant_id** — klienta nomnieka ID, ja ir pieejams
+
+- **account_cid** — identifikatora pseidonīms, kas apzīmē pašreizējo lietotāju
+
+- **account_domain** — konta domēna nosaukums
+
+- **account_puid** — globāli unikāls lietotāja identifikators Microsoft lietotāja kontam
+
+- **account_type** — seko konta veidam, piemēram, Office 365, Google Cloud Cache, Outlook.com utt.
+
+- **action** — notikuma darbības nosaukums (piemēram, arhivēšana, dzēšana utt.), lai mēs spētu atklāt problēmas ar konkrētām veiktajām darbībām
+
+- **ad_id** — unikālais reklāmas identifikators
+
+- **app_version**— instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
+
+- **AppInfo.ETag** — unikāls identifikators mūsu līdzekļu laidienu pārvaldībai, kas palīdz mums atklāt problēmas, kas ietekmē konkrētu līdzekļu izlaišanu
+
+- **AppInfo.Language** — pašreizējais ierīces valodas iestatījums, kas palīdz mums atklāt problēmas, kas ietekmē konkrētas valodas
+
+- **AppInfo.Version**— instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
+
+- **customer_type** — norāda klienta tipu (patērētājs, komerciālais, trešā puse utt.), kas palīdz mums atklāt problēmas ar konkrētie klientu veidiem
+
+- **device_category** — norāda, kāda veida ierīce tā ir (tālrunis, planšetdators utt.) un palīdz mums atklāt ierīču kategorijām raksturīgas problēmas
+
+- **DeviceInfo.Id** — unikāls ierīces identifikators, kas palīdz mums atklāt konkrētas problēmas
+
+- **DeviceInfo.Make** — ierīces marka (piem., Apple, Samsung utt.) palīdz mums noteikt konkrētām ierīču markām raksturīgas problēmas
+
+- **DeviceInfo.Model** — ierīces modelis (piem., iPhone 6s) palīdz atklāt konkrētiem ierīces modeļiem raksturīgas problēmas
+
+- **DeviceInfo.NetworkType** — tīkls, kuru ierīce pašlaik izmanto (WiFi, mobilo datu tīkls, utt.), palīdz mums atklāt konkrētiem tīkliem raksturīgas problēmas
+
+- **DeviceInfo.OsBuild** — pašreizējās ierīces operētājsistēmas būvējums palīdz mums atklāt problēmas, kas ietekmē konkrētus operētājsistēmu būvējumus
+
+- **DeviceInfo.OsName** — operētājsistēmas nosaukums (piemēram, iOS) palīdz mums atklāt problēmas, kas ietekmē konkrētas platformas
+
+- **DeviceInfo.OsVersion** — pašreizējās ierīces operētājsistēmas versija palīdz mums atklāt problēmas, kas ietekmē konkrētas operētājsistēmas versijas
+
+- **DeviceInfo.SDKUid** — ierīces unikālais identifikators (līdzīgs DeviceInfo.Id)
+
+- **EventInfo.InitId** — ID izmanto kā daļu no notikumu secības noteikšanas mūsu telemetrijas kanālā, lai palīdzētu mums atklāt kanāla problēmas galveno cēloni
+
+- **EventInfo.SdkVersion** — SDK versija, ko izmantojam, lai nosūtītu mūsu telemetrijas datus, lai atklātu kanāla problēmas galveno cēloni
+
+- **EventInfo.Sequence** — secība notikumu secības noteikšanai mūsu telemetrijas kanālā, lai palīdzētu mums atklāt kanāla problēmas galveno cēloni
+
+- **EventInfo.Source** — norāda uz koda daļu, kas nosūtīja notikumu, lai palīdzētu mums atklāt problēmas galveno cēloni
+
+- **EventInfo.Time** — datums un laiks, kad notikums tika pārraidīts no ierīces, lai mūsu sistēmas spētu veiksmīgi pārvaldīt ienākošos notikumus
+
+- **eventpriority** — telemetrijas notikuma prioritāte attiecībā pret citiem notikumiem, lai mūsu sistēmas varētu veiksmīgi pārvaldīt ienākošos notikumus
+
+- **first_launch_date** — laiks, kad ierīce tika palaista pirmo reizi, palīdz mums saprast, kad sākās problēmas
+
+- **hashed_email** — identifikatora pseidonīms, kas apzīmē pašreizējo lietotājā e-pastu
+
+- **is_first_session** — atkļūdošanas vajadzībām izseko, vai šī ir lietojumprogrammas pirmā sesija
+
+- **origin** — darbības izcelsme. Piemēram, ziņojuma atzīmēšana kā lasīta var izcelties no ziņojumu saraksta vai paziņojuma par jaunu e-pasta ziņojumu. Palīdz mums atklāt problēmas, kas ir saistītas ar darbības izcelsmi
+
+- **PipelineInfo.AccountId** — identifikatora pseidonīms, kas apzīmē pašreizējo lietotāju
+
+- **PipelineInfo.ClientCountry** — pašreizējā ierīces valsts, lai noteiktu valstij vai reģionam raksturīgas problēmas un traucējumus
+
+- **PipelineInfo.ClientIp** — ierīces IP adrese, kurai ierīce ir pieslēgta, lai atkļūdotu savienojuma problēmas
+
+- **PipelineInfo.IngestionTime** — laikspiedols, kad notiek šī notikuma telemetrijas uzņemšana
+
+- **Session.Id** — unikāls lietojumprogrammas sesijas identifikators, kas palīdz mums atklāt ar sesiju saistītas problēmas
+
+- **Session.ImpressionId** — unikāls identifikators, lai pārvaldītu mūsu līdzekļu laidienus un nodrošinātu, ka līdzekļi tiek sekmīgi izlaisti visiem lietotājiem un ierīcēm
+
+- **ui_mode** — norāda, vai lietotājs izmanto gaišo vai tumšo saskarnes režīmu, un palīdz mums diagnosticēt UX kļūdas tumšajā režīmā
+
+- **UserInfo.Language** — lietotāja valoda palīdz mums atkļūdot tulkojumu teksta problēmas
+
+- **UserInfo.TimeZone** — lietotāja laika josla palīdz mums atkļūdot kalendāra problēmas
+
+
+Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar iOS notikumiem.
+
+- **cloud** — kur šajā ierīcē atrodas pastkaste, lai palīdzētu mums atklāt problēmas, kas ir raksturīgas konkrētai mākoņa pastkastei, piemēram, Office 365 vai GCC.
+
+- **DeviceInfo.NetworkProvider** — tīkla, kuram pieslēgta ierīce, operators (piem., Verizon)
+
+- **gcc_restrictions_enabled** — norāda, vai GCC ierobežojumi tika piemēroti lietojumprogrammai, lai mēs spētu nodrošināt to, ka mūsu GCC klienti izmanto mūsu lietojumprogrammu drošā veidā
+
+- **office_session_id** — unikāls ID, kas izseko sesijai pievienotajiem Office pakalpojumiem, lai palīdzētu mums atklāt Office pakalpojumu integrēšanai Outlook, piemēram, Word, raksturīgas problēmas
+
+- **state** — norāda, vai lietojumprogramma bija aktīva, kad šis notikums tika nosūtīts, lai palīdzētu atklāt problēmas, kas raksturīgas aktīvajiem vai neaktīvajiem lietojumprogrammu stāvokļiem
+
+
+Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar Android notikumiem.
+
+- **DeviceInfo.NetworkCost** — norāda ierīces pašreizējā tīkla izmaksas, kas atspoguļo WiFi/mobilo datu tīkla/viesabonēšanas statusu, lai palīdzētu atklāt ierīces tīklam raksturīgas problēmas
+
+- **is_app_in_duo_split_view_mode** — informē mūs par to, ka ierīce bija Duo dalītā ekrāna režīmā.  Šis rekvizīts ir iestatīts tikai Duo ierīcēm (tikai Android).
+
+- **is_dex_mode_enabled** — norāda, vai Samsung DeX režīms ir iespējots, lai palīdzētu noteikt problēmas, kas raksturīgas DeX režīmam Samsung ierīcēs
+
+- **is_sliding_drawer_enabled** — vai bīdāmās atvilktnes saskarne ir iespējota, lai palīdzētu mums atklāt problēmas ar mūsu bīdāmās atvilktnes saskarni
+
+- **orientation** — ekrāna fiziskais novietojums (portrets/ainava), kas palīdz mums atklāt ierīces novietojumam raksturīgas problēmas
+
+- **os_arch** — ierīces operētājsistēmas arhitektūra palīdz mums atklāt ierīču operētājsistēmām raksturīgas problēmas
+
+- **process_bitness** — procesa bitu skaits (32 vai 64 biti) lietojumprogrammai palīdz mums atklāt ierīces bitu skaitam raksturīgas problēmas
 
 ## <a name="software-setup-and-inventory-data-events"></a>Programmatūras iestatīšanas un inventāra datu notikumi
 
@@ -2982,7 +3098,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilitycatalogexchangeprocessmanifest"></a>Office.Extensibility.Catalog.ExchangeProcessManifest
 
-Dati par O365 nomnieka administratoram piešķirtās individuālās pievienojumprogrammas manifesta apstrādi. Tiek izmantots klientu problēmu analīzē un klientu panākumu diagrammu izveidē.
+Dati par Office 365 nomnieka administratoram piešķirtās individuālās pievienojumprogrammas manifesta apstrādi. Tiek izmantots klientu problēmu analīzē un klientu panākumu diagrammu izveidē.
  
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3695,7 +3811,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu O365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.).
+Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas aktivizēšanas plūsmas darbspēju. Mēs apkopojam datus, lai noskaidrotu Office 365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (Pirmā palaišanas pieredze, Programmas plūsma, Iegāde utt.).
 
 Tiek apkopoti šādi lauki:
 
@@ -3707,7 +3823,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Mēs apkopojam datus, lai noskaidrotu O365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (PPP, Programmas plūsma, Iegāde utt.). Mēs apkopojam datus, kas satur aktivizācijas tipu, plūsmas tipu (Pirmā palaišanas plūsma/DocStage/Iegāde) un Office licencēšanas pakalpojuma ID.
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Mēs apkopojam datus, lai noskaidrotu Office 365 abonementa aktivizēšanas rezultātus kopā ar plūsmu, kas tiek lietota aktivizācijai (PPP, Programmas plūsma, Iegāde utt.). Mēs apkopojam datus, kas satur aktivizācijas tipu, plūsmas tipu (Pirmā palaišanas plūsma/DocStage/Iegāde) un Office licencēšanas pakalpojuma ID.
 
 Tiek apkopoti šādi lauki:
 
@@ -4240,7 +4356,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_URLHash** — GUID faila URL
 
-- **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos.
+- **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos
 
 - **Data_ErrorMessage** — atbilstošais ziņojuma par kļūdu kods
 
@@ -7158,9 +7274,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
 
-Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku WXP lietojumprogrammās.
+Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **AppLaunchResponsiveTimeInMilliSec** — lietojumprogrammas sāknēšanas atbildes laiks
 
@@ -9819,9 +9935,9 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
-Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku WXP lietojumprogrammās.
+Ir būtiski svarīgs, lai fiksētu lietojumprogrammas veiktspējas rādītāju attiecībā uz lietojumprogrammas atbildes laiku no sāknēšanas.  Microsoft to izmanto, lai apkopotu laiku, kas ir nepieciešams lietojumprogrammai, lai atbildētu, kā arī, lai noteiktu scenārijus, kas varat ietekmēt sāknēšanas laiku Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
  
 - **AnyCrashInteractionDuringBoot** — būla jebkurai avārijai, kas rodas sāknēšanas laikā
 
@@ -10475,9 +10591,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
 
-Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās WXP lietojumprogrammu kļūme.
+Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās Word, Excel vai PowerPoint lietojumprogrammu kļūme.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **AccessMode** — faila piekļuves režīma uzskaitījuma vērtība. Vērtības — nav, ReadOnly, ReadOnlyUpgradable, ReadWrite
 
@@ -10567,9 +10683,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
 
-Tver faila asinhronizācijas saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus WXP lietojumprogrammās.
+Tver faila asinhronizācijas saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **FileExtension** — faila paplašinājums
 
@@ -10583,9 +10699,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
 
-Tver faila atvēršanas statusa datus un dažādu kļūdu kodus, lai identificētu, kādas ir faila atvēršanas paredzētās un neparedzētās kļūmes un kura koda daļa ziņo par to.  Microsoft izmanto šos datus, lai analizētu faila atvēršanas kļūmju iemeslus un aprēķinātu kritisko metriku, piemēram, faila atvēršanas izdošanās pakāpi WXP lietojumprogrammās.
+Tver faila atvēršanas statusa datus un dažādu kļūdu kodus, lai identificētu, kādas ir faila atvēršanas paredzētās un neparedzētās kļūmes un kura koda daļa ziņo par to.  Microsoft izmanto šos datus, lai analizētu faila atvēršanas kļūmju iemeslus un aprēķinātu kritisko metriku, piemēram, faila atvēršanas izdošanās pakāpi Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **AccessMode** — piekļuves režīma uzskaitījums
 
@@ -10607,7 +10723,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **FirstBCSClientError_Info** — pēdējā BCS (binārā konvertēšanas pakalpojums) klienta kļūda
 
-- **IfWordFileOpenCancelled** — ja lietotājs atcēla faila atvēršanu Word lietojumprogrammā
+- **IfWordFileOpencanceled** — ja lietotājs atcēla faila atvēršanu Word lietojumprogrammā
 
 - **InitializationReason** — uzskaitījums, kas norāda faila atvēršanas ieejas punktu
 
@@ -10631,7 +10747,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **ProviderFileSize** — faila lielums, kas notverts, atverot failu ar faila aktivāciju
 
-- **Stae** — faila atvēršanas stāvokļa uzskaitījums
+- **State** — faila atvēršanas stāvokļa uzskaitījums.
 
 - **UriScheme** — URL shēma
 
@@ -10647,9 +10763,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
 
-Būtiski svarīgs, lai tvertu faila saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus WXP lietojumprogrammās.
+Būtiski svarīgs, lai tvertu faila saglabāšanas statusa datus un dažādus kļūdu kodus no dažādiem komponentiem.  Microsoft izmanto šos datus, lai analizētu, vai lietojumprogrammā pastāv lietotāju datu zudumi, saglabājot failus Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **AccessMode** — Vērtības** — nav, ReadOnly, ReadOnlyUpgradable, ReadWrite.
 
@@ -10751,9 +10867,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
 
-Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās WXP lietojumprogrammu kļūme.
+Kritiskie dokumenti tikai Android (AppDocs) telemetrijas dati faila jauns/atvērt/saglabāt kā beigu darbībām. Uzskaita šo AppDocs neveiksmīgo darbību kļūdu kodus.  Microsoft to izmanto, lai noteiktu kļūmes dažādās failu darbībā un precīzo slāni, kurā radās Word, Excel vai PowerPoint lietojumprogrammu kļūme.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **AccessMode** — faila piekļuves režīma uzskaitījuma vērtība.  Vērtības: nav, ReadOnly, ReadOnlyUpgradable, ReadWrite
 
@@ -10821,9 +10937,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
-Binārās konversijas kļūdu telemetrija PDF drukāšanai un koplietošanai.  Microsoft to izmanto, lai identificētu kļūmes punktus BCS konversijas laikā WXP lietojumprogrammās.
+Binārās konversijas kļūdu telemetrija PDF drukāšanai un koplietošanai.  Microsoft to izmanto, lai identificētu kļūmes punktus BCS konversijas laikā Word, Excel vai PowerPoint lietojumprogrammās.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **DocumentFileSize** — faila lielums.
 
@@ -10845,9 +10961,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
 
-Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot WXP lietojumprogrammas. 
+Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot Word, Excel vai PowerPoint lietojumprogrammas. 
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **ClientTransactionId** — GUID, kas tiek nodots DSC specifiskam izpirkšanas pieprasījumam.
 
@@ -10887,9 +11003,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
 
-Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot WXP lietojumprogrammas. 
+Kritisko kļūdu telemetrija datu bāzu kļūmei, pārlūkojot failus un pievienojot vietas.  Microsoft to izmanto, lai identificētu datu bāzu problēmas lietojumprogrammās, kas var traucēt lietotājam pievienot vietas vai pārlūkot tās lietojumprogrammās, izmantojot Word, Excel vai PowerPoint lietojumprogrammas. 
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **ErrorAt** — atzīmes vērtība: informācija par vietu, kurā notika kļūme
 
@@ -10925,9 +11041,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 #### <a name="officeandroidintuneintunejavacopyfailedattempts"></a>Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
-Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas Intune aizsargāto mākoņa dokumentu lokālo kopiju saglabāšanā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas Intune aizsargāto mākoņa dokumentu lokālo kopiju saglabāšanā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **Data_FileCreationFailedErrorCode** — ar plūsmu saistīts kļūdas kods
 
@@ -10935,31 +11051,31 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas mēģinot iegūt ADAL marķieri Intune resursiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **Data_ErrorCode** — ar plūsmu saistīts kļūdas kods
 
 #### <a name="officeandroidintuneintunejavaexceptionapppolicy"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicy
 
-Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējā procesa identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējā procesa identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
  
 - Nav
 
 #### <a name="officeandroidintuneintunejavaexceptionapppolicyforcontext"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
 
-Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējās darbības identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pašreizējās darbības identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
  
 - Nav
 
 #### <a name="officeandroidintuneintunejavaexceptionauthenticationcallback"></a>Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
 
-Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar reģistrāciju autentifikācijas atzvanīšanai pārvaldītajiem kontiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc pierakstīšanās lietojumprogrammā ar darba kontu
+Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar reģistrāciju autentifikācijas atzvanīšanai pārvaldītajiem kontiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -10975,7 +11091,7 @@ Tiek apkopoti šādi lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas ar saglabāšanu lokāli saistītajā ienešanas politikā.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -10983,7 +11099,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar identitātes ienešanas politikām.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -10991,7 +11107,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar aizsardzības informāciju saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
   
 - Nav
 
@@ -10999,7 +11115,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar aizsardzības informāciju saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11007,7 +11123,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pārvaldītā konta lietotāja interfeisa politiku ienešanu.   Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11015,7 +11131,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar konta pārvaldības identificēšanu.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11023,7 +11139,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar komponentu reģistrāciju atzvanīšanai.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11031,7 +11147,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar pārvaldītā dokumenta aizsardzību saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11039,7 +11155,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot ar pārvaldītā dokumenta aizsardzību saistītajiem Intune API.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11047,7 +11163,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar Intune Management konta reģistrāciju.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11055,7 +11171,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar iestatījumu politikām pārvaldītajam konta.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11063,7 +11179,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar Intune Management attālinātās dzēšanas scenārijiem.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
@@ -11071,15 +11187,15 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Kritisko kļūdu telemetriju, lai izsekotu neveiksmēm atsevišķiem Intune API; šī telemetrija tiek reģistrēta gadījumos, kad notiek kļūdas izsaucot Intune API, kas ir saistīti ar pārvaldītā konta atjaunināšanas autorizācijas marķieri.  Microsoft izmanto šos datus, lai identificētu kļūdas, kas rodas Intune reģistrēšanas laikā lietojumprogrammā un pēc tās pēc pierakstīšanās lietojumprogrammā ar darba kontu
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - Nav
 
 #### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
 
-Kritisko kļūdu telemetrija, kas tiek izmantota O365 kontu W/X/P lietojumprogrammās licencēšanas aktivizēšanas kļūmju izsekošanai.  Microsoft to izmanto, lai analizētu iegādāto O365 licenču aktivizēšanas kļūmes.
+Kritisko kļūdu telemetrija, kas tiek izmantota Office 365 kontu Word, Excel vai PowerPoint lietojumprogrammās licencēšanas aktivizēšanas kļūmju izsekošanai.  Microsoft to izmanto, lai analizētu iegādāto Office 365 licenču aktivizēšanas kļūmes.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **EntryPoint** — ieejas punkta uzskaitījums licenču aktivizēšanas plūsmas aktivizēšanai
 
