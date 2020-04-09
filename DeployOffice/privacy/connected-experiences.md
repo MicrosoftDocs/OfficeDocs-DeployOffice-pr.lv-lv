@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917603"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166363"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -44,6 +44,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | ----------- | ------------------ |
 | 3D kartes\*    | [Darba sākšana ar 3D kartēm](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automātisks alternatīvais teksts   | [Viss, kas jāzina, lai rakstītu efektīvu alternatīvo tekstu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Datu tipi                  | [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktēšana  | [Diktēšana sistēmā Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Redaktors    | [Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Idejas     | [Idejas programmā Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -77,7 +78,6 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | ------------- | ------------- |
 | Kalendāra lietojumprogrammas| [Kas ir kalendāra lietojumprogrammas?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Mākoņa fonti                 | [Mākoņa fonti sistēmā Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Datu tipi                  | [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | BUJ |Atlasot **Iestatījumi** > **Palīdzība un atsauksmes** > **BUJ** programmā Outlook darbam ar iOS un Android, nonāksiet pie [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Rokraksta efekti                 | [Zīmēšana un rakstīšana ar rokrakstu sistēmā Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Ikonu ievietošana                | [Ikonu ievietošana sistēmā Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
@@ -109,7 +109,6 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | ------------- | ------------- |
 | @pieminēšana | [@pieminēšanas izmantošana komentāros, lai atzīmētu personas un saņemtu atsauksmes](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd) |
 |Ideju ģenerēšanas shēma (Visio)|[Ideju ģenerēšanas shēmas izveide](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Tērzēšana | [Uzlabota sadarbība, izmantojot tērzēšanu sistēmā Microsoft Office](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
 | Drīzumā (Outlook)  |[Drīzumā](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Saziņa ar atbalsta dienestu (Outlook) | Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu**|
 | Pielāgota importēšana (Visio)  | [Datu importēšana jūsu zīmējuma formās](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |

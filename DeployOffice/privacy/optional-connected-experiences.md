@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
-ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
+ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42340913"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166273"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
-Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par "neobligātajiem saistītajiem līdzekļiem"), izmantojot Office 365 ProPlus lietojumprogrammas. Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
+Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par “neobligātajiem saistītajiem līdzekļiem”), izmantojot Office 365 ProPlus lietojumprogrammas. Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
 
 > [!NOTE]
-> Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus.
-> - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+> Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus:
+> - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
 > - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 > - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 > - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
@@ -63,7 +63,7 @@ Programmā Outlook darbam ar iOS un Android varat ziņot par problēmām un sazi
 
 ### <a name="help--suggest-a-feature"></a>Palīdzība > Līdzekļa ieteikšana
 
-Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti UserVoice [pakalpojuma sniegšanas noteikumi](https://outlook.uservoice.com/tos) un [konfidencialitātes politika](https://outlook.uservoice.com/tos#privacy-policy).
+Līdzekļa ieteikšana ir līdzeklis, kas ļauj jums iesniegt idejas par Outlook vai Excel izmantošanu. Jūsu ieteikumi tiek sniegti tieši trešās puses pakalpojumam ar nosaukumu UserVoice. Ja iesniedzat atsauksmes, izmantojot līdzekļa ieteikšanu, tiek piemēroti UserVoice [pakalpojuma sniegšanas noteikumi](https://outlook.uservoice.com/tos) un [konfidencialitātes politika](https://outlook.uservoice.com/tos#privacy-policy).
 
 ### <a name="insert-online-video"></a>Tiešsaistes video ievietošana
 
