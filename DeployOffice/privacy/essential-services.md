@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
-ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
+ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42939769"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992844"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
 > [!IMPORTANT]
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
-> - Office 365 ProPlus un Office 365 Business
-> - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
-> - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+> - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
+> - Microsoft 365 programmas darbam (iepriekš Office 365 darbam)
+> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
+> - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
 >
 > Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
@@ -40,8 +41,8 @@ Papildinformāciju skatiet šeit:
 
 Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie raksti:
 
-- [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
@@ -490,7 +491,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_PrereqFailure\_Type** — priekšnoteikumu kļūme, kāda rodas, t.i., operētājsistēma netiek atbalstīta
 
-  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Office 365 ProPlus
+  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Microsoft 365 programmas lieluzņēmumiem
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -588,7 +589,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_OfficeVersion** — versija, kādā sistēma Office ir instalēta
 
-  - **Data\_Sku** — instalētā SKU, t.i., Office 365 ProPlus.en-us
+  - **Data\_Sku** — instalētais SKU, piemēram,Microsoft 365 programmas lieluzņēmumiem
 
   - **Data\_SqmMachineID** — unikālais datora ID, ko izmanto Windows SQM Data\_SusClientID- datora Office atjaunināšanas identifikators
 
@@ -628,7 +629,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_PrereqFailure\_Type —** priekšnosacījumu kļūme, kas rodas
 
-  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Office 365 ProPlus
+  - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Microsoft 365 programmas lieluzņēmumiem
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
@@ -3061,6 +3062,8 @@ Tiek apkopoti tālāk norādītie lauki:
 - **UserDismissed** — norāda, vai lietotājs ir noraidīja dialogu, un tāpēc būtu pagarinātas vai samazinātas funkcionalitātes režīmā, jo viņi neizvēlas iegādāties Office vai saņemt izmēģinājumversiju
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
+
+*[Šis notikums ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 Veicam eksperimentu, kas lietotājam sniedz iespēju izmēģināt un iestatīt automātisko maksāšanu par Office tieši no lietojumprogrammas, neizejot no lietojumprogrammas konteksta. Tas ziņo par šī eksperimenta sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
@@ -6144,6 +6147,8 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
+- **AppID** — programmas, kurai ir lejupielādes kļūme, identifikators.
+
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
@@ -6160,6 +6165,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Error** — lejupielādes laikā novērotā kļūda.
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -6168,13 +6175,15 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu un novēroto kļūdu.
+- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu un novēroto kļūdu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **SessionId** — sesijas identifikators
+
+- **UpdateID** — lejupielādējamā atjauninājuma identifikators.
 
 
 ### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
@@ -6184,6 +6193,8 @@ Sekmīga pakotnes faila lejupielāde. Reģistrējam izmantoto atjauninājuma ce�
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
+
+- **AppID** — programmas identifikators.
 
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
@@ -6216,6 +6227,8 @@ Tiek apkopoti šādi lauki:
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **SessionId** — sesijas identifikators
+
+- **UpdateID** — lejupielādētā atjauninājuma identifikators.
 
 
 ### <a name="fba_checkforupdate"></a>fba_checkforupdate
@@ -6324,6 +6337,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Error** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu.
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -6332,7 +6347,7 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu.
+- **Payload** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -6340,6 +6355,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
+- **Success** — Būla virkne, kas norāda, vai MAU dēmona process tika palaists veiksmīgi.
 
 ### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
 
@@ -6636,6 +6652,8 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
+- **AppID** — programmas identifikators.
+
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
@@ -6652,6 +6670,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Error** — detalizēta informācija par kļūdu, kas notika programmas palaišanas brīdī pēc atjaunināšanas.
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -6660,7 +6680,7 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un palaižamās programmas nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un palaižamās programmas nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
     
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
@@ -6759,6 +6779,8 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
+- **AppID** — programmas identifikators.
+
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
@@ -6775,6 +6797,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Error** — detalizēta informācija par kļūdu, kas notika programmas izbeigšanas brīdī.
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -6783,13 +6807,15 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID. Var saturēt arī kļūdas virkni, ja Microsoft AutoUpdate nosaka, ka programma joprojām darbojas, lai gan tika saņemts darbības pārtraukšanas notikums.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID. Var saturēt arī kļūdas virkni, ja Microsoft AutoUpdate nosaka, ka programma joprojām darbojas, lai gan tika saņemts darbības pārtraukšanas notikums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **SessionId** — sesijas identifikators
+
+- **UpdateID** — programmas atjauninājuma identifikators.
 
 
 ### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
@@ -6882,6 +6908,8 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
+- **AppID** — programmas identifikators.
+
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
@@ -6898,6 +6926,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Error** — detalizēta informācija par kļūdu, kas notika programmas atjauninājuma lejupielādes brīdī.
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -6906,13 +6936,17 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **SessionId** — sesijas identifikators
+
+- **UpdateID** — programmas atjauninājuma identifikators.
+
+- **UpdateName** — programmas atjauninājuma nosaukums.
 
 
 ### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
@@ -10550,6 +10584,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
+  - **OfficeArchitectureText** — Office produkta arhitektūra kā virkne (piem., x86, arm).
+
   - **PreviousBuild** — Office versija, uz kuru šis būvējums tika jaunināts vai no kura tas tika atritināts.
 
   - **State** — stāvoklis, uz kuru sesija veica maiņu.
@@ -11286,6 +11322,8 @@ Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzd
 
 Tiek apkopoti šādi lauki:
 
+  - **AddinExecution —** karodziņš, kas informē, ja pievienojumprogramma izpildīja un nepabeidza izpildi nelabvēlīgas iziešanas no programmas laikā.
+
   - **BootCompleted —** vai Office sāknēšana tika pabeigta avārijas brīdī.
 
   - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
@@ -11343,6 +11381,8 @@ Tiek apkopoti šādi lauki:
   - **ModuleOffset —** nobīde baitos no bāzes adreses, kur kļūme radās.
 
   - **ModuleSize —** kļūdainā moduļa izmērs baitos.
+
+  - **OfficeArchitectureText** — Office produkta arhitektūra kā virkne (piem., x86, arm).
 
   - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 

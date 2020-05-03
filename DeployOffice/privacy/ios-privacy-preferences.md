@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus darbam ar iOS ierīcēm.
 hideEdit: true
-ms.openlocfilehash: d1a14d2e1bfe45710255467fcbce9ac4af2c9cb7
-ms.sourcegitcommit: 903d6bac7d8b7d8003863ac778c0b5bbdfa7a62a
+ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37604290"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992113"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Izmantojiet preferences Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -54,9 +54,18 @@ Vārdnīca tiek parādīta kā galveno/vērtību pāru kopu XML formātā. Piem�
 
 Pēc nosūtīšanas uz ierīci konfigurācijas vārdnīca atrodas zem `com.apple.managed.configuration` taustiņa, kur tā tiks lasīta, kad tiek palaista Office programma.
 
+> [!NOTE]
+> Jūs varat izmantot arī Office politiku mākoņpakalpojumu un tālāk minētos 4 politikas iestatījumus.
+> - Konfigurēt to klienta programmatūras diagnostikas datu līmeni, kurus Office nosūta korporācijai Microsoft
+> - Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu
+> - Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu
+> - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
+>
+> Papildinformāciju par to, kā izmantot Office politiku mākoņpakalpojumu, skatiet rakstā [Pārskats par Office politiku mākoņpakalpojumu](../overview-office-cloud-policy-service.md).
+
 ## <a name="preference-setting-for-diagnostic-data"></a>Diagnostikas datu preferenču iestatījums
 
-Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
+Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
 |||
 |:-----|:-----|
@@ -64,9 +73,9 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 |**Datu tips**  | Virkne |
 |**Iespējamās vērtības**  | `BasicDiagnosticData` *(tiek iestatīts līmenis, kas nepieciešams)* <br/> `FullDiagnosticData` *(tiek iestatīts līmenis kā neobligāts)* <br/> `ZeroDiagnosticData` *(līmenis netiek iestatīts)* |
 
-Ja neiestatīsit šo preferenci, Microsoft tiks sūtīti tikai nepieciešamie diagnostikas dati, ja lietotāji ar Office 365 abonementu būs pierakstījušies, izmantojot darba vai mācību kontu. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
+Ja neiestatīsit šo preferenci, Microsoft tiks sūtīti tikai nepieciešamie diagnostikas dati, ja lietotāji ar Office 365 (vai Microsoft 365) abonementu būs pierakstījušies, izmantojot darba vai mācību kontu. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai nepieciešamie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt neobligātos diagnostikas datus, dodoties uz **Iestatījumi** > **Konfidencialitātes iestatījumi**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, tiek sūtīti tikai nepieciešamie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt neobligātos diagnostikas datus, dodoties uz **Iestatījumi** > **Konfidencialitātes iestatījumi**.
 
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Preferences iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
@@ -82,9 +91,9 @@ Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu
 
 Ja neiestatīsit šo preferenci, lietotāji varēs izmantot saistītos līdzekļus, kas analizē saturu.
 
-Ja lietotājam ir Office 365 abonements un ir pierakstījies ar darba vai mācību kontu, lietotājs nevar izslēgt saistītos līdzekļus, kas analizē saturu.
+Ja lietotājam ir Office 365 (vai Microsoft 365) abonements un ir pierakstījies ar darba vai mācību kontu, lietotājs nevar izslēgt saistītos līdzekļus, kas analizē saturu.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas analizē saturu, dodoties uz **Iestatījumi** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas analizē saturu, dodoties uz **Iestatījumi** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-connected-experiences-that-download-online-content"></a>Politikas iestatījums saistītajiem līdzekļiem, kas lejupielādē tiešsaistes saturu
 
@@ -99,9 +108,9 @@ Saistīti līdzekļi, kas lejupielādē tiešsaistes saturu, ir līdzekļi, kas 
 
 Ja neiestatīsit šo preferenci, lietotāji varēs izmantot saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
 
-Ja lietotājam ir Office 365 abonements un ir pierakstījies ar darba vai mācību kontu, lietotājs nevar izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
+Ja lietotājam ir Office 365 (vai Microsoft 365) abonements un ir pierakstījies ar darba vai mācību kontu, lietotājs nevar izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu, dodoties uz **Iestatījumi** > **Konfidencialitātes iestatījumi**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu, dodoties uz **Iestatījumi** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-optional-connected-experiences"></a>Preferences iestatījums neobligātajiem saistītajiem līdzekļiem
 
@@ -114,6 +123,6 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, pastāv daži papildu
 |**Iespējamās vērtības**  | `TRUE` *(iespējots)* <br/> `FALSE` *(atspējots)*|
 
 
-Ja neiestatīsit šo preferenci, lietotājiem ar Office 365 abonementu, kas būs pierakstījušies, izmantojot darba vai mācību kontu, būs pieejami neobligātie saistītie līdzekļi. Ja vien neesat iestatījis šo preferenci uz APLAMI, šie lietotāji var izvēlēties izslēgt neobligātos saistītos līdzekļus, dodoties uz **Iestatījumi** > **Konfidencialitātes iestatījumi**.
+Ja neiestatīsit šo preferenci, lietotājiem ar Office 365 (vai Microsoft 365) abonementu, kas būs pierakstījušies, izmantojot darba vai mācību kontu, būs pieejami neobligātie saistītie līdzekļi. Ja vien neesat iestatījis šo preferenci uz APLAMI, šie lietotāji var izvēlēties izslēgt neobligātos saistītos līdzekļus, dodoties uz **Iestatījumi** > **Konfidencialitātes iestatījumi**.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, nav pieejama opcija izslēgt neobligātos saistītos līdzekļus.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, nav pieejama opcija izslēgt neobligātos saistītos līdzekļus.

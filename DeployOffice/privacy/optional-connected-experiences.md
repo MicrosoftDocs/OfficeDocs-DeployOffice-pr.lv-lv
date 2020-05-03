@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166273"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993224"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
-Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par “neobligātajiem saistītajiem līdzekļiem”), izmantojot Office 365 ProPlus lietojumprogrammas. Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
+Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par “neobligātajiem saistītajiem līdzekļiem”), izmantojot Office programmas, piemēram, Word vai Excel, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem (iepriekš ar nosaukumu Office 365 ProPlus). Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
 
 > [!NOTE]
 > Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus:
-> - [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+> - [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 > - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 > - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 > - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
@@ -39,7 +39,7 @@ Ir svarīgi zināt, ka uz šiem neobligātajiem mākoņa pakalpojumiem neattieca
 
 ## <a name="experiences-that-rely-on-bing"></a>Līdzekļi, kas izmanto Bing
 
-Dažu mākoņa pakalpojumu darbību nodrošina Microsoft Bing. Microsoft Bing ir nodalīts no Office 365 ProPlus, un korporācija Microsoft to pārvalda neatkarīgi no Office 365 ProPlus. Līdzekļi, ko Bing nodrošina Office 365 ProPlus lietojumprogrammās, ir: [3D kartes](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartes diagrammas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Tiešsaistes attēlu ievietošana](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Tiešsaistes 3D modeļu ievietošana](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Pētnieks](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) un [Viedā uzmeklēšana](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Dažu mākoņa pakalpojumu darbību nodrošina Microsoft Bing. Microsoft Bing ir no Microsoft 365 programmām lieluzņēmumiem atsevišķs uzņēmums un Microsoft to pārvalda neatkarīgi no Microsoft 365 programmām lieluzņēmumiem. Līdzekļi, ko Bing nodrošina Office programmās, tai skaitā Microsoft 365 programmās lieluzņēmumiem ir: [3D kartes](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Kartes diagrammas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Tiešsaistes attēlu ievietošana](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Tiešsaistes 3D modeļu ievietošana](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Pētnieks](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) un [Viedā uzmeklēšana](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
 
 Bing nodrošina sekojošus līdzekļus programmām Outlook darbam ar iOS un Android:  
 
@@ -47,11 +47,11 @@ Bing nodrošina sekojošus līdzekļus programmām Outlook darbam ar iOS un Andr
 - **Interesanti kalendāri:** varat [abonēt](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) savu mīļāko sporta komandu vai TV pārraižu kalendārus.
 
 
- Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Office 365 ProPlus organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
+ Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Līdzekļi, kas izmanto LinkedIn
 
-[CV palīgs](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) nodrošina līdzekļus programmā Word, kuru darbību nodrošina LinkedIn. Tas sniedz idejas jūsu CV. LinkedIn ir cits uzņēmums, kura īpašnieks ir Microsoft. Ja izmantojat CV palīgu, [LinkedIn lietotāja līgums un privātuma politika](https://www.linkedin.com/legal/user-agreement) ir spēkā papildus [Microsoft pakalpojumu līgumam](https://www.microsoft.com/servicesagreement) un [paziņojumam par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Office 365 ProPlus organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz LinkedIn. LinkedIn organizācija tos nesaista ar jums. Jums nav nepieciešams LinkedIn konts, lai izmantotu šo mākoņa pakalpojumu.
+[CV palīgs](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) nodrošina līdzekļus programmā Word, kuru darbību nodrošina LinkedIn. Tas sniedz idejas jūsu CV. LinkedIn ir cits uzņēmums, kura īpašnieks ir Microsoft. Ja izmantojat CV palīgu, [LinkedIn lietotāja līgums un privātuma politika](https://www.linkedin.com/legal/user-agreement) ir spēkā papildus [Microsoft pakalpojumu līgumam](https://www.microsoft.com/servicesagreement) un [paziņojumam par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz LinkedIn. LinkedIn organizācija tos nesaista ar jums. Jums nav nepieciešams LinkedIn konts, lai izmantotu šo mākoņa pakalpojumu.
 
 Piezīme. Tālāk aprakstītais privātuma iestatījums nekontrolē pieredzi, kas nosaka, ka jums jāsavieno savs LinkedIn konts ar jūsu Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn un Microsoft kontu pievienošana](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
@@ -91,23 +91,23 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kā noteikt, vai administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus
 
-Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office 365 ProPlus lietojumprogrammā Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
+Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
 ## <a name="your-privacy-settings"></a>Jūsu konfidencialitātes iestatījumi
 
-Ja jūsu administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus jūsu Office 365 ProPlus lietojumprogrammā Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā brīdī pārvaldītu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
+Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, jūs varat dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā laikā pārvaldītu jūsu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
 ## <a name="diagnostic-data"></a>Diagnostikas dati
 
-Ja izmantojat kādu no šajā rakstā aprakstītajiem neobligātajiem mākoņa pakalpojumiem, Microsoft var apkopot diagnostikas datus (piemēram, lietojuma datus, kļūdu un veiktspējas datus) par līdzekļa veiktspēju tā izmantošanas laikā. Šajos diagnostikas datos var būt “personas dati” saskaņā ar Eiropas VDAR 4. panta definīciju.Visi diagnostikas dati, ko Microsoft vāc Office 365 ProPlus lietojumprogrammu un pakalpojumu lietošanas laikā, tiek pseidonimizēti, kā noteikts ISO/IEC 19944:2017 (8.3.3. sadaļā) standartā.
+Ja izmantojat kādu no šajā rakstā aprakstītajiem neobligātajiem mākoņa pakalpojumiem, Microsoft var apkopot diagnostikas datus (piemēram, lietojuma datus, kļūdu un veiktspējas datus) par līdzekļa veiktspēju tā izmantošanas laikā. Šajos diagnostikas datos var būt “personas dati” saskaņā ar Eiropas VDAR 4. panta definīciju.Visi diagnostikas dati, kurus Microsoft apkopo jebkuru Microsoft 365 programmu lieluzņēmumiem un pakalpojumu izmantošanas laikā, tiek pseidonimizēti saskaņā ar standartu ISO/IEC 19944:2017 (8.3.3. sadaļa).
 
 
 ## <a name="related-topics"></a>Saistītās tēmas
 
-- [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
-- [Office nepieciešamais datu pakalpojums](required-service-data.md)
+- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
+- [Office obligātais datu pakalpojums](required-service-data.md)
 - [Konta konfidencialitātes iestatījumi](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

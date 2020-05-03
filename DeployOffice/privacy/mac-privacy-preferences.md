@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Office darbam ar Mac.
 hideEdit: true
-ms.openlocfilehash: a1fdd9f7d0fe2095b3a32f61f885f724f2259188
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: d23d1288adf823888c900b44acd5bc905037cd94
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510220"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992880"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -31,19 +31,30 @@ Sākot ar Office versiju 16.28 darbam ar Mac, ir jauni politikas iestatījumi,
 
 Papildus pastāv jauns preferenču iestatījums, kas saistīts ar **Nepieciešamo datu paziņojumu** dialogu Microsoft AutoUpdate (MAU).
 
-Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet rakstā [Pārskats par konfidencialitātes līdzekļiem](overview-privacy-controls.md).
+Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet rakstā [Pārskats par konfidencialitātes kontroles līdzekļiem](overview-privacy-controls.md).
 
 > [!NOTE]
-> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuri darbojas ar Windows operētājsistēmu, skatiet rakstā [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md).
-> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs skatiet rakstā [Preferenču izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai iOS ierīcēs ](ios-privacy-preferences.md).
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuri darbojas ar Windows operētājsistēmu, skatiet rakstā [Politikas iestatījumu izmantošana Microsoft 365 programmās lieluzņēmumiem konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md).
+> - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs, skatiet rakstā [Preferenču izmantošana iOS ierīcēs konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md).
 
 ## <a name="setting-preferences"></a>Preferenču iestatīšana
 
 Šie jaunie preferenču iestatījumi ir saderīgi ar CFPreferences API, un tos var iestatīt, izmantojot `defaults` komandu terminālī, vai arī to var ieviest, izmantojot konfigurācijas profilu vai mobilo ierīču pārvaldības (Mobile Device Management — MDM) serveri. Kad preferences ir ieviestas, lietotājs nevar mainīt vērtības, un visas programmā esošās vadīklas tiks rādītas kā atspējotas.
 
+> [!NOTE]
+> Jūs varat izmantot arī Office politiku mākoņpakalpojumu un tālāk minētos 5 politikas iestatījumus.
+> - Konfigurēt to klienta programmatūras diagnostikas datu līmeni, kurus Office nosūta korporācijai Microsoft
+> - Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu
+> - Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu
+> - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
+> - Atļaut Office izmantot saistītos līdzekļus
+>
+> Papildinformāciju par to, kā izmantot Office politiku mākoņpakalpojumu, skatiet rakstā [Pārskats par Office politiku mākoņpakalpojumu](../overview-office-cloud-policy-service.md).
+
+
 ## <a name="preference-setting-for-diagnostic-data"></a>Diagnostikas datu preferenču iestatījums
 
-Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
+Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
 |||
 |:-----|:-----|
@@ -53,13 +64,13 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 |**Iespējamās vērtības**  | `BasicDiagnosticData` *(tiek iestatīts līmenis, kas nepieciešams)* <br/> `FullDiagnosticData` *(tiek iestatīts līmenis kā neobligāts)* <br/> `ZeroDiagnosticData` *(līmenis netiek iestatīts)* |
 |**Pieejamība** |16.28 un jaunākas versijas |
 
-Sākot ar jaunām versijas 16.30 instalācijām: ja jūs neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti tikai obligātie diagnostikas dati, ja Office 365 abonementa lietotāji tiek pierakstīti ar darba vai mācību kontu vai ja lietotāji izmanto Office 2019 darbam ar Mac lielapjoma licencēšanas versiju. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
+Sākot ar jaunām versijas 16.30 instalācijām: ja jūs neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti tikai obligātie diagnostikas dati, ja Office 365 (vai Microsoft 365) abonementa lietotāji tiek pierakstīti ar darba vai mācību kontu vai ja lietotāji izmanto Office 2019 darbam ar Mac lielapjoma licencēšanas versiju. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
 
 > [!NOTE]
 > - Ja instalējat versiju 16.28 vai 16.29 un neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti neobligātie un obligātie diagnostikas dati. Ja pēc tam jaunināt uz versiju 16.30 vai jaunāku, neobligātie un obligātie diagnostikas dati joprojām tiek sūtīti korporācijai Microsoft, ja vien neizmantojat šo preferenci, lai iestatītu citu vērtību.
 > - Ja iestatāt šo preferenci, tas attiecas arī uz Teams darbam ar Mac versiju 1.00.217856 un jaunākām versijām, kā arī uz Skype darbam Mac datoriem versiju 16.28 un jaunākām versijām.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, tiek sūtīti tikai obligātie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt arī neobligātos diagnostikas datus, atverot **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, tiek sūtīti tikai obligātie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt arī neobligātos diagnostikas datus, atverot **Preferences** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Preferences iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
 
@@ -75,9 +86,9 @@ Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu
 
 Ja neiestatīsit šo preferenci, lietotāji varēs izmantot saistītos līdzekļus, kas analizē saturu. 
 
-Ja lietotājam ir Office 365 abonements un esat pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt saistītos līdzekļus, kas analizē saturu.
+Ja lietotājam ir Office 365 (vai Microsoft 365) abonements un tas ir pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt saistītos līdzekļus, kas analizē saturu.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas analizē saturu, dodoties uz **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas analizē saturu, dodoties uz **Preferences** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-connected-experiences-that-download-online-content"></a>Politikas iestatījums saistītajiem līdzekļiem, kas lejupielādē tiešsaistes saturu
 
@@ -93,11 +104,11 @@ Saistīti līdzekļi, kas lejupielādē tiešsaistes saturu, ir līdzekļi, kas 
 
 Ja neiestatīsit šo preferenci, lietotāji varēs izmantot saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
 
-Ja lietotājam ir Office 365 abonements un esat pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
+Ja lietotājam ir Office 365 (vai Microsoft 365) abonements un tas ir pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu, dodoties uz **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, lietotājs var izvēlēties izslēgt saistītos līdzekļus, kas lejuplādē tiešsaistes saturu, dodoties uz **Preferences** > **Konfidencialitāte**.
 
-## <a name="preference-setting-for-optional-connected-experiences"></a>Politikas iestatījums neobligātajiem saistītajiem līdzekļiem
+## <a name="preference-setting-for-optional-connected-experiences"></a>Preferences iestatījums neobligātajiem saistītajiem līdzekļiem
 
 Papildus iepriekš minētajiem saistītajiem līdzekļiem, pastāv daži papildu saistītie līdzekļi, kurus varat atļaut lietotājiem izmantot, lietojot organizācijas kontu, kas dažkārt tiek dēvēts par darba vai mācību kontu. Piemēram, CV palīga LinkedIn līdzekļi programmā Word vai laikapstākļu josla programmā Outlook, kas izmanto MSN laika ziņas. Citus piemērus skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
 
@@ -109,9 +120,9 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, pastāv daži papildu
 |**Iespējamās vērtības**  | `TRUE` *(iespējots)* <br/> `FALSE` *(atspējots)*|
 |**Pieejamība** |16.28 un jaunākas versijas |
 
-Ja neiestatīsit šo preferenci, neobligātie saistītie līdzekļi ir pieejami lietotājiem ar Office 365 abonementu, kas ir pierakstījušies, izmantojot darba vai mācību kontu, vai lietotājiem, kuriem ir Office 2019 darbam ar Mac lielapjoma licenzētā versija. Ja vien neesat iestatījis šo preferenci uz `FALSE`, šie lietotāji var izvēlēties izslēgt neobligātos saistītos līdzekļus, dodoties uz **Preferences** > **Konfidencialitāte**.
+Ja neiestatīsit šo preferenci, neobligātie saistītie līdzekļi ir pieejami lietotājiem ar Office 365 (vai Microsoft 365) abonementu, kas ir pierakstījušies, izmantojot darba vai mācību kontu, vai lietotājiem, kuriem ir Office 2019 darbam ar Mac lielapjoma licenzētā versija. Ja vien neesat iestatījis šo preferenci uz `FALSE`, šie lietotāji var izvēlēties izslēgt neobligātos saistītos līdzekļus, dodoties uz **Preferences** > **Konfidencialitāte**.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, nav pieejama opcija izslēgt neobligātos saistītos līdzekļus.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, nav pieejama opcija izslēgt neobligātos saistītos līdzekļus.
 
 ## <a name="preference-setting-for-most-connected-experiences"></a>Preferenču iestatījums lielākajai daļai saistīto līdzekļu
 
@@ -134,11 +145,11 @@ Piemēram, ja iestatāt šo preferenci uz `FALSE`, lietotājiem nebūs pieejami 
 
 Turklāt, ja iestatāt šo preferenci uz `FALSE`, arī lielākā daļā citu saistīto līdzekļu ir izslēgti, piemēram, koprediģēšana un tiešsaistes failu krātuve. Pilnīgāku šo pārējo saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-Tomēr pat tad `FALSE`, ja iestatīsiet šo preferenci, būs pieejama tikai ierobežota Office funkcionalitāte, piemēram, pastkastes sinhronizēšana programmā Outlook, un darba grupas un Skype darbam joprojām darbosies. Joprojām būs pieejami arī [Būtiskie pakalpojumi](essential-services.md), piemēram, licencēšanas pakalpojums, kurš apstiprina, ka pakalpojums Office ir atbilstoši licencēts.
+Tomēr pat tad `FALSE`, ja iestatīsiet šo preferenci, būs pieejama tikai ierobežota Office funkcionalitāte, piemēram, pastkastes sinhronizēšana programmā Outlook, un darba grupas un Skype darbam joprojām darbosies. Joprojām būs pieejami arī [būtiskie pakalpojumi](essential-services.md), piemēram, licencēšanas pakalpojums, kurš apstiprina, ka pakalpojums Office ir atbilstoši licencēts.
 
-Ja lietotājam ir Office 365 abonements un esat pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt lielāko daļu saistīto līdzekļu.
+Ja lietotājam ir Office 365 (vai Microsoft 365) abonements un tas ir pierakstījies ar darba vai mācību kontu vai ja lietotājam ir Office 2019 darbam ar Mac lielapjoma licencēšanas versija, lietotājs nevar izslēgt lielāko daļu saistīto līdzekļu.
 
-Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 abonementu, lietotājs var izvēlēties izslēgt lielāko daļu saistītos līdzekļus, dodoties uz **Preferences** > **Konfidencialitāte**.
+Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, lietotājs var izvēlēties izslēgt lielāko daļu saistītos līdzekļus, dodoties uz **Preferences** > **Konfidencialitāte**.
 
 ## <a name="preference-setting-for-the-required-data-notice-dialog-for-microsoft-autoupdate"></a>Preferenču iestatījums nepieciešamajam datu paziņojumu dialogam Microsoft AutoUpdate
 

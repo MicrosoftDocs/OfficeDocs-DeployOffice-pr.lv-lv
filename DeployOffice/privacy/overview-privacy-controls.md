@@ -1,5 +1,5 @@
 ---
-title: Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
+title: Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus, tostarp diagnostikas datiem un saistītajiem līdzekļiem.
+description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus), tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 784bbf08626e6dc8571c416a74511c9f5feeceec
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067357"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993094"
 ---
-# <a name="overview-of-privacy-controls-for-office-365-proplus"></a>Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus
+# <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
 
-Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Office 365 ProPlus.
+Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus).
 
-Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika izlaista mēneša kanālā), mēs jūs nodrošinām ar jaunām, atjauninātām un uzlabotām konfidencialitātes kontroles iespējām šādās jomās:
+Sākot ar Microsoft 365 programmas lieluzņēmumiem versiju 1904, mēs jūs nodrošinām ar jaunām, atjauninātām un uzlabotām konfidencialitātes kontroles iespējām šādās jomās:
 - ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par Office klienta programmatūru, kura tiek lietota jūsu organizācijas datoros, kur darbojas operētājsistēma Windows.
 - ***Saistītie līdzekļi***, kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
 
@@ -36,20 +36,20 @@ Sākot ar Office 365 ProPlus versiju 1904 (kas 2019. gada 29. aprīlī tika i
 > - Šīs izmaiņas tiek lietotas programmā Access, Excel, OneNote, Outlook, PowerPoint, Publisher un Word.
 > - Šīs izmaiņas attiecas arī uz tālāk norādīto programmatūru.
 >   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
->   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, plāns Project Online Professional vai Visio Online 2. plāns, versija 1904 vai jaunākas versijas.
-> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908, kura tika izlaista 2019. gada 10. septembrī. Tos ir paredzēts publiskot pusgada kanālā 2020. gada janvārī.
+>   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, Project 5. plāns vai Visio 2. plāns, versija 1904 vai jaunāka.
+> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908 un pusgada kanālā.
 > - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 2.30 un jaunākās versijās, piemēram, programmas Excel, OneNote, PowerPoint un Word iOS versijās, kā arī Visio Viewer darbam ar iOS versijā 1.17 un jaunākās versijās.
 > - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 16.0.12226.10000 un jaunākās versijās, piemēram, programmas Excel, PowerPoint un Word Android versijās, kā arī OneNote darbam ar Android versijā 16.0.12228.20004 un jaunākās versijās.
 > - Lielākajā daļā Office tīmekļa lietojumprogrammu tiek izmantota jaunā privātuma kontrole [papildu pievienotajām iespējām](optional-connected-experiences.md). Šīs lietojumprogrammas ir: Excel darbam tīmeklī, OneNote darbam tīmeklī, PowerPoint darbam tīmeklī, Visio darbam tīmeklī, kā arī Word darbam tīmeklī. Varat izmantot [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md), lai konfigurētu atbilstošo [politikas iestatījumu](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 klientos un pakalpojumos.
+> - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 (un Microsoft 365) klientos un pakalpojumos.
 
-## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikas dati, kas no Office 365 ProPlus tiek nosūtīti korporācijai Microsoft
+## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
 Šie diagnostikas dati tiek apkopoti un nosūtīti korporācijai Microsoft par Office klienta programmatūru, kas tiek lietota jūsu organizācijas datoros, kuros darbojas operētājsistēma Windows.
 
-Pastāv trīs Office 365 ProPlus klienta programmatūras diagnostikas datu līmeņi, kurus varat izvēlēties:
+Pastāv trīs Microsoft 365 programmu lieluzņēmumiem klienta programmatūras diagnostikas datu līmeņi, kurus varat izvēlēties:
 
 - **Nepieciešamie**. Minimālie dati, kas nepieciešamo, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
 
@@ -73,15 +73,15 @@ Papildinformāciju skatiet šeit:
 
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
 - [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-## <a name="connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus saistītie līdzekļi
+## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Saistītie līdzekļi Microsoft 365 programmām lieluzņēmumiem
 
-Office 365 ProPlus sastāv no klienta lietojumprogrammām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive darbam krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemērs.
+Microsoft 365 programmas lieluzņēmumiem sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk radīt, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive darbam krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemēri.
 
 Mēs saprotam, ka varat vēlēties noteikt, kāda veida saistītie līdzekļi ir pieejami lietotājiem, strādājot Office programmās. Kā organizācijas administrators varat izmantot politikas iestatījumus, kas ļauj izvēlēties, vai lietotājiem nodrošināt šādus saistītos līdzekļus:
 
@@ -100,14 +100,14 @@ Jūsu lietotāji nevarēs izvēlēties, vai ieslēgt vai izslēgt šos saistīto
 Papildinformāciju skatiet šeit:
 
 - [Office saistītie līdzekļi](connected-experiences.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
 
-## <a name="optional-connected-experiences-for-office-365-proplus"></a>Office 365 ProPlus neobligātie saistītie līdzekļi
+## <a name="optional-connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Papildu saistītie līdzekļi Microsoft 365 programmām lieluzņēmumiem
 
-Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti pakalpojumā Office 365 ProPlus, pastāv papildu saistītie līdzekļi, kuru varat atļaut lietotājiem izmantot, lietojot organizācijas kontu. Piemēram, CV palīga programmā Word LinkedIn līdzekļi vai 3D karšu līdzeklis programmā Excel, kas izmanto Bing.
+Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti pakalpojumā Microsoft 365 programmas lieluzņēmumiem, pastāv papildu saistītie līdzekļi, kuru varat atļaut lietotājiem izmantot, lietojot organizācijas kontu. Piemēram, CV palīga LinkedIn līdzekļi programmā Word vai 3D karšu līdzeklis programmā Excel, kas izmanto Bing.
 
 Šie ir papildu saistītie līdzekļi, kuri nav iekļauti jūsu organizācijas komerclīgumā ar Microsoft, bet kuru darbību nosaka atsevišķi nosacījumi un noteikumi. Papildu saistīto līdzekļu, ko Microsoft piedāvā tieši lietotājiem, darbību nosaka [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement), nevis [tiešsaistes pakalpojumu nosacījumi](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -118,7 +118,7 @@ Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieeja
 Papildinformāciju skatiet šeit:
 
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
@@ -143,9 +143,9 @@ Ja izvēlēsities saviem lietotājiem nesniegt to saistīto līdzekļu kategorij
 
 Lai iegūtu papildinformāciju, skatiet rakstu [Office nepieciešamie pakalpojuma dati](required-service-data.md).
 
-## <a name="essential-services-for-office-365-proplus"></a>Office 365 ProPlus būtiskie pakalpojumi
+## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>Būtiskie pakalpojumi Microsoft 365 programmām lieluzņēmumiem
 
-Pastāv arī tādu pakalpojumu kopa, kas ir būtiski tam, kā Office 365 ProPlus darbojas, un tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai esat pareizi licencēts Office 365 ProPlus izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kurus esat konfigurējis.
+Pastāv arī tādu pakalpojumu kopa, kas ir būtiski tam, kā darbojas Microsoft 365 programmas lieluzņēmumiem, un tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai jums ir atbilstoša licence Microsoft 365 programmu lieluzņēmumiem izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kurus esat konfigurējis.
 
 Lai iegūtu papildinformāciju, skatiet rakstu [Office būtiskie pakalpojumi](essential-services.md).
 
