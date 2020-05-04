@@ -1,5 +1,5 @@
 ---
-title: Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
+title: Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus pakalpojumā Office 365 ProPlus, izmantojot politikas iestatījumus.
+description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Microsoft 365 programmās lieluzņēmumiem (iepriekš Office 365 ProPlus), izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: 6a091ca7e72cd7ce97793ebd0fdcfa2a6fa1a098
+ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42687216"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992939"
 ---
-# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai
+# <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
 
-Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Office 365 ProPlus.
+Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus).
 
-Sākot ar Office 365 ProPlus versiju 1904, ir jauni politikas iestatījumi, kuri nodrošina iespēju kontrolēt ar šādām iespējām saistītus iestatījumus:
+Sākot ar Microsoft 365 programmu lieluzņēmumiem versiju 1904, ir jauni politikas iestatījumi, kuri nodrošina iespēju kontrolēt ar šādām iespējām saistītus iestatījumus:
 
 - ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru.
 
@@ -50,9 +50,9 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 
 Ja izmantojat grupas politikas pārvaldības rīku, visi šie politikas iestatījumi atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
 
-Šie jaunie politikas iestatījumi tiek lietoti arī programmu Project un Visio datora versijās, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional un Visio Online 2. plānā. Tie tiek lietoti arī pakalpojumā Office 365 Business.
+Šie jaunie politiku iestatījumi tiek piemēroti arī datoriem paredzētajām programmām Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, Project 5. plāns vai Visio 2. plāns Tie tiek piemēroti arī Microsoft 365 programmām darbam (iepriekš Office 365 darbam).
 
-Daži no esošajiem politikas iestatījumiem vairs netiks lietoti pakalpojumā Office 365 ProPlus, un ir veiktas arī dažas ar konfidencialitātes iestatījumiem saistītas izmaiņas lietotāja interfeisā, par kurām jums jābūt informētam, jo lietotāji tās, iespējams, pamanīs un par tām vaicās.
+Daži no esošajiem politikas iestatījumiem vairs netiks lietoti Microsoft 365 programmās lieluzņēmumiem, un ir veiktas arī dažas ar konfidencialitātes iestatījumiem saistītas izmaiņas lietotāja interfeisā, par kurām jums jābūt informētam, jo lietotāji tās, iespējams, pamanīs un par tām vaicās.
 
 Tāpat kā ar visiem jaunajiem politikas iestatījumiem jums tie ir uzmanīgi jāizmēģina ierobežotā, kontrolētā vidē, lai pārliecinātos, vai konfigurētie iestatījumi sniedz nepieciešamo efektu; tikai pēc tam ieviesiet politikas iestatījumus savā organizācijā plašākā mērogā.
 
@@ -74,14 +74,14 @@ Ja šis politikas iestatījums tiek atspējots vai netiek konfigurēts, korporā
 
 Papildinformāciju par diagnostikas datiem lasiet šajos rakstos:
 
-- [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
+- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
 - [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Saistīto līdzekļu politikas iestatījumi
 
-Office 365 ProPlus sastāv no klienta lietojumprogrammām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive darbam krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemēri.
+Microsoft 365 programmas lieluzņēmumiem sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk radīt, sazināties un sadarboties. Darbs kopā ar citiem lietotājiem, strādājot pie dokumenta, kas glabājas OneDrive darbam krātuvē, vai Word dokumenta satura tulkošana citā valodā ir saistīto līdzekļu piemēri.
 
 Mēs saprotam, ka varat vēlēties noteikt, kādu veidu saistītie līdzekļi ir pieejami lietotājiem, strādājot Office programmās. Tāpēc piedāvājam četrus jaunus politikas iestatījumus:
 
@@ -90,11 +90,11 @@ Mēs saprotam, ka varat vēlēties noteikt, kādu veidu saistītie līdzekļi ir
 - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
 - Atļaut Office izmantot saistītos līdzekļus
 
-Ja nekonfigurēsit šos politikas iestatījumus, būs pieejami visi saistītie līdzekļi. Tādējādi lietotājiem būs pieejami visi Office 365 ProPlus ietvaros pieejamie līdzekļi un funkcijas. Tomēr mēs saprotam, ka jums var būt nepieciešams izslēgt dažus vai visus saistītos līdzekļus, lai ievērotu organizācijā noteiktās prasības.
+Ja nekonfigurēsit šos politikas iestatījumus, būs pieejami visi saistītie līdzekļi. Tādējādi lietotājiem būs pieejami visi Microsoft 365 programmu lieluzņēmumiem līdzekļi un funkcijas. Tomēr mēs saprotam, ka jums var būt nepieciešams izslēgt dažus vai visus saistītos līdzekļus, lai ievērotu organizācijā noteiktās prasības.
 
 Ja izvēlaties lietotājiem nenodrošināt noteiktu veidu saistītos līdzekļus, to komandas lentē vai izvēlnē būs pelēkotas vai arī lietotāji saņems kļūdas ziņojumu, kad mēģinās lietot šos saistītos līdzekļus. Šādos gadījumos korporācijai Microsoft netiks nosūtīti [nepieciešamie pakalpojuma dati](required-service-data.md) par šiem saistītajiem līdzekļiem.
 
-Jūsu lietotāji nevarēs izvēlēties ieslēgt vai izslēgt šos Office 365 ProPlus iekļautos saistītos līdzekļus, ja tie būs pierakstījušies pakalpojumā Office ar savas organizācijas akreditācijas datiem, kas dažkārt tiek dēvēti par darba vai mācību kontu.
+Jūsu lietotāji nevarēs izvēlēties ieslēgt vai izslēgt šos Microsoft 365 programmās lieluzņēmumiem iekļautos saistītos līdzekļus, ja tie būs pierakstījušies pakalpojumā Office ar savas organizācijas akreditācijas datiem, kas dažkārt tiek dēvēti par darba vai mācību kontu.
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Politikas iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
 
@@ -114,7 +114,7 @@ Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lej
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Politikas iestatījums neobligātajiem saistītajiem līdzekļiem
 
-Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti pakalpojumā Office 365 ProPlus, pastāv daži papildu saistītie līdzekļi, kurus varat atļaut lietotājiem izmantot, lietojot organizācijas kontu. Piemēram, CV palīga LinkedIn līdzekļi programmā Word vai 3D karšu līdzeklis programmā Excel, kas izmanto Bing. Citus piemērus skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
+Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti pakalpojumā Microsoft 365 programmas lieluzņēmumiem, pastāv papildu saistītie līdzekļi, kurus varat atļaut lietotājiem izmantot, lietojot organizācijas kontu. Piemēram, CV palīga LinkedIn līdzekļi programmā Word vai 3D karšu līdzeklis programmā Excel, kas izmanto Bing. Citus piemērus skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
 
 Šie saistītie līdzekļi var atšķirties, jo uz tiem neattiecas jūsu organizācijas komerclīgums ar korporāciju Microsoft. Neobligātos saistītos līdzekļus Microsoft piedāvā tieši lietotājiem, un to darbību regulē [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement), nevis [tiešsaistes pakalpojumu nosacījumi](https://www.microsoft.com/licensing/product-licensing/products). Dažos gadījumos šo neobligāto saistīto līdzekļu ietvaros tiek nodrošināts trešo pušu saturs vai funkcijas un ir spēkā citi nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
 
@@ -138,7 +138,7 @@ Pastāv viens izņēmums, kas jāņem vērā. Politikas iestatījums *Atļaut Of
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Politikas iestatījums lielākajai daļai saistīto līdzekļu
 
-Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus* var izmantot, lai kontrolētu, vai lietotājiem ir pieejama lielākā daļa saistīto līdzekļu, kas tiek piedāvāti Office 365 ProPlus ietvaros. Ja šis politikas iestatījums ir atspējots, lietotājiem nav pieejami tālāk nosaukto veidu saistītie līdzekļi.
+Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus* var izmantot, lai kontrolētu, vai lietotājiem ir pieejama lielākā daļa saistīto līdzekļu, kas tiek piedāvāti Microsoft 365 programmās lieluzņēmumiem. Ja šis politikas iestatījums ir atspējots, lietotājiem nav pieejami tālāk nosaukto veidu saistītie līdzekļi.
 
 - Lietošanas iespējas, kas analizē jūsu saturu
 - Lietošanas iespējas, kas lejupielādē tiešsaistes saturu
@@ -150,13 +150,13 @@ Tomēr pat tad, ja atspējosit šo politikas iestatījumu, dažas Office funkcij
 
 ## <a name="existing-policy-settings-that-are-replaced-by-new-policy-settings"></a>Esošie politikas iestatījumi, kurus aizstāj jauni politikas iestatījumi
 
-Ir divi esošie politikas iestatījumi, kuri vairs nav spēkā, sākot no Office 365 ProPlus versijas 1904. Šie politikas iestatījumi ir:
+Ir divi esošie politikas iestatījumi, kuri vairs nav spēkā, sākot ar Microsoft 365 programmām lieluzņēmumiem versiju 1904. Šie politikas iestatījumi ir:
 
 - **Nosūtīt personas informāciju**, kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
 
 - **Tiešsaistes satura opcijas**, kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Rīki | Opcijas | Vispārīgi | Pakalpojuma opcijas...\\Tiešsaistes saturs.
 
-Sākot ar versiju 1904, šo divu esošo politikas iestatījumu konfigurācija neietekmē Office 365 ProPlus. Tie vairs nav spēkā, jo to funkcijas veic šie jaunie politikas iestatījumi:
+Sākot ar versiju 1904, šo divu esošo politikas iestatījumu konfigurācija neietekmē Microsoft 365 programmas lieluzņēmumiem. Tie vairs nav spēkā, jo to funkcijas veic šie jaunie politikas iestatījumi:
 
 - Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu
 - Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu
@@ -183,7 +183,7 @@ Parasti gadījumos, kad viens politikas iestatījums ir konfigurēts, lai ieslē
 
 ## <a name="privacy-related-changes-to-the-office-ui"></a>Ar konfidencialitāti saistītas izmaiņas Office lietotāja interfeisā
 
-Office 365 ProPlus lietotāja interfeisā ir ieviestas dažas ar konfidencialitāti saistītas izmaiņas, kuras lietotāji, iespējams, pamanīs un par tām vaicās. Šīs izmaiņas ir tieši saistītas ar jaunajiem konfidencialitātes kontroles līdzekļiem un politikas iestatījumiem, kuri ir pieejami, sākot no versijas 1904.
+Microsoft 365 programmu lieluzņēmumiem lietotāja interfeisā ir ieviestas dažas ar konfidencialitāti saistītas izmaiņas, kuras lietotāji, iespējams, pamanīs un par tām vaicās. Šīs izmaiņas ir tieši saistītas ar jaunajiem konfidencialitātes kontroles līdzekļiem un politikas iestatījumiem, kuri ir pieejami, sākot no versijas 1904.
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialoglodziņš par neobligātajiem saistītajiem līdzekļiem
 
