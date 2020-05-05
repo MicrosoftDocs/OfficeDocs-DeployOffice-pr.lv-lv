@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par nepieciešamajiem pakalpojuma datiem, kas tiek apkopoti saistībā ar Office saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: b4cc25ae1c2a34082bff623ad630db664050effb
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067180"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992744"
 ---
 # <a name="required-service-data-for-office"></a>Office nepieciešamie pakalpojuma dati 
 
 > [!IMPORTANT]
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
-> - Office 365 ProPlus un Office 365 Business
-> - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
-> - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+> - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
+> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
+> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
+> - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
 >
 > Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 
@@ -64,8 +65,8 @@ Papildinformāciju skatiet šeit:
 
 Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie raksti:
 
-- [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles pārvaldībai](manage-privacy-controls.md)
+- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)

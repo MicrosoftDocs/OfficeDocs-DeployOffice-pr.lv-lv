@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: bcf28caae666900deacbd0effe83a2fae383c41d
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166363"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992996"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
 > [!IMPORTANT]
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
-> - Office 365 ProPlus un Office 365 Business
-> - Office 365 individuālai lietošanai, Office 365 mājas lietošanai vai citas Office versijas, kas ir daļa no Office 365 abonementa.
-> - Project un Visio, kas ir iekļautas dažos abonēšanas plānos, piemēram, Project Online Professional plānā vai Visio Online 2. plānā.
+> - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
+> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
+> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
+> - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
 >
 > Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
 >
@@ -48,7 +49,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Diktēšana  | [Diktēšana sistēmā Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Redaktors    | [Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Idejas     | [Idejas programmā Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-| No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint darbam ar Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint pakalpojumam Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Ievietojiet datus no attēla| [Ievietojiet datus no attēla](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Tiešraides titri un subtitri |  [Prezentācijas ar reāllaika automātiskajiem parakstiem vai subtitriem programmā PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Kartes diagramma\*    | [Kartes diagrammas izveide](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
@@ -119,16 +120,16 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Svarīgo ziņojumu iesūtne (Outlook) |[Svarīgo ziņojumu iesūtne programmā Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informācijas piekļuves tiesību pārvaldība |[Informācijas piekļuves tiesību pārvaldība sistēmā Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn kontaktpersonas vizītkarte |[LinkedIn un Microsoft kontu pievienošana](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| Office pievienojumprogrammas\* | [Pievienojumprogrammu izvietošanas pārvaldība Microsoft 365 administrēšanas centrā](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Atsauksmes par Office |[Kā var sniegt atsauksmes par Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office atbalsts (Sazināties ar mums) |Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu** |
-| Office 365 pievienojumprogrammas\* | [Office 365 pievienojumprogrammu izvietošanas pārvaldība Microsoft 365 administrēšanas centrā](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Organizācijas diagramma (Visio) |[Visio organizācijas diagrammas izveide](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Outlook Social Connector ieslēgšana](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | Outlook UserVoice\* | [Kā var sniegt atsauksmes par Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Pēdējie dokumenti |[Failu atvēršana no izvēlnes Fails](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | CV palīgs\* |[Labāka CV rakstīšana, izmantojot LinkedIn un CV palīgu](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Telpas meklētājs (Outlook)|[Telpas meklētāja kontrole programmā Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-| Drošās saites |[Office 365 ATP drošās saites](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
+| Drošās saites |[ATP drošās saites](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Sensitivitātes etiķetes |[Sensitivitātes etiķešu lietošana dokumentos un e-pastā sistēmā Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Koplietošana  |[Dokumenta koplietošana (Excel)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Dokumenta koplietošana (PowerPoint)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumenta koplietošana (Word)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Man ir atļauts koplietot |[Tādu failu skatīšana, ko man ir atļauts koplietot](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
@@ -153,7 +154,7 @@ Ja esat pierakstījies ar darba vai mācību kontu, jūsu organizācijas adminis
 
 Ja esat savas organizācijas administrators, varat izmantot politikas iestatījumus, lai noteiktu, vai šie saistītie līdzekļi ir pieejami jūsu lietotājiem. Ja neizmantojat šos politikas iestatījumus, jūsu lietotājiem būs pieejami visi saistītie līdzekļi. Papildinformāciju par politikas līdzekļu izmantošanu skatiet šajos rakstos: 
 
-- [Politikas iestatījumu izmantošana Office 365 ProPlus konfidencialitātes kontroles līdzekļu pārvaldībai](manage-privacy-controls.md)
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
@@ -164,7 +165,7 @@ Pat tad, ja vēlaties izslēgt šos saistītos līdzekļus, dažas Office funkci
 
 ## <a name="related-topics"></a>Saistītās tēmas
 
-- [Pārskats par konfidencialitātes kontroles līdzekļiem pakalpojumā Office 365 ProPlus](overview-privacy-controls.md)
+- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
 - [Office obligātais datu pakalpojums](required-service-data.md)
 - [Office būtiskie pakalpojumi](essential-services.md)

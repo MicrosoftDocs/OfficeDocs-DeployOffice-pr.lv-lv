@@ -1,4 +1,4 @@
-# Office 365 ProPlus konfidencialitāte
+# Microsoft 365 programmas lieluzņēmumiem: konfidencialitāte
 
 ## [Pārskats par konfidencialitātes kontroles līdzekļiem](overview-privacy-controls.md)
 
