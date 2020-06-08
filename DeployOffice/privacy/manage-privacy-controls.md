@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Microsoft 365 programmās lieluzņēmumiem (iepriekš Office 365 ProPlus), izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
+ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992939"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44589031"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
 
@@ -225,7 +225,7 @@ Daži administratori izvēlas mainīt iestatījumus tieši reģistrā, piemēram
 
 Lai izveidotu .reg failu konfidencialitātes iestatījumiem, atveriet programmu Piezīmjbloks un kopējiet tālāk norādītās rindiņas. Pielāgojiet vērtības atbilstoši savām vajadzībām un pēc tam saglabājiet failu. Pārliecinieties, vai faila nosaukuma paplašinājums ir .reg
 
-```
+```console
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]
