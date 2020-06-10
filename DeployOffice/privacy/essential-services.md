@@ -13,19 +13,19 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992844"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663180"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
 > [!IMPORTANT]
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
 > - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
-> - Microsoft 365 programmas darbam (iepriekš Office 365 darbam)
+> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
 > - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
 > - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
 >
@@ -2528,9 +2528,9 @@ Ziņo par gala-gala instalācijas mēģinājuma rezultātu
 
 Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectParameters
 
-- **BitField** — argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
 
-- **ChannelID —** vesels skaitlis, kas norāda atlasītā atjaunināšanas/instalēšanas kanāla uzskaitījuma vērtību (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID —**    vesels skaitlis, kas norāda uzskaitītā atjauninājuma/instalācijas kanāla uzskaitījuma vērtību. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums), pusgada uzņēmuma kanāls vai nederīgs.
 
 - **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos.
 
@@ -2607,9 +2607,9 @@ Atskaites par darbībām, kas lasa atzīmēto ievadi no .exe faila iegultā para
 
 Ziņo par Office instalēšanai izmantotajiem parametriem
 
-- **BitField** — argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
 
-- **ChannelID —** vesels skaitlis, kas norāda atlasītā atjaunināšanas/instalēšanas kanāla uzskaitījuma vērtību (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID —**    vesels skaitlis, kas norāda uzskaitītā atjauninājuma/instalācijas kanāla uzskaitījuma vērtību. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums), pusgada uzņēmuma kanāls vai nederīgs.
 
 - **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
 

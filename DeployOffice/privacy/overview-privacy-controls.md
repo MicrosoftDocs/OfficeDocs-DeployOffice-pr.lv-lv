@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus), tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993094"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663541"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
 
@@ -37,7 +37,7 @@ Sākot ar Microsoft 365 programmas lieluzņēmumiem versiju 1904, mēs jūs nodr
 > - Šīs izmaiņas attiecas arī uz tālāk norādīto programmatūru.
 >   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
 >   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, Project 5. plāns vai Visio 2. plāns, versija 1904 vai jaunāka.
-> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada kanāla (atlasīta versija) versijā 1908 un pusgada kanālā.
+> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada uzņēmuma (priekšskatījums) un pusgada uzņēmuma versijā 1908.
 > - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 2.30 un jaunākās versijās, piemēram, programmas Excel, OneNote, PowerPoint un Word iOS versijās, kā arī Visio Viewer darbam ar iOS versijā 1.17 un jaunākās versijās.
 > - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 16.0.12226.10000 un jaunākās versijās, piemēram, programmas Excel, PowerPoint un Word Android versijās, kā arī OneNote darbam ar Android versijā 16.0.12228.20004 un jaunākās versijās.
 > - Lielākajā daļā Office tīmekļa lietojumprogrammu tiek izmantota jaunā privātuma kontrole [papildu pievienotajām iespējām](optional-connected-experiences.md). Šīs lietojumprogrammas ir: Excel darbam tīmeklī, OneNote darbam tīmeklī, PowerPoint darbam tīmeklī, Visio darbam tīmeklī, kā arī Word darbam tīmeklī. Varat izmantot [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md), lai konfigurētu atbilstošo [politikas iestatījumu](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
