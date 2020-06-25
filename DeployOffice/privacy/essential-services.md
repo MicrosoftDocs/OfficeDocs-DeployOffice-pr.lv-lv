@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
+ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663180"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800395"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -2717,15 +2717,24 @@ Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie 
 
 Šis notikums tiek reģistrēts, kad izsaukums uz tīmekļa pakalpojumu, kas veikts, izmantojot noklikšķināt, lai palaistu funkcionālo darbību pievienojumprogrammu, tiek pabeigts, neatkarīgi no tā, vai tas ir sekmīgs vai nē. Tā būtībā ir pēdējā operācija pievienojumprogrammā, lai izsekotu kopējo darbības statusu.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
+
+- **ActionDetail** — papildu detalizēta informācija, kad rodas kļūme.
+   - Ja HTTP pieprasījums izdodas, ActionDetail būs 0.
+   - Ja rezultāta lauks nav labs (t.i., nav 0), tas nozīmē, ka pieprasījums netiek nosūtīts, šis lauks reģistrēs iekšējās kļūdas kodu, kas ir tāds pats kā Rezultāta lauks.
+   - Ja rezultāts ir labs (t.i., 0), tas nozīmē, ka HTTP atbildes kods >= 300, tas reģistrēs HTTP atbildes kodu (piem., 404).
+
+- **Result** — skaitlisks kļūdas kodu karodziņi, ko atgriezis Office tīmekļa pakalpojumu zvanu API. – piem., 3 nozīmētu, ka ir radusies problēma ar HTTP galveņu inicializēšanu.
+
+- **Ierakstiet** — papildu informāciju par tipu. Krājuma gadījumā šī informācija norāda, kāda veida vērtumus tiek sūtīts, piem., pilns vai tikai izmaiņu delta. 
 
 -  **WebCallSource** — uzskaitījuma vērtība (norādīta kā vesels skaitlis), kas norāda, kāda ir apkalpojamības pārvaldnieka pievienojumprogramma, kas bija zvana avots:
    - Krājumu saraksts: 0
    - Krājumu konfigurācija: 1
    - Krājumu politika: 2
    - Krājumu tīkla statuss: 3
-
-- **Result** — skaitlisks kļūdas kodu karodziņi, ko atgriezis Office tīmekļa pakalpojumu zvanu API.
+   - Apkopes pārvaldnieks: 4
+   - Pārvaldīšanas iespējas: 5
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
@@ -3143,6 +3152,8 @@ OEM pārdod iekārtas, kurās ietilpst Office (viena gada abonementi vai mūžī
 
 Tiek apkopoti šādi lauki:
 
+- **DexShouldRetry** — signāls, ka esam saskārušies ar atkārtojuma problēmu (internets vai serveri nedarbojas)
+
 - **GenuineTicketFailure** — norāda kļūmi HRESULT, kas rodas, mēģinot iegūt iekārtas Windows orģināla biļeti/produkta atslēgu (WPK).
 
 - **PinValidationFailure** — norāda, kāpēc PIN validācijas process neizdevās. Iespējamās kļūdas:
@@ -3175,15 +3186,29 @@ Tiek apkopoti šādi lauki:
 
 Pēc sekmīgas Office PIN iegūšanas, kas ir saistīts ar iekārtu un iepriekš sasaistīts ar Office, mēs parādīsim lietotājam pierakstīšanās dialogu vai izpirkšanas dialogu.  Kad PIN kods ir izpirkts, tiek parādīts dialoglodziņš EULA.  Kā daļu no mūsu modernizācijas AFO līdzekļa mēs atsvaidzinājām abus dialogus, lai sniegtu papildinformāciju par Office produktu, kas ir komplektā ar iekārtu.  Šie telemetrijas dati seko, ja mūsu līdzeklis sekmīgi samazina lietotāju neērtības, izsekojot izpirkšanas procesa plūsmas un iziešanas punktus (kurš dialoglodziņš ir noraidīts).
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
-- **ActionCreateAccount** — lietotājs izvēlējās izveidot kontu.
+- **ActionActivate** — signāls, ko lietotājs ir noklikšķinājis uz pogas “Activate” (Aktivizēt).
 
-- **ActionSignIn** — lietotājs izvēlējās pierakstīties.
+- **ActionChangeAccount** — signāls, ka lietotājs ir noklikšķinājis uz hipersaites “Use a different account” (Izmantot citu kontu).
 
-- **DialogRedemption** — norāda AFO izpirkšanas dialogu.
+- **ActionCreateAccount** — signāls, ka lietotājs ir noklikšķinājis uz pogas “Create account” (Izveidot kontu).
 
-- **DialogSignIn** — norāda AFO pierakstīšanās dialogu.
+- **ActionSignIn** — signāls, ka lietotājs ir noklikšķinājis uz pogas “Sign in” (Pierakstīties).
+
+- **CurrentView** — tā dialoga tips, kuru lietotājs aizvēris.
+
+- **DialogEULA** — signāls, kas parādīja dialogu ‘Accept EULA’ (Akceptēt EULA). 
+
+- **DialogRedemption** — signāls, kas parādīja AFO izpirkšanas dialogu.
+
+- **DialogSignIn** — signāls, kas parādīja AFO pierakstīšanās dialogu.
+
+- **EmptyRedemptionDefaults** — signāls, ka nav izdevies saņemt noklusējuma izpirkšanas informāciju.
+ 
+- **GetRedemptionInfo** — signāls, ka tiek iegūta demogrāfiskā informācija par PIN izpirkšanu.
+
+- **MalformedCountryCode** — signāls, ka valsts kods, kas nepieciešams PIN izpirkšanai, ir nepareizs.
 
 - **OExDetails** — detalizēta informācija par kļūdu, kas tiek atgriezta, kad tiek noraidīts identitātes pierakstīšanās dialogs.
 
@@ -3199,6 +3224,14 @@ Tiek apkopoti tālāk norādītie lauki:
     - 0x03113811    lietotājs aizvēra dialoglodziņu pierakstīšanās/izpirkšana
     - 0x03113812    lietotājs aizvēra akceptēt EULA dialoglodziņu
     - 0x03113808    lietotājs akceptēja EULA līgumu
+    - 0x03113811      lietotājs aizvēra dialogu
+    - 0x2370e3a0      lietotājs aizvēra dialogu
+    - 0x2370e3c1      doties uz tīmekli, lai saņemtu PIN izpirkšanu
+    - 0x2370e3a1      doties uz tīmekli, lai saņemtu PIN izpirkšanu
+    - 0x2370e3c0      dialoga secība tika cikliski atkārtota, ko izraisa lietotājs, pārejot uz priekšu un atpakaļ dialogā plūsma
+    - 0x2370e3a3      lietotājs noklikšķināja uz hipersaites “Not now” (Ne tagad), kas izlaiž AFO piedāvājumu tai sesijai
+    - 0x2370e3a2      lietotājs noklikšķināja uz hipersaiti “Never show this to me” (Nekad nerādīt šo iespēju), kas atspējo AFO piedāvājumu
+
 
 - **UseInAppRedemption** — norāda mums, vai mēs palīdzam lietotājiem programmā izpirkšanai vai nosūtīšanai uz tīmekļa vietni, lai izmantotu to ienesto PIN (iepriekš aizpildītu).
 
@@ -3230,7 +3263,7 @@ Tiek apkopoti šādi lauki:
 
 - **HasConnectivity** — norāda, vai lietotājam ir interneta savienojums, un gadījumā, ja lietotājam nav, iespējams, ir jāizmanto pagarinājuma licence piecu dienu laikā, vai, iespējams, darbojas samazinātas funkcionalitātes režīmā
 
-- **InAppTrialPurchase** — norāda, vai ir iespējots lidojums veikala iegādes SDK palaišanai, lai tvertu PI un iegādātos izmēģinājumversiju programmā
+- **InAppTrialPurchase** — norāda, vai ir iespējots lidojums veikala iegādes SDK palaišanai, lai tvertu PI un iegādātos izmēģinājumversiju programmā *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **IsRS1OrGreater** — norāda, vai operētājsistēmas versija ir lielāka par RS1 vai nav, jo veikala iegādes SDK ir jāizmanto tikai tad, ja OS versija ir lielāka RS1
 
@@ -3238,15 +3271,15 @@ Tiek apkopoti šādi lauki:
 
 - **OEMSendToWebForTrial** — norāda, vai lidojums ir iespējots, lai nosūtītu lietotājus uz tīmekļa vietni un izpirktu izmēģinājumversiju
 
-- **StoreErrorConditions** — norāda dažādus nosacījumus, saskaņā ar kuriem veikalu iegādei SDK neizdevās
+- **StoreErrorConditions** — norāda dažādus nosacījumus, saskaņā ar kuriem veikalu iegādes SDK varētu neizdoties *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **StoreErrorHResult** — norāda, ka no veikala iegādes SDK tiek atgriezts kļūdas kods
+- **StoreErrorHResult** — norāda kļūdas kodu no veikalu iegādes SDK *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **StorePurchaseStatusResult** — norāda, kā tiek zvanīts veikala iegādei SDK, un, ja lietotājs ir veicis pirkumu vai nē, kas palīdzēs noteikt, vai lietotājam ir jābūt licencētam izmantot Office
+- **StorePurchaseStatusResult** — norāda, kā tiek zvanīts veikala iegādei SDK, un, ja lietotājs ir veicis pirkumu vai nē, kas palīdzēs noteikt, vai lietotājam ir jābūt licencētam izmantot Office *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **Tag** — tiek lietota, lai iegūtu informāciju par to, kur kods ir nosūtīts no
 
-- **UserSignedInExplicitly** — norāda, vai lietotājs ir pierakstījies tieši, šādā gadījumā mēs atkārtoti novirzīsim lietotājus uz tīklu, lai veiktu izmēģinājumversijas
+- **UserSignedInExplicitly** — norāda, vai lietotājs ir pierakstījies tieši. Šādā gadījumā mēs atkārtoti novirza lietotājus uz tīmekļa vietni izmēģinājumversijai *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiks rādīts vecākos būvējumos.]*
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
