@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: f08061e77e5757d61108e2eb4539986b90902bef
-ms.sourcegitcommit: 06da4eff4b399367017fc68fadb13df29e577e64
+ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
+ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43998833"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811477"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
 > [!IMPORTANT]
 > Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
 > - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
-> - Microsoft 365 programmas darbam (iepriekš Office 365 darbam)
-> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenei un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
+> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
+> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
 > - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
 >
 > Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
@@ -624,6 +624,8 @@ Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar iOS notikumiem.
 - **DeviceInfo.NetworkProvider** — tīkla, kuram pieslēgta ierīce, operators (piem., Verizon)
 
 - **gcc_restrictions_enabled** — norāda, vai GCC ierobežojumi tika piemēroti lietojumprogrammai, lai mēs spētu nodrošināt to, ka mūsu GCC klienti izmanto mūsu lietojumprogrammu drošā veidā
+ 
+- **multi_window_mode** — norāda, vai iPad lietotājs izmanto vairākus logus, lai palīdzētu mums atklāt problēmas, kas saistītas ar vairāklogu lietojumu.
 
 - **office_session_id** — unikāls ID, kas izseko sesijai pievienotajiem Office pakalpojumiem, lai palīdzētu mums atklāt Office pakalpojumu integrēšanai Outlook, piemēram, Word, raksturīgas problēmas
 
@@ -659,6 +661,20 @@ Tālāk ir norādīti šīs kategorijas datu apakštipi.
 
 Instalētais produkts, versija un instalēšanas statuss.
 
+#### <a name="add_sso_account"></a>add_sso_account
+
+Brīdinās Microsoft par to, vai izdevās vai radās kļūme lietotājam pievienot kontu, izmantojot vienoto pierakstīšanos (SSO).
+
+Tiek apkopoti šādi lauki: 
+
+- **account_type** — konta tips, kas pievienots, izmantojot vienoto pierakstīšanos (SSO).
+
+- **action_origin** — no kurienes šis notikums tika ģenerēts. (piem.,values: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+
+- **pakalpojumu sniedzējs** — vienotās pierakstīšanās (SSO) programmatūras pakotnes identifikators.
+
+- **stāvoklis** — konta pašreizējais stāvoklis, (vērtības piemērs: NEIZDEVĀS, GAIDA, PIEVIENOTS utt.)
+ 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
 Attiecas uz visām win32 lietojumprogrammām. Palīdz mums noteikt Office komplekta atjaunināšanas procesa statusu (izdošanās vai neizdošanās ar detalizētu informāciju par kļūdām)
@@ -1249,6 +1265,34 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Dokumenta, līdzekļa un pievienojumprogrammas kļūdas nosacījumi, kas var negatīvi ietekmēt drošību, tostarp produktu atjauninājumu gatavību.
 
+#### <a name="office_appguard_createcontainer"></a>Office_AppGuard_CreateContainer
+
+Mēs apkopojam kļūdu kodus un to, vai konteiners jau pastāv vai nē. Mēs arī apkopojam kļūdas kodus nolikuma atiestatīšanai, ja mēs neizveidojam konteineru mūsu pirmajā mēģinājumā. Dati tiks izmantoti, lai identificētu to sesiju procentuālo vērtību, kuras mēs sekmīgi izveidojam konteineru Office Application Guard programmu palaišanai. Dati ļauj arī Microsoft noteikt un novērst kļūdu kodus no konteineru izveides.
+
+Tiek apkopoti šādi lauki:
+
+- **ErrorCode1** — konteinera iestatīšanas kļūdas koda veids.  
+
+- **ErrorCode2** — kļūdas kods, izpildot izveidi. 
+
+- **ErrorCode3** — papildu kļūdas kods. 
+
+- **ID** — unikālais identifikators (GUID) konteineru izveidei.
+
+- **ResetError** — kļūdas kods, mēģinot atiestatīt konteineru pēc neveiksmīgā mēģinājuma.
+
+- **ResetErrorCode1** — konteinera iestatīšanas kļūdas koda veids pēc atiestatīšanas komandas. 
+
+- **ResetErrorCode2** — kļūdas kods, izpildot izveidi pēc atiestatīšanas komandas.
+
+- **ResetErrorCode3** — papildu kļūdas kods pēc atiestatīšanas komandas.
+
+- **ResetErrorType** — kļūdas veids atiestatīšanas laikā: izveide, faila sagatavošana vai palaišana.
+
+- **WarmBoot** — identificē, vai konteiners jau bija izveidots vai nē.
+
+
+
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
 
 Izseko sistēmā Office aktivizētu konkrētu klases identifikatoru (Flash, Silverlight u.c.) Izmanto, lai izsekotu Flash, Silverlight un Shockwave bloķēto vadīklu ietekmi uz lietotājiem.
@@ -1684,7 +1728,15 @@ Tiek apkopoti šādi lauki:
 
 - **subtab_type** — izseko gadījumus, kad lietotājs atlasīja rezultātu no rezultātu cilnes
 
-- **top_mail_result_selected_count** — izseko, cik reizes lietotājs atlasa populārākos rezultātus. 
+- **top_mail_result_selected_count** — izseko, cik reizes lietotājs atlasa populārākos rezultātus.
+
+- **ui_reload_result_count** — reģistrē lietotāja interfeisa atkārtotas ielādes laiku rezultātu kopas atjaunināšanas dēļ (atbilstošā vaicājuma laikā)
+
+- **ui_reload_result_time** — reģistrē lietotāja interfeisa kopējo pavadīto laiku ielādes laiku rezultātu kopas atjaunināšanā (atbilstošā vaicājuma laikā)
+
+- **ui_reload_status_count** — reģistrē lietotāja interfeisa atkārtotas ielādes laiku statusa kopas atjaunināšanas dēļ (atbilstošā vaicājuma laikā)
+
+- **ui_reload_status_time** — reģistrē lietotāja interfeisa kopējo pavadīto laiku ielādes laiku statusa atjaunināšanā (atbilstošā vaicājuma laikā)
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
 
@@ -3321,6 +3373,118 @@ Tiek apkopoti tālāk norādītie lauki.
 - **version** — plūsmas klienta versija.
 
 
+#### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
+
+Seko, kad ierīce, kas ir piemērota aptaujai, sāk programmu. Tiek izmantoti, lai novērtētu aptaujas lietotāja atlases procesa darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
+
+Seko, kad ierīce ir izpildījusi kritērijus, lai parādītu aptauju. Tiek izmantoti, lai novērtētu aptaujas aktivizācijas procesa darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
+
+Seko, kad ierīce ir atlasīta aptaujai. Tiek izmantoti, lai novērtētu aptaujas lietotāja atlases procesa darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyuiandroid"></a>Office.Feedback.Survey.UI.Android
+
+Android ierīcē tā tiek atskaņota, ja lietotājs ierīcē mijiedarbojas ar aptaujas vedni un aptaujas UI. Tiek izmantoti, lai novērtētu vispārīgās aptaujas darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyuiios"></a>Office.Feedback.Survey.UI.IOS
+
+iOS ierīcē tā tiek atskaņota, ja lietotājs ierīcē mijiedarbojas ar aptaujas vedni un aptaujas UI. Tiek izmantoti, lai novērtētu vispārīgās aptaujas darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyuimac"></a>Office.Feedback.Survey.UI.Mac
+
+Mac ierīcē tā tiek atskaņota, ja lietotājs ierīcē mijiedarbojas ar aptaujas vedni un aptaujas UI. Tiek izmantoti, lai novērtētu vispārīgās aptaujas darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyuiwin32"></a>Office.Feedback.Survey.UI.Win32
+
+Win32 ierīcē tā tiek atskaņota, ja lietotājs ierīcē mijiedarbojas ar aptaujas vedni un aptaujas UI. Tiek izmantoti, lai novērtētu vispārīgās aptaujas darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
+#### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
+
+Seko, kad tiek parādīta aptaujas uzvedne. Tiek izmantoti, lai novērtētu aptaujas uzvednes procesa darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki:
+
+- **ExpirationTimeUTC** — datums/laiks, kad aptauja beigsies
+
+- **SurveyName** — parādītās aptaujas nosaukums
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **UniqueId** — ID, lai identificētu atsevišķas telemetrijas vienības
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Ļauj uzzināt, vai fails ir veiksmīgi atvērts no FIO līmeņa. Izmanto līdzekļu darbspējas veicināšanai un pārraudzībai.
@@ -4012,7 +4176,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
 
-Šo notikumu apkopo Office programmām, kas tiek lietotas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas iegādes plūsmas darbspēju. Mēs apkopojam datus, lai izsekotu programmas pirkumus un to tipu, ko esat iegādājies (mēneša/gada/mājas/individuālai lietošanai).
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Pasākums tiek lietots, lai pārraudzītu mūsu programmas iegādes plūsmas darbspēju. Mēs apkopojam datus, lai izsekotu programmas pirkumus un to tipu, ko esat iegādājies (mēneša/gada/mājas/individuālai lietošanai).
 
 Tiek apkopoti šādi lauki:
 
@@ -4061,6 +4225,81 @@ Tiek apkopoti šādi lauki:
 Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
+
+#### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
+
+Reģistrē, kad lietotājs aizver izvērstu personas kartīti. To izmanto, lai konstatētu kritiskas anomālijas neveiksmes gadījumā, aizverot reāllaika personas kartīti.
+
+Tiek apkopoti šādi lauki:
+
+- **AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
+
+- **AppInfo_Version** — resursdatora lietojumprogrammas versija
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā programmā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces tips, kurā tiek palaista programma, piem., “Outlook_Win32”
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.exportName** — lietotāja darbības notikuma lasāmais nosaukums, piem., “ClosedExpandedPersonaCard”
+
+- **Data.exportType** — pasākuma kategorija VDAR eksporta pieprasījumam
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+
+   - **cardCorrelationId** — Data.appContextId dublikāts 
+   - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+   - **ClientTimeStamp** — laiks, kad notika notikums Unix diskretizācijas laikā
+   - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
+   - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+   - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+   - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam 
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **DeviceInfo_Id** — globāli unikālais ierīces identifikators
+
+- **DeviceInfo_Make** — operētājsistēmas zīmols
+
+- **DeviceInfo_Model** — ierīces modelis
+
+- **DeviceInfo.NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
+
+- **DeviceInfo_OsName** — ierīces operētājsistēmas nosaukums
+
+- **DeviceInfo_OsVersion** — operētājsistēmas versija
+
+- **PipelineInfo.ClientCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
+
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
@@ -6797,6 +7036,14 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ViewKind —** Word skata tips
 
+#### <a name="onenoteappnavigationratingreminderdialogshown"></a>OneNote.App.Navigation.RatingReminderDialogShown
+
+Kritiskais signāls, kas tiek lietots, lai mērītu trigera loģikas lietderību, lai saņemtu vērtējuma atgādinājumu. Šis dialogs tiek parādīts, ja lietotājs ir izpildījis visus nosacījumus, lai redzētu vērtējuma atgādinājumu ( aktīvo dienu skaits, ir novērtējis iepriekš vai nē utt.). Tā tiek lietota, lai nodrošinātu, ka trigera loģika tiek lietota vērtējuma atgādinājumam. Ja lietotāji redz šo dialogu, tas nodrošinās mums iespēju saņemt atsauksmes no klientiem īstajā laikā un uzlabot programmu darbspēju.
+
+Tiek apkopoti šādi lauki:
+
+- Nav
+
 #### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(iepriekšējais nosaukums)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signāls tiek izmantots, lai ierakstītu brīdi, kad tiek atvērta lapa.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas problēmas. kas rodas brīdī, kad lapa tiek atvērta OneNote
@@ -7000,6 +7247,8 @@ Tiek apkopoti šādi lauki:
 - **enabled_state** — norāda, vai jūsu automātiskās atbildes, kontaktpersonu saglabāšanas un ārējo attēlu saglabāšanas iestatījumi ir konfigurēti pareizi  
 
 - **enabled_state** — norāda, vai ir iespējots ar darbību saistītais stāvoklis
+
+- **in_app_language** — atlasītā programmas valoda, virknes tips (noklusējums, en-US, fa, ru utt.)  
 
 - **notification_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt.
 
@@ -7718,7 +7967,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **UsesSharedRuntime** — norāda, vai programma izmanto sharedRuntime.
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.  Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
 
