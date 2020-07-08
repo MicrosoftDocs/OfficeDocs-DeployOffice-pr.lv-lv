@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 4ec1ffef4b8bc0e82a7a1ce96061a9c715636bea
-ms.sourcegitcommit: 7adeab733277e6ed3eafddcc1d4df20e2743a752
+ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
+ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44930403"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048541"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -37,7 +37,7 @@ Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredz�
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Saistīti līdzekļi, kas analizē jūsu saturu
 
-Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai redaktors programmā Word.
+Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word.
 
 Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas analizē jūsu saturu, un sniegtas saites uz papildinformāciju par šiem līdzekļiem.
 
@@ -47,7 +47,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Automātisks alternatīvais teksts   | [Viss, kas jāzina, lai rakstītu efektīvu alternatīvo tekstu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Datu tipi                  | [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktēšana  | [Diktēšana sistēmā Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Redaktors    | [Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+|Redaktors|[Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idejas     | [Idejas programmā Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint pakalpojumam Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Ievietojiet datus no attēla| [Ievietojiet datus no attēla](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -60,6 +60,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Publicēšana pakalpojumā Microsoft Stream    | [Prezentācijas pārveide par video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Izpēte*\*   | [Izpētes pakalpojumu pievienošana vai mainīšana](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizītkaršu skenēšana|  [Skenējiet vai pielieciet vizītkarti, lai pievienotu kontaktpersonas programmā Outlook darbam ar Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|*Līdzību pārbaudītājs*\* (Redaktora līdzeklis)|[Pārbaudiet, vai jūsu dokumentā nav līdzību ar tiešsaistes avotiem](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Viedā uzmeklēšana*\*   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
