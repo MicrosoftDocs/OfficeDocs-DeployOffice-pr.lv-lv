@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Microsoft 365 programmās lieluzņēmumiem (iepriekš Office 365 ProPlus), izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
-ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
+ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44589031"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087212"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
 
@@ -40,7 +40,7 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
 - Atļaut Office izmantot saistītos līdzekļus
 
-Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
+Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](../overview-office-client-policy-service.md). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
 
 > [!NOTE]
 > - Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
@@ -98,7 +98,7 @@ Jūsu lietotāji nevarēs izvēlēties ieslēgt vai izslēgt šos Microsoft 365 
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Politikas iestatījums saistītajiem līdzekļiem, kuri analizē jūsu saturu
 
-Šie ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgas iespējas. Piemēram, PowerPoint noformētājs vai redaktors programmā Word. Pilnīgāku saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
+Šie ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgas iespējas. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word. Pilnīgāku saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
 Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, lietotājiem būs pieejami visi šie saistītie līdzekļi.
 

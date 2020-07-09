@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus), tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663541"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087689"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
 
@@ -85,7 +85,7 @@ Microsoft 365 programmas lieluzņēmumiem sastāv no klienta programmām un sais
 
 Mēs saprotam, ka varat vēlēties noteikt, kāda veida saistītie līdzekļi ir pieejami lietotājiem, strādājot Office programmās. Kā organizācijas administrators varat izmantot politikas iestatījumus, kas ļauj izvēlēties, vai lietotājiem nodrošināt šādus saistītos līdzekļus:
 
-- **Lietošanas iespējas, kas analizē jūsu saturu**. Lietošanas iespējas, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai redaktors programmā Word.
+- **Lietošanas iespējas, kas analizē jūsu saturu**. Lietošanas iespējas, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word.
 
 - **Lietošanas iespējas, kas lejupielādē tiešsaistes saturu**. Lietošanas iespējas, kas jums ļauj meklēt un lejupielādēt tiešsaistes saturu, tostarp veidnes, attēlus, 3D modeļus, video un atsauces materiālus, lai uzlabotu jūsu dokumentus. Piemēram, Office veidnes vai PowerPoint ātrais sākums.
 
