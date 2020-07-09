@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt Office konfidencialitātes kontroles līdzekļus Android ierīcēs.
 hideEdit: true
-ms.openlocfilehash: 69a8880b03e63be391731f9882bcee17a81a51ab
-ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
+ms.openlocfilehash: 38d68df0d3a12e6858568906a60973bad9d76709
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39837721"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087890"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs
 
@@ -32,7 +32,9 @@ Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet
 
 Šie politikas iestatījumi attiecas uz šādām lietojumprogrammām:
 - Word versija 16.0.12228.20260 un jaunākas darbam ar Android, Excel un PowerPoint darbam ar Android.
+- Outlook darbam ar Android versija 4.1.71 vai jaunāka.
 - OneNote darbam ar Android versija 16.0.12228.20004 vai jaunāka.
+- OneDrive darbam ar Android versija 5.47 vai jaunāka.
 
 > [!NOTE]
 >- Šie politikas iestatījumi attiecas arī uz [Office Mobile](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) programmas darbam ar Android publiskā priekšskatījuma versiju 16.0.12130.20272 vai jaunāku.

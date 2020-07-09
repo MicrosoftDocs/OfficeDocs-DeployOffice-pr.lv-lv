@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus darbam ar iOS ierīcēm.
 hideEdit: true
-ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992113"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087854"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Izmantojiet preferences Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -33,7 +33,9 @@ Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet
 
 Šie preferenču iestatījumi attiecas uz šādām lietojumprogrammām:
 - Word darbam ar iOS, Excel darbam ar iOS un PowerPoint darbam ar iOS versija 2.30 vai jaunāka.
+- Outlook darbam ar iOS versija 4.30.0 vai jaunāka
 - OneNote darbam ar iOS versija 16.30 vai jaunāka.
+- OneDrive darbam ar iOS versija 11.19.11 vai jaunāka.
 - Visio Viewer darbam ar iOS versija 1.17 vai jaunāka.
 
 > [!NOTE]
@@ -60,6 +62,8 @@ Pēc nosūtīšanas uz ierīci konfigurācijas vārdnīca atrodas zem `com.apple
 > - Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu
 > - Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu
 > - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
+>
+> Konfidencialitātes iestatījumus Outlook darbam ar iOS un OneDrive darbam ar iOS ir iespējams konfigurēt tikai izmantojot Office mākoņa politikas pakalpojumu.
 >
 > Papildinformāciju par to, kā izmantot Office politiku mākoņpakalpojumu, skatiet rakstā [Pārskats par Office politiku mākoņpakalpojumu](../overview-office-cloud-policy-service.md).
 
