@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus darbam ar iOS ierīcēm.
 hideEdit: true
-ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: ac8b3428734649981f20a82be2f0793c857e09ee
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: lv-LV
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087854"
+ms.locfileid: "45092161"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>Izmantojiet preferences Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai
 
@@ -37,6 +37,7 @@ Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet
 - OneNote darbam ar iOS versija 16.30 vai jaunāka.
 - OneDrive darbam ar iOS versija 11.19.11 vai jaunāka.
 - Visio Viewer darbam ar iOS versija 1.17 vai jaunāka.
+- Office programma darbam ar iOS versija 2.34 vai jaunāka.
 
 > [!NOTE]
 > Papildinformāciju par līdzīgu Office iestatījumu izmantošanu datoros, kuros darbojas operētājsistēma macOS, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
