@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
-ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
+ms.openlocfilehash: 729329eeaa301cbb7bda61c0ec8d08ec9124729f
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068703"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087789"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -45,7 +45,7 @@ Bing nodrošina sekojošus līdzekļus programmām Outlook darbam ar iOS un Andr
 
 - **Atrašanās vietas ieteikumi:** pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, laukā Atrašanās vieta tiek noradīta pilna adrese.
 - **Interesanti kalendāri:** varat [abonēt](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) savu mīļāko sporta komandu vai TV pārraižu kalendārus.
-
+- **Ceļojuma laiks opcijā Nākošais:** nākamais plānotais pasākums tiks apkopots jūsu e-pasta iesūtnes augšdaļā ar nosaukumu [Nākošais](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Lai iegūtu aptuveno ceļojuma laiku programmā Outlook darbam ar Android, tad šim līdzeklim nepieciešamas Bing kartes.
 
  Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
 
@@ -83,6 +83,10 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 
 > [!NOTE]
 > Izpēte atšķiras no Pētnieka. Jaunākās Office versijās ir pieejams arī līdzeklis Pētnieks papildus Izpētei. Pētnieks ir jaunāks pakalpojums, kura darbību nodrošina Bing, un tas ir aprakstīts iepriekš sadaļā [Līdzekļi, kas izmanto Bing](#experiences-that-rely-on-bing).
+
+### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Ceļojuma laiks opcijā Nākošais programmā Outlook darbam ar iOS
+
+Programmā Outlook darbam ar iOS nākamais plānotais pasākums tiks apkopots jūsu e-pasta iesūtnes augšdaļā ar nosaukumu [Nākošais](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Šim līdzeklim nepieciešams Apple nodrošinātais pakalpojums Apple Maps, kas nodrošina aptuveno ceļojuma laiku. Piemērojama Apple Maps [lietošanas noteikumi](https://www.apple.com/legal/internet-services/maps/) un Apple [konfidencialitātes politika](https://www.apple.com/legal/privacy).
 
 ### <a name="weather-bar-in-outlook"></a>Laikapstākļu josla programmā Outlook
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
-ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
+ms.openlocfilehash: 8910b00d5201e70131eb1eb0e696d9ce048eabad
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048541"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087129"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -37,7 +37,7 @@ Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredz�
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Saistīti līdzekļi, kas analizē jūsu saturu
 
-Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word.
+Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai Tulkotājs.
 
 Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas analizē jūsu saturu, un sniegtas saites uz papildinformāciju par šiem līdzekļiem.
 
@@ -47,7 +47,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Automātisks alternatīvais teksts   | [Viss, kas jāzina, lai rakstītu efektīvu alternatīvo tekstu](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Datu tipi                  | [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktēšana  | [Diktēšana sistēmā Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Redaktors|[Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+|Redaktors<sup>1</sup> |[Redaktors ir jūsu rakstīšanas palīgs](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idejas     | [Idejas programmā Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | No rokraksta par tekstu, no rokraksta par formu, no rokraksta par matemātisko izteiksmi | [Mainiet rokrakstu par formām, tekstu vai matemātiskām izteiksmēm programmā PowerPoint pakalpojumam Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Ievietojiet datus no attēla| [Ievietojiet datus no attēla](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -66,6 +66,8 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Pārvēršana par tīmekļa lapu   | [Word dokumenta pārvēršana par Sway tīmekļa lapu](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Tulkotājs   | [Teksta tulkošana citā valodā](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+<sup>1</sup> Redaktora pamatfunkcijas ir pieejama pat tad, ja nav izveidots savienojums ar internetu. Tā pati pamatfunkcija paliek pieejama arī tad, ja izlemjat atspējot savienotās iespējas, kas analizē jūsu saturu. Abos gadījumos dati par redaktora izmantošanu netiek nosūtīti Microsoft.
 
 > [!NOTE]
 > \*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
@@ -96,6 +98,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | *Pētnieks*\*    | [Kā viegli rakstīt pētījumu programmā Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f). |
 | Priekšāteikšana    | [Ātrāks darbs ar priekšāteikšanas līdzekli](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Veidnes  | [Iepriekš izveidotu bezmaksas veidņu lejupielāde](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+|*Aptuvenais ceļojuma laiks opcijā Nākošais*\*|Ja izvēlaties atļaut programmai Outlook darbam ar iOS un Android piekļuvi jūsu atrašanās vietai, tad ceļojuma laika prognoze tiks iekļauta nākamajā notikumā opcijā [Nākošais](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work), kas atrodams Iesūtnes augšdaļā.|
 | *Laika apstākļu josla*\* (Outlook)| [Laikapstākļu prognozes pilsētas mainīšana kalendāra laikapstākļu joslā](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
