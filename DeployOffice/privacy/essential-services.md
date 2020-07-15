@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
-ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
+ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
+ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800395"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117207"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -2851,11 +2851,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingfullvalidation"></a>Office.Licensing.FullValidation 
 
-Tas tiek apkopots katrā sesijā, kas ziņo datora licencēšanas stāvokli un kļūdas, kas lietotājam rodas un kuru dēļ tas nevar izmantot lietojumprogrammu. Šis notikums norāda, vai lietotāja dators ir darbspējīgs. Esam iestatījuši anomāliju noteikšanu šim notikumam, lai norādītu, vai regresija izraisa neatbilstošo lietotāju uzvedību. Tas ir arī kritiski svarīgi, kad tiek diagnosticētas lietotāja problēmas, kā arī sistēmas darbspējas pārraudzībai
+Tas tiek apkopots katrā sesijā, kas ziņo datora licencēšanas stāvokli un kļūdas, kas lietotājam rodas un kuru dēļ tas nevar izmantot lietojumprogrammu. Šis notikums norāda, vai lietotāja dators ir darbspējīgs. Esam iestatījuši anomāliju noteikšanu šim notikumam, lai norādītu, vai regresija vai aktivizācijas mehānisms izraisa neatbilstošo lietotāju uzvedību. Tas ir arī kritiski svarīgi, kad tiek diagnosticētas lietotāja problēmas, kā arī sistēmas darbspējas pārraudzībai.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
+  
+  - **ActivationAttributes** — lietotāja izmantotā aktivizācijas mehānisma veids.
 
   - **IsSessionLicensing** — vai pašlaik strādājam koplietojamā datora aktivizācijas režīmā 
 
@@ -10458,6 +10460,27 @@ Tiek apkopoti šādi lauki:
 
  - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu vākšanas preferenci.
 
+### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
+
+Notikumu izraisa atbilstoša Office klienta programmu izbeigšana, piemēram, Word, Excel, PowerPoint, Outlook un citas programmas. Mēs izmantojam rādītāju Atbilstoša izbeigšana, lai novērtētu Office klienta produktu darbspēju. Tas ir paredzēts kā uzņēmējdarbībai svarīgs signāls, kuru izmanto Office inženieri, lai noteiktu produktu stabilitāti.
+
+Tiek apkopoti šādi lauki:
+
+- **AppBuild** — būvējuma versijas identifikators ietekmētajam procesam.
+- **AppMajor** — galvenās versijas identifikators ietekmētajam procesam.
+- **AppMinor** — papildversijas identifikators ietekmētajam procesam.
+- **AppRevision** —būvējuma versijas identifikators ietekmētajam procesam.
+- **BootCompleted** — norāda, vai Office process pabeidza sāknēšanu.
+- **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja.
+- **EcsETag** — procesa eksperimenta identifikators.
+- **HasEdit** — norāda, vai dokumenta rediģēšana notika Office procesa laikā.
+- **HasOpen** — norāda, vai dokuments tika atvērts Office procesa laikā.
+- **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+- **OfficeUILang** — Office procesa valoda.
+- **PreviousBuild** — iepriekš instalētā būvējuma versija.
+- **SafeMode** — norāda, vai Office process bija drošajā režīmā.
+- **SessionId** — procesa unikālais identifikators.
+- **SessionInitTime** — ietekmētā procesa sākuma laiks.
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
