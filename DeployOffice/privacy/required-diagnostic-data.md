@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
-ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
+ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
+ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811477"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45128573"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -1291,6 +1291,36 @@ Tiek apkopoti šādi lauki:
 
 - **WarmBoot** — identificē, vai konteiners jau bija izveidots vai nē.
 
+#### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
+
+Šis notikums nosaka programmas Application Guard palaišanas faila izpildes rezultātu. Mēs spēsim noteikt Word, Excel vai PowerPoint failu veiksmīgas palaišanas sesiju daļu procentos un neveiksmīgo mēģinājumu kļūdu kodus.
+
+Tiek apkopoti šādi lauki:
+
+- **AppId** — identificē programmu, kas tiek palaista.
+
+- **DetachedDuration** — norāda kopējo laiku, kas bija nepieciešams sapludinātajai darbībai. 
+
+- **ErrorCode1** — konteinera iestatīšanas kļūdas koda veids.  
+
+- **ErrorCode2** — kļūdas kods, izpildot izveidi. 
+
+- **ErrorCode3** — papildu kļūdas kods. 
+
+- **FileId** — unikāls identifikators (GUID), kuru pēc faila palaišanas atgriež Windows API.
+
+- **Id** — unikāls identifikators (GUID) failu palaišanai un izveidei. Šis ID tiek izmantots, lai savstarpēji saistītu Office un Windows notikumus.
+
+- **ResetError** — kļūdas kods, mēģinot atiestatīt konteineru pēc neveiksmīgā mēģinājuma.
+
+- **ResetErrorCode1** — konteinera iestatīšanas kļūdas koda veids pēc atiestatīšanas komandas. 
+
+- **ResetErrorCode2** — kļūdas kods, izpildot izveidi pēc atiestatīšanas komandas.
+
+- **ResetErrorCode3** — papildu kļūdas kods pēc atiestatīšanas komandas.  
+
+- **ResetErrorType** — kļūdas tips: izveide, faila sagatavošana vai palaišana.
+
 
 
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
@@ -1747,6 +1777,11 @@ Tiek apkopoti šādi lauki:
 - **action** — norāda uz darbību, kuru bija mēģinājums veikt brīdī, kad darbība reģistrēta. Piemēram, faila pievienošana un papildu opciju piedāvāšana.
 
 - **icon_name** — norāda ikonas nosaukumu, kas tiek parādīta brīdī, kad darbība tiek reģistrēta.
+ 
+- **origin** — norāda uz darbības izcelsmi. Iespējamās vērtības ir “quick_reply” un “full_screen”.
+
+- **toolbar_type** — norāda uz rīkjoslas tipu, kas ir redzams sastādīšanas lapā. Iespējamās vērtība ir “compose_actions” un “formatting”.
+
 
 #### <a name="conversation_view_action"></a>conversation_view_action
 
@@ -1761,6 +1796,8 @@ Tiek apkopoti šādi lauki:
 - **suggested_reply_char_count** — parāda, cik rakstzīmes ieteiktās atbildes piedāvā (ja ir), lai palīdzētu mums atklāt ar ieteikumiem saistītas anomālijas un problēmas
 
 - **suggested_reply_click_pos** — norāda, kurā pozīcijā ir norādīta ieteiktā atbilde (ja pieejama), lai mēs spētu atklāt problēmas ar konkrēto ieteikumu
+
+- **suggested_reply_type** — norāda uz ieteicamo atbildi šai darbībai. Iespējamās vērtības ir “text”, “send_avail” un “create_meeting”.
 
 - **use_default_quick_reply_mode** — norāda, vai tika izmantots ātrās noklusējuma atbildes režīms, lai palīdzētu mums atklāt ar ātrajām atbildēm e-pasta ziņojumos saistītās problēmas
 
@@ -2509,6 +2546,8 @@ Tiek apkopoti šādi lauki:
 
 - **Data_BootDuration** — lietojumprogrammas palaišanas ilgums faila atvēršanas procesā.
 
+- **Data_ClosePreviouslyOpenedMarkers** — atsevišķos failu atvēršanas scenārijos pirms pašreizējā dokumenta atvēršanas notiek iepriekš atvērtā dokumenta aizvēršana. Šis laika posms starp dažām darbībām, kas šajā gadījumā notiek, tiek ierakstīts kā virknes vērtība, kuras formāts ir \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
 - **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
@@ -2575,6 +2614,8 @@ Tiek apkopoti šādi lauki:
 
 - **Data_ErrorId_Tag** — atzīme kodā, kas palīdz noteikt kļūmes punktu
 
+- **Data_FileOpenFlowMarkers** — pirms faila atvēršanas procesa sākšanas notiek pirmapstrāde. Pirmapstrādei veltītai laiks tiek ierakstīts kā virknes vērtībā, kuras formāts ir \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_InclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu. 
 
 - **Data_InitializationReason** — uzskaitījums, kas norāda uz faila atvēršanas veidu, piemēram, lietotāja interfeisa elements vai citas lietojumprogrammas izsaukuma rezultātā utt.
@@ -2582,6 +2623,8 @@ Tiek apkopoti šādi lauki:
 - **Data_Measurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
 
 - **Data_OfficeMobileInitReason** — uzskaitījums, kas norāda faila atvēršanas ieejas punktu. 
+
+- **Data_RenderToInSpaceDuration** — ilgums starp renderēšanas beigām un silueta/kanvas animāciju.
 
 - **Data_SilhouetteDuration** — faila atvēršanas renderēšanas ilgums.
 
@@ -2724,6 +2767,681 @@ Tiek apkopts tikai tad, ja lietotājs (parasti administrators) ir iespējojis Of
 Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta, kad faila atvēršanas darbība notiek no ceļa, kas tika sniegts jaunāko izmantoto sarakstā, un šis notikums tiek izmantots, lai izprastu un noteiktu prioritātes lietotāju pieredzes kļūdām, balstoties uz faila atvēršanas darbības informāciju.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta, kad faila atvēršanas darbība notiek no URL, kas tika sniegts jaunāko izmantoto sarakstā, un šis notikums tiek izmantots, lai izprastu un noteiktu prioritātes lietotāju pieredzē, balstoties uz faila atvēršanas darbības informāciju. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no ceļa darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
+#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad faila atvēršanas darbība notiek no citas programmas, izmantojot protokola apdarinātāja interfeisu, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
+#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no čaulas darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no URL darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
+
 
 #### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
 
@@ -4226,6 +4944,99 @@ Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
 
+#### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
+
+Mēs reģistrējam brīdi, kad lietotājs atrodas lietojumprogrammā, kas ielādē personas kartīti, sagaidot, ka lietotājs atvērs Live personas kartīti.   Šie dati tiek izmantoti, lai noteiktu, vai kartīte ir ielādēta pareizi. 
+
+Tiek apkopoti šādi lauki: 
+
+- **Data.accountType** — norāda, vai lietotājs pieder organizācijai vai ir patērētājs
+
+- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā lietojumprogrammā
+
+- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
+
+- **Data.AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
+
+- **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
+
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
+
+- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
+
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
+
+- **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
+
+- **Data.contextType** — no kura konteksta (lietojumprogrammas) tika palaista kartīte
+
+- **Data.ecsConfigIds** — kartītē iespējoto līdzekļu versiju identifikatori
+
+- **Data.ecsTagId** — atzīmes ID līdzekļiem
+
+- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** — notikuma sūtīšanas prioritātes uzskaites vērtība.
+
+- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.flights** — kartītē iespējotie līdzekļi
+
+- **Data.fromCache** — norāda, vai dati tika ienesti no atmiņas
+
+- **Data.hasFinePointer** — norāda, vai ierīcei ir peles rādītāja funkcionalitāte
+
+- **Data.hasHoverEvents** — norāda, vai ierīcei ir norādīšanas ar peli funkcionalitāte
+
+- **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+
+- **Data.offlineResolved** — norāda, vai dati tika ielādēti bezsaistē
+
+- **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.properties** — papildu metadati, kas tiek apkopoti katram notikumam saskaņā ar tālāk aprakstīto: *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **cardCorrelationId** — Data.appContextId dublikāts
+  - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+  - **ClientTimeStamp** — notikuma reģistrācijas laiks lietojumprogrammā
+  - **consumerCorrelationId** — Data.clientCorrelationId dublikāts
+
+  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
+- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
+
+- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
+
+- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam
+
+- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
+
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+
+- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
+
+- **Data.version** — pakalpojuma versija (profila kartīte)
+
+- **Data.workloadCulture** — resursdatora lietojumprogrammā iestatītā kultūra
+
+- **DeviceInfo_Id** — globāli unikālais ierīces identifikators
+
+- **DeviceInfo_Make** — operētājsistēmas zīmols
+
+- **DeviceInfo_Model** — ierīces modelis
+
+- **DeviceInfo_OsName** — ierīces operētājsistēmas nosaukums
+
+- **DeviceInfo_OsVersion** — operētājsistēmas versija
+
+- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
+
 #### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Reģistrē, kad lietotājs aizver izvērstu personas kartīti. To izmanto, lai konstatētu kritiskas anomālijas neveiksmes gadījumā, aizverot reāllaika personas kartīti.
@@ -4254,19 +5065,22 @@ Tiek apkopoti šādi lauki:
 
 - **Data.exportType** — pasākuma kategorija VDAR eksporta pieprasījumam
 
+- **Data.externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
 
 - **Data.OTelJS.Version** — OTel reģistrētāja versija
 
-- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+- **Data.personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.properties** — papildu metadati, kas tiek apkopoti katram notikumam saskaņā ar tālāk aprakstīto: *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
    - **cardCorrelationId** — Data.appContextId dublikāts 
    - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
    - **ClientTimeStamp** — laiks, kad notika notikums Unix diskretizācijas laikā
    - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
-   - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
-   - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
-   - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
 
 - **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
 
@@ -4327,18 +5141,22 @@ Tiek apkopoti šādi lauki:
 
 - **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
 
+- **Data.externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā.
+
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
+
+- **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
 
 - **Data.OTelJS.Version** — OTel reģistrētāja versija
 
-- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+- **Data.personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.properties** — papildu metadati, kas tiek apkopoti katram notikumam saskaņā ar tālāk aprakstīto: *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
   - **ClientTimeStamp** — notikuma reģistrācijas laiks lietojumprogrammā
   - **cardCorrelationId** — Data.appContextId dublikāts
   - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
   - **consumerCorrelationId** — Data.clientCorrelationId dublikāts
-  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
-  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
-  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
 
 - **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
 
@@ -4362,102 +5180,6 @@ Tiek apkopoti šādi lauki:
 
 - **Event_ReceivedTime** — notikuma reģistrēšanas laiks pakalpojumā
 
-#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-Mēs reģistrējam brīdi, kad lietotājs atrodas lietojumprogrammā, kas ielādē personas kartīti, sagaidot, ka lietotājs atvērs Live personas kartīti.   Šie dati tiek izmantoti, lai noteiktu, vai kartīte ir ielādēta pareizi. 
-
-Tiek apkopoti tālāk norādītie lauki: 
-
-- **Data.appContextId** — nejauši ģenerēts ID, kas tiek lietots dažādu kontu identificēšanai vienā un tajā pašā lietojumprogrammā
-
-- **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
-
-- **Data.AppInfo_Id** — resursdatora lietojumprogrammas nosaukums
-
-- **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
-
-- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
-
-- **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
-
-- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
-
-- **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
-
-- **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
-
-- **Data.eventpriority** — notikuma sūtīšanas prioritātes uzskaites vērtība.
-
-- **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
-
-- **Data.OTelJS.Version** — OTel reģistrētāja versija
-
-- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
-
-  - **accountType** — norāda, vai lietotājs pieder organizācijai vai ir patērētājs
-
-  - **cardCorrelationId** — Data.appContextId dublikāts
-
-  - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
-
-  - **ClientTimeStamp** — notikuma reģistrācijas laiks lietojumprogrammā
-
-  - **consumerCorrelationId** — Data.clientCorrelationId dublikāts
-
-  - **contextType** — no kura konteksta (lietojumprogrammas) tika palaista kartīte
-
-  - **ecsConfigIds** — kartītē iespējoto līdzekļu versiju identifikatori
-
-  - **ecsTagId** — atzīmes ID līdzekļiem
-
-  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
-
-  - **flights** — kartītē iespējotie līdzekļi
-
-  - **fromCache** — vai dati tika ielādēti no atmiņas
-
-  - **hasFinePointer** — vai ierīcei ir peles rādītāja funkcionalitāte
-
-  - **hasHoverEvents** — vai ierīcei ir norādīšanas ar peli funkcionalitāte
-
-  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
-
-  - **offlineResolved**— vai dati tika ielādēti bezsaistē
-
-  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
-
-- **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
-
-- **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
-
-- **Data.type** — reģistrētā notikuma tips, piemēram, izsekošana, kļūda, notikums
-
-- **Data.userAadObjectId** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam (Data.UserInfo.Id dublikāts)
-
-- **Data.UserInfo.Id** — globāli unikālā lietotāja identifikators uzņēmuma Microsoft kontam
-
-- **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
-
-- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
-
-- **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
-
-- **Data.version** — pakalpojuma versija (profila kartīte)
-
-- **Data.workloadCulture** — resursdatora lietojumprogrammā iestatītā kultūra
-
-- **DeviceInfo_Id** — globāli unikālais ierīces identifikators
-
-- **DeviceInfo_Make** — operētājsistēmas zīmols
-
-- **DeviceInfo_Model** — ierīces modelis
-
-- **DeviceInfo_OsName** — ierīces operētājsistēmas nosaukums
-
-- **DeviceInfo_OsVersion** — operētājsistēmas versija
-
-- **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
-
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
 Reģistrē, kad lietotājs atver izvērstu personas kartīti. To izmanto, lai konstatētu kritiskas anomālijas neveiksmes gadījumā, palaižot reāllaika personas kartīti.
@@ -4478,9 +5200,13 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
+- **Data.clientScenario** — izmanto, lai noteiktu līdzekli lietojumprogrammā, no kuras tika atvērta personas kartīte
+
 - **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
 
 - **Data.eventId** — notikuma nosaukuma identifikators, piemēram, "LivePersonaCardRenderedAction"
+
+- **Data.externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā.
 
 - **Data.exportName** — lietotāja darbības notikuma lasāmais nosaukums, piemēram, "OpenedPersonaCard"
 
@@ -4488,31 +5214,25 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
 
+- **Data.hasPersonalInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
+
 - **Data.hostAppRing** — aplis, kurā programma tika izplatīta
+
+- **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
 
 - **Data.OTelJS.Version** — OTel reģistrētāja versija
 
-- **Data.properties** — katram notikumam apkopotie papildu metadati, kas aprakstīti zemāk:
+- **Data.personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.properties** — papildu metadati, kas tiek apkopoti katram notikumam saskaņā ar tālāk aprakstīto: *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **cardCorrelationId** — Data.appContextId dublikāts 
-
   - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
-
-  - **clientScenario** — izmanto, lai noteiktu līdzekli lietojumprogrammā, no kuras tika atvērta personas kartīte
-
   - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
 
-  - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
-
-  - **hasPersonalInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
-
-  - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
-
-  - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
-
-  - **section** — izvērstās kartītes aktīvā sadaļa
-
 - **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
+
+- **Data.section** — izvērstās kartītes aktīvā sadaļa
 
 - **Data.tenantAadObjectId** — nomnieks, kuram ir piesaistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
 
@@ -4557,6 +5277,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
 
+- **Data.bandwidthEstimateMbps** — efektīvo joslas platuma aprēķini Mb/s
+
 - **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
@@ -4571,11 +5293,26 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.exportType** — pasākuma kategorija VDAR eksporta pieprasījumam
 
+- **Data.externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
+
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
 
 - **Data.hostAppRing** — aplis, kurā programma tika izplatīta
 
+- **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
+
 - **Data.OTelJS.Version** — OTel reģistrētāja versija
+
+- **Data.personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
+
+- **Data.properties** — katram notikumam apkopotie papildu metadati, kā aprakstīts tālāk. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+    - **cardCorrelationId** — Data.appContextId dublikāts 
+    - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
+    - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
+    - **networkEffectiveType** — efektīvā tīkla savienojuma tips, piemēram, "slow-2g Online", lai noteiktu, vai lietotājam ir izveidots savienojums ar internetu brīdī, kad tiek parādīta personas kartīte
+    - **networkType** — izmantotās ierīces tīkla savienojamības tips
+    - **roundTripEstimateMs** — aprēķinātais efektīvais pašreizējā savienojuma cikls milisekundēs
 
 - **Data.region** — tā profila kartītes aizmugursistēmas pakalpojuma ģeogrāfiskais reģions, ar kuru savienots lietotājs
 
@@ -4597,34 +5334,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.viewType** — nosaka attēlotās profila kartītes tipu
 
+- **Data.wasOpenedAsCompactCard** — izmanto, lai noteiktu, vai kartīte sākotnēji tika atvērta kā kompakts skats
+
 - **NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
 
 - **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
-
-- **Data.properties** — katram notikumam apkopotie papildu metadati, kā aprakstīts tālāk.
-
-    - **bandwidthEstimateMbps** — efektīvo joslas platuma aprēķini Mb/s
-
-    - **cardCorrelationId** — Data.appContextId dublikāts 
-
-    - **cardPersonaCorrelationId** — Data.cardCorrelationId dublikāts
-
-    - **consumerCorrelationId** — Data.clientCorrelationId dublikāts 
-
-    - **externalAppSessionCorrelationId** — globāli unikāls identifikators programmai, lai identificētu visas personas kartītes, kas ir atvērtas vienā apakšsesijā
-
-    - **immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
-
-    - **networkEffectiveType** — efektīvā tīkla savienojuma tips, piemēram, "slow-2g Online", lai noteiktu, vai lietotājam ir izveidots savienojums ar internetu brīdī, kad tiek parādīta personas kartīte
-
-    - **networkType** — izmantotās ierīces tīkla savienojamības tips
-
-    - **personaCorrelationId** — globāli unikāls identifikators unikālajām personām sesijā
-
-    - **roundTripEstimateMs** — aprēķinātais efektīvais pašreizējā savienojuma cikls milisekundēs
-
-    - **wasOpenedAsCompactCard** — izmanto, lai noteiktu, vai kartīte sākotnēji tika atvērta kā kompakts skats
-
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5700,6 +6414,10 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Data_StopwatchDuration:long** — kopējais darbības laiks.
 
 - **Data_TypeOfSaveDialog: Long** — iepriekš definētu dialoga vērtību kopa (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG u. tml.).
+
+- **Data_WaitForSaveOrMergeSuccess:bool**— “SaveAs” sekmīgi sagaidīja saglabāšanu fonā vai sapludināšanu.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** — SaveAs noildze, gaidot fona saglabāšanu vai sapludināšanu.
 
 - **DstDoc** — jaunā dokumenta atrašanās vieta. 
 
@@ -7058,7 +7776,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Šis signāls tiek izmantots, lai nodrošinātu to, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, piezīmju grāmatiņas tiek atbilstoši nodrošinātas un lietotājs ir veiksmīgi izveidojis jaunu piezīmi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
 
-Papildu lauki netiek apkopoti.
+Tiek apkopoti šādi lauki:
+
+- Nav
 
 #### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(iepriekšējais nosaukums)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7135,6 +7855,8 @@ Tiek apkopoti šādi lauki:
 - **recent_message_id** — sarunā jaunāka ziņojuma ID
 
 - **suggested_reply_state** — šai sarunai ieteikto atbilžu stāvoklis (nav pieejams, pieejams, parādīts, izmantots vai atmests)
+
+- **suggested_reply_types** — norāda šai sarunai ieteikto/izmantoto atbilžu tipu un skaitu. Tā ir vārdnīca. Piemēram, {text: 2, send_avail: 1}.
   
 - **total_count** — kopējais komponenta attēloto kadru skaits
  
@@ -7199,6 +7921,8 @@ Tiek apkopoti šādi lauki:
 - **source_inbox** — norāda avota iesūtnes tipu atsauces ziņojumam 
 
 - **suggested_reply_state** — fiksē ieteiktās atbildes šim nosūtītajam e-pasta ziņojumam stāvokli, piem., nav pieejams, pieejams, parādīts, izmantots vai atmests.
+
+- **suggested_reply_types** — norāda šim e-pasta ziņojumam ieteikto/izmantoto atbilžu tipu un skaitu. Tā ir vārdnīca. Piemēram, {text: 2, send_avail: 1}.
 
 - **suggestions_requested** — norāda pieprasīto viedo sastādīšanas ieteikumu skaitu
 
@@ -7420,6 +8144,8 @@ Tiek apkopoti šādi lauki:
 Tiek apkopoti šādi lauki:
 
 - **black_list_reason** — norāda, vai pastāv iemesls šo datu atmešanai. Daži piemēri iekļauj palaišanu attālinātā paziņojuma dēļ un fona ieneses dēļ.
+
+- **step_premain** — norāda laiku, kas bija nepieciešams, lai Outlook no brīža, kad lietotājs pieskaras ikonai, pārietu uz step0_main, kas ir “galvenā” šajā dokumentā definētā darbība.
 
 - **step0_main** — norāda laiku, kas bija nepieciešams Outlook sasniegtu galveno “darbību”, kas ir Apple definēta darbība.
 
@@ -7966,6 +8692,16 @@ Tiek apkopoti tālāk norādītie lauki.
 - **TotalTime** — iztērētais laiks kopā.
 
 - **UsesSharedRuntime** — norāda, vai programma izmanto sharedRuntime.
+
+#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+
+Pirmā programmas palaišanas reize pēc instalēšanas aktivizēs šo periodiskā kontrolziņojuma notikumu. Tas palīdzēs identificēt programmas iepriekšējo versiju instalācijas un automātiskos atjauninājumus, kā arī ļaus mums identificēt automātisko atjauninājumu kļūdas, tai skaitā bibliotēku ielādes un paplašinājumu/valodas pakotņu lejupielāžu kļūmes.
+
+Tiek apkopoti šādi lauki:
+
+- **IsFlightAssigned** — Būla vērtība, kas nosaka, vai lietotājs piedalījās iepriekš piešķirtā lidojuma grupā, kas var aktivizēt noteiktas pieredzes.
+
+- **IsFRELoadSuccessful** — vesels skaitlis, kas norāda rezultātu stāvokli
 
 #### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9485,6 +10221,8 @@ Tiek apkopoti šādi lauki:
 
 - **isAppKill** — palīdz mums noteikt, vai lietojumprogramma ierīcē tika apturēta vai aizvērta
 
+- **is_crashloop** — palīdz mums saprast, vai avārija varētu būt avārijas cilpa.
+
 - **reportKey** — unikāls lietojumprogrammas instalēšanas ID ierīcē problēmu izmeklēšanai
 
 - **signal** — signāls, kas izraisīja avāriju, lai sniegtu mums papildu informāciju šīs avārijas izmeklēšanā
@@ -9647,6 +10385,8 @@ Tiek apkopoti tālāk norādītie lauki.
 - **IsDebug** - norāda, vai sesija ir atkļūdošanas sesija
 
 - **IsPreload** — norāda, vai pievienojumprogramma tiek sākotnēji ielādēta fonā, lai uzlabotu aktivizēšanas veiktspēju.
+
+- **IsWdagContainer** — norāda, vai pievienojumprogrammas aktivācija tiek veikta Windows Defender Application Guard konteinerī.
 
 - **NumberOfAddinsActivated** — aktivēto pievienojumprogrammu skaitītājs.
 
@@ -9935,6 +10675,15 @@ Tiek apkopoti tālāk norādītie lauki.
 - **Exception** — izņēmuma izsaukuma steks
 
 - **Event Name** — notikuma nosaukums ir notikuma kategorija un notikuma etiķete.
+
+#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetry-safebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+Kritiskais signāls tiek nosūtīts tad, kad mēs atiestatām avārijas skaitītāju programmas aizturēšanas laikā pirms tiek parādīts drošās sāknēšanas dialoglodziņš. Šis marķieris ir nepieciešams, lai diagnosticētu un sekotu programmas darbspējai. Drošas sāknēšanas dialoglodziņš tiek parādīts tad, kad programma avarē vairākas reizes pēc kārtas. Tas dod lietotājam iespēju atiestatīt programmu. Šis marķieris palīdzēs mums atklāt kāpēc drošās sāknēšanas dialoglodziņš netika parādīts lietotājam neskatoties uz to, ka tika sasniegti aktivācijas kritēriji. 
+
+Tiek apkopoti šādi lauki:
+
+- Nav
+
 
 #### <a name="telemetry_error"></a>telemetry_error
 
@@ -10725,9 +11474,17 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki:
 
-- **ResumeRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Atsākt mēģinājumu”
+- **CritiqueSummary** — visas lietotāja redzētās kritikas kopsavilkums ar skaitu.
 
-- **PauseRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Pauzēt mēģinājumu”
+- **PauseRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Pauzēt mēģinājumu”.
+
+- **RehearsalInitTime** — mēģinājuma inicializēšanai nepieciešamais laiks.
+
+- **ResumeRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Atsākt mēģinājumu”.
+
+- **Sessionid** — šis runas ieejas sesijas ID. Mēs to varam izmantot, lai atkļūdotu pakalpojumu darbības žurnālus.
+
+- **SlideshowViewLoadTime** — slaidrādes ielādei nepieciešamais laiks.
 
 
 #### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10747,6 +11504,10 @@ Notikums nostrādā, kad tiek ielādēta kopsavilkuma lapa. Šis notikums palīd
 
 Tiek apkopoti šādi lauki:
 
+- **PageURL:string**— šī ir lapas URL saite, kuru mēs varam izmantot, lai noteiktu, vai sesija bija sekmīga vai notika kļūda. 
+
+- **Sessionid:string** — šis ir runas FrontDoor sesijas ID. Mēs to varam izmantot, lai atkļūdotu pakalpojumu darbības žurnālus.
+
 - **SummaryPageLoadTime:int** — kopsavilkuma lapas ielādei nepieciešamais laiks (milisekundēs). Iekļauj lietderīgo datu izveides laiku 
 
 
@@ -10757,6 +11518,44 @@ Notikums nostrādā, kad lietotājs noklikšķina uz “Sākt sesiju”. Šis no
 Tiek apkopoti šādi lauki:
 
  - Nav
+
+#### <a name="officepowerpointrehearsalsessionmetrics"></a>Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Notikums tiek aktivizēts, kad Prezentēšanas trenera runas sesija tiek apturēta. Šis notikums palīdz mums fiksēt dažas Prezentēšanas trenera izmēģinājuma sesijas metrikas. Tas palīdzēs šim līdzeklim saglābt augstu pakalpojuma kvalitātes līmeni.
+
+Tiek apkopoti šādi lauki:
+
+- **AuthDurationInMs** — autentifikācijai nepieciešamais laiks milisekundēs (autentifikācijas marķiera atsvaidzināšana).
+
+- **AuthError** — apraksta notikušo autentifikācijas kļūdu (ja notika).
+
+- **AvgFragmentLatencyInMs** — šis ir vidējais laiks, kas nepieciešams balss ziņojumu nosūtīšanai tiklā no sūtītāja adresātam un atpakaļ.
+
+- **ConnectDurationInMs** — šis ir laiks milisekundēs, kas nepieciešams sesijas savienojuma izveides pabeigšanai. 
+
+- **FirstAudioDelayInMs** — šis ir laiks milisekundēs, kas ir nepieciešams pirmo audio datu saņemšanai.
+
+- **InitMediaCaptureLayerDurationInMs** — šis ir laiks milisekundēs, kas ir nepieciešams multivides/audio tveršanas slāņa inicializācijai.
+
+- **LocallyDroppedMessageCount** — šis ir lokāli nomesto ziņojumu kopējais skaits.
+
+- **OpenFrontDoorConnectionDurationInMs** — šis ir laiks milisekundēs, kas ir nepieciešams, lai atvērtu savienojumu ar pakalpojumu FrontDoor.
+
+- **SendAdaptationTextDurationInMs** — šis ir laiks milisekundēs, kas ir nepieciešams, lai pakalpojumam nosūtītu adaptācijas tekstu.
+
+- **ServiceDroppedMessageCount** — šis ir pakalpojuma nomesto ziņojumu kopējais skaits.
+
+- **SessionId** — šis ir runas FrontDoor sesijas ID. Mēs to varam izmantot, lai atkļūdotu pakalpojumu darbības žurnālus.
+
+- **SpeechClientResultEventsWithTimestamps** — šis kļūdu kodu masīvs, kas ir saņemts kopā ar laikspiedoliem, kas var palīdzēt veikt atkļūdošanu.
+
+- **SpeechHResultsWithTimestamps** — šis kļūdu kodu masīvs, kas ir saņemts kopā ar laikspiedoliem, kas var palīdzēt veikt atkļūdošanu.
+
+- **StartSpeechCaptureDurationInMs** — šis ir laiks milisekundēs, kas ir nepieciešams, lai sāktu runas tveršanu.
+
+- **TotalMessageCount** — šis ir kopējais pakalpojumam nosūtīto audio ziņojumu skaits.
+
+- **WebSocketConnectDurationInMs** — šis ir laiks milisekundēs, kas nepieciešams, lai pabeigtu tīmekļa ligzdas savienojuma izveidi.
 
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -11501,11 +12300,23 @@ Tiek apkopoti šādi lauki:
 
 - **Data_MethodName** — teksts, kas norāda metodes nosaukumu avota kodā, kurā ir kļūda.
 
+#### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
+
+Šis notikums fiksē jebkuras kļūdas, kas radās piekļūstot Android reģistram. Šis notikums palīdz mums izprast lietotāju kļūdas un padarīt reģistra līdzekli jaudīgāku.
+
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu.
+
+- **AppVersionLong** — programmas versija.
+
+- **Data_StackTrace** — kļūdas izsekošanas steks.
+
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
 Mēs reģistrējam šo notikumu gadījumā, ja ir rodas kļūdas, ielādējot koplietojamās bibliotēkas. Bibliotēkas ielādes kļūdas var notikt divu iemeslu dēļ: 1) instalētais APK nav saderīgs ar ierīci. 2) bibliotēka, ko mēģinām ielādēt var būt bojāta kļūdu, kas rodas izvēršanas kļūdu rezultātā, kuru iemesls ir vietas trūkums diskā vai atmiņas trūkums.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
 - **Data_ExceptionMessage** — izņēmuma ziņojums, kuru parāda Android API System.loadlibrary
 
