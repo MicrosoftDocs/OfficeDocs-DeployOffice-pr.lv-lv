@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
-ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
+ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
+ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45128573"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45156048"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -2768,7 +2768,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+#### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta, kad faila atvēršanas darbība notiek no ceļa, kas tika sniegts jaunāko izmantoto sarakstā, un šis notikums tiek izmantots, lai izprastu un noteiktu prioritātes lietotāju pieredzes kļūdām, balstoties uz faila atvēršanas darbības informāciju.
 
@@ -2880,7 +2880,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+#### <a name="office_docs_appdocs_operationopenfrommrubyurl"></a>Office_Docs_AppDocs_OperationOpenFromMruByUrl
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta, kad faila atvēršanas darbība notiek no URL, kas tika sniegts jaunāko izmantoto sarakstā, un šis notikums tiek izmantots, lai izprastu un noteiktu prioritātes lietotāju pieredzē, balstoties uz faila atvēršanas darbības informāciju. 
 
@@ -2993,7 +2993,7 @@ Tiek apkopoti šādi lauki:
 - **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+#### <a name="office_docs_appdocs_operationopenfrompath"></a>Office_Docs_AppDocs_OperationOpenFromPath
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no ceļa darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
 
@@ -3105,7 +3105,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
-#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+#### <a name="office_docs_appdocs_operationopenfromprotocolhandler"></a>Office_Docs_AppDocs_OperationOpenFromProtocolHandler
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad faila atvēršanas darbība notiek no citas programmas, izmantojot protokola apdarinātāja interfeisu, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
 
@@ -3217,7 +3217,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
-#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+#### <a name="office_docs_appdocs_operationopenfromshell"></a>Office_Docs_AppDocs_OperationOpenFromShell
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no čaulas darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
 
@@ -3330,7 +3330,7 @@ Tiek apkopoti šādi lauki:
 - **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+#### <a name="office_docs_appdocs_operationopenfromurl"></a>Office_Docs_AppDocs_OperationOpenFromUrl
 
 Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila atvēršanas no URL darbība, un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila atvēršanu. 
 
