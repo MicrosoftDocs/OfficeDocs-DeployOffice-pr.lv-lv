@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz informāciju par neobligātajiem Office diagnostikas datiem, tostarp dažus notikumu piemērus.
 hideEdit: true
-ms.openlocfilehash: 0190c29a017b35d945e6a1d540e1560dfab47a4c
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993134"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683172"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Neobligātie Office diagnostikas dati
 
@@ -37,7 +37,7 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 
 ***Neobligātie diagnostikas dati*** ir papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
 
-Ja izvēlaties nosūtīt mums neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati.
+Ja izvēlaties nosūtīt mums neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati. Var tikt nosūtīti arī Office diagnostikas žurnālu faili, kuri satur informāciju, kas ir ļoti līdzīga neobligātiem diagnostikas datiem. Papildinformāciju par šiem žurnāla failiem skatiet rakstā [Pārskats par Office diagnostikas žurnāla failiem](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
 Neobligātās diagnostikas datu piemēri ietver datus, kurus iegūstam par formām, ko lietotāji ievieto Word dokumentos, un kuri ļauj mums sniegt labākas opcijas, kā arī datus, kurus apkopojam par laiku, kas nepieciešams PowerPoint slaida parādīšanai ekrānā (ja tas notiek lēni), lai tā varētu uzlabot lietošanas pieredzi.
 
