@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
-ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
+ms.openlocfilehash: 1485ef7bdcfdf945ba2c9dd0e751cbe6b84dde5c
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117207"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683237"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -2773,7 +2773,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Apkopo konfigurāciju sarakstu, ko klients saņēmis no ECS
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **ECSConfigs** — komatatdalīts ECS konfigurāciju saraksts
 
@@ -10425,6 +10425,140 @@ Tiek apkopoti tālāk norādītie lauki
 Tiek apkopoti tālāk norādītie lauki:
  
 - **ErrorMsg** — kļūdas ziņojums, kas atbilst kļūmei.
+
+### <a name="onenotestorageconnectivitychanged"></a>OneNote.Storage.ConnectivityChanged
+
+Notikumu žurnāli, ja lietotājam ir vai nav savienojums ar internetu. Tas tiek lietots, lai saistītu citus sinhronizācijas darbspējas standartus, ļaujot mums ignorēt notikumus, kas notiek, kamēr lietotājam nav interneta savienojuma, jo nesagaidām, ka mūsu pakalpojuma latentums būs pieņemams bez interneta savienojuma. Tas ļauj mums aprēķināt precīzu sesiju skaitu mūsu metrikai starp klientu sektoriem (par katru nomnieku, par katru sektoru). Mēs to izmantojam arī, lai filtrētu kļūdu ziņojumus, jo ir daudz sinhronizācijas kļūdu, kuras, iespējams, tiks rādītas bez tīkla savienojama, bet pretējā gadījumā jāveic izmeklēšana.
+
+Ja nesaņemsim šos datus, mēs nevarēsim precīzi pārraudzīt mūsu produktu veiktspēju vai noteikt, vai ir paredzams, ka lietotājam radušās kļūdas, vai arī jums būs jāveic papildu izmeklēšana.
+
+Tiek apkopoti šādi lauki:
+
+- **InternetConnectivityNowAvailable** — ja savienojuma stāvoklis ir mainīts, lai tagad tas būtu internets
+
+### <a name="onenotestoragelegacyinboundlatency"></a>OneNote.Storage.LegacyInboundLatency
+
+Svarīgo signālu izmanto, lai izsekotu ienākošo sinhronizācijas darbību veiktspēju, kuras tieši mijiedarbojas ar SharePoint, ieskaitot sasaistīto informāciju, kas ļauj mums pārraudzīt un izmeklēt datu augšupielādes veiktspēju mūsu pakalpojumā. Šis signāls apkopo tikai sliktākās veiktspējas lejupielādes pēdējās 300 sekundēs (sekunžu skaitu Microsoft var konfigurēt atkarībā no pakalpojuma veiktspējas un nosacījuma).
+
+Tas tiek izmantots, lai nodrošinātu pakalpojumu darbspēju, ļaujot mums redzēt, kuri nomnieki saskaras ar nepieņemami lēnu datu saņemšanu mūsu pakalpojumā, informāciju par datiem, ko tie augšupielādē, kad tieši rodas palēnināta saņemšana, un to, cik izplatīta ir latentuma problēma nomnieku vidū. Tas tiek izmantots, lai ziņotu par pakalpojumu darbspēju un veiktspēju mūsu klientiem, lai novērtētu tendences laika gaitā un brīdinātu par problēmām, kas automātiski attiecas uz inženiertehnisko mazināšanu. Ja mums nav šo datu, tas neļaus mums nodrošināt atbilstošu lejupielādes veiktspēju, kad lietotājs sinhronizēs izmaiņas no SharePoint savā datorā.
+
+Tiek apkopoti šādi lauki: 
+
+- **IsEducationNotebook** — Būls, kas norāda, vai piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+
+- **NotebookId** — piezīmju grāmatiņas ID, kas ir daļa no šīs augšupielādes
+
+- **TimeToConfirmSyncedWithServerInMs** — laiks milisekundēs, kas bija nepieciešams augšupielādes veikšanai
+
+### <a name="onenotestoragelegacyoutboundlatency"></a>OneNote.Storage.LegacyOutboundLatency
+
+Svarīgo signālu izmanto, lai izsekotu izejošo sinhronizācijas darbību veiktspēju, kuras tieši mijiedarbojas ar SharePoint, ieskaitot sasaistīto informāciju, kas ļauj mums pārraudzīt un izmeklēt datu augšupielādes veiktspēju mūsu pakalpojumā. Šis signāls apkopo tikai sliktākās veiktspējas lejupielādes pēdējās 300 sekundēs (sekunžu skaitu Microsoft var konfigurēt atkarībā no pakalpojuma veiktspējas un nosacījuma).
+
+Tas tiek izmantots, lai nodrošinātu pakalpojumu darbspēju, ļaujot mums redzēt, kuri nomnieki saskaras ar nepieņemami lēnu datu nosūtīšana mūsu pakalpojumā, informāciju par datiem, ko tie augšupielādēja, kad tieši rodas palēnināta nosūtīšana, un to, cik izplatīta ir latentuma problēma nomnieku vidū. Tas tiek izmantots, lai ziņotu par pakalpojumu darbspēju un veiktspēju mūsu klientiem, lai novērtētu tendences laika gaitā un brīdinātu par problēmām, kas automātiski attiecas uz inženiertehnisko mazināšanu. Ja mums nav šo datu, tas neļaus mums nodrošināt atbilstošu veiktspēju, sinhronizējot lietotāju izmaiņas no SharePoint. 
+
+Tiek apkopoti šādi lauki: 
+
+- **IsEducationNotebook** — Būls, kas norāda, vai piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+
+- **NotebookId** — piezīmju grāmatiņas ID, kas ir daļa no šīs augšupielādes
+
+- **TimeToConfirmSyncedWithServerInMs** — laiks milisekundēs, kas bija nepieciešams augšupielādes veikšanai
+
+### <a name="onenotestoragerealtimefiledataobjectdownload"></a>OneNote.Storage.RealTime.FileDataObjectDownload 
+
+Svarīgo signālu izmanto, lai izsekotu veiktspēju, ja lietotājs saņem faila datu objektu (piemēram, iegultu failu vai attēlu), kas ir lejupielādēts tieši no mūsu pakalpojuma, nevis kā daļa no sinhronizācijas operācijas lapā, sadaļā vai piezīmju grāmatiņā. Šis signāls apkopo tikai sliktākās veiktspējas lejupielādes pēdējās 300 sekundēs (sekunžu skaitu Microsoft var konfigurēt atkarībā no pakalpojuma veiktspējas un nosacījuma).
+
+Tas tiek izmantots, lai nodrošinātu pakalpojumu darbspēju un veiktspēju, ļaujot mums redzēt, kuri nomnieki saskaras ar nepieņemami lēnu lejupielādi no mūsu pakalpojuma, un cik izplatīta ir latentuma problēma nomnieku vidū, un ziņo par mūsu uzvedību laika gaitā, ļaujot mums izmērīt pakalpojumu veiktspējas tendences. Ja ir novērojams nepieļaujams latentums faila objektam, tiks izmantoti arī šie dati, lai savstarpēji saistītu ar citiem signāliem no klienta un pakalpojuma, kas attiecas uz šo objektu, lai uzlabotu mūsu lejupielādes procesu. Mēs arī sadalījām datus, pamatojoties uz lejupielādētā failu objekta paplašinājumu, jo mums ir dažādas gaidas, pamatojoties uz to, vai fails tiek prezentēts mūsu kanvā (piem., attēls), vai arī tas ir fails, kas nav ievietots (piemēram, teksta dokuments). Ja nesaņemsim šos datus, mēs nevarēsim pārraudzīt šo lejupielāžu veiktspēju.
+
+Tiek apkopoti šādi lauki: 
+
+- **FileSizeInBytes** — lejupielādētā faila lielums baitos 
+
+- **IsImage** — Būla noteikšana, ja lejupielādējamajam failam ir paplašinājums, kas atbilst iepriekš noteiktam bieži lietotā attēla formātu (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png) sarakstam, kas tiek rādīts iekļautajā kanvā
+
+- **TimeToDownload** — laiks, kas bija nepieciešams, lai veiksmīgi lejupielādētu FDO no mūsu BLOB krātuves ierīcē 
+
+### <a name="onenotestoragerealtimewebsocketdownload"></a>OneNote.Storage.RealTime.WebSocketDownload
+
+Svarīgo signālu izmanto, lai izsekotu ienākošo sinhronizācijas darbību veiktspēju, ieskaitot sasaistīto informāciju, kas ļauj mums pārraudzīt un izmeklēt datu lejupielādes no mūsu pakalpojuma (onenote.com) veiktspēju. Šis signāls apkopo tikai sliktākās veiktspējas lejupielādes pēdējās 300 sekundēs (sekunžu skaitu Microsoft var konfigurēt atkarībā no pakalpojuma veiktspējas un nosacījuma).
+
+Tas tiek izmantots, lai nodrošinātu pakalpojumu darbspēju, ļaujot mums redzēt, kuri nomnieki saskaras ar nepieņemami lēnu datu saņemšanu no mūsu pakalpojuma, informāciju par datiem, ko tie lejupielādēja, kad tieši rodas palēnināta saņemšana, un to, cik izplatīta ir latentuma problēma nomnieku vidū. Tas tiek izmantots, lai ziņotu par pakalpojumu darbspēju un veiktspēju mūsu klientiem, lai novērtētu tendences laika gaitā un brīdinātu par problēmām, kas automātiski attiecas uz inženiertehnisko mazināšanu. 
+
+Ja sadaļai vai piezīmju grāmatiņai tiek novērots nepieņemams latentums, mēs izmantosim arī šos datus, lai saistītu ar citiem signāliem no klienta un pakalpojuma, kas attiecas uz to pašu dokumentu, lai identificētu klienta puses veiktspējas regresijas, kas ļauj mums nodrošināt labākas veiktspējas pakalpojumus.
+
+Ja nesaņemsim šos datus, mēs nevarēsim pārraudzīt šī mūsu pakalpojuma darbības rezultātu vai servera puses izmaiņu ietekmi, kas, iespējams, ir nepieciešama lietošanas vai citu faktoru dēļ.
+
+Tiek apkopoti šādi lauki:
+
+- **DeviceSessionId** — ierīces sesijas ID
+
+- **IsEducationNotebook** — Būls, kas norāda, vai piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+
+- **IsHierarchyResource** — Būls, kas norāda, vai resurss ir hierarhijas resurss
+
+- **NotebookId** — piezīmju grāmatiņas ID, kas ir daļa no šīs augšupielādes
+
+- **ResourceId** — resursa ID, kuru augšupielādējam
+
+- **SectionId** — sadaļas ID, kas ir daļa no šīs augšupielādes
+
+- **ServerSessionId** — servera ID, kas ir daļa no šīs augšupielādes
+
+- **TimeToConfirmSyncedWithServerInMs** — laiks milisekundēs starp lietotāju, kurš pārvietojas uz lapu, un replicēšanas steku, kas apstiprina, ka šī lapa ir sinhronizēta ar serveri.
+
+- **TimeToFirstUpdateInMs** — laiks milisekundēs starp sinhronizācijas programmu, kas sākas ar lapas ienākošo replicēšanu, un replicēšanas darbību, kura sasniegusi sinhronizāciju ar servera stāvokli.
+
+### <a name="onenotestoragerealtimewebsocketupload"></a>OneNote.Storage.RealTime.WebSocketUpload
+
+Svarīgo signālu izmanto, lai izsekotu izejošo sinhronizācijas darbību veiktspēju, ieskaitot sasaistīto informāciju, kas ļauj mums pārraudzīt un izmeklēt datu augšupielādes mūsu pakalpojumā (onenote.com) veiktspēju.
+
+Tas tiek izmantots, lai nodrošinātu pakalpojumu darbspēju, ļaujot mums redzēt, kuri nomnieki saskaras ar nepieņemami lēnu datu nosūtīšana mūsu pakalpojumā, informāciju par datiem, ko tie augšupielādēja, kad tieši rodas palēnināta nosūtīšana, un to, cik izplatīta ir latentuma problēma nomnieku vidū. Tas tiek izmantots, lai ziņotu par pakalpojumu darbspēju un veiktspēju mūsu klientiem, lai novērtētu tendences laika gaitā un brīdinātu par problēmām, kas automātiski attiecas uz inženiertehnisko mazināšanu. Mēs arī izmantosim šos datus, lai izsekotu mūsu klientu un pakalpojumu uzlabojumu ietekmi un efektivitāti. 
+
+Ja sadaļai vai piezīmju grāmatiņai tiek novērots nepieņemams latentums, mēs izmantosim arī šos datus, lai saistītu ar citiem signāliem no klienta un pakalpojuma, kas attiecas uz to pašu dokumentu, lai identificētu veiktspējas regresijas, kas ļauj mums nodrošināt labākas veiktspējas pieredzi.
+
+Ja nesaņemsim šos datus, mēs nevarēsim pārraudzīt šī mūsu pakalpojuma darbības rezultātu vai servera puses izmaiņu ietekmi, kas, iespējams, ir nepieciešama lietošanas vai citu faktoru dēļ.
+
+Tiek apkopoti šādi lauki: 
+
+- **DeviceSessionId** — ierīces sesijas ID
+
+- **IsEducationNotebook** — Būls, kas norāda, vai piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+
+- **IsHierarchyResource** — Būls, kas norāda, vai resurss ir hierarhijas resurss
+
+- **IsWorstTime** — Būls, kas norāda, vai laiks ir regulārs augšupielādes notikums, vai vissliktākais laiks, ko novērojām šim klientam pēdējās 300 sekundēs (sekunžu skaitu var konfigurēt Microsoft atkarībā no pakalpojuma veiktspējas un nosacījuma).
+
+- **NotebookId** — piezīmju grāmatiņas ID, kas ir daļa no šīs augšupielādes
+
+- **RecommendedPutIntervalInMs** — laiks, kad pakalpojums ir pateicis klientam par ieteicamo iestatīto intervālu
+
+- **ResourceId** — resursa ID, kuru augšupielādējam
+
+- **SectionId** — sadaļas ID, kas ir daļa no šīs augšupielādes
+
+- **SenderRequestId** — sūtītāja ID, kas veic augšupielādi
+
+- **ServerSessionId** — servera ID, kas ir daļa no šīs augšupielādes
+
+- **UploadNonSuspendedTimeInMs** — laiks milisekundēs, kas bija nepieciešams augšupielādes veikšanai, izņemot laiku, kad lietojumprogramma tika apturēta
+
+- **UploadTimeInMs** — laiks milisekundēs, kas bija nepieciešams augšupielādes reālai veikšanai
+
+- **WaitTimeInMs** — laiks milisekundē starp augšupielādes pieprasīšanu un augšupielādes sākšanu
+
+- **WebURL** — augšupielādes tīkls URL (Pieteicies kā PiiWz)
+
+### <a name="onenotestoragesynchealth"></a>OneNote.Storage.SyncHealth
+
+Svarīgo signālu izmanto, lai izsekotu kļūdas un izņēmumus, kas ir radušies sinhronizācijas stekā OneNote klientā, kas ļauj mums pārraudzīt un mazināt šādus neparedzētus nosacījumus.
+
+Tas tiek lietots, lai nodrošinātu pakalpojuma darbspēju, ļaujot mums skatīt klientu kļūdu ziņojumus reāllaikā, un ļauj mums reaģēt uz sinhronizācijas problēmām tiklīdz tās rodas. To izmanto arī, lai noteiktu, cik izplatīta ir problēma, un cik nopietna ir, savstarpēji norādot kļūdas atzīmi ar klienta kodu, lai identificētu kļūmes avotu. Mēs apkopojām arī šos datus, lai iegūtu informāciju par mūsu veiktspēju laika gaitā un to uzlabojumu ietekmi un efektivitāti, ko veicam saviem klientiem un pakalpojumiem. Ja mums nav šo datu, mēs nevarēsim proaktīvi reaģēt uz kļūdu nosacījumiem mūsu sinhronizācijas pakalpojumā, bez klienta eskalācijas.
+
+Tiek apkopoti šādi lauki: 
+
+- **Service** — sinhronizācijas pakalpojums, ko klients izmantoja, kad radās kļūda (mantotā vai modernā sinhronizācija)
+
+- **Tag** — atzīme (identifikācijas vērtība), kura norāda kļūdu, kas radās sinhronizācijas darbības laikā klientam
 
 ### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
  

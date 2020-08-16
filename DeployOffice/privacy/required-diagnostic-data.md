@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
-ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
+ms.openlocfilehash: 777c0bdb8651a046022e8078820870b67e99f2f7
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45156048"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683273"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -649,6 +649,13 @@ Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar Android notikumiem
 - **os_arch** — ierīces operētājsistēmas arhitektūra palīdz mums atklāt ierīču operētājsistēmām raksturīgas problēmas
 
 - **process_bitness** — procesa bitu skaits (32 vai 64 biti) lietojumprogrammai palīdz mums atklāt ierīces bitu skaitam raksturīgas problēmas
+
+- **webview_kernel_version**: Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
+- **webview_package_name**: ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
+- **webview_package_version**: ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
 
 ## <a name="software-setup-and-inventory-data-events"></a>Programmatūras iestatīšanas un inventāra datu notikumi
 
@@ -1572,9 +1579,9 @@ Tiek apkopoti šādi lauki:
 
 - **error_type** — notikušās kļūdas tips. Daži no paraugiem iekļauj saglabāt melnrakstu, sūtīt melnrakstu un mākoņa faila kļūda.
 
-- **exrule** — paplašinātā kārtulas vērība (tiek pielietota tikai atkārtotām tikšanās kļūdām)
+- **exdate** — pagarinātā noteikuma datums (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **exrule** — paplašinātais kārtulas datums (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+- **exrule** — pagarinātā noteikuma vērtību (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **has_attachments** — parāda, vai melnraksts, kurā notika kļūda, satur pielikumus, ja attiecināms.
 
@@ -1586,13 +1593,13 @@ Tiek apkopoti šādi lauki:
 
 - **is_recoverable** — parāda, vai no kļūdas ir iespējams atkopties vai tā ir fatāla kļūda.
 
-- **rdate** — atkārtošanās kārtulas datums (tiek pielietots tikai atkārtotām tikšanās kļūdām) 
+- **rdate** — atkārtošanās noteikuma datums (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **rrule** — atkārtošanās kārtula (tiek pielietots tikai atkārtotām tikšanās kļūdām) 
+- **rrule** — pats atkārtošanās noteikums (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **rrule_error_message** — atkārtošanās kārtulas parsēšanas kļūdas ziņojums (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+- **rrule_error_message** — atkārtošanās noteikumu parsēšanas kļūdas ziņojums (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **rrule_error_type** — atkārtošanās kārtulas parsēšanas kļūdas tips (tiek pielietots tikai atkārtotām tikšanās kļūdām)
+- **rrule_error_type** — atkārtošanās noteikumu parsēšanas kļūdas tips (attiecas tikai uz atkārtotām tikšanās kļūdām) *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **status_code** — notikušās kļūdas statusa kods. Palīdz mums saprast kļūdas iemeslu.
 
@@ -1664,6 +1671,8 @@ Tiek apkopoti šādi lauki:
 
 - **is_all_day** — izmanto kopā ar “meeting_duration”, lai norādītu, vai sapulce ilgst visu dienu. Norāda, vai pastāv problēmas ar darbībām, kas tiek veiktas attiecībā uz visu dienu ilgām sapulcēm. 
 
+- **is_location_permission_granted** — vai lietotājs lietojumprogrammai ir piešķīris sistēmas atrašanās vietas atļauju. Ja tiek piešķirta atrašanās vietas atļauja, lietojumprogramma var rādīt informāciju par papildu utilītu lietotāja interfeisā. Ja ir zināmas vai piešķirta atrašanās vietas atļauja, mēs varam uzzināt, cik bieži lietotājiem tiek rādīta informācija par papildu utilītu.
+
 - **is_organizer** — palīdz mums noteikt, vai organizators spēj rediģēt un veidot sapulces atbilstošā veidā. 
 
 - **is_recurring** — norāda, vai pastāv problēma, kas ietekmē tieši regulāri notiekošās sapulces. 
@@ -1714,27 +1723,23 @@ Tiek apkopoti šādi lauki:
 
 Izmanto, lai noteiktu iespējamo negatīvo ietekmi uz jūsu spēju izmantot galvenās meklēšanas funkcijas, piemēram, e-pastu, kontaktpersonu vai notikumu meklēšana.
 
-Tiek apkopoti šādi lauki:  
+Tālāk norādītie lauki tiek apkopoti iOS un Android. 
 
 - **account_switcher_action_type** – šis darbības tips seko tam, vai lietotājs izmantoja kontu pārslēdzēju, lai pārslēgtu kontus nejauši vai apzināti.
 
-- **action** — meklēšanai veiktās darbības tips. Nosaka, vai meklēšana tika sākta, notiek vai ir beigusies un kādas darbības notika meklēšanas laikā, piemēram, vai tika izmantots mikrofons. Kritiski svarīgs, lai nodrošinātu precīzu un lietderīgu meklēšanu.
-
 - **action_type** — meklēšanai veiktās darbības tips. Nosaka, vai meklēšana tika sākta, notiek vai ir beigusies un kādas darbības notika meklēšanas laikā, piemēram, vai tika izmantots mikrofons. Kritiski svarīgs, lai nodrošinātu precīzu un lietderīgu meklēšanu. 
-
-- **answer_result_selected_count** — izseko, cik daudz reižu meklēšana bija “veiksmīga”, t.i., vai lietotājs atrada meklēto personu? Uzrakstīja e-pasta ziņojumu? Atzīmēja ziņojumu ar grāmatzīmi? 
-
-- **contact_result_in_full_list_selected_count** — izseko, cik reizes lietotājs pieprasīja “apskatīt visas kontaktpersonas” pilnā sarakstā kombinētās meklēšanas sesijas laikā
-
-- **contact_result_selected_count** — izseko, cik kontaktpersonu rezultāti tika atlasīti kombinētās meklēšanas sesijas laikā
-
-- **conversation_result_selected_count** — izseko, cik sarunas tika atlasītas kombinētās meklēšanas sesijas laikā
 
 - **entrance_type** — nosaka, kā lietotājs uzsāka meklēšanas pieprasījumu, piemēram, no meklēšanas cilnes, nulles vaicājuma, meklēšanas galvenes vai meklēšanas rezultāta. 
 
 - **has_contact_results** — norāda, vai kontaktpersonu rezultāti tiek parādīti meklēšanas vaicājumā
 
 - **include_deleted** — norāda, vai meklēšana rāda dzēstās opcijas meklēšanas rezultātos 
+
+- **is_ics_external_data** — notver, ja pievienotais notikums ir iekšējs (piemēram, pievienots no Outlook uz Outlook kalendāra) vai ārējs (piemēram, pievienots no citas e-pasta lietojumprogrammas, piemēram, no Gmail uz Outlook kalendāra).
+
+- **is_network_fully_connected** — tas ir, lai iegūtu mājienu par bezsaistes meklēšanas iemeslu. Ja tīkls ir savienots un meklēšana ir bezsaistē, iespējams, iemesls ir servera noildze.
+
+- **is_offline_search** — vai meklēšanas sesija ir meklēšana bezsaistē, pamatojoties uz HX atgrieztajiem meklēšanas rezultātiem
 
 - **re_enter_search_tab** — Būla vērtība, kas norāda, vai lietotājs ir pārslēdzis cilnes pirms meklēšanas rezultāta atlases
 
@@ -1744,11 +1749,29 @@ Tiek apkopoti šādi lauki:
 
 - **search_origin** — norāda uz meklēšanas izcelsmi, piemēram, balss asistents, Cortana, ievade ar tastatūru utt. 
 
+- **search_scope** — virkne norāda, kāda veida kontu meklēja lietotājs (piem., Exchange, Gmail utt.) vai tas bija meklējums visos kontos. 
+
+- **search_suggestion_type**— norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
+
 - **search_request_reason** — norāda iemeslu, kura dēļ meklēšanas pieprasījums tika nosūtīts no lietojumprogrammas, norādot komponentu vai lietotāja darbību, kas uzsāka meklēšanu.
 
 - **search_result_filter_type** — norāda, kāda veida filtrs tika piemērots meklēšanai, piem., rādīt visu vai tikai pielikumus
 
-- **search_scope** — virkne norāda, kāda veida kontu meklēja lietotājs (piem., Exchange, Gmail utt.) vai tas bija meklējums visos kontos. 
+Tālāk norādītie lauki tiek apkopoti Outlook Mobile iOS lietojumprogrammās. 
+
+- **action** — meklēšanai veiktās darbības tips. Nosaka, vai meklēšana tika sākta, notiek vai ir beigusies un kādas darbības notika meklēšanas laikā, piemēram, vai tika izmantots mikrofons. Kritiski svarīgs, lai nodrošinātu precīzu un lietderīgu meklēšanu.
+
+- **answer_result_selected_count** — izseko, cik daudz reižu meklēšana bija “veiksmīga”, t.i., vai lietotājs atrada meklēto personu? Uzrakstīja e-pasta ziņojumu? Atzīmēja ziņojumu ar grāmatzīmi? 
+
+- **contact_result_in_full_list_selected_count** — izseko, cik reizes lietotājs pieprasīja “apskatīt visas kontaktpersonas” pilnā sarakstā kombinētās meklēšanas sesijas laikā
+
+- **contact_result_selected_count** — izseko, cik kontaktpersonu rezultāti tika atlasīti kombinētās meklēšanas sesijas laikā
+
+- **conversation_result_selected_count** — izseko, cik sarunas tika atlasītas kombinētās meklēšanas sesijas laikā
+
+- **mail_requests_count** — izseko, cik daudz pasta meklēšanas pieprasījumu tika nosūtīti kombinētajā meklēšanas sesijā
+
+- **people_filter_selected_contacts_count** — tiek izsekots, cik kontaktpersonas ir atlasītas personu filtrā
 
 - **search_session_ended_type** — norāda, kur beidzās meklēšana, jo tā tika atcelta vai vaicājums tika atjaunināts
 
@@ -1792,6 +1815,10 @@ Tiek apkopoti šādi lauki:
 - **contains_mention** — norāda, vai sarunā bija pielietots @ pieminējums, lai palīdzētu mums noteikt problēmas ar pieminējumiem e-pasta ziņojumos.
 
 - **conversation_type** — norāda, kāda veida e-pasta ziņojuma skats tika renderēts, piemēram, viena ziņojuma skats vai vairāku ziņojumu skats. Palīdz atklāt ar konkrētiem ziņojumu veidiem saistītas problēmas mūsu e-pasta sarunu skatā.
+
+- **reaction_origin** — norāda izcelsmi, no kurienes lietotājs reaģēja 
+
+- **reaction_type** — parāda lietotāja reakcijas veidu
 
 - **suggested_reply_char_count** — parāda, cik rakstzīmes ieteiktās atbildes piedāvā (ja ir), lai palīdzētu mums atklāt ar ieteikumiem saistītas anomālijas un problēmas
 
@@ -2616,6 +2643,8 @@ Tiek apkopoti šādi lauki:
 
 - **Data_FileOpenFlowMarkers** — pirms faila atvēršanas procesa sākšanas notiek pirmapstrāde. Pirmapstrādei veltītai laiks tiek ierakstīts kā virknes vērtībā, kuras formāts ir \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
+- **Data_FirstPartyProviderApp** — ja fails, kas atvērts programmā Word, Excel vai PowerPoint vai Office lietojumprogrammās, tiek izsaukts no citas Microsoft lietojumprogrammas, šis pakalpojumu sniedzēja nosaukums tiek uztverts šeit.
+
 - **Data_InclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu. 
 
 - **Data_InitializationReason** — uzskaitījums, kas norāda uz faila atvēršanas veidu, piemēram, lietotāja interfeisa elements vai citas lietojumprogrammas izsaukuma rezultātā utt.
@@ -2767,6 +2796,124 @@ Tiek apkopts tikai tad, ja lietotājs (parasti administrators) ir iespējojis Of
 Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
+
+#### <a name="office_appdocs_appdocs_documentoperation"></a>Office_AppDocs_AppDocs_DocumentOperation
+
+Šis notikums tiek apkopots Office programmām, kas darbojas Android, iOS, Universal vai Windows platformās. Notikums ieraksta brīdi, kad notiek faila darbība (izveidošana/atvēršana/saglabāšana/eksportēšana/u.c.), un šis notikums tiek izmantots, lai saprastu un noteiktu prioritāti lietotāju pieredzēm, balstoties uz informāciju par faila darbību.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programmas ID, kad tas nav zināms pirms darbību izsauca atskaites beigas.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** — stāvoklis CanContinue tiek izsaukts sākuma apdarinātājs.
+
+- **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
+
+- **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
+
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+
+- **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
+
+- **Data_Doc_EdpState** — uzskaitījums, kas norāda faila uzņēmuma datu aizsardzības statusu.
+
+- **Data_Doc_Ext** — faila paplašinājuma pirmās 4 rakstzīmes.
+
+- **Data_Doc_Fqdn** — faila servera resursdatora nosaukums.
+
+- **Data_Doc_FqdnHash** — GUID, kas unikāli identificē servera resursdatora nosaukumu.
+
+- **Data_Doc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā..
+
+- **Data_Doc_InitializationScenario** — uzskaitījums, kas norāda detalizēto faila atvēršanas darbības scenārija veidu.
+
+- **Data_Doc_IOFlags** — uzskaitījums, kas norāda faila atvēršanas darbības ievadizvades karodziņus, piemēram, vai fails ir kešots.
+
+- **Data_Doc_IsCloudCollabEnabled** — vai failam ir iespējota sadarbība mākonī.
+
+- **Data_Doc_IsIncrementalOpen** — vai fails tika atvērts ar inkrementālo atvēršanu.
+
+- **Data_Doc_IsOcsSupported** — vai fails atbalsta Office sadarbības pakalpojumu.
+
+- **Data_Doc_IsOpeningOfflineCopy** — vai fails tiek atvērts no bezsaistes kešatmiņas kopijas.
+
+- **Data_Doc_IsPrefetched** — vai fails tika iepriekš ielādēts pirms atvēršanas darbības.
+
+- **Data_Doc_IsSyncBacked** — vai mākonī esošajam failam ir lokālā versija un, vai tā ir sinhronizēta ar serveri.
+
+- **Data_Doc_Location** — uzskaitījums, kas norāda uz faila atrašanās vietu, piemēram, atrodas lokāli vai mākonī.
+
+- **Data_Doc_ReadOnlyReasons** — uzskaitījums, kas norāda faila tikai lasīšanas iemeslu.
+
+- **Data_Doc_ResourceIdHash** — GUID, kas unikāli identificē faila servera resursa ID.
+
+- **Data_Doc_RtcType** — uzskaitījums, kas norāda faila izmantotā reāllaika kanāla (RTC) veidu.
+
+- **Data_Doc_ServerDocId** — GUID, kas unikāli identificē servera dokumenta ID.
+
+- **Data_Doc_ServerProtocol** — uzskaitījums, kas norāda mākoņa faila servera protokolu.
+
+- **Data_Doc_ServerType** — uzskaitījums, kas norāda mākoņa faila servera veidu.
+
+- **Data_Doc_ServerVersion** — uzskaitījums, kas norāda mākoņa faila servera versiju.
+
+- **Data_Doc_SessionId** — vesels skaitlis, kas pieaug par 1 ar katru faila atvēršanas darbību sesijas laikā.
+
+- **Data_Doc_SharePointServiceContext** — virkne, kas tiek izmantota, lai savstarpēji saistītu klienta un servera žurnālus; parasti tas ir kāds ID veids.
+
+- **Data_Doc_SizeInBytes** — dokumenta lielums baitos.
+
+- **Data_Doc_SpecialChars** — uzskaitījums, kas norāda īpašās rakstzīmes veidu faila URL adresē.
+
+- **Data_Doc_UrlHash** — GUID, kas unikāli identificē faila URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** — norāda, vai fails tika atvērts inkrementāli, izmantojot iepriekš kešotus WRS datus.
+
+- **Data_Doc_WopiServiceId** — virkne, kas norāda, no kura pakalpojuma ir WOPI (tīmekļa lietojumprogrammas atvērtās platformas interfeisa protokols) fails.
+
+- **Data_DocumentInputCurrency** — darbības izmantotās dokumenta ievades tips.
+
+- **Data_DocumentOperation_AppId** — uzskaitīšanas vērtība, kas norāda programmas ID.
+
+- **Data_DocumentOperation_EndEventId** — atzīme, kas norāda, kur darbība beidzās.
+
+- **Data_DocumentOperation_EndReason** — uzskaitīšanas vērtība, kas izbeigšanas iemeslu.
+
+- **Data_DocumentOperation_IsReinitialized** — atkārtoti inicializē jau atvērtu dokumentu.
+
+- **Data_DocumentOperation_isTargetECBeginEC** — norāda, vai mērķa izpildes konteksts ir tāds pats kā atvēršanas konteksts.
+
+- **Data_DocumentOperation_ParamsFlags** — uzskaitījuma karodziņi, kas tiek izmantoti darbības sākšanai.
+
+- **Data_DocumentOperation_TelemetryReason** — atvērta notikuma ieejas punkta attēlojums uzskaitījumā. Piemēram, atvērts no MRU vai pārlūkošanas, faila aktivizācijas rezultātā utt.
+
+- **Data_FileIOInclusiveMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas birku un ilgumu, kas iekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_FileIOMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumā pavadīto laiku formātā ar funkcijas atzīmi un ilgumu, kas neiekļauj apakšfunkciju pieprasījumu ilgumu.
+
+- **Data_InitializationReason** — darbības konkrētā iemesla uzskaitījuma attēlojums. Piemēram, atvērt no vietrāža URL vai lokāla faila, izveidot ar failu atlasītāju, kopēt uz failu ceļu, eksportēt uz URL utt.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
+
+- **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
+
+- **Data_IsPathMissingForLocalFile** — norāda, vai šis fails ir lokāls fails bez ceļa.
+
+- **Data_IsUnpackedLinkSupportedForOpen** — norāda, vai tiek atbalstīta nepakotās saites atvēršana.
+
+- **Data_LinksOpenRightScenario** — uzskaitījuma vērtība saites pareizās atvēršanas scenārijam.
+
+- **Data_OpEndEventId** — atzīme, kas norāda, kur beidzās darbība.
+
+- **Data_OperationType** — darbības vispārīga veida uzskaitījuma attēlojums. Piemēram, izveidot, atvērt, kopēt, saglabāt utt.
+
+- **Data_RelatedPrevOpTelemetryReason** — norāda, vai darbība ir saistīta ar iepriekšējo darbību.
+
+- **Data_StopwatchDuration** — kopējais notikuma laiks.
+
+- **Data_UnpackLinkHint** — uzskaitījums, kas norāda uz potenciālo lietotāja darbību saskaņā ar pakotnes atvēršanas saiti.
+
+- **Data_UnpackLinkPromptResult** — uzskaitījums, kas norāda atbildi uz pakotnes atvēršanas saites uzvedni.
 
 #### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
 
@@ -5214,7 +5361,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
 
-- **Data.hasPersonalInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
+- **Data.hasPersonaInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
 
 - **Data.hostAppRing** — aplis, kurā programma tika izplatīta
 
@@ -5297,6 +5444,8 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.feature** — tiek lietots, lai grupētu dažādus viena un tā paša līdzekļa (profila kartītes) notikumus
 
+- **Data.hasPersonaInsightRing** — ieskati no Office vai LinkedIn, kas var būt pieejami lietotājam
+
 - **Data.hostAppRing** — aplis, kurā programma tika izplatīta
 
 - **Data.immersiveProfileCorrelationId** — globāli unikāls identifikators izvērsta profila skata sesijai
@@ -5362,11 +5511,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="office_officemobile_pdfviewer_pdffileopenmeasurements"></a>Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
 
-Šis notikums tiek apkopots darbam operētājsistēmai Union iOS un reģistrē, kad notiek faila atvēršanas darbība. Mēs apkopojam šos datus, lai nodrošinātu labu visu failu atvēršanas darbību veiktspēju programmā. 
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar iOS un reģistrē, kad notiek faila atvēršanas darbība. Mēs apkopojam šos datus, lai nodrošinātu labu visu failu atvēršanas darbību veiktspēju programmā. 
 
 Tiek apkopoti šādi lauki:
 
 - **Data_Doc_ActivationFQDN** — nodrošinātāja programmas domēna nosaukums faila aktivizēšanas scenārijam (tiek uzskaitīta tikai 1. puses programmas informācija).
+
+- **Data_Doc_CreateTelemetryReason** — telemetrijas iemesls PDF izveidei. (piemēram: izveide skenējot, izmantojot "attēls uz PDF" darbību, izmantojot "Dokuments uz PDF" darbība, utt.)
 
 - **Data_Doc_DownloadDurationms** — PDF mākoņa faila lejupielādei nepieciešamais laiks.
 
@@ -5403,11 +5554,17 @@ Tiek apkopoti šādi lauki:
 
 - **Data_FailureReason** — atvēršanas kļūmes gadījumā, šie uzskaitījumi definē kļūmes iemeslu.
 
+- **Data_FileGUID** — nejauši ģenerēta faila globālais identifikators
+
 - **Data_FileLocation** — faila atrašanās vieta, piemēram: lokāli, ODSP, iCloud utt.
 
 - **Data_FileOpenEntryPoint** — faila atvēršanas ievades punkts.
 
 - **Data_FileSize** — faila, kurā notiek darbība, izmērs
+
+- **Data_NetworkRequestErrorResponse** — tīkla kļūdas atbilde, kas atbilst kļūdas kodam.
+
+- **Data_NetworkRequestStage** — kļūdu posms mākoņa PDF faila lejupielādes gadījumā.
 
 - **Data_OpenMode** — kādā režīmā tika atvērts PDF, piem.: 0: skatīšanas režīms, 2: parakstīšanās režīms
 
@@ -5422,6 +5579,43 @@ Tiek apkopoti šādi lauki:
 - **Data_Result** — veicamās darbības statuss, piemēram: patiess: izdevās, aplams: neizdevās.
 
 - **Data_Type** — faila darbības veids (atvēršana, aizvēršana vai saglabāšana) 
+
+#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar iOS. Reģistrē, kad notiek .pdf atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par .pdf failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu .pdf atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot .pdf failu darbības veiktspēju. 
+
+- **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai 
+
+- **Data_Doc_URLHash** — GUID faila URL 
+
+- **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos 
+
+- **Data_ErrorMessage** — atbilstošais ziņojums par kļūdu kodu 
+
+- **Data_FailureReason** — atvēršanas kļūmes gadījumā, šie uzskaitījumi definē kļūmes iemeslu. 
+
+- **Data_FileGUID** — nejauši ģenerēta faila globālais identifikators
+
+- **Data_FileLocation** — faila atrašanās vieta (lokāli, ODSP, iCloud utt.) 
+
+- **Data_FileOpenEntryPoint** — faila atvēršanas ievades punkts 
+
+- **Data_FileSize** — faila, kurā notiek darbība, izmērs 
+
+- **Data_OpenMode** — kādā režīmā tika atvērts PDF ( 0: skatīšanas režīms, 2: parakstīšanās režīms) 
+
+- **Data_PageCount** — lapu skaits PDF failā.
+
+- **Data_PasswordProtected** — marķieris, kas norāda, vai parole ir aizsargāta. 
+
+- **Data_ProviderApp** — pašreiz nodrošina pakalpojuma sniedzēja lietojumprogrammu gadījumos, kad notiek tikai faila aktivācija 
+
+- **Data_ReadOnly** — marķieris, kas norāda, vai fails ir tikai lasāms.
+
+- **Data_Result** — veicamās darbības statuss (patiess: izdevās, aplams: neizdevās) 
+
+- **Data_Type** — faila darbības veids (atvēršana, aizvēršana vai saglabāšana)
+
 
 #### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(iepriekšējais nosaukums)*
 
@@ -8693,7 +8887,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **UsesSharedRuntime** — norāda, vai programma izmanto sharedRuntime.
 
-#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+#### <a name="officeofficemobilefrefirstrunsetup"></a>Office.OfficeMobile.FRE.FirstRunSetup
 
 Pirmā programmas palaišanas reize pēc instalēšanas aktivizēs šo periodiskā kontrolziņojuma notikumu. Tas palīdzēs identificēt programmas iepriekšējo versiju instalācijas un automātiskos atjauninājumus, kā arī ļaus mums identificēt automātisko atjauninājumu kļūdas, tai skaitā bibliotēku ielādes un paplašinājumu/valodas pakotņu lejupielāžu kļūmes.
 
@@ -11476,6 +11670,8 @@ Tiek apkopoti šādi lauki:
 
 - **CritiqueSummary** — visas lietotāja redzētās kritikas kopsavilkums ar skaitu.
 
+- **ExitEventCode** — kods, lai identificētu, pēc kura scenārija lietotājs iziet no atkārtotās sesijas neatkarīgi no tā, vai tas bija kļūdas scenārijs vai sekmīga iziešana. 
+
 - **PauseRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Pauzēt mēģinājumu”.
 
 - **RehearsalInitTime** — mēģinājuma inicializēšanai nepieciešamais laiks.
@@ -12994,6 +13190,12 @@ Tālāk norādītie lauki tiek apkopoti tikai Android:
 - **switch_access** — norāda, vai lietotājs ir ieslēdzis Switch Access iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
 
 - **talkback** — norāda, vai lietotājs ir ieslēdzis TalkBack iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
+
+- **webview_kernel_version**: Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
+- **webview_package_name**: ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
+- **webview_package_version**: ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
 #### <a name="low_storage_warning"></a>low_storage_warning
 
