@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Microsoft 365 programmās lieluzņēmumiem (iepriekš Office 365 ProPlus), izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f02714428dd580d79a3fc8f160b00d6df95c4237
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087212"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440244"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
+
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
 Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus).
 
@@ -46,6 +49,7 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 > - Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
 > - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu iOS ierīcēs, skatiet rakstā [Preferenču izmantošana iOS ierīcēs konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md).
 > - Papildinformāciju par līdzīgu Office iestatījumu izmantošanu Android ierīcēs skatiet rakstā [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md).
+> - Papildinformācijai par konfidencialitātes kontroles līdzekļiem Office tīmekļa programmās [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai tīmekļa programmās](office-web-privacy-controls.md).
 
 
 Ja izmantojat grupas politikas pārvaldības rīku, visi šie politikas iestatījumi atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
@@ -77,7 +81,7 @@ Papildinformāciju par diagnostikas datiem lasiet šajos rakstos:
 - [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
-- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Saistīto līdzekļu politikas iestatījumi
 
@@ -120,21 +124,11 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti paka
 
 Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, jūsu lietotājiem būs pieejami šie papildu saistītie līdzekļi.
 
-> [!NOTE]
-> Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* iespējams konfigurēt lietošanai arī šādās Office darbam tīmeklī lietojumprogrammām:
-> - Excel darbam tīmeklī
-> - OneNote darbam tīmeklī
-> - PowerPoint darbam tīmeklī
-> - Visio darbam tīmeklī
-> - Word darbam tīmeklī
->
-> Lai konfigurētu šo politikas iestatījumu šīm Office darbam tīmeklī lietojumprogrammām, ir jāizmanto [Office mākoņa politikas pakalpojums](../overview-office-cloud-policy-service.md).
-
-Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
+Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
 Turklāt daži no šiem neobligātajiem saistītajiem līdzekļiem tiek uzskatīti arī par saistītajiem līdzekļiem, kuri analizē saturu vai lejupielādē tiešsaistes saturu. Piemēram, Tiešsaistes attēlu ievietošana ir neobligāts saistītais līdzeklis, kura darbību nodrošina Microsoft Bing, bet tas tiek uzskatīts arī par saistīto līdzekli, kurš lejupielādē tiešsaistes saturu. Tāpēc ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*, lietotājiem nav pieejams līdzeklis Tiešsaistes attēlu ievietošana. Tas nav pieejams pat tad, ja esat iespējojis politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*. Papildinformāciju par to, kuri saistītie līdzekļi analizē saturu vai lejupielādē tiešsaistes saturu, skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-Pastāv viens izņēmums, kas jāņem vērā. Politikas iestatījums *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* nekontrolē saistītos līdzekļus, kuri pieprasa savienot jūsu LinkedIn kontu ar Microsoft darba vai mācību kontu. Lai kontrolētu šāda veida līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.office.com/article/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn un Microsoft kontu saistīšana](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381) un [Piekrišana LinkedIn kontu savienošanai Azure Active Directory organizācijā](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+Pastāv viens izņēmums, kas jāņem vērā. Politikas iestatījums *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* nekontrolē saistītos līdzekļus, kuri pieprasa savienot jūsu LinkedIn kontu ar Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn Microsoft programmās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) un [LinkedIn konta savienojumu integrēšana Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Politikas iestatījums lielākajai daļai saistīto līdzekļu
 
@@ -207,7 +201,7 @@ Office lietotāja interfeisam ir pievienoti tālāk nosauktie jaunie elementi.
 
 - Sadaļā **Fails** > **Konts** lietotājiem tiek rādīta jauna izvēles iespēja **Konta konfidencialitāte** > **Pārvaldīt iestatījumus**. Tā atrodas sadaļā **Pārvaldīt iestatījumus**, kur lietotāji var izslēgt papildu saistītos līdzekļus, ja esat viņiem sniedzis šādu iespēju.
 
-- Sadaļā **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi…** > **Privātuma opcijas** ir opcija ierīcē iespējot rīka [Diagnostikas datu skatītājs](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855) lietošanu.
+- Sadaļā **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi…** > **Privātuma opcijas** ir opcija ierīcē iespējot rīka [Diagnostikas datu skatītājs](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) lietošanu.
 
  
 ## <a name="control-privacy-settings-by-editing-the-registry"></a>Konfidencialitātes iestatījumu kontrole, rediģējot reģistru

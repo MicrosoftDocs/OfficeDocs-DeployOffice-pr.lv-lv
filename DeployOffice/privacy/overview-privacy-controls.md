@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus), tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087689"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440557"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
+
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
 Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus).
 
@@ -31,17 +34,6 @@ Sākot ar Microsoft 365 programmas lieluzņēmumiem versiju 1904, mēs jūs nodr
 - ***Saistītie līdzekļi***, kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
 
 Šo izmaiņu ietvaros ir iekļauti jauni un atjaunināti lietotāja interfeisa (user interface — UI) elementi un politikas iestatījumi.
-
-> [!IMPORTANT]
-> - Šīs izmaiņas tiek lietotas programmā Access, Excel, OneNote, Outlook, PowerPoint, Publisher un Word.
-> - Šīs izmaiņas attiecas arī uz tālāk norādīto programmatūru.
->   - Sistēmas Office darbam ar Mac lietojumprogrammu versija 16.28 vai jaunākas versijas: Excel, Outlook, OneNote, PowerPoint un Word.
->   - Datoriem paredzēto programmu Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, Project 5. plāns vai Visio 2. plāns, versija 1904 vai jaunāka.
-> - Šie konfidencialitātes kontroles līdzekļi ir iekļauti pusgada uzņēmuma (priekšskatījums) un pusgada uzņēmuma versijā 1908.
-> - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 2.30 un jaunākās versijās, piemēram, programmas Excel, OneNote, PowerPoint un Word iOS versijās, kā arī Visio Viewer darbam ar iOS versijā 1.17 un jaunākās versijās.
-> - Šie konfidencialitātes kontroles līdzekļi ir pieejami versijā 16.0.12226.10000 un jaunākās versijās, piemēram, programmas Excel, PowerPoint un Word Android versijās, kā arī OneNote darbam ar Android versijā 16.0.12228.20004 un jaunākās versijās.
-> - Lielākajā daļā Office tīmekļa lietojumprogrammu tiek izmantota jaunā privātuma kontrole [papildu pievienotajām iespējām](optional-connected-experiences.md). Šīs lietojumprogrammas ir: Excel darbam tīmeklī, OneNote darbam tīmeklī, PowerPoint darbam tīmeklī, Visio darbam tīmeklī, kā arī Word darbam tīmeklī. Varat izmantot [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md), lai konfigurētu atbilstošo [politikas iestatījumu](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - Šos jaunos un uzlabotos konfidencialitātes kontroles līdzekļus ieviesīsim arī papildu Office klientos, tostarp Teams un mūsu mobilajās programmās. Papildinformāciju par šīm izmaiņām sniegsim nākamo mēnešu laikā. Turpināsim rūpīgi ieklausīties jūsu atsauksmēs un veikt uzlabojumus visos Office 365 (un Microsoft 365) klientos un pakalpojumos.
 
 ## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft
 
@@ -77,7 +69,7 @@ Papildinformāciju skatiet šeit:
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
-- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>Saistītie līdzekļi Microsoft 365 programmām lieluzņēmumiem
 
@@ -113,7 +105,7 @@ Papildus iepriekš minētajiem saistītajiem līdzekļiem, kas ir iekļauti paka
 
 Tā kā šo papildu saistīto līdzekļu darbību nosaka atsevišķi nosacījumi un noteikumi, jūs tos pārvaldās atsevišķi no iepriekš minētajiem saistītajiem līdzekļiem. Kā organizācijas administrators varēsit lietot politikas iestatījumu, lai izvēlētos, vai šos papildu saistītos līdzekļus padarīt pieejamus saviem lietotājiem kā līdzekļu grupu. Ja nekonfigurēsit šo politikas iestatījumu, jūsu lietotājiem būs pieejami šie papildu saistītie līdzekļi.
 
-Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos neobligātos saistītos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies Office produktā ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
+Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos neobligātos saistītos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies Office produktā ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
 Papildinformāciju skatiet šeit:
 
@@ -122,30 +114,19 @@ Papildinformāciju skatiet šeit:
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
+- [Politikas iestatījumu izmantošana konfidencialitātes kontroles līdzekļus Office programmās tīmeklim](office-web-privacy-controls.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Saistītajiem līdzekļiem nepieciešamie pakalpojuma dati
 
-Nepieciešamie pakalpojuma dati ir dati, kas mums ļauj nodrošināt šos mākoņa saistītos līdzekļus un palīdz šos līdzekļus padarīt drošus, kā arī ļauj tiem darboties, kā paredzēts. Nepieciešamos pakalpojuma datus veido trīs veidu informācija.
+Saistīto līdzekļu lietošanas laikā, Microsoft saņem un apstrādā datus, lai nodrošinātu jums konkrēto saistīto līdzekli. Šie dati ir būtiski svarīgi, jo šī informācija ļauj mums nodrošināt šos mākonī izvietotos saistītos līdzekļus. Mēs saucam šos datus par obligātajiem pakalpojumu datiem.
 
-- **Klienta saturs**, kas ir saturs, kuru veidojat, izmantojot Office, piemēram, Word dokumentā rakstītais teksts.
-- **Funkcionālie dati**, kas ietver saistīto līdzekļu darbībai nepieciešamo informāciju, piemēram, konfigurācijas informācija saistībā ar programmu.
-- **Pakalpojuma diagnostikas dati**, kas ir dati, kuri ir nepieciešami, lai pakalpojumu uzturētu drošu, atjauninātu un tādu, kas darbojas, kā paredzēts. Tā kā šie dati ir saistīti tikai ar atbilstošo saistīto līdzekli, tie ir nodalīti no nepieciešamā un neobligātā diagnostikas datu līmeņa.
-
-Lai palīdzētu jums izprast nepieciešamos pakalpojuma datus, tālāk ir sniegts scenārija piemērs, izmantojot PowerPoint noformētāju, kas ir saistītais līdzeklis, kuru varat izmantot, veidojot prezentācijas slaidus. PowerPoint noformētājs palīdz uzlabot jūsu slaidus, automātiski ģenerējot noformējuma idejas, no kurām varat izvēlēties. Kad ievietojat saturu slaidā, noformētājs darbojas fonā, lai šo saturu saskaņotu ar profesionāli noformētiem izkārtojumiem.
-
-Nepieciešamie pakalpojuma dati, kas tiek nosūtīti korporācijai Microsoft, lai iespējotu šo saistīto līdzekli, var ietvert:
-
-- *Klienta saturs*, piemēram, teksts vai attēli, kuru pievienojāt slaidam.
-- *Funkcionālie dati*, piemēram, ar kuru slaidu strādājat, kā arī slaida izkārtojums.
-- *Pakalpojuma diagnostikas dati*, piemēram, notikumi, kas mums pastāsta, vai slaidam tika pareizi lietota noformējuma ideja un vai pakalpojuma izsaukumi tika veikti pareizi.
-
-Ja izvēlēsities saviem lietotājiem nesniegt to saistīto līdzekļu kategoriju, kurā ir iekļauts PowerPoint noformētājs, šis līdzeklis būs izslēgts un šie nepieciešamie saistītie pakalpojuma dati mums netiks sūtīti.
+Obligātie pakalpojumu dati iekļauj informāciju, kas ir saistīta ar saistīto līdzekļu darbību, kas ir nepieciešama, lai attiecīgais pakalpojums būtu drošs, atjaunināts un darbotos kā paredzēts. Ja izvēlēsities izmantot saistīto līdzekli, kas analizē jūsu saturu, piemēram, tulkošanas līdzekli programmā Word, jūsu ierakstītais teksts, kuru vēlaties tulkot dokumentā, tiek nosūtīts un apstrādāts, lai nodrošinātu jums saistīto līdzekli. Obligātie pakalpojumu dati ietver saistīto līdzekļu darbībai nepieciešamo informāciju, piemēram, konfigurācijas informācija par Office programmu.
 
 Lai iegūtu papildinformāciju, skatiet rakstu [Office nepieciešamie pakalpojuma dati](required-service-data.md).
 
 ## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>Būtiskie pakalpojumi Microsoft 365 programmām lieluzņēmumiem
 
-Pastāv arī tādu pakalpojumu kopa, kas ir būtiski tam, kā darbojas Microsoft 365 programmas lieluzņēmumiem, un tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai jums ir atbilstoša licence Microsoft 365 programmu lieluzņēmumiem izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kurus esat konfigurējis.
+Pastāv arī tādu pakalpojumu kopa, kurus nav iespējams atspējot un kas ir būtiski svarīgi tam, kā darbojas Microsoft 365 programmas lieluzņēmumiem. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai jums ir atbilstoša licence Microsoft 365 programmu lieluzņēmumiem izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kurus esat konfigurējis.
 
 Lai iegūtu papildinformāciju, skatiet rakstu [Office būtiskie pakalpojumi](essential-services.md).
 

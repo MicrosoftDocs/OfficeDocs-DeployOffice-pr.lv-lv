@@ -13,30 +13,23 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 81694daded27994d5026d923acd36302a79acc9f
-ms.sourcegitcommit: 5fc8194df704f79d340d9e8872a03ab2b0ebc62b
+ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815328"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440496"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
-> [!IMPORTANT]
-> Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
-> - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
-> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
-> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
-> - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
->
-> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
-Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Lai gan varat kontrolēt daudzas savienotās iespējas, kas ir pieejamas jums vai jūsu lietotājiem, ja esat savas organizācijas administrators, pastāv pakalpojumu kopa, kas ir būtiski attiecībā uz to, kā Office darbojas, tāpēc tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai esat pareizi licencēts Office izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kas saistīti ar konfidencialitāti un kurus esat konfigurējis. Šos datus varat skatīt, izmantojot diagnostikas datu skatītāju.
+Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Lai gan varat kontrolēt daudzas savienotās iespējas, kas ir pieejamas jums vai jūsu lietotājiem, ja esat savas organizācijas administrators, pastāv pakalpojumu kopa, kas ir būtiski attiecībā uz to, kā Office darbojas, tāpēc tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai esat pareizi licencēts Office izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kas saistīti ar konfidencialitāti un kurus esat konfigurējis.
 
 Papildinformāciju skatiet šeit:
 
-- [Office nepieciešamais datu pakalpojums](required-service-data.md)
-- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Office obligātais datu pakalpojums](required-service-data.md)
 - [Office saistītie līdzekļi](connected-experiences.md)
 
 Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie raksti:
@@ -46,6 +39,7 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
 - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
+- [Politikas iestatījumu izmantošana konfidencialitātes kontroles līdzekļus Office programmās tīmeklim](office-web-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Office būtisko pakalpojumu saraksts 
 
@@ -60,7 +54,7 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS operētājsistēmām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
 |[OneNote sinhronizācija](#onenote-sync-events)|Programma OneNote darbam ar Mac atbalsta tikai tādas piezīmju grāmatiņas, kas tiek glabātas internetā — OneDrive krātuvē vai SharePoint Online. Programma OneNote darbam ar Mac pastāvīgi sinhronizē visas lietotāja piezīmes ar OneDrive krātuvi vai SharePoint Online. Tādējādi lietotāji var atvērt, skatīt un rediģēt savas piezīmju grāmatiņas visās savās ierīcēs, un viņu piezīmju grāmatiņas vienmēr ir atjauninātas.
  [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
-| [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Tas ir arī atbildīgs par Office nepieciešamo pakalpojuma datu pakalpojuma diagnostikas datu daļas apkopošanu.  |
+| [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Atbild par atsevišķu obligāto Office pakalpojumu datu apkopošanu.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Office būtisko pakalpojumu notikumu un datu lauki
 
@@ -70,9 +64,6 @@ Nākamajās sadaļās ir sniegta tālāk norādītā informācija.
 - Katra notikuma apraksts
 - Datu lauku saraksts katrā notikumā
 - Katra datu lauka apraksts
-
-Šos notikumus varat skatīt, izmantojot diagnostikas datu skatītāju.
-
 
 
 ## <a name="authentication-events"></a>Autentifikācijas notikumi
@@ -3175,7 +3166,7 @@ Tiek apkopoti šādi lauki:
 
 - **Tag** — norāda, kurā solī apstājāmies meklēt sasaistīšanu. Iespējamie tagi:
   - 0x03113809  nav interneta savienojuma/pakalpojuma kļūdas, pārbaudot PIN
-   - 0x0311380a PIN validācijas kļūme, nosūtīta ar PinValidationFailure lauku
+  - 0x0311380a PIN validācijas kļūme, nosūtīta ar PinValidationFailure lauku
   - 0x0310410f  izdevās, nosūtīts ar panākumu lauku
   - 0x0311380d  kļūdu novēršana (interneta problēmas, nezināmas kļūdas)
   - 0x0311380e  neiespējamu atkārtotu mēģinājumu kļūdas (saistošais piedāvājums beidzies)
@@ -11226,7 +11217,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -14567,7 +14558,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ## <a name="services-configuration-events"></a>Pakalpojumu konfigurācijas notikumi
 
-Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu diagnostikas datu notikumus.
+Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu datu notikumus.
 
 ## <a name="telemetry-events"></a>Telemetrijas notikumi
 
