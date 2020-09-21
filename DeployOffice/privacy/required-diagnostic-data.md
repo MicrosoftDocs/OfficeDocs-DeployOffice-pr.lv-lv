@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 777c0bdb8651a046022e8078820870b67e99f2f7
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 5772f8b3c105f56833a34f12f7d0e212fc4d55c5
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683273"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47940999"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
-> [!IMPORTANT]
-> Informācija šajā rakstā attiecas uz tālāk minētās Office klienta programmatūras versiju 1904 vai jaunāku versiju, kas instalēta datorā, kurā darbojas sistēma Windows:
-> - Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus)
-> - Microsoft 365 programmas darbam (iepriekš Office 365 Business)
-> - Microsoft 365 individuālai lietošanai, Microsoft 365 ģimenēm un citas Office versijas, kas ir iekļautas Microsoft 365 abonementā.
-> - Project un Visio darbvirsmas programmas ir iekļautas dažos abonementu plānos, piemēram, Project 5. plāns vai Visio 2. plāns.
->
-> Šī informācija attiecas arī uz tālāk norādīto sistēmas Office darbam ar Mac lietojumprogrammu versiju 16.28 vai jaunākām versijām: Excel, Outlook, OneNote, PowerPoint un Word.
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
@@ -42,7 +36,7 @@ Nepieciešamie diagnostikas dati palīdz noteikt ar Office saistītas problēmas
 Papildinformāciju par diagnostikas datiem lasiet šajos rakstos:
 
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
-- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikas datu skatītāja izmantošana ar Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie raksti:
 
@@ -239,7 +233,7 @@ Informācija, lai izprastu paša pasākuma apkopošanas panākumus.
 
   - **Duration** — darbības izpildei nepieciešamais laiks. Ļauj mums noteikt veiktspējas problēmas, kas negatīvi ietekmē lietotāju pieredzi.
 
-  - **Result**.**Code** — lietojumprogrammas definēts kods, lai identificētu noteiktus rezultātus. Ļauj mums noteikt specifiskāku informāciju par konkrēto kļūmi, piemēram, kļūmes kodu, ko var izmantot, lai klasificētu un novērstu problēmas.
+  - **Result**.**Code** — programmas definēts kods, lai identificētu noteiktu rezultātu. Ļauj mums noteikt specifiskāku informāciju par konkrēto kļūmi, piemēram, kļūmes kodu, ko var izmantot, lai klasificētu un novērstu problēmas.
 
   - **Result.Tag** — vesela skaitļa tags, kas nosaka atrašanās vietu kodā, kurā tika ģenerēts rezultāts. Ļauj mums skaidri noteikt atrašanās vietu kodā, kurā tika ģenerēts rezultāts, kas iespējo kļūmju klasifikāciju.
 
@@ -365,9 +359,9 @@ Notikumam raksturīga informācija, tostarp tā unikālais identifikators sesij�
 
   - **RuleVersion** — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus.
 
-  - **SampleRate** — norāda, cik liels lietotāju skaits (procentos) sūta šos datus. Tas ļauj mums veikt datu statistisko analīzi un nodrošina, ka ne visiem lietotājiem ir jānosūta biežāk izmantotie datu punkti.
+  - **SampleRate** — norāda lietotāju, kas sūta šo datu fragmentu, skaitu procentos. Tas ļauj mums veikt datu statistisko analīzi un nodrošina to, ka ne visiem lietotājiem ir jānosūta biežāk izmantotie datu punkti.
 
-  - **SchemaVersion** — tās shēmas versija, kas tiek izmantota, lai ģenerētu diagnostikas datus. Nepieciešama, lai pārvaldītu datus, kas tiek sūtīti no klienta. Tādējādi laika gaitā var mainīt, kādi dati tiek sūtīti no katra klienta.
+  - **SchemaVersion** — shēmas versija, kas tiek izmantota, lai ģenerētu diagnostikas datus. Nepieciešams, lai pārvaldītu klienta sūtītos datus. Tādējādi laika gaitā var mainīt, kādi dati tiek sūtīti no katra klienta.
 
   - **Sequence** — skaitītājs, kas identificē secību, kādā tika ģenerēts notikums klientā. Ļauj kārtot saņemtos datus, lai mēs varētu noteikt darbības, kas, iespējams, izraisīja problēmu, kas ietekmē klientus.
 
@@ -676,7 +670,7 @@ Tiek apkopoti šādi lauki:
 
 - **account_type** — konta tips, kas pievienots, izmantojot vienoto pierakstīšanos (SSO).
 
-- **action_origin** — no kurienes šis notikums tika ģenerēts. (piem.,values: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+- **action_origin** — no kurienes šis notikums tika ģenerēts. (piem., vērtības: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
 
 - **pakalpojumu sniedzējs** — vienotās pierakstīšanās (SSO) programmatūras pakotnes identifikators.
 
@@ -784,13 +778,14 @@ Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji v
 #### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
 
 Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.
+
 Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietotnē un pakalpojuma darbspējā. Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
 
 Tiek apkopoti šādi lauki:
 
 - **Attempt** — reižu skaits, cik ir jāatkārto pirmās palaišanas pieredze.
 
-- **Error A** — OneNote kļūdas objekts norāda kļūdu, kas radusies pirmās palaišanas laikā.
+- **Error** — OneNote kļūdas objekts norāda kļūdu, kas radusies pirmās palaišanas laikā.
 
 - **FAllowAddingGuide** — norāda, vai OneNote ļauj izveidot piezīmju grāmatiņu.
 
@@ -840,9 +835,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Izseko, vai tika lejupielādēta dinamiskās pamatnes pakotne. Tiek uzskatīta par programmatūras konfigurāciju, jo pakotne ir sekmīgi jālejupielādē, lai iespējotu klientu atveidot pareizās iespējas. Tas ir īpaši būtiski patērētāju abonementos, kur mēs izmantojam pamatni, lai paziņotu lietotājam par licences derīguma termiņa beigām. Izmanto, lai izsekotu produkta lejupielādētās un kešotās dinamiskā satura pakotnes metadatiem, kā arī to darbību rezultātiem, kam tika pakļauta pakotne: lejupielādes kļūmēm, pakotnes atvēršanas kļūmēm, konsekvences pārbaudes kļūmēm, kešatmiņas trāpījumiem, pakotnes lietojumam un lejupielādes avotiem.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
-  - **Data\_CacheFolderNotCreated —** Būla karodziņš, kas norāda, vai izdevās izveidot kešatmiņas mapi
+  - **Data\_CacheFolderNotCreated —** Būla karodziņš, kas norāda, vai kešatmiņas mapes izveide bija sekmīga
 
   - **Data\_CdnPath — pakotnes avota adrese —**
 
@@ -1024,7 +1019,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Dati par sekmīgu vai nesekmīgu atjaunināto datu vajadzības izgūšanu attiecībā uz Office 365 nomnieka administratora piešķirtajām pievienojumprogrammām. Izmanto darbspējas rādītājiem, diagrammām un klientu problēmu analīzei. ExchangeGetLastUpdate vienmēr tiek izpildīts palaišanas laikā kā daļa no resursa koda un nosaka, vai ir mainījušās pievienojumprogrammu piešķires lietotājam.  Ja tā ir, tad tiek ielādēts osf.DLL, lai mēs varētu izsaukt ExchangeGetEntitlements ar mērķi iegūt konkrētas piešķires (tiek izsaukts arī ExchangeGetManifests, lai izgūtu jebkuru jaunu nepieciešamo manifestu).  ExchangeGetEntitlements (un ExchangeGetManifests) var izsaukt arī pēc pieprasījuma pēc tam, kad ir darbojusies viesošanas lietojumprogramma. Mērķis ir neielādēt lielu DLL, ja tas nav nepieciešams.  Ja šis notikums nebūtu nepieciešams, mēs nevarētu noteikt, vai lietotājiem izdodas iegūt viņiem piešķirtās pievienojumprogrammas, ja neizdodas pirmais pakalpojuma izsaukums. Tas ir arī galvenais veids, kā mēs uzzinām, vai pastāv kādas autorizācijas problēmas saistībā ar mūsu pakalpojumu izsaukšanu.
+Dati par sekmīgu vai nesekmīgu atjaunināto datu vajadzības izgūšanu attiecībā uz Office 365 nomnieka administratora piešķirtajām pievienojumprogrammām. Izmanto darbspējas rādītājiem, diagrammām un klientu problēmu analīzei. ExchangeGetLastUpdate vienmēr tiek izpildīts palaišanas laikā kā daļa no resursa koda un nosaka, vai ir mainījušās pievienojumprogrammu piešķires lietotājam. Ja tā ir, tad tiek ielādēts osf.DLL, lai mēs varētu izsaukt ExchangeGetEntitlements ar mērķi iegūt konkrētas piešķires (tiek izsaukts arī ExchangeGetManifests, lai izgūtu jebkuru jaunu nepieciešamo manifestu).  ExchangeGetEntitlements (un ExchangeGetManifests) var izsaukt arī pēc pieprasījuma pēc tam, kad ir darbojusies viesošanas lietojumprogramma. Mērķis ir neielādēt lielu DLL, ja tas nav nepieciešams.  Ja šis notikums nebūtu nepieciešams, mēs nevarētu noteikt, vai lietotājiem izdodas iegūt viņiem piešķirtās pievienojumprogrammas, ja neizdodas pirmais pakalpojuma izsaukums. Tas ir arī galvenais veids, kā mēs uzzinām, vai pastāv kādas autorizācijas problēmas saistībā ar mūsu pakalpojumu izsaukšanu.
 
 Tiek apkopoti šādi lauki:
 
@@ -1076,7 +1071,7 @@ Tiek apkopoti šādi lauki:
 
   - **MSDiagnostics —** apmaiņas servera atgrieztā vērtība
 
-  - **MsoHttpResult —** no HTTP API atgrieztā skaitītāja vērtība
+  - **MsoHttpResult —** no http API atgrieztā skaitītāja vērtība
 
   - **NeedRefresh —-** Šis ir patiess vai aplams lauks, kas norāda, vai pievienojumprogrammas dati ir novecojuši un ir jāatjaunina.
 
@@ -2659,6 +2654,16 @@ Tiek apkopoti šādi lauki:
 
 - **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu. 
 
+#### <a name="officeandroiddocsuipaywallcontrolskuchoosertoggled"></a>Office.Android.DocsUI.PaywallControl.SkuChooserToggled
+
+Lietošanas telemetrija, kas ļauj apskatīt, cik reizes lietotājs pārslēdzas starp dažādiem SKU pirms pirkuma veikšanas mēģinājuma. Izmanto, lai izprastu SKU izvēles lietojumu un optimizētu pirkumu pieredzi programmā nākamajās versijās.
+
+Tiek apkopoti šādi lauki:
+
+- **EventDate** — notikuma laikspiedols 
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
 #### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
 
 Mēs iespējojam Android pakotņu komplektu (APK) paplašināšanas failus mobilajai Office lietojumprogrammai. APK paplašināšanas faili ir papildu resursu faili, kurus Android lietojumprogrammu izstrādātāji var publicēt kopā ar savu lietojumprogrammu. Lai noteiktu paplašināšanas failu uzticamību, mēs reģistrējam karodziņu, kas norāda uz to, vai paplašināšanas faili ir vai nav pieejami katrā sāknēšanas reizē.
@@ -4207,7 +4212,6 @@ Tiek apkopoti tālāk norādītie lauki.
 - **hostAppRing** — lietotāju, kuriem tika izplatīta lietojumprogramma, skaits.
 
 - **properties** — satur papildu katram notikumam apkopotos metadatu rekvizītus. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
-  - **ClientTimeStamp** — notikuma reģistrēšanas klientā laikspiedols.
 
 - **publicEventName** — publiski pieejamais notikuma nosaukums.  
 
@@ -5091,6 +5095,57 @@ Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
 
+#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
+
+Šī kritiskā lietojuma telemetrija tiek apkopota, kad lietotājam tiek parādīta Paywall vadīkla, un šo telemetriju izmanto, lai izprastu lietotāju pieredzi, veicot pirkumus programmā, un lai to optimizētu nākamajās versijās.
+
+Tiek apkopoti šādi lauki:
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”
+
+- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
+
+#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
+
+Šie sesijā balstītie meta dati tiek apkopoti, kad lietotājam tiek parādīts Paywall interfeiss, un tie norāda mijiedarbības ilgumu un to, vai pirkuma veikšanas mēģinājums izdevās vai neizdevās.  Šie dati tiek izmantoti, lai izprastu visas maksājuma veikšanas pieredzes lietojumu un darbspēju un veiktu atkļūdošanu, optimizētu un novērstu problēmas programmas pirkumu pieredzē nākamajās versijās. 
+
+Tiek apkopoti šādi lauki:
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
+
+- **status**— virkne — Paywall izejas statuss. Piemēram, “initiated”, “paymentDone”, “provisionFailed”
+
+- **userDuration** — datu tips Double — lietotāja Paywall veltītais laiks milisekundēs
+
+#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
+
+Šis notikums apkopo līdzekļus un programmas, kuras lietotājs izvērš no sadaļas “Skatīt papildu priekšrocības”, un lietotāja veltītā laika ilgumu.  Šie dati tiek izmantoti, lai izprastu līdzekļa “Skatīt visas priekšrocības” lietojumu un optimizētu tā lietošanas pieredzi nākamajās versijās.
+
+Tiek apkopoti šādi lauki:
+
+- **appsExpanded** — virkne — ar komatiem atdalītu pakalpojumu/programmu, kurām tika paplašinātas priekšrocības, saraksts.
+
+- **productId** — virkne — produkta, kuram lietotājs skata papildu piedāvātās priekšrocības, App Store ID
+
+- **userDuration**— datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
+
+#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
+
+Šī lietojuma telemetrija tiek apkopota, lai redzētu, kā lietotājs ienāca SKU izvēlē, cik daudz laika lietotājs pavadīja SKU izvēles ekrānā un kāpēc lietotājs izgāja no SKU izvēles.  Šie dati tiek izmantoti, lai izprastu SKU izvēles lietojumu un optimizētu pirkumu pieredzi programmā nākamajās versijās.
+
+Tiek apkopoti šādi lauki:
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **exitReason** — virkne — iemesls iziešanai no SKU izvēles. Piemēram, “BuyButton”, “CloseButton”.
+
+- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
+
+- **userDuration** — datu tips Double — laika, ko lietotājs pavadīja SKU izvēlē, ilgums milisekundēs
+
+
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
 
 Mēs reģistrējam brīdi, kad lietotājs atrodas lietojumprogrammā, kas ielādē personas kartīti, sagaidot, ka lietotājs atvērs Live personas kartīti.   Šie dati tiek izmantoti, lai noteiktu, vai kartīte ir ielādēta pareizi. 
@@ -5542,7 +5597,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
 
-Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android. Reģistrē, kad notiek PDF atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par PDF failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu PDF atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot PDF failu darbības veiktspēju.
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android. Reģistrē, kad notiek .pdf atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par .pdf failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu .pdf atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot .pdf failu darbības veiktspēju.
 
 Tiek apkopoti šādi lauki:
 
@@ -5585,8 +5640,6 @@ Tiek apkopoti šādi lauki:
 Šis notikums tiek apkopots Office lietojumprogrammai darbam ar iOS. Reģistrē, kad notiek .pdf atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par .pdf failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu .pdf atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot .pdf failu darbības veiktspēju. 
 
 - **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai 
-
-- **Data_Doc_URLHash** — GUID faila URL 
 
 - **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos 
 
@@ -8140,7 +8193,7 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="settings_action"></a>settings_action
 
-Ļauj mums noteikt situācijas, kad ir iespējami negatīva ietekme uz jūsu iespēju konfigurēt lietojumprogrammas iestatījumus, piemēram, paziņojumu iestatījumus, primāro pasta kontu un e-pasta paraksta konfigurēšanu.
+Šis notikums apkopo iestatījumu konfigurācijas informāciju. Šie dati ļauj noteikt situācijas, kad ir iespējami negatīva ietekme uz lietotāja spēju konfigurēt lietojumprogrammas iestatījumus, piemēram, paziņojumu iestatījumu, primāro pasta kontu un e-pasta paraksta konfigurēšana.
 
 Tiek apkopoti šādi lauki: 
 
@@ -8150,49 +8203,44 @@ Tiek apkopoti šādi lauki:
 
 - **auth_type** — konta izmantotais autentifikācijas tips, lai mēs varētu saprast, kuru aizmugursistēmas slāni mēs izmantojam problēmu diagnostikai 
 
-- **auth_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto konta veidu
-
-- **badge_count_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt. 
-
 - **changed_folder** — reģistrē, vai mape ir mainīta, lai palīdzētu mums diagnosticēt problēmas. 
-
-- **changed_folder** — nosaka, vai šī darbība tika arhivēta, plānota vai cita darbība.
 
 - **delete_scope** — konta dzēšanas laikā norāda, vai jūs dzēšat kontu tikai šajā ierīcē vai visās ierīcēs ar Outlook.  
 
-- **delete_scope** — seko, vai šī darbība bija saistīta ar dzēšanu tikai šajā ierīcē vai visās ierīcēs, ja attiecināms. 
-
 - **enabled_state** — norāda, vai jūsu automātiskās atbildes, kontaktpersonu saglabāšanas un ārējo attēlu saglabāšanas iestatījumi ir konfigurēti pareizi  
 
-- **enabled_state** — norāda, vai ir iespējots ar darbību saistītais stāvoklis
+- **notification_action** — lai pārbaudītu, vai jūs konfigurējāt jebkādas paziņojumu darbības e-pastu ziņojumu šķirošanai, un pārliecinātos, ka šis iestatījums darbojas pareizi 
 
-- **in_app_language** — atlasītā programmas valoda, virknes tips (noklusējums, en-US, fa, ru utt.)  
+- **notification_action_number** — lai pārbaudītu, vai jūsu paziņojumu darbības (pirmā vai otrā darbība) ir konfigurētas pareizi
 
-- **notification_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt.
+- **server_type** — līdzīgs auth_type, norāda jūsu konta veidu labākai problēmas noteikšanai.  Piemēri: Office365, Gmail, Outlook
 
-- **server_type** — līdzīgs auth_type, norāda jūsu konta veidu labākai problēmas noteikšanai. Piemēri** — Office365, Gmail, Outlook
-
-- **server_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto servera veidu
-
-- **setting_properties** — izseko rekvizīta saistībai ar iestatīšanas darbību 
-
-- **signature_setting** — norāda, vai iestatījums tika pielietots visiem kontiem vai atsevišķam kontam
-
-- **source** — norāda, kas ir paziņojumu avots, ja attiecināms, no iestatījumiem vai iestatījuma “netraucēt”
+- **setting_properties** — izseko rekvizīta saistību ar iestatīšanas darbību saskaņā ar tālāk norādīto: 
+   - **alternate_app_icon_setting** — atlasītā alternatīvā programmas ikona (gaiša, tumša)
+   - **auth_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto konta veidu
+   - **badge_count_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt. 
+   - **changed_folder** — nosaka, vai šī darbība tika arhivēta, plānota vai cita darbība.
+   - **delete_scope** — seko, vai šī darbība bija saistīta ar dzēšanu tikai šajā ierīcē vai visās ierīcēs, ja attiecināms. 
+  - **enabled_state** — norāda, vai ir iespējots ar darbību saistītais stāvoklis
+  - **in_app_language** — atlasītā programmas valoda, virknes tips (noklusējums, en-US, fa, ru utt.)
+  - **notification_action_setting** — norāda detalizētu informāciju par ar šo darbību saistīto paziņojumu iestatījumiem, ja attiecināms
+    - **notification_action** — norāda, ko lietotājs mēģināja izdarīt, piemēram, atzīmēt ar karodziņu, dzēst, arhivēt; ļauj mums noteikt, kādu ziņojuma darbību lietotājs vēlējās veikt ar paziņojumu, un, vai šī darbība izdevās. 
+    - **notification_action_number** — norāda, kurš darbības numurs (divas no trim darbībām ir iespējams pielāgot) tika piešķirts paziņojuma darbībai, piemēram, pirmā darbība, otrā darbība. Ļauj mums noteikt, vai pastāv problēmas ar konkrēto darbību.
+   - **notification_state** — norāda, kāda veida žetonu skaitīšanu pieprasīja lietotājs, piemēram, nav žetonu, tikai iesūtnei utt.
+   - **server_type** — norāda aizmugursistēmas autentifikācijas tipu, ļaujot mums noskaidrot, vai pastāv problēma ar konkrēto servera veidu
+   - **source** — norāda, kas ir paziņojumu avots, ja attiecināms, no iestatījumiem vai iestatījuma “netraucēt”
+   - **swipe_setting** — norāda uz ar šo darbību saistītās pavilkšanas iestatījumu detalizētu informāciju, ja attiecināms
+     - **swipe_action** — norāda, ko lietotājs mēģināja izdarīt, piemēram, atzīmēt ar karodziņu, dzēst, arhivēt; ļauj mums noteikt, kādu darbību lietotājs vēlējās veikt, un, vai darbība izdevās. 
+     - **swipe_direction** — norāda, kādā virzienā lietotājs iestatīja pavilkšanu, t.i., no kreisās uz labo vai no labās uz kreiso pusi.  Ļauj mums noteikt, vai pastāv problēmas ar konkrētu pavilkšanas virzienu.
+   - **ui_mode_setting** — atlasītais UI režīms (tumšs, gaišs, sistēmas noklusējuma, zems akumulatora uzlādes līmenis utt.)
+   - **signature_setting** — norāda, vai iestatījums tika pielietots visiem kontiem vai atsevišķam kontam
 
 - **state_changed_to** — lai pārbaudītu, vai jūsu galvenās iesūtnes iesl./izsl. iestatījums ir konfigurēts pareizi 
 
 - **swipe_action** — lai pārbaudītu, vai jūs konfigurējāt jebkādas pavilkšanas darbības e-pastu ziņojumu šķirošanai, un pārliecinātos, ka šis iestatījums darbojas pareizi 
 
-- **swipe_action** — norāda, ko lietotājs mēģināja izdarīt, piemēram, atzīmēt ar karodziņu, dzēst, arhivēt; ļauj mums noteikt, kādu darbību lietotājs vēlējās veikt, un, vai darbība izdevās. 
-
 - **swipe_direction** — lai pārbaudītu, vai jūsu pavilkšanas virzieni (pa kreisi vai pa labi) ir iestatīti pareizi
 
-- **swipe_direction** — norāda, kādā virzienā lietotājs iestatīja pavilkšanu, t.i., no kreisās uz labo vai no labās uz kreiso pusi.  Ļauj mums noteikt, vai pastāv problēmas ar konkrētu pavilkšanas virzienu.
-
-- **swipe_setting** — norāda uz ar šo darbību saistītās pavilkšanas iestatījumu detalizētu informāciju, ja attiecināms
-
-- **ui_mode_setting** — atlasītais UI režīms (tumšs, gaišs, sistēmas noklusējuma, zems akumulatora uzlādes līmenis utt.)
 
 #### <a name="sidebar_action"></a>sidebar_action
 
@@ -9551,7 +9599,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officetelemetryenginesessionhandoff"></a>Office.TelemetryEngine.SessionHandOff
 
-Attiecas uz Win32 Office lietojumprogrammām.  Šis notikums palīdz saprast, vai tika izveidota jauna sesija, lai apstrādātu lietotāja iniciētu faila atvēršanas notikumu. Tā ir kritiski svarīga diagnostikas informācija, kas tiek izmantota, lai atvasinātu uzticamības signālu un pārliecinātos, vai lietojumprogramma darbojas, kā paredzēts.
+Attiecas uz Win32 Office lietojumprogrammām.  Šis notikums palīdz mums saprast, vai tika izveidota jauna sesija, lai apstrādātu lietotāja iniciētu faila atvēršanas notikumu. Tā ir kritiski svarīga diagnostikas informācija, kas tiek izmantota, lai atvasinātu uzticamības signālu un pārliecinātos, vai lietojumprogramma darbojas, kā paredzēts.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -10961,6 +11009,24 @@ Tiek apkopoti šādi lauki:
 
 - **view_duration** — norāda laiku, kas bija nepieciešams, lai renderētu dažādus kalendāra UI komponentus, kas palīdz mums atklāt veiktspējas problēmas, kas ietekmē jūsu kalendāra izmantošanas pieredzi
 
+#### <a name="contact_action"></a>contact_action
+
+Šis notikums tiek aktivizēts ar dažādām darbībām kontaktpersonu sadaļā — kontaktpersonu skatīšana, atjaunināšana un dzēšana, kā arī kontaktpersonu saraksta skatīšana. To izmanto, lai noteiktu, vai pastāv ar kontaktpersonām saistīta veiktspējas regresija.
+
+Tiek apkopoti šādi lauki: 
+
+- **accounts_with_filters** — kontu ar kontaktpersonu sarakstam pielietotiem filtriem skaits
+
+- **action** — veiktā darbība, piemēram, kontaktpersonas skatīšana
+ 
+- **duration_initial_view_load** — laiks no skata atvēršanas līdz sākotnējai kontaktpersonu saraksta ielādei
+
+- **duration_show_contacts** — laiks no skata atvēršanas līdz kontaktpersonu parādīšanas kontaktpersonu sarakstā
+ 
+- **total_contacts** — kontaktpersonu bez filtriem skaits
+ 
+- **total_filtered_contacts** — kontaktpersonu ar filtriem skaits
+
 #### <a name="conversation_load_time"></a>conversation_load_time
 
 Šis notikums ļauj mums noteikt un novērst problēmas, kad ir jūtama veiktspējas ietekme uz e-pasta sarunu ielādi, lai nodrošinātu, ka e-pasta ziņojumi tiek ielādēti atbilstoši paredzētajam.
@@ -11542,6 +11608,16 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **TypeId** — interfeisa GUID, uz kura šī metode tiek izsaukta.
 
+#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
+
+Šī lietojuma telemetrija tiek apkopota, lai noteiktu, kad neizdodas pirkuma/nodrošināšanas/aktivizēšanas darbība un lietotājs pieskaras pogai “Mēģināt vēlreiz”.  Izmanto, lai veiktu pirkšanas kļūdu scenāriju, kas izraisa atkārtošanu, problēmu novēršanu un uzlabotu procesa uzticamību.
+
+Tiek apkopoti šādi lauki:
+
+- **failureReason** — virkne — norāda kļūmi, kuru lietotājs mēģina atkārtot vēlreiz. Piemēram, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+
+- **productid**— virkne — produkta, kuram lietotājs mēģina vēlreiz nesekmīgo pieprasījumu, App Store ID
+
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -11664,13 +11740,23 @@ Tiek apkopoti šādi lauki:
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
 
-Šis notikums nostrādā mēģinājumu sesijas apturēšanas brīdī. Apvienojot ar Office.PowerPoint.PPT.Android.RehearseView.StartSession, šis būs pirmais indikators jebkādām avārijām vai kļūdām, ar kurām saskaras lietotājs.
+Šis notikums norāda, ka lietotājs pārtrauca mēģinājuma sesiju. Apvienojot ar Office.PowerPoint.PPT.Android.RehearseView.StartSession, šis būs pirmais indikators jebkādām avārijām vai kļūdām, ar kurām saskaras lietotājs.
 
 Tiek apkopoti šādi lauki:
+
+- **ConnectionCreationTime** — laiks, kas nepieciešams, lai izveidotu pakalpojuma puses savienojumus.
+
+- **CountDownAlertTime** — laiks, kuram tika parādīs atpakaļskaitīšanas brīdinājums.
+
+- **CountdownInitTime —** laiks starp slaidrādes ielādes pabeigšanu un atpakaļskaitīšanas sākšanu.
 
 - **CritiqueSummary** — visas lietotāja redzētās kritikas kopsavilkums ar skaitu.
 
 - **ExitEventCode** — kods, lai identificētu, pēc kura scenārija lietotājs iziet no atkārtotās sesijas neatkarīgi no tā, vai tas bija kļūdas scenārijs vai sekmīga iziešana. 
+
+- **FRETime** — laiks starp FRE ekrāna parādīšanas sākšanu un brīdi, kad lietotājs to noraidīja. 
+
+- **MicrophonePermissionTime** — laiks no mikrofona atļaujas brīdinājuma parādīšanas līdz brīdim, kad lietotājs izvēlas vienu no opcijām.
 
 - **PauseRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Pauzēt mēģinājumu”.
 
@@ -11678,7 +11764,7 @@ Tiek apkopoti šādi lauki:
 
 - **ResumeRehearsingCount** — skaita, cik reižu lietotājs noklikšķināja uz “Atsākt mēģinājumu”.
 
-- **Sessionid** — šis runas ieejas sesijas ID. Mēs to varam izmantot, lai atkļūdotu pakalpojumu darbības žurnālus.
+- **Sessionid** — šis ir runas ieejas sesijas ID. Tas tiek izmantots, lai atkļūdotu pakalpojumu žurnālus.
 
 - **SlideshowViewLoadTime** — slaidrādes ielādei nepieciešamais laiks.
 
@@ -12404,6 +12490,25 @@ Tiek apkopoti šādi lauki:
 
 - **UriScheme** — URL shēma
 
+#### <a name="officeandroidauthaceerrors"></a>Office.Android.AuthACEErrors
+
+Šis notikums izmanto Microsoft kontu (MSA), lai noteiktu, kurš lietotājs mēģina pierakstīties programmā un kura telemetrija tiek aktivizēta šajā diskusijā kā daļa no nesekmīga mēģinājuma.  
+
+Šis pasākums palīdz veikt MSA pierakstīšanās kļūdu izplatīšanas analīzi, kas palīdz izprast neveiksmīgas MSA pierakstīšanās plūsmas beigu iemeslus.
+
+Tiek apkopoti šādi lauki:
+
+- **ExceptionsName** — norāda izņēmuma klases ar izņēmuma tagiem, kas parādās pierakstīšanās ar Microsoft kontu plūsmas laikā. 
+
+- **ExceptionsTag** — norāda, kuri ieplūstošie izņēmumi savienojumā notiek MSA pierakstīšanās plūsmā.
+
+- **IDCRLACEErrorCode** — norāda kļūdas, kas notiek MSA pierakstīšanās plūsmas laikā, kodu. Dažādi kļūdu kodi ir norādīti %SRCROOT%\identity\coreapi\public\IdentityData.h
+
+- **IDCRLAuthenticationStatusErrorCode** — norāda kļūdu kodus autentifikācijas rezultāta, kas tiek saņemts no Microsoft konta (MSA), statusam “nederīgs”.
+
+- **IDCRLUserInteractionMissingError** — norāda, vai pierakstīšanās ar Microsoft kontu (MSA) plūsma tika aktivizēta ar karodziņu showUI atzīmētu kā nepatiesu, kas izraisīja aktivizēšanu.
+
+
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
 Binārās konversijas kļūdu telemetrija PDF drukāšanai un koplietošanai.  Microsoft to izmanto, lai identificētu kļūmes punktus BCS konversijas laikā Word, Excel vai PowerPoint lietojumprogrammās.
@@ -12424,7 +12529,7 @@ Tiek apkopoti šādi lauki:
 
 - **PdfConversionHRStatus** — PDF konvertēšanas statusa kods
 
-- **PdfConversionResult** — PDF konvertēšanas rezultāta uzskaitījums.  Vērtības: "izdevās", "neizdevās" un "atcelts"
+- **PdfConversionResult** — PDF konvertēšanas rezultāta uzskaitījums.  Vērtības: “izdevās”, “neizdevās” un “atcelts”
 
 - **PdfFileSize** — PDF faila lielums
 
@@ -12495,6 +12600,37 @@ Tiek apkopoti šādi lauki:
 - **Data_ExceptionType** — neobligāts teksta lauks, kas norāda izņēmumu, kas tiek izmests avota koda.
 
 - **Data_MethodName** — teksts, kas norāda metodes nosaukumu avota kodā, kurā ir kļūda.
+
+#### <a name="office_android_earlytelemetry_extractionerror"></a>Office_Android_EarlyTelemetry_ExtractionError
+
+Lai samazinātu Office Android programmu lielumu, mēs izmantojam gala pakotnes resursu saspiešanu. Izpildes laikā šie resursi tiek izvilkti pirms izmantošanas. Dažreiz izvilkšanas laikā var notikt neparedzētas kļūdas, kas izraisa programmas avarēšanu. 
+
+Ar šī notikuma palīdzību mēs apkopojam ar izvilkšanu saistītu diagnostikas informāciju, piemēram, izvelkamā resursa nosaukums, izvilkšanas ceļš, pieejamā brīvā vieta krātuvē utt. Šie dati tiek apkopoti tikai izvilkšanas kļūdu gadījumā.
+
+Mēs izmantojam šos datus, lai izprastu izvilkšanas kļūdu iemeslus un lai uzlabotu mūsu programmu lietošanas pieredzi.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ArchiveName** — izvelkamā resursa nosaukums.
+
+- **Data_ArchivePath** — ceļš uz resursa īslaicīgās kešošanas vietu. 
+
+- **Data_ArchiveSizeKB** — izvelkamā resursa lielums.
+ 
+- **Data_ClassName** — faila nosaukums avota kodā, kur notika kļūda.
+
+- **Data_ErrorDetail** — teksts, kas sniedz vairāk informācijas par kļūdas iemeslu, piemēram, kļūdas kods utt.
+
+- **Data_ErrorMessage** — teksts, kas apraksta izvilkšanas laikā notikušās kļūdas tipu.
+
+- **Data_ExtractionDestinationPath** — ceļš uz vietu, kur resurss tiks saglabāts pēc izvilkšanas.
+
+- **Data_FreeDiskSpaceMB** — ierīcē pieejamās brīvās vietas apjoms megabaitos. 
+
+- **Data_ItemToExtract** — izvelkamā resursa nosaukums.
+
+- **Data_MethodName** — metodes nosaukums avota kodā, kur notika kļūda.
+
 
 #### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
 
