@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440496"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941035"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -85,7 +85,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopots, kad Office rāda lietotājam uz veidlapām balstītas pierakstīšanās uzvedni.
 
-Kopā ar kluso pilnvaru iegūšanu autentifikācijas uzvednes tiek izmantotas, lai noteiktu, vai lietotājs ir bojātā autentifikācijas stāvoklī, kas lietotājam izraisa būtībā bezsaistes klienta stāvokli, vai sliktākajā gadījumā bojāta autentifikācija var traucēt licences iegūšanu, kā arī izraisīt pilnībā nelietojamu klientu.
+Kopā ar kluso pilnvaru iegūšanu autentifikācijas uzvednes tiek izmantotas, lai noteiktu, vai lietotājs ir bojātā autentifikācijas stāvoklī, kas lietotājam izraisa būtisku bezsaistes klienta stāvokli, vai sliktākajā gadījumā bojāta autentifikācija var traucēt licences iegūšanu, kā arī izraisīt pilnībā nelietojamu klientu.
 
 Uz veidlapām balstītās autentifikācijas (FBA) pierakstīšanās uzvednes tiek izmantotas dažiem lokāliem autentifikācijas scenārijiem, un parasti mēs vēlamies nodrošināt, ka tā nenotiek, jo visiem vajadzētu lietot moderno autentifikāciju ar FBA saistīto drošības ievainojamību dēļ.
 
@@ -426,6 +426,461 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Wamapi** — norāda, kurš WAM API ir izsaukts
 
   - **Wamtelemetrybatch** — pašlaik netiek izmantots. Nākotnē sniedz WAM komponentam iespēju izsūtīt papildinformāciju par autentifikācijas notikumu.
+
+
+### <a name="officematsoneauthactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
+
+Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Office mēģina iegūt autentifikācijas marķieri vai nu nemanāmi vai izmantojot uzvedni. Ja iegūšanas mēģinājumi neizdodas, tiek iekļauta kļūdas informācija. Šie notikumi mūsu lietotājiem sniedz iespēju izvairīties no pāriešanas bojātos autentifikācijas stāvokļos.
+
+1) Identificēšana, vai klienti var sekmīgi iegūt autentifikācijas marķieri no pakalpojuma vai ir pārgājuši bojātā autentifikācijas stāvoklī.
+
+2) Novērtēt, kad izmaiņas rodas klientā vai pakalpojumos, vai tās izraisa kritisku regresiju lietotāja autentifikācijas pieredzē un uzticamībā
+
+3) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
+
+4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
+
+Tiek apkopoti šādi lauki:
+
+- **Accounttype** — šim autentifikācijas notikumam izmantotais konta tips, piemēram, patērētājs vai organizācijas konts.
+
+- **Actionname** — draudzīgs nosaukums šim notikumam, ja tāds tika norādīts.
+
+- **Actiontype** — norāda, kāda veida autentifikācijas bibliotēku izmantojat.
+
+- **Appaudience** — vai lietojumprogrammas būvējums ir paredzēts iekšējai vai ārējai lietošanai
+
+- **Appforcedprompt** — vai lietojumprogramma ignorēja kešatmiņu un nodrošināja uzvednes rādīšanu piespiedu kārtā
+
+- **Appname** — tās lietojumprogrammas nosaukums, kas veic autentifikāciju
+
+- **Appver** — tās lietojumprogrammas versija, kas veic autentifikāciju
+
+- **Askedforcreds** — vai lietojumprogramma pieprasīja lietotājam ievadīt akreditācijas datus šai darbībai
+
+- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
+
+- **Blockingprompt** — vai lietojumprogramma parādīja uzvedni, kur bija nepieciešama lietotāja mijiedarbība
+
+- **Correlationid** — identifikators, ko izmanto, lai saistītu informāciju par šo atsevišķo notikumu ar pakalpojumu datiem
+
+- **Count** — kopējais apkopoto darbību skaits, kas ziņots šajā vienā datu notikumā.
+
+- **Devicenetworkstate** — vai ierīce ir savienota ar internetu.
+
+- **Deviceprofiletelemetryid** — anonīms ierīces ID, ko izmanto, lai mērītu visas ierīces autentifikācijas pieredzi un uzticamību.
+
+- **Duration** — cik ilga bija autentifikācija
+
+- **duration_max** — maksimālais jebkura no apkopotajiem notikumiem ilgums
+
+- **duration_min** — minimālais jebkura no apkopotajiem notikumiem ilgums
+
+- **duration_sum** — visu apkopoto notikumu ilguma summa
+
+- **endtime** — kad autentifikācijas notikums beidzās
+
+- **error** — kļūdas kods, ja autentifikācija neizdevās
+
+- **errordescription** — īss kļūdas apraksts
+
+- **errorsource** — vai kļūda radās pakalpojumā, autentifikācijas bibliotēkā vai lietojumprogrammā
+
+- **eventtype** — vai šis notikums ziņo par autentifikācijas datu punktu vai datu kvalitātes kļūdas notikumu. Izmanto datu kvalitātes mērīšanai.
+
+- **from_cache** — Būla vērtība, kas norāda, vai ieraksts ir no WAM kodola kešatmiņas vai spraudņa
+
+- **hasadaltelemetry** — norāda, vai Azure Active Directory Authentication Library (ADAL) nodrošināja šim notikumam telemetriju.
+
+- **Identityservice** — vai tika izsaukts Microsoft pakalpojuma konts (MSA) vai Azure Active Directory (AAD) pakalpojums
+
+- **Interactiveauthcontainer** — kāda veida uzvedne tika rādīta
+
+- **Issilent** — vai tika parādīta uzvedne vai arī šis bija kluss (fona) autentifikācijas notikums.
+
+- **Microsoft_ADAL_adal_version** — Azure Active Directory Authentication Library (ADAL) versija
+
+- **Microsoft_ADAL_api_error_code** — kļūdas kods, ko raidīja autentifikācijas bibliotēka šim autentifikācijas mēģinājumam
+
+- **Microsoft_ADAL_api_id** — šim autentifikācijas mēģinājumam izsauktais API
+
+- **Microsoft_ADAL_application_name** — lietojumprogrammas/procesa nosaukums, izmantojot ADAL.
+
+- **Microsoft_ADAL_application_version** — lietojumprogrammas versija, izmantojot ADAL.
+
+- **Microsoft_ADAL_authority** — Azure Active Directory tās iestādes URL, kas atbildīga par lietotāja autentifikāciju
+
+- **Microsoft_ADAL_authority_type** — patērētāja/Microsoft pakalpojuma līgums (MSA) attiecībā pret organizāciju/Azure Active Directory (AAD); pašlaik vienmēr AAD
+
+- **Microsoft_ADAL_authority_validation_status** — norāda, vai autentifikācija tika pabeigta pakalpojuma pusē
+
+- **Microsoft_ADAL_broker_app** — norāda, vai ADAL autentifikācijai izmantoja starpnieku
+
+- **Microsoft_ADAL_broker_app_used** — norāda starpnieka nosaukumu (piemēram, Windows kontu pārvaldība)
+
+- **Microsoft_ADAL_broker_version** — norāda starpnieka versiju, ja tas tiek izmantots
+
+- **Microsoft_ADAL_cache_event_count** — kešatmiņas notikumu skaits, ko ADAL veica, izgūstot marķieri
+
+- **Microsoft_ADAL_cache_event_count_max** — ja šis signāls tiek apkopots, maksimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+
+- **Microsoft_ADAL_cache_event_count_min** — ja šis signāls tiek apkopots, minimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+
+- **Microsoft_ADAL_cache_event_count_sum** — ja šis signāls tiek apkopots, visu apkopoto notikumu kešatmiņas notikumu summa
+
+- **Microsoft_ADAL_cache_read_count** — cik reižu API lasīja no diska kešatmiņas. Spēkā, ja ir bijusi vismaz viena lasīšana
+
+- **Microsoft_ADAL_cache_read_error_count** — to, cik reizes neizdevās lasīt kešatmiņā. Ir spēkā, ja ir bijusi vismaz viena kļūme
+
+- **Microsoft_ADAL_cache_read_last_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena lasīšanas kļūme
+
+- **Microsoft_ADAL_cache_read_last_system_error** — sistēmas kļūdas kods.  Ir spēkā, ja ir bijusi vismaz viena lasīšanas kļūme
+
+- **Microsoft_ADAL_cache_write_count** — cik reizes API ir ierakstīts diska kešatmiņā. Spēkā, ja ir bijusi vismaz viena rakstīšana
+
+- **Microsoft_ADAL_cache_write_error_count** — cik reizes diska kešatmiņas rakstīšana neizdevās. Spēkā, ja ir bijusi vismaz viena kļūme
+
+- **Microsoft_ADAL_cache_write_last_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme
+
+- **Microsoft_ADAL_cache_write_last_system_error** — sistēmas kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme
+
+- **Microsoft_ADAL_client_id** — jauktais programmas Azure Active Directory ID
+
+- **Microsoft_ADAL_device_id** — ADAL ģenerēts lokālās ierīces ID.
+
+- **Microsoft_ADAL_error_domain** — domēns/komponents, kas ģenerēja kļūdas kodu.
+
+- **Microsoft_ADAL_error_protocol_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums, ADAL ierakstīts.
+
+- **Microsoft_ADAL_extended_expires_on_setting** — patiess/aplams norāda, vai marķierim ir pagarināts kalpošanas laiks
+
+- **Microsoft_ADAL_http_event_count** — HTTP pieprasījumus, ko ģenerē ADAL.
+
+- **Microsoft_ADAL_idp** — identitātes nodrošinātājs (IDP), ko izmanto ADAL.
+
+- **Microsoft_ADAL_network_event_count** — ADAL tīkla zvanu skaits
+
+- **Microsoft_ADAL_http_event_count_max** — ja šis signāls ir apkopots, maksimālais http zvanu skaits, ko veic ADAL
+
+- **Microsoft_ADAL_http_event_count_min** — ja šis signāls ir apkopots, minimālais http zvanu skaits, ko veic ADAL
+
+- **Microsoft_ADAL_http_event_count_sum** — ja šis signāls ir apkopots, ADAL veikto http zvanu summa
+
+- **Microsoft_ADAL_network_event_count_max** — ja šis signāls tiek apkopots, maksimālais tīkla zvanu skaits, ko veic ADAL par jebkuru apkopotu notikumu
+
+- **Microsoft_ADAL_network_event_count_min** — ja šis signāls tiek apkopots, minimālais tīkla zvanu skaits, ko veic ADAL par jebkuru apkopotu notikumu
+
+- **Microsoft_ADAL_network_event_count_sum** — ja šis signāls tiek apkopots, visu apvienoto notikumu ADAL veikto tīkla zvanu summa
+
+- **Microsoft_ADAL_is_silent_ui** — patiess/aplams norāda, vai UI ADAL rādīja UI (uzvedni)
+
+- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās (MacOS)
+
+- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās
+
+- **Microsoft_ADAL_logging_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās reģistrēšanas režīms ir iespējots. Šie dati tiek reģistrēti tikai lokāli, netiek raidīti telemetrijā
+
+- **Microsoft_ADAL_ntlm** — patiess/aplams, norādot, vai ADAL izmanto pamata autentifikāciju (NTLM).
+
+- **Microsoft_ADAL_oauth_error_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums
+
+- **Microsoft_ADAL_prompt_behavior** — pieteikšanās vai neviens tīkla parametrs nav nodots pakalpojumam, lai norādītu, vai var parādīt lietotāja interfeisu
+
+- **Microsoft_ADAL_request_id** — transakcijas GUID pieprasījumam, ko ADAL raida pakalpojumam
+
+- **Microsoft_ADAL_response_code** — tīkla atbildes kods no pakalpojuma
+
+- **Microsoft_ADAL_response_time** — cik ilgi pakalpojums atgrieza ADAL
+
+- **Microsoft_ADAL_response_time_max** — ja signāls ir apkopots, maksimālais laiks, cik ilgi ADAL atgriezās no API kādā no apkopotajiem notikumiem
+
+- **Microsoft_ADAL_response_time_min** — ja signāls ir apkopots, minimālais laiks, cik ilgi pakalpojums atbildēja ADAL kādā no apkopotajiem notikumiem
+
+- **Microsoft_ADAL_response_time_sum** — ja signāls ir apkopots, laika summa, cik ilgi ADAL atgriezās no API visos apkopotajos notikumos
+
+- **Microsoft_ADAL_rt_age** — atsvaidzināšanas marķiera vecums
+
+- **Microsoft_ADAL_server_error_code** — servera atgrieztais kļūdas kods
+
+- **Microsoft_ADAL_server_sub_error_code** — servera atgrieztais pakārtotais kļūdas kods, lai norādītu, kāpēc pieprasījums neizdevās
+
+- **Microsoft_ADAL_spe_info** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
+
+- **Microsoft_ADAL_spe_ring** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
+
+- **Microsoft_ADAL_start_time** — laiks, kad ADAL API izsaukums tika veikts
+
+- **Microsoft_ADAL_status** — veiksmes/kļūmju statuss kopējā ADAL izsaukšanā
+
+- **Microsoft_ADAL_stop_time** — laiks, kad tiek atgriezts ADAL API izsaukums
+
+- **Microsoft_ADAL_telemetry_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās telemetrijas režīms ir iespējots. Nosaukums ir misnomer, jo PII/EUII netiek raidīts
+
+- **Microsoft_ADAL_tenant_id** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder
+
+- **Microsoft_ADAL_token_acquisition_from_context** — apraksta ADAL uzvedību, ņemot vērā marķierus autentifikācijas kontekstā
+
+- **Microsoft_ADAL_token_frt_status** — atsvaidzināšanas marķiera statuss: vai tas ir izmēģināts, nav nepieciešams, nav atrasts vai izdzēsts.
+
+- **Microsoft_ADAL_token_mrrt_status** — vairāku resursu atsvaidzināšanas marķiera (MRRT) statuss: vai tas ir izmēģināts, nav nepieciešams, nav atrasts vai izdzēsts.
+
+- **Microsoft_ADAL_token_rt_status** — atsvaidzināšanas marķiera statuss: vai tas ir izmēģināts, nav nepieciešams, nav atrasts vai izdzēsts.
+
+- **Microsoft_ADAL_token_type** — atsvaidzināšanas marķieris (RT) vai vairāku resursu atsvaidzināšanas marķieris (MRRT).
+
+- **Microsoft_ADAL_ui_event_count** — uzvedņu skaits, kas tiek rādītas lietotājam. Var būt klusas
+
+- **Microsoft_ADAL_user_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts
+
+- **Microsoft_ADAL_x_ms_request_id** — papildu pieprasījuma ID, kas tiek nodrošināts tīkla galvenē pakalpojumā, izmantojot ADAL
+
+- **Microsoft_ADAL_x_client_cpu** — informācija, kas attiecas uz ierīces centrālā procesora arhitektūru
+
+- **Microsoft_ADAL_x_client_os** — ierīces operētājsistēmas versija.
+
+- **Microsoft_ADAL_x_client_sku** — ierīces operētājsistēmas SKU nosaukums.
+
+- **Microsoft_ADAL_x_client_ver** — ADAL bibliotēkas versija.
+
+- **MSAL_all_error_tags** — visas kļūdu atzīmes autentifikācijas plūsmā radās Microsoft autentifikācijas bibliotēka (MSAL).
+
+- **MSAL_api_error_code** — ja MSAL sastopas ar kļūdu, kas rodas no operētājsistēmas, platformas kļūdu kodi tiek saglabāti šeit.
+
+- **MSAL_api_error_context** — virkne, kas satur cilvēkiem lasāmu papildu informāciju par pēdējo MSAL radušos kļūdu. 
+
+- **MSAL_api_error_tag** — unikālā virkne, kas paredzēta vietai kodā, kur radās šāda kļūda.
+
+- **MSAL_api_name** — MSAL augšējā līmeņa API nosaukums, kas tiek izsaukts, lai sāktu šo autentifikācijas plūsmu.
+
+- **MSAL_api_status_code** — statusa kods MSAL, kas tiek atgriezts šīs autentificēšanas plūsmas rezultātam.
+
+- **MSAL_auth_flow** — darbības, ko MSAL mēģinājums šīs autentifikācijas plūsmas laikā (AT, PRT, LRT, FRT, māksla, IRT). Atdalīts ar caurules simbolu "|", lai atvieglotu parsēšanu.
+
+- **MSAL_auth_flow_last_error** — kļūdas kods, ko saņēmāt no servera otrajā AuthFlow. (Piem.: ja AuthFlow = "PRT|LRT", PRT kļūda būs AuthFlowLastError).
+
+- **MSAL_authority_type** — vai šis pieprasījums bija šādam lietotājam: AAD, federatīvam vai MSA.
+
+- **MSAL_broker_app_used** — vai šajā starpniecības lietojumprogrammā tika izmantota autentifikācijas plūsma.
+
+- **MSAL_client_id** — klienta ID izsaukšanas lietojumprogrammai
+
+- **MSAL_correlation_id** — šī notikuma unikālais GUID, ko izmanto, lai savienotu darbības klienta, servera un programmu žurnālos.
+
+- **MSAL_delete_token** — marķieru saraksts, kas šīs autentifikācijas plūsmas laikā tika izdzēsti no kešatmiņas.
+
+- **MSAL_http_call_count** — autentifikācijas plūsmas laikā veikto MSAL HTTP zvanu skaits.
+
+- **MSAL_is_successful** — vai autentifikācijas plūsma bija sekmīga.
+
+- **MSAL_last_http_response_code** — ja MSAL veica vienu vai vairākus HTTP zvanus, tas ir pēdējais saņemtais HTTP atbildes kods.
+
+- **MSAL_msal_version** — MSAL versijas virkne, formāts X.X.X+("OneAuth", "vietējais" vai saistību tēmturis).
+
+- **MSAL_read_token** — marķieri, kas tika nolasīti no kešatmiņas (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT, kurai beidzies derīguma termiņš, tika nolasīta, bet izmesta]).
+
+- **MSAL_read_token_last_error** — ja MSAL radās kļūda, lasot no kešatmiņas, šeit tiks saglabāta informācija. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda MacOS).
+
+- **MSAL_request_duration** — cik ilgs laiks pagāja, kad tika izsaukta MSAL augstākā līmeņa API, līdz mēs atgriezām rezultātu.
+
+- **MSAL_request_id** — pieprasījuma ID pēdējam zvanam, kuram mēs izmantojām Microsoft drošu marķieru pakalpojumu.
+
+- **MSAL_server_error_code** — Microsoft īpašā, drošā marķiera pakalpojuma skaitliskās kļūdas kods, ja tādu saņēmām.
+
+- **MSAL_server_spe_ring** -Microsoft Secure token Service Secure Production Enterprise zvana informācija, ja to saņēmāt.
+
+- **MSAL_server_suberror_code** — Microsoft īpašā, drošā marķiera pakalpojuma apakškļūdas koda virkne, ja mēs to saņēmām.
+
+- **MSAL_start_time** — laiks, kad MSAL pieprasījums tika sākts augstākā līmeņa publiskajā API.
+
+- **MSAL_stop_time** — laiks, kad MSAL pabeidza pieprasījuma apstrādi un atgrieza rezultātu zvanītājam.
+
+- **MSAL_tenant_id** — Microsoft GUID, kas identificē nomnieku, kuram lietotājs pastāv.
+
+- **MSAL_ui_event_count** — UI uzvedņu skaits MSAL tiek parādīts ekrānā.
+
+- **MSAL_wam_telemetry** — satur virkni WAM telemetrijas datu JSON virknē, kas tiks parsēti un pārveidoti par šī dokumenta laukiem, kas iegūti no WAM.
+
+- **MSAL_was_request_throttled** — patiesi, ja MSAL ierobežotu šo pieprasījumu un neļautu tam nokļūt tīklā. Ja tas vispār ir patiess, visdrīzāk, ka zvana lietojumprogrammā ir cilpa.
+
+- **MSAL_write_token** — marķieri, kas tika nolasīti no kešatmiņas (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT, kurai beidzies derīguma termiņš, tika nolasīta, bet izmesta]).
+
+- **MSAL_write_token_last_error** — ja MSAL radās kļūda, rakstot kešatmiņā, mēs šeit saglabāsim informāciju. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda MacOS).
+
+- **oneauth_api** — šim autentifikācijas mēģinājumam izsauktais OneAuth API.
+
+- **oneauth_transactionuploadid** — GUID, kas norāda atsevišķu zvanu uz OneAuth API.
+
+- **oneauth_version** — OneAuth SDK versija.
+
+- **Platform** — operētājsistēmas platforma (0: Windows darbvirsma, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+
+- **Promptreasoncorrelationid** — korelācijas identifikatoru, ko var izmantot, lai uzmeklētu iepriekšējo autentifikācijas notikumu, kas tiek lietots, lai paskaidrotu, kāpēc lietotājam tika prasīts autentificēties.
+
+- **Resource** — resurss, kuram tiek pieprasīts marķieris.
+
+- **Scenarioid** — vairāki notikumi var piederēt vienam scenārijam, piemēram, scenārijs var pievienot jaunu kontu, bet pastāv vairākas uzvednes, kas rodas kā daļa no šī scenārija. Šis identifikators ļauj korelēt šos saistītos notikumus.
+
+- **Scenarioname** — lietojumprogrammas scenārija nosaukums, kurā bija nepieciešama autentifikācija, piemēram, pirmā sāknēšana, licencēšana utt.
+
+- **Scope** — tvērums, kuram tiek pieprasīts marķieris.
+
+- **Sdkver** — Microsoft autentifikācijas telemetrijas sistēmas bibliotēkas versija, kas tiek lietota, lai izveidotu šos datus
+
+- **Sessionid** — sāknēšanas sesijas identifikators
+
+- **Starttime** — laiks, kad sākās autentifikācijas notikums.
+
+- **Tenantid** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder (ar ADAL nesaistītos gadījumos)
+
+- **Uploadid** — unikālais GUID šim notikumam, tiek izmantots dublikātu likvidēšanai
+
+- **wamapi** — nosaka, kurš Windows tīmekļa konta pārvaldības (WAM) API tiek izsaukts
+
+- **wamtelemetrybatch** — pašlaik netiek izmantots. Nākotnē sniedz WAM komponentam iespēju izsūtīt papildinformāciju par autentifikācijas notikumu
+
+- **WAM_account_join_on_end** — konta pievienošanās statuss WAM darbības beigās.  Iespējamās vērtības: "primārā", "sekundārā", "nav_pievienots"
+
+- **WAM_account_join_on_start** — konta pievienošanās stāvoklis WAM darbības sākumā.  Iespējamās vērtības: "primārā", "sekundārā", "nav_pievienots"
+
+- **WAM_api_error_code** — ja no AAD WAM spraudņa tika saņemta kļūdas atbilde, šis lauks pastāvēs un tajā būs šis kļūdas kods
+
+- **WAM_authority** — virkne, kurā ietverts autorizācijas URL — tam vajadzētu būt izmantotajam login.windows.net galapunktam
+
+- **WAM_broker_version** — spēkā, ja ir izmantota WAM, šī ir starpnieka versijas virkne
+
+- **WAM_cache_event_count** — WAM kešatmiņas notikumu skaits operācijā
+
+- **WAM_client_id** — identifikators savienošanai ar pakalpojumu datiem identificē klienta lietojumprogrammu.
+
+- **WAM_correlation_id** — identifikators notikumu apvienošanai ar pakalpojumu datiem
+
+- **WAM_device_join** — ierīces savienojuma statuss; iespējamās vērtības ir "aadj", "haadj"
+
+- **WAM_network_event_count** — spēkā, ja noticis vismaz viens tīkla zvans; tīkla izsaukumu skaits uz pakalpojumu šai WAM operācijai
+
+- **WAM_network_status** — spēkā, ja noticis vismaz viens tīkla zvans, kas satur HTTP kļūdas kodu, ja tīkla pieprasījums neizdevās.
+
+- **WAM_idp** — norāda, vai ir izmantoti WAM patērētāja vai organizācijas autentifikācijas spraudnis.
+
+- **WAM_is_cached** — norāda, vai WAM sniegtā atbilde ir izgūta no kešatmiņas.
+
+- **WAM_oauth_error_code** — ietver pakalpojuma atgriezto kļūdas kodu, kas ir daļa no OAuth protokola.
+
+- **WAM_prompt_behavior** — norāda, vai šī uzvedne ir spiesta programmā, vai arī šis pieprasījums var izlaist uzvedni, ja tas var nemanāmi autentificēties.
+
+- **WAM_provider_id** — norāda Microsoft galapunktu, kas tiek izmantots autentifikācijas scenārijā.
+
+- **WAM_redirect_uri** — pārvirzīt URI, kas ir reģistrēts lietojumprogrammai Azure Active Directory.
+
+- **WAM_resource** — resurss, kuram tiek pieprasīts marķieris.
+
+- **WAM_server_error_code** — kļūdas kods, kuru pakalpojums atgrieza WAM.
+
+- **WAM_server_sub_code** — papildu kļūdas kods, ko izmanto, lai sīkāk sadalītu kļūmes cēloņus, ko atgriezis pakalpojums.
+
+- **WAM_silent_code** — kļūdas kods, ar kuru saskaras iekšējais klusais mēģinājums, ko veic WAM, pirms aicināt lietotāju.
+
+- **WAM_silent_mats** — neizmantots.
+
+- **WAM_silent_message** — kļūdas ziņojums, kas saistīts ar iekšējo kluso mēģinājumu, ko veic WAM, pirms aicināt lietotāju.
+
+- **WAM_silent_status** — veiksmīgs/neizdevies statuss iekšējam klusajam mēģinājumam, ko veic WAM, pirms aicināt lietotāju.
+
+- **WAM_tenant_id** — nomnieka identifikators, kuram pieder autentificēts AAD lietotājs, ja pakalpojums to ir atgriezis
+
+- **WAM_ui_visible** — spēkā, ja lietotājam tika parādīts vismaz viens lietotāja interfeisa logs “patiess” vai “aplams”
+
+- **WAM_x_ms_clitelem** — spēkā, ja pakalpojums atgriež galveni “x-ms-clitelem”
+
+
+### <a name="officematsoneauthtransactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Office mēģina iegūt autentifikācijas marķieri vai nu nemanāmi vai izmantojot uzvedni. Šis notikums ir viena vai vairāku ActionMicrosoftOffice notikumu vecākobjekts, kas ļauj apvienot saistītus notikumus. Šie notikumi mūsu lietotājiem sniedz iespēju izvairīties no pāriešanas bojātos autentifikācijas stāvokļos.
+
+1) Identificēšana, vai klienti var sekmīgi iegūt autentifikācijas marķieri no pakalpojuma vai ir pārgājuši bojātā autentifikācijas stāvoklī.
+
+2) Novērtēt, kad izmaiņas rodas klientā vai pakalpojumos, vai tās izraisa kritisku regresiju lietotāja autentifikācijas pieredzē un uzticamībā
+
+3) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
+
+4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
+
+Tiek apkopoti šādi lauki:
+
+- **Actiontype** — "oneauthtransaction" ir vienīgā vērtība.
+
+- **Appaudience** — lietojumprogrammu auditorija (automatizācija, priekšražošana vai ražošana)
+
+- **Appname** — lietojumprogrammas nosaukums
+
+- **Appver** — lietojumprogrammas versija
+
+- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
+
+- **Correlationid** — identifikators, ko izmanto, lai saistītu informāciju par šo atsevišķo notikumu ar pakalpojumu datiem
+
+- **Count** — kļūdas rašanās reižu skaits
+
+- **Devicenetworkstate** — ierīces tīkla stāvoklis
+
+- **Deviceprofiletelemetryid** — ierīces profila telemetrijas ID (virkne, ko MATS izmanto, lai identificētu konkrētu ierīci)
+
+- **duration_max** — šajā signālā apkopoto darījumu minimālais ilgums milisekundēs.
+
+- **duration_min** — šajā signālā apkopoto darījumu maksimālais ilgums milisekundēs.
+
+- **duration_sum** — šajā signālā apkopoto darījumu ilgumu summa milisekundēs.
+
+- **Endtime** — laiks, kurā beidzās OneAuth transakcija.
+
+- **Error** — OneAuth statusa kodu.
+
+- **Eventtype** — notikuma tips
+
+- **Issilent** — aplams, ja tika parādīts lietotāja interfeiss; tiesa, ja tas būtu fona notikums.
+
+- **oneauth_api** — norāda publiski izmantoto OneAuth API.
+
+- **oneauth_Domain** — ja API izsaukums izraisīja kļūdu, šis ir kļūdas sistēmas domēns.
+
+- **oneauth_ErrorCode** — kļūdas kods, kas attēlo OneAuth iekšējo kļūdas stāvokli. Aizstāj veco lauku oneauth_errortag.
+
+- **oneauth_errortag** — skaitliskais identifikators koda rindai, kas bija atbildīga par kļūdas radīšanu.
+
+- **oneauth_ExecutionFlow** — atzīmju sērija, kas identificē kodēšanas ceļu, kuru šis API izsaukums izmantoja.
+
+- **oneauth_internalerror** — kļūdas kods, kas attēlo OneAuth iekšējo kļūdas stāvokli.
+
+- **oneauth_ServerErrorCode** — servera kļūda, kas tiek atgriezta OneAuth, šī API zvana noslēgumā, ja tāda tika konstatēta.
+
+- **oneauth_SystemErrorCode** — sistēmas kļūda, kas tiek atgriezta OneAuth, šī API zvana noslēgumā, ja tāda tika konstatēta.
+
+- **oneauth_Tag** — OneAuth marķieris, kas norāda galīgo vietu kodā, tika sasniegts šī API zvana beigās.
+
+- **oneauth_transactionuploadid** — norāda nejauši ģenerētu iekšējo GUID, kas kartē konkrētu OneAuth API izsaukumu.
+
+- **oneauth_version** — OneAuth SDK versija.
+
+- **Platformu** — operētājsistēmas platforma (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+
+- **Scenarioname** — scenārija nosaukums, kuram nepieciešama autentifikācija, ko nosaka izsaucošā lietojumprogramma.
+
+- **Schemaver** — shēmas versija
+
+- **Sdkver** — MATS SDK versija
+
+- **Sessionid** — sesijas ID
+
+- **severityError** — smaguma pakāpe
+
+- **starttime** — laiks, kurā sākas OneAuth transakcija.
+
+- **Timestamp** — laikspiedols
+
+- **Type** — kļūdas tips
+
+- **Uploaded** — šī konkrētā notikuma unikālais identifikators dublikātu likvidēšanai.
+
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -2794,6 +3249,101 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ## <a name="licensing-events"></a>Licencēšanas notikumi
 
+### <a name="officeandroiddocsuipaywallcontrolautoredeempendingpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
+
+Kritisko tehnoloģiju telemetriju, reģistrējot automātiskās izpirkšanas mēģinājuma rezultātus, lai izpirktu gaidāmos lietotāja pirkumus. Produktu telemetriju, kas tiek izmantoti, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības.
+
+Tiek apkopoti šādi lauki:
+
+- **EventDate** — notikuma laikspiedols 
+
+- **Result** — Int apzīmē operācijas uzskaitījuma rezultātu. 
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
+### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
+
+Kritisko lietojumu telemetriju, kad lietotājam tiek rādīta Paywall vadīkla. Tiek izmantoti, lai saprastu lietojumprogrammas iegādes pieredzi lietotājam un optimizētu to pašu turpmākajām versijām.
+
+Tiek apkopoti šādi lauki:
+
+- **EventDate** — notikuma laikspiedols 
+
+- **IsModeFRE** — Būla vērtība, lai norādītu pieredzes veidu, Upsell dialoglodziņu vai SKU Chooser
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
+### <a name="officeandroiddocsuipaywallcontrolpurchasebuttonclicked"></a>Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
+
+Kritiskā lietojuma telemetrija, lai uzzinātu, kad lietotājs noklikšķina uz pogas Pirkt. Izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
+
+Tiek apkopoti šādi lauki:
+
+- **EventDate** — notikuma laikspiedols
+
+- **IsDefaultSku** — Būla vērtība, kas norāda, vai lietotājs mēģina iegādāties SKU, kas parādījās pirmā/noklusējums
+
+- **ProductID** — virkne, kas nosaka, kurš abonementa lietotājs mēģina veikt pirkumu atbilstoši konfigurācijai veikalā
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
+### <a name="officeandroiddocsuipaywallcontrolpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.PurchaseResult
+
+Kritiski tehniskās telemetrijas dati, lai reģistrētu pirkšanas mēģinājuma rezultātus, ko lietotājs aktivizējis manuāli. Produktu telemetriju, kas tiek izmantoti, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības.
+
+Tiek apkopoti šādi lauki:
+
+- **EventDate** — notikuma laikspiedols 
+
+- **IsModeFre** — Būla vērtība, norādot, vai pirkums ir izveidots no Upsell FRE ekrāna vai SKU Chooser
+
+- **Result** — Int apzīmē operācijas uzskaitījuma rezultātu.
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
+
+### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
+
+Mēs apkopojam šo lietošanas telemetriju, lai redzētu, cik daudz laika lietotājs pavada ekrānā “Skatīt citas priekšrocības”.  Šie dati tiek izmantoti, lai izprastu līdzekļa “Skatīt vairāk priekšrocības” lietojumu un optimizētu tā lietošanas pieredzi nākamajās versijās.
+
+Tiek apkopoti šādi lauki:
+
+- **Duration** — garš vesels skaitlis, kas norāda lietotāja pavadīto laiku ekrānā “Skatīt visas funkcijas” milisekundēs
+
+- **EventDate** — notikuma laikspiedols 
+
+- **MostExplored** — vesels skaitlis, kas apzīmē visvairāk pārslēdzamā vienuma indeksu M365 programmu un to līdzekļu sarakstā
+
+- **SessionID** — vispārēji unikāls identifikators (GUID), lai savienotu notikumus pēc sesijas
+
+### <a name="officeandroiddocsuipaywallcontrolskuchooseranalytics"></a>Office.Android.DocsUI.PaywallControl.SkuChooserAnalytics
+
+Lietojuma telemetrijas iespējas, lai uzzinātu, cik daudz laika lietotājs patērē SKU Chooser ekrānā. Lietojuma telemetrijas iespējas, lai uzzinātu, cik daudz laika lietotājs patērē SKU Chooser ekrānā.
+
+Tiek apkopoti šādi lauki:
+
+- **Duration** — Garš vesels skaitlis, kas norāda lietotāja pavadīto laiku SKU Chooser ekrānā milisekundēs
+
+- **EventDate** — notikuma laikspiedols
+
+- **SessionID** — GUID, lai savienotu notikumus pēc sesijas
+
+
+### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Kritisko lietojumu telemetrijas tiek apkopots, lai norādītu, kad lietotājs pieskaras pogai Pirkums/Pirkt.  Datus izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
+
+Tiek apkopoti šādi lauki:
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
+
+- **productId** — virkne — lietojumprogrammu veikala produkta ID, kam nospiesta poga Pirkt
+
+- **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
+
+
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
 Tas tiek apkopots, kad lietotājs tiek licencēts un akceptē EULA pašreizējai licencei
@@ -2834,9 +3384,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Tas tiek apkopots, kad lietotājam rādām derīguma beigu dialogu, kurā norādīts, ka lietotāja licencei ir beidzies derīgums. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Tas tiek apkopots, kad tiek parādīts dialoglodziņš derīguma beigu datums lietotājam, kurš norāda, ka viņu licences derīguma termiņš ir beidzies. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **LicNotificationState** — skaitītājs, kas mums norāda, kāda veida paziņojums tiek rādīts lietotājam
 
@@ -2923,9 +3473,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Ja rodas problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licences vedni un izsūtām šo signālu, lai norādītu to pašu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Ja rodas problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licenču vedni un nosūtīsim šo signālu, lai norādītu vienu un to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
@@ -2955,9 +3505,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
-Mēģinot ierīci licencēt, lietojumprogramma mēģina ielādēt lietotāja identitāti, lai noskaidrotu, vai lietotājam ir Office tiesības. Šis notikums ziņo par tā paša procesa sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Mēģinot ierīci licencēt, lietojumprogramma mēģina ielādēt lietotāja identitāti, lai noskaidrotu, vai lietotājam ir Office tiesības. Šis notikums ziņo par sekmīgu izpildi vai kļūmi kopā ar attiecīgā pakalpojuma izsaukuma kļūdas kodu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **FederationProvider** — virkne, kas norāda federācijas nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
 
@@ -2983,7 +3533,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ja ierīce izmanto moderno licencēšanas steku, mēģinām iegūt licences failu tieši no pakalpojuma. Šis notikums ziņo par sekmīgu izpildi vai kļūmi kopā ar attiecīgā pakalpojuma izsaukuma kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī modernajā licencēšanas stekā, kas tiek izmantots sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **MetadataValidationResult** — licences metadatu pārbaudes rezultāts, lai verificētu, ka tā nav ietekmēta
 
@@ -2991,7 +3541,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
-Tas tiek apkopots katrā ierīces sesijā, kas darbojas modernajā licencēšanas stekā. Tas ziņo datora licencēšanas stāvokli un kļūdas, kas lietotājam rodas un kuru dēļ tas nevar izmantot lietojumprogrammu. Šis notikums norāda, vai lietotāja dators ir darbspējīgs modernajā licencēšanas stekā. Esam iestatījuši anomāliju noteikšanu šim notikumam, lai norādītu, vai regresija izraisa neatbilstošo lietotāju uzvedību. Tas ir arī kritiski svarīgi, kad tiek diagnosticētas lietotāja problēmas, kā arī sistēmas darbspējas pārraudzībai.
+Tas tiek apkopots katrā ierīces sesijā, kas darbojas modernajā licencēšanas stekā. Ziņo datora licencēšanas stāvokli un kļūdas, kas lietotājam rodas un kuru dēļ tas nevar izmantot programmu. Šis notikums norāda, vai lietotāja dators ir darbspējīgs. Esam iestatījuši anomāliju noteikšanu šim notikumam, lai norādītu, vai regresija izraisa neatbilstošo lietotāju uzvedību. Tas ir arī kritiski svarīgi, kad tiek diagnosticētas lietotāja problēmas, kā arī sistēmas darbspējas pārraudzībai.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3075,7 +3625,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Ja lietotājs strādā koplietojama datora aktivizācijas režīmā, mēs mēģinām meklēt sesijas marķieri datorā, kas lietotājam sniedz iespēju izmantot lietojumprogrammu. Šis notikums ziņo par scenārija sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Ja lietotājs strādā koplietojama datora aktivizācijas režīmā, mēs mēģinām meklēt sesijas marķieri datorā, kas lietotājam sniedz iespēju izmantot lietojumprogrammu. Šis notikums ziņo par scenārija sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
 Tiek apkopoti šādi lauki:
 
@@ -4113,7 +4663,7 @@ Tiek apkopoti šādi lauki:
     
 ### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
 
-Šis notikums norāda, ka, veicot pārbaudi, vai nav atjauninājumu, neviens atjauninājums netika atrasts. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+Šis notikums norāda, ka tika veikta pārbaude, kam netika atrasti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
 
 Tiek apkopoti šādi lauki:
 
@@ -8021,6 +8571,8 @@ Tiek apkopoti šādi lauki:
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
+- **ScreenLocked** — norāde, vai lejupielāde tiek sākta aiz bloķēta ekrāna
+
 - **SessionId** — sesijas identifikators
 
 
@@ -8151,6 +8703,8 @@ Tiek apkopoti šādi lauki:
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **ScreenLocked** — norāde, vai lejupielāde tiek sākta aiz bloķēta ekrāna
 
 - **SessionId** — sesijas identifikators
 
@@ -9806,7 +10360,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="installstatus_daemon"></a>installstatus_daemon
 
-Šis notikums reģistrē Microsoft AutoUpdate dēmona statusa statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē Microsoft AutoUpdate dēmona statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
@@ -9847,7 +10401,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="installstatus_helper"></a>installstatus_helper
 
-Šis notikums reģistrē Microsoft AutoUpdate palīga rīka statusa statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē Microsoft AutoUpdate palīdzības rīka statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
@@ -11217,7 +11771,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kādā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -14398,7 +14952,7 @@ Tiek apkopoti tālāk norādītie lauki
  
 Šis notikums tiek reģistrēts, ja lokālās piezīmju grāmatiņas pārnešana uz disku neizdodas.  Šis scenārijs attiecas uz novēlotas pierakstīšanās lietotāju. Kad lietotājs pierakstās, lokālā piezīmju grāmatiņa tiek pārnesta uz viņu OneDrive krātuvi. 
  
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
  
 - **ErrorMsg** — kļūdas ziņojums, kas atbilst kļūmei.
 
@@ -14562,13 +15116,60 @@ Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu datu notikumus.
 
 ## <a name="telemetry-events"></a>Telemetrijas notikumi
 
+### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+
+Microsoft izmanto šo opciju, lai uzlabotu lietotāja funkciju, panākumu vai kļūdu īpatsvaru pirkumos, lai nodrošinātu atbilstošus ieguldījumus, lai uzlabotu klientu pirkumu pieredzi mobilajās platformās.
+
+Tiek apkopoti šādi lauki.
+
+- **OperationTimeInMs** — laiks, kas nepieciešams pirkuma operācijas pabeigšanai (ilgs - milisekundes)
+
+- **PaywallOperationResult** — veiksmes/ kļūdas kods/ lietotājs atcelts (uzskaitījums/ Int — ierobežots)
+
+- **PaywallOperationType** — Paywall operācijas veids (uzskaitījums/Int — ierobežotie)
+
+
 ### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
 
 Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Šo notikumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmās palaišanas programmā. Mēs vācam koda datus, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
 
 Tiek apkopoti šādi lauki:
 
- - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu vākšanas preferenci.
+- **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu vākšanas preferenci.
+
+### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Produktu telemetriju, kas tiek izmantoti, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības. Izmanto, lai atvieglotu darījumu reģistrēšanu un abonēšanas nodrošināšanu turpmākai uzziņai un iekšējai saskaņošanai.
+
+Tiek apkopoti šādi lauki.
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz RFS nodrošināšanas atbilde.
+
+- **productId** — virkne — lietojumprogrammas veikala pieprasītā produkta ID
+
+- **status** — virkne — veiksme vai kļūme, norādot, vai pieprasījums ir izdevies vai nav izdevies
+
+
+### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
+
+Dati tiek apkopoti kā kritiski tehniskās telemetrijas dati, lai reģistrētu pirkšanas mēģinājuma rezultātus, ko lietotājs aktivizējis manuāli. Produktu telemetrija tiek izmantota, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības.
+
+Tiek apkopoti šādi lauki.
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz lietojumprogrammu veikala atbilde.
+
+- **productId** — virkne — tikai "MakePurchase", "PendingPurchase", tā produkta ID lietojumprogrammu veikalā, par kuru tiek iesniegts pieprasījums.
+
+- **productsCount** — Int — tikai "ProductsFetch" — veikalā atgriezto produktu skaits.
+
+- **requestType** — virkne — StoreKit pieprasījuma tips. Piemēram, "ProductsFetch", "PendingPurchase"
+
+- **status** — virkne — sekmīga izpilde vai kļūme, norādot pieprasījuma veiksmīgumu vai kļūmi
+
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
 
