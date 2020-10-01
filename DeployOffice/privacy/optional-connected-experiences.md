@@ -13,29 +13,26 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: e6caae439e71236eb16fc47c6130526ace4d3afb
-ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
+ms.openlocfilehash: c7593aed7e4bc6037bca6b84181c0434b2e27e30
+ms.sourcegitcommit: 288d54b2e6b463f67358f701ef0dd5424237f811
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46896184"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322377"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
+
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
 Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par “neobligātajiem saistītajiem līdzekļiem”), izmantojot Office programmas, piemēram, Word vai Excel, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem (iepriekš ar nosaukumu Office 365 ProPlus). Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
 
 > [!NOTE]
-> Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus:
-> - [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
-> - [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
-> - [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
-> - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
->
-> Lielāko daļu izvēles saistīto pieredzi var pārvaldīt arī ar saistīto līdzekļu privātuma kontroles līdzekļiem. Piemēram, tiešsaistes attēlu ievietošanu var arī pārvaldīt ar politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*.
+> Ja esat administrators, skatiet rakstu [Administratora vadīklas neobligātajiem saistītajiem līdzekļiem](#admin-controls-for-optional-connected-experiences).
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ja izmantojat šos pakalpojumus, kādiem lietošanas noteikumiem ir jāpiekrīt?
 
-Ir svarīgi zināt, ka uz šiem neobligātajiem mākoņa pakalpojumiem neattiecas jūsu organizācijas licence no Microsoft. Tā vietā šie pakalpojumi tiek licencēti tieši jums. Izmantojot šos neobligātos mākoņa pakalpojumus, jūs arī piekrītat [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Atkarībā no tā, kādu pakalpojumu izmantojat, var tikt piemēroti papildu noteikumi. Lielākajā daļā gadījumu par šo pakalpojumu izmantošanu netiek piemērota maksa. Ja maksa tiek piemērota (kā gadījumā ar dažām [Office pievienojumprogrammām](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D), kas pieejamas lejupielādei no Office veikala), jūs tiksit par to informēts pirms lietošanas.
+Ir svarīgi zināt, ka uz šiem neobligātajiem mākoņa pakalpojumiem neattiecas jūsu organizācijas licence no Microsoft. Tā vietā šie pakalpojumi tiek licencēti tieši jums. Izmantojot šos neobligātos mākoņa pakalpojumus, jūs arī piekrītat [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Atkarībā no tā, kādu pakalpojumu izmantojat, var tikt piemēroti papildu noteikumi. Lielākajā daļā gadījumu par šo pakalpojumu izmantošanu netiek piemērota maksa. Ja maksa tiek piemērota (kā gadījumā ar dažām [pievienojumprogrammām](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D), kas pieejamas lejupielādei no Office veikala), jūs tiksit par to informēts pirms lietošanas.
 
 ## <a name="experiences-that-rely-on-bing"></a>Līdzekļi, kas izmanto Bing
 
@@ -53,7 +50,7 @@ Bing nodrošina tālāk minētos līdzekļus programmām Outlook darbam ar iOS u
 
 [CV palīgs](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) nodrošina līdzekļus programmā Word, kuru darbību nodrošina LinkedIn. Tas sniedz idejas jūsu CV. LinkedIn ir cits uzņēmums, kura īpašnieks ir Microsoft. Ja izmantojat CV palīgu, LinkedIn [lietotāja līgums](https://www.linkedin.com/legal/user-agreement) un [privātuma politika](https://www.linkedin.com/legal/privacy-policy) ir spēkā papildus [Microsoft pakalpojumu līgumam](https://www.microsoft.com/servicesagreement) un [paziņojumam par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz LinkedIn. LinkedIn organizācija tos nesaista ar jums. Jums nav nepieciešams LinkedIn konts, lai izmantotu šo mākoņa pakalpojumu.
 
-Piezīme. Tālāk aprakstītais privātuma iestatījums nekontrolē pieredzi, kas nosaka, ka jums jāsavieno savs LinkedIn konts ar jūsu Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn Microsoft programmās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
+Piezīme. Jūsu [privātuma iestatījumi](#your-privacy-settings) nekontrolē pieredzi, kas nosaka, ka jums jāsavieno savs LinkedIn konts ar jūsu Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn Microsoft programmās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Līdzekļi, kuri izmanto citus Microsoft tiešsaistes pakalpojumus un/vai trešo pušu pakalpojumus
 
@@ -75,14 +72,18 @@ MERP izveido savienojumu ar pakalpojumu Watson.microsoft.com, lai nosūtītu dia
 
 ### <a name="office-store"></a>Office veikals 
 
-Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Microsoft pakalpojumu līgumu](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/). Tomēr uz visām [Office pievienojumprogrammām](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D), kuras lejupielādējat no Office veikala, attiecas pievienojumprogrammas sniedzēja lietošanas noteikumi. Tās var būt dažādas organizācijas vai uzņēmumi, un daži var piemērot lietošanas maksu. Jums jāpārbauda katras pievienojumprogrammas atļaujas, paziņojums par konfidencialitāti un licences nosacījumi, lai zinātu, kādi noteikumi ir spēkā, un izlemtu, vai vēlaties piekrist organizācijas piedāvātajiem lietošanas noteikumiem.
+Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Microsoft pakalpojumu līgumu](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/). Tomēr uz visām [pievienojumprogrammām](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D), kuras lejupielādējat no Office veikala, attiecas pievienojumprogrammas nodrošinātāja lietošanas noteikumi. Šie nodrošinātāji var būt dažādas organizācijas vai uzņēmumi, un daži var piemērot lietošanas maksu. Jums jāpārbauda katras pievienojumprogrammas atļaujas, paziņojums par konfidencialitāti un licences nosacījumi, lai zinātu, kādi noteikumi ir spēkā, un izlemtu, vai vēlaties piekrist organizācijas piedāvātajiem lietošanas noteikumiem.
+
+> [!NOTE]
+> - Jūsu organizācijas administrators, iespējams, nodrošinās jums pievienojumprogrammas pat tad, ja neizvēlēsities izmantot Office veikalu.
+> - Ja esat administrators, papildinformāciju par pievienojumprogrammām skatiet rakstu [Office pievienojumprogrammu konfidencialitāte un drošība](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) un [Outlook pievienojumprogrammu konfidencialitāte, atļaujas un drošība](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security) sadaļā “Neobligātie saistītie līdzekļi”.
 
 ### <a name="research"></a>Izpēte
 
 [Izpēte](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) izveido savienojumu ar mākonī izvietotiem pakalpojumiem, lai piekļūtu vārdnīcas, tēzaura, tulkošanas un vārdu meklēšanas rezultātiem. Izmantojot šo līdzekli, pēc noklusējuma tiek izveidots savienojums ar Microsoft pakalpojumiem un tiek piemērots [Microsoft pakalpojumu līgums](https://www.microsoft.com/servicesagreement) un [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Izpēte sniedz iespēju pievienot citus pakalpojumu sniedzējus. Ja izlemjat izmantot citu pakalpojumu sniedzēju, var tikt piemēroti papildu nosacījumi.
 
 > [!NOTE]
-> Izpēte atšķiras no Pētnieka. Jaunākās Office versijās ir pieejams arī līdzeklis Pētnieks papildus Izpētei. Pētnieks ir jaunāks pakalpojums, kura darbību nodrošina Bing, un tas ir aprakstīts iepriekš sadaļā [Līdzekļi, kas izmanto Bing](#experiences-that-rely-on-bing).
+> Izpēte atšķiras no Pētnieka. Jaunākās Office versijās ir pieejams arī līdzeklis Pētnieks papildus Izpētei. Pētnieks ir jaunāks pakalpojums, kura darbību nodrošina Bing, un tas ir aprakstīts sadaļā [Līdzekļi, kas izmanto Bing](#experiences-that-rely-on-bing).
 
 ### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Ceļojuma laiks opcijā Nākošais programmā Outlook darbam ar iOS
 
@@ -92,12 +93,13 @@ Programmā Outlook darbam ar iOS nākamais plānotais pasākums tiks apkopots j�
 
 [Laikapstākļu josla](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) programmā Outlook parāda laikapstākļu prognozes jūsu izvēlētajās ģeogrāfiskajās atrašanās vietās. Lietošanas laikā laikapstākļu joslu programmā Outlook pēc noklusējuma izveido savienojumu ar MSN laika ziņām. MSN pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. Kad izmantojat laikapstākļu joslu ar MSN laika ziņām, Microsoft nevar noteikt jūsu atrašanās vietu un pilsētas, kuras izvēlaties parādīt, netiek saistītas ar jums. Varat [mainīt šo noklusējuma iestatījumu](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook), lai izveidotu savienojumu ar citiem laikapstākļu pakalpojumu sniedzējiem. Ja vēlaties izmantot citu laikapstākļu pakalpojumu sniedzēju, skatiet šī pakalpojumu sniedzēja paziņojumu par konfidencialitāti un licences nosacījumus, lai zinātu, kādi nosacījumi būs spēkā.
 
-
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kā noteikt, vai administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus
 
 Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Ar šo darbību tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
+
+Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 ## <a name="your-privacy-settings"></a>Jūsu konfidencialitātes iestatījumi
 
@@ -105,13 +107,22 @@ Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto l
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Ar šo darbību tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
-## <a name="diagnostic-data"></a>Diagnostikas dati
+Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
-Ja izmantojat kādu no šajā rakstā aprakstītajiem neobligātajiem mākoņa pakalpojumiem, Microsoft var apkopot diagnostikas datus (piemēram, lietojuma datus, kļūdu un veiktspējas datus) par līdzekļa veiktspēju tā izmantošanas laikā. Šajos diagnostikas datos var būt “personas dati” saskaņā ar Eiropas VDAR 4. panta definīciju.Visi diagnostikas dati, kurus Microsoft apkopo jebkuru Microsoft 365 programmu lieluzņēmumiem un pakalpojumu izmantošanas laikā, tiek pseidonimizēti saskaņā ar standartu ISO/IEC 19944:2017 (8.3.3. sadaļa).
+## <a name="required-service-data"></a>Nepieciešamie pakalpojuma dati
 
+Ja izmantojat kādu no šajā rakstā aprakstītajiem neobligātajiem mākoņa pakalpojumiem, Microsoft var apkopot [ nepieciešamos pakalpojuma datus](required-service-data.md) (piemēram, lietojuma datus, kļūdu un veiktspējas datus) par līdzekļa veiktspēju tā izmantošanas laikā. Šajos nepieciešamajos pakalpojuma datos var būt “personas dati” saskaņā ar Eiropas VDAR 4. panta definīciju.Visi nepieciešamie pakalpojuma dati, kurus Microsoft apkopo jebkuru Microsoft 365 programmu lieluzņēmumiem un pakalpojumu izmantošanas laikā, tiek pseidonimizēti saskaņā ar standartu ISO/IEC 19944:2017 (8.3.3. sadaļa).
 
-## <a name="related-articles"></a>Saistītie raksti
+## <a name="admin-controls-for-optional-connected-experiences"></a>Administratora vadīklas neobligātajiem saistītajiem līdzekļiem 
 
-- [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md)
-- [Office obligātais datu pakalpojums](required-service-data.md)
-- [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
+Ja esat administrators, skatiet tālāk norādītos rakstus, lai uzzinātu, kā piešķirt vai ierobežot lietotājiem iespējas izmantot neobligātos saistītos līdzekļus:
+
+- [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
+- [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md)
+- [Preferenču izmantošana Office darbam ar iOS ierīcēm konfidencialitātes kontroles līdzekļu pārvaldībai](ios-privacy-preferences.md)
+- [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
+- [Politikas iestatījumu izmantošana konfidencialitātes kontroles līdzekļus Office programmās tīmeklim](office-web-privacy-controls.md)
+
+Lielāko daļu izvēles saistīto pieredzi var pārvaldīt arī ar saistīto līdzekļu privātuma kontroles līdzekļiem. Piemēram, tiešsaistes attēlu ievietošanu var arī pārvaldīt ar politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*.
+
+Papildinformācijai lasiet [Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats](overview-privacy-controls.md).
