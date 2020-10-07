@@ -21,3 +21,4 @@
 ### [Nepieciešamie pakalpojuma dati](required-service-data.md)
 
 ## [Būtiskie pakalpojumi](essential-services.md)
+## [Ieteikumi par produktu](in-product-recommendations.md)
