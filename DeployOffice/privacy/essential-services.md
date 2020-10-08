@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
-ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
+ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
+ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47941035"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367465"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -3312,7 +3312,7 @@ Tiek apkopoti šādi lauki:
 
 - **EventDate** — notikuma laikspiedols 
 
-- **MostExplored** — vesels skaitlis, kas apzīmē visvairāk pārslēdzamā vienuma indeksu M365 programmu un to līdzekļu sarakstā
+- **MostExplored** — vesels skaitlis, kas apzīmē visvairāk pārslēdzamā vienuma indeksu Microsoft 365 programmu un to līdzekļu sarakstā
 
 - **SessionID** — vispārēji unikāls identifikators (GUID), lai savienotu notikumus pēc sesijas
 
@@ -3844,7 +3844,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ## <a name="microsoft-autoupdate-mau-events"></a>Microsoft AutoUpdate (MAU) notikumi
 
-### <a name="additionalappinfo_invalidpreference"></a>additionalappinfo_invalidpreference
+### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
 
 Šis notikums ziņo par nederīgu preferences iestatījumu parādīt vairāk informācijas attiecībā uz produkta pakalpojuma beigām. Mēs izmantojam šo informāciju, lai informētu klientus par pareizu preferenču iestatīšanu, lai apskatītu papildinformāciju.
  
@@ -3882,7 +3882,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="appdelegate_launch"></a>appdelegate_launch
+### <a name="appdelegatelaunch"></a>appdelegate.launch
 
 Šis notikums norāda, ka notika mēģinājums palaist programmu. Mēs reģistrējam tā rezultātu (kļūme vai sekmīgi). Šis notikums tiek izmantots, lai noteiktu gadījumus, kuros MAU neizdodas palaist
 
@@ -3923,7 +3923,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="appdelegate_terminate"></a>appdelegate_terminate
+### <a name="appdelegateterminate"></a>appdelegate.terminate
 
 Šis notikums norāda, ka ir notikusi labvēlīga iziešana no programmas. Šis notikums tiek izmantots, lai atšķirtu labvēlīgu iziešanu no programmas no nelabvēlīgas.
 
@@ -3964,7 +3964,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+### <a name="appinstallconnecttoxpc"></a>appinstall.connecttoxpc
 
 Šis notikums norāda, ka, veidojot savienojumu ar MAU palīgu (komponents, kas veic programmu instalēšanu), radās kļūdas.  Šis notikums norāda iespējamu MAU programmas bojājumu. Ierīce nevarēs instalēt atjauninājumus.
 
@@ -4004,7 +4004,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="appinstall_logscanned"></a>appinstall_logscanned
+### <a name="appinstalllogscanned"></a>appinstall.logscanned
 
 Šis notikums tiek izmantots, lai noteiktu, vai žurnālfails tika sekmīgi apstrādāts. Šis notikums tiek izmantots, lai atklātu un novērstu problēmas programmas instalēšanas laikā.  
  
@@ -4044,7 +4044,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="appregistry_config"></a>appregistry_config
+### <a name="appregistryconfig"></a>appregistry.config
 
 Šis notikums ziņo par kļūdām, kas notika programmas reģistra informācijas ielādes laikā. Mēs izmantojam šo atskaiti, lai informētu IT administratorus par klientu programmu reģistrāciju iestatīšanas pareizo formātu.
  
@@ -4084,7 +4084,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="appregistry_info"></a>appregistry_info
+### <a name="appregistryinfo"></a>appregistry.info
 
 Šis notikums norāda, ka programma ir palaista. Šis notikums tiek izmantots, lai uzskaitītu programmas, kurām MAU var kontrolēt atjauninājumus, pieejamo kopiju skaitu, kā arī to versiju un instalācijas atrašanās vietu (noklusējuma vai cita).
 
@@ -4125,7 +4125,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="appregistry_remove"></a>appregistry_remove
+### <a name="appregistryremove"></a>appregistry.remove
 
 Šis notikums norāda, ka notika mēģinājums noņemt programmu no MAU pārvaldīto programmu saraksta. Šis notikums tiek izmantots, lai apstiprinātu, ka ar MAU palīdzību tiek pārvaldītas tikai MAU izlaistas programmas (šeit nebūtu jābūt nevienai AppStore programmai).
 
@@ -4166,7 +4166,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="catalog_errorsignature"></a>catalog_errorsignature
+### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
 Šis notikums norāda, ka, atjauninājuma papildmateriālu failam veicot koda parakstīšanas validāciju, radās kļūme.  Visi papildmateriāli, kuriem radušās koda parakstīšanas verifikācijas kļūmes, ir jāuzskata par nederīgiem.
 
@@ -4206,11 +4206,11 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="cloningtask_begin"></a>cloningtask_begin
+### <a name="cloningtaskbegin"></a>cloningtask.begin
 
-Šis notikums norāda uz klonēšanas uzdevuma sākšanu pirms programmas atjaunināšanas. Šis notikums tiek izmantots kopā ar notikumu cloningtask_status, lai noteiktu klonēšanas kļūmju skaitu, lai noteiktu, vai klonēšanas līdzeklis ir jāierobežo citos auditorijas kanālos. 
+Šis notikums norāda uz klonēšanas uzdevuma sākšanu pirms programmas atjaunināšanas. Šis notikums tiek izmantots kopā ar notikumu cloningtask.status, lai noteiktu klonēšanas kļūmju skaitu, lai noteiktu, vai klonēšanas līdzeklis ir jāierobežo citos auditorijas kanālos. 
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -4249,7 +4249,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateID** — atjauninājuma identifikators.
 
 
-### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+### <a name="cloningtaskhelpertoolconnection"></a>cloningtask.helpertoolconnection
 
 Šis notikums reģistrē problēmas ar instalēšanu klonā (t.i., vai nu neizdodas izveidot savienojumu ar palīgu, lai lietotu atjauninājumu, vai savienojums ir izveidot, bet palīgs nevar lietot atjauninājumu). Ja tiek ziņots par kādu ierakstu, tas nozīmē, ka instalēšana klonā neizdevās un ka tagad ir jāveic atkāpšanās uz atjauninājumu atrašanās vietā.
 
@@ -4289,7 +4289,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="cloningtask_status"></a>cloningtask_status
+### <a name="cloningtaskstatus"></a>cloningtask.status
 
 Šis notikums norāda uz programmas, kas tiks atjaunināta, klonēšanas procesa statusu. Šis notikums tiek izmantots, lai noteiktu sekmīgas izpildes reižu skaitu un kļūdu, kas izraisa kļūmes, tipus. Šis notikums tiek izmantots, lai noteiktu, vai klonēšanas līdzeklis ir jāierobežo dažādos auditorijas kanālos.
 
@@ -4335,7 +4335,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — atjauninājuma identifikators.
 
-### <a name="cloningtask_status_finish"></a>cloningtask_status_finish
+### <a name="cloningtaskstatusfinish"></a>cloningtask.status.finish
 
 Šis notikums ziņo par klonēšanas uzdevuma pabeigšanu. Šis notikums veido daļu no atjauninājuma piltuves atskaites un mēs to izmantojam, lai noteiktu programmu atjauninājumu darbspēju.
  
@@ -4376,7 +4376,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateID** — atjauninājuma identifikators.
 
 
-### <a name="configuration_channel"></a>configuration_channel
+### <a name="configurationchannel"></a>configuration.channel
 
 Šis notikums reģistrē mēģinājumus rīkā MAU pārslēgt kanālus (auditorijas grupu).  Mēs to izmantojam, lai reģistrētu mēģinājumus un to rezultātus (sekmīgi vai kļūme).
 
@@ -4417,7 +4417,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="configuration_metadata"></a>configuration_metadata
+### <a name="configurationmetadata"></a>configuration.metadata
 
 Šis notikums tiek reģistrēts ikreiz, kad notiek MAU inicializēšana. Tas ir MAU periodiskā kontrolziņojuma notikuma veids
 
@@ -4457,7 +4457,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators.
 
-### <a name="configuration_systemversion"></a>configuration_systemVersion
+### <a name="configurationsystemversion"></a>configuration.systemVersion
 
 Šis notikums norāda uz neizdevušos mēģinājumu izgūt sistēmas versiju. Satur informāciju par informāciju, ko Microsoft Auto Update (MAU) izdevās iegūt no sistēmas. Šis notikums tiek izmantots, lai noteiktu vai MAU būtu jānovērš kļūmes. Ņemiet vērā, ka sistēmas versija tiek izmantota, lai noteiktu, vai klienta ierīcē ir iespējams instalēt atjauninājumu.
  
@@ -4497,7 +4497,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+### <a name="controlleralertmanagerreinstallresponse"></a>controller.alertmanager.reinstallresponse
 
 Šis notikums norāda, ka rīks MAU nonāca nelietojamā/neatkopjamā stāvoklī un ka ir nepieciešama atkārtota tā instalēšana. Šis notikums norāda neatkopjamu kļūdu, un ir nepieciešama lietotāja iejaukšanās.
 
@@ -4538,7 +4538,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+### <a name="controlleralertmanagertmpdiskfull"></a>controller.alertmanager.tmpdiskfull
 
 Šis notikums norāda, ka diskā nav pietiekami daudz vietas. Nevarēsim instalēt atjauninājumus, jo diskā trūkst vietas.
 
@@ -4579,7 +4579,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+### <a name="controlleralertmanagertmpdiskfullretry"></a>controller.alertmanager.tmpdiskfullretry
 
 Šis notikums norāda, ka pēc nepietiekama brīvas vietas diskā apjoma noteikšanas tika sākts atkārtots mēģinājums instalēt atjauninājumu. Veicam atkārtotu instalēšanas mēģinājumu pēc tam, kad nespējām instalēt atjauninājumus, jo diskā nav pietiekami daudz brīvas vietas.
 
@@ -4620,7 +4620,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
     
 
-### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+### <a name="controlleralertmanagertmpdiskfullretrycancel"></a>controller.alertmanager.tmpdiskfullretrycancel
 
 Šis notikums norāda, ka pēc nepietiekama brīvas vietas diskā apjoma noteikšanas notika atkārtota mēģinājuma instalēt atcelšana. Šis notikums tiek izmantots, lai noteiktu, vai ar mūsu atkāpšanās mehānismu pietika, lai lietotājam palīdzētu veikt atjaunināšanu gadījumā, kad diskā tika noteikts nepietiekams brīvās vietas apjoms.
 
@@ -4661,7 +4661,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
 Šis notikums norāda, ka tika veikta pārbaude, kam netika atrasti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
 
@@ -4703,7 +4703,7 @@ Tiek apkopoti šādi lauki:
 
     
 
-### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
 Šis notikums norāda, ka tika veikta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
 
@@ -4744,7 +4744,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, process tika atcelts (to izdarīja lietotājs vai sistēma). Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
 
@@ -4785,7 +4785,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
 
@@ -4826,7 +4826,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesa rezultātā tika atrasti atjauninājumi.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
@@ -4867,7 +4867,7 @@ Tiek apkopoti šādi lauki.
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, veikšanas procesā netika atrasti atjauninājumi, jo ierīcē esošās programmas ir atjauninātas.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
@@ -4908,7 +4908,7 @@ Tiek apkopoti šādi lauki.
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+### <a name="controllerdownloadwindowapplaunchwithpendingupdate"></a>controller.downloadwindow.applaunchwithpendingupdate
 
 Šis notikums norāda, ka tika palaista programma, kurai notiek atjauninājumu iegūšanas process. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību. Nedrīkstam ļaut atjaunināt atvērtas programmas. Pirms atjaunināšanas programmas ir jāaizver.
 
@@ -4949,7 +4949,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+### <a name="controllerdownloadwindowcloseapplicationdialog"></a>controller.downloadwindow.closeapplicationdialog
 
 Šis notikums norāda, ka tika palaista programma, kurai notiek atjauninājumu iegūšanas process. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību. Nedrīkstam ļaut atjaunināt atvērtas programmas. Pirms atjaunināšanas programmas ir jāaizver.
 
@@ -4990,7 +4990,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
 Šis notikums norāda, ka, mēģinot lietot atjauninājumu, radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
@@ -5031,7 +5031,7 @@ Tiek apkopoti šādi lauki.
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+### <a name="controllerdownloadwindowdownloadcancel"></a>controller.downloadwindow.downloadcancel
 
 Šis notikums norāda, ka lejupielādes procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
@@ -5072,7 +5072,7 @@ Tiek apkopoti šādi lauki.
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+### <a name="controllerdownloadwindowdownloadfailed"></a>controller.downloadwindow.downloadfailed
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību.
 
@@ -5113,7 +5113,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+### <a name="controllerdownloadwindowdownloadfailedok"></a>controller.downloadwindow.downloadfailedok
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda un lietotājs tika brīdināts. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvājuma un lejupielādes pareizību un lai kļūmes gadījumā lietotājam tiktu parādīts paziņojums.
 
@@ -5154,7 +5154,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+### <a name="controllerdownloadwindowdownloadpathmissing"></a>controller.downloadwindow.downloadpathmissing
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. Šis notikums norāda, ka trūkst lejupielādes vietrāža URL.
 
@@ -5195,7 +5195,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+### <a name="controllerdownloadwindowdownloadtasknull"></a>controller.downloadwindow.downloadtasknull
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. Šis notikums norāda, ka rīkam Microsoft AutoUpdate tika lūgts pauzēt/atsākt lejupielādi, bet nevarēja atrast atbilstošo lejupielādes pārvaldnieku.
 
@@ -5236,7 +5236,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+### <a name="controllerdownloadwindowfilesignaturenotverified"></a>controller.downloadwindow.filesignaturenotverified
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums norāda, ka Microsoft AutoUpdate nevarēja pārbaudīt, vai šo atjauninājumu publicēja Microsoft. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. 
 
@@ -5277,7 +5277,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+### <a name="controllerdownloadwindowinstallcomplete"></a>controller.downloadwindow.installcomplete
 
 Šis notikums norāda, ka visu Microsoft AutoUpdate piedāvāto atjauninājumu instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas un lejupielādes pareizību. 
 
@@ -5318,7 +5318,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība.  Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5359,7 +5359,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+### <a name="controllerdownloadwindownetworkunavailablealertok"></a>controller.downloadwindow.networkunavailablealertok
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība. Tas arī norāda, ka lietotājam tika paziņots par šo kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5400,7 +5400,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+### <a name="controllerdownloadwindownoconnectionok"></a>controller.downloadwindow.noconnectionok
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība. Tas arī norāda, ka lietotājam tika paziņots par šo kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5441,7 +5441,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+### <a name="controllerdownloadwindowrepairrequired"></a>controller.downloadwindow.repairrequired
 
 Šis notikums norāda, ka atjaunināšanas process neizdevās. Tas arī norāda, ka atjauninājums tika pabeigts, bet Microsoft AutoUpdate atrada problēmu saistībā ar atjauninātu programmu, un ir nepieciešama labošana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5481,7 +5481,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+### <a name="controllerdownloadwindowupdateaborted"></a>controller.downloadwindow.updateaborted
 
 Šis notikums norāda, ka atjaunināšanas process tika priekšlaikus pārtraukts. Tas arī norāda to, ka dēmons jau veica atjaunināšanu, bet lietotājs noklikšķināja uz Labi, lai priekšlaikus pārtrauktu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5522,7 +5522,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+### <a name="controllerdownloadwindowupdatefailed"></a>controller.downloadwindow.updatefailed
 
 Šis notikums norāda, ka viens vai vairāki pašreizējās paketes atjauninājumi neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5563,7 +5563,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
 Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5604,7 +5604,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
 Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5645,7 +5645,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+### <a name="controllerdownloadwindowuserresumed"></a>controller.downloadwindow.userresumed
 
 Šis notikums norāda, ka atjauninājumu lejupielādes process tika sekmīgi atsākts pēc pauzes. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5686,7 +5686,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Šis notikums norāda, ka ierīce tika reģistrēta automātiskās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5727,7 +5727,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+### <a name="controllermainwindowsetmanualchecking"></a>controller.mainwindow.setmanualchecking
 
 Šis notikums norāda, ka ierīce tika reģistrēta manuālās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5768,7 +5768,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+### <a name="controllertemplateawindowcancel"></a>controller.templateawindow.cancel
 
 Šis notikums norāda, ka lietotājs izvēlējās atcelt vai ignorēt norādīto brīdinājuma ziņojumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5809,7 +5809,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+### <a name="controllertemplateawindowenroll"></a>controller.templateawindow.enroll
 
 Šis notikums norāda, ka lietotājs izvēlējās ievērot brīdinājumā norādīto ieteikumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5851,7 +5851,7 @@ Tiek apkopoti šādi lauki:
 
 
 
-### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+### <a name="controllertemplateawindowinstall"></a>controller.templateawindow.install
 
 Šis notikums norāda, ka lietotājs izvēlējās ievērot brīdinājumā norādīto ieteikumu saistībā ar programmatūras instalēšanas darbības uzsākšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5892,7 +5892,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+### <a name="controllerupdatewindowbegindownloadingapps"></a>controller.updatewindow.begindownloadingapps
 
 Šis notikums norāda, ka atjauninājumu lejupielāde tika sākta, izmantojot atjaunināšanas logu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5933,7 +5933,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+### <a name="controllerupdatewindownetworkretry"></a>controller.updatewindow.networkretry
 
 Šis notikums norāda, ka tīkla kļūmes dēļ atjaunināšanas lapā tika izraisīts atkārtots mēģinājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
@@ -5974,7 +5974,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+### <a name="controllerupdatewindownetworkretrycancel"></a>controller.updatewindow.networkretrycancel
 
 Šis notikums norāda, ka tīkla kļūmes dēļ atjaunināšanas lapā nevarēja izraisīt atkārtotu mēģinājumu. Šis notikums norāda, ka lietotājs izvēlējās atcelt atjauninājumus pēc brīdinājuma saņemšanas par to, ka tīkls kļūst nepieejams. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6015,7 +6015,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+### <a name="controllerupdatewindownetworkunavailable"></a>controller.updatewindow.networkunavailable
 
 Šis notikums norāda, ka pēkšņi zuda tīkla savienojamība. Šis notikums norāda, ka, mēģinot lejupielādēt atjauninājumu pakotni, serveris nav sasniedzams. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6056,7 +6056,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+### <a name="controllerupdatewindownoupdateavailable"></a>controller.updatewindow.noupdateavailable
 
 Šis notikums norāda, ka, meklējot atjauninājumus, neviens atjauninājums nebija pieejams. Šis notikums norāda, ka Microsoft AutoUpdate neatrada nevienu pieejamu atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6097,7 +6097,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+### <a name="controllerupdatewindownoupdatestoselect"></a>controller.updatewindow.noupdatestoselect
 
 Šis notikums norāda, ka radās kļūda, izraisot tukšu atjauninājumu sarakstu. Šis notikums norāda, ka Microsoft AutoUpdate rāda tukšu atjauninājumu lapu. Tam nebūtu jānotiek. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6138,7 +6138,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+### <a name="controllerupdatewindowupdateavailable"></a>Controller.UpdateWindow.UpdateAvailable
 
 Šis notikums norāda, ka atjauninājumu meklēšanas rezultātā tika piedāvāti atjauninājumi. Šis notikums tiek izmantots, lai noteiktu, vai lietotājam skatīšanai tiek piedāvāti atjauninājumi, vai tiek rādīti atbilstoši atjauninājumi un vai atjauninājumu bloķēšana darbojas, kā paredzēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6179,7 +6179,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
 
 Šis notikums norāda, ka lietotājs atcēla darbību pēc tam, kad parādījām atjauninājumu lapu, uzskaitot atjauninājumus. To izmantojam pat tam, lai izskaidrotu neatjaunināšanas iemeslus (piemēram, lietotājs labprāt atceļ darbību). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6220,7 +6220,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadactor_pause"></a>downloadactor_pause
+### <a name="downloadactorpause"></a>downloadactor.pause
 
 Šis notikums norāda, ka lietotājs izdeva pieprasījumu pauzēt lejupielādi. Mēs to izmantojam pat tam, lai izskaidrotu iemeslus, kāpēc atjaunināšana netiek pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6261,7 +6261,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadactor_redirect"></a>downloadactor_redirect
+### <a name="downloadactorredirect"></a>downloadactor.redirect
 
 Šis notikums norāda, ka lejupielādētāja aģents norādīja uz galapunktu, kas izdod URL novirzīšanu lejupielādes pieprasījumam. Šo notikumu izmantojam pat tam, lai izskaidrotu lejupielādes kļūmes un diagnosticētu starpniekservera problēmas. Tas var arī palīdzēt diagnosticēt iemeslus, kāpēc lietotāji instalē vecākus būvējumus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6302,7 +6302,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="downloadactor_resume"></a>downloadactor_resume
+### <a name="downloadactorresume"></a>downloadactor.resume
 
 Šis notikums norāda, ka lietotājs izdeva pieprasījumu atsākt pauzētu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6343,7 +6343,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+### <a name="downloadactorresumeerror"></a>downloadactor.resumeerror
 
 Šis notikums norāda, ka lietotājs izdeva pieprasījumu atsākt pauzētu lejupielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6384,7 +6384,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="downloadactor_status"></a>downloadactor_status
+### <a name="downloadactorstatus"></a>downloadactor.status
 
 Šis notikums reģistrē mēģinājumus ienest papildmateriālu failus un to rezultātus (sekmīgi vai kļūme). Vēlamies zināt, kādi papildmateriāli un paketes tiek ienesti. Nepareiza faila ienešana var norādīt uz būvējuma/papildmateriālu problēmu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6425,7 +6425,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_configuration"></a>downloadmanifest_configuration
+### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
 
 Šis notikums ziņo par kļūdu Microsoft Auto Update (MAU) konfigurācijā, kas var būt gan pielāgotā servera iestatījumu preferencēs vai Update Assistant galapunktu definīcijās instalētajos MAU komponentos. Mēs izmantojam šo notikumu, lai informētu IT administratorus par pareiziem manifesta servera galapunktiem.
  
@@ -6464,7 +6464,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+### <a name="downloadmanifestdownloadcatalogfail"></a>downloadmanifest.downloadcatalogfail
 
 Šis notikums norāda uz lejupielādes kļūmi. Tiek reģistrēt fails, kuru neizdevās lejupielādēt. Vēlamies zināt, kādi papildmateriāli un paketes tiek ienesti. Manifesta lejupielādes kļūme var norādīt uz būvējuma papildmateriālu ģenerēšanas kļūmi, CDN konfigurācijas kļūdu, klienta konfigurācijas kļūdu vai tīkla kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6505,7 +6505,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+### <a name="downloadmanifestdownloadcatalogsuccess"></a>downloadmanifest.downloadcatalogsuccess
 
 Šis notikums norāda, ka fails ir sekmīgi lejupielādēts. Manifesta lejupielādes kļūme var norādīt uz būvējuma papildmateriālu ģenerēšanas kļūmi, CDN konfigurācijas kļūdu, klienta konfigurācijas kļūdu vai tīkla kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6546,7 +6546,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+### <a name="downloadmanifestdownloadfail"></a>downloadmanifest.downloadfail
 
 Šis notikums norāda, ka radās lejupielādes kļūda. Tiek reģistrēts manifesta vai pakotnes fails, kuru neizdevās lejupielādēt, kā arī kļūdas detaļas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6587,7 +6587,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+### <a name="downloadmanifestdownloadfromurl"></a>downloadmanifest.downloadfromurl
 
 Šis notikums norāda, ka ir sākta kataloga faila lejupielāde. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts kataloga fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6628,7 +6628,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+### <a name="downloadmanifestdownloading"></a>downloadmanifest.downloading
 
 Šis notikums norāda, ka ir sākta kataloga faila lejupielāde. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts kataloga fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6669,7 +6669,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+### <a name="downloadmanifestdownloadsuccess"></a>downloadmanifest.downloadsuccess
 
 Šis notikums norāda, ka XML un pakotnes faila lejupielāde bija sekmīga. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6710,7 +6710,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+### <a name="downloadmanifestdownloadurl"></a>downloadmanifest.downloadurl
 
 Šis notikums norāda, ka radās pieprasījums lejupielādēt failu. Mēs reģistrējam vietrādi URL, no kura tiek lejupielādēts fails. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6751,7 +6751,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+### <a name="downloadmanifestfilenameerror"></a>downloadmanifest.filenameerror
 
 Šis notikums norāda, ka radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6792,7 +6792,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+### <a name="downloadmanifestinvalidhash"></a>downloadmanifest.invalidhash
 
 Šis notikums norāda, ka failu drošības validācija neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6833,7 +6833,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+### <a name="downloadmanifestmissingdaemon"></a>downloadmanifest.missingdaemon
 
 Šis notikums norāda, ka lietotājs mēģināja pārbaudīt, vai nav atjauninājumu, un mēs atklājām, ka rīkam MAU trūkst pamatkomponenta (dēmona). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6874,7 +6874,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+### <a name="downloadmanifestsignatureerror"></a>downloadmanifest.signatureerror
 
 Šis notikums norāda, ka pakotnei neizdevās koda paraksta pārbaude. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6915,7 +6915,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmanifest_status"></a>downloadmanifest_status
+### <a name="downloadmanifeststatus"></a>downloadmanifest.status
 
 Šis notikums reģistrē tādu apkopotu mēģinājumu/kļūmju kopsavilkumu, kas notika manifesta un pakotnes failu lejupielādes procesā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6956,7 +6956,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+### <a name="downloadmgrdownloadend"></a>downloadmgr.downloadend
 
 Šis notikums reģistrē marķieri, kas norāda, ka lejupielādes process tika pabeigts patstāvīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -6997,7 +6997,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
 Šis notikums reģistrē atjauninājumu, kas tūlīt tiks lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7037,7 +7037,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="downloadtask_downloadbegin"></a>downloadtask_downloadbegin
+### <a name="downloadtaskdownloadbegin"></a>downloadtask.downloadbegin
 
 Šis notikums norāda uz programmas atjauninājuma lejupielādes darbības sākumu. Tas veido daļu no atjauninājuma piltuves un mēs to izmantojam, lai noteiktu programmu atjauninājumu darbspēju.
  
@@ -7086,7 +7086,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateVersion** — programmas versija pēc atjauninājuma
 
 
-### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+### <a name="downloadtaskdownloadfailure"></a>downloadtask.downloadfailure
 
 Šis notikums reģistrē to, ka pakotnes faila lejupielādes laikā radās kļūda. Reģistrējam atjauninājuma ceļu un kļūdu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7133,7 +7133,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateID** — lejupielādējamā atjauninājuma identifikators.
 
 
-### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+### <a name="downloadtaskdownloadsuccess"></a>downloadtask.downloadsuccess
 
 Sekmīga pakotnes faila lejupielāde. Reģistrējam izmantoto atjauninājuma ceļu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7177,7 +7177,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — lejupielādētā atjauninājuma identifikators.
 
-### <a name="downloadtask_updatertypeerror"></a>downloadtask_updatertypeerror
+### <a name="downloadtaskupdatertypeerror"></a>downloadtask.updatertypeerror
 
 Šis notikums ziņo par atjaunināšanas tipa kļūdu lejupielādētajā manifesta failā. Šis notikums tiek izmantots, lai informētu manifesta faila īpašnieku un labotu kļūdu.
  
@@ -7221,7 +7221,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateURL** — instalējamās pakotnes URL saite
 
-### <a name="downloadtask_urlerror"></a>downloadtask_urlerror
+### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
 Šis notikums ziņo par norādītā URL kļūdu lejupielādētajā manifesta failā. Šis notikums tiek izmantots, lai informētu manifesta faila īpašnieku un labotu kļūdu.
  
@@ -7263,7 +7263,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateURL** — instalējamās pakotnes URL saite
 
-### <a name="fba_changelastupdate"></a>fba_changelastupdate
+### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
 Šis notikums ziņo par to, vai Microsoft Auto Update (MAU) pārbaudīja atjauninājumu pieejamību. Šis notikums tiek izmantots, lai veiktu atkļūdošanu, ja konkrētā ierīce ilgstoši nav piedāvājusi veikt atjauninājumu.
 
@@ -7302,7 +7302,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_checkforupdate"></a>fba_checkforupdate
+### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
 Šis notikums norāda, ka fona process pārbauda, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7343,7 +7343,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+### <a name="fbacheckforupdateskip"></a>fba.checkforupdateskip
 
 Šis notikums norāda, ka fona process izlaida atjauninājumu, jo ir atvērts MAU GUI. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7384,7 +7384,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_forceinstallmsgsent"></a>fba_forceinstallmsgsent
+### <a name="fbaforceinstallmsgsent"></a>fba.forceinstallmsgsent
 
 Šis notikums norāda, ka piespiedu atjauninājums tika iniciēts lietotāja interfeisā. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju.
 
@@ -7422,7 +7422,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_forceupdatecheck"></a>fba_forceupdatecheck
+### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
 Šis notikums norāda, ka atjauninājumu pieejamības pārbaude ir piespiedu. Šis notikums tiek izmantots, lai noteiktu skaitu piespiedu atjauninājumu pieejamības pārbaudēm, kas notiek ārpus normālā atjauninājumu pieejamības pārbaudes cikla.
 
@@ -7462,7 +7462,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_guiappopen"></a>fba_guiappopen
+### <a name="fbaguiappopen"></a>fba.guiappopen
 
 Šis notikums norāda, ka lietotāja interfeiss tiek palaists automātiskās pārbaudes režīmā, kamēr ir atvērta programma ar instalējamo atjauninājumu. Šis notikums tiek izmantots, lai noteiktu lietotāja interfeisa palaišanas reižu skaitu automātiskajā pārbaudes režīmā līdzekļa tālākai izstrādei.
 
@@ -7502,7 +7502,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_installpending"></a>fba_installpending
+### <a name="fbainstallpending"></a>fba.installpending
 
 Šis notikums norāda, ka Microsoft Auto Update (MAU) nosūtīja paziņojumu par gaidošajiem atjauninājumiem. Šis notikums tika izmantots, lai noteiktu atjauninājumu, kas tiek uzsākti no paziņojumiem lietotājam, skaitu un lai paaugstinātu lietotāju ērtību, samazinot traucējumus lietotājam nākotnes laidienos. 
 
@@ -7542,7 +7542,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_launch"></a>fba_launch
+### <a name="fbalaunch"></a>fba.launch
 
 Šis notikums norāda Microsoft Update Assistant palaišanu un palaišanas metodi. Šis notikums tiek izmantots, lai noteiktu, vai Microsoft Update Assistant tiek palaists nepareizajā kontekstā.
 
@@ -7582,7 +7582,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_launchbyagent"></a>fba_launchbyagent
+### <a name="fbalaunchbyagent"></a>fba.launchbyagent
 
 Šis notikums norāda, ka Microsoft Update Assistant tika palaists ar palaišanas aģenta palīdzību. Šis notikums tiek izmantots, lai noteiktu Microsoft Update Assistant palaišanas no lietotāja interfeisa reižu skaitu turpmākai izstrādei.
 
@@ -7622,7 +7622,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_launchfromprotocol"></a>fba_launchfromprotocol
+### <a name="fbalaunchfromprotocol"></a>fba.launchfromprotocol
 
 Šis notikums norāda, ka Microsoft Update Assistant tika palaists ar URL protokola palīdzību. Šis notikums tiek izmantots, lai noteiktu Microsoft Update Assistant palaišanas no URL protokola reižu skaitu turpmākai izstrādei.
 
@@ -7662,7 +7662,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_launchgui"></a>fba_launchgui
+### <a name="fbalaunchgui"></a>fba.launchgui
 
 Šis notikums norāda, ka Microsoft Update Assistant mēģina palaist grafisko lietotāja interfeisu (GUI). Šis notikums tiek izmantots, lai noteiktu lietotāja interfeisa no Microsoft Update Assistant iniciēto palaišanas reižu skaitu, lai palīdzētu turpmākai izstrādei, tai skaitā samazinot lietotāja traucēšanu ar biežo lietotāja interfeisa palaišanu.
 
@@ -7703,7 +7703,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_launchstatus"></a>fba_launchstatus
+### <a name="fbalaunchstatus"></a>fba.launchstatus
 
 Šis notikums reģistrē MAU dēmona kļūmes, mēģinot veikt palaišanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -7748,7 +7748,7 @@ Tiek apkopoti šādi lauki:
 - **Success** — Būla virkne, kas norāda, vai MAU dēmona process tika palaists veiksmīgi.
 
 
-### <a name="fba_mausilentupdate"></a>fba_mausilentupdate
+### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
 Šis notikums norāda, ka Microsoft Update Assistant iniciē klusos atjauninājumus. Šis notikums tiek izmantots, lai noteiktu atjauninājumu, kas tiek instalēti bez lietotāja dalības, skaitu, lai veicinātu paaugstinātu lietotāju ērtību.
 
@@ -7788,7 +7788,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_moreinfofromappnotification"></a>fba_moreinfofromappnotification
+### <a name="fbamoreinfofromappnotification"></a>fba.moreinfofromappnotification
 
 Šis notikums ziņo par informāciju, kuru reģistrēta programma maršrutē caur Microsoft Auto Update (MAU). Piemēram, paziņojumi par pakalpojuma darbības beigām tiek piegādāti ar MAU paziņojuma palīdzību. Šis notikums tiek izmantots, lai noteiktu ierīču, kurās tiek parādīts konkrētais paziņojums, skaitu, lai noteiktu informācijas izplatīšanas sekmīgumu.
 
@@ -7830,7 +7830,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_multipledaemon"></a>fba_multipledaemon
+### <a name="fbamultipledaemon"></a>fba.multipledaemon
 
 Šis notikums norāda, ka tika atklāts cits Microsoft Update Assistant eksemplārs, bet pašreizējais eksemplāra darbība tiks pārtraukta. Šis notikums tiks izmantots, lai noteiktu ierīču skaitu, kurās tiek mēģināts palaist vairākus Update Assistant eksemplārus, un izstrādātu risinājumu, ja tas būs nepieciešams.
 
@@ -7870,7 +7870,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_nofifyappclosed"></a>fba_nofifyappclosed
+### <a name="fbanofifyappclosed"></a>fba.nofifyappclosed
 
 Šis notikums norāda, ka Microsoft Update Assistant nosūta paziņojumu gaidošiem atjauninājumiem, jo reģistrētas programmas nav atvērtas un atjauninājumu darbība var notikt netraucējot lietotājam. Šis notikums tiek izmantots, lai noteiktu atjauninājumu, kurus ir iespējams instalēt, bet tam nepieciešama lietotāja darbība, skaitu.  Šis notikums tiek izmantots, lai veicinātu lietotāja ērtības paaugstināšanu.
 
@@ -7910,7 +7910,7 @@ Tiek apkopoti šādi lauki:
     
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_nofifyappopen"></a>fba_nofifyappopen
+### <a name="fbanofifyappopen"></a>fba.nofifyappopen
 
 Šis notikums norāda, ka Microsoft Update Assistant nosūta paziņojumu gaidošiem atjauninājumiem, jo ir atvērtas reģistrētas programmas un atjauninājumu darbībai būs nepieciešams šīs programmas aizvērt.  Šis notikums tiek izmantots, lai noteiktu atjauninājumu, kuriem nepieciešama lietotāja iejaukšanās, skaitu.  Šis notikums tiek izmantots, lai veicinātu lietotāja ērtības paaugstināšanu.
 
@@ -7950,7 +7950,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_settimerfail"></a>fba_settimerfail  
+### <a name="fbasettimerfail"></a>fba.settimerfail  
 
 Šis notikums norāda, ka mēģinājums iestatīt taimeri nākotnes atjauninājumam neizdevās. Šis notikums ir kritisks un tiek izmantots, lai noteiktu kļūmju, kam varētu būt nepieciešama risinājuma izstrāde, skaitu.
 
@@ -7991,7 +7991,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
 Šis notikums norāda, ka lietotājs piekrīt klusajai atjaunināšanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8031,7 +8031,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+### <a name="fbaskipforcedupdate"></a>fba.skipforcedupdate
 
 Šis notikums norāda piespiedu pārbaudes, vai nav atjauninājumu, izlaišanu atvērtu programmu dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8072,7 +8072,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+### <a name="fbastartforcedupdate"></a>fba.startforcedupdate
 
 Šis notikums norāda, ka ir noticis mēģinājums lietot piespiedu atjaunināšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8113,7 +8113,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_terminate"></a>fba_terminate
+### <a name="fbaterminate"></a>fba.terminate
 
 Šis notikums norāda, ka MAU dēmona darbība tika izbeigta normāli. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8154,7 +8154,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fba_updatefound"></a>fba_updatefound
+### <a name="fbaupdatefound"></a>fba.updatefound
 
 Šis notikums norāda, ka MAU dēmons ir atradis pieejamus atjauninājumus, ko piedāvāt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8195,7 +8195,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="fba_updatetimer"></a>fba_updatetimer
+### <a name="fbaupdatetimer"></a>fba.updatetimer
 
 Šis notikums norāda, ka pēc iestatīta miega laika perioda Microsoft AutoUpdate dēmona process aktivizējās, lai pārbaudītu, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8236,7 +8236,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+### <a name="fbasilentupdateallappsclosed"></a>fbasilentupdate.allappsclosed
 
 Šis notikums reģistrē, vai pirms instalēšanas bija aizvērtas visas programmas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8277,7 +8277,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+### <a name="fbasilentupdateapplaunchafterupdate"></a>fbasilentupdate.applaunchafterupdate
 
 Šis notikums reģistrē mēģinājumu atkārtoti palaist programmu pēc klusās atjaunināšanas un atjaunināšanas režīmu (klons vai nav klons). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8322,7 +8322,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+### <a name="fbasilentupdateapplaunchwileinstalling"></a>fbasilentupdate.applaunchwileinstalling
 
 Reģistrējam, ja atjauninājuma instalēšanas laikā tika veikta programmas palaišana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8363,7 +8363,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+### <a name="fbasilentupdateappneedtoclose"></a>fbasilentupdate.appneedtoclose
 
 Reģistrējam, ja tika sākta atjaunināšana un ir atvērta atjaunināmā programma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8404,7 +8404,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+### <a name="fbasilentupdateappterminationeventreceived"></a>fbasilentupdate.appterminationeventreceived
 
 Šis notikums norāda, ka Microsoft AutoUpdate saņēma Apple notikumu, informējot par programmas darbības pārtraukšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8451,7 +8451,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateID** — programmas atjauninājuma identifikators.
 
 
-### <a name="fbasilentupdate_clientsession"></a>FBASilentUpdate_ClientSession
+### <a name="fbasilentupdateclientsession"></a>FBASilentUpdate.ClientSession
 
 Šis notikums tiek izmantots, lai aprēķinātu Microsoft Auto Update (MAU) kritiskā atjauninājuma darbspējas rādītāju. Šis notikums ļauj mums norādīt, kuru atjaunināšanas sesiju (lejupielāde vai instalēšana) sistēma pašlaik apstrādā.
  
@@ -8492,7 +8492,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+### <a name="fbasilentupdatecodesignfailure"></a>fbasilentupdate.codesignfailure
 
 Šis notikums reģistrē koda paraksta verifikācijas rezultātu pēc atjauninājuma lietošanas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8533,7 +8533,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
 Šis notikums norāda, ka atjauninājums tiek lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8576,7 +8576,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+### <a name="fbasilentupdatedownloadfailed"></a>fbasilentupdate.downloadfailed
 
 Šis notikums norāda, ka, lejupielādējot atjauninājumu, radās kļūda. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8625,7 +8625,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateName** — programmas atjauninājuma nosaukums.
 
 
-### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+### <a name="fbasilentupdatedownloadinbackground"></a>fbasilentupdate.downloadinbackground
 
 Šis notikums norāda, ka sākam atjauninājumu kopas lejupielādi fona režīmā (reģistrējam vienlaikus lejupielādējamo atjauninājumu skaitu). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8666,7 +8666,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+### <a name="fbasilentupdatedownloadingrepairupdate"></a>fbasilentupdate.downloadingrepairupdate
 
 Šis notikums norāda, ka esam uzsākuši mēģinājumu lejupielādēt labojumu nesekmīgam atjauninājumam. Reģistrējam versiju un atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8709,7 +8709,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+### <a name="fbasilentupdateduplicatedownloadattempted"></a>fbasilentupdate.duplicatedownloadattempted
 
 Šis notikums norāda, ka radās kļūda. Norādītajai programmai vienlaikus ir jāveic tikai viena atjauninājuma lejupielāde. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8750,7 +8750,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+### <a name="fbasilentupdateinstallattemptfailed"></a>fbasilentupdate.installattemptfailed
 
 Šis notikums norāda, ka atjauninājuma (versija) instalēšanas mēģinājums neizdevās. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8791,7 +8791,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
 Šis notikums norāda, ka visu paketē iekļauto atjauninājumu instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8832,7 +8832,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+### <a name="fbasilentupdateinstalled"></a>fbasilentupdate.installed
 
 Šis notikums norāda, ka atsevišķs atjauninājums tika sekmīgi instalēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8873,7 +8873,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+### <a name="fbasilentupdateinstalling"></a>fbasilentupdate.installing
 
 Šis notikums norāda, ka tika uzsākts atsevišķs atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -8913,7 +8913,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fbasilentupdate_installstatus"></a>fbasilentupdate_installstatus
+### <a name="fbasilentupdateinstallstatus"></a>fbasilentupdate.installstatus
 
 Šis notikums ziņo par programmas atjaunināšanas uzdevuma statusu. Šis notikums veido daļu no programmas atjauninājuma piltuves un mēs to izmantojam, lai uzraudzītu programmu atjauninājumu darbspēju.
 
@@ -8963,7 +8963,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdatePkg** — instalējamās atjauninājuma pakotnes nosaukums
 
-### <a name="fbasilentupdate_notificationerror"></a>fbasilentupdate_notificationerror
+### <a name="fbasilentupdatenotificationerror"></a>fbasilentupdate.notificationerror
 
 Šis notikums ziņo par kļūdu, kas notika mēģinot nosūtīt paziņojumu lietotājam. Šis notikums tiks izmantots, lai atkļūdotu kļūdas iemeslu un veiktu labojumus.
 
@@ -9009,7 +9009,7 @@ Tiek apkopoti šādi lauki:
 
 - **Type** — paziņojuma tips
 
-### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+### <a name="fbasilentupdatenotificationremoved"></a>fbasilentupdate.notificationremoved
 
 Šis notikums norāda, ka bloķēts atjauninājums vairs nav bloķēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9050,7 +9050,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+### <a name="fbasilentupdatequeueinstall"></a>fbasilentupdate.queueinstall
 
 Šis notikums norāda, ka atjauninājums tiks iekļauts klusās instalēšanas rindā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9091,7 +9091,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+### <a name="fbasilentupdaterequiredappsclosed"></a>fbasilentupdate.requiredappsclosed
 
 Reģistrējam, kad tiek aizvērta programma, kurai ir gaidošs atjauninājums. Tiek norādīts laiks, kad var turpināt ar faktisko instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9131,7 +9131,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fbasilentupdate_timerforapptermination"></a>FBASilentUpdate_TimerForAppTermination
+### <a name="fbasilentupdatetimerforapptermination"></a>FBASilentUpdate.TimerForAppTermination
 
 Šis notikums tiek izmantots, lai aprēķinātu Microsoft Auto Update (MAU) kritiskā atjauninājuma darbspējas rādītāju. Šis notikums palīdz izsekot atvērtās programmas izbeigšanas notikumu un programmas atvērtā stāvokļa ilgumu.
  
@@ -9171,7 +9171,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+### <a name="fbasilentupdateupdateavailablenotification"></a>fbasilentupdate.updateavailablenotification
 
 Šis notikums norāda, ka tiek izraisīts paziņojums par pieejamu atjauninājumu. Ir jānodrošina plūsma uzvednes par atjauninājumu izraisīšanai, kad tiek atrasts atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9212,7 +9212,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+### <a name="fbasilentupdateuserclicknotification"></a>fbasilentupdate.userclicknotification
 
 Šis notikums norāda, ka lietotājs noklikšķināja paziņojuma par atjauninājuma pieejamību satura sadaļā un tiek palaists Microsoft AutoUpdate GUI. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9253,7 +9253,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+### <a name="fbasilentupdateuserselectinstalllater"></a>fbasilentupdate.userselectinstalllater
 
 Šis notikums norāda, ka lietotājs pēc paziņojuma par pieejamu atjauninājumu parādīšanas ir izvēlējies instalēt vēlāk. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9294,7 +9294,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+### <a name="fbasilentupdateuserselectinstallnow"></a>fbasilentupdate.userselectinstallnow
 
 Šis notikums norāda, ka lietotājs pēc paziņojuma par pieejamu atjauninājumu parādīšanas ir izvēlējies instalēt tūlīt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -9334,7 +9334,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_dashboardview_appisopendialog_display"></a>gui_dashboardview_appisopendialog_display 
+### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Šis notikums norāda, ka lietotāja interfeiss parādīja dialoglodziņu par programmas aizvēršanu, lai turpinātu programmas atjaunināšanu. Šis notikums tiek izmantots, lai noteiktu aizkavēto atjauninājumu skaitu, lai nākotnē veiktu uzlabojumus un samazinātu lietotāju traucēšanu.
 
@@ -9378,7 +9378,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="gui_dashboardview_appisopendialogbutton_clicked"></a>gui_dashboardview_appisopendialogbutton_clicked
+### <a name="guidashboardviewappisopendialogbuttonclicked"></a>gui.dashboardview.appisopendialogbutton.clicked
 
 Šis notikums norāda, vai programmas atjaunināšana tika izlaista, vai pēc atvērtajā programmā parādītā dialoglodziņa tiek veikts vēl viens mēģinājums. Šis notikums tiek izmantots, lai noteiktu izlaisto atjauninājumu skaitu un veiktu uzlabojumus, lai samazinātu lietotāju traucēšanu.
 
@@ -9424,7 +9424,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="gui_dashboardview_updateinprogressdialog_display"></a>gui_dashboardview_updateinprogressdialog_display
+### <a name="guidashboardviewupdateinprogressdialogdisplay"></a>gui.dashboardview.updateinprogressdialog.display
 
 Šis notikums reģistrē, vai lietotājiem tika parādīts dialoglodziņš ar informāciju par to, ka atjaunināšanas izpilde jau notiek.
  
@@ -9462,7 +9462,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_dashboardview_updatemodebutton_clicked"></a>gui_dashboardview_updatemodebutton_clicked
+### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
 Šis notikums norāda, ka atjaunināšanas režīms tika mainīts ar lietotāja interfeisa vadīklas palīdzību. Šis notikums tiek izmantots, lai noteiktu ierīču, kas pāriet no viena režīma citā, skaitu, un tiek izmantots, lai palīdzētu noteikt, kāpēc klienti atsakās no automātiskajiem atjauninājumiem.  
 
@@ -9502,7 +9502,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_feedbackwindow_buttonclicked"></a>gui_feedbackwindow_buttonclicked
+### <a name="guifeedbackwindowbuttonclicked"></a>gui.feedbackwindow.buttonclicked
 
 Šis notikums ziņo par to, vai atsauksmes tika iesniegtas vai atceltas pirms iesniegšanas. Šis notikums palīdz noteikt par konkrētā laidiena versiju iesūtīto atsauksmju skaitu. Tas palīdz ātrāk izolēt potenciālās problēmas.
 
@@ -9542,7 +9542,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_preferenceview_consentsheet_display"></a>gui_preferenceview_consentsheet_display
+### <a name="guipreferenceviewconsentsheetdisplay"></a>gui.preferenceview.consentsheet.display
 
 Šis notikums norāda, vai konkrētajam kanālam tika parādīta piekrišanas lapa, ja tāda ir. Šis notikums tiek izmantots, lai noteiktu ierīču, kas tika no jauna reģistrētas atbilstošajā auditorijas kanālā (Insider Fast / Insider Slow), skaitu. Šis notikums tiek izmantots, lai nodrošinātu to, ka piekrišanas dialoglodziņš darbojas un lietotājiem parāda lietošanas noteikumus.
  
@@ -9582,7 +9582,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_preferenceview_consentsheet_licenseerror"></a>gui_preferenceview_consentsheet_licenseerror
+### <a name="guipreferenceviewconsentsheetlicenseerror"></a>gui.preferenceview.consentsheet.licenseerror
 
 Šis notikums ziņo par kļūdu, kas piekrišanas dialoglodziņu parādīšanas mēģinājuma laikā. Šis notikums ir kritisks un tiek izmantots, lai labotu jebkādas problēmas, kuras izraisīja izmaiņas produktā, ja attiecināms.
 
@@ -9624,7 +9624,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_preferenceview_switchchannel"></a>gui_preferenceview_switchchannel
+### <a name="guipreferenceviewswitchchannel"></a>gui.preferenceview.switchchannel
 
 Šis notikums ziņo par pārēju starp lietotāja atlasītajiem kanāliem. Šis notikums tiek izmantots, lai noteiktu, kāpēc klienti atsakās no Insider kanāliem.  
 
@@ -9666,7 +9666,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="gui_updatemanager_applaunchduringupdate"></a>gui_updatemanager_applaunchduringupdate
+### <a name="guiupdatemanagerapplaunchduringupdate"></a>gui.updatemanager.applaunchduringupdate
 
 Šis notikums ziņo par to, ka programma tika palaista, kad tā tika atjaunināta, un Microsoft AutoUpdate pārtrauc palaistās programmas darbību. Ņemiet vērā, ka programmas palaišana, kad tā tiek atjaunināta, var izraisīt programmas bojājumus. Šis notikums tiek izmantots, lai nodrošinātu to, ka atjaunināšanas procesu neietekmē palaistā programma pirms tā ir gatava lietošanai.
  
@@ -9710,7 +9710,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators.
 
-### <a name="gui_updatemanager_downloadupdateforapp"></a>gui_updatemanager_downloadupdateforapp
+### <a name="guiupdatemanagerdownloadupdateforapp"></a>gui.updatemanager.downloadupdateforapp
 
 Šis notikums ziņo par atjauninājuma lejupielādes pabeigšanas statusu. Šis notikums tiek izmantots, lai nodrošinātu atjaunināšanas procesa darbspēju un izsekotu/novērstu kļūmes punktu.
 
@@ -9759,7 +9759,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateName** — atjauninājuma nosaukums.
 
 
-### <a name="gui_updatemanager_error"></a>gui_updatemanager_error
+### <a name="guiupdatemanagererror"></a>gui.updatemanager.error
 
 Šis notikums ziņo par kļūdām, kas notika programmas atjaunināšanas laikā. Tas var norādīt uz kļūdu Microsoft Auto Update (MAU) izpildes secībā.  Mēs izmantojam šo atskaiti, lai instalētu MAU atjauninājumus, lai novērstu biežākos kļūdu scenārijus.
 
@@ -9801,7 +9801,7 @@ Tiek apkopoti šādi lauki:
 
 - **Success** — virknes Būla vērtība, kas norāda, vai programmas darbība tika sekmīgi izbeigta.
 
-### <a name="gui_updatemanager_installcleanupforapp"></a>gui_updatemanager_installcleanupforapp
+### <a name="guiupdatemanagerinstallcleanupforapp"></a>gui.updatemanager.installcleanupforapp
 
 Notikums norāda, ka pagaidu faili, kas tika izveidotie programmas instalēšanas laikā tika veiksmīgi notīrīti. Tas veido daļu no atjauninājuma piltuves, kas tiek izmantota programmu darbspēju noteikšanai.
  
@@ -9846,7 +9846,7 @@ Tiek apkopoti šādi lauki:
 - **UpdateID** — atjauninājuma identifikators.
 
 
-### <a name="gui_updatemanager_installsuccessforapp"></a>gui_updatemanager_installsuccessforapp
+### <a name="guiupdatemanagerinstallsuccessforapp"></a>gui.updatemanager.installsuccessforapp
 
 Šis notikums norāda uz sekmīgu programmas atjaunināšanu. Šis notikums veido daļu no atjauninājuma piltuves, kuru mēs izmantojam, lai noteiktu atjauninājumu darbspēju.
  
@@ -9890,7 +9890,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — atjauninājuma identifikators.
 
-### <a name="gui_updatemanager_installupdateforapp"></a>gui_updatemanager_installupdateforapp
+### <a name="guiupdatemanagerinstallupdateforapp"></a>gui.updatemanager.installupdateforapp
 
 Šis notikums norāda uz programmas atjauninājuma faktisko instalēšanas procesa sākumu. Šis notikums veido daļu no programmas atjauninājuma piltuves, kuru mēs izmantojam, lai noteiktu atjauninājumu darbspēju.
  
@@ -9932,7 +9932,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — atjauninājuma identifikators.
 
-### <a name="gui_updatemanager_queueinstallforapp"></a>gui_updatemanager_queueinstallforapp
+### <a name="guiupdatemanagerqueueinstallforapp"></a>gui.updatemanager.queueinstallforapp
 
 Šis notikums norāda uz programmas atjauninājuma faktisko instalēšanas procesa sākumu. Šis notikums veido daļu no programmas atjauninājuma piltuves, kuru mēs izmantojam, lai noteiktu atjauninājumu darbspēju.
  
@@ -9974,7 +9974,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — atjauninājuma identifikators.
 
-### <a name="gui_updatemanager_relaunchapp"></a>gui_updatemanager_relaunchapp
+### <a name="guiupdatemanagerrelaunchapp"></a>gui.updatemanager.relaunchapp
 
 Šis notikums reģistrē, vai programmas tika sekmīgi palaistas pēc atjauninājumiem.
  
@@ -10020,7 +10020,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums.
 
-### <a name="installdata_checkrunning"></a>installdata_checkrunning
+### <a name="installdatacheckrunning"></a>installdata.checkrunning
 
 Šis notikums reģistrē instalējamo programmu un tā, vai notiks instalēšanas mēģinājums, pamatojoties uz to, vai programma ir atvērta, pārbaudes rezultātus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10061,7 +10061,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installdata_cleanup"></a>installdata_cleanup
+### <a name="installdatacleanup"></a>installdata.cleanup
 
 Pakotnes faili pēc instalēšanas ir jānoņem. Šis notikums reģistrē gadījumus, kad tos neizdodas noņemt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10102,7 +10102,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
 
 Šis notikums norāda, ka Microsoft AutoUpdate norādītajā ceļā nevarēja izgūt reģistrētās programmas komplekta informāciju. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10143,7 +10143,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+### <a name="installedappinvalidpreference"></a>installedapp.invalidpreference
 
 Šis notikums reģistrē gadījumus, kad lietotāja preferencē ir iekļauts nederīgs programmas ieraksts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10184,7 +10184,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+### <a name="installedappnilbundleid"></a>installedapp.nilbundleid
 
 Šis notikums reģistrē gadījumus, kad programmai trūkst komplekta ID. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10225,7 +10225,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+### <a name="installedappnilbundlename"></a>installedapp.nilbundlename
 
 Šis notikums reģistrē gadījumus, kad programmai trūkst komplekta nosaukuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10266,7 +10266,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installedapp_sendcoreappleevent"></a>installedapp_sendcoreappleevent
+### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Šis notikums norāda, ka Microsoft Auto Update (MAU) nosūta Apple notikumu uz reģistrētu programmu, lai izbeigtu programmas darbību, lai turpinātu gaidošo programmas atjaunināšanu. Šis notikums pašlaik tiek izmantots, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā. 
 
@@ -10317,7 +10317,7 @@ Tiek apkopoti šādi lauki:
 - **Success** — norāda, vai attiecīgā programma ziņoja par sekmīgu darbības izpildi
 
     
-### <a name="installstatus_codesign"></a>installstatus_codesign
+### <a name="installstatuscodesign"></a>installstatus.codesign
 
 Šis notikums reģistrē operētājsistēmas binārā koda paraksta statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10358,7 +10358,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installstatus_daemon"></a>installstatus_daemon
+### <a name="installstatusdaemon"></a>installstatus.daemon
 
 Šis notikums reģistrē Microsoft AutoUpdate dēmona statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10399,7 +10399,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installstatus_helper"></a>installstatus_helper
+### <a name="installstatushelper"></a>installstatus.helper
 
 Šis notikums reģistrē Microsoft AutoUpdate palīdzības rīka statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10440,7 +10440,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+### <a name="installupdatestaskapplaunched"></a>installupdatestask.applaunched
 
 Šis notikums norāda, ka Microsoft AutoUpdate noteica programmas palaišanu bloķētam atjauninājumam, bet nevarēja atrast atbilstošo instalēšanas programmu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10481,7 +10481,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+### <a name="installupdatestaskapplaunchwithpendingupdate"></a>installupdatestask.applaunchwithpendingupdate
 
 Šis notikums norāda, ka Microsoft AutoUpdate noteica programmas palaišanu tādai programmai, kurai tiek gaidīts atjauninājums. Palaistās programmas darbība tiks priekšlaikus pārtraukta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10522,7 +10522,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+### <a name="installupdatestaskcodesignverificationfail"></a>installupdatestask.codesignverificationfail
 
 Šis notikums norāda, ka programmas atjauninājumam neizdevās koda paraksta verifikācija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10563,7 +10563,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+### <a name="installupdatestaskcodesignverificationstart"></a>installupdatestask.codesignverificationstart
 
 Šis notikums norāda, ka programmas atjauninājumam tika sākta koda paraksta verifikācija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10604,7 +10604,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+### <a name="installupdatestaskcodesignverificationsuccess"></a>installupdatestask.codesignverificationsuccess
 
 Šis notikums norāda, ka programmas atjauninājuma koda paraksta verifikācija bija sekmīga. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10645,7 +10645,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+### <a name="installupdatestaskfailsilentinstall"></a>installupdatestask.failsilentinstall
 
 Šis notikums reģistrē kļūmes, kas rodas, lietojot kluso atjaunināšanu, kā arī to, vai tā bija klonētā vai parastā instalēšana. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10686,7 +10686,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+### <a name="installupdatestaskmultiplerelocatablepackage"></a>installupdatestask.multiplerelocatablepackage
 
 Šis notikums norāda, ka Microsoft AutoUpdate lejupielādētajā manifestā norādītajai atjauninājumu pakotnei atrada vairākas programmas ieraksta instances. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10727,7 +10727,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+### <a name="installupdatestaskremoveclone"></a>installupdatestask.removeclone
 
 Šis notikums norāda, ka klons ir noņemts. Klons tiek noņemts, ja instalēšanas klonā process ir pabeigts vai ja tiek sākts jauns process, un datorā ir atrasta vecāka klonēta versija. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10768,7 +10768,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
 Šis notikums norāda, ka atkārtota instalēšanas mēģinājuma laikā radās kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10809,7 +10809,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10850,7 +10850,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10892,7 +10892,7 @@ Tiek apkopoti šādi lauki:
 
     
 
-### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
 Šis notikums reģistrē atkārtota mēģinājuma neizdošanos. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10933,7 +10933,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
 Šis notikums reģistrē sekmīgu atjauninājumu instalēšanu pēc atkārtota mēģinājuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -10974,7 +10974,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+### <a name="installupdatestasksetreopengui"></a>installupdatestask.setreopengui
 
 Šis notikums norāda, vai iestatījuma preference pēc instalēšanas atkārtoti atvērt GUI bija sekmīga. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11015,7 +11015,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="installupdatestask_updatestatus"></a>installupdatestask_updatestatus
+### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
 Šis notikums ziņo par instalēšanas uzdevuma statusu. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.
 
@@ -11069,8 +11069,58 @@ Tiek apkopoti šādi lauki:
 
 - **UpdatePkg** — instalējamās atjauninājuma pakotnes nosaukums
 
+### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
-### <a name="msupdate_cli_eventhandler"></a>msupdate_cli_eventhandler
+Šis notikums periodiski ziņo par MicrosoftAutoUpdate procesa statusu. Konkrēti, tas ziņo par to, kādi atlikušie uzdevumi gaida Update Assistant pabeigšanu, un lietotāja saskarnes gadījumā ziņo par to, vai process tiek pārtraukts lietotāja neaktivitātes dēļ.  Mēs izmantojam šo notikumu, lai noteiktu, kas traucē Update Assistant pabeigt atjauninājumus un pārtraukt darbību, un vai lietotāja interfeiss tiek pārtraukts lietotāja neaktivitātes dēļ.
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **dataCollectionDialog** — Būla vērtība, norādot, vai process gaida lietotāja atbildi datu apkopošanas dialoglodziņā
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **forcedUpdateDialog** — Būla vērtība, norādot, vai process gaida, kad lietotājs reaģēs uz dialoglodziņu piespiedu atjaunināšana
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **isBusy** — Būla vērtība, norādot, vai process ir aizņemts, izmantojot aktīvo atjaunināšanu
+
+- **isInactive** — Būla vērtība, norādot, vai process ilgāku laiku ir gaidījis lietotāja darbību
+
+- **isWaiting** — Būla vērtība, norādot, vai process gaida lietotāja atbildi uz paziņojumu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+- **SessionLength** — pašreizējās procesa sesijas ilgums sekundēs
+
+
+### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
 
 Šis notikums tiek izmantots, lai aprēķinātu dažādu Microsoft Auto Update (MAU) komandrindas interfeisa API.
 
@@ -11113,7 +11163,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+### <a name="msupdateclieventhandlerapplyupdatesappids"></a>msupdate.cli.eventhandler.applyupdates.appids
 
 Šis notikums norāda, ka tika izdota CLI (klienta rindas interfeiss) komanda, lai lietotu atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11154,7 +11204,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+### <a name="msupdateclieventhandlerconfig"></a>msupdate.cli.eventhandler.config
 
 Šis notikums norāda, ka Microsoft AutoUpdate komandrindas interfeisa modulis saņēma Apple notikumu, lai veiktu konfigurēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11195,7 +11245,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+### <a name="msupdateclieventhandlerupdates"></a>msupdate.cli.eventhandler.updates
 
 Šis notikums norāda, ka Microsoft AutoUpdate komandrindas interfeisa modulis saņēma Apple notikumu, lai uzskaitītu atjauninājumus. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11236,7 +11286,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
 
 Šis notikums norāda, ka atjauninājumi ir lejupielādēti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11277,7 +11327,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+### <a name="msupdatemonitorprogressfailure"></a>msupdate.monitor.progress.failure
 
 Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem, kurus neizdevās lietot. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11318,7 +11368,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
 Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem, kuru instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11359,7 +11409,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
 Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -11441,7 +11491,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="sauforcedupdate_autodismiss"></a>sauforcedupdate_autodismiss
+### <a name="sauforcedupdateautodismiss"></a>sauforcedupdate.autodismiss
 
 Šis notikums norāda, ka parādītais piespiedu atjaunināšanas dialoglodziņš tiek noraidīts lietotāja neaktivitātes dēļ. Šis notikums tiek izmantots, lai noteiktu piespiedu atjauninājumu, kas tiek izpildīti bez lietotāju reakcijas uz parādīto paziņojumu, skaitu. Šis notikums tiek izmantots, lai samazinātu traucējumus, uzlabojot lietotāja interfeisu.
 
@@ -11481,7 +11531,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_close"></a>sauforcedupdate_close
+### <a name="sauforcedupdateclose"></a>sauforcedupdate.close
 
 Šis notikums norāda, ka lietotājs izvēlējās aizvērt piespiedu atjaunināšanas dialoglodziņu. Šis notikums tiek izmantots, lai noteiktu piespiedu atjauninājumu, kas ir aizkavēti lietotāja darbību dēļ, skaitu. Šis notikums tiek izmantots, lai samazinātu traucējumus, uzlabojot lietotāja interfeisu. 
 
@@ -11521,7 +11571,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_completeautodismiss"></a>sauforcedupdate_completeautodismiss
+### <a name="sauforcedupdatecompleteautodismiss"></a>sauforcedupdate.completeautodismiss
 
 Šis notikums norāda, ka parādītais piespiedu atjaunināšanas dialoglodziņš no izpildes termiņa līdzekļa tiek noraidīts lietotāja neaktivitātes dēļ. Šis notikums tiek izmantots, lai noteiktu piespiedu atjauninājumu, kas tiek izpildīti bez lietotāju reakcijas uz parādīto paziņojumu, skaitu. Šis notikums tiek izmantots, lai samazinātu izpildes termiņa līdzekļa traucējumus, uzlabojot lietotāja interfeisu.
 
@@ -11561,7 +11611,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_completeclose"></a>sauforcedupdate_completeclose
+### <a name="sauforcedupdatecompleteclose"></a>sauforcedupdate.completeclose
 
 Šis notikums norāda uz piespiedu atjaunināšanas sekmīgu pabeigšanu. Šis notikums tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju. 
 
@@ -11601,7 +11651,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_display"></a>sauforcedupdate_display
+### <a name="sauforcedupdatedisplay"></a>sauforcedupdate.display
 
 Šis notikums norāda, ka tika parādīts piespiedu atjaunināšanas dialoglodziņš.  Šis notikums veido daļu no piespiedu atjaunināšanas piltuves un tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju.
 
@@ -11641,7 +11691,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_displayfinalhour"></a>sauforcedupdate_displayfinalhour
+### <a name="sauforcedupdatedisplayfinalhour"></a>sauforcedupdate.displayfinalhour
 
 Šis notikums norāda, ka tika parādīts piespiedu atjaunināšanas pēdējās stundas dialoglodziņš. Šis notikums veido daļu no piespiedu atjaunināšanas piltuves un tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju.
 
@@ -11681,7 +11731,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_done"></a>sauforcedupdate_done
+### <a name="sauforcedupdatedone"></a>sauforcedupdate.done
 
 Šis notikums norāda, ka piespiedu atjaunināšana tika sekmīgi pabeigta. Šis notikums veido daļu no piespiedu atjaunināšanas piltuves un tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju. 
 
@@ -11721,7 +11771,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_enabled"></a>sauforcedupdate_enabled
+### <a name="sauforcedupdateenabled"></a>sauforcedupdate.enabled
 
 Šis notikums tiek izraisīts, kad Microsoft Auto Update (MAU) nosaka, ka ir piemērojama piespiedu atjaunināšana.  Šis notikums tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju. 
 
@@ -11763,7 +11813,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_forcedupdatedismiss"></a>sauforcedupdate_forcedupdatedismiss
+### <a name="sauforcedupdateforcedupdatedismiss"></a>sauforcedupdate.forcedupdatedismiss
 
 Šis notikums norāda, ka parādītais piespiedu atjaunināšanas pēdējās stundas dialoglodziņš tiek noraidīts lietotāja neaktivitātes dēļ. Šis notikums tiek izmantots, lai noteiktu piespiedu atjauninājumu, kas tiek izpildīti bez lietotāju reakcijas uz parādīto paziņojumu, skaitu. Šis notikums tiek izmantots, lai samazinātu traucējumus, uzlabojot lietotāja interfeisu. 
 
@@ -11803,7 +11853,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_forcequitandupdatenow"></a>sauforcedupdate_forcequitandupdatenow
+### <a name="sauforcedupdateforcequitandupdatenow"></a>sauforcedupdate.forcequitandupdatenow
 
 Šis notikums norāda uz lietotāja sāktās piespiedu atjaunināšanas sākumu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju. 
 
@@ -11843,7 +11893,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators 
 
-### <a name="sauforcedupdate_forceterminate"></a>sauforcedupdate_forceterminate
+### <a name="sauforcedupdateforceterminate"></a>sauforcedupdate.forceterminate
 
 Šis notikums norāda uz piespiedu atjaunināšanas sākumu, izbeidzot programmas darbību piespiedu kārtā.  Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju.
 
@@ -11883,7 +11933,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_quitandupdatenow"></a>sauforcedupdate_quitandupdatenow
+### <a name="sauforcedupdatequitandupdatenow"></a>sauforcedupdate.quitandupdatenow
 
 Šis notikums norāda, ka lietotājs izvēlējās aizvērt programmu un instalēt atjauninājumu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjaunināšanas līdzekļa darbspēju. 
 
@@ -11923,7 +11973,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_snooze"></a>sauforcedupdate_snooze
+### <a name="sauforcedupdatesnooze"></a>sauforcedupdate.snooze
 
 Šis notikums norāda, ka lietotājs izvēlējās atlikt piespiedu atjaunināšanu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju. 
 
@@ -11963,7 +12013,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_terminate"></a>sauforcedupdate_terminate
+### <a name="sauforcedupdateterminate"></a>sauforcedupdate.terminate
 
 Šis notikums norāda uz piespiedu atjaunināšanas sākumu, izbeidzot programmas darbību. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju.
 
@@ -12003,7 +12053,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="sauforcedupdate_updatenow"></a>sauforcedupdate_updatenow
+### <a name="sauforcedupdateupdatenow"></a>sauforcedupdate.updatenow
 
 Šis notikums norāda, ka lietotājs izvēlējās atjaunināt programmu tagad.  Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu piespiedu atjauninājuma līdzekļa darbspēju.
 
@@ -12085,7 +12135,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="update_applaunchdetected"></a>update_applaunchdetected
+### <a name="updateapplaunchdetected"></a>update.applaunchdetected
 
 Šis notikums norāda, ka programma tika palaista brīdī, kad notika atjaunināšana. Šis notikums tiek izmantots, lai noteiktu programmu, kas tiek palaistas atjaunināšanas laikā, skaitu un tiek izmantots, lai uzlabotu lietotāju ērtības nākotnes laidienos.
 
@@ -12129,7 +12179,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_appterminationreceived"></a>update_appterminationreceived
+### <a name="updateappterminationreceived"></a>update.appterminationreceived
 
 Šis notikums norāda, ka programmas ar bloķētu atjauninājumu darbība tika izbeigta, un Microsoft Auto Update (MAU) var turpināt atjaunināšanu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.
 
@@ -12175,7 +12225,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_blockedappclosed"></a>update_blockedappclosed
+### <a name="updateblockedappclosed"></a>update.blockedappclosed
 
 Šis notikums norāda, ka Microsoft Auto Update (MAU) atklātā programma ar bloķēto atjauninājumu tika aizvērta un MAU var turpināt atjaunināšanu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12219,7 +12269,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_blockedinstallskip"></a>update_blockedinstallskip
+### <a name="updateblockedinstallskip"></a>update.blockedinstallskip
 
 Šis notikums reģistrē kļūdas, kas notiek mēģinot izlaist programmas atjaunināšanu. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņotās kļūdas.  
 
@@ -12261,7 +12311,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_clientsession"></a>update_clientsession
+### <a name="updateclientsession"></a>update.clientsession
 
 Par šo notikumu tiek ziņots, kad notiek klienta ierīces statusa izmaiņas, kuru rezultātā Microsoft Update Assistant pauzē vai turpina atjaunināšanas procesu. Šis notikums veido daļu no piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12301,7 +12351,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_download_begin"></a>update_download_begin 
+### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Šis notikums norāda uz programmas atjaunināšanas procesa sākumu. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12347,7 +12397,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="update_download_finish"></a>update_download_finish
+### <a name="updatedownloadfinish"></a>update.download.finish
 
 Šis notikums norāda programmas atjauninājuma lejupielādes posma beigas. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.  
 
@@ -12393,7 +12443,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="update_downloadresume"></a>update_downloadresume
+### <a name="updatedownloadresume"></a>update.downloadresume
 
 Šis notikums ziņo par kļūdu, kas notiek pauzēta lejupielādes uzdevuma atsākšanas mēģinājuma laikā. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņotās kļūdas. 
 
@@ -12437,7 +12487,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_error"></a>update_error
+### <a name="updateerror"></a>update.error
 
 Šis notikums ziņo par kļūdu, kas notiek reģistrētas programmas atjaunināšanas mēģinājuma laikā.  Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņotās kļūdas. 
 
@@ -12479,7 +12529,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_installcleanupforapp"></a>update_installcleanupforapp
+### <a name="updateinstallcleanupforapp"></a>update.installcleanupforapp
 
 Šis notikums norāda, ka atjauninājuma instalēšana ir pabeigt un Microsoft Auto Update (MAU) veic tīrīšanu.  Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.
 
@@ -12523,7 +12573,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_installupdateforapp"></a>update_installupdateforapp
+### <a name="updateinstallupdateforapp"></a>update.installupdateforapp
 
 Šis notikums tiek izmantots, lai ziņotu par programmas atjauninājuma instalēšanas sākšanu. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12569,7 +12619,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="update_installupdateforapp_success"></a>update_installupdateforapp_success
+### <a name="updateinstallupdateforappsuccess"></a>update.installupdateforapp.success
 
 Šis notikums ziņo par instalēšanas uzdevuma statusu. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12615,7 +12665,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_installvariance"></a>Update_InstallVariance
+### <a name="updateinstallvariance"></a>Update.InstallVariance
 
 Šis notikums tiek izmantots, lai aprēķinātu MAU kritiskā atjauninājuma darbspējas rādītāju. Šis notikums ļauj mums noteikt instalēšanas prioritātes līdzekļa sekmīguma metriku un pārbaudīt līdzekļa integritāti.
  
@@ -12655,7 +12705,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_multipleappupdates"></a>update_multipleappupdates 
+### <a name="updatemultipleappupdates"></a>update.multipleappupdates 
 
 Šis notikums norāda uz vairākām izpildes procesā esošām programmu atjaunināšanām, kas notiek fonā. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.
 
@@ -12695,7 +12745,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_previousidnil"></a>update_previousidnil
+### <a name="updatepreviousidnil"></a>update.previousidnil
 
 Šis notikums norāda, ka tiek lejupielādēta labojumu pakotne, bet nav iepriekšējās lejupielādes informācijas. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņotās kļūdas. 
 
@@ -12737,7 +12787,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="update_queueinstallforapp"></a>update_queueinstallforapp 
+### <a name="updatequeueinstallforapp"></a>update.queueinstallforapp 
 
 Šis notikums norāda, ka lejupielādētā atjauninājuma pakotne ir ievietota instalēšanas rindā.  Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju.
 
@@ -12783,7 +12833,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
-### <a name="update_relaunchafterupdate"></a>update_relaunchafterupdate 
+### <a name="updaterelaunchafterupdate"></a>update.relaunchafterupdate 
 
 Šis notikums norāda, ka programmas atjaunināšana tika pabeigta un programma tiek palaista atkārtoti. Šis notikums veido daļu no atjauninājuma piltuves un tiek izmantots, lai noteiktu programmu atjauninājumu darbspēju. 
 
@@ -12827,7 +12877,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-### <a name="update_timerforapptermination"></a>update_timerforapptermination 
+### <a name="updatetimerforapptermination"></a>update.timerforapptermination 
 
 Šis notikums norāda uz programmas statusa pārbaudes taimera sākumu/beigām. Šis notikums ir sapārots un tiek izmantots, lai noteiktu, vai ir noņemti visi taimera objekti, kad notiek programmas atjaunināšana.
 
@@ -12868,7 +12918,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatecore_appregistration"></a>updatecore_appregistration
+### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
 Šis notikums reģistrē mēģinājumus reģistrēt programmu un rezultātu/iemeslu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -12909,7 +12959,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
 Šis notikums norāda palaišanas aģenta ielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -12949,7 +12999,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatecore_runnstaskcommand"></a>updatecore_runnstaskcommand
+### <a name="updatecorerunnstaskcommand"></a>updatecore.runnstaskcommand
 
 Šis notikums ziņo par kļūdām uzdevuma palaišanas laikā. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņotās kļūdas.  
 
@@ -12989,7 +13039,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
 Šis notikums reģistrē kļūdas, kas rodas, sazinoties ar CDN. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13029,7 +13079,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatecore_server_nullurl"></a>updatecore_server_nullurl
+### <a name="updatecoreservernullurl"></a>updatecore.server.nullurl
 
 Šis notikums ziņo par kļūdu, kas norāda, ka konkrēto serveri nav iespējams sasniegt. Šis notikums tiek izmantots, lai noteiktu atjaunināšanas neizdošanās tīkla problēmu dēļ gadījumu skaitu. 
 
@@ -13069,7 +13119,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
 Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka no programmas metadatiem nevarējām izgūt datumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13110,7 +13160,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefilterhelper_invalidappid"></a>updatefilterhelper_invalidappid
+### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
 
 Šis notikums ziņo par kļūdu, norādot, ka nevar atrast no tīmekļa atbildes izgūtajam programmas ID atbilstošus manifesta failus. Šis notikums tiek izmantots, lai izpētītu ziņoto kļūdu.
 
@@ -13150,7 +13200,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefilterhelper_invalidappidfromwebservices"></a>updatefilterhelper_invalidappidfromwebservices
+### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
 Šis notikums ziņo par kļūdu, kas norāda, ka no tīmekļa atbildes izgūtais programmas ID nav paredzētajā formātā. Šis notikums tiek izmantots, lai izpētītu ziņoto kļūdu.
 
@@ -13190,7 +13240,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
 Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka programmas metadatos trūkst datuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13231,7 +13281,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
 
 Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam, ka programmas metadatos trūkst datuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13272,7 +13322,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
 
 Izmantojot MAU pakalpojumu, varam filtrēt atjauninājumus tikai tad, ja piedāvātais atjauninājums nav vecāks par noteiktu dienu skaitu. Šeit reģistrējam pakalpojuma apiešanu sena atjauninājuma datuma dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13313,7 +13363,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_check_error"></a>updatefinder_check_error
+### <a name="updatefindercheckerror"></a>updatefinder.check.error
 
 Šis notikums ziņo par kļūdu, kas notiek pieejamo atjauninājumu pārbaudes laikā. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu. 
 
@@ -13356,7 +13406,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
  
-### <a name="updatefinder_check_start"></a>updatefinder_check_start
+### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
 Šis notikums reģistrē gadījumus, kad tiek sākta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13397,7 +13447,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_check_status"></a>updatefinder_check_status
+### <a name="updatefindercheckstatus"></a>updatefinder.check.status
 
 Šis notikums apkopo pārbaužu, vai nav atjauninājumu, statusu (piltuve no meklēšanas līdz lejupielādei). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13438,7 +13488,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+### <a name="updatefindercheckupdatefound"></a>updatefinder.check.updatefound
 
 Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā tiek atrasti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13479,7 +13529,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+### <a name="updatefindercheckupdatenotfound"></a>updatefinder.check.updatenotfound
 
 Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā netiek piedāvāti atjauninājumi, jo neviens atjauninājums nav atrasts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13520,7 +13570,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+### <a name="updatefindercheckuptodate"></a>updatefinder.check.uptodate
 
 Reģistrējam ikreiz, kad pārbaudes, vai nav atjauninājumu, rezultātā netiek piedāvāti atjauninājumi, jo visas programmas jau ir atjauninātas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13561,7 +13611,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_offerupdates_invalidappid"></a>updatefinder_offerupdates_invalidappid
+### <a name="updatefinderofferupdatesinvalidappid"></a>updatefinder.offerupdates.invalidappid
 
 Šis notikums ziņo par kļūdu, mēģinot novērtēt, vai atjauninājums ir piemērojams. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu.  
 
@@ -13603,7 +13653,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+### <a name="updatefinderofferupdatesminoscheckfail"></a>updatefinder.offerupdates.minoscheckfail
 
 Reģistrējam ikreiz, kad bloķējam kādu atjauninājumu, jo nav atbilstības operētājsistēmas prasībām. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13643,7 +13693,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefinder_offerupdates_missingtrigger"></a>updatefinder_offerupdates_missingtrigger
+### <a name="updatefinderofferupdatesmissingtrigger"></a>updatefinder.offerupdates.missingtrigger
 
 Šis notikums ziņo par kļūdu, kas notiek mēģinot novērtēt trigerus lejupielādētajā programmas atjauninājuma manifestā. Tas ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu.  
 
@@ -13685,7 +13735,7 @@ Tiek apkopoti šādi lauki:
 
 - **Triggers** — manifestā norādītā trigeru vārdnīca
 
-### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+### <a name="updatefinderofferupdatesnullbundleforappid"></a>updatefinder.offerupdates.nullbundleforappid
 
 Šis notikums norāda, ka Microsoft AutoUpdate lejupielādētajā manifestā norādītajam programmas ID nevarēja ielādēt komplekta informāciju. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13726,7 +13776,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+### <a name="updatefinderofferupdatesupdaterulematched"></a>updatefinder.offerupdates.updaterulematched
 
 Šis notikums norāda, ka programmai un bāzlīnijai tika atrasts atjauninājums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13767,7 +13817,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+### <a name="updatefinderregisteredapps"></a>updatefinder.registeredapps
 
 Reģistrējam programmas, kas tiek instalētas/reģistrētas/MAU kontrolētas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13807,7 +13857,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatefinder_suite_invalidsuiteversion"></a>updatefinder_suite_invalidsuiteversion
+### <a name="updatefindersuiteinvalidsuiteversion"></a>updatefinder.suite.invalidsuiteversion
 
 Šis notikums ziņo par komplekta versijas kļūdu, kas notiek mēģinot novērtēt, vai atjauninājums ir piemērojams. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu.
 
@@ -13847,7 +13897,7 @@ Tiek apkopoti šādi lauki:
 
 - **Suite** — konkrētā komplekta nosaukums
 
-### <a name="updatefinder_suite_keyvaluemissing"></a>updatefinder_suite_keyvaluemissing
+### <a name="updatefindersuitekeyvaluemissing"></a>updatefinder.suite.keyvaluemissing
 
 Šis notikums ziņo par kļūdu, kas notiek, mēģinot pievienot programmu komplektam. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu.
 
@@ -13890,7 +13940,7 @@ Tiek apkopoti šādi lauki:
 - **Suite** — komplekta, kuram tiks pievienota programma, nosaukums
 
     
-### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+### <a name="updatefindersuitemissingcollateral"></a>updatefinder.suite.missingcollateral
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo trūkst papildmateriālu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13931,7 +13981,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+### <a name="updatefindersuitestaleversion"></a>updatefinder.suite.staleversion
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo bāzes versija ir pārāk veca. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -13972,7 +14022,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+### <a name="updatefindersuiteupdateapplicable"></a>updatefinder.suite.updateapplicable
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana ir lietojama. Reģistrējam bāzlīnijas versiju un komplekta AppId. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14013,7 +14063,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+### <a name="updatefindersuiteupdatenotapplicabledefaultpath"></a>updatefinder.suite.updatenotapplicabledefaultpath
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas tiek instalētas, izmantojot noklusējuma ceļu. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14054,7 +14104,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+### <a name="updatefindersuiteupdatenotapplicableversion"></a>updatefinder.suite.updatenotapplicableversion
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas ir vienā bāzes versijā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14095,7 +14145,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+### <a name="updatefindersuiteupdatenotoffered"></a>updatefinder.suite.updatenotoffered
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo komplekta lielums pārsniedz atsevišķo atjauninājumu lielumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14136,7 +14186,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+### <a name="updatefindersuiteupdateoffered"></a>updatefinder.suite.updateoffered
 
 Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana tiek piedāvāta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14177,7 +14227,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+### <a name="updatemanagercheckupdate"></a>updatemanager.checkupdate
 
 Šis notikums reģistrē vairākus atjauninājumus, kurus Microsoft AutoUpdate atrada pārbaudot, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14218,7 +14268,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
 Šis notikums norāda, ka atjauninājumi ir atrasti un gaida instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14258,7 +14308,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="updatestatus_codesign"></a>UpdateStatus_Codesign
+### <a name="updatestatuscodesign"></a>UpdateStatus.Codesign
 
 Šis notikums ziņo par koda paraksta verifikācijas, kuru Microsoft Update Assistant palaiž pēc klienta programmu atjauninājumu instalēšanas, statusu. Šis notikums tiek izmantots, lai nodrošinātu to, ka nodrošinātās pakotnes ir derīgas un atjauninās instalēto programmu līdz jaunākajai versijai.
 
@@ -14308,7 +14358,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdatePkg** — instalētās atjauninājuma pakotnes nosaukums
 
-### <a name="urlutilities_getmauinfo"></a>urlutilities_getmauinfo
+### <a name="urlutilitiesgetmauinfo"></a>urlutilities.getmauinfo
 
 Šis notikums ziņo par kļūdu, kas notiek, piekļūstot Microsoft Auto Update (MAU) programmas komplektam. Šis notikums ir kritisks un tiek izmantots, lai izpētītu ziņoto kļūdu.
 
@@ -14348,7 +14398,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
    
-### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
 Šis notikums norāda, ka ir atrasti klusās atjaunināšanas kandidāti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14389,7 +14439,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+### <a name="webservicesdeltaupdater"></a>webservices.deltaupdater
 
 Šis notikums reģistrē mijiedarbību starp klienta kodu un līdzekļu vārteju, kas kontrolē, vai klientam ir jāatļauj delta atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14430,7 +14480,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Reģistrējam visas kļūdas, kas rodas neparedzētas tīmekļa pakalpojuma atbildes dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14471,7 +14521,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Reģistrējam visas kļūdas, kas rodas neparedzētas tīmekļa pakalpojuma atbildes dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14512,7 +14562,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Šis notikums reģistrē pieprasījumus MAU pakalpojumam, atbilžu laikus un kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14553,7 +14603,7 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
     
-### <a name="webservices_silentupdate"></a>webservices_silentupdate
+### <a name="webservicessilentupdate"></a>webservices.silentupdate
 
 Reģistrējam pieprasījumus, lai pārbaudītu, vai nav piespiedu atjauninājumu lietošanas kārtulu, t.i., vai lietotājam no būvējuma N nav jāpāriet uz būvējumu N+1, jo pastāv kāda liela problēma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14593,7 +14643,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="webservices_updatefiltering"></a>webservices_updatefiltering
+### <a name="webservicesupdatefiltering"></a>webservices.updatefiltering
 
 Šis notikums norāda uz filtrēšanu, kas veikta tīmekļa pakalpojumos pieejamajam piemērojamo atjauninājumu sarakstam. Šis notikums tiek izmantots, lai nodrošinātu pareizu programmu bloķēšanas darbību, ja ir jābloķē atjauninājums.
 
@@ -14633,7 +14683,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="webservices_webcontent"></a>webservices_webcontent
+### <a name="webserviceswebcontent"></a>webservices.webcontent
 
 Reģistrējam tīmekļa pakalpojumā saņemtos pieprasījumus un atbildes. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
@@ -14673,7 +14723,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-### <a name="webservices_whatsnew"></a>webservices_whatsnew
+### <a name="webserviceswhatsnew"></a>webservices.whatsnew
 
 Šis notikums tiek izraisīts, kad Microsoft Auto Update (MAU) “kas jauns” līdzeklī nosūta ar reģistrētajām programmās saistītus vaicājumus tīmekļa pakalpojumiem. Šis notikums tiek izmantots, lai noteiktu līdzekļa “kas jauns” darbspēju. 
 
@@ -15128,10 +15178,28 @@ Tiek apkopoti šādi lauki.
 
 - **PaywallOperationType** — Paywall operācijas veids (uzskaitījums/Int — ierobežotie)
 
+### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
 
-### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+Sesijas metadati, kad lietotājam tiek parādīts Paywall lietotāja interfeiss. Microsoft izmanto šo opciju, lai iegūtu lietotāja pieredzi un saprastu ierīces un operētājsistēmas versijas, ko lietotājs izmanto, lai palīdzētu pieņemt lēmumus par investīcijām, lai uzlabotu pieredzi šajos apgabalos.
 
-Šo notikumu vāc Office programmām, kas darbojas Apple platformās. Šo notikumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmās palaišanas programmā. Mēs vācam koda datus, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
+Tiek apkopoti tālāk norādītie lauki.
+
+- **App Version** — patērējošās lietojumprogrammas versijas kods
+
+- **ClientId** — anonīms, kas nav PII unikāls ierīces identifikators (GUID / virkne)
+
+- **Entry Point** — unikāls kontekstuālo vai nemainīgo ievadīšanas punktu identifikators no patērējošās lietojumprogrammas
+
+- **isTablet** — vai ierīcē tiek rādīts planšetdators UX
+
+- **OSVersion** — ierīces Android OS versija
+
+- **SessionId** — GUID: unikāls Paywall sesijas identifikators
+
+
+### <a name="officefirstrunappletelemetryoptin"></a>Office.FirstRun.Apple.TelemetryOptIn
+
+Šo notikumu apkopo Office programmām, kas darbojas Apple platformās. Šo notikumu lieto, lai pārraudzītu mūsu telemetrijas piedalīšanās plūsmas darbspēju pirmās palaišanas programmā. Mēs vācam koda datus, kas norāda, kāda veida diagnostikas datu vākšanas opciju lietotājs ir atlasījis.
 
 Tiek apkopoti šādi lauki:
 
