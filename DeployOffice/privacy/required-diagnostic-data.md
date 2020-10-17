@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: f200e22e639f2c89315c2f7fa2e9eab0367f86b1
-ms.sourcegitcommit: 1b12952b55f071b87026b49d372158209ed2e322
+ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368644"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491513"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -356,6 +356,8 @@ Notikumam raksturīga informācija, tostarp tā unikālais identifikators sesij�
   - **Flags** — informācija, kas tiek izmantota, lai mainītu attiecīgā notikuma atbildi. Tiek izmantots nolūkā pārvaldīt veidu, kā notikums tiek apstrādāts, lai augšupielādētu datus korporācijai Microsoft.
 
   - **Id** — unikāls notikuma identifikators. Ļauj mums unikāli identificēt saņemtos notikumus.
+
+  - **Level** — apzīmē notikuma veidu.
 
   - **Name** — notikuma nosaukums. Ļauj noteikt notikumu, kas tiek nosūtīts no klienta.
 
@@ -8676,7 +8678,7 @@ Tiek apkopoti šādi lauki:
 
 Ieraksta informāciju par neparedzētu Office izslēgšanu. Tas ļauj mums noteikt produkta avārijas vai, ja tas pārstāj reaģēt, un atrisināt šīs problēmas.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki:
 
   - **Data\_AirspaceInitTime:integer — ** Airspace Office komponentes inicializācijai veltītais laiks
 
