@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
-ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
+ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491549"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -293,6 +293,12 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Duration** — cik ilga bija autentifikācija
 
+  - **Duration_Max** — ja šis signāls ir apkopots, tad tas ir jebkura apkopotā notikuma maksimālais ilgums.
+
+  - **Duration_Min** — ja šis signāls ir apkopots, tad tas ir jebkura apkopotā notikuma minimālais ilgums.
+
+  - **Duration_Sum** — ja šis signāls tiek apkopots, tad tas ir visu apkopoto notikumu ilgumu summa.
+
   - **Endtime** — kad autentifikācijas notikums beidzās
 
   - **Error** — kļūdas kods, ja autentifikācija neizdevās
@@ -407,11 +413,19 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Microsoft\_ADAL\_user\_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts.
 
+  - **Microsoft_ADAL_was_request_throttled** — patiess/aplams, kas norāda, vai ADAL ierobežoja šo notikumu pārāk daudzu pieprasījumu dēļ.
+ 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** — papildu pieprasījuma ID, ko HTTP galvenē pakalpojumam nodrošina ADAL.
 
   - **Platform** — Win32/WinRT/Android/iOS/Mac
 
+  - **Promptreasoncorrelationid** — uzvednes gadījumā tas ir cita notikuma korelācijas ID, kas izskaidro, kāpēc lietotājam, iespējams, ir redzama autentifikācijas uzvedne.
+
+  - **Resource** — resurss, kuram lietotājs pieprasa marķieri, piemēram, Exchange vai SharePoint.
+
   - **Scenarioid** — GUID. Vairāki notikumi var piederēt vienam scenārijam, piemēram, scenārijs var pievienot jaunu kontu, bet pastāv vairākas uzvednes, kas rodas kā daļa no šī scenārija. Šis ID nodrošina korelācijas iespējamību.
+
+  - **Scenarioname** — scenārija nosaukums, kuram pieder šis autentifikācijas notikums.
 
   - **Sessionid** — GUID, kas identificē sāknēšanas sesiju
 
@@ -15903,7 +15917,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
   - **Alias —** Microsoft darbinieka vai automatizētā lietotāja aizstājvārds
 

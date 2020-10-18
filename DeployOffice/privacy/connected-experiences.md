@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
-ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
+ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338189"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491585"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -40,6 +40,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 |Diagrammu ieteikumi (Excel tīmeklī)|[Izveidojiet diagrammu ar ieteicamajām diagrammām](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Klases piezīmju grāmatiņas pievienojumprogrammas (OneNote)|[Darba sākšana ar OneNote klases piezīmju grāmatiņu: detalizēti norādījumi skolotājiem](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Datu tipi| [Excel datu tipi: akciju un ģeogrāfisko datu tipi](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Noformētājs (Word tīmeklim)|[Izmantojiet Noformētāju, lai izveidotu nopulētāku dokumentu](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Diktēšana  | [Diktējiet savus dokumentus Word](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Redaktors<sup>1</sup> |[Microsoft redaktors pārbauda gramatiku un daudz ko citu dokumentos, pastā un tīmeklī](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idejas     | [Idejas programmā Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -62,6 +63,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | *Viedā uzmeklēšana*\*   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
+|Teksta prognozes (Redaktora līdzeklis)|[Rakstiet ātrāk, izmantojot teksta prognozes programmā Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transkripcija |[Jūsu ierakstu pārrakstīšana](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Pārvēršana par tīmekļa lapu   | [Word dokumenta pārvēršana par Sway tīmekļa lapu](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Tulkotājs   | [Teksta tulkošana citā valodā](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
