@@ -13,29 +13,25 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt Office konfidencialitātes kontroles līdzekļus Android ierīcēs.
 hideEdit: true
-ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
-ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
+ms.openlocfilehash: 2c1ecab42f31c85616faca42a5cb01b183a36087
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092125"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794448"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs
 
+> [!NOTE]
+> Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
+
 Sistēmā Office darbam ar Android ierīcēm ir politikas iestatījumi, ar kuriem varat mainīt iestatījumus attiecībā uz turpmāko:
 
-- ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru.
+- ***Diagnostikas dati** _, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru.
 
-- ***Saistītie līdzekļi***, kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
+- _*_Saistītie līdzekļi_*_ , kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
 
 Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet rakstā [Pārskats par konfidencialitātes kontroles līdzekļiem](overview-privacy-controls.md).
-
-Šie politikas iestatījumi attiecas uz šādām lietojumprogrammām:
-- Word versija 16.0.12228.20260 un jaunākas darbam ar Android, Excel un PowerPoint darbam ar Android.
-- Outlook darbam ar Android versija 4.1.71 vai jaunāka.
-- OneNote darbam ar Android versija 16.0.12228.20004 vai jaunāka.
-- OneDrive darbam ar Android versija 5.47 vai jaunāka.
-- Office programma darbam ar Android versija 16.0.12430.20254 vai jaunāka.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>Office politikas iestatījumi, kas ir pieejami Android ierīcēs
 
@@ -43,7 +39,7 @@ Tālāk tabulā ir uzskaitīti Office iestatījumi, kas ir pieejami Android ier�
 
 > [!NOTE]
 >- Sniegtā papildinformācija attiecas uz Office politikas iestatījumiem ierīcēs, kurās darbojas operētājsistēma Windows. Tomēr tā pati informācija attiecas arī uz sistēmu Office Android ierīcēs, jo tie ir tie paši politikas iestatījumi.
->- Politikas iestatījums *Atļaut Office izmantot saistītos līdzekļus*, kas ir pieejams sistēmai Office ierīcēs, kurās darbojas operētājsistēma Windows, neattiecas uz sistēmu Office Android ierīcēs. 
+>- Politikas iestatījums _Atļaut Office izmantot saistītos līdzekļus, kas ir pieejams sistēmai Office ierīcēs, kurās darbojas operētājsistēma Windows, neattiecas uz sistēmu Office Android ierīcēs. 
 
 
 |Politikas iestatījuma nosaukums  |Papildinformācija |
