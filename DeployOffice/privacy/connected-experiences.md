@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 2ffbac14694578fc1f5964cef2c92eea6d6a2172
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491585"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794750"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -71,7 +71,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 <sup>1</sup> Redaktora pamatfunkcijas ir pieejama pat tad, ja nav izveidots savienojums ar internetu. Tā pati pamatfunkcija paliek pieejama arī tad, ja izlemjat atspējot savienotās iespējas, kas analizē jūsu saturu. Abos gadījumos dati par redaktora izmantošanu netiek nosūtīti Microsoft.
 
 > [!NOTE]
-> \*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
+> \*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* .
 
 ## <a name="connected-experiences-that-download-online-content"></a>Saistīti līdzekļi, kas lejupielādē tiešsaistes saturu
 
@@ -103,7 +103,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | *Laika apstākļu josla*\* (Outlook)| [Laikapstākļu prognozes pilsētas mainīšana kalendāra laikapstākļu joslā](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
+>\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* .
 
 ## <a name="other-connected-experiences"></a>Citi saistīti līdzekļi
 
@@ -125,7 +125,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Svarīgo ziņojumu iesūtne (Outlook) |[Svarīgo ziņojumu iesūtne programmā Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informācijas piekļuves tiesību pārvaldība |[Atveriet failu, kuram ir ierobežotas atļaujas](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn kontaktpersonas vizītkarte |[LinkedIn Microsoft lietojumprogrammās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Office pievienojumprogrammas*\* | [Pievienojumprogrammu izvietošana administrēšanas centrā](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *Office pievienojumprogrammas*\* | [Pievienojumprogrammu skatīšana, pārvaldība un instalēšana Office programmās](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(lietotājiem)* <br/> [Pievienojumprogrammu izvietošana administrēšanas centrā](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriem)* |
 | Atsauksmes par Office |[Kā var sniegt atsauksmes par Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office atbalsts (Sazināties ar mums) |Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu** |
 | Organizācijas diagramma (Visio) |[Organizācijas diagrammas izveide programmā Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -146,18 +146,18 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Kamēr bijāt prombūtnē |[Paziņojumu saņemšana, kad grupas dalībnieki atjaunina jūsu kopīgoto failu](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*.
+>\*Kad lietotāji ir pierakstīti ar darba vai mācību kontu, šī saistītā pieredze, kas iepriekš norādīta slīprakstā, nav obligāta, un tā tiek nodrošināta saskaņā ar [Microsoft pakalpojumu līguma noteikumiem](https://www.microsoft.com/servicesagreement) un [paziņojumu par konfidencialitāti](https://privacy.microsoft.com/), un var tikt piemēroti arī papildu nosacījumi. Papildinformāciju skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md). Ja esat administrators, šīs saistītās pieredzes var pārvaldīt, izmantojot saistītās pieredzes konfidencialitātes kontroles līdzekļus vai politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* .
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Izvēlieties, vai šie saistītie līdzekļi ir pieejami izmantošanai
 
 Varat izvēlēties, vai atsevišķi saistīto līdzekļu tipi, piemēram, saistīti līdzekļi, kas lejupielādē tiešsaistes saturu, ir pieejami izmantošanai. Jūsu veiktā izvēle ir atkarīga no tā, vai esat pierakstījies sistēmā Office ar Microsoft kontu, piemēram, personisko outlook.com e-pasta adresi, vai arī ar darba vai mācību kontu.
 
-Ja esat pierakstījies ar Microsoft kontu, atveriet Office programmu, piemēram, Word, un dodieties uz **Fails** > **Konts** > **Konta privātums** > **Iestatījumu pārvaldība**. Sadaļā **Saistītie līdzekļi** varat izvēlēties, vai atsevišķi saistīto līdzekļu tipi, piemēram, saistīti līdzekļi, kas analizē jūsu saturu, ir pieejami izmantošanai. Ja neatverat sadaļu **Iestatījumu pārvaldība**, jums būs pieejami visi saistītie līdzekļi.
+Ja esat pierakstījies ar Microsoft kontu, atveriet Office programmu, piemēram, Word, un dodieties uz **Fails** > **Konts** > **Konta privātums** > **Iestatījumu pārvaldība** . Sadaļā **Saistītie līdzekļi** varat izvēlēties, vai atsevišķi saistīto līdzekļu tipi, piemēram, saistīti līdzekļi, kas analizē jūsu saturu, ir pieejami izmantošanai. Ja neatverat sadaļu **Iestatījumu pārvaldība** , jums būs pieejami visi saistītie līdzekļi.
 
-Ja esat pierakstījies ar darba vai mācību kontu, jūsu organizācijas administrators var izlemt, vai šie saistītie līdzekļi ir jums pieejami. Jūs neredzat izvēles iespējas šiem saistītajiem līdzekļiem, ja dodaties uz **Fails** > **Konts** > **Konta privātums** > **Iestatījumu pārvaldība**.
+Ja esat pierakstījies ar darba vai mācību kontu, jūsu organizācijas administrators var izlemt, vai šie saistītie līdzekļi ir jums pieejami. Jūs neredzat izvēles iespējas šiem saistītajiem līdzekļiem, ja dodaties uz **Fails** > **Konts** > **Konta privātums** > **Iestatījumu pārvaldība** .
 
 > [!NOTE]
-> - Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
+> - Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte** . Tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 > - Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Ja esat savas organizācijas administrators, varat izmantot politikas iestatījumus, lai noteiktu, vai šie saistītie līdzekļi ir pieejami jūsu lietotājiem. Ja neizmantojat šos politikas iestatījumus, jūsu lietotājiem būs pieejami visi saistītie līdzekļi. Papildinformāciju par politikas līdzekļu izmantošanu skatiet šajos rakstos: 

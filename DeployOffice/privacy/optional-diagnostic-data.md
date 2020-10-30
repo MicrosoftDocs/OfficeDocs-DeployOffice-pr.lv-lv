@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz informāciju par neobligātajiem Office diagnostikas datiem, tostarp dažus notikumu piemērus.
 hideEdit: true
-ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
-ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
+ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328326"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794808"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Neobligātie Office diagnostikas dati
 
@@ -27,9 +27,9 @@ ms.locfileid: "48328326"
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
-Šie diagnostikas dati tiek apkopoti un nosūtīti korporācijai Microsoft par Office klienta programmatūru, kas tiek lietota datoros, kuros darbojas operētājsistēma Windows. Daži diagnostikas dati ir nepieciešami, bet daži diagnostikas dati ir neobligāti. Piedāvājam jums iespēju izvēlēties, vai sūtīt mums nepieciešamos vai neobligātos diagnostikas datus, izmantojot tādus konfidencialitātes kontroles līdzekļus kā organizācijas politikas iestatījumus. Mums sūtāmos diagnostikas datus varat skatīt, izmantojot diagnostikas datu skatītāju.
+Šie diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē, ir apkopoti un nosūtīti korporācijai Microsoft. Daži diagnostikas dati ir nepieciešami, bet daži diagnostikas dati ir neobligāti. Piedāvājam jums iespēju izvēlēties, vai sūtīt mums nepieciešamos vai neobligātos diagnostikas datus, izmantojot tādus konfidencialitātes kontroles līdzekļus kā organizācijas politikas iestatījumus. Mums sūtāmos diagnostikas datus varat skatīt, izmantojot diagnostikas datu skatītāju.
 
-***Neobligātie diagnostikas dati*** ir papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
+***Neobligātie diagnostikas dati** _ ir papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
 
 Ja izvēlaties nosūtīt mums neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati. Var tikt nosūtīti arī Office diagnostikas žurnālu faili, kuri satur informāciju, kas ir ļoti līdzīga neobligātiem diagnostikas datiem. Papildinformāciju par šiem žurnāla failiem skatiet rakstā [Pārskats par Office diagnostikas žurnāla failiem](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
@@ -71,7 +71,7 @@ Nākamajās sadaļās ir sniegts katras kategorijas apraksts un notikumu piemēr
 
 Nākamajā tabulā ir sniegti šīs kategorijas notikumu piemēri un šo notikumu apraksti.
 
-| **Notikuma nosaukums**   | **Notikuma apraksts**  |
+| _ *Notikuma nosaukums**   | **Notikuma apraksts**  |
 | ---- | ---- |
 | Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Šis notikums norāda, vai Word sekmīgi atjaunina lenti Word lietotāja interfeisā, kad lietotājs maina savu identitāti. Šo gadījumu izmantojam, lai noteiktu nepareizas iestatīšanas un citas problēmas, kas var ietekmēt Office lietotāja interfeisu. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Šis notikums sniedz informāciju par Office pievienojumprogrammu, kas lietotājam ir instalēta, tostarp programma ID, operētājsistēmas būvējumu un versiju, instalēšanas sekmēm un instalēšanas ilgumu.  |
