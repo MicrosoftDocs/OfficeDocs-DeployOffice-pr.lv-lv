@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par konfidencialitātes kontroles līdzekļiem pakalpojumā Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus), tostarp diagnostikas datiem un saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440557"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794766"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklu pārskats
 
@@ -30,8 +30,8 @@ ms.locfileid: "47440557"
 Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kontroles līdzekļiem, kas ir nepieciešami, lai pieņemtu lēmumus par to, kā jūsu dati tiek apkopoti un izmantoti, kad lietojat Microsoft 365 programmas lieluzņēmumiem (iepriekš Office 365 ProPlus).
 
 Sākot ar Microsoft 365 programmas lieluzņēmumiem versiju 1904, mēs jūs nodrošinām ar jaunām, atjauninātām un uzlabotām konfidencialitātes kontroles iespējām šādās jomās:
-- ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par Office klienta programmatūru, kura tiek lietota jūsu organizācijas datoros, kur darbojas operētājsistēma Windows.
-- ***Saistītie līdzekļi***, kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
+- ***Diagnostikas dati** _ par Office klienta programmatūru, kas darbojas lietotāja ierīcē jūsu organizācijā, ir apkopoti un nosūtīti korporācijai Microsoft.
+- _*_Saistītie līdzekļi_*_ , kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
 
 Šo izmaiņu ietvaros ir iekļauti jauni un atjaunināti lietotāja interfeisa (user interface — UI) elementi un politikas iestatījumi.
 
@@ -39,15 +39,15 @@ Sākot ar Microsoft 365 programmas lieluzņēmumiem versiju 1904, mēs jūs nodr
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
-Šie diagnostikas dati tiek apkopoti un nosūtīti korporācijai Microsoft par Office klienta programmatūru, kas tiek lietota jūsu organizācijas datoros, kuros darbojas operētājsistēma Windows.
+Šie diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē jūsu organizācijā, ir apkopoti un nosūtīti korporācijai Microsoft.
 
 Pastāv trīs Microsoft 365 programmu lieluzņēmumiem klienta programmatūras diagnostikas datu līmeņi, kurus varat izvēlēties:
 
-- **Nepieciešamie**. Minimālie dati, kas nepieciešamo, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
+- _ *Nepieciešamie* * Minimālie dati, kas nepieciešami, lai palīdzētu Office uzturēt drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
 
-- **Neobligātie**. Papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
+- **Neobligātie** . Papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
 
-- **Neviens no šiem**. Nekādi diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē, netiek apkopoti un mums netiek sūtīti. Tomēr šī opcija būtiski ierobežo mūsu iespējas noteikt, diagnosticēt un novērst problēmas, kas jūsu lietotājiem var rasties, izmantojot Office.
+- **Neviens no šiem** . Nekādi diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē, netiek apkopoti un mums netiek sūtīti. Tomēr šī opcija būtiski ierobežo mūsu iespējas noteikt, diagnosticēt un novērst problēmas, kas jūsu lietotājiem var rasties, izmantojot Office.
 
 Nepieciešamie diagnostikas dati var ietvert, piemēram, informāciju par ierīcē instalēto Office versiju vai informāciju, kas norāda, ka Office programmas avarē, mēģinot atvērt dokumentus. Neobligātie diagnostikas dati var ietvert informāciju par laiku, kas ir nepieciešams, lai saglabātu dokumentu, kas varētu norādīt uz problēmu ar saglabāšanu ierīcē.
 
@@ -61,7 +61,7 @@ Jūsu lietotāji nevarēs mainīt savas ierīces diagnostikas datu līmeni, ja b
 
 Lai skatītu, kādi diagnostikas dati tiek nosūtīti korporācijai Microsoft, varat izmantot diagnostikas datu skatītāju, kuru varat lejupielādēt un instalēt no veikala Microsoft Store.
 
-Papildinformāciju skatiet šeit:
+Papildinformāciju skatiet šādos rakstos:
 
 - [Nepieciešamie Office diagnostikas dati](required-diagnostic-data.md)
 - [Neobligātie Office diagnostikas dati](optional-diagnostic-data.md)
@@ -77,9 +77,9 @@ Microsoft 365 programmas lieluzņēmumiem sastāv no klienta programmām un sais
 
 Mēs saprotam, ka varat vēlēties noteikt, kāda veida saistītie līdzekļi ir pieejami lietotājiem, strādājot Office programmās. Kā organizācijas administrators varat izmantot politikas iestatījumus, kas ļauj izvēlēties, vai lietotājiem nodrošināt šādus saistītos līdzekļus:
 
-- **Lietošanas iespējas, kas analizē jūsu saturu**. Lietošanas iespējas, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word.
+- **Lietošanas iespējas, kas analizē jūsu saturu** . Lietošanas iespējas, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word.
 
-- **Lietošanas iespējas, kas lejupielādē tiešsaistes saturu**. Lietošanas iespējas, kas jums ļauj meklēt un lejupielādēt tiešsaistes saturu, tostarp veidnes, attēlus, 3D modeļus, video un atsauces materiālus, lai uzlabotu jūsu dokumentus. Piemēram, Office veidnes vai PowerPoint ātrais sākums.
+- **Lietošanas iespējas, kas lejupielādē tiešsaistes saturu** . Lietošanas iespējas, kas jums ļauj meklēt un lejupielādēt tiešsaistes saturu, tostarp veidnes, attēlus, 3D modeļus, video un atsauces materiālus, lai uzlabotu jūsu dokumentus. Piemēram, Office veidnes vai PowerPoint ātrais sākums.
 
 Piemēram, varat izvēlēties nodrošināt lietotājiem saistītos līdzekļus, kas lejupielādē tiešsaistes saturu, bet ne tādus saistītos līdzekļus, kas analizē saturu. Ja nekonfigurēsit šos politikas iestatījumus, jūsu lietotājiem būs pieejami visi šie saistītie līdzekļi.
 
@@ -89,7 +89,7 @@ Ja izvēlaties lietotājiem nesniegt noteiktus saistītos līdzekļus, to lentes
 
 Jūsu lietotāji nevarēs izvēlēties, vai ieslēgt vai izslēgt šos saistītos līdzekļus, ja tie būs pierakstījušies Office produktā ar savas organizācijas akreditācijas datiem, kas dažkārt tiek dēvēti par darba vai mācību kontu.
 
-Papildinformāciju skatiet šeit:
+Papildinformāciju skatiet šādos rakstos:
 
 - [Office saistītie līdzekļi](connected-experiences.md)
 - [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
@@ -107,7 +107,7 @@ Tā kā šo papildu saistīto līdzekļu darbību nosaka atsevišķi nosacījumi
 
 Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos neobligātos saistītos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies Office produktā ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
-Papildinformāciju skatiet šeit:
+Papildinformāciju skatiet šādos rakstos:
 
 - [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md)
 - [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md)
@@ -130,6 +130,6 @@ Pastāv arī tādu pakalpojumu kopa, kurus nav iespējams atspējot un kas ir b�
 
 Lai iegūtu papildinformāciju, skatiet rakstu [Office būtiskie pakalpojumi](essential-services.md).
 
-## <a name="related-topics"></a>Saistītās tēmas
+## <a name="related-articles"></a>Saistītie raksti
 - [Microsoft un privātums](https://privacy.microsoft.com/)
 - [Windows konfidencialitāte](https://docs.microsoft.com/windows/privacy/)
