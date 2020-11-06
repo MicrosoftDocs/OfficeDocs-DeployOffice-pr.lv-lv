@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz informāciju par neobligātajiem Office diagnostikas datiem, tostarp dažus notikumu piemērus.
 hideEdit: true
-ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: 7dc10c50baed0306e3e7fc6dd70e0d798a72d0bc
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794808"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931261"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Neobligātie Office diagnostikas dati
 
@@ -28,6 +28,9 @@ ms.locfileid: "48794808"
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Šie dati neietver lietotāja vārdu vai e-pasta adresi, failu saturu vai informāciju par programmām, kas nav saistītas ar Office.
 
 Šie diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē, ir apkopoti un nosūtīti korporācijai Microsoft. Daži diagnostikas dati ir nepieciešami, bet daži diagnostikas dati ir neobligāti. Piedāvājam jums iespēju izvēlēties, vai sūtīt mums nepieciešamos vai neobligātos diagnostikas datus, izmantojot tādus konfidencialitātes kontroles līdzekļus kā organizācijas politikas iestatījumus. Mums sūtāmos diagnostikas datus varat skatīt, izmantojot diagnostikas datu skatītāju.
+
+> [!NOTE]
+> Ja izmantojat Office 2019 vai Office 2016 versiju, kas jums vai jūsu administratoram nedod iespēju izvēlēties, vai sūtīt mums nepieciešamos vai neobligātos diagnostikas datus, tad tiks nosūtīti tikai nepieciešamie diagnostikas dati. Piemēram, ja izmantojat Office Professional Plus 2019 vai Office Standard 2016, kas nenodrošina šo izvēli, tad tiks nosūtīti tikai nepieciešamie diagnostikas dati. Office 2013 nesūta nepieciešamos vai neobligātos diagnostikas datus. Lai iegūtu papildinformāciju par to, kuras Office versijas piedāvā šo izvēli, skatiet rakstu [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
 
 ***Neobligātie diagnostikas dati** _ ir papildu dati, kas palīdz mums uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas.
 
