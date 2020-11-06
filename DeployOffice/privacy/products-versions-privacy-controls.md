@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju par Office produktiem un versijām ar jaunākajiem konfidencialitātes kontroles līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: d6fc46501b2137f2f22cd30dad4a2168bc490360
-ms.sourcegitcommit: da41d41b443c8392c96e64a4d2fc674957abddf5
+ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47431952"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931189"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>Office produktiem pieejamie konfidencialitātes kontroles līdzekļi
 
@@ -42,7 +42,6 @@ Mūsu jaunākie konfidencialitātes kontroles līdzekļi ir pieejami tālāk uzs
 - Office 2019 un Office 2016 mazumtirdzniecības versijas, kas ir pieejamas kā vienreizējs pirkums. Piemēram, Office Professional 2019 vai Office skolēniem un mājas lietošanai 2016.
 - Datoriem paredzētās programmas Project un Visio, kurām tiek piedāvāti abonēšanas plāni, piemēram, Project 5. plāns vai Visio 2. plāns.
 - Project 2019, Project 2016, Visio 2019 un Visio 2016 mazumtirdzniecības versijas, kas ir pieejamas kā vienreizējs pirkums.
-- Project 2016 un Visio 2016 lielapjoma licencēšanas versijas, kas ir instalētas ar Click-to-Run tehnoloģiju, nevis izmantojot Windows Installer (MSI). Piemēram, Project Professional 2016 vai Visio Standard 2016.
 
 Windows ierīcēm, tālāk norādītajā tabulā ir uzskaitītas programmas un šo programmu pamata versijas, kurās ir pieejami mūsu jaunākie konfidencialitātes kontroles līdzekļi.
 
@@ -74,6 +73,12 @@ Windows ierīcēm, tālāk norādītajā tabulā ir uzskaitītas programmas un �
 Dažiem Office produktiem var nebūt pieejami noteikti saistīto līdzekļu veidi, tāpēc atsevišķi konfidencialitātes kontroles līdzekļi nebūs aktuāli.
 
 Lai konfigurētu šos konfidencialitātes kontroles līdzekļus jūsu organizācijas lietotājiem, kas izmanto Office Windows ierīcēs, varat izmantot grupas politiku vai Office politiku mākoņpakalpojumu. Papildinformācijai lasiet [Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas](manage-privacy-controls.md).
+
+> [!NOTE]
+> “Atļaut papildu neobligāto saistīto līdzekļu izmantošanu sistēmā Office” privātuma kontrole tiek atbalstīta sekojošās *sējuma licencētās Office, Project un Visio* versijās.
+> - Office 2019, Project 2019 un Visio 2019, ja tās ir konfigurētas izmantot PerpetualVL2019 atjaunināšanas kanālu. Šādā gadījumā jums ir jāizmanto vismaz versija 1808 (būvējums 10367.20048), kas tika izlaista 2020. gada 13. oktobrī.
+> - Project 2019 un Visio 2019, ja tās ir konfigurētas izmantot citu atjaunināšanas kanālu, kas nav PerpetualVL2019. Piemēram, ja tās ir konfigurētas izmantot Aktuālo kanālu, Korporatīvo mēneša kanālu vai Korporatīvo pusgada kanālu. Šādā gadījumā jums ir jāizmanto vismaz versija 1904.
+> - Project 2016 un Visio 2016, kas ir instalētas ar Click-to-Run tehnoloģiju, nevis izmantojot Windows Installer (MSI). Šādā gadījumā jums ir jāizmanto vismaz versija 1904.
 
 ## <a name="office-on-mac-devices"></a>Office Mac ierīcēs
 
