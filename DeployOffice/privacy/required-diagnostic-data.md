@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 8fd62619d8aff4b5dcb10d7a4c73710282e2cdd8
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: e8b54e50ca8fc080cf09b26d83f4b7f28bc81290
+ms.sourcegitcommit: 521da3465e94ca9d29f3c6f49b78dd5f952d9cc6
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794700"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49088126"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -74,11 +74,11 @@ Tālāk tabulā ir sniegts saraksts, kurā ir norādītas nepieciešamo diagnost
 
 > [!NOTE]
 > - Kategorijas tiek rādītas datu diagnostikas skatītājā, bet datu apakštipi netiek rādīti.
-> - Datu lauks, kas atzīmēts kā *novecojis* , ir noņemts vai drīz tiks noņemts no nepieciešamajiem diagnostikas datiem. Daži no šiem datu laukiem ir dublikāti, kas tika izveidoti diagnostikas datu modernizēšanas rezultātā un kas tika izmantoti, lai nodrošinātu nepārtrauktu pakalpojuma darbību reāllaika diagnostikas pārraudzības atskaitēm.
+> - Datu lauks, kas atzīmēts kā *novecojis*, ir noņemts vai drīz tiks noņemts no nepieciešamajiem diagnostikas datiem. Daži no šiem datu laukiem ir dublikāti, kas tika izveidoti diagnostikas datu modernizēšanas rezultātā un kas tika izmantoti, lai nodrošinātu nepārtrauktu pakalpojuma darbību reāllaika diagnostikas pārraudzības atskaitēm.
 
 ## <a name="categories-and-data-fields-that-are-common-for-all-events"></a>Kategorijas un datu lauki, kas ir kopīgi visiem notikumiem
 
-Neatkarīgi no kategorijas vai datu apakštipa pastāv informācija par notikumiem, kas attiecas uz visiem notikumiem. Šī kopīgā informācija, ko dažkārt dēvē par *datu līgumiem* , ir sakārtota kategorijās. Katrā kategorijā ir lauki, un šie lauki ir atsevišķa notikuma metadati un rekvizīti. Šo informāciju varat skatīt, izmantojot diagnostikas datu skatītāju.
+Neatkarīgi no kategorijas vai datu apakštipa pastāv informācija par notikumiem, kas attiecas uz visiem notikumiem. Šī kopīgā informācija, ko dažkārt dēvē par *datu līgumiem*, ir sakārtota kategorijās. Katrā kategorijā ir lauki, un šie lauki ir atsevišķa notikuma metadati un rekvizīti. Šo informāciju varat skatīt, izmantojot diagnostikas datu skatītāju.
 
 Kategorijas, kurās ir apkopota informācija par notikumiem, var iedalīt divās grupās:
 
@@ -95,11 +95,11 @@ Informācija par lietojumprogrammu. Visi lauki ir konstanti visām attiecīgās 
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Branch**  — zars, no kura nāk attiecīgā būvējuma versija. Ļauj mums noteikt, no kāda zara tipa nāk attiecīgais būvējums, lai mēs varētu pareizi piemērot labojumus.
-  - **InstallType**  — skaitītājs, kas norāda, kā lietotājs ir instalējis lietojumprogrammu. Ļauj mums noteikt, vai konkrēti instalēšanas mehānismi rada problēmas, kas nav sastopamas citos instalēšanas mehānismos.
-  - **Name**  — tās lietojumprogrammas nosaukums, kas nodrošina datus. Ļauj mums noteikt, kuras lietojumprogrammas darbībā ir radušās problēmas, lai mēs tās varētu atrisināt.
-  - **Platform**  — tās platformas plašā klasifikācija, kurā darbojas programma. Ļauj mums noteikt platformas, kurās, iespējams, ir radusies problēma, lai mēs varētu pareizi noteikt problēmas prioritāti.
-  - **Version**  — lietojumprogrammas versija. Ļauj mums noteikt, kurās produkta versijās ir radusies problēma, lai mēs varētu pareizi noteikt tās prioritāti.
+  - **Branch** — zars, no kura nāk attiecīgā būvējuma versija. Ļauj mums noteikt, no kāda zara tipa nāk attiecīgais būvējums, lai mēs varētu pareizi piemērot labojumus.
+  - **InstallType** — skaitītājs, kas norāda, kā lietotājs ir instalējis lietojumprogrammu. Ļauj mums noteikt, vai konkrēti instalēšanas mehānismi rada problēmas, kas nav sastopamas citos instalēšanas mehānismos.
+  - **Name** — tās lietojumprogrammas nosaukums, kas nodrošina datus. Ļauj mums noteikt, kuras lietojumprogrammas darbībā ir radušās problēmas, lai mēs tās varētu atrisināt.
+  - **Platform** — tās platformas plašā klasifikācija, kurā darbojas programma. Ļauj mums noteikt platformas, kurās, iespējams, ir radusies problēma, lai mēs varētu pareizi noteikt problēmas prioritāti.
+  - **Version** — lietojumprogrammas versija. Ļauj mums noteikt, kurās produkta versijās ir radusies problēma, lai mēs varētu pareizi noteikt tās prioritāti.
 
 #### <a name="client"></a>Klients 
 
@@ -107,7 +107,7 @@ Identifikators, kas ir saistīts ar Office instanci ierīcē. Konstants visām a
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Id**  — unikāls identifikators, kas ir piešķirts klientam Office instalēšanas laikā. Ļauj mums noteikt, vai problēmas ietekmē atlasītu instalāciju kopu, un ietekmēto lietotāju skaitu.
+  - **Id** — unikāls identifikators, kas ir piešķirts klientam Office instalēšanas laikā. Ļauj mums noteikt, vai problēmas ietekmē atlasītu instalāciju kopu, un ietekmēto lietotāju skaitu.
 
 #### <a name="consent"></a>Atļauja
 
@@ -115,37 +115,37 @@ Informācija saistībā ar lietotāja piekrišanu diagnostikas datiem un saistī
 
 Šajā kategorijā ir šādi lauki:
 
-  - **ControllerConnectedServicesSourceLocation**  — norāda, kā tika veikta lietotāja izvēle lietot neobligātos saistītos līdzekļus
+  - **ControllerConnectedServicesSourceLocation** — norāda, kā tika veikta lietotāja izvēle lietot neobligātos saistītos līdzekļus
 
-  - **ControllerConnectedServicesState**  — norāda, vai lietotājam ir piekļuve neobligātajiem saistītajiem līdzekļiem
+  - **ControllerConnectedServicesState** — norāda, vai lietotājam ir piekļuve neobligātajiem saistītajiem līdzekļiem
 
-  - **ControllerConnectedServicesStateConsentTime**  — norāda, kad lietotājs izvēlējās neobligāto saistīto līdzekļu statusu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
+  - **ControllerConnectedServicesStateConsentTime** — norāda, kad lietotājs izvēlējās neobligāto saistīto līdzekļu statusu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
-  - **DiagnosticConsentConsentTime**  — norāda, kad lietotājs ir iesniedzis atļauju diagnostikas datiem. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
+  - **DiagnosticConsentConsentTime** — norāda, kad lietotājs ir iesniedzis atļauju diagnostikas datiem. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
-  - **DiagnosticConsentLevel**  — norāda, kāds diagnostikas datu atļaujas līmenis ir piešķirts lietotājam
+  - **DiagnosticConsentLevel** — norāda, kāds diagnostikas datu atļaujas līmenis ir piešķirts lietotājam
 
-  - **DiagnosticConsentLevelSourceLocation**  — norāda, kā lietotājs ir iesniedzis atļauju diagnostikas datiem
+  - **DiagnosticConsentLevelSourceLocation** — norāda, kā lietotājs ir iesniedzis atļauju diagnostikas datiem
 
-  - **DownloadContentSourceLocation**  — norāda, kā lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
+  - **DownloadContentSourceLocation** — norāda, kā lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
 
-  - **DownloadContentState**  — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
+  - **DownloadContentState** — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu
 
-  - **DownloadContentStateConsentTime**  — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
+  - **DownloadContentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas lejupielādē tiešsaistes saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
-  - **ServiceConnectionState**  — norāda, vai lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
+  - **ServiceConnectionState** — norāda, vai lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
 
-  - **ServiceConnectionStateConsentTime**  — norāda, kad lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
+  - **ServiceConnectionStateConsentTime** — norāda, kad lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
-  - **ServiceConnectionStateSourceLocation**  — norāda, kā lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
+  - **ServiceConnectionStateSourceLocation** — norāda, kā lietotājs ir izvēlējies lietot vai nelietot visus saistītos līdzekļus
 
-  - **UserCategoryValue**  — norāda tā lietotāja tipu, kas sniedza atļauju. Kāds no MSAUser, AADUser vai LocalDeviceUser
+  - **UserCategoryValue** — norāda tā lietotāja tipu, kas sniedza atļauju. Kāds no MSAUser, AADUser vai LocalDeviceUser
 
-  - **UserContentDependentSourceLocation**  — norāda, kā tika veikta lietotāja izvēle iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
+  - **UserContentDependentSourceLocation** — norāda, kā tika veikta lietotāja izvēle iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
 
-  - **UserContentDependentState**  — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
+  - **UserContentDependentState** — norāda, vai lietotājs ir izvēlējies iespējot vai atspējot saistītos līdzekļus, kas analizē saturu
 
-  - **UserContentDependentStateConsentTime**  — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas analizē saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
+  - **UserContentDependentStateConsentTime** — norāda, kad lietotājs izvēlējās iespējot vai atspējot saistītos līdzekļus, kas analizē saturu. Datums tiks rādīts kā cilvēka lasāms datums vai kā datora kodēts datums, kas izskatās pēc liela skaitļa.
 
 #### <a name="device"></a>Ierīce 
 
@@ -153,9 +153,9 @@ Informācija par operētājsistēmu un būvējumu.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **OsBuild**  — ierīcē instalētās operētājsistēmas būvējuma numurs. Ļauj mums noteikt, vai problēmas ietekmē atsevišķas konkrētās operētājsistēmas servisa pakotnes vai versijas citādi nekā pārējās, lai mēs varētu noteikt problēmu prioritāti.
+  - **OsBuild** — ierīcē instalētās operētājsistēmas būvējuma numurs. Ļauj mums noteikt, vai problēmas ietekmē atsevišķas konkrētās operētājsistēmas servisa pakotnes vai versijas citādi nekā pārējās, lai mēs varētu noteikt problēmu prioritāti.
 
-  - **OsVersion**  — ierīcē instalētās galvenās operētājsistēmas versija. Ļauj mums noteikt, vai problēmas ietekmē konkrētu operētājsistēmas versiju vairāk par citām, lai mēs varētu noteikt problēmu prioritāti.
+  - **OsVersion** — ierīcē instalētās galvenās operētājsistēmas versija. Ļauj mums noteikt, vai problēmas ietekmē konkrētu operētājsistēmas versiju vairāk par citām, lai mēs varētu noteikt problēmu prioritāti.
 
 #### <a name="legacy"></a>Mantotie vienumi 
 
@@ -163,9 +163,9 @@ Nodrošina programmas ID un operētājsistēmas versiju saderībai ar esošajām
 
 Šajā kategorijā ir šādi lauki:
 
-  - **AppId**  — skaitītāja vērtība, kas apzīmē lietojumprogrammu, kas sūta datus. Ļauj mums noteikt, kuras lietojumprogrammas darbībā ir radušās problēmas, lai mēs tās varētu atrisināt.
+  - **AppId** — skaitītāja vērtība, kas apzīmē lietojumprogrammu, kas sūta datus. Ļauj mums noteikt, kuras lietojumprogrammas darbībā ir radušās problēmas, lai mēs tās varētu atrisināt.
 
-  - **OsEnv**  — skaitītājs, kas norāda operētājsistēmu, kurā darbojas sesija. Ļauj mums noteikt, kurā operētājsistēmā ir radusies problēma, lai mēs varētu noteikt problēmu prioritāti.
+  - **OsEnv** — skaitītājs, kas norāda operētājsistēmu, kurā darbojas sesija. Ļauj mums noteikt, kurā operētājsistēmā ir radusies problēma, lai mēs varētu noteikt problēmu prioritāti.
 
 #### <a name="release"></a>Laidiens 
 
@@ -173,13 +173,13 @@ Informācija saistībā ar laidiena kanālu. Visi lauki ir konstanti visām atti
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Audience**  — norāda konkrētās auditorijas grupas apakšauditoriju. Ļauj mums izsekot auditorijas grupu apakškopām, lai novērtētu problēmu izplatību un noteiktu to prioritāti.
+  - **Audience** — norāda konkrētās auditorijas grupas apakšauditoriju. Ļauj mums izsekot auditorijas grupu apakškopām, lai novērtētu problēmu izplatību un noteiktu to prioritāti.
 
-  - **AudienceGroup**  — norāda loku, no kura nāk dati. Ļauj mums pakāpeniski izlaist līdzekļus un identificēt potenciālās problēmas, pirms lielākā daļa lietotāju ir ar tām saskārušās.
+  - **AudienceGroup** — norāda loku, no kura nāk dati. Ļauj mums pakāpeniski izlaist līdzekļus un identificēt potenciālās problēmas, pirms lielākā daļa lietotāju ir ar tām saskārušās.
 
-  - **Channel**  — kanāls, kurā tiek izlaists produkts. Ļauj mums noteikt, vai problēma ietekmē kādu no mūsu izlaišanas kanāliem citādi nekā citus.
+  - **Channel** — kanāls, kurā tiek izlaists produkts. Ļauj mums noteikt, vai problēma ietekmē kādu no mūsu izlaišanas kanāliem citādi nekā citus.
 
-  - **Fork**  — norāda produkta sazarojumu. Ļauj izmantot mehānismu, lai apkopotu būvējumu numuru kopu datus nolūkā identificēt problēmas saistībā ar konkrēto laidienu.
+  - **Fork** — norāda produkta sazarojumu. Ļauj izmantot mehānismu, lai apkopotu būvējumu numuru kopu datus nolūkā identificēt problēmas saistībā ar konkrēto laidienu.
 
 #### <a name="session"></a>Sesija 
 
@@ -187,19 +187,19 @@ Informācija par procesa sesiju. Visi šīs sesijas lauki ir konstanti.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **ABConfigs**  — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
+  - **ABConfigs** — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
 
-  - **EcsETag**  — indikators no testējamo variantu sistēmas, kas apzīmē mašīnai nosūtītos testējamos variantus. Ļauj mums noteikt, kuri testējamie varianti, iespējams, ietekmē attiecīgo sesiju.
+  - **EcsETag** — indikators no testējamo variantu sistēmas, kas apzīmē mašīnai nosūtītos testējamos variantus. Ļauj mums noteikt, kuri testējamie varianti, iespējams, ietekmē attiecīgo sesiju.
 
-  - **Flags**  — karodziņi, kas izseko bitmasku un attiecas uz visu sesiju. Pašlaik galvenā uzmanība tiek pievērsta iztveršanai un diagnostikas datu opcijām. Ļauj mums kontrolēt attiecīgās sesijas darbību saistībā ar sesijas ģenerētajiem diagnostikas datiem.
+  - **Flags** — karodziņi, kas izseko bitmasku un attiecas uz visu sesiju. Pašlaik galvenā uzmanība tiek pievērsta iztveršanai un diagnostikas datu opcijām. Ļauj mums kontrolēt attiecīgās sesijas darbību saistībā ar sesijas ģenerētajiem diagnostikas datiem.
 
-  - **Id**  — unikāli identificē attiecīgo datu sesiju. Ļauj mums noteikt problēmu ietekmi, izvērtējot ietekmēto sesiju skaitu un nosakot, vai šīm sesijām ir kopīgi līdzekļi.
+  - **Id** — unikāli identificē attiecīgo datu sesiju. Ļauj mums noteikt problēmu ietekmi, izvērtējot ietekmēto sesiju skaitu un nosakot, vai šīm sesijām ir kopīgi līdzekļi.
 
-  - **ImpressionId**  — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
+  - **ImpressionId** — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
 
-  - **MeasuresEnabled**  — karodziņš, kas norāda, vai pašreizējie sesijas dati tiek iztverti. Ļauj mums noteikt, kā statistiski izvērtēt datus, kas tiek apkopoti no attiecīgās sesijas.
+  - **MeasuresEnabled** — karodziņš, kas norāda, vai pašreizējie sesijas dati tiek iztverti. Ļauj mums noteikt, kā statistiski izvērtēt datus, kas tiek apkopoti no attiecīgās sesijas.
 
-  - **SamplingClientIdValue**  — klienta ID, kas tiek izmantots, lai noteiktu, vai tas ir daļa no iztveršanas. Ļauj mums noteikt, kāpēc konkrēta sesija tika iekļauta vai neiekļauta iztveršanā.
+  - **SamplingClientIdValue** — klienta ID, kas tiek izmantots, lai noteiktu, vai tas ir daļa no iztveršanas. Ļauj mums noteikt, kāpēc konkrēta sesija tika iekļauta vai neiekļauta iztveršanā.
   
  - **SubAppName** — Office mobilo programmai šis lauks apzīmē pamatā esošo programmu, kas tiek lietota, lai atvērtu dokumentu. Piemēram, ja Office atverat Word dokumentu, šajā laukā tiek parādīta "Word" vērtība.
 
@@ -215,13 +215,13 @@ Sniedz komerciālās programmatūras SKU informāciju par nomnieku.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **PrimaryIdentityHash**  — identifikatora pseidonīms, kas apzīmē pašreizējo lietotāju.
+  - **PrimaryIdentityHash** — identifikatora pseidonīms, kas apzīmē pašreizējo lietotāju.
 
-  - **PrimaryIdentitySpace**  — tās identitātes tips, kas atrodas šeit: PrimaryIdentityHash. Kāds no MASCID, OrgIdCID vai UserObjectId.
+  - **PrimaryIdentitySpace** — tās identitātes tips, kas atrodas šeit: PrimaryIdentityHash. Kāds no MASCID, OrgIdCID vai UserObjectId.
 
-  - **TenantGroup**  — tā nomnieka tips, kam pieder abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta lietotāju kopā.
+  - **TenantGroup** — tā nomnieka tips, kam pieder abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta lietotāju kopā.
 
-  - **TenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+  - **TenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
 
 ### <a name="information-that-specifically-supports-diagnostic-data-collection"></a>*Informācija, kas īpaši atbalsta diagnostikas datu apkopošanu*
 
@@ -233,21 +233,21 @@ Informācija, lai izprastu paša pasākuma apkopošanas panākumus.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **AggMode**  — nosaka, kā sistēmai jāapkopo darbības rezultāti. Ļauj mums samazināt no lietotāja mašīnas augšupielādētās informācijas apjomu, apkopojot darbības rezultātus vienā notikumā, kas tiek periodiski nosūtīts.
+  - **AggMode** — nosaka, kā sistēmai jāapkopo darbības rezultāti. Ļauj mums samazināt no lietotāja mašīnas augšupielādētās informācijas apjomu, apkopojot darbības rezultātus vienā notikumā, kas tiek periodiski nosūtīts.
 
-  - **Count**  — notikušās darbības reižu skaits, ja skaits ir no apkopotā notikuma. Ļauj mums noteikt, cik bieži darbība izdevās vai neizdevās, pamatojoties uz darbības apkopošanas režīmu.
+  - **Count** — notikušās darbības reižu skaits, ja skaits ir no apkopotā notikuma. Ļauj mums noteikt, cik bieži darbība izdevās vai neizdevās, pamatojoties uz darbības apkopošanas režīmu.
 
-  - **CV**  — vērtība, kas norāda relāciju starp darbībām un pakārtotajām darbībām. Ļauj mums atjaunot relāciju starp ligzdotajām darbībām.
+  - **CV** — vērtība, kas norāda relāciju starp darbībām un pakārtotajām darbībām. Ļauj mums atjaunot relāciju starp ligzdotajām darbībām.
 
-  - **Duration**  — darbības izpildei nepieciešamais laiks. Ļauj mums noteikt veiktspējas problēmas, kas negatīvi ietekmē lietotāju pieredzi.
+  - **Duration** — darbības izpildei nepieciešamais laiks. Ļauj mums noteikt veiktspējas problēmas, kas negatīvi ietekmē lietotāju pieredzi.
 
-  - **Result** . **Code**  — programmas definēts kods, lai identificētu noteiktu rezultātu. Ļauj mums noteikt specifiskāku informāciju par konkrēto kļūmi, piemēram, kļūmes kodu, ko var izmantot, lai klasificētu un novērstu problēmas.
+  - **Result**.**Code** — programmas definēts kods, lai identificētu noteiktu rezultātu. Ļauj mums noteikt specifiskāku informāciju par konkrēto kļūmi, piemēram, kļūmes kodu, ko var izmantot, lai klasificētu un novērstu problēmas.
 
-  - **Result.Tag**  — vesela skaitļa tags, kas nosaka atrašanās vietu kodā, kurā tika ģenerēts rezultāts. Ļauj mums skaidri noteikt atrašanās vietu kodā, kurā tika ģenerēts rezultāts, kas iespējo kļūmju klasifikāciju.
+  - **Result.Tag** — vesela skaitļa tags, kas nosaka atrašanās vietu kodā, kurā tika ģenerēts rezultāts. Ļauj mums skaidri noteikt atrašanās vietu kodā, kurā tika ģenerēts rezultāts, kas iespējo kļūmju klasifikāciju.
 
-  - **Result** . **Type**  — rezultāta koda tips. Norāda nosūtītā rezultātu koda tipu, lai varētu pareizi interpretēt vērtību.
+  - **Result**.**Type** — rezultāta koda tips. Norāda nosūtītā rezultātu koda tipu, lai varētu pareizi interpretēt vērtību.
 
-  - **Success**  — karodziņš, kas norāda, vai darbība izdevās vai neizdevās. Ļauj mums noteikt, vai lietotāja veiktās darbības produktā ir sekmīgas vai nesekmīgas. Ļauj mums noteikt problēmas, kas ietekmē lietotāju.
+  - **Success** — karodziņš, kas norāda, vai darbība izdevās vai neizdevās. Ļauj mums noteikt, vai lietotāja veiktās darbības produktā ir sekmīgas vai nesekmīgas. Ļauj mums noteikt problēmas, kas ietekmē lietotāju.
 
 #### <a name="application"></a>Lietojumprogramma 
 
@@ -255,25 +255,25 @@ Informācija par tās lietojumprogrammas instalēšanu, par kuru tiek apkopoti n
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Architecture**  — lietojumprogrammas arhitektūra. Ļauj mums klasificēt kļūdas, kas var būt specifiskas lietojumprogrammas arhitektūrai.
+  - **Architecture** — lietojumprogrammas arhitektūra. Ļauj mums klasificēt kļūdas, kas var būt specifiskas lietojumprogrammas arhitektūrai.
 
-  - **Click2RunPackageVersion**  — tās tehnoloģijas Click-To-Run pakotnes versijas numurs, kas tika izmantota, lai instalētu programmu. Ļauj mums identificēt ar iestatīšanu saistītās problēmas, nosakot tās instalēšanas programmas versiju, kas tika izmantota, lai instalētu Office.
+  - **Click2RunPackageVersion** — tās tehnoloģijas Click-To-Run pakotnes versijas numurs, kas tika izmantota, lai instalētu programmu. Ļauj mums identificēt ar iestatīšanu saistītās problēmas, nosakot tās instalēšanas programmas versiju, kas tika izmantota, lai instalētu Office.
 
-  - **DistributionChannel**  — kanāls, kurā ir izvietota programma. Ļauj mums sadalīt ienākošos datus, lai mēs varētu noteikt, vai problēmas ietekmē auditoriju.
+  - **DistributionChannel** — kanāls, kurā ir izvietota programma. Ļauj mums sadalīt ienākošos datus, lai mēs varētu noteikt, vai problēmas ietekmē auditoriju.
 
-  - **InstallMethod**  — vai pašreizējais Office būvējums tika jaunināts, atritināts vai instalēts no jauna.
+  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai instalēts no jauna.
 
-  - **IsClickToRunInstall**  — karodziņš, kas norāda, vai tika veikta Click-To-Run instalācija. Ļauj mums noteikt problēmas, kas varētu būt specifiskas Click-To-Run instalēšanas mehānismam.
+  - **IsClickToRunInstall** — karodziņš, kas norāda, vai tika veikta Click-To-Run instalācija. Ļauj mums noteikt problēmas, kas varētu būt specifiskas Click-To-Run instalēšanas mehānismam.
 
-  - **IsDebug**  — karodziņš, kas norāda, vai Office būvējums ir atkļūdošanas būvējums. Ļauj mums noteikt, vai problēmas rodas no atkļūdošanas būvējumiem, kas, iespējams, darbojas atšķirīgi.
+  - **IsDebug** — karodziņš, kas norāda, vai Office būvējums ir atkļūdošanas būvējums. Ļauj mums noteikt, vai problēmas rodas no atkļūdošanas būvējumiem, kas, iespējams, darbojas atšķirīgi.
 
-  - **IsInstalledOnExternalStorage**  — karodziņš, kas norāda, vai Office ir instalēts ārējās atmiņas ierīcē. Ļauj mums noteikt, vai problēmas ir saistītas ar ārējās atmiņas ierīces atrašanās vietu.
+  - **IsInstalledOnExternalStorage** — karodziņš, kas norāda, vai Office ir instalēts ārējās atmiņas ierīcē. Ļauj mums noteikt, vai problēmas ir saistītas ar ārējās atmiņas ierīces atrašanās vietu.
 
-  - **IsOEMInstalled**  — karodziņš, kas norāda, vai Office instalēja oriģinālā aprīkojuma ražotājs (OEM). Ļauj mums noteikt, vai lietojumprogramma tika instalēta, izmantojot OEM. Tas mums var palīdzēt klasificēt un noteikt problēmas.
+  - **IsOEMInstalled** — karodziņš, kas norāda, vai Office instalēja oriģinālā aprīkojuma ražotājs (OEM). Ļauj mums noteikt, vai lietojumprogramma tika instalēta, izmantojot OEM. Tas mums var palīdzēt klasificēt un noteikt problēmas.
 
-  - **PreviousVersion**  — Tā Office versija, kas bija iepriekš instalēta datorā. Ļauj atgriezties uz iepriekšējo versiju, ja pašreizējā versijā ir radusies problēma.
+  - **PreviousVersion** — Tā Office versija, kas bija iepriekš instalēta datorā. Ļauj atgriezties uz iepriekšējo versiju, ja pašreizējā versijā ir radusies problēma.
 
-  - **ProcessFileName**  — lietojumprogrammas faila nosaukums. Ļauj mums noteikt tās izpildāmā procesa nosaukumu, kas ģenerē datus, jo var būt vairāki dažādu procesu failu nosaukumi, kuriem ir tās pašas programmas nosaukums.
+  - **ProcessFileName** — lietojumprogrammas faila nosaukums. Ļauj mums noteikt tās izpildāmā procesa nosaukumu, kas ģenerē datus, jo var būt vairāki dažādu procesu failu nosaukumi, kuriem ir tās pašas programmas nosaukums.
 
 #### <a name="client"></a>Klients
 
@@ -281,7 +281,7 @@ Informācija par Office klientu.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **FirstRunTime**  — pirmā reize, kad tika palaists klients. Ļauj izprast, cik ilgi klientā bija instalēta sistēma Office.
+  - **FirstRunTime** — pirmā reize, kad tika palaists klients. Ļauj izprast, cik ilgi klientā bija instalēta sistēma Office.
 
 #### <a name="device"></a>Ierīce
 
@@ -289,59 +289,59 @@ Informācija par ierīces konfigurāciju un iespējām.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **DigitizerInfo**  — informācija par mašīnas izmantoto ciparotāju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **DigitizerInfo** — informācija par mašīnas izmantoto ciparotāju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **FormFactor**  — norāda, kādam formas faktoram atbilst ierīce, kas sūta informāciju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **FormFactor** — norāda, kādam formas faktoram atbilst ierīce, kas sūta informāciju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **FormFactorFamily**  — norāda, kādam formas faktoram atbilst ierīce, kas sūta informāciju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **FormFactorFamily** — norāda, kādam formas faktoram atbilst ierīce, kas sūta informāciju. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **HorizontalResolution**  — horizontālā ierīces ekrāna izšķirtspēja. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **HorizontalResolution** — horizontālā ierīces ekrāna izšķirtspēja. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **Id**  — unikāls ierīces identifikators. Ļauj mums noteikt problēmu izplatību ierīču kopā.
+  - **Id** — unikāls ierīces identifikators. Ļauj mums noteikt problēmu izplatību ierīču kopā.
 
-  - **IsEDPPolicyEnabled**  — karodziņš, kas norāda, vai mašīnā ir iespējota uzlabotā datu aizsardzība. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **IsEDPPolicyEnabled** — karodziņš, kas norāda, vai mašīnā ir iespējota uzlabotā datu aizsardzība. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **IsTerminalServer**  — karodziņš, kas ļauj noteikt, vai mašīna ir termināļa serveris. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **IsTerminalServer** — karodziņš, kas ļauj noteikt, vai mašīna ir termināļa serveris. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **Manufacturer**  — ierīces ražotājs. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **Manufacturer** — ierīces ražotājs. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **Model**  — ierīces modelis. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **Model** — ierīces modelis. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **MotherboardUUIDHash**  — mātesplates unikālā identifikatora jaucējkods. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **MotherboardUUIDHash** — mātesplates unikālā identifikatora jaucējkods. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **Name**  — ierīces nosaukums. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **Name** — ierīces nosaukums. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
   
-  - **NetworkCost**  — norāda tīkla izmaksas vai tipu, piemēram, mērāms vai mērāms virs ierobežojuma.
+  - **NetworkCost** — norāda tīkla izmaksas vai tipu, piemēram, mērāms vai mērāms virs ierobežojuma.
   
-  - **NetworkCountry**  — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
+  - **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
 
-  - **NumProcPhysCores**  — fizisko kodolu skaits mašīnā. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **NumProcPhysCores** — fizisko kodolu skaits mašīnā. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **OsLocale**  — instalētās operētājsistēmas lokalizācija. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **OsLocale** — instalētās operētājsistēmas lokalizācija. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **ProcessorArchitecture**  — procesora arhitektūra. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **ProcessorArchitecture** — procesora arhitektūra. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **ProcessorCount**  — mašīnas procesoru skaits. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **ProcessorCount** — mašīnas procesoru skaits. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **ProcSpeedMHz**  — procesora ātrums. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **ProcSpeedMHz** — procesora ātrums. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **RamMB**  — ierīces atmiņas apjoms. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **RamMB** — ierīces atmiņas apjoms. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **ScreenDepth**  — ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **ScreenDepth** — ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **ScreenDPI**  — ekrāna DPI vērtība. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **ScreenDPI** — ekrāna DPI vērtība. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **SusClientId**  — tās ierīces Windows Update ID, kurā Office darbojas.
+  - **SusClientId** — tās ierīces Windows Update ID, kurā Office darbojas.
 
-  - **SystemVolumeFreeSpaceMB**  — sistēmas sējumā pieejamā brīvā vieta. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **SystemVolumeFreeSpaceMB** — sistēmas sējumā pieejamā brīvā vieta. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **SystemVolumeSizeMB**  — mašīnas sistēmas sējuma apjoms. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **SystemVolumeSizeMB** — mašīnas sistēmas sējuma apjoms. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **VerticalResolution**  — vertikālā ierīces ekrāna izšķirtspēja. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **VerticalResolution** — vertikālā ierīces ekrāna izšķirtspēja. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **WindowErrorReportingMachineId**  — unikāls mašīnas identifikators, ko nodrošina Windows kļūdu uzrādīšana. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **WindowErrorReportingMachineId** — unikāls mašīnas identifikators, ko nodrošina Windows kļūdu uzrādīšana. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
-  - **WindowSqmMachineId**  — unikāls mašīnas identifikators, ko nodrošina Windows SQM. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
+  - **WindowSqmMachineId** — unikāls mašīnas identifikators, ko nodrošina Windows SQM. Ļauj mums klasificēt datus atkarībā no ierīces rakursa.
 
 #### <a name="event"></a>Notikums 
 
@@ -349,35 +349,35 @@ Notikumam raksturīga informācija, tostarp tā unikālais identifikators sesij�
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Contract**  — to līgumu saraksts, kurus ievieš notikums. Ļauj mums novērtēt, kādi dati ir daļa no atsevišķā notikuma, lai mēs to varētu efektīvi apstrādāt.
+  - **Contract** — to līgumu saraksts, kurus ievieš notikums. Ļauj mums novērtēt, kādi dati ir daļa no atsevišķā notikuma, lai mēs to varētu efektīvi apstrādāt.
 
-  - **CV**  — vērtība, kas ļauj mums noteikt savstarpēji saistītus notikumus. Tiek izmantota diagnostikā, ļaujot mums noteikt saistīto darbību vai notikumu modeļus.
+  - **CV** — vērtība, kas ļauj mums noteikt savstarpēji saistītus notikumus. Tiek izmantota diagnostikā, ļaujot mums noteikt saistīto darbību vai notikumu modeļus.
 
-  - **Flags**  — informācija, kas tiek izmantota, lai mainītu attiecīgā notikuma atbildi. Tiek izmantots nolūkā pārvaldīt veidu, kā notikums tiek apstrādāts, lai augšupielādētu datus korporācijai Microsoft.
+  - **Flags** — informācija, kas tiek izmantota, lai mainītu attiecīgā notikuma atbildi. Tiek izmantots nolūkā pārvaldīt veidu, kā notikums tiek apstrādāts, lai augšupielādētu datus korporācijai Microsoft.
 
-  - **Id**  — unikāls notikuma identifikators. Ļauj mums unikāli identificēt saņemtos notikumus.
+  - **Id** — unikāls notikuma identifikators. Ļauj mums unikāli identificēt saņemtos notikumus.
 
   - **Level** — apzīmē notikuma veidu.
 
-  - **Name**  — notikuma nosaukums. Ļauj noteikt notikumu, kas tiek nosūtīts no klienta.
+  - **Name** — notikuma nosaukums. Ļauj noteikt notikumu, kas tiek nosūtīts no klienta.
 
-  - **Rule**  — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus
+  - **Rule** — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus
 
-  - **RuleId**  — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus.
+  - **RuleId** — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus.
 
-  - **RuleInterfaces**  — jebkurš interfeiss, kuru ievieš konkrēta kārtula. Ļauj mums klasificēt un importēt datus atbilstoši to struktūrai, kas vienkāršo datu apstrādi.
+  - **RuleInterfaces** — jebkurš interfeiss, kuru ievieš konkrēta kārtula. Ļauj mums klasificēt un importēt datus atbilstoši to struktūrai, kas vienkāršo datu apstrādi.
 
-  - **RuleVersion**  — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus.
+  - **RuleVersion** — tās kārtulas identifikators, kas ģenerēja datus, ja tos ģenerēja kārtula. Ļauj mums noteikt datu avotu, lai mēs varētu pārbaudīt un pārvaldīt notikuma parametrus.
 
   - **SampleRate** — norāda lietotāju, kas sūta šo datu fragmentu, skaitu procentos. Tas ļauj mums veikt datu statistisko analīzi un nodrošina to, ka ne visiem lietotājiem ir jānosūta biežāk izmantotie datu punkti.
 
-  - **SchemaVersion**  — shēmas versija, kas tiek izmantota, lai ģenerētu diagnostikas datus. Nepieciešams, lai pārvaldītu klienta sūtītos datus. Tādējādi laika gaitā var mainīt, kādi dati tiek sūtīti no katra klienta.
+  - **SchemaVersion** — shēmas versija, kas tiek izmantota, lai ģenerētu diagnostikas datus. Nepieciešams, lai pārvaldītu klienta sūtītos datus. Tādējādi laika gaitā var mainīt, kādi dati tiek sūtīti no katra klienta.
 
-  - **Sequence**  — skaitītājs, kas identificē secību, kādā tika ģenerēts notikums klientā. Ļauj kārtot saņemtos datus, lai mēs varētu noteikt darbības, kas, iespējams, izraisīja problēmu, kas ietekmē klientus.
+  - **Sequence** — skaitītājs, kas identificē secību, kādā tika ģenerēts notikums klientā. Ļauj kārtot saņemtos datus, lai mēs varētu noteikt darbības, kas, iespējams, izraisīja problēmu, kas ietekmē klientus.
 
-  - **Source**  — avota kanāls, kas tika izmantots, lai augšupielādētu datus. Nepieciešams, lai pārraudzītu mūsu augšupielādes kanālu vispārējo darbspēju un palīdzētu noteikt problēmas saistībā ar augšupielādes kanālu. Tas ļauj kontrolēt atsevišķus augšupielādes kanālus, lai nodrošinātu to atbilstību prasībām.
+  - **Source** — avota kanāls, kas tika izmantots, lai augšupielādētu datus. Nepieciešams, lai pārraudzītu mūsu augšupielādes kanālu vispārējo darbspēju un palīdzētu noteikt problēmas saistībā ar augšupielādes kanālu. Tas ļauj kontrolēt atsevišķus augšupielādes kanālus, lai nodrošinātu to atbilstību prasībām.
 
-  - **Time**  — laiks, kad klientā tika ģenerēts notikums. Ļauj mums sinhronizēt un pārbaudīt to notikumu secību, kas ir ģenerēti klientā, kā arī izveidot veiktspējas rādītājus lietošanas norādījumiem. 
+  - **Time** — laiks, kad klientā tika ģenerēts notikums. Ļauj mums sinhronizēt un pārbaudīt to notikumu secību, kas ir ģenerēti klientā, kā arī izveidot veiktspējas rādītājus lietošanas norādījumiem. 
 
 #### <a name="host"></a>Viesošana
 
@@ -385,11 +385,11 @@ Informācija par lietojumprogrammu, kurā tiek viesota iegulta lietojumprogramma
 
 Šajā kategorijā ir šādi lauki:
 
-  - **Id**  — unikāls identifikators, kuru iegultā lietojumprogramma piešķir programmai, kas kalpo kā viesotājs.
+  - **Id** — unikāls identifikators, kuru iegultā lietojumprogramma piešķir programmai, kas kalpo kā viesotājs.
 
-  - **SessionId**  — globāli unikāls identifikators resursdatora sesijai.
+  - **SessionId** — globāli unikāls identifikators resursdatora sesijai.
 
-  - **Version**  — resursdatora galvenās izpildāmās programmas versijas identifikators.
+  - **Version** — resursdatora galvenās izpildāmās programmas versijas identifikators.
 
 #### <a name="legacy"></a>Mantotie vienumi
 
@@ -397,13 +397,13 @@ Mantotās sistēmas saderībai nepieciešamā informācija.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **OsBuild**  — konkrētais operētājsistēmas būvējuma numurs. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
+  - **OsBuild** — konkrētais operētājsistēmas būvējuma numurs. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
 
-  - **OsBuildRevision**  — operētājsistēmas būvējuma pārskatījuma numurs. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
+  - **OsBuildRevision** — operētājsistēmas būvējuma pārskatījuma numurs. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
 
-  - **OsMinorVersion**  — operētājsistēmas papildversija. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
+  - **OsMinorVersion** — operētājsistēmas papildversija. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
 
-  - **OsVersionString**  — vienota virkne, kas norāda operētājsistēmas būvējuma numuru. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
+  - **OsVersionString** — vienota virkne, kas norāda operētājsistēmas būvējuma numuru. Ļauj mums noteikt, kurai operētājsistēmas versijai pieder diagnostikas dati, lai noteiktu problēmas prioritāti.
 
 #### <a name="session"></a>Sesija
 
@@ -411,31 +411,31 @@ Informācija par procesa sesiju.
 
 Šajā kategorijā ir šādi lauki:
 
-  - **ABConfigsDelta**  — izseko atšķirībai starp pašreizējiem ABConfigs datiem un iepriekšējo vērtību. Ļauj mums izsekot jauniem mašīnā esošiem testējamiem variantiem, lai palīdzētu noteikt, vai problēma ir radusies jauna testējamā varianta dēļ.
+  - **ABConfigsDelta** — izseko atšķirībai starp pašreizējiem ABConfigs datiem un iepriekšējo vērtību. Ļauj mums izsekot jauniem mašīnā esošiem testējamiem variantiem, lai palīdzētu noteikt, vai problēma ir radusies jauna testējamā varianta dēļ.
 
-  - **CollectibleClassification**  — informācijas klases, kuras sesija var apkopot. Atļauj sesiju filtrēšanu, pamatojoties uz sesiju datiem.
+  - **CollectibleClassification** — informācijas klases, kuras sesija var apkopot. Atļauj sesiju filtrēšanu, pamatojoties uz sesiju datiem.
 
-  - **DisableTelemetry**  — karodziņš, kas norāda, vai ir iestatīta atslēga DisableTelemetry. Ļauj mums uzzināt, vai sesija ziņo par citiem diagnostikas datiem, kas nav EssentialServiceMetadata.
+  - **DisableTelemetry** — karodziņš, kas norāda, vai ir iestatīta atslēga DisableTelemetry. Ļauj mums uzzināt, vai sesija ziņo par citiem diagnostikas datiem, kas nav EssentialServiceMetadata.
 
-  - **SamplingClientIdValue**  — tās atslēgas vērtība, kas tiek izmantota iztveršanas noteikšanai. Ļauj mums noteikt, kāpēc tika iztverta (vai neiztverta) sesija.
+  - **SamplingClientIdValue** — tās atslēgas vērtība, kas tiek izmantota iztveršanas noteikšanai. Ļauj mums noteikt, kāpēc tika iztverta (vai neiztverta) sesija.
 
-  - **SamplingDeviceIdValue**  — tās atslēgas vērtība, kas tiek izmantota iztveršanas noteikšanai. Ļauj mums noteikt, kāpēc tika iztverta (vai neiztverta) sesija.
+  - **SamplingDeviceIdValue** — tās atslēgas vērtība, kas tiek izmantota iztveršanas noteikšanai. Ļauj mums noteikt, kāpēc tika iztverta (vai neiztverta) sesija.
 
-  - **SamplingKey**  — atslēga, kas tiek izmantota, lai noteiktu, vai sesija ir iztverta. Ļauj mums saprast, kā atsevišķas sesijas izvēlas savu iztveršanas statusu.
+  - **SamplingKey** — atslēga, kas tiek izmantota, lai noteiktu, vai sesija ir iztverta. Ļauj mums saprast, kā atsevišķas sesijas izvēlas savu iztveršanas statusu.
 
-  - **SamplingMethod**  — metode, kas tiek izmantota, lai noteiktu iztveršanas politiku. Ļauj mums saprast, kādi dati nāk no sesijas.
+  - **SamplingMethod** — metode, kas tiek izmantota, lai noteiktu iztveršanas politiku. Ļauj mums saprast, kādi dati nāk no sesijas.
 
-  - **SamplingSessionKValue**  — papildu iztveršanas metadati. Izmanto, lai palīdzētu novērtēt saņemto datu statistikas nozīmi.
+  - **SamplingSessionKValue** — papildu iztveršanas metadati. Izmanto, lai palīdzētu novērtēt saņemto datu statistikas nozīmi.
 
-  - **SamplingSessionNValue**  — papildu iztveršanas metadati. Izmanto, lai palīdzētu novērtēt saņemto datu statistikas nozīmi.
+  - **SamplingSessionNValue** — papildu iztveršanas metadati. Izmanto, lai palīdzētu novērtēt saņemto datu statistikas nozīmi.
 
-  - **Sequence**  — unikāls skaitlisks sesijas identifikators. Ļauj kārtot sesijas, lai analizētu iespējamās problēmas.
+  - **Sequence** — unikāls skaitlisks sesijas identifikators. Ļauj kārtot sesijas, lai analizētu iespējamās problēmas.
 
-  - **Start**  — procesa sesijas palaišanas laiks. Ļauj mums noteikt sesijas sākumu.
+  - **Start** — procesa sesijas palaišanas laiks. Ļauj mums noteikt sesijas sākumu.
 
-  - **TelemetryPermissionLevel**  — vērtība, kas norāda, kāda līmeņa diagnostikas datiem ir piekritis lietotājs. Ļauj mums saprast, kāda līmeņa diagnostikas datus var sagaidīt no sesijas.
+  - **TelemetryPermissionLevel** — vērtība, kas norāda, kāda līmeņa diagnostikas datiem ir piekritis lietotājs. Ļauj mums saprast, kāda līmeņa diagnostikas datus var sagaidīt no sesijas.
 
-  - **TimeZoneBiasInMinutes**  — starpība minūtēs starp UTC un vietējo laiku. Ļauj normalizēt UTC laiku atpakaļ uz vietējo laiku.
+  - **TimeZoneBiasInMinutes** — starpība minūtēs starp UTC un vietējo laiku. Ļauj normalizēt UTC laiku atpakaļ uz vietējo laiku.
 
 ## <a name="data-fields-that-are-common-for-onenote-events"></a>OneNote notikumiem kopīgie datu lauki
 
@@ -448,9 +448,9 @@ Zemāk norādītie datu lauki ir kopīgi visiem OneNote notikumiem Mac, iOS un A
 
 - **Activity_AggMode** —  norāda sistēmai, kā apkopot darbības rezultātus. Ļauj mums samazināt no lietotāja mašīnas augšupielādētās informācijas apjomu, apkopojot darbības rezultātus vienā notikumā, kas tiek periodiski nosūtīts.
 
-- **Count**  — notikušās darbības reižu skaits, ja skaits ir no apkopotā notikuma. Ļauj mums noteikt, cik bieži darbība izdevās vai neizdevās, pamatojoties uz darbības apkopošanas režīmu.
+- **Count** — notikušās darbības reižu skaits, ja skaits ir no apkopotā notikuma. Ļauj mums noteikt, cik bieži darbība izdevās vai neizdevās, pamatojoties uz darbības apkopošanas režīmu.
 
-- **Activity_CV**  — vērtība, kas identificē saistību starp darbībām un pakārtotajām darbībām. Ļauj mums atjaunot relāciju starp ligzdotajām darbībām.
+- **Activity_CV** — vērtība, kas identificē saistību starp darbībām un pakārtotajām darbībām. Ļauj mums atjaunot relāciju starp ligzdotajām darbībām.
 
 - **Activity_DetachedDurationInMicroseconds** — laiks, kad darbība ir dīkstāvē un faktiski neveic darbu, bet šis laiks joprojām ieskaitītas darbības kopējā laikā.  
 
@@ -502,25 +502,25 @@ Zemāk norādītie datu lauki ir kopīgi visiem OneNote notikumiem Mac, iOS un A
 
 - **Release_AppStore** — karodziņš, kas norāda uz to, vai būvējums nāk no AppStore.
 
-- **Release_Audience**  — norāda konkrētās auditorijas grupas apakšauditoriju. Ļauj mums izsekot auditorijas grupu apakškopām, lai novērtētu problēmu izplatību un noteiktu to prioritāti.
+- **Release_Audience** — norāda konkrētās auditorijas grupas apakšauditoriju. Ļauj mums izsekot auditorijas grupu apakškopām, lai novērtētu problēmu izplatību un noteiktu to prioritāti.
 
-- **Release_AudienceGroup**  — norāda loku, no kura nāk dati. Ļauj mums pakāpeniski izlaist līdzekļus un identificēt potenciālās problēmas, pirms lielākā daļa lietotāju ir ar tām saskārušās.
+- **Release_AudienceGroup** — norāda loku, no kura nāk dati. Ļauj mums pakāpeniski izlaist līdzekļus un identificēt potenciālās problēmas, pirms lielākā daļa lietotāju ir ar tām saskārušās.
 
-- **Release_Channel**  — kanāls, kurā tiek izlaists produkts. Ļauj mums noteikt, vai problēma ietekmē kādu no mūsu izlaišanas kanāliem citādi nekā citus.
+- **Release_Channel** — kanāls, kurā tiek izlaists produkts. Ļauj mums noteikt, vai problēma ietekmē kādu no mūsu izlaišanas kanāliem citādi nekā citus.
 
 - **RunningMode** — norāda, vai lietojumprogrammu palaiž lietotājs vai sistēmas process.
 
 - **SchemaVersion** — norāda pašreizējo telemetrijas shēmas versiju OneNote telemetrijas kanālā.
 
-- **session_EcsETag**  — indikators no testējamo variantu sistēmas, kas apzīmē mašīnai nosūtītos testējamos variantus. Ļauj mums noteikt, kuri testējamie varianti, iespējams, ietekmē attiecīgo sesiju.
+- **session_EcsETag** — indikators no testējamo variantu sistēmas, kas apzīmē mašīnai nosūtītos testējamos variantus. Ļauj mums noteikt, kuri testējamie varianti, iespējams, ietekmē attiecīgo sesiju.
 
-- **Session_ImpressionId**  — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
+- **Session_ImpressionId** — norāda testējamo variantu kopu, kas darbojas konkrētajā sesijā. Ļauj mums noteikt, kuri konkrētie testējamie varianti darbojas sesijā, lai mēs varētu noteikt, vai testējamā versija ir tās problēmas cēlonis, kas ietekmē lietotājus.
 
-- **SessionCorrelationId**  — globāli unikāls identifikators resursdatora sesijai.
+- **SessionCorrelationId** — globāli unikāls identifikators resursdatora sesijai.
 
 - **SH_ErrorCode** —  darbības neizdošanās gadījumā norāda kļūdas kodu, ja ir.
 
-- **Tag**  — vesela skaitļa tags, kas nosaka atrašanās vietu kodā, kurā tiek ģenerēts telemetrijas notikums.
+- **Tag** — vesela skaitļa tags, kas nosaka atrašanās vietu kodā, kurā tiek ģenerēts telemetrijas notikums.
 
 - **UserInfo_IdType** — virkne, kas norāda lietotāja konta veidu.
 
@@ -550,13 +550,13 @@ Tālāk norādītie datu lauki ir kopīgi visiem Outlook notikumiem iOS un Andro
 
 - **ad_id** — unikālais reklāmas identifikators
 
-- **app_version** — instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
+- **app_version**— instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
 
 - **AppInfo.ETag** — unikāls identifikators mūsu līdzekļu laidienu pārvaldībai, kas palīdz mums atklāt problēmas, kas ietekmē konkrētu līdzekļu izlaišanu
 
 - **AppInfo.Language** — pašreizējais ierīces valodas iestatījums, kas palīdz mums atklāt problēmas, kas ietekmē konkrētas valodas
 
-- **AppInfo.Version** — instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
+- **AppInfo.Version**— instalētās lietojumprogrammas pašreizējā versija palīdz mums noteikt problēmas ar konkrētām lietojumprogrammu versijām
 
 - **ci** — unikāls, ierīcei specifisks identifikatora pseidonīms
 
@@ -654,11 +654,11 @@ Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar Android notikumiem
 
 - **process_bitness** — procesa bitu skaits (32 vai 64 biti) lietojumprogrammai palīdz mums atklāt ierīces bitu skaitam raksturīgas problēmas
 
-- **webview_kernel_version** : Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **webview_kernel_version**: Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
-- **webview_package_name** : ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **webview_package_name**: ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
-- **webview_package_version** : ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **webview_package_version**: ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
 
 ## <a name="software-setup-and-inventory-data-events"></a>Programmatūras iestatīšanas un inventāra datu notikumi
@@ -692,17 +692,17 @@ Attiecas uz visām win32 lietojumprogrammām. Palīdz mums noteikt Office komple
 
 Tiek apkopoti šādi lauki:
 
-- **build**  — pašreiz instalētā Office versija
+- **build** — pašreiz instalētā Office versija
 
-- **channel**  — Office izplatīšanas kanāls
+- **channel** — Office izplatīšanas kanāls
 
-- **errorCode**  — kļūdas kods, kas norāda uz kļūmi
+- **errorCode** — kļūdas kods, kas norāda uz kļūmi
 
-- **errorMessage**  — papildu informācija par kļūdu
+- **errorMessage** — papildu informācija par kļūdu
 
-- **status**  — pašreizējais atjauninājuma statuss
+- **status** — pašreizējais atjauninājuma statuss
 
-- **targetBuild**  — versija, uz kuru tiek atjaunināta sistēma Office
+- **targetBuild** — versija, uz kuru tiek atjaunināta sistēma Office
 
 #### <a name="officecompliancefileformatballotdisplayedonfirstboot"></a>Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
 
@@ -731,45 +731,45 @@ Nolūkā izlabot un pabeigt datus apkopo Office metadatus, izmantojot UTC, lai s
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **abConfigs**  — saraksts, kurā ir uzskaitīti līdzekļu ID, lai noteiktu, kādi līdzekļi ir iespējoti klientā vai kuri līdzekļi ir tukši, ja dati netiek apkopoti.
+- **abConfigs** — saraksts, kurā ir uzskaitīti līdzekļu ID, lai noteiktu, kādi līdzekļi ir iespējoti klientā vai kuri līdzekļi ir tukši, ja dati netiek apkopoti.
 
-- **abFlights**  — "NoNL:NoFlights", ja nav iestatīti līdzekļu testējamie varianti. Pretējā gadījumā: "holdoutinfo=unknown".
+- **abFlights** — "NoNL:NoFlights", ja nav iestatīti līdzekļu testējamie varianti. Pretējā gadījumā: "holdoutinfo=unknown".
 
-- **AppSessionGuid**  — tās attiecīgās lietojumprogrammas sesijas identifikators, kuras sākums ir procesa izveides laiks un kas ilgst līdz procesa beigām. Tas ir formatēts kā standarta 128 bitu GUID, ko veido četras daļas. Šo četru daļu secība ir: (1) 32 bitu procesa ID (2) 16 bitu sesijas ID (3) 16 bitu palaišanas ID (4) 64 bitu procesa izveides laiks: UTC 100ns
+- **AppSessionGuid** — tās attiecīgās lietojumprogrammas sesijas identifikators, kuras sākums ir procesa izveides laiks un kas ilgst līdz procesa beigām. Tas ir formatēts kā standarta 128 bitu GUID, ko veido četras daļas. Šo četru daļu secība ir: (1) 32 bitu procesa ID (2) 16 bitu sesijas ID (3) 16 bitu palaišanas ID (4) 64 bitu procesa izveides laiks: UTC 100ns
 
-- **appVersionBuild**  — programmas būvējuma versijas numurs.
+- **appVersionBuild** — programmas būvējuma versijas numurs.
 
-- **appVersionMajor**  — programmas galvenās versijas numurs.
+- **appVersionMajor** — programmas galvenās versijas numurs.
 
-- **appVersionMinor**  — programmas papildversijas numurs.
+- **appVersionMinor** — programmas papildversijas numurs.
 
-- **appVersionRevision**  — programmas pārskatītās versijas numurs.
+- **appVersionRevision** — programmas pārskatītās versijas numurs.
 
-- **audienceGroup**  — laidiena auditorijas grupas nosaukums
+- **audienceGroup** — laidiena auditorijas grupas nosaukums
 
-- **audienceId**  — laidiena auditorijas nosaukums
+- **audienceId** — laidiena auditorijas nosaukums
 
-- **channel**  — Office izplatīšanas kanāls
+- **channel** — Office izplatīšanas kanāls
 
-- **deviceClass**  — ierīces formas faktors no operētājsistēmas
+- **deviceClass** — ierīces formas faktors no operētājsistēmas
 
-- **ecsETag**  — procesa eksperimenta identifikators
+- **ecsETag** — procesa eksperimenta identifikators
 
-- **impressionId**  — GUID, kas norāda pašreizējo līdzekļu kopu.
+- **impressionId** — GUID, kas norāda pašreizējo līdzekļu kopu.
 
-- **languageTag**  — pašreizējā Office IETF lietotāja interfeisa valodas tags
+- **languageTag** — pašreizējā Office IETF lietotāja interfeisa valodas tags
 
-- **officeUserID**  — nejauši ģenerēts GUID šai Office instalācijai
+- **officeUserID** — nejauši ģenerēts GUID šai Office instalācijai
 
-- **osArchitecture**  — operētājsistēmas arhitektūra
+- **osArchitecture** — operētājsistēmas arhitektūra
 
-- **osEnvironment**  — vesels skaitlis, kas norāda operētājsistēmu (Windows, Android, iOS, Mac u.c.).
+- **osEnvironment** — vesels skaitlis, kas norāda operētājsistēmu (Windows, Android, iOS, Mac u.c.).
 
-- **osVersionString**  — operētājsistēmas versija
+- **osVersionString** — operētājsistēmas versija
 
-- **sessionID**  — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
+- **sessionID** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
-- **UTCReplace_AppSessionGuid**  — konstanta Būla vērtība. Vienmēr patiess.
+- **UTCReplace_AppSessionGuid** — konstanta Būla vērtība. Vienmēr patiess.
 
 #### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
 
@@ -897,9 +897,9 @@ Nosaka, vai Visio SKU ir standarta vai profesionālā versija. Tas ir svarīgi, 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_VisioSKU** : **integer**  — Standard SKU ir 0, bet Professional SKU — 1
+  - **Data\_VisioSKU**:**integer** — Standard SKU ir 0, bet Professional SKU — 1
 
-#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(iepriekšējais nosaukums)* , Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Ieraksta informācija par lietojumprogrammas aktivizēšanas statusu.  Dati tiek pārraudzīti, lai garantētu, ka mēs identificējam aktivizēšanas problēmu pieaugumu. Mēs arī analizējam datus, lai atrastu jomas, kurās nepieciešami uzlabojumi.
 
@@ -907,7 +907,7 @@ Tiek apkopoti šādi lauki:
 
 - **INSTALL_LOCATION** — norāda, vai lietojumprogramma ir sākotnēji instalēta vai lejupielādēta veikalā
 
-#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(iepriekšējais nosaukums)* , Office.OneNote.Android.ResetStatus
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(iepriekšējais nosaukums)*, Office.OneNote.Android.ResetStatus
 
 Šis signāls tiek izmantots, lai fiksētu jebkādas problēmas, kad lietotājs mēģina atiestatīt lietojumprogrammu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas atiestatīšanas laikā radušās problēmas. 
 
@@ -921,7 +921,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Pass** — norāda, vai atiestatīšana bija sekmīga
 
-#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(iepriekšējais nosaukums)* , Office.OneNote.Android.SignIn.SignInCompleted
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(iepriekšējais nosaukums)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 Kritiskais signāls, kas tiek izmantots, lai nodrošinātu, ka pierakstīšanās ir sekmīga vai nē. Telemetrija, kas tiek apkopota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
 
@@ -929,7 +929,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **CompletionState** — pierakstīšanās beigu stāvoklis, sekmīga vai nesekmīga. Un kļūmju gadījumi
 
-- **EntryPoint** — norāda pierakstīšanās sākuma vietu
+- **EntryPoint**— norāda pierakstīšanās sākuma vietu
 
 - **Hresult** — kļūdas kods
 
@@ -941,13 +941,13 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **SignInMode** — paātrināta pierakstīšanās vai reģistrācija vai automātiska pierakstīšanās vai reģistrācija
 
-#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(iepriekšējais nosaukums)* , Office.OneNote.Android.SignIn.SignInStarted
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(iepriekšējais nosaukums)*, Office.OneNote.Android.SignIn.SignInStarted
 
 Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
 
 Tiek apkopoti tālāk norādītie lauki: 
 
-- **EntryPoint** — norāda pierakstīšanās sākuma vietu
+- **EntryPoint**— norāda pierakstīšanās sākuma vietu
 
 - **Result** — pierakstīšanās plūsmas rezultāts
 
@@ -1107,15 +1107,15 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **CachedManifestsParsed** — kešatmiņā atrasto manifestu skaits
 
-  - **IsAllReturnedManifestsParsed**  — informācija par to, vai visi atgrieztie manifesti tika parsēti
+  - **IsAllReturnedManifestsParsed** — informācija par to, vai visi atgrieztie manifesti tika parsēti
 
-  - **ManifestsRequested**  — nepieciešams manifestu skaits
+  - **ManifestsRequested** — nepieciešams manifestu skaits
 
-  - **ManifestsReturned**  — no servera atgriezto manifestu skaits
+  - **ManifestsReturned** — no servera atgriezto manifestu skaits
 
-  - **ManifestsToRetrieve**  — no servera izgūstamo manifestu skaits
+  - **ManifestsToRetrieve** — no servera izgūstamo manifestu skaits
 
-  - **ReturnedManifestsParsed**  — to manifestu skaits, kas tika atgriezti no servera un sekmīgi parsēti
+  - **ReturnedManifestsParsed** — to manifestu skaits, kas tika atgriezti no servera un sekmīgi parsēti
 
   - **TelemetryId —** GUID, kas apzīmē unikālu lietotāju
 
@@ -1149,13 +1149,13 @@ Apkopo informāciju par automatizācijas servera vai klienta aktivizēšanu VBA 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ComObjectInstantiatedCount**  — COM objektu gadījumu izveides skaits
+  - **ComObjectInstantiatedCount** — COM objektu gadījumu izveides skaits
 
   - **HashComObjectInstantiatedClsid** — COM objektu klases identifikatora jaukšana
 
   - **HashProjectName** — VBA projekta nosaukuma jaukšana
 
-  - **TagId**  — unikāls tags
+  - **TagId** — unikāls tags
 
 #### <a name="officeextensibilityvbatelemetrydeclare"></a>Office.Extensibility.VBATelemetryDeclare 
 
@@ -1167,13 +1167,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **HashDeclare** — DLL nosaukuma jaukšana
 
-  - **HashEntryPoint**  — API nosaukuma jaukšana
+  - **HashEntryPoint** — API nosaukuma jaukšana
 
   - **HashProjectName** — VBA projekta nosaukuma jaukšana
 
-  - **IsPtrSafe**  — informācija par to, vai deklarācijas paziņojums ir saderīgs ar citu arhitektūru
+  - **IsPtrSafe** — informācija par to, vai deklarācijas paziņojums ir saderīgs ar citu arhitektūru
 
-  - **TagId**  — unikāls tags
+  - **TagId** — unikāls tags
 
 #### <a name="officeoutlookdesktopadd-insadd-inloaded"></a>Office.Outlook.Desktop.Add-ins.Add-inLoaded
 
@@ -1241,11 +1241,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Activity Result** — savienojuma izveidošanas stāvoklis.
 
-  - **Add-inconnectFlag**  — pašreizējās ielādes darbība.
+  - **Add-inconnectFlag** — pašreizējās ielādes darbība.
 
-  - **Add-inId**  — pievienojumprogrammas klases ID.
+  - **Add-inId** — pievienojumprogrammas klases ID.
 
-  - **Add-inTimeDateStamp**  — pievienojumprogrammas laikspiedols no DLL metadatiem.
+  - **Add-inTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
   - **IsBootInProgress** — norāda, vai Office lietojumprogramma ir ielādes procesā.
 
@@ -1255,7 +1255,7 @@ Tver kļūdas, ja neizdodas ielādēt risinājumu. Nepieciešams pievienojumprog
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_Load1Error:integer**  — kļūdas vērtība Visio pievienojumprogrammas ielādes laikā.
+  - **Data\_Load1Error:integer** — kļūdas vērtība Visio pievienojumprogrammas ielādes laikā.
 
 #### <a name="officevisiovisioaddonusage"></a>Office.Visio.Visio.AddonUsage
 
@@ -1263,15 +1263,15 @@ Tver kļūdas, ja risinājuma funkcionalitātē pastāv kļūdas. Nepieciešams 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_DocumentSessionLogID:string**  — dokumenta sesijas identifikators
+  - **Data\_DocumentSessionLogID:string** — dokumenta sesijas identifikators
 
-  - **Data\_IsEnabled** : **bool**  — patiess, ja ir iespējots risinājums
+  - **Data\_IsEnabled**:**bool** — patiess, ja ir iespējots risinājums
 
-  - **Data\_TemplateID:string**  — veidnes GUID, kura tika ielādēts risinājums. Reģistrēts kā 0 pielāgotam risinājumam
+  - **Data\_TemplateID:string** — veidnes GUID, kura tika ielādēts risinājums. Reģistrēts kā 0 pielāgotam risinājumam
 
-  - **Data\_AddOnID** : **string**  — GUID, lai identificētu ielādēto pievienojumprogrammu
+  - **Data\_AddOnID**:**string** — GUID, lai identificētu ielādēto pievienojumprogrammu
 
-  - **Data\_Error** : **integer**  — kļūdas ID
+  - **Data\_Error**:**integer** — kļūdas ID
 
 ### <a name="security-subtype"></a>*Drošības apakštips*
 
@@ -1341,13 +1341,13 @@ Izseko sistēmā Office aktivizētu konkrētu klases identifikatoru (Flash, Silv
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ActivationType**  — vadīklas aktivizācijas tips
+  - **ActivationType** — vadīklas aktivizācijas tips
 
-  - **Blocked**  — informācija par to, vai Office bloķēja vadīklu
+  - **Blocked** — informācija par to, vai Office bloķēja vadīklu
 
-  - **CLSID**  — vadīklas klases identifikators
+  - **CLSID** — vadīklas klases identifikators
 
-  - **Count**  — cik reižu tika aktivizēta vadīkla
+  - **Count** — cik reižu tika aktivizēta vadīkla
 
 #### <a name="officesecurityactivationfilterfailedtoregister"></a>Office.Security.ActivationFilter.FailedToRegister
 
@@ -1365,7 +1365,7 @@ Izseko informācijai par to, vai konfigurācijas pakalpojumā tika lasīti pakot
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **RetrievedFromServiceStatus**  — informācija par to, vai mums izdevās izgūt bloķējamo failu paplašinājumu sarakstu; ja neizdevās, kāds bija kļūdas iemesls
+  - **RetrievedFromServiceStatus** — informācija par to, vai mums izdevās izgūt bloķējamo failu paplašinājumu sarakstu; ja neizdevās, kāds bija kļūdas iemesls
 
 #### <a name="officesecuritycomsecurityload"></a>Office.Security.ComSecurity.Load
 
@@ -1373,15 +1373,15 @@ Izseko informācijai par to, vai dokumentā ir ielādēts OLE objekts. Izmanto, 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Clsid**  — OLE vadīklas klases identifikators
+  - **Clsid** — OLE vadīklas klases identifikators
 
   - **Count** — cik reižu tika ielādēta OLE vadīkla
 
-  - **DocUrlHash**  — jaukšana, kas unikāli apzīmē dokumentu. (Piezīme. No šī nevar noskaidrot faktisko detalizēto informāciju par dokumentu. Tas ir tikai unikāls dokumenta attēlojums.)
+  - **DocUrlHash** — jaukšana, kas unikāli apzīmē dokumentu. (Piezīme. No šī nevar noskaidrot faktisko detalizēto informāciju par dokumentu. Tas ir tikai unikāls dokumenta attēlojums.)
 
-  - **IsCategorized**  — informācija par to, vai OLE vadīkla ir kategorizēta ielādei sistēmā Office
+  - **IsCategorized** — informācija par to, vai OLE vadīkla ir kategorizēta ielādei sistēmā Office
 
-  - **IsInsertable**  — informācija par to, vai OLE vadīkla ir ievietojama vai nē
+  - **IsInsertable** — informācija par to, vai OLE vadīkla ir ievietojama vai nē
 
 #### <a name="officesecuritycomsecurityobjdetected"></a>Office.Security.ComSecurity.ObjDetected
 
@@ -1389,15 +1389,15 @@ Izseko informācijai par to, vai dokumentā ir identificēts OLE objekts. Izmant
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Clsid**  — OLE vadīklas klases identifikators
+  - **Clsid** — OLE vadīklas klases identifikators
 
   - **Count** — cik reižu tika noteikts OLE objekts
 
-  - **DocUrlHash**  — jaukšana, kas unikāli apzīmē dokumentu. (Piezīme. No šī nevar noskaidrot faktisko detalizēto informāciju par dokumentu. Tas ir tikai unikāls dokumenta attēlojums.)
+  - **DocUrlHash** — jaukšana, kas unikāli apzīmē dokumentu. (Piezīme. No šī nevar noskaidrot faktisko detalizēto informāciju par dokumentu. Tas ir tikai unikāls dokumenta attēlojums.)
 
-  - **IsCategorized**  — informācija par to, vai OLE vadīkla ir kategorizēta ielādei sistēmā Office
+  - **IsCategorized** — informācija par to, vai OLE vadīkla ir kategorizēta ielādei sistēmā Office
 
-  - **IsInsertable**  — informācija par to, vai OLE vadīkla ir ievietojama vai nē
+  - **IsInsertable** — informācija par to, vai OLE vadīkla ir ievietojama vai nē
 
 #### <a name="officesecuritycomsecuritypackageractivation"></a>Office.Security.ComSecurity.PackagerActivation
 
@@ -1405,11 +1405,11 @@ Izseko tāda drošības uzlabojuma rezultātam, kas bloķē bīstamu paplašinā
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **FromInternet**  — vai dokuments ir no interneta
+  - **FromInternet** — vai dokuments ir no interneta
 
-  - **PackagerSetting**  — kāds ir pašreizējā pakotāja iestatījums
+  - **PackagerSetting** — kāds ir pašreizējā pakotāja iestatījums
 
-  - **TrustedDocument**  — vai dokuments ir uzticams
+  - **TrustedDocument** — vai dokuments ir uzticams
 
 #### <a name="officesecuritycomsecuritypackageractivationerrors"></a>Office.Security.ComSecurity.PackagerActivationErrors
 
@@ -1417,17 +1417,17 @@ Izseko kļūdu stāvoklim drošības uzlabojumā, kas bloķē bīstamu paplašin
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Error**  — kļūdas kods
+  - **Error** — kļūdas kods
 
-  - **Extension**  — kāds ir faila paplašinājums
+  - **Extension** — kāds ir faila paplašinājums
 
-  - **FromInternet**  — vai dokuments ir no interneta
+  - **FromInternet** — vai dokuments ir no interneta
 
   - **LinkedDocument** — vai dokuments ir saistīts vai nē
 
-  - **PackagerSetting**  — kāds ir pašreizējā pakotāja iestatījums
+  - **PackagerSetting** — kāds ir pašreizējā pakotāja iestatījums
 
-  - **TrustedDocument**  — vai dokuments ir uzticams
+  - **TrustedDocument** — vai dokuments ir uzticams
 
 
 #### <a name="officesecuritymacrointernetvbablockenabled"></a>Office.Security.Macro.InternetVBABlockEnabled
@@ -1444,7 +1444,7 @@ Izseko, vai makro pieder uzticamam izdevējam. Izmanto, lai nodrošinātu droš�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Policy**  — vai politika ir iestatīta un pieejama vai nē
+  - **Policy** — vai politika ir iestatīta un pieejama vai nē
 
 #### <a name="officesecuritymacroprompted"></a>Office.Security.Macro.Prompted
 
@@ -1452,11 +1452,11 @@ Izseko informācijai par to, vai lietotājam tiek parādīta uzvedne iespējot V
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **PromptType**  — kāds uzvednes tips tika parādīts
+  - **PromptType** — kāds uzvednes tips tika parādīts
 
-  - **VBAMacroAntiVirusHash**  — makro pretvīrusu jaukšana
+  - **VBAMacroAntiVirusHash** — makro pretvīrusu jaukšana
 
-  - **VBAMacroAntiVirusHRESULT**  — pretvīrusu novērtēšanas rezultāts
+  - **VBAMacroAntiVirusHRESULT** — pretvīrusu novērtēšanas rezultāts
 
 #### <a name="officesecuritymacrovbasecureruntimesessionenablestate"></a>Office.Security.Macro.VBASecureRuntimeSessionEnableState
 
@@ -1464,9 +1464,9 @@ Izseko katrai AMSI izpildlaika pārbaudei, kas tika veikta makro izpildes laikā
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **IsRegistry**  — vai administrators ir iestatījis reģistra ignorēšanu
+  - **IsRegistry** — vai administrators ir iestatījis reģistra ignorēšanu
 
-  - **State**  — kāds ir droša izpildlaika statuss
+  - **State** — kāds ir droša izpildlaika statuss
 
 #### <a name="officesecuritymacroxl4prompted"></a>Office.Security.Macro.XL4Prompted
 
@@ -1474,7 +1474,7 @@ Izseko informācijai par to, vai lietotājam tiek parādīta uzvedne iespējot X
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **PromptType**  — kāds uzvednes tips tika parādīts
+  - **PromptType** — kāds uzvednes tips tika parādīts
 
 
 #### <a name="officesecurityocxufiprompt"></a>Office.Security.OCX.UFIPrompt
@@ -1483,11 +1483,11 @@ Izseko informācijai par to, vai, ielādējot ActiveX vadīklu, kas ir atzīmēt
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **IsFromInternet**  — vai atvērtais dokuments ir no interneta
+  - **IsFromInternet** — vai atvērtais dokuments ir no interneta
 
-  - **IsSecureReaderMode**  — dokuments ir atvērts drošā lasītājā
+  - **IsSecureReaderMode** — dokuments ir atvērts drošā lasītājā
 
-  - **OcxTrustCenterSettings**  — kāds ir pašreizējais ActiveX iestatījums
+  - **OcxTrustCenterSettings** — kāds ir pašreizējais ActiveX iestatījums
 
 
 #### <a name="officesecuritysecurereaderhostopeninosr"></a>Office.Security.SecureReaderHost.OpenInOSR
@@ -1553,6 +1553,8 @@ Tiek apkopoti šādi lauki:
 Šis notikums tiek apkopots, lai nodrošinātu veiksmīgu konta konfigurācijas darbību, un tiek izmantots, lai pārraudzītu konta izveides stāvokli, spēju pievienot jaunus e-pastu kontus un uzraudzītu mīkstos kontu atiestatījumus.
 
 Tiek apkopoti šādi lauki: 
+
+- **account_creation_source** — neobligāts rekvizīts, kas tiek izmantots, lai atrastu un diagnosticētu visas problēmas, kas rodas konta izveidošanas laikā, pievienojot darbības veidu.  Tam var būt vērtības, piemēram, vienotā pierakstīšanās (SS0), create_new_account, roku utt.
 
 - **action** — kontā veiktās darbības veids, piemēram, pievienot, dzēst vai atiestatīt
 
@@ -1758,7 +1760,7 @@ Tālāk norādītie lauki tiek apkopoti iOS un Android.
 
 - **search_scope** — virkne norāda, kāda veida kontu meklēja lietotājs (piem., Exchange, Gmail utt.) vai tas bija meklējums visos kontos. 
 
-- **search_suggestion_type** — norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
+- **search_suggestion_type**— norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
 
 - **search_request_reason** — norāda iemeslu, kura dēļ meklēšanas pieprasījums tika nosūtīts no lietojumprogrammas, norādot komponentu vai lietotāja darbību, kas uzsāka meklēšanu.
 
@@ -1784,7 +1786,7 @@ Tālāk norādītie lauki tiek apkopoti Outlook Mobile iOS lietojumprogrammās.
 
 - **search_session_ended_type** — norāda, kur beidzās meklēšana, jo tā tika atcelta vai vaicājums tika atjaunināts
 
-- **search_suggestion_type** — norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
+- **search_suggestion_type**— norāda, kāds ir meklēšanas ieteikuma pamatojums, piemēram, vai tas ir pareizrakstības labojums? Balstīts vēsturē? Automātiskā pabeigšana?
 
 - **see_all_contacts_selected_count** — izseko, cik reizes kombinētās meklēšanas sesijas laikā tika atlasīts “skatīt visas kontaktpersonas”
 
@@ -2416,7 +2418,7 @@ Tiek apkopoti šādi lauki:
 
 - **session_summary_page_loaded_count** — lietotāja Edge tīmekļa skata sesijas laikā ielādēto lapu skaits
 
-- **session_summary_search_count** — lietotāja Edge tīmekļa skata sesijas laikā veikto Bing meklējumu skaits
+- **session_summary_search_count**— lietotāja Edge tīmekļa skata sesijas laikā veikto Bing meklējumu skaits
 
 - **session_summary_session_id** — pašreizējās lietotāja Edge tīmekļa skata sesijas identifikators
 
@@ -2582,11 +2584,13 @@ Tiek apkopoti šādi lauki:
 
 - **Data_BootDuration** — lietojumprogrammas palaišanas ilgums faila atvēršanas procesā.
 
+- **Data_BootMarkers**— virknes vērtība, reģistrējot laika ilgumu starp dažu funkciju izsaukumiem, palaižot lietojumprogrammu, formātā ar funkcijas ID un ilgumu.
+
 - **Data_ClosePreviouslyOpenedMarkers** — atsevišķos failu atvēršanas scenārijos pirms pašreizējā dokumenta atvēršanas notiek iepriekš atvērtā dokumenta aizvēršana. Šis laika posms starp dažām darbībām, kas šajā gadījumā notiek, tiek ierakstīts kā virknes vērtība, kuras formāts ir \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -2666,7 +2670,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_SilhouetteDuration** — faila atvēršanas renderēšanas ilgums.
 
-- **Data_TimeSplitMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu. 
+- **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu. 
 
 #### <a name="officeandroiddocsuipaywallcontrolskuchoosertoggled"></a>Office.Android.DocsUI.PaywallControl.SkuChooserToggled
 
@@ -2731,7 +2735,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **ErrorDescription** — norāda vienotās pierakstīšanās mēģinājuma kļūdas ziņojumu.
 
-- **HResult** — norāda vienotās pierakstīšanās mēģinājuma rezultāta statusa kodu.
+- **HResult**— norāda vienotās pierakstīšanās mēģinājuma rezultāta statusa kodu.
 
 - **ProviderPackageId** — cita Microsoft lietojumprogramma ierīcē, no kuras notiek vienotā pierakstīšanās.
 
@@ -2802,11 +2806,11 @@ Tiek apkopots tikai tad, ja lietotājs ir iespējojis Office telemetrijas inform
 
 Tiek apkopoti šādi lauki:
 
-  - **Data.AgentExit**  — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta iziešanu
+  - **Data.AgentExit** — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta iziešanu
 
-  - **Data.AgentScan**  — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta pabeigtu skenēšanu
+  - **Data.AgentScan** — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta pabeigtu skenēšanu
 
-  - **Data.AgentUpload**  — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta pabeigtu augšupielādi
+  - **Data.AgentUpload** — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta pabeigtu augšupielādi
 
 #### <a name="officeappcompatappcompattelemetrydashboardresiliencycrashlog"></a>Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
@@ -2814,7 +2818,7 @@ Tiek apkopts tikai tad, ja lietotājs (parasti administrators) ir iespējojis Of
 
 Tiek apkopoti šādi lauki:
 
-  - **Data.CollectionTime**  — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
+  - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
 
 #### <a name="officeappdocsappdocsdocumentoperation"></a>Office.AppDocs.AppDocs.DocumentOperation
 
@@ -2830,7 +2834,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -2912,7 +2916,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_InitializationReason** — darbības konkrētā iemesla uzskaitījuma attēlojums. Piemēram, atvērt no vietrāža URL vai lokāla faila, izveidot ar failu atlasītāju, kopēt uz failu ceļu, eksportēt uz URL utt.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** .
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
 
 - **Data_IsNameMissingInUrl** — norāda, ka nosaukums netika parsēts no URL.
 
@@ -2948,7 +2952,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3060,7 +3064,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3173,7 +3177,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3285,7 +3289,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3397,7 +3401,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3510,7 +3514,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3691,17 +3695,17 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Datasource_Type**  — sērijas ierīce vai programmas pakalpojuma informācija
+- **Datasource_Type** — sērijas ierīce vai programmas pakalpojuma informācija
 
-- **DataSource_Name**  — pievienoto datu avota nosaukums
+- **DataSource_Name** — pievienoto datu avota nosaukums
 
-- **Activity_Name**  — darbības "ConnectDevice" nosaukums
+- **Activity_Name** — darbības "ConnectDevice" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — sākums
+- **Activity_StartStopType** — sākums
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
  
 #### <a name="officeconnectdeviceactivitystop"></a>Office.ConnectDevice.Activity.Stop
 
@@ -3709,17 +3713,17 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Datasource_Type**  — sērijas ierīce vai programmas pakalpojuma informācija
+- **Datasource_Type** — sērijas ierīce vai programmas pakalpojuma informācija
 
-- **DataSource_Name**  — pievienoto datu avota nosaukums
+- **DataSource_Name** — pievienoto datu avota nosaukums
 
-- **Activity_Name**  — darbības "ConnectDevice" nosaukums
+- **Activity_Name** — darbības "ConnectDevice" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — apturēšana
+- **Activity_StartStopType** — apturēšana
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
 
 #### <a name="officedocsappledocsuxiossaveasthroughfilemenu"></a>Office.Docs.Apple.DocsUXiOSSaveAsThroughFileMenu 
 
@@ -3823,13 +3827,13 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data_ClickTime** — Unix diskretizācijas laiks, kad lietotājs noklikšķināja uz saites iOS Outlook, lai atvērtu failu Office lietojumprogrammā.
 
-- **Data_ClosePreviouslyOpenedMarkers** — virknes vērtība, kas uzskaita ilgumu starp atsevišķu funkciju izsaukumiem formātā ar funkcijas ID un ilgumu.
+- **Data_ClosePreviouslyOpenedMarkers**— virknes vērtība, kas uzskaita ilgumu starp atsevišķu funkciju izsaukumiem formātā ar funkcijas ID un ilgumu.
 
 - **Data_DetachedDuration** — notikuma atvienošanas procesa ilgums. 
 
 - **Data_Doc_AccessMode** — uzskaitījums, kas norāda uz faila piekļuves režīmu, piemēram, tikai lasāms, lasāms-rakstāms.
 
-- **Data_Doc_AsyncOpenKind** — uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
+- **Data_Doc_AsyncOpenKind**— uzskaitījums, kas norāda asinhronās plūsmas veidu, kas tika izmantota faila atvēršanai.
 
 - **Data_Doc_ChunkingType** — uzskaitījums, kas norāda faila dalīšanas algoritma veidu.
 
@@ -3911,7 +3915,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data_StopwatchDuration** — laiks no notikuma sākuma līdz notikuma beigām.
 
-- **Data_TimeSplitMeasurements** — virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu.
+- **Data_TimeSplitMeasurements**— virknes vērtība, kas uzskaita atsevišķu funkciju pieprasījumu ilgumu formātā ar funkcija birku, sākuma laikspiedolu un ilgumu.
 
 #### <a name="officedocsuifileoperationsopenfilewithreason"></a>Office.DocsUI.FileOperations.OpenFileWithReason 
 
@@ -4085,9 +4089,9 @@ Izmanto tādu diagrammu izveidē (pieprasa grupas pārvaldība), kurā tiek anal
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AppVersion**  — pievienojumprogrammas viesošanas programmas versija.
+  - **AppVersion** — pievienojumprogrammas viesošanas programmas versija.
 
-  - **SolutionId**  — GUID, kas apzīmē unikālu pievienojumprogrammu
+  - **SolutionId** — GUID, kas apzīmē unikālu pievienojumprogrammu
 
   - **TelemetryId —** GUID, kas apzīmē unikālu lietotāju
 
@@ -4117,7 +4121,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **CommandActionType** — pievienojumprogrammas komandas veids.
 
-- **CommandLabel** — noklikšķinātās komandas etiķete.
+- **CommandLabel**— noklikšķinātās komandas etiķete.
 
 - **SolutionId** — risinājuma ID.
 
@@ -4544,7 +4548,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.sWorkingBranchAvailableOnOpen —** izmaiņu izsekošanas diagnostika, lai pārliecinātos, vai mums ir koplietojamā faila jaunākā versija
 
-  - **Data.LicenseStatus**  — diagnostikas produkta licences statuss, kas tiek lietots, lai validētu, vai lietotāja licences tipam ir iespējoti atbilstošie produktu līdzekļi 
+  - **Data.LicenseStatus** — diagnostikas produkta licences statuss, kas tiek lietots, lai validētu, vai lietotāja licences tipam ir iespējoti atbilstošie produktu līdzekļi 
 
   - **Data.LicenseType —** norāda licences statusu (bezmaksas/maksas/izmēģinājumversija utt.)
 
@@ -4913,9 +4917,9 @@ Tiek apkopoti tālāk norādītie lauki.
 Apkopo, ja programmu nevar palaist, jo startēšanas laikā radās neparedzēta kļūda. Izmantot, lai izsekotu izņēmumiem un avārijām. Palīdz pārraudzīt un atkļūdot programmas darbspēju.
 
 Tiek apkopoti tālāk norādītie lauki.
-- **DateTime**  — notikuma reģistrēšanas laikspiedols
+- **DateTime** — notikuma reģistrēšanas laikspiedols
 
-- **EventName**  — reģistrētā notikuma nosaukums
+- **EventName** — reģistrētā notikuma nosaukums
 
 #### <a name="officefirstrunappleactivationresult"></a>Office.FirstRun.Apple.ActivationResult
 
@@ -5129,7 +5133,7 @@ Tiek apkopoti šādi lauki:
 
 - **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
 
-- **status** — virkne — Paywall izejas statuss. Piemēram, “initiated”, “paymentDone”, “provisionFailed”
+- **status**— virkne — Paywall izejas statuss. Piemēram, “initiated”, “paymentDone”, “provisionFailed”
 
 - **userDuration** — datu tips Double — lietotāja Paywall veltītais laiks milisekundēs
 
@@ -5143,7 +5147,7 @@ Tiek apkopoti šādi lauki:
 
 - **productId** — virkne — produkta, kuram lietotājs skata papildu piedāvātās priekšrocības, App Store ID
 
-- **userDuration** — datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
+- **userDuration**— datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
 
 #### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
 
@@ -5176,11 +5180,11 @@ Tiek apkopoti šādi lauki:
 
 - **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
 
-- **Data.cardCorrelationId**  — globāli unikāls identifikators personas kartītei
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
 
-- **Data.clientCorrelationId**  — globāli unikāls identifikators programmas sesijai
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
 - **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
 
@@ -5233,7 +5237,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
 
-- **Data.UserInfo.OMSTenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
 
 - **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
 
@@ -5267,11 +5271,11 @@ Tiek apkopoti šādi lauki:
 
 - **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
 
-- **Data.cardCorrelationId**  — globāli unikāls identifikators personas kartītei
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
 
-- **Data.clientCorrelationId**  — globāli unikāls identifikators programmas sesijai
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
 - **Data.clientType** — ierīces tips, kurā tiek palaista programma, piem., “Outlook_Win32”
 
@@ -5310,7 +5314,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
 
-- **Data.UserInfo.OMSTenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā.
 
 - **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
 
@@ -5328,7 +5332,7 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsVersion** — operētājsistēmas versija
 
-- **PipelineInfo.ClientCountry**  — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
+- **PipelineInfo.ClientCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
 
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
@@ -5347,11 +5351,11 @@ Tiek apkopoti šādi lauki:
 
 - **Data.AppInfo_Version** — resursdatora lietojumprogrammas versija
 
-- **Data.cardCorrelationId**  — globāli unikāls identifikators personas kartītei
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
 
-- **Data.clientCorrelationId**  — globāli unikāls identifikators programmas sesijai
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
 - **Data.clientType** — ierīces, kurā darbojas lietojumprogramma, versija
 
@@ -5386,7 +5390,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
 
-- **Data.UserInfo.OMSTenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
 
 - **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
 
@@ -5410,11 +5414,11 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data.AppInfo.Name** — izmantojamā pakalpojuma nosaukums (profila kartīte)
 
-- **Data.cardCorrelationId**  — globāli unikāls identifikators personas kartītei
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
 
-- **Data.clientCorrelationId**  — globāli unikāls identifikators programmas sesijai
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
 - **Data.clientScenario** — izmanto, lai noteiktu līdzekli lietojumprogrammā, no kuras tika atvērta personas kartīte
 
@@ -5460,7 +5464,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
 
-- **Data.UserInfo.OMSTenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
 
 - **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
 
@@ -5478,9 +5482,9 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **DeviceInfo_SDKUid** — unikāli identificē ierīci no telemetrijas SDK perspektīvas
 
-- **NetworkCost**  — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
+- **NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
 
-- **NetworkCountry**  — sūtītāja valsts kods, kura pamatā ir neanonimizēta klienta IP adrese.
+- **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neanonimizēta klienta IP adrese.
 
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
@@ -5495,11 +5499,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.bandwidthEstimateMbps** — efektīvo joslas platuma aprēķini Mb/s
 
-- **Data.cardCorrelationId**  — globāli unikāls identifikators personas kartītei
+- **Data.cardCorrelationId** — globāli unikāls identifikators personas kartītei
 
 - **Data.cardPersonaCorrelationId** — globālais unikālais identifikators konkrētai personai, kas redzama kartītē
 
-- **Data.clientCorrelationId**  — globāli unikāls identifikators programmas sesijai
+- **Data.clientCorrelationId** — globāli unikāls identifikators programmas sesijai
 
 - **Data.clientType** — ierīces tips, kurā tiek palaista programma.
 
@@ -5544,7 +5548,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.UserInfo.MsaId** — globāli unikālā lietotāja identifikators klienta Microsoft kontam
 
-- **Data.UserInfo.OMSTenantId**  — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
+- **Data.UserInfo.OMSTenantId** — nomnieks, ar kuru ir saistīts lietotāja abonements. Ļauj mums klasificēt problēmas un noteikt, vai problēma ir plaši izplatīta vai izolēta konkrēta nomnieka lietotāju kopā
 
 - **Data.userPuid** — globāli unikālā lietotāja identifikators klienta Microsoft kontam (Data.UserInfo.MsaId dublikāts)
 
@@ -5554,9 +5558,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.wasOpenedAsCompactCard** — izmanto, lai noteiktu, vai kartīte sākotnēji tika atvērta kā kompakts skats
 
-- **NetworkCost**  — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
+- **NetworkCost** — norāda tīkla izmaksu/tipu (mērāmus, mērāms virs ierobežojuma utt.)
 
-- **NetworkCountry**  — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
+- **NetworkCountry** — sūtītāja valsts kods, kura pamatā ir neizlaista klienta IP adrese.
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5564,9 +5568,9 @@ Kritisko kļūdu telemetrija, lai izsekotu mākoņpakalpojuma politikas ieneses 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data.ExitReason**  — skaitītāja vērtība, kas paziņo iziešanas iemeslu, ja pirmspārbaude neizdevās
+  - **Data.ExitReason** — skaitītāja vērtība, kas paziņo iziešanas iemeslu, ja pirmspārbaude neizdevās
 
-  - **Data.Log**  — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
+  - **Data.Log** — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
 
 #### <a name="officemanageabilityclientfetchandapplypolicy"></a>Office.Manageability.Client.Fetch.AndApplyPolicy
 
@@ -5574,9 +5578,9 @@ Kritisko kļūdu telemetrija, lai izsekotu, vai izdevās/neizdevās mākoņpakal
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data.ExitReason**  — skaitītāja vērtība, kas paziņo iziešanas iemeslu, ja pirmspārbaude neizdevās
+  - **Data.ExitReason** — skaitītāja vērtība, kas paziņo iziešanas iemeslu, ja pirmspārbaude neizdevās
 
-  - **Data.Log**  — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
+  - **Data.Log** — pielāgots žurnāla ziņojums, kas norāda pirmspārbaudes panākumus (izdošanos/neizdošanos)
 
 #### <a name="officeofficemobilepdfviewerpdffileopenmeasurements"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
 
@@ -5594,7 +5598,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_Doc_DownloadStartTime** — mākoņa faila lejupielādes sākuma laikspiedols.
 
-- **Data_Doc_FileOpSessionID** — unikāls ID dokumenta sesijai.
+- **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai.
 
 - **Data_Doc_Location** — faila atrašanās vieta (lokāls, ODSP, iCloud, trešās puses programma, wopi)
 
@@ -5615,7 +5619,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki:
 
-- **Data_Doc_FileOpSessionID** — unikāls ID dokumenta sesijai
+- **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai
 
 - **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos
 
@@ -5653,7 +5657,7 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums tiek apkopots Office lietojumprogrammai darbam ar iOS. Reģistrē, kad notiek .pdf atvēršanas, aizvēršanas vai saglabāšanas darbība, un to izmanto, lai izprastu un prioritizētu lietotāja pieredzi atbilstoši informācijai par .pdf failu darbību. Šis notikums ļauj mums nodrošināt atbilstošu .pdf atvēršanas, aizvēršanas un saglabāšanas darbību izpildi, kā arī uzlabot .pdf failu darbības veiktspēju. 
 
-- **Data_Doc_FileOpSessionID** — unikāls ID dokumenta sesijai 
+- **Data_Doc_FileOpSessionID**— unikāls ID dokumenta sesijai 
 
 - **Data_ErrorCode** — kļūda faila atvēršanas kļūmes/ lejupielādes kļūmes / lejupielādes atcelšanas gadījumos 
 
@@ -5817,7 +5821,7 @@ Tiek apkopoti šādi lauki:
 
 - **FromSection** — unikālais sadaļas identifikators.
 
-- **FromSectionGroup** — unikālais sadaļu grupas identifikators.
+- **FromSectionGroup**— unikālais sadaļu grupas identifikators.
 
 - **IsCurrentUserEduStudent** — norāda, vai pašreizējam lietotājam ir studenta loma izglītības piezīmju grāmatiņā.
 
@@ -5931,75 +5935,75 @@ Tiek apkopoti tālāk norādītie lauki
     
 - **CachedError_Description** — kešatmiņā saglabātās kļūdas apraksts.
 
-- **CachedError_Tag**  — norāda, kur kodā rodas kešatmiņā saglabātā kļūda.
+- **CachedError_Tag** — norāda, kur kodā rodas kešatmiņā saglabātā kļūda.
 
-- **CachedError_Type**  — kešatmiņā saglabātās kļūdas tips, piemēram, Win32Error u. tml.
+- **CachedError_Type** — kešatmiņā saglabātās kļūdas tips, piemēram, Win32Error u. tml.
 
-- **ExecutionTime**  — laiks milisekundēs, kas bija nepieciešams, lai replicētu piezīmju grāmatiņu.
+- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu piezīmju grāmatiņu.
 
-- **Gosid**  — globālais objektu telpas ID.
+- **Gosid** — globālais objektu telpas ID.
 
-- **IdentityType**  — identitātes tips, piemēram, Windows Live, organizācijas ID utt.
+- **IdentityType** — identitātes tips, piemēram, Windows Live, organizācijas ID utt.
 
-- **InitialReplicationInSession**  — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas.
+- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas.
 
-- **IsBackgroundSync**  — norāda, vai tā ir fona sinhronizācija.
+- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija.
 
-- **IsCachedErrorSuppressed**  — norāda, vai kešatmiņā saglabātā kļūda tiek apspiesta.
+- **IsCachedErrorSuppressed** — norāda, vai kešatmiņā saglabātā kļūda tiek apspiesta.
 
-- **IsCachedErrorUnexpected**  — norāda, vai kešatmiņā saglabātā kļūda ir neparedzēta.
+- **IsCachedErrorUnexpected** — norāda, vai kešatmiņā saglabātā kļūda ir neparedzēta.
 
-- **IsNotebookErrorSuppressed**  — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda tiek apspiesta.
+- **IsNotebookErrorSuppressed** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda tiek apspiesta.
 
-- **IsNotebookErrorUnexpected**  — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda ir neparedzēta.
+- **IsNotebookErrorUnexpected** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda ir neparedzēta.
 
-- **IsSectionErrorSuppressed**  — norāda, vai sadaļu sinhronizācijas kļūdas tiek apspiestas.
+- **IsSectionErrorSuppressed** — norāda, vai sadaļu sinhronizācijas kļūdas tiek apspiestas.
 
-- **IsSectionErrorUnexpected**  — norāda, vai sadaļas sinhronizācijas kļūda bija paredzēta.
+- **IsSectionErrorUnexpected** — norāda, vai sadaļas sinhronizācijas kļūda bija paredzēta.
 
-- **IsUsingRealtimeSync**  — norāda, vai piezīmju grāmatiņas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju.
+- **IsUsingRealtimeSync** — norāda, vai piezīmju grāmatiņas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju.
 
-- **LastAttemptedSync**  — laikspiedols, kad piezīmju grāmatiņu tika mēģināts sinhronizēt iepriekšējo reizi.
+- **LastAttemptedSync** — laikspiedols, kad piezīmju grāmatiņu tika mēģināts sinhronizēt iepriekšējo reizi.
 
-- **LastBackgroundSync**  — laikspiedols, kad notika pēdējais mēģinājums veikt sinhronizāciju fona režīmā.
+- **LastBackgroundSync** — laikspiedols, kad notika pēdējais mēģinājums veikt sinhronizāciju fona režīmā.
 
-- **LastNotebookViewedDate**  — datums, kad piezīmju grāmatiņa pēdējoreiz tika skatīta.
+- **LastNotebookViewedDate** — datums, kad piezīmju grāmatiņa pēdējoreiz tika skatīta.
 
-- **LastSuccessfulSync**  — laikspiedols, kad piezīmju grāmatiņa iepriekš sekmīgi sinhronizēta.
+- **LastSuccessfulSync** — laikspiedols, kad piezīmju grāmatiņa iepriekš sekmīgi sinhronizēta.
 
-- **NeedToRestartBecauseOfInconsistencies**  — norāda, vai sinhronizācija ir jārestartē, jo pastāv nekonsekvences.
+- **NeedToRestartBecauseOfInconsistencies** — norāda, vai sinhronizācija ir jārestartē, jo pastāv nekonsekvences.
 
-- **NotebookErrorCode**  — piezīmju grāmatiņas līmeņa sinhronizācijas kļūdas kods, kas saglabāts piezīmju grāmatiņas diagrammas apgabalā.
+- **NotebookErrorCode** — piezīmju grāmatiņas līmeņa sinhronizācijas kļūdas kods, kas saglabāts piezīmju grāmatiņas diagrammas apgabalā.
 
-- **NotebookId**  — piezīmju grāmatiņas ID.
+- **NotebookId** — piezīmju grāmatiņas ID.
 
-- **NotebookType**  — piezīmju grāmatiņas tips.
+- **NotebookType** — piezīmju grāmatiņas tips.
 
-- **ReplicatingAgainBecauseOfInconsistencies**  — norāda, vai sinhronizācija tiek restartēta nekonsekvenču dēļ.
+- **ReplicatingAgainBecauseOfInconsistencies** — norāda, vai sinhronizācija tiek restartēta nekonsekvenču dēļ.
 
 - **SectionError_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu sadaļas sinhronizācijas kļūdas raksturu un/vai to, kāpēc tā radās.
 
-- **SectionError_Description**  — sadaļas sinhronizācijas kļūdas apraksts.
+- **SectionError_Description** — sadaļas sinhronizācijas kļūdas apraksts.
 
-- **SectionError_Tag**  — norāda, kur kodā rodas sadaļas sinhronizācijas kļūda.
+- **SectionError_Tag** — norāda, kur kodā rodas sadaļas sinhronizācijas kļūda.
 
-- **SectionError_Type**  — sadaļas sinhronizācijas kļūdas tips, piemēram, Win32Error u.tml.
+- **SectionError_Type** — sadaļas sinhronizācijas kļūdas tips, piemēram, Win32Error u.tml.
 
-- **Success**  — norāda, vai piezīmju grāmatiņas sinhronizācija izdevās.
+- **Success** — norāda, vai piezīmju grāmatiņas sinhronizācija izdevās.
 
-- **SyncDestinationType**  — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online.
+- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online.
 
-- **SyncId**  — katrai piezīmju grāmatiņas sinhronizācijai unikāls numurs.
+- **SyncId** — katrai piezīmju grāmatiņas sinhronizācijai unikāls numurs.
 
-- **SyncWasFirstInSession**  — norāda, vai šī ir pirmā sinhronizācija pašreizējā sesijā.
+- **SyncWasFirstInSession** — norāda, vai šī ir pirmā sinhronizācija pašreizējā sesijā.
 
-- **SyncWasUserInitiated**  — norāda, vai šo sinhronizāciju uzsāka lietotājs.
+- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs.
 
-- **TenantId**  — SharePoint nomnieka ID.
+- **TenantId** — SharePoint nomnieka ID.
 
-- **TimeSinceLastAttemptedSync**  — laiks, kas pagājis kopš pēdējā piezīmju grāmatiņas sinhronizācijas mēģinājuma.
+- **TimeSinceLastAttemptedSync** — laiks, kas pagājis kopš pēdējā piezīmju grāmatiņas sinhronizācijas mēģinājuma.
 
-- **TimeSinceLastSuccessfulSync**  — laiks, kas pagājis kopš pēdējās sekmīgās piezīmju grāmatiņas sinhronizēšanas.
+- **TimeSinceLastSuccessfulSync** — laiks, kas pagājis kopš pēdējās sekmīgās piezīmju grāmatiņas sinhronizēšanas.
 
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
@@ -6014,17 +6018,17 @@ Tālāk norādītās darbības rezultāts: konta pievienošana programmai Outloo
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AccountCreationResult**  — rezultāts (izdošanās, neizdošanās, atcelšana u.c.) šim: konta pievienošana programmai Outlook.
+  - **AccountCreationResult** — rezultāts (izdošanās, neizdošanās, atcelšana u.c.) šim: konta pievienošana programmai Outlook.
 
-  - **AccountCreationTime**  — laiks, kas tika patērēts, veidojot kontu
+  - **AccountCreationTime** — laiks, kas tika patērēts, veidojot kontu
 
-  - **AccountInfoSource**  — konta iestatījumu avots (piemēram, automātiskā atklāšana, GuessSmart, automātiskā noteikšana utt.)
+  - **AccountInfoSource** — konta iestatījumu avots (piemēram, automātiskā atklāšana, GuessSmart, automātiskā noteikšana utt.)
 
-  - **AccountType**  — konfigurējamā konta tips
+  - **AccountType** — konfigurējamā konta tips
 
-  - **HashedEmailAddress**  — jaukšanas e-pasta adrese
+  - **HashedEmailAddress** — jaukšanas e-pasta adrese
 
-  - **ShowPasswordPageFlightEnabled**  — indikators, kas norāda, vai ir iespējots testējamais variants ShowPopImapPasswordPage
+  - **ShowPasswordPageFlightEnabled** — indikators, kas norāda, vai ir iespējots testējamais variants ShowPopImapPasswordPage
 
 #### <a name="officeoutlookdesktopaccountconfigurationrepairaccountresult"></a>Office.Outlook.Desktop.AccountConfiguration.RepairAccountResult
 
@@ -6032,15 +6036,15 @@ Rezultāts šim: konta labošana vai papildu konta iestatījumu maiņa. Dati tie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AccountInfoSource**  — konta informācijas avots kontam, kam tiek veikti labojumi
+  - **AccountInfoSource** — konta informācijas avots kontam, kam tiek veikti labojumi
 
-  - **AccountType**  — tāda konta tips, kam tika veikti labojumi
+  - **AccountType** — tāda konta tips, kam tika veikti labojumi
 
-  - **HashedEmailAddress**  — jaukšanas e-pasta adrese
+  - **HashedEmailAddress** — jaukšanas e-pasta adrese
 
-  - **ManualRepairRequested**  — indikators, kas norāda, vai tika pieprasīta manuāla labošana
+  - **ManualRepairRequested** — indikators, kas norāda, vai tika pieprasīta manuāla labošana
 
-  - **Result**  — konta labošanas mēģinājuma rezultāts Piemēram: "Success" vai "Fail\_SaveChangesToAccount"
+  - **Result** — konta labošanas mēģinājuma rezultāts Piemēram: "Success" vai "Fail\_SaveChangesToAccount"
 
 #### <a name="officeoutlookdesktopaccountconfigurationupdatepasswordresult"></a>Office.Outlook.Desktop.AccountConfiguration.UpdatePasswordResult
 
@@ -6048,11 +6052,11 @@ Rezultāts šim: konta paroles atjaunināšana konta iestatījumu nolaižamajā 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AccountType**  — tāda konta tips, kam tika veikta paroles atjaunināšana
+  - **AccountType** — tāda konta tips, kam tika veikta paroles atjaunināšana
 
-  - **HashedEmailAddress**  — jaukšanas e-pasta adrese
+  - **HashedEmailAddress** — jaukšanas e-pasta adrese
 
-  - **Result**  — paroles atjaunināšanas mēģinājuma rezultāts Piemēram: "Success" vai "Fail\_AllowLessSecureAppsDisabled"
+  - **Result** — paroles atjaunināšanas mēģinājuma rezultāts Piemēram: "Success" vai "Fail\_AllowLessSecureAppsDisabled"
 
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
@@ -6063,9 +6067,9 @@ Tiek apkopoti šādi lauki:
 
   - **Standarta HVA darbība** ar lietderīgajiem datiem, kas ir pielāgoti
 
-  - **StoreType**  — izveidotās krātuves tips (OST/PST/NST)
+  - **StoreType** — izveidotās krātuves tips (OST/PST/NST)
 
-  - **StoreVersion**  — izveidotās krātuves versija (Small/Large/Tardis)
+  - **StoreVersion** — izveidotās krātuves versija (Small/Large/Tardis)
 
 #### <a name="officeoutlookmacaccountaddworkflow"></a>Office.Outlook.Mac.AccountAddWorkflow
 
@@ -6075,7 +6079,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AccountConfigMethod** — konta konfigurācijas metode.
 
-- **AccountType**  — konfigurējamā konta veids.
+- **AccountType** — konfigurējamā konta veids.
 
 - **AccountWorkflowSession** — sesija, kurā mēģināts izveidot konta darbplūsmu.
 
@@ -6261,9 +6265,9 @@ Apkopo, kad PowerPoint izveido jaunu prezentāciju.  Ietver panākumus un veikt
 
 Tiek apkopoti šādi lauki:
 
-  - **NewDocumentType**  — vai jaunais dokuments ir izveidots no veidnes vai vienkārši izveidots tukšs?
+  - **NewDocumentType** — vai jaunais dokuments ir izveidots no veidnes vai vienkārši izveidots tukšs?
 
-  - **FLifeguarded**  — vai dokuments ir aizsargāts (līdzeklis, kas atjauno bojāta dokumenta statusu, nepaziņojot par to lietotājam)
+  - **FLifeguarded** — vai dokuments ir aizsargāts (līdzeklis, kas atjauno bojāta dokumenta statusu, nepaziņojot par to lietotājam)
 
 #### <a name="officepowerpointdocoperationopencompleteprotocol"></a>Office.PowerPoint.DocOperation.OpenCompleteProtocol
 
@@ -6579,7 +6583,7 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_DstDoc_IsCloudCollabEnabled:bool** — patiess, ja "IsCloudCollabEnabled" HTTP galvene jau ir saņemta no pieprasījuma OPTIONS.
 
-- **Data_DstDoc_IsIncrementalOpen:bool** — vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
+- **Data_DstDoc_IsIncrementalOpen:bool**— vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
 
 - **Data_DstDoc_IsOcsSupported:bool** — vai ir dokuments atbalsta koprediģēšanu, izmantojot jauno OCS pakalpojumu.
 
@@ -6609,11 +6613,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_SessionId:long** — ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
 
-- **Data_DstDoc_SharePointServiceContext:string** — necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_DstDoc_SharePointServiceContext:string**— necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_DstDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
-- **Data_DstDoc_SpecialChars:long** — bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
+- **Data_DstDoc_SpecialChars:long**— bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
 
 - **Data_DstDoc_StorageProviderId:string** — virkne, kas norāda dokumenta krātuves nodrošinātāju, piemēram, "DropBox".
 
@@ -6665,7 +6669,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_IsCloudCollabEnabled:bool** — patiess, ja "IsCloudCollabEnabled" HTTP galvene jau ir saņemta no pieprasījuma OPTIONS.
 
-- **Data_SrcDoc_IsIncrementalOpen:bool** — vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
+- **Data_SrcDoc_IsIncrementalOpen:bool**— vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
 
 - **Data_SrcDoc_IsOcsSupported:bool** — vai ir dokuments atbalsta koprediģēšanu, izmantojot jauno OCS pakalpojumu.
 
@@ -6695,11 +6699,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_SessionId:long** — ģenerēts GUID, kas identificē dokumenta instanci tajā pašā procesa sesijā
 
-- **Data_SrcDoc_SharePointServiceContext:string** —necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_SrcDoc_SharePointServiceContext:string**—necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_SrcDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
-- **Data_SrcDoc_SpecialChars:long** — bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
+- **Data_SrcDoc_SpecialChars:long**— bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
 
 - **Data_SrcDoc_StorageProviderId:string** — virkne, kas norāda dokumenta krātuves nodrošinātāju, piemēram, "DropBox".
 
@@ -6715,7 +6719,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_TypeOfSaveDialog: Long** — iepriekš definētu dialoga vērtību kopa (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG u. tml.).
 
-- **Data_WaitForSaveOrMergeSuccess:bool** — “SaveAs” sekmīgi sagaidīja saglabāšanu fonā vai sapludināšanu.
+- **Data_WaitForSaveOrMergeSuccess:bool**— “SaveAs” sekmīgi sagaidīja saglabāšanu fonā vai sapludināšanu.
  
 - **Data_WaitForSaveOrMergeTimeout:long** — SaveAs noildze, gaidot fona saglabāšanu vai sapludināšanu.
 
@@ -6766,7 +6770,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_IsCloudCollabEnabled:bool** — patiess, ja "IsCloudCollabEnabled" HTTP galvene jau ir saņemta no pieprasījuma OPTIONS.
 
-- **Data_Doc_IsIncrementalOpen:bool** — vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
+- **Data_Doc_IsIncrementalOpen:bool**— vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
 
 - **Data_Doc_IsOcsSupported:bool** — vai ir dokuments atbalsta koprediģēšanu, izmantojot jauno OCS pakalpojumu.
 
@@ -6798,11 +6802,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_SessionId:long** — ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
 
-- **Data_Doc_SharePointServiceContext:string** — necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_Doc_SharePointServiceContext:string**— necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_Doc_SizeInBytes:long** — dokumenta lielums baitos.
 
-- **Data_Doc_SpecialChars:long** — bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
+- **Data_Doc_SpecialChars:long**— bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
 
 - **Data_Doc_StorageProviderId:string** — virkne, kas norāda dokumenta krātuves nodrošinātāju, piemēram, "DropBox".
 
@@ -6844,7 +6848,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_IsCloudCollabEnabled:bool** — patiess, ja "IsCloudCollabEnabled" HTTP galvene jau ir saņemta no pieprasījuma OPTIONS.
 
-- **Data_DstDoc_IsIncrementalOpen:bool** — vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
+- **Data_DstDoc_IsIncrementalOpen:bool**— vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
 
 - **Data_DstDoc_IsOcsSupported:bool** — vai ir dokuments atbalsta koprediģēšanu, izmantojot jauno OCS pakalpojumu.
 
@@ -6874,11 +6878,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_SessionId:long** — ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
 
-- **Data_DstDoc_SharePointServiceContext:string** — necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_DstDoc_SharePointServiceContext:string**— necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_DstDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
-- **Data_DstDoc_SpecialChars:long** — bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
+- **Data_DstDoc_SpecialChars:long**— bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
 
 - **Data_DstDoc_StorageProviderId:string** — virkne, kas norāda dokumenta krātuves nodrošinātāju, piemēram, "DropBox".
 
@@ -6928,7 +6932,7 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_SrcDoc_IsCloudCollabEnabled:bool** — patiess, ja "IsCloudCollabEnabled" HTTP galvene jau ir saņemta no pieprasījuma OPTIONS.
 
-- **Data_SrcDoc_IsIncrementalOpen:bool** — vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
+- **Data_SrcDoc_IsIncrementalOpen:bool**— vai dokuments tika atvērts inkrementāli (jauns līdzeklis, kas atver dokumentu bez vajadzības lejupielādēt visu dokumentu).
 
 - **Data_SrcDoc_IsOcsSupported:bool** — vai ir dokuments atbalsta koprediģēšanu, izmantojot jauno OCS pakalpojumu.
 
@@ -6958,11 +6962,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_SessionId:long** — ģenerēts GUID, kas norāda dokumenta instanci tajā pašā procesa sesijā.
 
-- **Data_SrcDoc_SharePointServiceContext:string** —necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
+- **Data_SrcDoc_SharePointServiceContext:string**—necaurspīdīga virkne, parasti GridManagerID.FarmID. Noder, lai saistītu klienta un servera žurnālu.
 
 - **Data_SrcDoc_SizeInBytes:long** — dokumenta lielums baitos.
 
-- **Data_SrcDoc_SpecialChars:long** — bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
+- **Data_SrcDoc_SpecialChars:long**— bitmaska, kas norāda speciālās rakstzīmes dokumenta vietrādī URL vai ceļā.
 
 - **Data_SrcDoc_StorageProviderId:string** — virkne, kas norāda dokumenta krātuves nodrošinātāju, piemēram, "DropBox".
 
@@ -6978,11 +6982,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_TypeOfSaveDialog: Long** — iepriekš definētu dialoga vērtību kopa (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG u. tml.).
 
-- **Doc**  — pašreizējais dokuments saglabāšanai.
+- **Doc** — pašreizējais dokuments saglabāšanai.
 
-- **DstDoc**  — jaunā dokumenta atrašanās vieta (darbībai Saglabāt kā).
+- **DstDoc** — jaunā dokumenta atrašanās vieta (darbībai Saglabāt kā).
 
-- **SrcDoc**  — sākotnējā dokumenta atrašanās vieta (darbībai Saglabāt kā).
+- **SrcDoc** — sākotnējā dokumenta atrašanās vieta (darbībai Saglabāt kā).
 
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
@@ -6999,21 +7003,21 @@ Svarīgs PowerPoint līdzeklis, kas apkopo kļūmes slaidrādes laikā. Microsof
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **CountOArtErrors**  — kopējais OArt kļūdu skaits
+- **CountOArtErrors** — kopējais OArt kļūdu skaits
 
-- **CountOtherErrors**  — kopējais pārējo kļūdu skaits
+- **CountOtherErrors** — kopējais pārējo kļūdu skaits
 
-- **CountPPTErrors**  — kopējais PPT kļūdu skaits.
+- **CountPPTErrors** — kopējais PPT kļūdu skaits.
 
-- **CountSlideShowErrors**  — kopējais slaidrādes kļūdu skaits.
+- **CountSlideShowErrors** — kopējais slaidrādes kļūdu skaits.
 
-- **FirstOArtError**  — pirmā OArt kļūda.
+- **FirstOArtError** — pirmā OArt kļūda.
 
-- **FirstOtherError**  — pirmā kļūda citā apgabalā.
+- **FirstOtherError** — pirmā kļūda citā apgabalā.
 
-- **FirstPPTError**  — pirmā PPT kļūda.
+- **FirstPPTError** — pirmā PPT kļūda.
 
-- **FirstSlideShowError**  — pirmā kļūda slaidrādē.
+- **FirstSlideShowError** — pirmā kļūda slaidrādē.
 
     
 #### <a name="officepowerpointrunprintoperation"></a>Office.PowerPoint.RunPrintOperation
@@ -7035,9 +7039,9 @@ Project saglabā failu. Šis notikums norāda Project saglabāto failu. Tas ļau
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_TriggerTime**  — saglabāšanas laiks
+  - **Data\_TriggerTime** — saglabāšanas laiks
 
-  - **Data\_FileType**  — saglabātā projekta faila tips
+  - **Data\_FileType** — saglabātā projekta faila tips
  
 #### <a name="officesessionactivitystart"></a>Office.Session.Activity.Start
 
@@ -7045,13 +7049,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti šādi lauki:
 
-- **Activity_Name**  — darbības "Session" nosaukums
+- **Activity_Name** — darbības "Session" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — sākums
+- **Activity_StartStopType** — sākums
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
 
 #### <a name="officesessionactivitystop"></a>Office.Session.Activity.Stop
 
@@ -7059,13 +7063,13 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki:
 
-- **Activity_Name**  — darbības "Session" nosaukums
+- **Activity_Name** — darbības "Session" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — apturēšana
+- **Activity_StartStopType** — apturēšana
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
 
 #### <a name="officestreamdeviceactivitystart"></a>Office.StreamDevice.Activity.Start
 
@@ -7073,17 +7077,17 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Datasource_Type**  — sērijas ierīce vai programmas pakalpojuma informācija
+- **Datasource_Type** — sērijas ierīce vai programmas pakalpojuma informācija
 
-- **DataSource_Name**  — pievienoto datu avota nosaukums
+- **DataSource_Name** — pievienoto datu avota nosaukums
 
-- **Activity_Name**  — darbības "StreamFileData" vai "StreamDeviceData" nosaukums
+- **Activity_Name** — darbības "StreamFileData" vai "StreamDeviceData" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — sākums
+- **Activity_StartStopType** — sākums
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
 
 #### <a name="officestreamdeviceactivitystop"></a>Office.StreamDevice.Activity.Stop
 
@@ -7091,17 +7095,17 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Datasource_Type**  — sērijas ierīce vai programmas pakalpojuma informācija
+- **Datasource_Type** — sērijas ierīce vai programmas pakalpojuma informācija
 
-- **DataSource_Name**  — pievienoto datu avota nosaukums
+- **DataSource_Name** — pievienoto datu avota nosaukums
 
-- **Activity_Name**  — darbības "StreamFileData" vai "StreamDeviceData" nosaukums
+- **Activity_Name** — darbības "StreamFileData" vai "StreamDeviceData" nosaukums
 
-- **Activity_CV**  — ID, kas saista savienojuma sesijas notikumus
+- **Activity_CV** — ID, kas saista savienojuma sesijas notikumus
 
-- **Activity_StartStopType**  — apturēšana
+- **Activity_StartStopType** — apturēšana
 
-- **Activity_DateTimeTicks**  — darbības datums un laiks
+- **Activity_DateTimeTicks** — darbības datums un laiks
 
 #### <a name="officetargetedmessagingabexperimentmessagetrigger"></a>Office.TargetedMessaging.ABExperimentMessageTrigger
 
@@ -7109,17 +7113,17 @@ Izseko to lietotāju skaitam, kas saņem BizBar un dinamiskās pamatnes ziņojum
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_Surface**  — tās virsmas nosaukums, kam ir paredzēts šis pakalpojuma piegādātais ziņojums
+  - **Data\_Surface** — tās virsmas nosaukums, kam ir paredzēts šis pakalpojuma piegādātais ziņojums
 
-  - **Data\_Flight**  — ECS/CT testējamā varianta identifikators, kas tika izmantots, lai piegādātu šo ziņojumu
+  - **Data\_Flight** — ECS/CT testējamā varianta identifikators, kas tika izmantots, lai piegādātu šo ziņojumu
 
-  - **Data\_CampaignId**  — tās kampaņas identifikators, kurai pieder šis ziņojums
+  - **Data\_CampaignId** — tās kampaņas identifikators, kurai pieder šis ziņojums
 
-  - **Data\_MessageId**  — šī pakalpojuma piegādātā ziņojuma identifikators
+  - **Data\_MessageId** — šī pakalpojuma piegādātā ziņojuma identifikators
 
-  - **Data\_TransactionId**  — šīs pakalpojuma darbības identifikators
+  - **Data\_TransactionId** — šīs pakalpojuma darbības identifikators
 
-  - **Data\_TriggerPoint**  — darbība, kurā tika reģistrēts šis notikums (saņemtais ziņojums salīdzinājumā ar attēloto ziņojumu)
+  - **Data\_TriggerPoint** — darbība, kurā tika reģistrēts šis notikums (saņemtais ziņojums salīdzinājumā ar attēloto ziņojumu)
 
 #### <a name="officetextfontpickerfontselectedwin32"></a>Office.Text.FontPickerFontSelected.Win32
 
@@ -7137,15 +7141,15 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_FontToken**  — resursa faila nosaukumam tiks veikta darbība Saglabāt kā
+  - **Data\_FontToken** — resursa faila nosaukumam tiks veikta darbība Saglabāt kā
 
-  - **Data\_HTTPResult**  — HTTP pieprasījuma rezultāts
+  - **Data\_HTTPResult** — HTTP pieprasījuma rezultāts
 
-  - **Data\_HTTPStatusCode**  — no HTTP pieprasījuma atgrieztais HTTP kods
+  - **Data\_HTTPStatusCode** — no HTTP pieprasījuma atgrieztais HTTP kods
 
-  - **Data\_isInternetOn**  — vai resursa izgūšanas laikā bija izveidots savienojums
+  - **Data\_isInternetOn** — vai resursa izgūšanas laikā bija izveidots savienojums
 
-  - **Data\_RequestUrl**  — tā CDN resursa URL, kuru mēs mēģinām izgūt
+  - **Data\_RequestUrl** — tā CDN resursa URL, kuru mēs mēģinām izgūt
 
 
 
@@ -7169,11 +7173,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.browserUserAgent —** pārlūkprogrammas lietotāja aģents.
 
-- **Data.colorDepth**  — sistēmas krāsu dziļums.
+- **Data.colorDepth** — sistēmas krāsu dziļums.
 
-- **Data.contentLanguage** — noteiktā tulkojamā satura valoda.
+- **Data.contentLanguage**— noteiktā tulkojamā satura valoda.
 
-- **Data.controlBackgroundColor** — Office dizaina kontroles fona krāsa.
+- **Data.controlBackgroundColor**— Office dizaina kontroles fona krāsa.
 
 - **Data.controlForegroundColor —** Office dizaina kontroles priekšplāna krāsa.
 
@@ -7181,11 +7185,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.crossSessionId** — lietotāja unikālais identifikators.
 
-- **Data.crossSessionStartTime** — tulkošanas sesijas sākuma UTC laikspiedols.
+- **Data.crossSessionStartTime**— tulkošanas sesijas sākuma UTC laikspiedols.
 
-- **Data.currentTime**  — UTC laikspiedols, kas norāda, kad tika nosūtīts šis telemetrijas ziņojums.
+- **Data.currentTime** — UTC laikspiedols, kas norāda, kad tika nosūtīts šis telemetrijas ziņojums.
 
-- **Data.displayLanguage** — Office interfeisa valoda.
+- **Data.displayLanguage**— Office interfeisa valoda.
 
 - **Data.documentSourceLang —** dokumenta satura valoda.
 
@@ -7213,7 +7217,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.lookupSourceLang —** netiek izmantots dokumenta tulkošanai.
 
-- **Data.lookupTargetLang** — netiek izmantots dokumenta tulkošanai.
+- **Data.lookupTargetLang**— netiek izmantots dokumenta tulkošanai.
 
 - **Data.officeHost —** Office lietojumprogramma, kas vieso sānu rūti.
 
@@ -7286,11 +7290,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.browserUserAgent —** pārlūkprogrammas lietotāja aģents.
 
-- **Data.colorDepth**  — sistēmas krāsu dziļums.
+- **Data.colorDepth** — sistēmas krāsu dziļums.
 
-- **Data.contentLanguage** — noteiktā tulkojamā satura valoda.
+- **Data.contentLanguage**— noteiktā tulkojamā satura valoda.
 
-- **Data.controlBackgroundColor** — Office dizaina kontroles fona krāsa.
+- **Data.controlBackgroundColor**— Office dizaina kontroles fona krāsa.
 
 - **Data.controlForegroundColor —** Office dizaina kontroles priekšplāna krāsa.
 
@@ -7298,11 +7302,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.crossSessionId** — lietotāja unikālais identifikators.
 
-- **Data.crossSessionStartTime** — tulkošanas sesijas sākuma UTC laikspiedols.
+- **Data.crossSessionStartTime**— tulkošanas sesijas sākuma UTC laikspiedols.
 
-- **Data.currentTime**  — UTC laikspiedols, kas norāda, kad tika nosūtīts šis telemetrijas ziņojums.
+- **Data.currentTime** — UTC laikspiedols, kas norāda, kad tika nosūtīts šis telemetrijas ziņojums.
 
-- **Data.displayLanguage** — Office interfeisa valoda.
+- **Data.displayLanguage**— Office interfeisa valoda.
 
 - **Data.documentSourceLang —** netiek izmantots atlasei.
 
@@ -7374,7 +7378,195 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.sourceTextWords —** tulkojamā teksta vārdu skaits.
 
-- **Data.warningMessage —** pakalpojuma reģistrētais brīdinājuma ziņojums.
+- **Data.warningMessage** — pakalpojuma reģistrētais brīdinājuma ziņojums.
+
+
+#### <a name="officeuxacccheckeracccheckerfinalviolationcountperrule"></a>Office.UX.AccChecker.AccCheckerFinalViolationCountPerRule
+
+Šis notikums tiek aktivizēts, kad tiek ziņots par pašreiz atvērtā dokumenta pieejamības problēmām. Šis notikums atspoguļo pieejamības pārkāpumus (kļūdas, brīdinājumus un padomus), kas pastāv katram noteikumam atvērtajam dokumentam sesijas sākumā un beigās.  Šis notikums tiek izmantots, lai reģistrētu piekļuves pārkāpumu skaitu (kļūdas, brīdinājumus un padomus) katram noteikumam atvērtajam dokumentam sesijas sākumā un beigās.
+
+Detalizēta informācija par pārkāpumu skaitu katrā noteikumā palīdz Microsoft noteikt, kuras pieejamības problēmas Office dokumentos ir visizplatītākās. Tas palīdz strādāt pie to novēršanas un veicina iekļaujošas vides izveidi darba vietā un klasē cilvēkiem ar invaliditāti.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_FinalCount_RuleID_0** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_1** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_2** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_3** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_4** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_5** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_6** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_7** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_8** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_9** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_10** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_11** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_12** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_13** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_14** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_15** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_16** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_FinalCount_RuleID_17** — kārtulas ID = n pārkāpumu skaits, kas paliek pēdējoreiz, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_0** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_1** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_2** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_3** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_4** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_5** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_6** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_7** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_8** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_9** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_10** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_11** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_12** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_13** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_14** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_15** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_16** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **Data_InitialCount_RuleID_17** — kārtulas ID = n pārkāpumu skaits, kas tika konstatēti pirmo reizi, kad konta pārbaudītājs darbojās sesijā.
+
+- **FinalDocID** — skenētā dokumenta galīgais DocumentID
+
+- **FinalDocUrlHash** — skenētā dokumenta galīgais DocumentURLHash
+    
+- **FinalDocID** — skenētā dokumenta sākotnējais DocumentID
+
+- **FinalDocUrlHash** — skenētā dokumenta sākotnējais DocumentURLHash
+
+- **PaneOpened** — Būla vērtība, kas izseko to, vai ir atvērta rūts AccChecker
+
+- **ServerDocID** — servera DocumentID dokumentam, kuru skenēja pieejamības pārbaudītājs
+
+
+#### <a name="officeuxacccheckeracccheckerviolationinformation"></a>Office.UX.AccChecker.AccCheckerViolationInformation
+
+Šis notikums tiek aktivizēts, kad tiek ziņots par pašreiz atvērtā dokumenta pieejamības problēmām. Parāda kopējo pārkāpumu skaitu (kļūdas, brīdinājumus un padomus) atvērtajam dokumentam sesijas sākumā un beigās. Šis notikums tiek izmantots, lai reģistrētu kopējo pieejamības pārkāpumu skaitu (kļūdas, brīdinājumus un padomus) atvērtajam dokumentam sesijas sākumā un beigās. Zināšanas par pieejamības pārbaudītāja lietojumu ļauj korporācijai Microsoft uzlabot savas lietojumprogrammas iespējas, lai tās būtu vairāk ietverošas personām ar funkcionāliem traucējumiem Office lietošanas scenārijos darbavietā un klasē.
+
+Tiek apkopoti šādi lauki:
+    
+- **FinalDocID** — skenētā dokumenta galīgais DocumentID
+
+- **FinalDocUrlHash** — skenētā dokumenta galīgais DocumentURLHash
+
+- **FinalErrorCount** — galīgais kļūdu skaits, par kuru dokumentam ir paziņojis pieejamības pārbaudītājs
+
+- **FinalIntelligentServiceCount** — Intelektiskie pakalpojumu problēmu galīgais skaits, kuriem dokumentam ir ziņojusi pieejamības pārbaudītājs
+
+- **FinalTipCount** — galīgais padomu skaits, par kuru dokumentam ir paziņojis pieejamības pārbaudītājs
+
+- **FinalViolationCount** — galīgais pārkāpumu skaits, par kuru dokumentam ir paziņojis pieejamības pārbaudītājs
+
+- **FinalWarningCount** — galīgais brīdinājumu skaits, par kuru dokumentā ziņoja pieejamības pārbaudītājs
+
+- **FinalDocID** — skenētā dokumenta sākotnējais DocumentID
+
+- **FinalDocUrlHash** — skenētā dokumenta sākotnējais DocumentURLHash
+
+- **InitialErrorCount** — visu kļūdas veida pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **InitialIntelligentServicesCount** — visu veidu intelektiskā pakalpojuma pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **InitialTipCount** — visu padomu veida pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **InitialUrlHash** — visu kļūdas veida pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **InitialViolationCount** — visu pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **InitialWarningCount** — visu brīdinājumu veida pārkāpumu skaits, kas tika konstatēti, pirmo reizi veicot pārbaudi sesijā.
+
+- **PaneOpened** — Būla vērtība, kas izseko to, vai ir atvērta rūts pieejamības pārbaudītājs
+
+- **ServerDocID** — servera DocumentID dokumentam, kuru skenēja pieejamības pārbaudītājs
+
+
+#### <a name="officeuxacccheckerbackgroundacccheckerenabledstate"></a>Office.UX.AccChecker.BackgroundAccCheckerEnabledState
+
+Šis notikums tiek aktivizēts, kad lietotājs vai IT administrators ir iespējojis fona pieejamības pārbaudītāju Office lietotājam. Šis notikums tiek izmantots, lai saprastu gadījumus, kad Office lietotājiem ir iespējots fona pieejamības pārbaudītājs. Fona pieejamības pārbaudītāja iespējotais statuss ļauj Microsoft saprast, vai dokumentus var automātiski skenēt fonā. Tas palīdz radīt iekļaujošāku darba vietu un klases vidi personām ar invaliditāti.
+
+Tiek apkopoti šādi lauki:
+
+- **BackgroundAccCheckerEnabled** — Būla vērtība, lai izsekotu fona pieejamības pārbaudītāja stāvokli Iespējots/Atspējots
+
+
+#### <a name="officeuxacccheckerbackgroundscanningcheckboxclicked"></a>Office.UX.AccChecker.BackgroundScanningCheckboxClicked
+
+Šis notikums tiek aktivizēts, kad lietotājs iespējo fona pieejamības pārbaudītāju no pieejamības pārbaudītāja uzdevumu rūts.  Šis notikums tiek izmantots, lai saprastu gadījumus, kad Office dokumentiem ir iespējots fona pieejamības pārbaudītājs. Fona pieejamības pārbaudītāja iespējotais statuss ļauj Microsoft saprast, vai dokumentus var automātiski skenēt fonā. Tas palīdz radīt iekļaujošāku darba vietu un klases vidi personām ar invaliditāti.
+
+Tiek apkopoti šādi lauki:
+    
+- **FinalBackgroundScanningState** — sākotnējais izvēles rūtiņas stāvoklis, kas iespējo fona skenēšanu
+
+- **InitialBackgroundScanningState** — sākotnējais izvēles rūtiņas stāvoklis, kas iespējo fona skenēšanu
+
+
+#### <a name="officeuxacccheckerdisabledresults"></a>Office.UX.AccChecker.DisabledResults
+
+Šis notikums tiek aktivizēts, kad pieejamības pārbaudītājs tiek atspējots atvērtajam dokumentam. Šis notikums tiek izmantots, lai saprastu gadījumus, kad Office pieejamības pārbaudītājs tiek atspējots mantota vai neatbalstīta Office dokumenta dēļ. Pieejamības pārbaudītāja atspējots statuss ļauj Microsoft saprast, cik bieži dokumentu nevar skenēt, un palīdzēt lietotājiem atļaut šādu dokumentu skenēšanu — pārveidojot dokumentu par modernu faila formātu. Tas palīdz radīt iekļaujošāku darba vietu un klases vidi personām ar invaliditāti.
+
+Tiek apkopoti šādi lauki:
+    
+- **Data_Disabled_ID** — atspējotās kļūdas ID
+
+- **Data_Disabled_Reason** — pieejamības pārbaudītāja atspējošanas iemesls
+
+- **Data_IsUpConvertEnabled** — uzskaita, vai dokumentam ir pieejams konvertēšana uz modernu faila formātu
+
+
+#### <a name="officeuxacccheckershowtaskpane"></a>Office.UX.AccChecker.ShowTaskPane
+
+Šis notikums tiek aktivizēts, kad pieejamības pārbaudītāja uzdevumrūts tiek palaista pašreiz atvērtam dokumentam.  Šis notikums tiek izmantots, lai izprastu Office pieejamības pārbaudītāja lietošanu. Pieejamības pārbaudītājs tiek izmantots, lai identificētu un novērstu Office dokumentu pieejamības problēmas. Zināšanas par pieejamības pārbaudītāja lietojumu ļauj korporācijai Microsoft uzlabot savas lietojumprogrammas iespējas, lai tās būtu vairāk ietverošas personām ar funkcionāliem traucējumiem Office lietošanas scenārijos darbavietā un klasē.
+
+Tiek apkopoti šādi lauki:
+
+- **BackgroundScanCheckboxEnabled** — izseko, vai ir iespējots fona pieejamības pārbaudītājs
+    
+- **Column** — nolūks
+
+- **DocUrlHash** — skenētā dokumenta unikālā doc id hash
+
+- **HasAccessibilityViolations** — izseko, ja dokumentā iekļauti pieejamības pārkāpumi brīdī, kad tiek atvērta rūts
+
+- **IsPaneDisabled** — izseko, ja pieejamības pārbaudītāja rūts tiek atvērta atspējotā stāvoklī (mantots vai neatbalstīts dokuments)
+
+- **PaneOpenedBefore** — izseko, ja ir atvērta rūts pieejamības pārbaudītājs
+
+- **WAC_ServerDocId** — skenētā dokumenta servera dokumenta ID
 
 
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
@@ -7383,7 +7575,7 @@ Reģistrē līdzekļu izmēģinājumus lietotājiem. Šis notikums palīdz mums 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_Enable:bool** — patiess norāda, ka līdzeklis ir iespējots pašreizējam lietotājam
+  - **Data\_Enable:bool**— patiess norāda, ka līdzeklis ir iespējots pašreizējam lietotājam
 
   - **Data\_Feature:string** — līdzekļa nosaukums
 
@@ -7401,13 +7593,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ConnectorsBasedOnSequence:bool** — patiess, ja atsvaidzinātā shēma tika izveidota, izmantojot savienotāju, kura pamatā ir secības opcija
 
-  - **Data\_DialogError** : **string** — kļūda viedās shēmas atsvaidzināšanas laikā
+  - **Data\_DialogError**:**string** — kļūda viedās shēmas atsvaidzināšanas laikā
 
   - **Data\_FileError:string** — kļūdas virkne, ja pievienotais Excel fails ir nederīgs
 
-  - **Data\_OverwriteSelected** : **bool** — patiess, ja lietotājs atlasīja shēmas pārrakstīšanas opciju atsvaidzināšanas laikā
+  - **Data\_OverwriteSelected**:**bool** — patiess, ja lietotājs atlasīja shēmas pārrakstīšanas opciju atsvaidzināšanas laikā
 
-  - **Data\_WarningShown** : **bool** — patiess, ja lietotājam tika parādīts brīdinājums datu atsvaidzināšanas laikā
+  - **Data\_WarningShown**:**bool** — patiess, ja lietotājam tika parādīts brīdinājums datu atsvaidzināšanas laikā
 
 #### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
 
@@ -7444,13 +7636,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_DirtyState**  — vai dokuments tika izveidots mainītā statusā (ar nesaglabātām izmaiņām)
+  - **Data\_DirtyState** — vai dokuments tika izveidots mainītā statusā (ar nesaglabātām izmaiņām)
 
-  - **Data\_ErrorID**  — identifikators darbības kļūmes gadījumā
+  - **Data\_ErrorID** — identifikators darbības kļūmes gadījumā
 
   - **Data\_MainPdod —** dokumenta identifikators šī procesa laikā.
 
-  - **Data\_UsesCustomTemplate**  — norāda, vai dokuments ir izveidots, izmantojot pielāgotu veidni
+  - **Data\_UsesCustomTemplate** — norāda, vai dokuments ir izveidots, izmantojot pielāgotu veidni
 
 #### <a name="officewordfileopenuserinitiatedopen"></a>Office.Word.FileOpen.UserInitiatedOpen 
 
@@ -7458,7 +7650,7 @@ Tiek apkopoti tālāk norādītie lauki.
  
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai. 
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai. 
 
 - **Data_BytesAsynchronous** — baitu skaits (saspiests), bez kura uzskatām, ka varēsim atvērt failu, ja tos iegūstam pirms lietotājs vēlas sākt rediģēšanu vai saglabāšanu. 
 
@@ -7466,7 +7658,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_BytesSynchronous** — baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu. 
 
-- **Data_BytesUnknown** — baitu skaits dokumenta daļās, kuras neplānojam atrast. 
+- **Data_BytesUnknown**— baitu skaits dokumenta daļās, kuras neplānojam atrast. 
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams. 
 
@@ -7520,7 +7712,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_Doc_ServerVersion —** servera versija, kas nodrošina pakalpojumu. 
 
-- **Data_Doc_SessionId**  — tā servera versija, kas nodrošina pakalpojumu 
+- **Data_Doc_SessionId** — tā servera versija, kas nodrošina pakalpojumu 
 
 - **Data_Doc_SharePointServiceContext —** diagnostikas informācija no SharePoint Online pieprasījumiem. 
 
@@ -7536,23 +7728,23 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.Doc.WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru. 
 
-- **Data_EditorDisablingRename**  — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu. 
+- **Data_EditorDisablingRename** — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu. 
 
-- **Data_EditorsCount**  — redaktoru skaits dokumentā. 
+- **Data_EditorsCount** — redaktoru skaits dokumentā. 
 
 - **Data_ForceReadWriteReason** — vesela skaitļa vērtība, kas attēlo iemeslu, kāpēc fails tika atvērts lasīšanas/rakstīšanas režīmā. 
 
 - **Data_FSucceededAfterRecoverableFailure** — norāda, ka atvēršana izdevās pēc kļūmes izlabošanas, kas radās dokumenta atvēršanas laikā. 
 
-- **Data_LastLoggedTag**  — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai). 
+- **Data_LastLoggedTag** — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai). 
 
 - **Data_LinkStyles** — norāda, vai ir saite ar veidņu stiliem. 
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā. 
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā. 
 
 - **Data_Measurements** — kodēta virkne, kas satur dažādu daļu atvēršanas laika sadalījumu. Izmanto, lai diagnosticētu atvēršanas izpildi. 
 
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu. 
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu. 
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota. 
 
@@ -7562,9 +7754,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas. 
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana. 
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana. 
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota. 
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota. 
 
 - **Data_SecondaryTag** — unikāla atzīme koda izsaukšanas vietai, kas tiek izmantota, lai pievienotu papildu kļūmes datus atvēršanai. 
 
@@ -7582,9 +7774,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -7656,19 +7848,19 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_UrlHash —** vienvirziena jaukšana vienkāršota dokumenta identifikatora izveidei.
 
-- **Data_EditorDisablingRename**  — tā pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
+- **Data_EditorDisablingRename** — tā pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
 
-- **Data_EditorsCount**  — redaktoru skaits dokumentā.
+- **Data_EditorsCount** — redaktoru skaits dokumentā.
 
 - **Data_LastLoggedTag** — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas saglabāt divreiz (izmanto datu kvalitātes diagnostikai).
 
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu.
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
     
 
@@ -7678,9 +7870,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -7756,37 +7948,37 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_AccessMode** — mērķa dokuments ir tikai lasāms/rediģējams.
 
-- **Data_Doc_EdpState**  — mērķa dokumenta elektronisko datu aizsardzības iestatījums.
+- **Data_Doc_EdpState** — mērķa dokumenta elektronisko datu aizsardzības iestatījums.
 
 - **Data_DstDoc_Ext** — mērķa dokumenta paplašinājums (docx/xlsb/pptx utt.).
 
 - **Data_DstDoc_FileFormat** — mērķa dokumenta faila formāta protokola versija.
 
-- **Data_DstDoc_Location**  — norāda pakalpojumu, kurā atrodas mērķa dokuments (OneDrive, File Server, SharePoint utt.).
+- **Data_DstDoc_Location** — norāda pakalpojumu, kurā atrodas mērķa dokuments (OneDrive, File Server, SharePoint utt.).
 
 - **Data_DstDoc_LocationDetails** — norāda, kura lokālajā zināmajā mapē tiek glabāts mērķa dokuments.
 
 - **Data_DstDoc_SessionId —** identificē konkrētu dokumenta rediģēšanas sesiju pilnā sesijā.
 
-- **Data_DstDoc_UrlHash**  — vienvirziena jaukšana vienkāršota mērķa dokumenta identifikatora izveidei.
+- **Data_DstDoc_UrlHash** — vienvirziena jaukšana vienkāršota mērķa dokumenta identifikatora izveidei.
 
 - **Data_FailureClass** — skaitlis, kas atspoguļo OCS pārejas kļūmju kļūmes klasi.
 
 - **Data_LocationPickerSaveStatus** — skaitliska vērtība, kas norāda darbību, kas aktivizēja saglabāšanu izejas dialoglodziņā.
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā.
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
-- **Data_OCSSyncbackSaveStarted**  — karodziņš, kas norāda, ka saglabātais dokuments ir saistīts ar sinhronizēto saglabāšanu. 
+- **Data_OCSSyncbackSaveStarted** — karodziņš, kas norāda, ka saglabātais dokuments ir saistīts ar sinhronizēto saglabāšanu. 
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
-- **Data_SaveInitiateKind**  — vesels skaitlis, kas norāda, kā tika sākta saglabāšana.
+- **Data_SaveInitiateKind** — vesels skaitlis, kas norāda, kā tika sākta saglabāšana.
 
-- **Data_SrcDocIsUnnamedOrNew**  — norāda, vai saglabājamais dokuments ir jauns.
+- **Data_SrcDocIsUnnamedOrNew** — norāda, vai saglabājamais dokuments ir jauns.
 
 
 #### <a name="officewordfilesavesaveassavefile"></a>Office.Word.FileSave.SaveAsSaveFile
@@ -7795,13 +7987,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
 
 - **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā mērķa dokumentam. Izmanto datu kvalitātes diagnostikai.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā avota dokumentam. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā avota dokumentam. Izmanto datu kvalitātes diagnostikai.
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -7869,13 +8061,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_AccessMode** — mērķa dokuments ir tikai lasāms/rediģējams.
 
-- **Data_DstDoc_AssistedReadingReasons**  — iepriekš definētu vērtību kopa, kas norāda, kāpēc mērķa dokuments ir atvērts pieejamā lasīšanas režīmā.
+- **Data_DstDoc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc mērķa dokuments ir atvērts pieejamā lasīšanas režīmā.
 
 - **Data_DstDoc_AsyncOpenKind —** norāda, vai tika atvērta jaunā mākoņa dokumenta kešotā versijā un kura asinhronā atsvaidzināšanas loģika tika izmantota.
     
 - **Data_DstDoc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
-- **Data_DstDoc_EdpState**  — mērķa dokumenta elektronisko datu aizsardzības iestatījums.
+- **Data_DstDoc_EdpState** — mērķa dokumenta elektronisko datu aizsardzības iestatījums.
 
 - **Data_DstDoc_Ext —** dokumenta paplašinājums (docx/xlsb/pptx utt.).
 
@@ -7883,15 +8075,15 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_Fqdn** — OneDrive vai SharePoint Online domēna nosaukums mērķa dokumentam.
 
-- **Data_DstDoc_FqdnHash**  — klientu identificējama domēna nosaukuma vienvirziena jaukšana mērķa dokumentam.
+- **Data_DstDoc_FqdnHash** — klientu identificējama domēna nosaukuma vienvirziena jaukšana mērķa dokumentam.
 
 - **Data_DstDoc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
 
-- **Data_DstDoc_InitializationScenario**  — mērķa dokumenta atvēršanas ieraksti.
+- **Data_DstDoc_InitializationScenario** — mērķa dokumenta atvēršanas ieraksti.
 
-- **Data_DstDoc_IOFlags**  — atskaites par kešotajiem karodziņiem, kas tiek izmantoti pieprasījuma opciju iestatīšanai mērķa dokumentam.
+- **Data_DstDoc_IOFlags** — atskaites par kešotajiem karodziņiem, kas tiek izmantoti pieprasījuma opciju iestatīšanai mērķa dokumentam.
     
-- **Data_DstDoc_IrmRights**  — mērķa dokumentam/lietotājam piemērotās elektronisko datu politikas atļautās darbības.
+- **Data_DstDoc_IrmRights** — mērķa dokumentam/lietotājam piemērotās elektronisko datu politikas atļautās darbības.
 
 - **Data_DstDoc_IsIncrementalOpen —** karodziņš, kas norāda, ka dokuments tika atvērts inkrementāli.
 
@@ -7901,15 +8093,15 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
 
-- **Data_DstDoc_Location**  — norāda pakalpojumu, kurā atrodas mērķa dokuments (OneDrive, File Server, SharePoint utt.).
+- **Data_DstDoc_Location** — norāda pakalpojumu, kurā atrodas mērķa dokuments (OneDrive, File Server, SharePoint utt.).
 
 - **Data_DstDoc_LocationDetails —** norāda, kurā zināmajā mapē atrodas lokāli saglabātais dokuments.
 
 - **Data_DstDoc_NumberCoAuthors —** citu lietotāju skaits koprediģēšanas sesijā.
 
-- **Data_DstDoc_PasswordFlags**  — norāda lasīšanas/rakstīšanas paroles karodziņu kopu mērķa dokumentam.
+- **Data_DstDoc_PasswordFlags** — norāda lasīšanas/rakstīšanas paroles karodziņu kopu mērķa dokumentam.
 
-- **Data_DstDoc_ReadOnlyReasons**  — iemesli, kāpēc mērķa dokuments ir atvērts tikai lasāmajā režīmā. 
+- **Data_DstDoc_ReadOnlyReasons** — iemesli, kāpēc mērķa dokuments ir atvērts tikai lasāmajā režīmā. 
 
 - **Data_DstDoc_ResourceIdHash —** anonimizēts dokumenta identifikators, ko izmanto problēmu noteikšanā.
 
@@ -7933,7 +8125,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_DstDoc_SyncBackedType —** norāda dokumenta veidu (lokālais vai servera).
 
-- **Data_DstDoc_UrlHash**  — vienvirziena jaukšana vienkāršota mērķa dokumenta identifikatora izveidei.
+- **Data_DstDoc_UrlHash** — vienvirziena jaukšana vienkāršota mērķa dokumenta identifikatora izveidei.
     
 - **Data_DstDoc_WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru.
 
@@ -7943,19 +8135,19 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_LocationPickerSaveStatus** — atrašanās vietas meklētāja atgrieztais statuss.
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā.
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
 
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu.
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
-- **Data_SaveInitiateKind**  — vesels skaitlis, kas norāda, kā tika sākta saglabāšana.
+- **Data_SaveInitiateKind** — vesels skaitlis, kas norāda, kā tika sākta saglabāšana.
 
-- **Data_SrcDoc_AccessMode**  — avota dokuments ir tikai lasāms/rediģējams.
+- **Data_SrcDoc_AccessMode** — avota dokuments ir tikai lasāms/rediģējams.
 
 - **Data_SrcDoc_AssistedReadingReasons** — iepriekš definētu vērtību kopa, kas norāda, kāpēc dokuments ir atvērts pieejamā lasīšanas režīmā.
 
@@ -7963,7 +8155,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_ChunkingType —** vienības, kas tiek izmantotas inkrementālā dokumenta atvēršanā.
 
-- **Data_SrcDoc_EdpState**  — avota dokumenta elektronisko datu aizsardzības iestatījums.
+- **Data_SrcDoc_EdpState** — avota dokumenta elektronisko datu aizsardzības iestatījums.
 
 - **Data_SrcDoc_Ext** — avota dokumenta paplašinājums (docx/xlsb/pptx utt.).
 
@@ -7971,7 +8163,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_Fqdn** — OneDrive vai SharePoint Online domēna nosaukums avota dokumentam.
 
-- **Data_SrcDoc_FqdnHash**  — klientu identificējama domēna nosaukuma vienvirziena jaukšana avota dokumentam.
+- **Data_SrcDoc_FqdnHash** — klientu identificējama domēna nosaukuma vienvirziena jaukšana avota dokumentam.
 
 - **Data_SrcDoc_IdentityTelemetryId —** tādas lietotāja identitātes vienvirziena jaukšana, kas tiek izmantota atvēršanā.
 
@@ -7989,7 +8181,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_IsSyncBacked —** karodziņš, kas norāda, ka datorā pastāv automātiski sinhronizēta dokumenta kopija.
     
-- **Data_SrcDoc_Location**  — norāda pakalpojumu, kurā atrodas avota dokuments (OneDrive, File Server, SharePoint utt.).
+- **Data_SrcDoc_Location** — norāda pakalpojumu, kurā atrodas avota dokuments (OneDrive, File Server, SharePoint utt.).
 
 - **Data_SrcDoc_LocationDetails —** norāda, kurā zināmajā mapē atrodas lokāli saglabātais dokuments.
 
@@ -8025,7 +8217,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_SrcDoc_WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru.
 
-- **Data_SrcDocIsUnnamedOrNew**  — norāda, vai saglabājamais dokuments ir jauns.
+- **Data_SrcDocIsUnnamedOrNew** — norāda, vai saglabājamais dokuments ir jauns.
 
 
 #### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
@@ -8062,7 +8254,7 @@ Tiek apkopoti šādi lauki:
 
 - Nav
 
-#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(iepriekšējais nosaukums)* , Office.OneNote.Android.Canvas.PageOpened
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(iepriekšējais nosaukums)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signāls tiek izmantots, lai ierakstītu brīdi, kad tiek atvērta lapa.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas problēmas. kas rodas brīdī, kad lapa tiek atvērta OneNote
 
@@ -8072,7 +8264,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **TIME_TAKEN_IN_MS** — lapas atvēršanai veltītais laiks
 
-#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(iepriekšējais nosaukums)* , Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(iepriekšējais nosaukums)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Šis signāls tiek izmantots, lai nodrošinātu to, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, piezīmju grāmatiņas tiek atbilstoši nodrošinātas un lietotājs ir veiksmīgi izveidojis jaunu piezīmi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.
 
@@ -8080,7 +8272,7 @@ Tiek apkopoti šādi lauki:
 
 - Nav
 
-#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(iepriekšējais nosaukums)* , Office.OneNote.Android.MessageBar.MessageBarClicked
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(iepriekšējais nosaukums)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Šis signāls tie izmantots, lai norādītu uz jebkādām problēmām, kas rodas izmantojot ziņojumu joslu.  Telemetriju izmanto, lai pārraudzītu, atklātu un novērstu jebkādas ziņojumu joslas izmantošanas laikā radušās problēmas
 
@@ -8285,6 +8477,8 @@ Tiek apkopoti šādi lauki:
    - **swipe_setting** — norāda uz ar šo darbību saistītās pavilkšanas iestatījumu detalizētu informāciju, ja attiecināms
      - **swipe_action** — norāda, ko lietotājs mēģināja izdarīt, piemēram, atzīmēt ar karodziņu, dzēst, arhivēt; ļauj mums noteikt, kādu darbību lietotājs vēlējās veikt, un, vai darbība izdevās. 
      - **swipe_direction** — norāda, kādā virzienā lietotājs iestatīja pavilkšanu, t.i., no kreisās uz labo vai no labās uz kreiso pusi.  Ļauj mums noteikt, vai pastāv problēmas ar konkrētu pavilkšanas virzienu.
+   - **temperature_unit_setting** — atlasītās temperatūras mērvienība, kas jāizmanto laika apstākļu noteikšanai 
+   - **theme_color_setting** — lietotāja izvēlētā programmas dizaina krāsa 
    - **ui_mode_setting** — atlasītais UI režīms (tumšs, gaišs, sistēmas noklusējuma, zems akumulatora uzlādes līmenis utt.)
    - **signature_setting** — norāda, vai iestatījums tika pielietots visiem kontiem vai atsevišķam kontam
 
@@ -8422,7 +8616,7 @@ Tiek apkopoti šādi lauki:
 
 - **manufacturer** — ierīces ražotājs
 
-- **model**  — ierīces modelis.
+- **model** — ierīces modelis.
 
 - **on_create_millis** — metodē onCreate() pavadītais laiks
 
@@ -8462,7 +8656,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8506,7 +8700,7 @@ Tiek apkopoti šādi lauki:
 
 - **manufacturer** — ierīces ražotājs
 
-- **model**  — ierīces modelis
+- **model** — ierīces modelis
 
 - **systemFlagSet** — Android sistēmas karodziņa vērtība (ApplicationInfo. FLAG_SYSTEM), kas norāda, vai lietojumprogramma ir instalēta kā daļa no ierīces sistēmas
 
@@ -8645,13 +8839,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti šādi lauki:
 
-- **RegistryADALCount** — norāda ADAL kontu skaitu reģistrā.
+- **RegistryADALCount**— norāda ADAL kontu skaitu reģistrā.
 
-- **RegistryLiveIdCount** — norāda MSA kontu skaitu reģistrā.
+- **RegistryLiveIdCount**— norāda MSA kontu skaitu reģistrā.
 
-- **SharedPrefADALCount** — norāda ADAL kontu skaitu koplietojamajās preferencēs.
+- **SharedPrefADALCount**— norāda ADAL kontu skaitu koplietojamajās preferencēs.
 
-- **SharedPrefLiveIdCount** — norāda MSA kontu skaitu koplietojamajās preferencēs.
+- **SharedPrefLiveIdCount**— norāda MSA kontu skaitu koplietojamajās preferencēs.
 
 
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
@@ -8938,24 +9132,7 @@ Tiek apkopoti šādi lauki:
 
   - **Data\_WinLaunchTime:integer —** laiks, lai palaistu Visio startēšanas rūti, utt.)
 
-  - **Office.Visio.FileCharacteristicsVisio —** tver faila rekvizītus Visio C2R un Dev16 failu startēšanas laikā. Šis notikums palīdz mums kategorizēt un atkļūdot kļūdas saistībā ar dokumentu rekvizītiem, kas savukārt ļauj ātrāk atrast problēmu cēloņus un tos novērst.
-
-  - **Office.Visio.Shared.BootStats —** šis notikums apkopo Visio Win32 lietojumprogrammas startēšanas laiku. Tas apkopo dažādus laukus saistībā ar dažādu komponentu startēšanu, piemēram, lentes ielādes laiku un programmas inicializācijas laiku. Šis notikums tiek izmantots, lai noteiktu Visio startēšanas izpildi.
-
-  - **Office.Visio.Shared.FileOpen —** šis notikums apkopo failu atvēršanas statistiku programmā Visio. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas atvēršanas skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus.
-
-  - **Office.Visio.Shared.Filesave —** šis notikums apkopo failu saglabāšanas statistiku programmā Visio. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas saglabāšanas skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu un atrašanās vietu, kur tas tiek saglabāts, piemēram, mākonī/lokāli. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus.
-
-  - **Office.Visio.Shared.FilesaveAs —** šis notikums apkopo failu “saglabāt kā” statistiku programmā Visio. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas saglabāšanas skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu un atrašanās vietu, kur tas tiek saglabāts, piemēram, mākonī/lokāli. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus.
-
-  - **Office.Visio.Shared.PostSave —** šis notikums tver kļūmes iemeslu saistībā ar kļūmi, izpildot darbību “saglabāt kā”.
-
-  - **Office.Visio.VisioFileSaveAs —** šis notikums apkopo failu “saglabāt kā” statistiku programmā Visio Dev16. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas darbības “saglabāt kā” skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu un atrašanās vietu, kur tas tiek saglabāts, piemēram, mākonī/lokāli. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus.
-
-  - **Office.Visio.VisioFileSaveAsync —** šis notikums apkopo failu asinhronas saglabāšanas statistiku programmā Visio Dev16. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas asinhronās saglabāšanas darbību skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu un atrašanās vietu, kur tas tiek saglabāts, piemēram, mākonī/lokāli. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus.
-
-  - **Office.Visio.VisioFileSaveSync —** šis notikums apkopo failu sinhronas saglabāšanas statistiku programmā Visio Dev16. Šis notikums tiek izmantots, lai pārraudzītu failu sekmīgas/nesekmīgas sinhronās saglabāšanas darbību skaitu, un kartē to ar dažiem rekvizītiem, piemēram, faila lielumu un atrašanās vietu, kur tas tiek saglabāts, piemēram, mākonī/lokāli. Faila rekvizīti sniedz mums iespēju ātrāk atkļūdot problēmas un uzzināt to cēloņus. Šis notikums palīdz mums pārraudzīt faila saglabāšanas kļūmju iemeslus.
-
+  
 #### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
 
 Apkopo gadījumus, kad Office programmas palaišana aizņem neparedzēti daudz laika (> 5 sek.). Izmanto, lai atklātu un novērstu problēmas ar Office pievienojumprogrammu palaišanu.
@@ -9013,7 +9190,7 @@ Tiek apkopoti šādi lauki:
 
 - **IsFRELoadSuccessful** — vesels skaitlis, kas norāda rezultātu stāvokli
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)* , Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Kritiskais signāls, kas tiek lietots, lai nodrošinātu, ka jaunie lietotāji (Microsoft konts) var sekmīgi palaist un lietot OneNote pirmo reizi.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā.  Ja lietotājiem pirmo reizi neizdodas palaist lietojumprogrammu, tiks aktivizēts kritiskais incidents.
 
@@ -9085,7 +9262,7 @@ Tiek apkopoti šādi lauki:
 
 - **NUMBER_OF_SNAPSHOTS** — piezīmju grāmatiņas struktūras ielādēšanu sāknēšanas laikā skaits
 
-- **OFFICEASSETMANAGER_INITIALIZATION_TIME** — līdzekļu pārvaldnieka izgūšanai no arhīva un inicializācijai veltītais laiks
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME**— līdzekļu pārvaldnieka izgūšanai no arhīva un inicializācijai veltītais laiks
 
 - **PROCESS_BOOT_TIME_IN_MS** — procesa izveides pabeigšanai veltītais laiks
 
@@ -9115,13 +9292,13 @@ Tiek apkopoti šādi lauki:
  
 - **USER_INTERACTED_DURING_EVENT** — norāda, vai lietotājs ir mijiedarbojies sāknēšanas laikā
 
-#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(iepriekšējais nosaukums)* , Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground-officeandroidearlytelemetryonenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(iepriekšējais nosaukums)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 Signāls, kas norāda, vai OneNote lietojumprogramma ir priekšplānā.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
 
 Tiek apkopoti tālāk norādītie lauki: nav
 
-#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(iepriekšējais nosaukums)* , Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch-officeonenoteandroidapplaunch"></a>OneNote.AppLaunch *(iepriekšējais nosaukums)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 Kritiskais signāls, kas tiek izmantots, lai OneNote lietotāji varētu veiksmīgi palaist lietojumprogrammu.  Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. 
 
@@ -9635,11 +9812,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **OfficeProcessSessionStart** nosūta pamatinformāciju jaunas Office sesijas sākumā. To izmanto, lai saskaitītu unikālās sesijas, kas redzamas konkrētajā ierīcē. Tas tiek izmantots kā periodiska kontrolziņojuma notikums, lai pārliecinātos, vai lietojumprogramma darbojas ierīcē. Turklāt to var izmantot kā kritiski svarīgu signālu par kopējo lietojumprogrammu uzticamību
 
-- **AppSessionGuid**  — tās attiecīgās lietojumprogrammas sesijas identifikators, kuras sākums ir procesa izveides laiks un kas ilgst līdz procesa beigām. Tas ir formatēts kā standarta 128 bitu GUID, ko veido četras daļas. Šo četru daļu secība ir: (1) 32 bitu procesa ID (2) 16 bitu sesijas ID (3) 16 bitu palaišanas ID (4) 64 bitu procesa izveides laiks: UTC 100ns
+- **AppSessionGuid** — tās attiecīgās lietojumprogrammas sesijas identifikators, kuras sākums ir procesa izveides laiks un kas ilgst līdz procesa beigām. Tas ir formatēts kā standarta 128 bitu GUID, ko veido četras daļas. Šo četru daļu secība ir: (1) 32 bitu procesa ID (2) 16 bitu sesijas ID (3) 16 bitu palaišanas ID (4) 64 bitu procesa izveides laiks: UTC 100ns
 
-- **processSessionId**  — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
+- **processSessionId** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
-- **UTCReplace_AppSessionGuid**  — konstanta Būla vērtība. Vienmēr patiess.
+- **UTCReplace_AppSessionGuid** — konstanta Būla vērtība. Vienmēr patiess.
 
 #### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
 
@@ -9655,15 +9832,15 @@ Attiecas uz Office UWP lietojumprogrammām.  Šis notikums tiek palaists, kad Of
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **appVersionBuild**  — programmas būvējuma versijas numurs.
+- **appVersionBuild** — programmas būvējuma versijas numurs.
 
-- **appVersionMajor**  — programmas galvenās versijas numurs.
+- **appVersionMajor** — programmas galvenās versijas numurs.
 
-- **appVersionMinor**  — programmas papildversijas numurs.
+- **appVersionMinor** — programmas papildversijas numurs.
 
-- **appVersionRev**  — programmas pārskatītās versijas numurs.
+- **appVersionRev** — programmas pārskatītās versijas numurs.
 
-- **SessionID**  — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
+- **SessionID** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
 #### <a name="officetelemetryenginesessionhandoff"></a>Office.TelemetryEngine.SessionHandOff
 
@@ -9671,17 +9848,17 @@ Attiecas uz Win32 Office lietojumprogrammām.  Šis notikums palīdz mums sapras
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **appVersionBuild**  — programmas būvējuma versijas numurs.
+- **appVersionBuild** — programmas būvējuma versijas numurs.
 
-- **appVersionMajor**  — programmas galvenās versijas numurs.
+- **appVersionMajor** — programmas galvenās versijas numurs.
 
-- **appVersionMinor**  — programmas papildversijas numurs.
+- **appVersionMinor** — programmas papildversijas numurs.
 
-- **appVersionRev**  — programmas pārskatītās versijas numurs.
+- **appVersionRev** — programmas pārskatītās versijas numurs.
 
-- **childSessionID**  — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
+- **childSessionID** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
-- **parentSessionId**  — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
+- **parentSessionId** — nejauši ģenerēts GUID, lai noteiktu programmas sesiju
 
 #### <a name="officevisiovisioiosappboottime"></a>Office.Visio.VisioIosAppBootTime
 
@@ -9705,7 +9882,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
 
 - **Data_BytesAsynchronous** — baitu skaits (saspiests), bez kura uzskatām, ka varēsim atvērt failu, ja tos iegūstam pirms lietotājs vēlas sākt rediģēšanu vai saglabāšanu.
 
@@ -9713,9 +9890,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_BytesSynchronous** — baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu.
 
-- **Data_BytesUnknown** — baitu skaits dokumenta daļās, kuras neplānojam atrast. 
+- **Data_BytesUnknown**— baitu skaits dokumenta daļās, kuras neplānojam atrast. 
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -9787,23 +9964,23 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.Doc.WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru.
 
-- **Data_EditorDisablingRename**  — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
+- **Data_EditorDisablingRename** — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
 
-- **Data_EditorsCount**  — redaktoru skaits dokumentā.
+- **Data_EditorsCount** — redaktoru skaits dokumentā.
 
 - **Data_ForceReadWriteReason** — vesela skaitļa vērtība, kas attēlo iemeslu, kāpēc fails tika atvērts lasīšanas/rakstīšanas režīmā.
 
 - **Data_FSucceededAfterRecoverableFailure** — norāda, ka atvēršana izdevās pēc kļūmes izlabošanas, kas radās dokumenta atvēršanas laikā.
 
-- **Data_LastLoggedTag**  — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai).
+- **Data_LastLoggedTag** — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai).
 
 - **Data_LinkStyles** — norāda, vai ir saite ar veidņu stiliem.
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā.
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
 
 - **Data_Measurements** — kodēta virkne, kas satur dažādu daļu atvēršanas laika sadalījumu. Izmanto, lai novērtētu izpildi.
 
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu.
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
@@ -9811,9 +9988,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas.
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
 - **Data_SecondaryTag** — unikāla atzīme koda izsaukšanas vietai, kas tiek izmantota, lai pievienotu papildu kļūmes datus atvēršanai. 
 
@@ -9830,7 +10007,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai
     
 - **Data_BytesAsynchronous** — baitu skaits (saspiests), bez kura uzskatām, ka varēsim atvērt failu, ja tos iegūstam pirms lietotājs vēlas sākt rediģēšanu vai saglabāšanu.
     
@@ -9838,9 +10015,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_BytesSynchronous** — baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu.
     
-- **Data_BytesUnknown** — baitu skaits dokumenta daļās, kuras neplānojam atrast.
+- **Data_BytesUnknown**— baitu skaits dokumenta daļās, kuras neplānojam atrast.
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -9914,23 +10091,23 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.Doc.WopiServiceId —** satur unikālu WOPI pakalpojumu sniedzēja identifikatoru.
 
-- **Data_EditorDisablingRename**  — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
+- **Data_EditorDisablingRename** — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
 
-- **Data_EditorsCount**  — redaktoru skaits dokumentā.
+- **Data_EditorsCount** — redaktoru skaits dokumentā.
 
 - **Data_FSucceededAfterRecoverableFailure** — norāda, ka atvēršana izdevās pēc kļūmes izlabošanas, kas radās dokumenta atvēršanas laikā.
 
 - **Data_ForceReadWriteReason** — vesela skaitļa vērtība, kas attēlo iemeslu, kāpēc fails tika atvērts lasīšanas/rakstīšanas režīmā.
     
-- **Data_LastLoggedTag**  — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai).
+- **Data_LastLoggedTag** — unikāla atzīme koda izsaukuma vietā, ko izmanto, lai noteiktu, kad neizdodas atvērt divreiz (izmanto datu kvalitātes diagnostikai).
 
 - **Data_LinkStyles** — norāda, vai ir saite ar veidņu stiliem.
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā.
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
 
 - **Data_Measurements** — kodēta virkne, kas satur dažādu daļu atvēršanas laika sadalījumu. Izmanto, lai novērtētu izpildi.
     
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu.
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
@@ -9938,9 +10115,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas.
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
 - **Data_SecondaryTag** — unikāla atzīme koda izsaukšanas vietai, kas tiek izmantota, lai pievienotu papildu kļūmes datus atvēršanai.
 
@@ -10078,7 +10255,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Data_AddDocTelemRes**  — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
+- **Data_AddDocTelemRes** — norāda, vai mēs varam pareizi aizpildīt citas ar dokumentu telemetriju saistītās vērtības šajā notikumā. Izmanto datu kvalitātes diagnostikai.
 
 - **Data_BytesAsynchronous** — baitu skaits (saspiests), bez kura uzskatām, ka varēsim atvērt failu, ja tos iegūstam pirms lietotājs vēlas sākt rediģēšanu vai saglabāšanu.
 
@@ -10086,9 +10263,9 @@ Tiek apkopoti tālāk norādītie lauki.
     
 - **Data_BytesSynchronous** — baitu skaits (saspiests), kuram jābūt mūsu rīcībā, pirms varam sākt faila atvēršanu.
 
-- **Data_BytesUnknown** — baitu skaits dokumenta daļās, kuras neplānojam atrast.
+- **Data_BytesUnknown**— baitu skaits dokumenta daļās, kuras neplānojam atrast.
 
-- **Data_detachedDuration**  — cik ilgi darbība bija atdalīta no pavediena.
+- **Data_detachedDuration** — cik ilgi darbība bija atdalīta no pavediena.
 
 - **Data_Doc_AccessMode —** dokuments ir tikai lasāms/rediģējams.
 
@@ -10160,9 +10337,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_UrlHash —** vienvirziena jaukšana vienkāršota dokumenta identifikatora izveidei.
 
-- **Data_EditorDisablingRename**  — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
+- **Data_EditorDisablingRename** — pirmā redaktora identifikators, kas izraisīja pārdēvēšanas atspējošanu.
 
-- **Data_EditorsCount**  — redaktoru skaits dokumentā.
+- **Data_EditorsCount** — redaktoru skaits dokumentā.
 
 - **Data_ForceReadWriteReason** — vesela skaitļa vērtība, kas attēlo iemeslu, kāpēc fails tika atvērts lasīšanas/rakstīšanas režīmā.
     
@@ -10172,11 +10349,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_LinkStyles** — norāda, vai ir saite ar veidņu stiliem.
 
-- **Data_MainPdod**  — dokumenta identifikators Office Word procesā.
+- **Data_MainPdod** — dokumenta identifikators Office Word procesā.
 
 - **Data_Measurements** — kodēta virkne, kas satur dažādu daļu atvēršanas laika sadalījumu. Izmanto, lai novērtētu izpildi.
 
-- **Data_MoveDisabledReason**  — kļūda, kas atspējo dokumenta pārvietošanu.
+- **Data_MoveDisabledReason** — kļūda, kas atspējo dokumenta pārvietošanu.
 
 - **Data_MoveFlightEnabled** — vai lidojuma opcija pārvietošanas līdzeklī ir iespējota.
 
@@ -10184,9 +10361,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas.
 
-- **Data_RenameDisabledReason**  — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
+- **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana.
 
-- **Data_RenameFlightEnabled**  — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
+- **Data_RenameFlightEnabled** — vai testējamā varianta opcija pārdēvēšanas līdzeklī ir iespējota.
 
 - **Data_SecondaryTag** — unikāla atzīme koda izsaukšanas vietai, kas tiek izmantota, lai pievienotu papildu kļūmes datus atvēršanai.
 
@@ -10630,13 +10807,13 @@ Tiek apkopoti šādi lauki:
 
 - **Interface** — Office interfeiss, kurā radās izņēmums
 
-- **AddinId**  — pievienojumprogrammas klases ID
+- **AddinId** — pievienojumprogrammas klases ID
 
 - **AddinProgId** — novecojis.
 
 - **AddinFriendlyName** — novecojis.
 
-- **AddinTimeDateStamp**  — pievienojumprogrammas laikspiedols no DLL metadatiem.
+- **AddinTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
 - **AddinVersion** — novecojis.
 
@@ -10644,7 +10821,7 @@ Tiek apkopoti šādi lauki:
 
 - **VSTOAddIn** — vai pievienojumprogramma ir VSTO
 
-- **AddinConnectFlag**  — pašreizējās ielādes darbība
+- **AddinConnectFlag** — pašreizējās ielādes darbība
 
 - **LoadAttempts** — pievienojumprogrammas ielādes mēģinājumu skaits
 
@@ -10660,13 +10837,13 @@ Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesais
 
 - **Interface** — Office interfeiss, kurā radās izņēmums
 
-- **AddinId**  — pievienojumprogrammas klases ID
+- **AddinId** — pievienojumprogrammas klases ID
 
 - **AddinProgId** — novecojis.
 
 - **AddinFriendlyName** — novecojis.
 
-- **AddinTimeDateStamp**  — pievienojumprogrammas laikspiedols no DLL metadatiem.
+- **AddinTimeDateStamp** — pievienojumprogrammas laikspiedols no DLL metadatiem.
 
 - **AddinVersion** — novecojis.
 
@@ -10674,7 +10851,7 @@ Izmantošana: izmanto, lai izskaitļotu globālu, ar konkrētu uzņēmumu nesais
 
 - **VSTOAddIn** — vai pievienojumprogramma ir VSTO
 
-- **AddinConnectFlag**  — pašreizējās ielādes darbība
+- **AddinConnectFlag** — pašreizējās ielādes darbība
 
 - **LoadAttempts** — pievienojumprogrammas ielādes mēģinājumu skaits
 
@@ -10694,7 +10871,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **ErrorCodeime** — iztērētais laiks kopā.
 
-- **IsAugmentationScenario** — norāda uz to, vai pieauguma cilpa ir atbildīga par Office Solutions struktūras vadības inicializēšanu.
+- **IsAugmentationScenario**— norāda uz to, vai pieauguma cilpa ir atbildīga par Office Solutions struktūras vadības inicializēšanu.
 
 - **IsDebug** - norāda, vai sesija ir atkļūdošanas sesija
 
@@ -10708,7 +10885,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **StoreType** — lietojumprogrammas izcelsme.
 
-- **Atzīme** — norāda, kur tieši kodam radās kļūme, izmantojot ar to saistīto unikālo atzīmi.
+- **Atzīme**— norāda, kur tieši kodam radās kļūme, izmantojot ar to saistīto unikālo atzīmi.
 
 - **UsesSharedRuntime** — norāda, ka programma izmanto sharedRuntime vai nē.
 
@@ -10736,9 +10913,9 @@ Apkopo, ja programmu nevar palaist, jo startēšanas laikā radās neparedzēta 
 
 Tiek apkopoti tālāk norādītie lauki. 
 
-- **DateTime**  — notikuma reģistrēšanas laikspiedols.
+- **DateTime** — notikuma reģistrēšanas laikspiedols.
 
-- **EventName**  — reģistrētā notikuma nosaukums.
+- **EventName** — reģistrētā notikuma nosaukums.
 
 #### <a name="officeoutlookdesktophangbucketmetrics"></a>Office.Outlook.Desktop.HangBucketMetrics
 
@@ -10800,7 +10977,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **InitTime** — avarējušās sesijas inicializācijas laiks
 
-  - **SessionID**  — avarējušās sesijas identifikators
+  - **SessionID** — avarējušās sesijas identifikators
 
   - **TopId** — augšējā dialoglodziņa identifikators
 
@@ -10824,7 +11001,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ServerDocId** — servera dokumenta identifikators
 
-  - **SessionId**  — avarējušās sesijas identifikators
+  - **SessionId** — avarējušās sesijas identifikators
 
   - **UrlHash** — dokumenta URL jaukšana
 
@@ -10850,7 +11027,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ServerDocId** — servera dokumenta identifikators
 
-  - **SessionId**  — avarējušās sesijas identifikators
+  - **SessionId** — avarējušās sesijas identifikators
 
   - **UrlHash** — dokumenta URL jaukšana
 
@@ -10866,7 +11043,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **InitTime** — avarējušās sesijas inicializācijas laiks
 
-  - **PreviousSessionId**  — avarējušās sesijas identifikators
+  - **PreviousSessionId** — avarējušās sesijas identifikators
 
   - **Usage** — līdzekļu lietojums
 
@@ -10880,7 +11057,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **InitTime** — avarējušās sesijas inicializācijas laiks
 
-  - **SessionId**  — avarējušās sesijas identifikators
+  - **SessionId** — avarējušās sesijas identifikators
 
   - **Stage** — izslēgšanas posms
 
@@ -10896,7 +11073,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Mode** — slaidrādes režīms
 
-  - **SessionId**  — avarējušās sesijas identifikators
+  - **SessionId** — avarējušās sesijas identifikators
 
   - **State** — slaidrādes stāvoklis
 
@@ -10908,13 +11085,13 @@ Notikums, kas tiek ģenerēts, ja COM pievienojumprogramma tiek ielādēta. Šī
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CLSID**  — pievienojumprogrammas klases identifikators
+  - **CLSID** — pievienojumprogrammas klases identifikators
 
   - **ConnectFlag** — pašreizējā pievienojumprogrammu ielādes darbība
 
-  - **FileName**  — pievienojumprogrammas faila nosaukums bez faila ceļa
+  - **FileName** — pievienojumprogrammas faila nosaukums bez faila ceļa
 
-  - **FriendlyName**  — pievienojumprogrammas draudzīgais nosaukums
+  - **FriendlyName** — pievienojumprogrammas draudzīgais nosaukums
 
   - **Interface** — Office interfeiss, kurā radās izņēmums
 
@@ -10926,7 +11103,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **OfficeVersion** — Office versijas
 
-  - **ProgID**  — pievienojumprogrammas Prog identifikators
+  - **ProgID** — pievienojumprogrammas Prog identifikators
 
 #### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
 
@@ -11022,7 +11199,7 @@ Tiek apkopoti šādi lauki:
  
 - **duration** — cik ilgi ierīce bija sastingusi
  
-- **id**  — unikāls ANR identifikators.
+- **id** — unikāls ANR identifikators.
  
 - **interval** — ANR nostrādāšanai konfigurētais slieksnis
  
@@ -11066,6 +11243,18 @@ Tiek apkopoti šādi lauki:
 Šis notikums ļauj mums noteikt un novērst problēmas, ja pastāv jūtama ietekme uz mūsu kalendāra UI komponentu veiktspēju, kas var izraisīt problēmas ar jūsu kalendāra ritināšanu.
 
 Tiek apkopoti šādi lauki: 
+
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+
+- **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
+
+- **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
+
+- **above_50rate** — virs 50 kadriem sekundē renderēto kadru skaits
+
+- **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+
+- **above_55rate** — virs 55 kadriem sekundē renderēto kadru skaits
 
 - **account_counter** — izseko ar katru kalendāra tipu saistīto kontu skaitam, piemēram, 2 konti Gmail kalendāram, kā arī norāda, vai konts izmanto mūsu jauno sinhronizācijas pakalpojumu
 
@@ -11143,11 +11332,17 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki. 
 
-- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+
+- **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
 
 - **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
 
+- **above_50rate** — virs 50 kadriem sekundē renderēto kadru skaits
+
 - **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+
+- **above_55rate** — virs 55 kadriem sekundē renderēto kadru skaits
 
 - **account_counter** — katra ierīcē esošā konta tipa uzskaitījums, piemēram Office 365 konti = 1 konts, Outlook.com konti = 1 konts.
 
@@ -11365,11 +11560,17 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki: 
 
-- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+
+- **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
  
 - **above_50fps** — virs 50 kadriem sekundē renderēto kadru skaits
+
+- **above_50rate** — virs 50 kadriem sekundē renderēto kadru skaits
  
 - **above_55fps** — virs 55 kadriem sekundē renderēto kadru skaits
+
+- **above_55rate** — virs 55 kadriem sekundē renderēto kadru skaits
  
 - **account_counter** — katra ierīcē esošā konta tipa uzskaitījums, piemēram Office 365 konti = 1 konts, Outlook.com konti = 1 konts.
  
@@ -11455,7 +11656,7 @@ Tiek apkopoti šādi lauki:
 
 - **OfficeActivityTimeInMs** — OfficeActivity inicializācijas laiks
 
-- **PostAppInitTimeInMs** — lietojumprogrammas fāzes laiks
+- **PostAppInitTimeInMs**— lietojumprogrammas fāzes laiks
 
 - **PreAppInitializationTime** — lietojumprogrammas fāzes inicializācijas laiks
 
@@ -11648,7 +11849,7 @@ Tiek apkopoti šādi lauki:
 
 - **Data_ErrorCode** — novērotais kļūdas kods (ja pieejams)
 
-- **Data_ErrorDescription**  — kļūdas apraksts (ja pieejams)
+- **Data_ErrorDescription** — kļūdas apraksts (ja pieejams)
 
 - **Data_EventID** — mēs apkopojam virkni, kas norāda novērotās kļūdas tipu.
 
@@ -11692,7 +11893,7 @@ Tiek apkopoti šādi lauki:
 
 - **failureReason** — virkne — norāda kļūmi, kuru lietotājs mēģina atkārtot vēlreiz. Piemēram, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
 
-- **productid** — virkne — produkta, kuram lietotājs mēģina vēlreiz nesekmīgo pieprasījumu, App Store ID
+- **productid**— virkne — produkta, kuram lietotājs mēģina vēlreiz nesekmīgo pieprasījumu, App Store ID
 
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
@@ -11789,7 +11990,7 @@ Tiek apkopots, palaižot Office programmu. Ietver informāciju par to, vai palai
 
 Tiek apkopoti šādi lauki:
 
-- **ActivationKind**  — vai programma tika startēta, palaižot no sākuma izvēlnes, atverot failu vai izmantojot OLE automatizāciju.
+- **ActivationKind** — vai programma tika startēta, palaižot no sākuma izvēlnes, atverot failu vai izmantojot OLE automatizāciju.
   
 - **BootToStart** — vai lietotājs ir izvēlējies sākuma ekrāna parādīšanu lietojumprogrammas startēšanas laikā.
 
@@ -11803,21 +12004,21 @@ Tiek apkopoti šādi lauki:
 
 - **Iegulšana** — neatkarīgi no tā, vai programma tika atvērta objektu saistīšanai un iegulšanai.
 
-- **FirstBoot**  — vai šī bija pirmā programmas palaišana.
+- **FirstBoot** — vai šī bija pirmā programmas palaišana.
 
-- **InitializationDuration**  — laiks milisekundēs, kas bija nepieciešams, lai vispirms inicializētu Office procesu.
+- **InitializationDuration** — laiks milisekundēs, kas bija nepieciešams, lai vispirms inicializētu Office procesu.
 
-- **InterruptionMessageId**  — vai palaišanu pārtrauca dialogs, pieprasot lietotāja ievadi, kā arī šī dialoga ID.
+- **InterruptionMessageId** — vai palaišanu pārtrauca dialogs, pieprasot lietotāja ievadi, kā arī šī dialoga ID.
 
 - **LegacyDuration** — laiks, kas bija nepieciešams darbības izpildei, tiek mērīts, izmantojot dažādus sākuma un beigu punktus nekā Activity.Duration.
 
 - **OpenAsNew** — vai programma tika startēta, atverot esošu dokumentu kā jaunu veidni.
 
-- **TotalWorkingSetMB**  — atmiņas apjoms megabaitos procesa darba kopā.
+- **TotalWorkingSetMB** — atmiņas apjoms megabaitos procesa darba kopā.
 
-- **VirtualSetMB**  — atmiņas apjoms megabaitos procesa virtuālajā kopā. (Tikai MacOS/iOS)
+- **VirtualSetMB** — atmiņas apjoms megabaitos procesa virtuālajā kopā. (Tikai MacOS/iOS)
 
-- **WorkingSetPeakMB**  — vislielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
+- **WorkingSetPeakMB** — vislielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -11955,13 +12156,13 @@ Darbība, kas izseko, vai Office Backstage UI cilnē Konts lietotājam var parā
 
 Tiek apkopoti šādi lauki:
 
-  - **Data_CanShow**  — norāda, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
+  - **Data_CanShow** — norāda, vai Office Backstage UI cilnē Konts lietotājam var parādīt Office Insider bloku.
   
-  - **Data_Event**  — netiek izmantots
+  - **Data_Event** — netiek izmantots
 
-  - **Data_EventInfo**  — netiek izmantots
+  - **Data_EventInfo** — netiek izmantots
 
-  - **Data_Reason**  — netiek izmantots.
+  - **Data_Reason** — netiek izmantots.
  
 
 #### <a name="officeuxofficeinsiderregistercurrentinsider"></a>Office.UX.OfficeInsider.RegisterCurrentInsider
@@ -11991,9 +12192,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_InsiderLevelNew** — Insider līmenis, aizverot dialoglogu “Pievienojies Office Insider”.
 
-- **Data_IsInternalUser**  — norāda, vai programma darbojas ar Microsoft korporatīvā konta akreditācijas datiem.
+- **Data_IsInternalUser** — norāda, vai programma darbojas ar Microsoft korporatīvā konta akreditācijas datiem.
 
-- **Data_IsInternalUserInit**  — norāda, vai kods varēja noteikt to, vai programma darbojas ar Microsoft korporatīvā konta akreditācijas datiem.
+- **Data_IsInternalUserInit** — norāda, vai kods varēja noteikt to, vai programma darbojas ar Microsoft korporatīvā konta akreditācijas datiem.
 
 - **Data_OpenNewsletterWebpage** — norāda, vai Office Insider biļetena abonēšanas saite tika aktivizēta pie nosacījuma, ka lietotājs pievienojās Office Insider programmai, biļetena abonementa funkcija ir iespējota un lietotājs nav atcēlis Office Insider biļetena abonementa tīmekļa vietnes atvēršanu.
     
@@ -12101,7 +12302,7 @@ Tiek apkopoti šādi lauki:
 - **DIALOG_ACTION** — norāda, kuru dialoglodziņu noklikšķināja lietotājs – pozitīvas vai negatīvas atbildes poga
 
 
-#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(iepriekšējais nosaukums)* , Office.OneNote.Android.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(iepriekšējais nosaukums)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt. Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
 
@@ -12117,7 +12318,7 @@ Tiek apkopoti šādi lauki:
 
 - **TimeTakenInMilliSeconds** — norāda nodrošināšanas pabeigšanai nepieciešamo laiku milisekundēs
 
-#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(iepriekšējais nosaukums)* , Office.OneNote.Android.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(iepriekšējais nosaukums)*, Office.OneNote.Android.Sync.ProvisioningStarted
 
 Kritiskais signāls, kas tiek izmantots, ka pēc lietotāja pierakstīšanās OneNote Android lietojumprogrammā, tiek atbilstoši nodrošinātas piezīmju grāmatiņas, lai tām būtu vienkārši piekļūt.  Tek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā
 
@@ -12253,7 +12454,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti šādi lauki.
 
-- **LastLoginDelta**  — laika delta no pēdējās sekmīgās pieteikšanās.
+- **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās.
 
 - **PreviousIdentityCredProviderState** — norāda konta stāvokli.
 
@@ -12261,7 +12462,7 @@ Tiek apkopoti šādi lauki.
 
 - **SignInResultCode** — norāda pierakstīšanās uzvednes beigu rezultātā kodu.
 
-- **UseCache** — norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
+- **UseCache**— norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
 
 - **UserType** — norāda, vai tas ir esošs konts vai jauns konts
 
@@ -12367,7 +12568,7 @@ Tiek apkopoti šādi lauki:
 
 - **FileIOSaveHResult** — HResult faila saglabāšanas darbībai
 
-- **FileIOSaveIsCopy** — būla, kas norāda, ja darbība saglabā kopiju.
+- **FileIOSaveIsCopy**— būla, kas norāda, ja darbība saglabā kopiju.
 
 - **FileSize** — faila lielums
 
@@ -12461,7 +12662,7 @@ Tiek apkopoti šādi lauki:
 
 - **FileIOSaveHResult** — FileIO Hresult
 
-- **FileIOSaveIsCopy** — būla, kas norāda, vai šī ir kopēšanas darbība.
+- **FileIOSaveIsCopy**— būla, kas norāda, vai šī ir kopēšanas darbība.
 
 - **FileSize** — faila lielums
 
@@ -12690,7 +12891,7 @@ Tiek apkopoti šādi lauki:
 
 - **SubscriptionProvisioningSucceeded** — būla veiksmīgam abonementa nodrošināšanas rezultātam
 
-- **SubscriptionPurchaseHR** — Hresult abonementa iegādes uzdevumam
+- **SubscriptionPurchaseHR**— Hresult abonementa iegādes uzdevumam
 
 - **SubscriptionType** — abonementa veida vai SKU uzskaitījums.
 
@@ -12761,7 +12962,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu.
 
-- **AppVersionLong**  — programmas versija.
+- **AppVersionLong** — programmas versija.
 
 - **Data_StackTrace** — kļūdas izsekošanas steks.
 
@@ -12941,7 +13142,7 @@ Tiek apkopoti šādi lauki:
 
 - **IsGallatin** — būla, kas tiek izmantota, lai pārbaudītu, vai tas ir Gallatin konts
 
-- **MessageCode** — uzskaitījums, kas norāda aktivizēšanas kļūmes punktu
+- **MessageCode** — uzskaitījums, kas norāda aktivizēšanas kļūmes punktu
 
 - **PreviousEntryPoint** — ieejas punkta uzskaitījums licenču aktivizēšanas plūsmas aktivizēšanai
 
@@ -12959,7 +13160,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **ExternalCacheRefreshError** — marķiera atsvaidzināšanas mēģinājuma pirms pierakstīšanās uzvednes parādīšanas kļūdas kods.
 
-- **LastLoginDelta**  — laika delta no pēdējās sekmīgās pieteikšanās.
+- **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās.
 
 - **MSAserverUAID** — korelācijas ID ar pakalpojuma telemetrijas datiem.
 
@@ -12967,7 +13168,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 - **SignInResultCode** — norāda pierakstīšanās uzvednes beigu rezultātā kodu.
 
-- **UseCache** — norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
+- **UseCache**— norāda, vai mēs ar uzvednes palīdzību likām lietotājam ievadīt paroli atkārtoti.
 
 - **UserType** — norāda, vai tas ir esošs konts vai jauns konts
 
@@ -13326,6 +13527,28 @@ Tiek apkopoti šādi lauki:
 
 - **token_type** — faila saglabāšanai veiktās konta autentifikācijas marķiera veids, lai palīdzētu mums atklāt ar faila saglabāšanu saistītās autentifikācijas problēmas
 
+#### <a name="wkwebviewerror"></a>wkwebview.error
+
+Šis notikums ļauj mums noteikt, kad, rakstot vai lasot e-pastu, radās tīmekļa skata kļūdas, lai mēs varētu novērst problēmas, kuru dēļ jūsu programma nevar izveidot e-pastu vai lasīt e-pastu. 
+
+Tiek apkopoti šādi lauki: 
+
+- **description** — kļūdas apraksts
+
+- **error_code** — kļūdas kods WKError
+
+- **function_name** — Javascript funkcijas nosaukums, kad ir kļūda
+
+- **js_exception_column_number** — kolonnas numurs, kurā radās JavaScript izņēmums 
+
+- **js_exception_line_number** – rindiņas numurs, kurā radās JavaScript izņēmums
+
+- **js_exception_message** — izņēmuma ziņojums, ja radās JavaScript izņēmums
+
+- **js_exception_source_url** — avota vietrādis URL, kur radās JavaScript izņēmums  
+
+- **scenario** — kur radās kļūda, atveidošana vai izveide.
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Ierīču savienojamības un konfigurācijas datu notikumi
 
@@ -13448,11 +13671,13 @@ Tālāk norādītie lauki tiek apkopoti tikai Android:
 
 - **talkback** — norāda, vai lietotājs ir ieslēdzis TalkBack iestatījumu savā ierīcē, lai palīdzētu mums atklāt ar šo iestatījumu saistītās problēmas
 
-- **webview_kernel_version** : Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **theme_color** — pielāgota (lietotāja atlasīta) dizaina krāsa, kuru pašlaik lieto lietojumprogramma
 
-- **webview_package_name** : ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **webview_kernel_version**: Chromium kodola tīmekļa skata versija ierīcē, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
-- **webview_package_version** : ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+- **webview_package_name**: ierīces tīmekļa skata paketes nosaukums, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
+
+- **webview_package_version**: ierīces tīmekļa skata paketes versija, lai palīdzētu mums atklāt saderības problēmas, kas saistītas ar tīmekļa skatījuma versiju.
 
 #### <a name="lowstoragewarning"></a>low.storage.warning
 
