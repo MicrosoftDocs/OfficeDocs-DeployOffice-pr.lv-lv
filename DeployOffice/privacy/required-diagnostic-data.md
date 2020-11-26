@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: e8b54e50ca8fc080cf09b26d83f4b7f28bc81290
-ms.sourcegitcommit: 521da3465e94ca9d29f3c6f49b78dd5f952d9cc6
+ms.openlocfilehash: 97d334551743566bde549da4b3b4a2476255d248
+ms.sourcegitcommit: 1c635a2906afb601e7c92b3f48dde3d271d06105
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49088126"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367368"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -1947,7 +1947,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -1979,7 +1979,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2011,7 +2011,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2073,7 +2073,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2137,7 +2137,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2191,7 +2191,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2229,7 +2229,7 @@ Tiek apkopoti šādi lauki:
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2299,7 +2299,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2369,7 +2369,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -7752,7 +7752,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_PartsUnknown** — dokumenta daļu skaits, kurām mēs nevarējām iegūt datus. 
 
-- **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas. 
+- **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur tiek mēģināts labot failu pirms tā atvēršanas. 
 
 - **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana. 
 
@@ -8545,7 +8545,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8656,7 +8656,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — programmas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8810,7 +8810,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
     
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -10380,7 +10380,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -10418,7 +10418,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -11384,7 +11384,7 @@ Tiek apkopoti šādi lauki.
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Šis pasākums palīdz izsekot, kāda veida pieredze lietotājiem tiek rādīta, kad tie nonāk mūsu programmas lapā.  Šie dati tiek izmantoti, lai noteiktu lietotāju plūsmu katrā programmas lietošanas pieredzē, kā arī palīdz mums viegli konsolidēt eksperimentu rezultātus.
+Šis pasākums palīdz izsekot, kāda veida pieredze lietotājiem tiek rādīta, kad tie nonāk programmas lapā.  Šie dati tiek izmantoti, lai noteiktu lietotāju plūsmu katrā programmas lietošanas pieredzē, kā arī palīdz mums viegli konsolidēt eksperimentu rezultātus.
  
 Tiek apkopoti šādi lauki: 
 
@@ -11404,7 +11404,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -11474,7 +11474,7 @@ Tiek apkopoti šādi lauki:
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -13493,7 +13493,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums
+- **AppInfo.Name** — lietojumprogrammas nosaukums.
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
