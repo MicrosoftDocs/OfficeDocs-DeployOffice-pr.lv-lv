@@ -1947,7 +1947,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -1979,7 +1979,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2011,7 +2011,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2073,7 +2073,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2137,7 +2137,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2191,7 +2191,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2225,11 +2225,11 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopots, kad lietotājs mēģina atvērt ar IRM aizsargātu dokumentu vai lietot IRM aizsardzību. Tas satur informāciju, kas ir nepieciešama pareizai tādu problēmu izmeklēšanai un diagnosticēšanai, kas notiek IpcpGetTemplateListForUser API izsaukuma laikā. 
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2299,7 +2299,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2369,7 +2369,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -2804,7 +2804,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopots tikai tad, ja lietotājs ir iespējojis Office telemetrijas informācijas paneli. Tas apkopo informāciju par to, kad tiek izpildīts Office telemetrijas aģents.   Tiek apkopots tikai tad, ja ir iespējots Office telemetrijas informācijas panelis, un tiek izmantots, lai noteiktu Office telemetrijas aģenta darbspēju.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.AgentExit** — laikspiedols, kas apzīmē sekmīgu telemetrijas aģenta iziešanu
 
@@ -2816,7 +2816,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopts tikai tad, ja lietotājs (parasti administrators) ir iespējojis Office telemetrijas informācijas paneli. Tas apkopo Office pievienojumprogrammu un dokumentu avāriju gadījumus.  Tas tiek apkopots tikai tad, ja lietotājs ir iespējojis Office telemetrijas informācijas paneli, un tiek izmantots, lai noteiktu, vai ir palielinājies pievienojumprogrammu vai dokumentu avārijas gadījumu skaits.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Data.CollectionTime** — laikspiedols, kas apzīmē reģistrētu avārijas notikumu
 
@@ -6092,7 +6092,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Konta pievienošanas Outlook programmā rezultāts, izmantojot jauna konta konfigurēšanas pieredzi. Dati tiek uzraudzīti, lai nodrošinātu, ka kļūmju skaits nepalielinās. Mēs arī analizējam datus, lai atrastu jomas, kurās nepieciešami uzlabojumi. Mēs strādājam pie tā, lai uzlabotu panākumu rādītājus katrā laidienā. 
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
 - **AccountConfigAutoSignIn** — administratora iestatītā automātiskā konfigurācija.
 
@@ -6263,7 +6263,7 @@ Apkopo, kad PowerPoint izveido jaunu prezentāciju.  Ietver panākumus un veikt
 
 Šī informācija tiek izmantota, lai nodrošinātu, ka varam sekmīgi izveidot failus, nepasliktinot veiktspēju.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **NewDocumentType** — vai jaunais dokuments ir izveidots no veidnes vai vienkārši izveidots tukšs?
 
@@ -7378,7 +7378,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data.sourceTextWords —** tulkojamā teksta vārdu skaits.
 
-- **Data.warningMessage** — pakalpojuma reģistrētais brīdinājuma ziņojums.
+- **Data.warningMessage —** pakalpojuma reģistrētais brīdinājuma ziņojums.
 
 
 #### <a name="officeuxacccheckeracccheckerfinalviolationcountperrule"></a>Office.UX.AccChecker.AccCheckerFinalViolationCountPerRule
@@ -7752,7 +7752,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_PartsUnknown** — dokumenta daļu skaits, kurām mēs nevarējām iegūt datus. 
 
-- **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur tiek mēģināts labot failu pirms tā atvēršanas. 
+- **Data_RecoverableFailureInitiationLocationTag** — unikāla atzīme koda izsaukumu vietā, lai identificētu vietu kodā, kur mēs mēģināsim izlabot failu pirms tā atvēršanas. 
 
 - **Data_RenameDisabledReason** — kļūda, kuras dēļ tiek atspējota dokumenta pārdēvēšana. 
 
@@ -8545,7 +8545,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8656,7 +8656,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — programmas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8810,7 +8810,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
     
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -8872,7 +8872,7 @@ Tiek apkopoti šādi lauki:
 
 Ieraksta informāciju par neparedzētu Office izslēgšanu. Tas ļauj mums noteikt produkta avārijas vai, ja tas pārstāj reaģēt, un atrisināt šīs problēmas.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki:
 
   - **Data\_AirspaceInitTime:integer —** Airspace Office komponentes inicializācijai veltītais laiks
 
@@ -10380,7 +10380,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -10418,7 +10418,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -11244,7 +11244,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki: 
 
-- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
 
 - **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
 
@@ -11332,7 +11332,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki. 
 
-- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
 
 - **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
 
@@ -11384,7 +11384,7 @@ Tiek apkopoti šādi lauki.
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Šis pasākums palīdz izsekot, kāda veida pieredze lietotājiem tiek rādīta, kad tie nonāk programmas lapā.  Šie dati tiek izmantoti, lai noteiktu lietotāju plūsmu katrā programmas lietošanas pieredzē, kā arī palīdz mums viegli konsolidēt eksperimentu rezultātus.
+Šis pasākums palīdz izsekot, kāda veida pieredze lietotājiem tiek rādīta, kad tie nonāk mūsu programmas lapā.  Šie dati tiek izmantoti, lai noteiktu lietotāju plūsmu katrā programmas lietošanas pieredzē, kā arī palīdz mums viegli konsolidēt eksperimentu rezultātus.
  
 Tiek apkopoti šādi lauki: 
 
@@ -11404,7 +11404,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -11474,7 +11474,7 @@ Tiek apkopoti šādi lauki:
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -11560,7 +11560,7 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki: 
 
-- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
+- **above_40fps** — virs 40 kadriem sekundē renderēto kadru skaits
 
 - **above_40rate** — virs 40 kadriem sekundē renderēto kadru skaits
  
@@ -13142,7 +13142,7 @@ Tiek apkopoti šādi lauki:
 
 - **IsGallatin** — būla, kas tiek izmantota, lai pārbaudītu, vai tas ir Gallatin konts
 
-- **MessageCode** — uzskaitījums, kas norāda aktivizēšanas kļūmes punktu
+- **MessageCode**— uzskaitījums, kas norāda aktivizēšanas kļūmes punktu
 
 - **PreviousEntryPoint** — ieejas punkta uzskaitījums licenču aktivizēšanas plūsmas aktivizēšanai
 
@@ -13493,7 +13493,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **AppInfo.ClientHierarchy** — klienta hierarhija, kas norāda, ka lietojumprogramma darbojas ražošanas vidē vai izstrādātāja vidē
 
-- **AppInfo.Name** — lietojumprogrammas nosaukums.
+- **AppInfo.Name** — lietojumprogrammas nosaukums
 
 - **AppInfo.Version** — lietojumprogrammas versija
 
@@ -13721,7 +13721,7 @@ Vai tiek izmantota jaunākā Office zema līmeņa atveidošanas platforma, kuras
 
 Norit jaunākās Office zema līmeņa atveidošanas platformas izstrāde un piegāde klientiem, kas ļauj Microsoft redzēt, cik daudz lietotāju ir katrā versijā, lai nodrošinātu, ka platforma darbojas bez kļūdām.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_WinCompEnabled** — vai tiek izmantota Windows salikuma aizmugursistēma
 
