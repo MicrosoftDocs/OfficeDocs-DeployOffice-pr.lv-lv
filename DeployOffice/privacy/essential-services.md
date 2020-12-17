@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 03274656b30fe1e30e609ef32aa38947917a23cd
+ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491549"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49685836"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -27,7 +27,7 @@ ms.locfileid: "48491549"
 
 Office sastāv no klienta programmām un saistītajiem līdzekļiem, kas paredzēti, lai jūs varētu efektīvāk veidot, sazināties un sadarboties. Lai gan varat kontrolēt daudzas savienotās iespējas, kas ir pieejamas jums vai jūsu lietotājiem, ja esat savas organizācijas administrators, pastāv pakalpojumu kopa, kas ir būtiski attiecībā uz to, kā Office darbojas, tāpēc tos nevar atspējot. Piemēram, licencēšanas pakalpojums, kas apstiprina, vai esat pareizi licencēts Office izmantošanai. Nepieciešamie pakalpojumu dati par šiem pakalpojumiem tiek apkopoti un nosūtīti korporācijai Microsoft neatkarīgi no citiem politikas iestatījumiem, kas saistīti ar konfidencialitāti un kurus esat konfigurējis.
 
-Papildinformāciju skatiet šeit:
+Papildinformāciju skatiet šādos rakstos:
 
 - [Office obligātais datu pakalpojums](required-service-data.md)
 - [Office saistītie līdzekļi](connected-experiences.md)
@@ -47,8 +47,8 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 
 | **Pakalpojums**  | **Apraksts**  |
 | ------ | ---- |
-| [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti.  Tā ir nepieciešama, lai jums sniegtu iespēju pierakstīties sistēmā Office, aktivizēt jūsu Office licenci, piekļūtu jūsu mākonī saglabātajiem failiem, kā arī nodrošinātu konsekventu pieredzi vairākās Office sesijās un jūsu ierīcēs.    |
-| [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to. Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
+| [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti.   Tā ir nepieciešama, lai jums sniegtu iespēju pierakstīties sistēmā Office, aktivizēt jūsu Office licenci, piekļūtu jūsu mākonī saglabātajiem failiem, kā arī nodrošinātu konsekventu pieredzi vairākās Office sesijās un jūsu ierīcēs.    |
+| [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to.  Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
 | [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS operētājsistēmām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
@@ -359,7 +359,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Microsoft\_ADAL\_extended\_expires\_on\_setting** — patiess/aplams norāda, vai marķierim ir pagarināts kalpošanas laiks.
 
-  - **Microsoft\_ADAL\_http\_event\_coun**t — HTTP izsaukumu skaits, ko veica ADAL.
+  - **Microsoft\_ADAL\_http\_event\_coun** t — HTTP izsaukumu skaits, ko veica ADAL.
 
   - **Microsoft\_ADAL\_http\_event\_count\_max** — ja šis signāls ir apkopots, maksimālais HTTP izsaukumu skaits, ko ADAL veic jebkuram apkopotajam notikumam.
 
@@ -981,7 +981,7 @@ Tiek apkopoti šādi lauki:
 
   - **Data\_CorruptVersionFiles —** failu, kam ir bojāta versija, paraugs
 
-  - **Data\_FileBadDigestCount — **cik failus neizdevās atvērt
+  - **Data\_FileBadDigestCount —** cik failus neizdevās atvērt
 
   - **Data\_FileBadDigestFiles —** failu, ko nevaram atvērt, paraugs
 
@@ -1118,75 +1118,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigurelight"></a>Office.ClickToRun.Scenario.InstallTaskConfigurelight
 
@@ -1194,75 +1194,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
@@ -1270,75 +1270,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
   - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
@@ -1346,75 +1346,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
   - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
@@ -1422,151 +1422,151 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
   - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskintegrateinstall"></a>Office.ClickToRun.Scenario.InstallTaskIntegrateinstall
 
 Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs veido reģistra ierakstus Office lietojumprogrammām. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
 
-Tiek apkopoti tālāk norādītie lauki.
+Tiek apkopoti šādi lauki:
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
   - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltasklastrun"></a>Office.ClickToRun.Scenario.InstallTaskLastrun
 
@@ -1574,75 +1574,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
   - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
   - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
@@ -1650,75 +1650,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
   - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
   - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —**  datora Office atjaunināšanas identifikators
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskpublishrsod"></a>Office.ClickToRun.Scenario.InstallTaskPublishrsod
 
@@ -1726,75 +1726,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
   - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskremoveinstallation"></a>Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
 
@@ -1802,75 +1802,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office atinstalē
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —**  uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
@@ -1878,151 +1878,151 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —**  uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —**  datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskuninstallcentennial"></a>Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšēju Office versiju, kas instalēta no Store. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšējo Office versiju, kas instalēta no Microsoft Store. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskfinalintegrate"></a>Office.ClickToRun.Scenario.RepairTaskFinalintegrate
 
@@ -2030,75 +2030,75 @@ Office iestatīšanas un krājumu dati, kas apkopoti, kad Office labošanas klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —**  uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskfullrepair"></a>Office.ClickToRun.Scenario.RepairTaskFullrepair
 
@@ -2106,75 +2106,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskintegraterepair"></a>Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2182,75 +2182,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
@@ -2258,75 +2258,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
 
@@ -2334,75 +2334,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskpublishrsod"></a>Office.ClickToRun.Scenario.UpdateTaskPublishrsod
 
@@ -2410,75 +2410,75 @@ Office iestatīšana un krājumi, kas tiek apkopoti, kad Click-to-Run klients at
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
@@ -2486,25 +2486,25 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion to —** kāda Office versija ir pieejama atjaunināšanai
 
@@ -2514,57 +2514,57 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
   - **Data\_HardlinkingException —** izņēmums, kas radās, mēģinot izveidot stingrās saites
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
   - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —**  datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
   - **Data\_WorkstationLockState —** patiess, ja uzskatām, ka dators ir bloķēts
 
@@ -2574,75 +2574,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
   - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedetection"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2650,25 +2650,25 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
@@ -2678,55 +2678,55 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
   - **Data\_PackageUpdateAvailable —** patiess, ja ir pieejama jauna Office versija
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
   - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —**  datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
@@ -2734,25 +2734,25 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —**  uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
@@ -2762,59 +2762,59 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
   - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
   - **Data\_FoundCorruptFiles —** patiess, ja esam atraduši bojātus failus
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
   - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
 
   - **Data\_PipelineExitCode —** izejas kods, ko mūsu failu konveijers atgrieza
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
@@ -2822,75 +2822,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —**  uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
   - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —**  unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —**  datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
 
@@ -2941,15 +2941,15 @@ Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, v
 
 Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veido transportēšanas straumi, lai lejupielādētu Office failus. Tiek izmantoti, lai noteiktu dažādu transportēšanas tehnoloģiju (piemēram, HTTP, BITS, DO) darbspēju, kas ir kritiski svarīgi, lai pareizi lejupielādētu Office instalēšanai un atjauninājumiem.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_IsForeGroundStreaming**  — vai straumējam priekšplānā vai fonā
+  - **Data\_IsForeGroundStreaming** — vai straumējam priekšplānā vai fonā
 
   - **Data\_IsInstallMode** — 1 — ja instalējam un lejupielādējam failus, 0 — ja to nedarām
 
   - **Data\_SourceProtocol —** ja veicam lejupielādi no satura datu tīkla, CDN, datora, kurā veicam instalēšanu, lokāli vai resursa lokālajā tīklā,
 
-  - **Data\_Status**  — sekmīga izpilde vai kļūme 
+  - **Data\_Status** — sekmīga izpilde vai kļūme 
 
 ### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
@@ -3233,7 +3233,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Apkopo konfigurāciju sarakstu, ko klients saņēmis no ECS
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **ECSConfigs** — komatatdalīts ECS konfigurāciju saraksts
 
@@ -3343,6 +3343,97 @@ Tiek apkopoti šādi lauki:
 - **SessionID** — GUID, lai savienotu notikumus pēc sesijas
 
 
+### <a name="officeandroiddocsuiviewspurchasetokenredemptionresponse"></a>Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+
+Šī produkta telemetrija tiek apkopota, lai izsekotu un uzskaitītu iekšējo transakciju statusu un saskaņošanas informāciju uzticamības un veiktspējas uzlabošanai. Microsoft izmanto šos datus, lai analizētu un uzlabotu iekšējo transakciju apstrādes un saskaņošanas mehānismu uzticamību un veiktspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **MicrosoftPurchaseOrderId** — Microsoft pasūtījuma ID izsekošanas mērķiem tiek nosūtīts uz mazumtirdzniecības federācijas pakalpojumu (RFS).
+
+- **ResponseCode** — HTTP atbildes kods (int)
+
+- **StatusCode** — RFS atbildes statusa kods (RFS definēts uzskaitījums int-ierobežots)
+
+
+### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
+
+Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par Dime pirkumu plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam. 
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ActivityErrorDescription** — darbības kļūdas apraksts
+
+- **Data_ActivityErrorMessage** — darbības kļūdas ziņojums 
+
+- **Data_CampaignId** — kampaņas ID attiecinājumam
+
+- **Data_ContentId** — balstīts uz līdzekļa ID; tas tiek kartēts pie plūsmas ID vai satura ID
+
+- **Data_CorrelationVector** — korelācijas vektors, lai korelētu Dime ar partneriem, kas izmanto korelācijas vektoru
+
+- **Data_CustomerImpacted** — izmanto problēmu novēršanai, ja klients tiek ietekmēts plūsmas ielādes laikā
+
+- **Data_DimeActivityDuration** — ilgums 
+
+- **Data_DimeActivityMetadata** — darbības metadati
+
+- **Data_DimeActivityName** — aktivitātes nosaukums darbspējas pārraudzībai
+
+- **Data_DimeActivityResult** — darbības rezultāts, sekmīgi pabeigta / kļūda / paredzama kļūda
+
+- **Data_DimeVersion** — būvējuma versija
+
+- **Data_DurationLevel** — nozīmīguma pakāpe — 0/1/2
+
+- **Data_EcsConfigIds** — eksperimentiem paredzētie ID
+
+- **Data_EcsCountry** — noteiktā valsts
+
+- **Data_EcsETag** — informācija par testējamiem variantiem
+
+- **Data_Environment** — Dime vides izstrāde/priekšizstrāde
+
+- **Data_ExperienceId** — ielādējamais līdzeklis 
+
+- **Data_FlowId** — balstīts uz līdzekļa ID; tas tiek kartēts pie plūsmas ID vai satura ID
+
+- **Data_Language** — kultūra
+
+- **Data_Market** — noteiktais tirgus
+
+- **Data_OTelJS_Version** — Office telemetrijas versija
+
+- **Data_PageSessionId** — lapas sesijas ID
+
+- **Data_PartnerId** — programma izsaucējs
+
+- **Data_QosLevel** — nozīmīguma pakāpe 0/1/2
+
+- **Data_SDX_AssetId** — pakalpojuma nodrošinātā līdzekļa (SDX), kurā ir izvietots saturs, līdzekļa ID
+
+- **Data_SDX_BrowserToken** —  pārlūkprogrammas marķieris
+
+- **Data_SDX_HostJsVersion** — JavaScript bibliotēkas versija
+
+- **Data_SDX_Id** — pakalpojuma nodrošinātā līdzekļa ID
+
+- **Data_SDX_InstanceId** — SDX instances ID
+
+- **Data_SDX_MarketplaceType** — SDX tirgus veids
+
+- **Data_SDX_OfficeJsVersion** —Office JS versija
+
+- **Data_SDX_SessionId** — SDX sesijas ID
+
+- **Data_SDX_Version** —SDX versija
+
+- **CollectionTime** — notikuma laikspiedols
+
+- **Data_TsgId** — katras darbības problēmu novēršanas vadlīniju ID
+
+- **Data_UserAgent** — virsraksta atzīmes
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Kritisko lietojumu telemetrijas tiek apkopots, lai norādītu, kad lietotājs pieskaras pogai Pirkums/Pirkt.  Datus izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
@@ -3388,6 +3479,47 @@ Ja kāda iemesla dēļ nevaram automātiski aktivizēt licenci, lietotājam tiek
 
 Šis notikums neapkopo laukus.
 
+### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
+ 
+Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka pirkumu veikšanas programmā līdzekli aizver lietotājs vai programma. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+ 
+Tiek apkopoti šādi lauki:
+ 
+- **Data_ClosedDialog** — karodziņš, kas norāda, ka lietotājs aizvēra dialogu
+
+### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
+ 
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notika pirkuma programmā līdzekļa ielādes mēģinājums, taču notika kļūda, kuras rezultātā dialoglodziņš netiek parādīts. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+ 
+Tiek apkopoti šādi lauki:
+  
+- **Data_MoeErrorCode** — kļūdas kods, kas ir redzams tīmekļa dialoga struktūrā
+
+### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
+ 
+Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka fonā tiek ielādēts līdzeklis pirkumu veikšanai programmā. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+ 
+Tiek apkopoti tālāk norādītie lauki.
+
+ - Nav
+
+### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
+ 
+Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka lietotājam tiek parādīts līdzeklis pirkumu veikšanai programmā. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju.  
+
+Tiek apkopoti tālāk norādītie lauki.
+
+ - Nav
+
+### <a name="officelicensingdialogswebviewdialogtimeout"></a>Office.Licensing.Dialogs.WebViewDialog.Timeout
+
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notika līdzekļa pirkumu veikšanai programmā ielādes mēģinājums, taču tam iestājās noildze. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju un nodrošinātu tās paredzēto darbību. 
+
+Tiek apkopoti tālāk norādītie lauki.
+
+ - Nav
+
+
 ### <a name="officelicensingenforcesigninqualified"></a>Office.Licensing.EnforceSignInQualified 
 
 Šis signāls norāda, vai eksperiments, ko veicam, lai uzspiestu lietotāja parakstu kā daļu no licencēšanas, ir sekmīgs. Tas ir kritiski svarīgi, lai noteiktu eksperimenta, kas liek lietotājiem pieteikties un kas ir obligāts solis modernajam licencēšanas stekam, izdošanos vai neizdošanos. Ja neizdodas pierakstīties, lietotāji nevar izmantot programmu.
@@ -3400,7 +3532,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tas tiek apkopots, kad tiek parādīts dialoglodziņš derīguma beigu datums lietotājam, kurš norāda, ka viņu licences derīguma termiņš ir beidzies. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **LicNotificationState** — skaitītājs, kas mums norāda, kāda veida paziņojums tiek rādīts lietotājam
 
@@ -3408,7 +3540,7 @@ Tiek apkopoti šādi lauki:
 
 Tas tiek apkopots katrā sesijā, kas ziņo datora licencēšanas stāvokli un kļūdas, kas lietotājam rodas un kuru dēļ tas nevar izmantot lietojumprogrammu. Šis notikums norāda, vai lietotāja dators ir darbspējīgs. Esam iestatījuši anomāliju noteikšanu šim notikumam, lai norādītu, vai regresija vai aktivizācijas mehānisms izraisa neatbilstošo lietotāju uzvedību. Tas ir arī kritiski svarīgi, kad tiek diagnosticētas lietotāja problēmas, kā arī sistēmas darbspējas pārraudzībai.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
   
@@ -3489,7 +3621,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ja rodas problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licenču vedni un nosūtīsim šo signālu, lai norādītu vienu un to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
@@ -3521,7 +3653,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Mēģinot ierīci licencēt, lietojumprogramma mēģina ielādēt lietotāja identitāti, lai noskaidrotu, vai lietotājam ir Office tiesības. Šis notikums ziņo par sekmīgu izpildi vai kļūmi kopā ar attiecīgā pakalpojuma izsaukuma kļūdas kodu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **FederationProvider** — virkne, kas norāda federācijas nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
 
@@ -3641,7 +3773,7 @@ Tiek apkopoti šādi lauki:
 
 Ja lietotājs strādā koplietojama datora aktivizācijas režīmā, mēs mēģinām meklēt sesijas marķieri datorā, kas lietotājam sniedz iespēju izmantot lietojumprogrammu. Šis notikums ziņo par scenārija sekmīgu izpildi vai kļūmi kopā ar kļūdas kodu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **LoadLicenseResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām ielādēt licences pašreizējam lietotājam
 
@@ -3945,7 +4077,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -3986,7 +4118,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4106,7 +4238,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4188,7 +4320,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4271,7 +4403,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4387,6 +4519,8 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
+- **Success** — norāda uz klonēšanas uzdevuma sekmīgu izpildi
+
 - **UpdateID** — atjauninājuma identifikators.
 
 
@@ -4398,7 +4532,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4439,7 +4573,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -4479,7 +4613,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -5700,6 +5834,47 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
+### <a name="controllermainwindowsetautomaticchecking"></a>controller.mainwindow.setautomaticchecking
+
+Šis notikums norāda, ka ierīce tika reģistrēta automātiskās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+
+Tiek apkopoti šādi lauki:
+
+ - **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — teksts, kas norāda notikuma dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+
 ### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Šis notikums norāda, ka ierīce tika reģistrēta automātiskās atjaunināšanas režīma izmantošanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
@@ -6447,7 +6622,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7243,7 +7418,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7285,7 +7460,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7406,7 +7581,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7444,7 +7619,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7484,7 +7659,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7524,7 +7699,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7564,7 +7739,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7604,7 +7779,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7644,7 +7819,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7684,7 +7859,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7770,7 +7945,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7812,7 +7987,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7852,7 +8027,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -7892,7 +8067,7 @@ Tiek apkopoti šādi lauki:
     
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
 - **AppVersionLong** — programmas versija
     
@@ -7932,7 +8107,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
 - **AppVersionLong** — programmas versija
     
@@ -7972,7 +8147,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -8985,7 +9160,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
  
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9484,7 +9659,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
  
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9524,7 +9699,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9564,7 +9739,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9604,7 +9779,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -9646,7 +9821,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -10247,7 +10422,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -10822,48 +10997,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
-
-### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
-
-Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
- 
-Tiek apkopoti šādi lauki:
-
-- **App** — programmas process, kas sūta notikumu
-
-- **AppInfo_Language** — valoda, kurā darbojas programma
-
-- **AppVersionLong** — programmas versija
-
-- **Channel** — auditorijas preference
-
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
-
-- **DeviceID** — ierīces identifikators
-
-- **DeviceInfo_Model** — ierīces aparatūras modelis
-
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
-
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
-
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
-
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
-
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
-
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
-
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un detalizētu informācija par ziņoto starpniekservera kļūdu.
-
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
-
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
-
-- **SessionId** — sesijas identifikators
-
-    
+   
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
@@ -11083,6 +11217,94 @@ Tiek apkopoti šādi lauki:
 
 - **UpdatePkg** — instalējamās atjauninājuma pakotnes nosaukums
 
+### <a name="lifecyclecomplimentproclaunch"></a>Lifecycle.complimentproclaunch
+
+Šis notikums norāda uz mēģinājumu palaist Microsoft Update palīgu no Microsoft AutoUpdate vai no Microsoft AutoUpdate no Microsoft Update palīga. Šis notikums tiek izmantots, lai noteiktu un nodrošinātu Microsoft AutoUpdate un Microsoft Update palīga darbspēju.
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Error** — jebkura kļūda, par kuru tiek ziņots palaišanas mēģinājuma laikā
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **Reason** — iemesls mēģinājumam palaist papildu procesu
+
+- **SessionId** — sesijas identifikators
+
+- **Success** — norāda, vai programmas atjaunināšana bija sekmīga
+
+### <a name="lifecyclelaunch"></a>Lifecycle.launch
+
+Šis notikums norāda uz Microsoft AutoUpdate vai Microsoft Update palīga palaišanu. Šis notikums tiek arī izmantots, lai ziņotu par jebkādām palaišanas procesa laikā atklātajām problēmām, kā arī ziņošanai par izmantoto Microsoft Update palīga palaišanas metodi.
+
+*[Šis notikums aizstāj fba.launch un appdelegate.launch notikumus.]*
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Error** — jebkura palaišanas laikā atklātā kļūda
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **LaunchedBy** — Microsoft Update palīga palaišanai izmantotā metode, ja attiecināms
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
 ### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
 Šis notikums periodiski ziņo par MicrosoftAutoUpdate procesa statusu. Konkrēti, tas ziņo par to, kādi atlikušie uzdevumi gaida Update Assistant pabeigšanu, un lietotāja saskarnes gadījumā ziņo par to, vai process tiek pārtraukts lietotāja neaktivitātes dēļ.  Mēs izmantojam šo notikumu, lai noteiktu, kas traucē Update Assistant pabeigt atjauninājumus un pārtraukt darbību, un vai lietotāja interfeiss tiek pārtraukts lietotāja neaktivitātes dēļ.
@@ -11132,6 +11354,50 @@ Tiek apkopoti šādi lauki.
 - **SessionId** — sesijas identifikators
 
 - **SessionLength** — pašreizējās procesa sesijas ilgums sekundēs
+
+
+### <a name="lifecycleterminate"></a>Lifecycle.terminate
+
+Šis notikums norāda uz Microsoft AutoUpdate vai Microsoft Update palīga izbeigšanu. Šis notikums tiek izmantots, lai noteiktu Microsoft AutoUpdate un Microsoft Update palīga darbspēju.
+
+*[Šis notikums aizstāj fba.terminate un appdelegate.terminate notikumus.]*
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+- **SessionLength** — pašreizējās procesa sesijas ilgums sekundēs
+
 
 
 ### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
@@ -11513,7 +11779,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11553,7 +11819,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11593,7 +11859,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11633,7 +11899,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11673,7 +11939,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11713,7 +11979,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11753,7 +12019,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11793,7 +12059,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11835,7 +12101,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11875,7 +12141,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11955,7 +12221,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -11995,7 +12261,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12035,7 +12301,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12075,7 +12341,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12333,7 +12599,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12509,7 +12775,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12687,7 +12953,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12727,7 +12993,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -12899,7 +13165,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13021,7 +13287,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13101,7 +13367,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13182,7 +13448,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13222,7 +13488,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13385,7 +13651,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13633,7 +13899,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13715,7 +13981,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -13879,7 +14145,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -14380,7 +14646,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -14535,47 +14801,6 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
-### <a name="webservicesserviceaction"></a>webservices.serviceaction
-
-Reģistrējam visas kļūdas, kas rodas neparedzētas tīmekļa pakalpojuma atbildes dēļ. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
- 
-Tiek apkopoti šādi lauki:
-
-- **App** — programmas process, kas sūta notikumu
-
-- **AppInfo_Language** — valoda, kurā darbojas programma
-
-- **AppVersionLong** — programmas versija
-
-- **Channel** — auditorijas preference
-
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
-
-- **DeviceID** — ierīces identifikators
-
-- **DeviceInfo_Model** — ierīces aparatūras modelis
-
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
-
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
-
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
-
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
-
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
-
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
-
-- **Payload** — satur detalizētu informāciju par darbībām, kas tiek stumtas no tīmekļa pakalpojumiem.
-
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
-
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
-
-- **SessionId** — sesijas identifikators
-
-
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Šis notikums reģistrē pieprasījumus MAU pakalpojumam, atbilžu laikus un kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
@@ -14665,7 +14890,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppVersionLong** — programmas versija
 
@@ -14785,7 +15010,7 @@ Tiek apkopoti šādi lauki:
  
 Tiek apkopoti tālāk norādītie lauki
 
-- **CachedError_Code**A— numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kešatmiņā saglabātās kļūdas raksturu un/vai to, kāpēc tā radās
+- **CachedError_Code** A— numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kešatmiņā saglabātās kļūdas raksturu un/vai to, kāpēc tā radās
 
 - **CachedError_Description** — kešatmiņā saglabātās kļūdas apraksts
 
@@ -15251,6 +15476,46 @@ Tiek apkopoti šādi lauki.
 - **requestType** — virkne — StoreKit pieprasījuma tips. Piemēram, "ProductsFetch", "PendingPurchase"
 
 - **status** — virkne — sekmīga izpilde vai kļūme, norādot pieprasījuma veiksmīgumu vai kļūmi
+
+### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
+
+Apkopotie dati reģistrē SharePoint (SPO) ID sekmīgu vai nesekmīgu iegūšanu dokumenta vietrādim URL. Izsaukuma sekmīga vai nesekmīga izpilde (tai skaitā nesekmīgas izpildes iemesls) tiek reģistrēta visām platformām. Šis marķieris ir nepieciešams, lai sekotu un diagnosticētu ID saņemšanai veiktā izsaukuma darbspēju. ID ir nepieciešami, lai OneNote lapas (daļa no SharePoint saglabātajām piezīmju grāmatām) dati tiktu rādīti plūsmā.   
+
+Tiek apkopoti šādi lauki:
+
+- **ErrorCode** — kļūdas int vērtība
+
+- **ErrorMessage** — kļūdu aprakstošā virkne
+
+- **FailureType** — kļūdas tipa noteikšanai paredzētā virkne
+
+- **HttpStatusCode** — tīkla izsaukuma HTTP kļūdas kods
+
+- **InnerErrorCode** — int kods
+
+- **InnerErrorMesage** — kļūdas ziņojums
+
+- **IsSuccess** — Būla vērtība, ja signāls ir sekmīgs
+
+### <a name="officeonenotegetsharepointidsfordocumentw32old"></a>Office.OneNote.GetSharePointIdsForDocumentW32Old
+
+Šī telemetrija reģistrē SharePoint (SPO) ID dokumentu vietrādim URL iegūšanas sekmīgos un nesekmīgos scenārijus. Tiek reģistrēta izsaukuma sekmīga vai nesekmīga izpilde (tai skaitā nesekmīgas izpildes iemesls). Šis tiek reģistrēts tikai vecajā win32 platformā. Šis marķieris ir nepieciešams, lai sekotu un diagnosticētu ID saņemšanai veiktā izsaukuma darbspēju. ID ir nepieciešami, lai OneNote lapas (daļa no SharePoint saglabātajām piezīmju grāmatām) dati tiktu rādīti plūsmā.   
+
+Tiek apkopoti šādi lauki:
+
+- **ErrorCode** — kļūdas int vērtība
+
+- **ErrorMessage** — kļūdu aprakstošā virkne
+
+- **FailureType** — kļūdas tipa noteikšanai paredzētā virkne
+
+- **HttpStatusCode** — tīkla izsaukuma HTTP kļūdas kods
+
+- **InnerErrorCode** — int kods
+
+- **InnerErrorMesage** — kļūdas ziņojums
+
+- **IsSuccess** — Būla vērtība, ja signāls ir sekmīgs
 
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
@@ -15917,7 +16182,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **Alias —** Microsoft darbinieka vai automatizētā lietotāja aizstājvārds
 
@@ -16021,7 +16286,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officesystemsystemhealthungracefulappexitdesktop"></a>Office.System.SystemHealthUngracefulAppExitDesktop
 
-Tiek izmantots, lai tvertu avāriju metriku.
+Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzdevumu pārvaldnieks, uzkaras programma utt.) Office klienta programmām, ieskaitot, bet ne tikai, Word, Excel, PowerPoint un Outlook. Mēs izmantojam rādītājus par nelabvēlīgu iziešanu no programmas, lai mērītu Office klienta produktu darbspēju. Tas ir uzņēmējdarbībā svarīgs signāls, kuru izmanto Office inženieri, lai noteiktu produktu stabilitāti.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -16029,83 +16294,103 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
 
+  - **AffectedProcessAppMajorVer —** būvējuma galvenās versijas identifikators ietekmētajam procesam.
+
   - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam.
 
-  - **AffectedProcessAppName —** ietekmētā procesa nosaukums.
+  - **AffectedProcessAppName —** ietekmētā procesa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs.
+  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs.
+  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs.
+  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs.
+  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums.
+  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā.
+  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators.
+  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AppName —** ietekmētās lietojumprogrammas nosaukums.
+  - **AppName —** ietekmētās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi.
+  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
+  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
 
-  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
+  - **CrashedImpressionId —** avarējušā procesa seansa identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators.
+  - **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
-  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+  - **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators. 
+
+  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts. 
+
+  - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+
+  - **HexCrashTag —** unikālais avārijas koda identifikators.
 
   - **CrashType —** avārijas veida intervāla identifikators.
 
-  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja.
+  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ErrorString —** kļūdas apraksts.
+  - **ErrorString —** kļūdas apraksts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ExceptionAddress —** adrese programmā, kur kļūme radās.
+  - **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **ExceptionCode —** izņēmuma intervāla identifikators.
 
-  - **FaultAppName —** kļūdainās lietojumprogrammas nosaukums.
+  - **FaultAppName —** kļūdainās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
-  - **InstallType —** Office instalēšanas metodes identifikators.
+  - **InstallType —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **InstallTypeName —** Office instalēšanas metodes identifikators.
+  - **InstallTypeName —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese.
+  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs.
+  - **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs.
+  - **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs.
+  - **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleName —** kļūdainā moduļa nosaukums.
+  - **ModuleName —** kļūdainā moduļa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleOffset —** nobīde baitos no bāzes adreses, kur kļūme radās.
+  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
 
-  - **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs.
+  - **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleSize —** kļūdainā moduļa izmērs baitos.
+  - **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **ModuleVersion** — par avāriju atbildīgā kļūmes moduļa versija.
+
+  - **OfficeArchitectureText** — instalācijas arhitektūra: x64, x86 utt.
+
+  - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 
   - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
   - **PreviousBuild —** iepriekš instalētā būvējuma versija
 
-  - **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi.
+  - **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
 
-  - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja.
+  - **SessionFlags** — nosaka sesijas nosacījumus, piemēram: vai fails tika atvērts vai rediģēts, vai mākoņa dokuments tika atvērts, vai palaišanas sekvence tika pabeigta utt. 
+
+  - **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
+
+  - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
@@ -16169,81 +16454,112 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzdevumu pārvaldnieks, uzkaras programma utt.) Office klienta programmām, ieskaitot, bet ne tikai, Word, Excel, PowerPoint un Outlook. Mēs izmantojam rādītājus par nelabvēlīgu iziešanu no programmas, lai mērītu Office klienta produktu darbspēju. Tas ir uzņēmējdarbībā svarīgs signāls, kuru izmanto Office inženieri, lai noteiktu produktu stabilitāti.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
-  - **AddinExecution —** karodziņš, kas informē, ja pievienojumprogramma izpildīja un nepabeidza izpildi nelabvēlīgas iziešanas no programmas laikā.
+  - **AddinExecution —** karodziņš, kas informē, ja pievienojumprogramma izpildīja un nepabeidza izpildi nelabvēlīgas iziešanas no programmas laikā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **BootCompleted —** vai Office sāknēšana tika pabeigta avārijas brīdī.
+  - **AppUsedVirtualMemory** — Office programmas izmantota virtuālā atmiņa
 
-  - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
+  - **BootCompleted —** vai Office sāknēšana tika pabeigta avārijas brīdī. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedAppMajor —** galvenās versijas identifikators ietekmētajam procesam.
+  - **BucketId** — Watson avārijas intervāla identifikators
+ 
+  - **CabGuid** — Watson .cab faila unikālais identifikators (GUID).
 
-  - **CrashedAppMinor —** papildversijas identifikators ietekmētajam procesam.
+  - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedAppRevision —** būvējuma versijas identifikators ietekmētajam procesam.
+  - **CrashedAppMajor —** galvenās versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+ 
+  - **CrashedAppMinor —** papildversijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **CrashedAppVersion** — avarējuša procesa programmas versijas identifikators.
 
   - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
 
   - **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
-  - **CrashedSessionId —** avarējušā procesa unikāls identifikators.
+  - **CrashedProcessSessionId —** avarējušā procesa unikāls identifikators.
+
+  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
   - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
-  - **CrashTime —** laiks, kad klienta darbība tika pārtraukta neatbilstošā veidā.
+  - **HexCrashTag —** unikālais avārijas koda identifikators.
+
+  - **CrashTime —** laiks, kad klienta darbība tika pārtraukta neatbilstošā veidā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **CrashType —** avārijas veida intervāla identifikators.
 
-  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja.
+  - **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ExceptionAddress —** adrese programmā, kur kļūme radās.
+  - **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **ExceptionCode —** izņēmuma intervāla identifikators.
 
-  - **HandOff —** vai lietotājs izveidoja un nodeva Office procesu jaunajai sesijai.
+  - **ExceptionInfo** — izņēmuma sistēmas informācija.
 
-  - **HasEdit —** vai lietotājs rediģēja dokumentu avarējušajā klientā.
+  - **HandOff —** vai lietotājs izveidoja un nodeva Office procesu jaunajai sesijai. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HasOpen —** vai avarējušajā klientā bija atvērts dokuments.
+  - **HangTypeCode** — atspoguļo reaģēšana pārtraukšanas klasi, ja process pārstāja reaģēt izpildes laikā.
 
-  - **HexCrashTag —** unikālais avārijas koda identifikators.
+  - **HasEdit —** vai lietotājs rediģēja dokumentu avarējušajā klientā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexExceptionAddress —** adrese heksadecimālā formātā programmā, kur kļūme radās.
+  - **HasOpen —** vai avarējušajā klientā bija atvērts dokuments. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexExceptionCode —** izņēmuma intervāla identifikators heksadecimālajā formātā.
+  - **HexCrashTag —** unikālais avārijas koda identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleBaseAddress —** kļūdainā moduļa bāzes adrese heksadecimālā formātā.
+  - **HexExceptionAddress —** adrese heksadecimālā formātā programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **HexExceptionCode —** izņēmuma intervāla identifikators heksadecimālajā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **HexModuleBaseAddress —** kļūdainā moduļa bāzes adrese heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **HexModuleSize —** kļūdainā moduļa izmērs baitos heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **HexVerifyElseCrashTag —** unikālais identifikators heksadecimālajā formātā par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
 
-  - **HexModuleSize —** kļūdainā moduļa izmērs baitos heksadecimālā formātā.
+  - **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexVerifyElseCrashTag —** unikālais identifikators heksadecimālajā formātā par to, kur lietojumprogramma avarēja.
+  - **ModuleStamp** — kļūmes moduļa spiedogs.
 
-  - **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
-
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
-
-  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese.
-
-  - **ModuleOffset —** nobīde baitos no bāzes adreses, kur kļūme radās.
-
-  - **ModuleSize —** kļūdainā moduļa izmērs baitos.
+  - **ModuleVersion** — par avāriju atbildīgā kļūmes moduļa versija.
 
   - **OfficeArchitectureText** — Office produkta arhitektūra kā virkne (piem., x86, arm).
 
   - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 
-  - **PreviousBuild —** iepriekš instalētā būvējuma versija
+  - **PreviousBuild** — iepriekš instalētā būvējuma versija
 
-  - **SafeMode —** norāda, vai sesija tika sākta drošajā režīmā.
+  - **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
 
-  - **UAEOSEnvironment —** operētājsistēmas vides identifikators.
+  - **SafeMode —** norāda, vai sesija tika sākta drošajā režīmā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **SessionFlags** — nosaka sesijas nosacījumus, piemēram: vai fails tika atvērts vai rediģēts, vai mākoņa dokuments tika atvērts, vai palaišanas sekvence tika pabeigta utt. 
+
+  - **StackHash** — pakalpojumā Office nodrošinu kešotu kļūmes steka ID.
+
+  - **SystemAvailableMemory** — operētājsistēmā pieejamā atmiņā
+
+  - **UAEOSEnvironment —** operētājsistēmas vides identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
 
   - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+  - **WatsonReportId** — Windows pakalpojumam Watson nosūtītā ziņojuma identifikators.
+
+  - **WerEventCreatedTime** — Windows kļūdu ziņošanas notikuma laikspiedols.
+
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
@@ -16491,7 +16807,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula.
 
-### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
+### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
 
 Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
@@ -16643,7 +16959,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Ierobežošanas DQ metrika. Nepieciešama, lai nodrošinātu uzticamību visiem pārējiem datiem.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
 
   - **ThrottlingTimestamp** — kad telemetrija tika ierobežota
 
