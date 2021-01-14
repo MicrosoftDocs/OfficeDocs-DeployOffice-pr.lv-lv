@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 03274656b30fe1e30e609ef32aa38947917a23cd
-ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
+ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
+ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49685836"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799142"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -151,7 +151,7 @@ Windows SSPI uzvednes tiek izmantotas autentifikācijai ar Exchange (pasta sinhr
 
 3.\) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
 
-4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko lietotāju bloķēšanas kļūmju mazināšanai
+4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus, lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko lietotāju bloķēšanas kļūmju mazināšanai.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -207,7 +207,7 @@ Tiek apkopots, kad Office rāda lietotājam daudzfaktoru autentifikācijas piera
 
 3.\) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
 
-4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko lietotāju bloķēšanas kļūmju mazināšanai.
+4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus, lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko lietotāju bloķēšanas kļūmju mazināšanai.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -261,7 +261,7 @@ Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Offi
 
 3.\) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
 
-4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
+4.\) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus, lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -452,7 +452,7 @@ Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Offi
 
 3) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
 
-4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
+4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus, lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
 
 Tiek apkopoti šādi lauki:
 
@@ -588,7 +588,7 @@ Tiek apkopoti šādi lauki:
 
 - **Microsoft_ADAL_is_silent_ui** — patiess/aplams norāda, vai UI ADAL rādīja UI (uzvedni)
 
-- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās (MacOS)
+- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās (macOS)
 
 - **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās
 
@@ -692,7 +692,7 @@ Tiek apkopoti šādi lauki:
 
 - **MSAL_read_token** — marķieri, kas tika nolasīti no kešatmiņas (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT, kurai beidzies derīguma termiņš, tika nolasīta, bet izmesta]).
 
-- **MSAL_read_token_last_error** — ja MSAL radās kļūda, lasot no kešatmiņas, šeit tiks saglabāta informācija. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda MacOS).
+- **MSAL_read_token_last_error** — ja MSAL radās kļūda, lasot no kešatmiņas, šeit tiks saglabāta informācija. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda macOS).
 
 - **MSAL_request_duration** — cik ilgs laiks pagāja, kad tika izsaukta MSAL augstākā līmeņa API, līdz mēs atgriezām rezultātu.
 
@@ -718,7 +718,7 @@ Tiek apkopoti šādi lauki:
 
 - **MSAL_write_token** — marķieri, kas tika nolasīti no kešatmiņas (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = AT, kurai beidzies derīguma termiņš, tika nolasīta, bet izmesta]).
 
-- **MSAL_write_token_last_error** — ja MSAL radās kļūda, rakstot kešatmiņā, mēs šeit saglabāsim informāciju. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda MacOS).
+- **MSAL_write_token_last_error** — ja MSAL radās kļūda, rakstot kešatmiņā, mēs šeit saglabāsim informāciju. (Piem.: diska lasīšanas kļūda, kas radās no operētājsistēmas, atslēgu ķēdes kļūda macOS).
 
 - **oneauth_api** — šim autentifikācijas mēģinājumam izsauktais OneAuth API.
 
@@ -726,7 +726,7 @@ Tiek apkopoti šādi lauki:
 
 - **oneauth_version** — OneAuth SDK versija.
 
-- **Platform** — operētājsistēmas platforma (0: Windows darbvirsma, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+- **Platform** — operētājsistēmas platforma (0: Windows darbvirsma, 1: Android, 2: iOS, 3: macOS, 4: UWP)
 
 - **Promptreasoncorrelationid** — korelācijas identifikatoru, ko var izmantot, lai uzmeklētu iepriekšējo autentifikācijas notikumu, kas tiek lietots, lai paskaidrotu, kāpēc lietotājam tika prasīts autentificēties.
 
@@ -817,7 +817,7 @@ Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Offi
 
 3) Ja rodas kļūme, šie signāli raida svarīgus kļūmju kodus no atbildīgā komponenta (Office klienta kods, autentifikācijas bibliotēkas vai iestāžu pakalpojumi), ko var izmantot klasificēšanai, diagnostikai un mazināšanai
 
-4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus,lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
+4) Šie signāli nodrošina dažādus nosūtīšanas gatavības un darbspējas pārraugus, kas aktivizē brīdinājumus, lai mūsu inženieri varētu ātri iesaistīties un samazināt laiku kritisko kļūmju mazināšanai.
 
 Tiek apkopoti šādi lauki:
 
@@ -875,7 +875,7 @@ Tiek apkopoti šādi lauki:
 
 - **oneauth_version** — OneAuth SDK versija.
 
-- **Platformu** — operētājsistēmas platforma (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+- **Platformu** — operētājsistēmas platforma (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT
 
 - **Scenarioname** — scenārija nosaukums, kuram nepieciešama autentifikācija, ko nosaka izsaucošā lietojumprogramma.
 
@@ -3315,6 +3315,20 @@ Tiek apkopoti šādi lauki:
 
 - **SessionID** — GUID, lai savienotu notikumus pēc sesijas
 
+### <a name="officeandroiddocsuipaywallcontrolpurchasetokenredemptionresponse"></a>Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[Šī notikuma iepriekšējais nosaukums bija Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+Šī produkta telemetrija tiek apkopota, lai izsekotu un uzskaitītu iekšējo transakciju statusu un saskaņošanas informāciju uzticamības un veiktspējas uzlabošanai. Microsoft izmanto šos datus, lai analizētu un uzlabotu iekšējo transakciju apstrādes un saskaņošanas mehānismu uzticamību un veiktspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **MicrosoftPurchaseOrderId** — Microsoft pasūtījuma ID izsekošanas mērķiem tiek nosūtīts uz mazumtirdzniecības federācijas pakalpojumu (RFS).
+
+- **ResponseCode** — HTTP atbildes kods (int)
+
+- **StatusCode** — RFS atbildes statusa kods (RFS definēts uzskaitījums int-ierobežots)
+
 
 ### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3343,22 +3357,26 @@ Tiek apkopoti šādi lauki:
 - **SessionID** — GUID, lai savienotu notikumus pēc sesijas
 
 
-### <a name="officeandroiddocsuiviewspurchasetokenredemptionresponse"></a>Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+### <a name="officeandroiddocsuiviewsdimeerror"></a>Office.Android.DocsUI.Views.DimeError
 
-Šī produkta telemetrija tiek apkopota, lai izsekotu un uzskaitītu iekšējo transakciju statusu un saskaņošanas informāciju uzticamības un veiktspējas uzlabošanai. Microsoft izmanto šos datus, lai analizētu un uzlabotu iekšējo transakciju apstrādes un saskaņošanas mehānismu uzticamību un veiktspēju.
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android (izlaista Huawei un Ķīnas veikalos). Šis notikums norāda, ka mēģinājums iegādāties Microsoft 365 abonementu, izmantojot Dime (klienta tīmekļa skatā ielādēts tīmekļa vietrādis URL), neizdevās. Tiek tverti tikai kļūdu scenāriji. Šī notikuma dati ir tikai kļūdas dati un tie tiek izmantoti, lai nodrošinātu Dime pirkumu plūsmas darbspēju klientā.
 
 Tiek apkopoti šādi lauki:
 
-- **MicrosoftPurchaseOrderId** — Microsoft pasūtījuma ID izsekošanas mērķiem tiek nosūtīts uz mazumtirdzniecības federācijas pakalpojumu (RFS).
+- **CorrelationID** — ID, kas unikāli identificē Dime pirkuma sesiju.
 
-- **ResponseCode** — HTTP atbildes kods (int)
-
-- **StatusCode** — RFS atbildes statusa kods (RFS definēts uzskaitījums int-ierobežots)
+- **ErrorReason** — norāda kļūdas rašanās iemeslu.
+  - 0 — nezināma kļūda
+  - 1 — internets nav pieejams
+  - 2 — vispārēji unikālā identifikatora (UUID) validācija neizdevās
+  - 3 — vispārēji unikāls identifikators (UUID) ir null vai tukšs
+  - 4 — JavaScript injekcijas kļūda, kur Office lietojumprogramma darbam ar Android nevar padot authToken uz Dime
+  - 5 — bāzes tīmekļa URL, kas ielādēts klientā, ir nederīgs
 
 
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
-Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par Dime pirkumu plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam. 
+Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Piemēram, iegādes programmā plūsmai, kad lietotājs izvēlas iegādāties Microsoft 365 abonementu no Office lietojumprogrammas darbam ar Android vai ierīcēs, kurās darbojas operētājsistēma Windows.
 
 Tiek apkopoti šādi lauki:
 
@@ -3410,23 +3428,23 @@ Tiek apkopoti šādi lauki:
 
 - **Data_QosLevel** — nozīmīguma pakāpe 0/1/2
 
-- **Data_SDX_AssetId** — pakalpojuma nodrošinātā līdzekļa (SDX), kurā ir izvietots saturs, līdzekļa ID
+- **Data_SDX_AssetId** — pakalpojuma nodrošinātā līdzekļa (SDX), kurā ir izvietots saturs sistēmai Win32, līdzekļa ID
 
-- **Data_SDX_BrowserToken** —  pārlūkprogrammas marķieris
+- **Data_SDX_BrowserToken** — pārlūkprogrammas sistēmai Win32 marķieris
 
-- **Data_SDX_HostJsVersion** — JavaScript bibliotēkas versija
+- **Data_SDX_HostJsVersion** — JavaScript bibliotēkas versija sistēmai Win32
 
-- **Data_SDX_Id** — pakalpojuma nodrošinātā līdzekļa ID
+- **Data_SDX_Id** — pakalpojuma nodrošinātā līdzekļa ID sistēmai Win32
 
-- **Data_SDX_InstanceId** — SDX instances ID
+- **Data_SDX_InstanceId** — SDX sistēmai Win32 instances ID
 
-- **Data_SDX_MarketplaceType** — SDX tirgus veids
+- **Data_SDX_MarketplaceType** — SDX tirgus veids sistēmai Win32
 
-- **Data_SDX_OfficeJsVersion** —Office JS versija
+- **Data_SDX_OfficeJsVersion** — Office JS versija sistēmai Win32
 
-- **Data_SDX_SessionId** — SDX sesijas ID
+- **Data_SDX_SessionId** — SDX sistēmai Win32 sesijas ID
 
-- **Data_SDX_Version** —SDX versija
+- **Data_SDX_Version** — SDX versija sistēmai Win32
 
 - **CollectionTime** — notikuma laikspiedols
 
@@ -3459,7 +3477,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **ACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **DwEulaId** — EULA tipa, ko tikko akceptēja lietotājs, skaitliskais identifikators
+  - **DwEulaId** — EULA tipa, ko akceptēja lietotājs, skaitliskais identifikators
 
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
@@ -4399,7 +4417,7 @@ Tiek apkopoti šādi lauki.
 
 Šis notikums reģistrē problēmas ar instalēšanu klonā (t.i., vai nu neizdodas izveidot savienojumu ar palīgu, lai lietotu atjauninājumu, vai savienojums ir izveidot, bet palīgs nevar lietot atjauninājumu). Ja tiek ziņots par kādu ierakstu, tas nozīmē, ka instalēšana klonā neizdevās un ka tagad ir jāveic atkāpšanās uz atjauninājumu atrašanās vietā.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -7408,7 +7426,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdaterType** — lejupielādētajā manifesta failā noradītā atjauninātāja tips
 
-- **UpdateURL** — instalējamās pakotnes URL saite
+- **UpdateURL** — instalējamās pakotnes URL saite
 
 ### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
@@ -7450,7 +7468,7 @@ Tiek apkopoti šādi lauki:
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-- **UpdateURL** — instalējamās pakotnes URL saite
+- **UpdateURL** — instalējamās pakotnes URL saite
 
 ### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
@@ -9745,7 +9763,7 @@ Tiek apkopoti šādi lauki:
 
 - **Channel** — auditorijas preference
 
-- **ChannelName** — kanāls, kuram tiek parādīts piekrišanas dialoglodziņš
+- **ChannelName** — kanāls, kuram tiek parādīts piekrišanas dialoglodziņš
 
 - **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -11408,7 +11426,7 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppID** — programmas, kas nosūta komandrindas interfeisa API uz MAU, identifikators.
+- **AppID** — programmas, kas nosūta komandrindas interfeisa API uz MAU, identifikators.
 
 - **AppInfo_Language** — valoda, kurā darbojas programma
 
@@ -11432,7 +11450,7 @@ Tiek apkopoti šādi lauki:
 
 - **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **EventType**— notikuma, kuru programma sūta uz MAU komandrindas interfeisa API.
+- **EventType** — notikuma, kuru programma sūta uz MAU komandrindas interfeisa API, tips.
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
@@ -15393,7 +15411,7 @@ Tiek apkopoti tālāk norādītie lauki:
  
 Šis notikums tiek reģistrēts, ja lietotājam, veicot pirmās palaišanas darbības ierīcē, neizdevās sinhronizēt ātrās piezīmes.  Šis ir raksturīgs pirmās palaišanas scenārijam.
  
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti tālāk norādītie lauki.
  
 - **NetworkConnection** — reģistrē savienojuma tipu, kurā ierīce pašlaik ir ieslēgta, piemēram, Wi-Fi, bezsaistē, 3G
 
@@ -15405,7 +15423,9 @@ Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu datu notikumus.
 
 ## <a name="telemetry-events"></a>Telemetrijas notikumi
 
-### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
+
+*[Šī notikuma iepriekšējais nosaukums bija Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 Microsoft izmanto šo opciju, lai uzlabotu lietotāja funkciju, panākumu vai kļūdu īpatsvaru pirkumos, lai nodrošinātu atbilstošus ieguldījumus, lai uzlabotu klientu pirkumu pieredzi mobilajās platformās.
 
@@ -15417,7 +15437,9 @@ Tiek apkopoti šādi lauki.
 
 - **PaywallOperationType** — Paywall operācijas veids (uzskaitījums/Int — ierobežotie)
 
-### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
+### <a name="officeandroiddocsuipaywallcontrolpaywallsessiondata"></a>Office.Android.DocsUI.PaywallControl.PaywallSessionData
+
+*[Šī notikuma iepriekšējais nosaukums bija Office.Android.DocsUI.Views.PaywallSessionData.]*
 
 Sesijas metadati, kad lietotājam tiek parādīts Paywall lietotāja interfeiss. Microsoft izmanto šo opciju, lai iegūtu lietotāja pieredzi un saprastu ierīces un operētājsistēmas versijas, ko lietotājs izmanto, lai palīdzētu pieņemt lēmumus par investīcijām, lai uzlabotu pieredzi šajos apgabalos.
 
@@ -15425,7 +15447,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **App Version** — patērējošās lietojumprogrammas versijas kods
 
-- **ClientId** — anonīms, kas nav PII unikāls ierīces identifikators (GUID / virkne)
+- **ClientId** — anonīms identifikators, kas nav PII unikāls ierīces identifikators (GUID/virkne)
 
 - **Entry Point** — unikāls kontekstuālo vai nemainīgo ievadīšanas punktu identifikators no patērējošās lietojumprogrammas
 
@@ -16898,8 +16920,6 @@ Tiek apkopoti tālāk norādītie lauki.
   - **ErrorRuleVersion** — telemetrijas kārtulas versija, kas izraisīja kļūdu
 
   - **WarningInfo** — brīdinājuma diagnostikas informācijas numurs
-
-<!-- end list -->
 
   - **QueueFlushCount** — ierindoto pludināšanas gadījumu skaits
 
