@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
-ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
+ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867459"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242197"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -29,7 +29,7 @@ Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, n
 
 Šie diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē, ir apkopoti un nosūtīti korporācijai Microsoft. Daži diagnostikas dati ir nepieciešami, bet daži diagnostikas dati ir neobligāti. Piedāvājam jums iespēju izvēlēties, vai sūtīt mums nepieciešamos vai neobligātos diagnostikas datus, izmantojot tādus konfidencialitātes kontroles līdzekļus kā organizācijas politikas iestatījumus. Mums sūtāmos diagnostikas datus varat skatīt, izmantojot diagnostikas datu skatītāju.
 
-***Nepieciešamie diagnostikas dati** _ ir minimālie dati, kas nepieciešami, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
+***Nepieciešamie diagnostikas dati*** ir minimālie dati, kas nepieciešami, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
 
 Nepieciešamie diagnostikas dati palīdz noteikt ar Office saistītas problēmas, kuru cēlonis var būt saistīts ar ierīces vai programmatūras konfigurāciju. Piemēram, tie var palīdzēt noteikt, vai Office līdzeklis biežāk avarē noteiktā operētājsistēmas versijā, kopā ar nesen ieviestiem līdzekļiem vai tad, kad ir atspējoti konkrēti Office līdzekļi. Nepieciešamie diagnostikas dati palīdz mums ātrāk noteikt, diagnosticēt un novērst problēmas, lai mazinātu ietekmi uz lietotājiem vai organizācijām.
 
@@ -57,7 +57,7 @@ Tālāk tabulā ir sniegts saraksts, kurā ir norādītas nepieciešamo diagnost
 - Datu lauku saraksts katrā notikumā
 - Katra datu lauka apraksts
 
-| _ *Kategorija**       | **Datu apakštips**| **Apraksts**    |
+| **Kategorija**       | **Datu apakštips**| **Apraksts**    |
 | ---------- | ------------- | ---- |
 | **Programmatūras iestatīšana un inventārs** | [Office iestatīšana un inventārs](#office-setup-and-inventory-subtype)   | Instalētais produkts, versija un instalēšanas statuss.  |
 | | [Office pievienojumprogrammu konfigurācija](#office-add-in-configuration-subtype)  | Programmatūras pievienojumprogrammas un to iestatījumi.     |
@@ -1291,6 +1291,7 @@ Tiek apkopoti šādi lauki:
   
   - **LoadResult** — ielādes veiksmes stāvoklis
 
+  - **OfficeArchitecture** — Office klienta arhitektūra
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -2794,7 +2795,7 @@ Tiek apkopoti šādi lauki.
 
 Kritisks signāls, kas tiek lietots, lai pārraudzītu līmpiezīmju lietotāju iespēju programmā skatīt piezīmes. Telemetrija, kas tiek izmantota kritiskas regresijas atklāšanai OneNote lietojumprogrammā un pakalpojuma darbspējā. Ja lietotājiem neizdodas skatīt piezīmes, tiks aktivizēts kritiskais incidents.
 
-Tiek apkopoti tālāk norādītie lauki:
+Tiek apkopoti šādi lauki.
 
 - **HasImages** — karodziņš, kas norāda, vai skatītajā piezīmē ir saglabāti attēli.
 
@@ -5367,6 +5368,37 @@ Tiek apkopoti šādi lauki.
 
 - **userDuration** — datu tips Double — lietotāja Paywall veltītais laiks milisekundēs
 
+
+#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Kritiska tehniskā telemetrija ar Microsoft mazumtirdzniecības federācijas pakalpojumu (RFS), lai apkopotu šajā notikumā sniegto informāciju. RFS ir iekšējais pakalpojums, kas tiek izmantots Microsoft ietvaros, lai pārbaudītu pirkumu. Dati tiek izmantoti, lai iegūtu RFS veiktās API izsaukšanas darbspēju un palīdzētu izprast izdošanās ātrumu un atkļūdošanu kļūmju gadījumā.
+
+Tiek apkopoti šādi lauki.
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz RFS nodrošināšanas atbilde.
+
+- **productId** — virkne — lietojumprogrammas veikala pieprasītā produkta ID
+
+- **status** — virkne — veiksme vai kļūme, norādot, vai pieprasījums ir izdevies vai nav izdevies
+
+
+#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Kritisko lietojumu telemetrijas, kas norāda, kad lietotājs pieskaras pogai Pirkums/Pirkt. Izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
+
+Tiek apkopoti šādi lauki:
+
+- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+
+- **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
+
+- **productId** — virkne — lietojumprogrammu veikala produkta ID, kam nospiesta poga Pirkt
+
+- **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
+
+
 #### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 Šis notikums apkopo līdzekļus un programmas, kuras lietotājs izvērš no sadaļas “Skatīt papildu priekšrocības”, un lietotāja veltītā laika ilgumu.  Šie dati tiek izmantoti, lai izprastu līdzekļa “Skatīt visas priekšrocības” lietojumu un optimizētu tā lietošanas pieredzi nākamajās versijās.
@@ -5378,6 +5410,16 @@ Tiek apkopoti šādi lauki:
 - **productId** — virkne — produkta, kuram lietotājs skata papildu piedāvātās priekšrocības, App Store ID
 
 - **userDuration**— datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
+
+
+### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
+
+Lietošanas telemetrijas dati, lai parādītu, cik reizes lietotājs pārslēdzas starp dažādiem SKU pirms pirkuma veikšanas mēģinājuma.
+
+Tiek apkopoti šādi lauki.
+
+- **productId** — virkne — App Store ID tam produktam, kuru lietotājs tikko pārslēdza uz skatīšanu no pieejamajiem produktiem SKU izvēlē.
+
 
 #### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
 
@@ -11469,6 +11511,7 @@ Tiek apkopoti šādi lauki.
 
 - **Method** — COM pievienojumprogrammas metode, kas izraisīja avāriju 
 
+- **OfficeArchitecture** — Office klienta arhitektūra
 
 #### <a name="officeprogrammabilitytelemetryaddincrash"></a>Office.Programmability.Telemetry.AddInCrash
 
