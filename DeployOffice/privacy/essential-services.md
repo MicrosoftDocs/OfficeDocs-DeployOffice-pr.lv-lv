@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
-ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
+ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799142"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242161"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -3466,6 +3466,14 @@ Tiek apkopoti šādi lauki:
 
 - **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
 
+### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Izmantojiet telemetriju, lai uzzinātu, kad pēc veiksmīga pirkuma lietotājs pieskaras pogai “Skatīt visus ieguvumus”, lai skatītu tikko veiktajā pirkumā iekļautās programmas un līdzekļus. Dati tiek izmantoti, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā.
+
+Tiek apkopoti šādi lauki.
+
+- **productId** — virkne — produkta, kuram lietotājs skata visas piedāvātās priekšrocības, App Store ID
+
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -3509,7 +3517,7 @@ Tiek apkopoti šādi lauki:
  
 Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notika pirkuma programmā līdzekļa ielādes mēģinājums, taču notika kļūda, kuras rezultātā dialoglodziņš netiek parādīts. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti tālāk norādītie lauki.
   
 - **Data_MoeErrorCode** — kļūdas kods, kas ir redzams tīmekļa dialoga struktūrā
 
@@ -4332,9 +4340,9 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
-Šis notikums norāda, ka, atjauninājuma papildmateriālu failam veicot koda parakstīšanas validāciju, radās kļūme.  Visi papildmateriāli, kuriem radušās koda parakstīšanas verifikācijas kļūmes, ir jāuzskata par nederīgiem.
+Šis notikums ziņo par dažādām lejupielādēto failu problēmām, tostarp piegādātāja paraksta un jaukšanas vērtības neatbilstību lejupielādētā failā. Mēs izmantojam šo notikumu, lai atklātu problēmas lietojumprogrammu manifesta publicēšanā.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -4360,9 +4368,15 @@ Tiek apkopoti šādi lauki:
 
 - **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
+- **FileHash** — lejupielādētā faila jaukšanas vērtība
+
+- **FileName** — faila nosaukums, kurā redzama jaukšanas vērtības neatbilstība
+
+- **HashInCatalog** — jaukšanas vērtības ieraksts atbilstošajā kataloga failā
+
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver tā kataloga faila nosaukumu, kuram ir nederīgs paraksts. Cits statisks teksts apraksta atšķirīgus kļūdas nosacījumus.
+- **Lietderīgās** — iekļauta informācija par lietojumprogrammu, kas ziņo par problēmu
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -7987,11 +8001,13 @@ Tiek apkopoti šādi lauki:
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **Reason** — statisks teksts, kas norāda, ka klusais atjauninājums nevar turpināties, kad lietotāja interfeiss ir atvērts
 
 - **SessionId** — sesijas identifikators
 
@@ -9392,6 +9408,8 @@ Tiek apkopoti šādi lauki:
 
 - **Channel** — auditorijas preference
 
+- **CustomNotification** — Būla vērtība, kas norāda, vai tika izmantots pielāgots paziņojums.
+
 - **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **DeviceID** — ierīces identifikators
@@ -9410,7 +9428,7 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -10523,6 +10541,7 @@ Tiek apkopoti šādi lauki:
 
 - **Success** — norāda, vai attiecīgā programma ziņoja par sekmīgu darbības izpildi
 
+- **UpdateID** — atjauninājuma identifikators
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
@@ -10577,7 +10596,11 @@ Tiek apkopoti šādi lauki:
 
 - **AppVersionLong** — programmas versija
 
+- **BundleReachable** — Būla vērtība, kas norāda, vai pastāv problēma, piekļūstot Microsoft AutoUpdate lietojumprogrammu komplektam.
+
 - **Channel** — auditorijas preference
+
+- **Codesigned** — Būla vērtība, kas norāda, vai atjaunināšanas palīgs tika pareizi piešķirts kodā.
 
 - **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -10595,9 +10618,11 @@ Tiek apkopoti šādi lauki:
 
 - **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
+- **Exists** — Būla vērtība, kas norāda, vai diskā ir atjaunināšanas palīgs.
+
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur norādi, vai dēmona komponents pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts.
+- **Payload** — satur norādi, vai dēmona komponents pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
