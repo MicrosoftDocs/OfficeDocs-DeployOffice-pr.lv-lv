@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: ed197ed1cc8dd3c19d10a227510fe687da54d9c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931443"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597373"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -42,7 +42,7 @@ Bing nodrošina tālāk minētos līdzekļus programmām Outlook darbam ar iOS u
 
 - **Atrašanās vietas ieteikumi:** pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, laukā Atrašanās vieta tiek noradīta pilna adrese.
 - **Interesanti kalendāri:** varat [abonēt](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) savu mīļāko sporta komandu vai TV pārraižu kalendārus.
-- **Ceļojuma laiks opcijā Nākošais:** nākamais plānotais pasākums tiks apkopots jūsu e-pasta iesūtnes augšdaļā ar nosaukumu [Nākošais](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Lai iegūtu aptuveno ceļojuma laiku programmā Outlook darbam ar Android, tad šim līdzeklim nepieciešamas Bing kartes.
+- **Ceļojuma laiks opcijā Nākošais:** nākamais plānotais pasākums tiks apkopots jūsu e-pasta iesūtnes augšdaļā ar nosaukumu [Nākošais](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Lai iegūtu aptuveno ceļojuma laiku programmā Outlook darbam ar Android, tad šim līdzeklim nepieciešamas Bing kartes.
 
  Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
 
@@ -102,18 +102,18 @@ Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasie
 Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
-> Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi** , kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
+> Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi**, kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
 
 ## <a name="your-privacy-settings"></a>Jūsu konfidencialitātes iestatījumi
 
-Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, jūs varat dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība** , lai jebkurā laikā pārvaldītu jūsu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
+Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, jūs varat dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā laikā pārvaldītu jūsu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Ar šo darbību tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
 Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
-> Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi** , kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
+> Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi**, kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
 
 ## <a name="required-service-data"></a>Nepieciešamie pakalpojuma dati
 

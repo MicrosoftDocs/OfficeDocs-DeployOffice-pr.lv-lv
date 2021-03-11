@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: 8471214380e05fde406d0298dd70b10924f898ef
-ms.sourcegitcommit: 6cffc990cc0d883e2bc84eff12abad37807f9975
+ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50152772"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597337"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -63,7 +63,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 |Koplietošanas paziņojums|[Paziņojumu saņemšana, kad grupas dalībnieki atjaunina jūsu kopīgoto failu](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Līdzību pārbaudītājs*\* (Redaktora līdzeklis)|[Pārbaudiet, vai jūsu dokumentā nav līdzību ar tiešsaistes avotiem](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Viedā uzmeklēšana*\*   | [Ieskats jūsu veiktajā darbā, izmantojot viedo uzmeklēšanu](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
-| Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
+| Ieteiktās atbildes | [Kas ir ieteiktās atbildes?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [Kā tiek ģenerētas ieteiktās atbildes?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
 | Pieskāriena līdzeklis programmai Word (Pievienot no failiem)   | [Neizejot no programmas Word, vajadzīgajā brīdī atrodiet un atkārtoti izmantojiet vajadzīgo saturu](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Teksta prognozes (Redaktora līdzeklis)|[Rakstiet ātrāk, izmantojot teksta prognozes programmā Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transkripcija |[Jūsu ierakstu pārrakstīšana](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
@@ -83,9 +83,9 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 
 | **Nosaukums**      | **Papildinformācija**  |
 | ------------- | ------------- |
-| Kalendāra lietojumprogrammas| [Kas ir kalendāra lietojumprogrammas?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
+| Kalendāra lietojumprogrammas| [Kas ir kalendāra lietojumprogrammas?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Mākoņa fonti                 | [Mākoņa fonti sistēmā Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| BUJ |Atlasot **Iestatījumi** > **Palīdzība un atsauksmes** > **BUJ** programmā Outlook darbam ar iOS un Android, nonāksiet pie [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
+| BUJ |Izvēloties **Iestatījumi** > **Palīdzība un atsauksmes** > **BUJ** programmā Outlook darbam ar iOS un Android, nonākat vai nu pie [Outlook darbam ar iOS Palīdzība,](https://support.microsoft.com/article/4456b5ef-d20e-4e86-abee-c95f9eba26da) vai [Outlook darbam ar Android Palīdzība](https://support.microsoft.com/article/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Rokraksta efekti                 | [Zīmēšana un rakstīšana ar rokrakstu sistēmā Office](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Ikonu ievietošana                | [Ikonu ievietošana sistēmā Microsoft Office](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Microsoft Forms ievietošana      | [Veidlapas vai kontroldarba ievietošana programmā PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
@@ -94,14 +94,14 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | *Tiešsaistes video ievietošana*\*     | [Video ievietošana no pakalpojuma YouTube vai citas tīmekļa vietnes](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
 | *Interesanti kalendāri*\*| [Abonējiet kalendāru](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) ar savām iecienītākajām sporta komandām vai TV pārraidēm programmā Outlook darbam ar iOS un Android. |
 | *Atrašanās vietas ieteikumi*\* | Pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, Outlook darbam ar iOS un Android laukā Atrašanās vieta norādīs pilnu adresi. |
-| Kartes pasākumu aprakstos | Uzziniet, kur jādodas ar [kartēm](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), kas ir norādītas pasākumu aprakstos programmā Outlook darbam ar iOS un Android. |
+| Kartes pasākumu aprakstos | Pasākuma detalizētas informācijas lapā tiks parādīta [karte,](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) kas balstās uz pasākuma atrašanās vietas adresi programmā Outlook darbam ar iOS un Android. |
 | Office palīdzība                 | Kad Office programmas lentē izvēlaties opciju **Palīdzība** > **Palīdzība** vai izmantojat taustiņu F1   |
 | Formu meklēšana tiešsaistē (Visio) | [Papildu formu un šablonu atrašana](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *PowerPoint QuickStarter*\*     | [Tēmas izpēte, izmantojot PowerPoint QuickStarter](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Pētnieks*\*    | [Kā viegli rakstīt pētījumu programmā Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f). |
 | Priekšāteikšana    | [Ātrāks darbs ar priekšāteikšanas līdzekli](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Veidnes  | [Iepriekš izveidotu bezmaksas veidņu lejupielāde](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Aptuvenais ceļojuma laiks opcijā Nākošais*\*|Ja izvēlaties atļaut programmai Outlook darbam ar iOS un Android piekļuvi jūsu atrašanās vietai, tad ceļojuma laika prognoze tiks iekļauta nākamajā notikumā opcijā [Nākošais](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work), kas atrodams Iesūtnes augšdaļā.|
+|*Aptuvenais ceļojuma laiks opcijā Nākošais*\*|Ja izvēlaties atļaut programmai Outlook darbam ar iOS un Android piekļuvi jūsu atrašanās vietai, tad ceļojuma laika prognoze tiks iekļauta nākamajā notikumā opcijā [Nākošais](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e), kas atrodams Iesūtnes augšdaļā.<br/><br/> [Kas ir Laiks atstāt paziņojumus?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Laika apstākļu josla*\* (Outlook)| [Laikapstākļu prognozes pilsētas mainīšana kalendāra laikapstākļu joslā](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
