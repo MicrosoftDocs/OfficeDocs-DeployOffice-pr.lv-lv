@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
+ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242161"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031990"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -3374,6 +3374,42 @@ Tiek apkopoti šādi lauki:
   - 5 — bāzes tīmekļa URL, kas ielādēts klientā, ir nederīgs
 
 
+### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+Šis notikums uzskaita klikšķus, kurus lietotājs veic, lai skatītu par maksu pieejamu saturu. Šie dati tiek izmantoti, lai mērītu lietotāju mijiedarbību ar konteksta pārdošanas līdzekļiem un izprastu, kuriem līdzekļiem lietotāji dod priekšroku, un kuru no šiem līdzekļiem motivē lietotājus iegādāties abonementu. Tas mums palīdz investēt līdzekļus šajos reklāmas punktos. 
+
+Tiek apkopoti šādi lauki:
+
+- **featureId** – maksas līdzekļa TCID
+
+- **featureName** – maksas līdzekļa nosaukums
+
+- **seePlanButtonClick** – cik reižu papildu pārdošanas izvēlnē tiek noklikšķinātas pogas “Skatīt plānus”
+
+### <a name="officeappleiapreviewyoursubscriptionios"></a>Office.Apple.IAPReviewYourSubscriptioniOS
+
+Šis notikums uzskaita sesijas meta datus, kad lietotājam tiek parādīta lietojumprogrammas pirkumu (IAP) lietotāja saskarne, un pogas, ar kurām mijiedarbojas lietotājs. Šie dati tiek izmantoti, lai palīdzētu mums izprast pirkumu plūsmas aizķeršanās un salīdzināt to ar dažādu iepirkšanās līdzekļu piltuvēm, lai izprastu, kurš no līdzekļiem ir labāks lietotājam. 
+
+Tiek apkopoti šādi lauki:
+
+- **FlowType** – vesels skaitlis – plūsma, no kuras tika palaists IAP.
+
+- **Restore** – virkne – kārtulas atzīme, kas tiek reģistrēta, kad tiek noklikšķināta atjaunošanas poga
+
+- **PremiumFeatures** – virkne – kārtulas atzīme, kas tiek reģistrēta, kad tiek noklikšķināta poga “PremiumFeatures”
+
+- **Product** – virkne – lietotāju atlasītā SKU
+
+
+### <a name="officeappleinapppurchasecontext"></a>Office.Apple.InAppPurchaseContext
+
+Šis notikums mēra kritiskā lietojuma telemetriju lietojumprogrammas pirkumu ekrāna ieejas punktā. Šie dati mums palīdz izprast un uzlabot lietotāju ērtības, identificējot vēlamo ieejas punktu pirkumiem lietojumprogrammā.
+
+Tiek apkopoti šādi lauki:
+
+- **context** – virkne – plūsma, caur kuru lietotājs nonāca lietojumprogrammas pirkumu lapā
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Piemēram, iegādes programmā plūsmai, kad lietotājs izvēlas iegādāties Microsoft 365 abonementu no Office lietojumprogrammas darbam ar Android vai ierīcēs, kurās darbojas operētājsistēma Windows.
@@ -3452,6 +3488,16 @@ Tiek apkopoti šādi lauki:
 
 - **Data_UserAgent** — virsraksta atzīmes
 
+
+### <a name="officedocssharedpremiumfeaturemessagebar"></a>Office.Docs.Shared.PremiumFeatureMessageBar
+
+Šis notikums apkopo bezmaksas lietotāja pieskārienus maksas līdzeklim. Šie dati tiek izmantoti, lai izprastu līdzekļus, ar kuriem mijiedarbojas lietotāji, lai šos lietotājus padarītu par maksas lietotājiem. Šī informācija mums norāda uz lietotāju vēlamajiem ieejas punktiem un lietotāju ērtību uzlabošanas iespējām.
+
+Tiek apkopoti šādi lauki:
+
+- **featureId** – maksas līdzekļa, kuram pieskaras lietotājs TCID
+
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Kritisko lietojumu telemetrijas tiek apkopots, lai norādītu, kad lietotājs pieskaras pogai Pirkums/Pirkt.  Datus izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
@@ -3504,6 +3550,26 @@ Tiek apkopoti tālāk norādītie lauki.
 Ja kāda iemesla dēļ nevaram automātiski aktivizēt licenci, lietotājam tiek rādīts aktivizācijas vednis. Tas norāda, ka lietotājam tiek rādīts vednis. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
 
 Šis notikums neapkopo laukus.
+
+### <a name="officelicensingbusbarcheckfordynamicbusbarexperiment"></a>Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+Šis notikums nostrādā vienu reizi par katru licencēšanas darba joslu, kas tiks parādīta un kurai ir ieslēgts dinamiskā darba joslas testējamais variants (testējamā grupa). Šis datu notikums ziņo par to, vai uz diska atrodas gatava Dzīvescikla programmēšanas platformas dinamiskā darba joslas kampaņa. Dati tiks izmantoti, lai mērītu jaunas Dzīves cikla programmēšanas platformas dinamiskās licencēšanas darba joslas tehnoloģijas darbspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **DoesCampaignExist (bool)** – norāda, vai kampaņa atrodas uz diska
+
+- **Type (int32)** – norāda licencēšanas darba joslas veidu
+
+
+### <a name="officelicensingbusbarshowstashedbusbar"></a>Office.Licensing.BusBar.ShowStashedBusbar
+
+Šis notikums nostrādā tad, kad Dzīves cikla programmēšanas platformas darba josla netiek parādīta, bet tās vietā tiek parādīta statiskā darba josla. Šis datu notikums tiks izmantots, lai pārliecinātos par to, ka statiskās darba joslas izmantošana ir veiksmīga.
+
+Tiek apkopoti šādi lauki:
+
+- **Type (int32)** – norāda licencēšanas darba joslas veidu
+
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -4014,6 +4080,17 @@ Tiek apkopoti tālāk norādītie lauki:
  
 - **EnrollmentResult** — Intune reģistrācijas rezultāts
 
+### <a name="skuproductpricenullevent"></a>SKU.PRODUCT.PRICE.NULL.EVENT
+
+Šis notikums tiek izmantots, lai uzskaitītu notikumus un izmērītu kļūdas ietekmi, kuras dēļ lietotāji šodien SKU izvēles ekrānā redz “Null” nevis cenu.  Šī kļūda tiks diagnosticēta, lai noteiktu tās labojumu. 
+
+Tiek apkopoti šādi lauki:
+
+- **PriceNotFound** – veikala cena nav atrasta.
+
+- **StoreNotInitilized** – kad veikals netiek veiksmīgi inicializēts.
+
+
 ## <a name="microsoft-autoupdate-mau-events"></a>Microsoft AutoUpdate (MAU) notikumi
 
 ### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo.invalidpreference
@@ -4215,6 +4292,49 @@ Tiek apkopoti šādi lauki:
 - **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
 - **SessionId** — sesijas identifikators
+
+### <a name="appinstallxpcremoteobjecterror"></a>appinstall.xpcremoteobjecterror
+
+Šis notikums ziņo par kļūdu, kas tiek atrasta brīdī, kad notiek mēģinājums izveidot savienojumu ar Priviliģētās palīdzības rīku, izmantojot XPC savienojumu. Mēs izmantojam šo notikumu, lai izsekotu un risināju iespējamās MAU instalēšanas problēmas.
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppID** — programmas identifikators.
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju par programmas reģistrēšanas laikā notikušās starpniekservera kļūdas dabu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
 
 ### <a name="appregistryconfig"></a>appregistry.config
 
@@ -9559,6 +9679,50 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
+
+### <a name="guidashboardrowviewupdatestate"></a>gui.dashboardrowview.updatestate
+
+Šis notikums ziņo par kļūdu, kas tiek atklāta, kad notiek mēģinājums parādīt lietojumprogrammas informāciju MAU lietotāja saskarnē. Šis notikums tiek izmantots, lai nodrošinātu MAU darbspēju un izsekotu un novērstu kļūmes.
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppID** — programmas identifikators.
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **Payload** — satur informāciju par programmas reģistrēšanas laikā notikušās kļūdas dabu.
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **SessionId** — sesijas identifikators
+
+
 ### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Šis notikums norāda, ka lietotāja interfeiss parādīja dialoglodziņu par programmas aizvēršanu, lai turpinātu programmas atjaunināšanu. Šis notikums tiek izmantots, lai noteiktu aizkavēto atjauninājumu skaitu, lai nākotnē veiktu uzlabojumus un samazinātu lietotāju traucēšanu.
@@ -10325,6 +10489,55 @@ Tiek apkopoti šādi lauki:
 - **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **SessionId** — sesijas identifikators
+
+
+### <a name="installedappacknowledgedcoreappleevent"></a>installedapp.acknowledgedcoreappleevent
+
+Šis notikums norāda, ka Microsoft Auto Update (MAU) saņēma Apple notikuma apstiprinājumu no reģistrētas lietojumprogrammas, lai izbeigtu lietojumprogrammas darbību, lai turpinātu gaidošās lietojumprogrammas atjaunināšanu. Šis notikums pašlaik tiek izmantots, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā. 
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppID** — programmas, kas tiek atjaunināta, identifikators
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppleEventClass** — norāda notikuma, kas tiek nosūtīts/apstiprināts, tipu
+
+- **AppleEventID** — notikuma, kas tiek nosūtīts/apstiprināts, unikālais identifikators
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **Payload** — satur atkārtoto mēģinājumu skaitu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+- **UpdateID** — atjauninājuma identifikators
 
 
 ### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
@@ -11197,7 +11410,7 @@ Tiek apkopoti šādi lauki:
 
 - **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda darbības sekmīgumu.
+- **Payload** — teksts, kas norāda darbības sekmīgumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -11205,6 +11418,7 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
+- **Success** – būla, kas norāda uz darbības veiksmīgu izpildi.
 
 ### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
@@ -11846,11 +12060,13 @@ Tiek apkopoti šādi lauki:
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **Reason** — statisks teksts
 
 - **SessionId** — sesijas identifikators
 
@@ -12168,11 +12384,13 @@ Tiek apkopoti šādi lauki:
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
 - **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+
+- **Reason** — statisks teksts
 
 - **SessionId** — sesijas identifikators
 
@@ -12320,6 +12538,8 @@ Tiek apkopoti šādi lauki:
 
 - **DeviceInfo_OsBuild** — operētājsistēmas versija
 
+- **Duration** – teksts, kas norāda miega ilgumu
+
 - **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
 - **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
@@ -12328,7 +12548,7 @@ Tiek apkopoti šādi lauki:
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
@@ -14590,6 +14810,47 @@ Tiek apkopoti šādi lauki:
 
 - **SessionId** — sesijas identifikators
 
+
+### <a name="updatemanagernetwork"></a>updatemanager.network
+
+Šis notikums uzskaita tīkla pieejamību. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+ 
+Tiek apkopoti šādi lauki:
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+- **ServerReacheable** – būla, kas norāda, ai tīkls ir pieejams.
+
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
@@ -15447,6 +15708,19 @@ Tiek apkopoti tālāk norādītie lauki.
 Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu datu notikumus.
 
 ## <a name="telemetry-events"></a>Telemetrijas notikumi
+
+### <a name="appdeeplink"></a>app.deep.link
+
+Šis notikums palīdz izsekot kalendāra sapulču palaišanu dažādos gala punktos. Šis notikums ļauj mums noteikt, vai sapulce tiek palaista no Skype darbam, un tad, kad sapulce tiek palaista no Teams, un, vai lietojumprogramma Teams ir instalēta.
+
+Tiek apkopoti šādi lauki: 
+
+- **account** — hešotā konta, kas veica darbību, informāciju
+
+- **action_type** – veiktās darbības veids, piemēram, sapulces palaišana vai lietojumprogrammas instalēšana
+
+- **application** – lietojumprogramma, kas tika palaista ar dziļo saiti, piemēram, Teams vai Skype darbam
+
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -16363,81 +16637,100 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **AppName —** ietekmētās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **AppUsedVirtualMemory** — Office programmas izmantota virtuālā atmiņa
 
-  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **BucketId** — Watson avārijas intervāla identifikators
 
-  - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
+- **CabGuid** — Watson .cab faila unikālais identifikators (GUID).
 
-  - **CrashedImpressionId —** avarējušā procesa seansa identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CallStack** – Microsoft iekšējā izsaukuma steks, kas izraisa avāriju.
 
-  - **CrashedModuleName —** kļūdainā moduļa nosaukums.
+- **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators. 
+- **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts. 
+- **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
 
-  - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+- **CrashedImpressionId —** avarējušā procesa seansa identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexCrashTag —** unikālais avārijas koda identifikators.
+- **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
-  - **CrashType —** avārijas veida intervāla identifikators.
+- **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators. 
 
-  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts. 
 
-  - **ErrorString —** kļūdas apraksts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
-  - **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **HexCrashTag —** unikālais avārijas koda identifikators.
 
-  - **ExceptionCode —** izņēmuma intervāla identifikators.
+- **CrashType —** avārijas veida intervāla identifikators.
 
-  - **FaultAppName —** kļūdainās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+- **ErrorString —** kļūdas apraksts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **InstallType —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **InstallTypeName —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ExceptionCode —** izņēmuma intervāla identifikators.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ExceptionInfo** — izņēmuma sistēmas informācija.
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **FaultAppName —** kļūdainās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **HangTypeCode** — atspoguļo reaģēšana pārtraukšanas klasi, ja process pārstāja reaģēt izpildes laikā.
 
-  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
-  - **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **InstallType —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **InstallTypeName —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleName —** kļūdainā moduļa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
+- **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleVersion** — par avāriju atbildīgā kļūmes moduļa versija.
+- **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **OfficeArchitectureText** — instalācijas arhitektūra: x64, x86 utt.
+- **ModuleName —** kļūdainā moduļa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
+- **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
 
-  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
+- **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **PreviousBuild —** iepriekš instalētā būvējuma versija
+- **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
+- **ModuleVersion** — par avāriju atbildīgā kļūmes moduļa versija.
 
-  - **SessionFlags** — nosaka sesijas nosacījumus, piemēram: vai fails tika atvērts vai rediģēts, vai mākoņa dokuments tika atvērts, vai palaišanas sekvence tika pabeigta utt. 
+- **OfficeArchitectureText** — instalācijas arhitektūra: x64, x86 utt.
 
-  - **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 
-  - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
+- **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
-  - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **PreviousBuild —** iepriekš instalētā būvējuma versija
+
+- **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
+
+- **SessionFlags** — nosaka sesijas nosacījumus, piemēram: vai fails tika atvērts vai rediģēts, vai mākoņa dokuments tika atvērts, vai palaišanas sekvence tika pabeigta utt. 
+
+- **StackHash** — pakalpojumā Office nodrošinu kešotu kļūmes steka ID.
+
+- **SystemAvailableMemory** — operētājsistēmā pieejamā atmiņā
+
+- **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+- **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
+
+- **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+
+- **WatsonReportId** — Windows pakalpojumam Watson nosūtītā ziņojuma identifikators.
+
+- **WerEventCreatedTime** — Windows kļūdu ziņošanas notikuma laikspiedols.
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
