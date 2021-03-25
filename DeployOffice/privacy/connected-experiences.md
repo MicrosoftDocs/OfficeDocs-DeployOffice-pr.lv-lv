@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par Office saistītajiem līdzekļiem, piemēram, lietošanas iespējām, kas analizē saturu vai lejupielādē tiešsaistes saturu.
 hideEdit: true
-ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
-ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
+ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597337"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181269"
 ---
 # <a name="connected-experiences-in-office"></a>Office saistītie līdzekļi
 
@@ -57,7 +57,7 @@ Tālāk esošajā tabulā ir sniegts saraksts ar saistītajiem līdzekļiem, kas
 | PowerPoint noformētājs   | [Profesionālu slaidu izkārtojumu izveide, izmantojot PowerPoint noformētāju](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Prezentētāja skolotājs (PowerPoint)|[Slaidrādes izmēģinājums ar prezentētāja skolotāju](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publicēšana pakalpojumā Microsoft Stream    | [Prezentācijas pārveide par video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Publicēšana rīkā Power BI   | [Publicēšana pakalpojumā Power BI no Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
+| Publicēšana rīkā Power BI   | [Publicēšana pakalpojumā Power BI no Excel](/power-bi/service-publish-from-excel) |
 | *Izpēte*\*   | [Izpētes pakalpojumu pievienošana vai mainīšana](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizītkaršu skenēšana|  [Skenējiet vai pielieciet vizītkarti, lai pievienotu kontaktpersonas programmā Outlook darbam ar Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Koplietošanas paziņojums|[Paziņojumu saņemšana, kad grupas dalībnieki atjaunina jūsu kopīgoto failu](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
@@ -120,14 +120,14 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Drīzumā (Outlook)  |[Drīzumā](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Saziņa ar atbalsta dienestu (Outlook) | Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu**|
 | Pielāgota importēšana (Visio)  | [Datu importēšana jūsu zīmējuma formās](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Datu zuduma novēršanas (DLP) politikas padomi |[E-pasta paziņojumu sūtīšana un politikas padomu rādīšana par DLP politikām](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Datu zuduma novēršanas (DLP) politikas padomi |[E-pasta paziņojumu sūtīšana un politikas padomu rādīšana par DLP politikām](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Datu vizualizētājs (Visio) |[Datu vizualizētāja shēmas izveide](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Dizaina plūsmas (Visio)  | [Automatizētas darbplūsmas izveide programmā Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | Ārējs saraksts (Outlook) |[Ārēja saraksta savienošana ar programmu Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
 | Svarīgo ziņojumu iesūtne (Outlook) |[Svarīgo ziņojumu iesūtne programmā Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informācijas piekļuves tiesību pārvaldība |[Atveriet failu, kuram ir ierobežotas atļaujas](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn kontaktpersonas vizītkarte |[LinkedIn Microsoft lietojumprogrammās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Office pievienojumprogrammas*\* | [Pievienojumprogrammu skatīšana, pārvaldība un instalēšana Office programmās](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(lietotājiem)* <br/> [Pievienojumprogrammu izvietošana administrēšanas centrā](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriem)* |
+| *Office pievienojumprogrammas*\* | [Pievienojumprogrammu skatīšana, pārvaldība un instalēšana Office programmās](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(lietotājiem)* <br/> [Pievienojumprogrammu izvietošana administrēšanas centrā](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriem)* |
 | Atsauksmes par Office |[Kā var sniegt atsauksmes par Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office atbalsts (Sazināties ar mums) |Kad izvēlaties lentes opciju **Palīdzība** > **Sazināties ar atbalsta dienestu** |
 | Organizācijas diagramma (Visio) |[Organizācijas diagrammas izveide programmā Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -136,8 +136,8 @@ Tālāk esošajā tabulā ir sniegts saraksts ar šiem saistītajiem līdzekļie
 | Pēdējie dokumenti |[Failu atvēršana no izvēlnes Fails](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *CV palīgs*\* |[Izmantojiet CV palīgu un LinkedIn lieliskiem CV](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Telpas meklētājs (Outlook)|[Telpas meklētāja kontrole programmā Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-|Drošie dokumenti|[Drošie dokumenti](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Drošie dokumenti produktā Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-| Drošās saites |[ATP drošās saites](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
+|Drošie dokumenti|[Drošie dokumenti](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Drošie dokumenti produktā Microsoft 365 E5](/microsoft-365/security/office-365-security/safe-docs)|
+| Drošās saites |[ATP drošās saites](/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Sensitivitātes etiķetes |[Sensitivitātes etiķešu lietošana failos un e-pastā sistēmā Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Kopīgošana  |[Excel darbgrāmatas kopīgošana ar citiem lietotājiem](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Prezentācijas kopīgošana (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumenta koplietošana (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Man ir atļauts koplietot |[Tādu failu skatīšana, ko man ir atļauts koplietot](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |

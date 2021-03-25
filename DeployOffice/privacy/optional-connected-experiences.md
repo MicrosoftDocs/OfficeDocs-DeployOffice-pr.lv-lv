@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 942f32d7a8d177e6d74530a8382c145e94bec41a
-ms.sourcegitcommit: dee7b8706ba5a0e763052d2f2f79fb2d3d3a6907
+ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826413"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181738"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -76,7 +76,7 @@ Izmantojot Office veikalu, veikala vietnes izmantošana ir licencēta ar [Micros
 
 > [!NOTE]
 > - Jūsu organizācijas administrators, iespējams, nodrošinās jums pievienojumprogrammas pat tad, ja neizvēlēsities izmantot Office veikalu.
-> - Ja esat administrators, papildinformāciju par pievienojumprogrammām skatiet rakstu [Office pievienojumprogrammu konfidencialitāte un drošība](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) un [Outlook pievienojumprogrammu konfidencialitāte, atļaujas un drošība](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security) sadaļā “Neobligātie saistītie līdzekļi”.
+> - Ja esat administrators, papildinformāciju par pievienojumprogrammām skatiet rakstu [Office pievienojumprogrammu konfidencialitāte un drošība](/office/dev/add-ins/concepts/privacy-and-security) un [Outlook pievienojumprogrammu konfidencialitāte, atļaujas un drošība](/office/dev/add-ins/outlook/privacy-and-security) sadaļā “Neobligātie saistītie līdzekļi”.
 
 ### <a name="research"></a>Izpēte
 
@@ -91,7 +91,7 @@ Programmā Outlook darbam ar iOS nākamais plānotais pasākums tiks apkopots j�
 
 ### <a name="weather-bar-in-outlook"></a>Laikapstākļu josla programmā Outlook
 
-[Laikapstākļu josla](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) programmā Outlook parāda laikapstākļu prognozes jūsu izvēlētajās ģeogrāfiskajās atrašanās vietās. Lietošanas laikā laikapstākļu joslu programmā Outlook pēc noklusējuma izveido savienojumu ar MSN laika ziņām. MSN pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. Kad izmantojat laikapstākļu joslu ar MSN laika ziņām, Microsoft nevar noteikt jūsu atrašanās vietu un pilsētas, kuras izvēlaties parādīt, netiek saistītas ar jums. Varat [mainīt šo noklusējuma iestatījumu](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook), lai izveidotu savienojumu ar citiem laikapstākļu pakalpojumu sniedzējiem. Ja vēlaties izmantot citu laikapstākļu pakalpojumu sniedzēju, skatiet šī pakalpojumu sniedzēja paziņojumu par konfidencialitāti un licences nosacījumus, lai zinātu, kādi nosacījumi būs spēkā.
+[Laikapstākļu josla](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) programmā Outlook parāda laikapstākļu prognozes jūsu izvēlētajās ģeogrāfiskajās atrašanās vietās. Lietošanas laikā laikapstākļu joslu programmā Outlook pēc noklusējuma izveido savienojumu ar MSN laika ziņām. MSN pieder korporācijai Microsoft, un tiek piemēroti [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [Microsoft paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumi. Kad izmantojat laikapstākļu joslu ar MSN laika ziņām, Microsoft nevar noteikt jūsu atrašanās vietu un pilsētas, kuras izvēlaties parādīt, netiek saistītas ar jums. Varat [mainīt šo noklusējuma iestatījumu](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook), lai izveidotu savienojumu ar citiem laikapstākļu pakalpojumu sniedzējiem. Ja vēlaties izmantot citu laikapstākļu pakalpojumu sniedzēju, skatiet šī pakalpojumu sniedzēja paziņojumu par konfidencialitāti un licences nosacījumus, lai zinātu, kādi nosacījumi būs spēkā.
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kā noteikt, vai administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus
 

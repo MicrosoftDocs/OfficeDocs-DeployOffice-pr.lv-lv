@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Microsoft 365 programmās lieluzņēmumiem (iepriekš Office 365 ProPlus), izmantojot politikas iestatījumus.
 hideEdit: true
-ms.openlocfilehash: 401cc5ca875dac28a5cda321a812e9b6c25289e5
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: 636916acf0cb36eecc7ba51318467264bb9ff2d4
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931225"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181213"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>Politikas iestatījumu izmantošana, lai pārvaldītu Microsoft 365 programmu lieluzņēmumiem konfidencialitātes vadīklas
 
@@ -31,9 +31,9 @@ Korporācija Microsoft ir apņēmusies nodrošināt jūs ar informāciju un kont
 
 Sākot ar Microsoft 365 programmu lieluzņēmumiem versiju 1904, ir jauni politikas iestatījumi, kuri nodrošina iespēju kontrolēt ar šādām iespējām saistītus iestatījumus:
 
-- ***Diagnostikas dati** _, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru
+- ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru.
 
-- _*_Saistītie līdzekļi_*_ , kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
+- ***Saistītie līdzekļi***, kas izmanto mākoņa funkcionalitāti, lai nodrošinātu uzlabotus Office līdzekļus jums un jūsu lietotājiem.
 
 Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 
@@ -43,7 +43,7 @@ Tālāk ir nosaukti pieci jaunie politikas iestatījumi:
 - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
 - Atļaut Office izmantot saistītos līdzekļus
 
-Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](../overview-office-client-policy-service.md). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
+Šos politikas iestatījums var ieviest, izmantojot grupas politiku vai [Office mākoņa politikas pakalpojumu](../overview-office-cloud-policy-service.md). Ja izmantojot grupas politiku, ir nepieciešams [Microsoft lejupielādes centrā](https://www.microsoft.com/download/details.aspx?id=49030) lejupielādēt visjaunāko administratīvo veidņu failu (ADMX/ADML) versiju.
 
 > [!NOTE]
 > - Informāciju par to, kā pārvaldīt Office darbam ar Mac konfidencialitātes kontroles līdzekļus, skatiet rakstā [Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai](mac-privacy-preferences.md).
@@ -64,15 +64,15 @@ Tāpat kā ar visiem jaunajiem politikas iestatījumiem jums tie ir uzmanīgi j�
 
 Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu.
 
-Politikas iestatījumu _Konfigurēt to klienta programmatūras diagnostikas datu līmeni, kurus Office nosūta korporācijai Microsoft* var izmantot, lai izvēlētos, kāda līmeņa diagnostikas dati tiek nosūtīti korporācijai Microsoft.
+Politikas iestatījumu *Konfigurēt to klienta programmatūras diagnostikas datu līmeni, kurus Office nosūta korporācijai Microsoft* var izmantot, lai izvēlētos, kāda līmeņa diagnostikas dati tiek nosūtīti korporācijai Microsoft.
 
 Ja šis politikas iestatījums ir iespējots, jums ir jāizvēlas, kāda līmeņa diagnostikas dati tiek nosūtīti korporācijai Microsoft. Pieejamās vērtības ir Nepieciešamie, Neobligātie un Neviens no šiem.
 
-- Ja izvēlaties * **Nepieciešamie** _, tad korporācijai Microsoft tiek nosūtīti minimālie dati, kas nepieciešami, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
+- Ja izvēlaties ***Nepieciešamie***, tad korporācijai Microsoft tiek nosūtīti minimālie dati, kas nepieciešami, lai Office uzturētu drošu, atjauninātu un ar paredzēto veiktspēju atbilstošajā ierīcē.
 
-- Ja izvēlaties _*_Neobligātie_*_ , korporācijai Microsoft tiek nosūtīti papildu dati, kas palīdz uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas. Ja izvēlaties nosūtīt neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati.
+- Ja izvēlaties ***Neobligātie***, korporācijai Microsoft tiek nosūtīti papildu dati, kas palīdz uzlabot produktu un nodrošina papildu informāciju, kura palīdz noteikt, diagnosticēt un novērst problēmas. Ja izvēlaties nosūtīt neobligātos diagnostikas datus, tiek iekļauti arī nepieciešamie diagnostikas dati.
 
-- Ja izvēlaties _*_Neviens no šiem_*_ , korporācijai Microsoft netiek nosūtīti nekādi diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē. Tomēr šī opcija būtiski ierobežo Microsoft iespējas noteikt, diagnosticēt un novērst problēmas, kas jūsu lietotājiem var rasties, izmantojot Office.
+- Ja izvēlaties ***Neviens no šiem***, korporācijai Microsoft netiek nosūtīti nekādi diagnostikas dati par Office klienta programmatūru, kas darbojas lietotāja ierīcē. Tomēr šī opcija būtiski ierobežo Microsoft iespējas noteikt, diagnosticēt un novērst problēmas, kas jūsu lietotājiem var rasties, izmantojot Office.
 
 Ja šis politikas iestatījums tiek atspējots vai netiek konfigurēts, korporācijai Microsoft tiek nosūtīti gan neobligātie, gan obligātie diagnostikas dati.
 
@@ -104,9 +104,9 @@ Jūsu lietotāji nevarēs izvēlēties ieslēgt vai izslēgt šos Microsoft 365 
 
 Šie ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgas iespējas. Piemēram, PowerPoint noformētājs vai tulkotājs programmā Word. Pilnīgāku saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-Politikas iestatījumu _Atļaut izmantot Office saistītos līdzekļus, kuri analizē saturu* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, lietotājiem būs pieejami visi šie saistītie līdzekļi.
+Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, lietotājiem būs pieejami visi šie saistītie līdzekļi.
 
-Ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus* , lietotājiem nav pieejami saistītie līdzekļi, kuri analizē saturu.
+Ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus*, lietotājiem nav pieejami saistītie līdzekļi, kuri analizē saturu.
 
 ### <a name="policy-setting-for-connected-experiences-that-download-online-content"></a>Politikas iestatījums saistītajiem līdzekļiem, kuri lejupielādē tiešsaistes saturu
 
@@ -114,7 +114,7 @@ Politikas iestatījumu _Atļaut izmantot Office saistītos līdzekļus, kuri ana
 
 Politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu* var izmantot, lai kontrolētu, vai lietotājiem ir pieejami šāda veida saistītie līdzekļi. Ja nekonfigurēsit šo politikas iestatījumu, lietotājiem būs pieejami visi šie saistītie līdzekļi.
 
-Ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus* , lietotājiem nav pieejami saistītie līdzekļi, kuri lejupielādē tiešsaistes saturu.
+Ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus*, lietotājiem nav pieejami saistītie līdzekļi, kuri lejupielādē tiešsaistes saturu.
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Politikas iestatījums neobligātajiem saistītajiem līdzekļiem
 
@@ -129,9 +129,9 @@ Politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos 
 
 Pat tad, ja izvēlaties šos neobligātos saistītos līdzekļus padarīt pieejamus saviem lietotājiem, tiem būs iespēja izslēgt šos līdzekļus kā grupu, dodoties uz [konfidencialitātes iestatījumu dialoglodziņu](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Lietotājiem šī izvēle būs tikai tad, ja tie būs pierakstījušies pakalpojumā Office ar organizācijas akreditācijas datiem (dažkārt tos sauc par darba vai mācību kontu), bet ne ar personisko e-pasta adresi.
 
-Turklāt daži no šiem neobligātajiem saistītajiem līdzekļiem tiek uzskatīti arī par saistītajiem līdzekļiem, kuri analizē saturu vai lejupielādē tiešsaistes saturu. Piemēram, Tiešsaistes attēlu ievietošana ir neobligāts saistītais līdzeklis, kura darbību nodrošina Microsoft Bing, bet tas tiek uzskatīts arī par saistīto līdzekli, kurš lejupielādē tiešsaistes saturu. Tāpēc ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu* , lietotājiem nav pieejams līdzeklis Tiešsaistes attēlu ievietošana. Tas nav pieejams pat tad, ja esat iespējojis politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*. Papildinformāciju par to, kuri saistītie līdzekļi analizē saturu vai lejupielādē tiešsaistes saturu, skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
+Turklāt daži no šiem neobligātajiem saistītajiem līdzekļiem tiek uzskatīti arī par saistītajiem līdzekļiem, kuri analizē saturu vai lejupielādē tiešsaistes saturu. Piemēram, Tiešsaistes attēlu ievietošana ir neobligāts saistītais līdzeklis, kura darbību nodrošina Microsoft Bing, bet tas tiek uzskatīts arī par saistīto līdzekli, kurš lejupielādē tiešsaistes saturu. Tāpēc ņemiet vērā: ja atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri lejupielādē tiešsaistes saturu*, lietotājiem nav pieejams līdzeklis Tiešsaistes attēlu ievietošana. Tas nav pieejams pat tad, ja esat iespējojis politikas iestatījumu *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus*. Papildinformāciju par to, kuri saistītie līdzekļi analizē saturu vai lejupielādē tiešsaistes saturu, skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-Pastāv viens izņēmums, kas jāņem vērā. Politikas iestatījums *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* nekontrolē saistītos līdzekļus, kuri pieprasa savienot jūsu LinkedIn kontu ar Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn Microsoft programmās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) un [LinkedIn konta savienojumu integrēšana Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+Pastāv viens izņēmums, kas jāņem vērā. Politikas iestatījums *Atļaut Office izmantot papildu neobligātos saistītos līdzekļus* nekontrolē saistītos līdzekļus, kuri pieprasa savienot jūsu LinkedIn kontu ar Microsoft darba vai mācību kontu. Lai kontrolētu šos līdzekļus (piemēram, LinkedIn informāciju [profila kartītē](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) programmā Outlook), skatiet rakstu [LinkedIn Microsoft programmās un pakalpojumos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) un [LinkedIn konta savienojumu integrēšana Azure Active Directory](/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Politikas iestatījums lielākajai daļai saistīto līdzekļu
 
@@ -149,9 +149,9 @@ Tomēr pat tad, ja atspējosit šo politikas iestatījumu, dažas Office funkcij
 
 Ir divi esošie politikas iestatījumi, kuri vairs nav spēkā, sākot ar Microsoft 365 programmām lieluzņēmumiem versiju 1904. Šie politikas iestatījumi ir:
 
-- **Nosūtīt personas informāciju** , kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
+- **Nosūtīt personas informāciju**, kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Konfidencialitāte\\Drošības kontroles centrs.
 
-- **Tiešsaistes satura opcijas** , kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Rīki | Opcijas | Vispārīgi | Pakalpojuma opcijas...\\Tiešsaistes saturs.
+- **Tiešsaistes satura opcijas**, kas atrodas sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Office 2016\\Rīki | Opcijas | Vispārīgi | Pakalpojuma opcijas...\\Tiešsaistes saturs.
 
 Sākot ar versiju 1904, šo divu esošo politikas iestatījumu konfigurācija neietekmē Microsoft 365 programmas lieluzņēmumiem. Tie vairs nav spēkā, jo to funkcijas veic šie jaunie politikas iestatījumi:
 
@@ -160,7 +160,7 @@ Sākot ar versiju 1904, šo divu esošo politikas iestatījumu konfigurācija n
 - Atļaut Office izmantot papildu neobligātos saistītos līdzekļus
 - Atļaut Office izmantot saistītos līdzekļus
 
-Šie jaunie politikas iestatījumi nodrošina precīzāku kontroli nekā divi esošie politikas iestatījumi. Piemēram, ja iepriekš izmantojāt politikas iestatījumu *Nosūtīt personas informāciju* , tika izslēgts gan PowerPoint ātrais sākums, gan viedā uzmeklēšana. Toties tagad, ja izmantojat jauno politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu* , lai izslēgtu šāda veida saistītos līdzekļus, tiek izslēgta tikai viedā uzmeklēšana. PowerPoint ātrais sākums lietotājiem joprojām ir pieejams.
+Šie jaunie politikas iestatījumi nodrošina precīzāku kontroli nekā divi esošie politikas iestatījumi. Piemēram, ja iepriekš izmantojāt politikas iestatījumu *Nosūtīt personas informāciju*, tika izslēgts gan PowerPoint ātrais sākums, gan viedā uzmeklēšana. Toties tagad, ja izmantojat jauno politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus, kuri analizē saturu*, lai izslēgtu šāda veida saistītos līdzekļus, tiek izslēgta tikai viedā uzmeklēšana. PowerPoint ātrais sākums lietotājiem joprojām ir pieejams.
 
 Politikas iestatījumi joprojām tiek rādīti grupas politikas pārvaldības rīkā, jo tie joprojām ir spēkā Office 2016 un Office 2019 lielapjoma licencēšanas versijām, piemēram, Office Professional Plus 2019.
 
@@ -174,7 +174,7 @@ Kā jūs, iespējams, jau zināt, daži esošie politikas iestatījumi ļauj kon
 
 - *Atļaut LinkedIn CV palīga līdzekli* sadaļā Lietotāja konfigurācija\\Politikas\\Administratīvās veidnes\\Microsoft Word 2016\\Word opcijas\\Vispārīgi
 
- Šos esošos politikas iestatījumus joprojām varat izmantot, ja vēlaties izslēgt atsevišķus saistītos līdzekļus. Tomēr ņemiet vērā: izmantojot kādu no jaunajiem politikas iestatījumiem, tas var izslēgt saistīto līdzekli, ko esat ieslēdzis, izmantojot citu politikas iestatījumu. Piemēram, ja iespējojat politikas iestatījumu *Atļaut LinkedIn CV palīga līdzekli* , bet atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus* , LinkedIn CV palīgs lietotājiem nebūs pieejams.
+ Šos esošos politikas iestatījumus joprojām varat izmantot, ja vēlaties izslēgt atsevišķus saistītos līdzekļus. Tomēr ņemiet vērā: izmantojot kādu no jaunajiem politikas iestatījumiem, tas var izslēgt saistīto līdzekli, ko esat ieslēdzis, izmantojot citu politikas iestatījumu. Piemēram, ja iespējojat politikas iestatījumu *Atļaut LinkedIn CV palīga līdzekli*, bet atspējojat politikas iestatījumu *Atļaut Office izmantot saistītos līdzekļus*, LinkedIn CV palīgs lietotājiem nebūs pieejams.
 
 Parasti gadījumos, kad viens politikas iestatījums ir konfigurēts, lai ieslēgtu noteiktu saistīto līdzekli, bet vienlaikus cits politikas iestatījums ir konfigurēts izslēgt šāda veida saistītos līdzekļus, konkrētais saistītais līdzeklis lietotājiem tiek izslēgts.
 
@@ -188,7 +188,7 @@ Ja esat izvēlējies nodrošināt lietotājiem [neobligātos saistītos līdzek�
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>No Office lietotāja interfeisa noņemtie konfidencialitātes iestatījumi
 
-Tālāk norādītie iestatījumi ir noņemti sadaļā **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi…** > **Privātuma opcijas** :
+Tālāk norādītie iestatījumi ir noņemti sadaļā **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi…** > **Privātuma opcijas**:
 
 - Iegūstiet noformējumus, informāciju, ieteikumus un pakalpojumus, ļaujot Office piekļūt un uzlabot produktus atbilstoši ierīcē esošajam Office saturam.
 
@@ -202,7 +202,7 @@ Kā savas organizācijas administrators jūs tagad kontrolējat šiem iestatīju
 
 Office lietotāja interfeisam ir pievienoti tālāk nosauktie jaunie elementi.
 
-- Sadaļā **Fails** > **Konts** lietotājiem tiek rādīta jauna izvēles iespēja **Konta konfidencialitāte** > **Pārvaldīt iestatījumus**. Tā atrodas sadaļā **Pārvaldīt iestatījumus** , kur lietotāji var izslēgt papildu saistītos līdzekļus, ja esat viņiem sniedzis šādu iespēju.
+- Sadaļā **Fails** > **Konts** lietotājiem tiek rādīta jauna izvēles iespēja **Konta konfidencialitāte** > **Pārvaldīt iestatījumus**. Tā atrodas sadaļā **Pārvaldīt iestatījumus**, kur lietotāji var izslēgt papildu saistītos līdzekļus, ja esat viņiem sniedzis šādu iespēju.
 
 - Sadaļā **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi…** > **Privātuma opcijas** ir opcija ierīcē iespējot rīka [Diagnostikas datu skatītājs](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) lietošanu.
 

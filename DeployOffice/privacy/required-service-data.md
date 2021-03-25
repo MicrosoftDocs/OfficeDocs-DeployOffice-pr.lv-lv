@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Office administratoriem sniedz pārskatu par nepieciešamajiem pakalpojuma datiem, kas tiek apkopoti saistībā ar Office saistītajiem līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 7480869114096dc8f858ce2b1551575c6224ae64
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440179"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181926"
 ---
 # <a name="required-service-data-for-office"></a>Office nepieciešamie pakalpojuma dati
 
@@ -51,7 +51,7 @@ Obligātie pakalpojumu dati ir atdalīti no obligātajiem vai neobligātajiem [d
 
 Obligātie pakalpojumu dati tiek apkopoti un nosūtīti korporācijai Microsoft saistībā ar Office [būtiskajiem pakalpojumiem](essential-services.md), piemēram, licencēšanas pakalpojums, kas apstiprina jūsu tiesības izmantot Office. Jūs varat kontrolēt daudzus jums vai jūsu lietotājiem, ja esat administrators organizācijā, pieejamos saistītos pakalpojumus, šī pakalpojumu kopa ir būtiski svarīga Office darbībai, tāpēc to nav iespējams atspējot. Izmantojot Office, būtisko pakalpojumu dati tiek vienmēr nosūtīti Microsoft un apstrādāti neatkarīgi no konfidencialitātes iestatījumiem. 
 
-Obligātie pakalpojumu dati ir pieejami, izmantojot datu pakalpojumu pieprasījumus (DSR). Papildinformācijai lasiet [Microsoft paziņojumu par konfidencialitāti](https://privacy.microsoft.com/privacystatement) un [Office 365 datu subjektu pieprasījumi saskaņā ar VDAR un Kalifornijas patērētāju privātuma likumu](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
+Obligātie pakalpojumu dati ir pieejami, izmantojot datu pakalpojumu pieprasījumus (DSR). Papildinformācijai lasiet [Microsoft paziņojumu par konfidencialitāti](https://privacy.microsoft.com/privacystatement) un [Office 365 datu subjektu pieprasījumi saskaņā ar VDAR un Kalifornijas patērētāju privātuma likumu](/microsoft-365/compliance/gdpr-dsr-office365).
 
 Ja esat organizācijas administrators un vēlaties pārvaldīt saistītos līdzekļus, lasiet tālāk norādītos rakstus:
 

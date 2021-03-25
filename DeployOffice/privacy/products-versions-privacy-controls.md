@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju par Office produktiem un versijām ar jaunākajiem konfidencialitātes kontroles līdzekļiem.
 hideEdit: true
-ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: 01d7658c90706ac2bc5870262e59be4e0d9d1dd5
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931189"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181666"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>Office produktiem pieejamie konfidencialitātes kontroles līdzekļi
 
@@ -192,7 +192,7 @@ Lai konfigurētu šos konfidencialitātes kontroles līdzekļus jūsu organizāc
 
 ## <a name="related-articles"></a>Saistītie raksti
 
-- [Konfidencialitāte un Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-privacy)
+- [Konfidencialitāte un Microsoft Teams](/MicrosoftTeams/teams-privacy)
 - [Konfidencialitātes iestatījumi Microsoft Whiteboard](https://support.microsoft.com/office/ed9f0de9-71be-44c2-837d-e0f448660be1)
 - [Kādu Office versiju es izmantoju?](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19)
 - [Kādu Outlook versiju es lietoju?](https://support.microsoft.com/office/b3a9568c-edb5-42b9-9825-d48d82b2257c)
