@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
+ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242197"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51167376"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -1788,6 +1788,8 @@ Tālāk norādītie lauki tiek apkopoti iOS un Android.
 
 - **include_deleted** — norāda, vai meklēšana rāda dzēstās opcijas meklēšanas rezultātos 
 
+- **is_best_match_suggestion** — vai atlasītais meklēšanas ieteikums atbilst vislabāk.
+
 - **is_ics_external_data** — notver, ja pievienotais notikums ir iekšējs (piemēram, pievienots no Outlook uz Outlook kalendāra) vai ārējs (piemēram, pievienots no citas e-pasta lietojumprogrammas, piemēram, no Gmail uz Outlook kalendāra).
 
 - **is_network_fully_connected** — tas ir, lai iegūtu mājienu par bezsaistes meklēšanas iemeslu. Ja tīkls ir savienots un meklēšana ir bezsaistē, iespējams, iemesls ir servera noildze.
@@ -2620,6 +2622,18 @@ Tiek apkopoti šādi lauki:
 - **txp** — norāda sapulces tipu, no kura tas tika ģenerēts, no lidojumu rezervācijām un piegādēm, lai palīdzētu mums atklāt problēmas ar šī tipa sapulcēm
 
 - **with_message_enabled** — norāda, vai lietotājs var atbildēt ar ziņojumu, lai palīdzētu mums atklāt problēmas ar atbildēšanu uz sapulču uzaicinājumiem
+
+
+#### <a name="multiwindowlaunch"></a>multi.window.launch
+
+Šis notikums tiek tverts, kad lietotājs veic darbību, kas saistīta ar vairāku logu palaišanu salokamās ierīcēs, piemēram, izveidot pastu, pasākumu, atvērt kalendāra logu.  Tajā tiek izmantota darbība, lai atcerētos šādu darbību, piemēram, lai saņemtu uzvedni vai vienmēr tiktu palaist darbību jaunā logā.  Šī notikuma savāktie dati tiks izmantoti, lai novērtētu atklāšanas iespējas, efektivitāti, kā arī vispārīgas lietotāja preferences, kā arī attīstītu ar vairākiem logiem saistītas funkcionalitātes pašreizējo un turpmāko darbību.
+
+Tiek apkopoti šādi lauki. 
+
+- **is_remembered** — vai lietotājs ir saglabājis preferencipalaist jaunā logā no norādītās vietas.
+
+- **multi_window_origin** — atrašanās vietu programmā, kur notiek mijiedarbība, lai jaunā logā palaistu citu programmas ekrānu.
+
 
 #### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -6592,6 +6606,28 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_CloseAndReopen:bool —** vai dokuments tika aizvērts un atkārtoti atvērts?
 
+  - **Data_ClpDocHasDrmDoc:bool** — vai dokumentā ir DRM dokuments
+
+  - **Data_ClpDocHasIdentity:bool** — vai dokumentā ir identitātes informācija (tiek izmantota, lai iegūtu un iestatītu sensitivitātes etiķetes)
+
+  - **Data_ClpDocHasSessionMetadata:bool** — vai dokumentam sesijas laikā ir strādājoši sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocIsProtected:bool** — neatkarīgi no tā, vai dokuments ir vai nav aizsargāts ar IRM
+
+  - **Data_ClpDocMetadataSource:int** — uzskaitījums, kas norāda, no kurienes iegūti sensitivitātes etiķešu metadati (IRM, OPC daļa, SharePoint u.c.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** — vai dokumentam ir jāpārbauda sensitivitātes etiķešu dati no pielāgotās.xml daļas
+
+  - **Data_ClpDocNumFailedSetLabels:int** — sensitivitātes etiķešu skaits, kuras neizdevās iestatīt dokumentā
+
+  - **Data_ClpDocSessionMetadataDirty:bool** — vai dokumentā ir piesārņoti strādājošu sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocWasInTrustBoundary:bool** — vai dokuments ir ticamības robežās (ļaujot līdzautorēt dokumentus, kurus aizsargā sensitivitātes etiķetes)
+
   - **Data\_DetachedDuration:long —** darbības atvienošanas/nedarbošanās ilgums
 
   - **Data\_Doc\_AccessMode:long —** kā šis dokuments ir atvērts (tikai lasāms | lasīšana un rakstīšana)
@@ -6711,6 +6747,28 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_ClearDirtyFlagTimeMS:long —** cik ilgā laikā tika noņemts mainīta dokumenta karodziņš
 
   - **Data\_CloneDocumentTimeMS:long —** cik ilgā laikā tika klonēts dokuments pirms saglabāšanas
+
+  - **Data_ClpDocHasDrmDoc:bool** — vai dokumentā ir DRM dokuments
+
+  - **Data_ClpDocHasIdentity:bool** — vai dokumentā ir identitātes informācija (tiek izmantota, lai iegūtu un iestatītu sensitivitātes etiķetes)
+
+  - **Data_ClpDocHasSessionMetadata:bool** — vai dokumentam sesijas laikā ir strādājoši sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocIsProtected:bool** — neatkarīgi no tā, vai dokuments ir vai nav aizsargāts ar IRM
+
+  - **Data_ClpDocMetadataSource:int** — uzskaitījums, kas norāda, no kurienes iegūti sensitivitātes etiķešu metadati (IRM, OPC daļa, SharePoint u.c.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** — vai dokumentam ir jāpārbauda sensitivitātes etiķešu dati no pielāgotās.xml daļas
+
+  - **Data_ClpDocNumFailedSetLabels:int** — sensitivitātes etiķešu skaits, kuras neizdevās iestatīt dokumentā
+
+  - **Data_ClpDocSessionMetadataDirty:bool** — vai dokumentā ir piesārņoti strādājošu sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocWasInTrustBoundary:bool** — vai dokuments ir ticamības robežās (ļaujot līdzautorēt dokumentus, kurus aizsargā sensitivitātes etiķetes)
 
   - **Data\_CommitTransactionTimeMS:long —** cik ilgā laikā tika izpildīta saglabāšanas darbība
 
@@ -6857,6 +6915,28 @@ Apkopots ikreiz, kad PowerPoint veic darbību Saglabāt kā. Ietver saglabāšan
 Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_AddDocTelemetryResult:long** — vai šim žurnāla ierakstam ir visa nepieciešamā dokumenta telemetrija (Data_Doc_* lauki)? Ja nav, kāpēc?
+
+- **Data_ClpDocHasDrmDoc:bool** — vai dokumentā ir DRM dokuments
+
+- **Data_ClpDocHasIdentity:bool** — vai dokumentā ir identitātes informācija (tiek izmantota, lai iegūtu un iestatītu sensitivitātes etiķetes)
+
+- **Data_ClpDocHasSessionMetadata:bool** — vai dokumentam sesijas laikā ir strādājoši sensitivitātes etiķešu metadati
+
+- **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+- **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+- **Data_ClpDocIsProtected:bool** — neatkarīgi no tā, vai dokuments ir vai nav aizsargāts ar IRM
+
+- **Data_ClpDocMetadataSource:int** — uzskaitījums, kas norāda, no kurienes iegūti sensitivitātes etiķešu metadati (IRM, OPC daļa, SharePoint u.c.)
+
+- **Data_ClpDocNeedsUpconversion:bool** — vai dokumentam ir jāpārbauda sensitivitātes etiķešu dati no pielāgotās.xml daļas
+
+- **Data_ClpDocNumFailedSetLabels:int** — sensitivitātes etiķešu skaits, kuras neizdevās iestatīt dokumentā
+
+- **Data_ClpDocSessionMetadataDirty:bool** — vai dokumentā ir piesārņoti strādājošu sensitivitātes etiķešu metadati
+
+- **Data_ClpDocWasInTrustBoundary:bool** — vai dokuments ir ticamības robežās (ļaujot līdzautorēt dokumentus, kurus aizsargā sensitivitātes etiķetes)
 
 - **Data_CppUncaughtExceptionCount:long** — darbības izpildes laikā nenotvertie vietējie izņēmumi.
 
@@ -7044,6 +7124,28 @@ Apkopots ikreiz, kad PowerPoint veic saglabāšanu, izmantojot mantotā koda ce�
 Tiek apkopoti tālāk norādītie lauki.
 
 - **Data_AddDocTelemetryResult:long** — vai šim žurnāla ierakstam ir visa nepieciešamā dokumenta telemetrija (Data_Doc_* lauki)? Ja nav, kāpēc?
+
+- **Data_ClpDocHasDrmDoc:bool** — vai dokumentā ir DRM dokuments
+
+- **Data_ClpDocHasIdentity:bool** — vai dokumentā ir identitātes informācija (tiek izmantota, lai iegūtu un iestatītu sensitivitātes etiķetes)
+
+- **Data_ClpDocHasSessionMetadata:bool** — vai dokumentam sesijas laikā ir strādājoši sensitivitātes etiķešu metadati
+
+- **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+- **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+- **Data_ClpDocIsProtected:bool** — neatkarīgi no tā, vai dokuments ir vai nav aizsargāts ar IRM
+
+- **Data_ClpDocMetadataSource:int** — uzskaitījums, kas norāda, no kurienes iegūti sensitivitātes etiķešu metadati (IRM, OPC daļa, SharePoint u.c.)
+
+- **Data_ClpDocNeedsUpconversion:bool** — vai dokumentam ir jāpārbauda sensitivitātes etiķešu dati no pielāgotās.xml daļas
+
+- **Data_ClpDocNumFailedSetLabels:int** — sensitivitātes etiķešu skaits, kuras neizdevās iestatīt dokumentā
+
+- **Data_ClpDocSessionMetadataDirty:bool** — vai dokumentā ir piesārņoti strādājošu sensitivitātes etiķešu metadati
+
+- **Data_ClpDocWasInTrustBoundary:bool** — vai dokuments ir ticamības robežās (ļaujot līdzautorēt dokumentus, kurus aizsargā sensitivitātes etiķetes)
 
 - **Data_CppUncaughtExceptionCount:long** — darbības izpildes laikā nenotvertie vietējie izņēmumi.
 
@@ -8750,6 +8852,12 @@ Tiek apkopoti šādi lauki:
 
 - **has_mip_label** — norāda, vai ziņojums tika apzīmogots ar MIP etiķeti
 
+- **image_attachment_count** — norāda, cik daudz attēlu tiek nosūtīti kā ziņojuma pielikumi
+
+- **image_body_count** — norāda, cik daudz attēlu tiek nosūtīti kā ziņojuma pamatteksts
+
+- **image_movement_count** — norāda, cik daudz ziņojuma attēlu ir pārvietoti uz rindiņu vai pārvietoti pēc teksta.
+
 - **is_group_escalation** — norāda, vai šis ir grupas eskalēts ziņojums; “eskalēts ziņojums” ir ziņojums, kas nosūtīts uz lietotāja pastkasti eskalācijas dēļ (abonējis grupu)
 
 - **is_groups** — izseko, vai nosūtītais ziņojums ir grupas ziņojums vai nav
@@ -9779,6 +9887,28 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_CheckWebSharingViolationForIncOpen —** metodes CheckWebSharingViolationForIncOpen izpildes laiks milisekundēs
    
   - **Data_CloseAndReopenWithoutDiscard —** Vai dokuments tika aizvērts un atkārtoti atvērts atvērtā procesa laikā, to neizdzēšot.
+
+  - **Data_ClpDocHasDrmDoc:bool** — vai dokumentā ir DRM dokuments
+
+  - **Data_ClpDocHasIdentity:bool** — vai dokumentā ir identitātes informācija (tiek izmantota, lai iegūtu un iestatītu sensitivitātes etiķetes)
+
+  - **Data_ClpDocHasSessionMetadata:bool** — vai dokumentam sesijas laikā ir strādājoši sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocHasSpoMetadata:bool** — vai dokumentam ir sensitivitātes etiķetes metadati no SPO, izmantojot IMetadataCache
+
+  - **Data_ClpDocIsProtected:bool** — neatkarīgi no tā, vai dokuments ir vai nav aizsargāts ar IRM
+
+  - **Data_ClpDocMetadataSource:int** — uzskaitījums, kas norāda, no kurienes iegūti sensitivitātes etiķešu metadati (IRM, OPC daļa, SharePoint u.c.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** — vai dokumentam ir jāpārbauda sensitivitātes etiķešu dati no pielāgotās.xml daļas
+
+  - **Data_ClpDocNumFailedSetLabels:int** — sensitivitātes etiķešu skaits, kuras neizdevās iestatīt dokumentā
+
+  - **Data_ClpDocSessionMetadataDirty:bool** — vai dokumentā ir piesārņoti strādājošu sensitivitātes etiķešu metadati
+
+  - **Data_ClpDocWasInTrustBoundary:bool** — vai dokuments ir ticamības robežās (ļaujot līdzautorēt dokumentus, kurus aizsargā sensitivitātes etiķetes)
 
   - **Data\_ContentTransaction —** Iepriekš definētu vērtību kopa, kad iespējams izveidot transakciju (AllowedOnLoadDocument, AllowedOnOpenComplete, utt.)
 
@@ -12520,9 +12650,9 @@ Tiek apkopoti šādi lauki:
   
 - **BootToStart** — vai lietotājs ir izvēlējies sākuma ekrāna parādīšanu lietojumprogrammas startēšanas laikā.
 
-- **ColdBoot** — norāda, vai tā ir pirmā reize, kad Office programma tiek palaista pēc sistēmas restartēšanas, vai programmas binārs bija jāielādē no diska.
+- **ColdBoot** — norāda, vai šī ir pirmā reize, kad Office lietojumprogramma tika palaista pēc sistēmas restartēšanas, vai programmas binārs bija jāielādē no diska. (tikai macOS/iOS)
 
-- **DeviceModel** — ierīces modelis.
+- **DeviceModel** — ierīces modelis. (tikai macOS/iOS)
 
 - **DocLocation** —  dokumenta atvēršanas brīdī norāda uz dokumenta izcelsmes pakalpojumu (OneDrive, File Server, SharePoint, u. tml.).
 
@@ -12532,6 +12662,8 @@ Tiek apkopoti šādi lauki:
 
 - **FirstBoot** — vai šī bija pirmā programmas palaišana.
 
+- **FreeMemoryPercentage** — cik liela atmiņas daļa ierīcē ir brīva. (tikai Windows)
+
 - **InitializationDuration** — laiks milisekundēs, kas bija nepieciešams, lai vispirms inicializētu Office procesu.
 
 - **InterruptionMessageId** — vai palaišanu pārtrauca dialogs, pieprasot lietotāja ievadi, kā arī šī dialoga ID.
@@ -12540,9 +12672,19 @@ Tiek apkopoti šādi lauki:
 
 - **OpenAsNew** — vai programma tika startēta, atverot esošu dokumentu kā jaunu veidni.
 
+- **PageFaultCount** — procesa lapu kļūdu skaits. (tikai Windows)
+
+- **PrimaryDiskType** — neatkarīgi no tā, vai primārā atmiņas ierīce ir cietais disks vai rotācijas disks un tā rotācijas ātrums, ja piemērojams. (tikai macOS/iOS)
+
+- **PrivateCommitUsageMB** — saistību izpilde (t.i., atmiņas apjoms, ko atmiņas pārvaldnieks ir piešķīris šim procesam) megabaitos šim procesam. (tikai Windows)
+
+- **ProcessorCount** — procesoru skaits ierīcē. (tikai macOS/iOS)
+
+- **TotalPhysicalMemory** — kopējais fiziskās atmiņas apjoms ierīcē. (tikai macOS/iOS)
+
 - **TotalWorkingSetMB** — atmiņas apjoms megabaitos procesa darba kopā.
 
-- **VirtualSetMB** — atmiņas apjoms megabaitos procesa virtuālajā kopā. (Tikai MacOS/iOS)
+- **VirtualSetMB** — atmiņas apjoms megabaitos procesa virtuālajā kopā. (tikai macOS/iOS)
 
 - **WorkingSetPeakMB** — vislielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
 
