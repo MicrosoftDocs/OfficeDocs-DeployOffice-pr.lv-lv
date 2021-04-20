@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz informāciju Office administratoriem par nepieciešamajiem Office diagnostikas datiem un nodrošina notikumu un datu lauku sarakstu.
 hideEdit: true
-ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
-ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
+ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
+ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167376"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51889791"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Nepieciešamie Office diagnostikas dati
 
@@ -633,6 +633,8 @@ Tālāk norādītie lauki ir kopīgi visiem Outlook darbam ar iOS notikumiem.
 
 - **gcc_restrictions_enabled** — norāda, vai GCC ierobežojumi tika piemēroti lietojumprogrammai, lai mēs spētu nodrošināt to, ka mūsu GCC klienti izmanto mūsu lietojumprogrammu drošā veidā
  
+- **multi_pane_mode** — informē mūs, ja lietotājs iPad ierīcē izmanto iesūtni ar ieslēgtām vairākām rūtīm, kurās tas var skatīt savu mapju sarakstu, vienlaikus veicot e-pasta ziņojumu šķirošanu. Tas ir nepieciešams, lai palīdzētu mums noteikt problēmas, kas rodas tām personām, kuras izmanto iesūtni ar vairākām atvērtām rūtīm.
+
 - **multi_window_mode** — norāda, vai iPad lietotājs izmanto vairākus logus, lai palīdzētu mums atklāt problēmas, kas saistītas ar vairāklogu lietojumu.
 
 - **office_session_id** — unikāls ID, kas izseko sesijai pievienotajiem Office pakalpojumiem, lai palīdzētu mums atklāt Office pakalpojumu integrēšanai Outlook, piemēram, Word, raksturīgas problēmas
@@ -5237,6 +5239,16 @@ Tiek apkopoti šādi lauki:
 
 - **Data_FirstRunPanelName** — tā paneļa nosaukums, no kura sākta darba pieredze
 
+
+#### <a name="officefloodgateuserfactappusage"></a>Office.Floodgate.UserFact.AppUsage
+
+Tas norāda, kad lietotājs produktā ir izmantojis augstas vērtības līdzekļus. Tas var norādīt, vai lietotājs atklāja līdzekli vai to izmantoja. Signāls sniegs produktu līdzekļu lietojuma ieskatus, kas palīdz uzlabot produktu.
+
+Tiek apkopoti šādi lauki: 
+
+- **FeatureAction** — etiķete, kurā norādīts augstas vērtības līdzeklis un lietotāja veiktā darbība, piemēram, ContentPickerTried, TemplatesSeen.
+
+
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Kad lietotājs apgriež attēlu un pieskaras apstiprinājumam par galīgo attēla izvēli OCR izmantošanai, šis notikums tiek apkopots.     
@@ -5289,19 +5301,6 @@ Tiek apkopoti šādi lauki:
 - **TargetType** — virkne, kura identificē pakalpojuma zvana nolūku.
 
 
-#### <a name="officelenslenssdkpermission"></a>Office.Lens.LensSdk.Permission
-
-Atļaujas ir sensitīvs līdzeklis, jo bez tām lietotājam nav iespējas lietot nevienu no programmas Lens līdzekļiem. Atļaujas tiek reģistrētas, lai izprastu lietotāju paradumus atļauju sniegšanu/atsaukšanu. Kad lietotājs mijiedarbojas ar atļauju dialogiem mūsu lietojumprogrammā, mēs apkopojam šos notikumus. Ņemot vērā lietotāju tendences atļauju akceptēšanas un noraidīšanas vajadzībām, mēs identificējam līdzekļu uzlabojumus, lai palīdzētu lietotājiem saprast, kāpēc atļaujas ir kritiski svarīgas.
-
-Tiek apkopoti šādi lauki.
-
-- **Data_action** — satur tādas vērtības kā “CameraPermissionAllowed (vai Denied), StoragePermissionGranted (vai Denied), kas palīdz mums saprast, vai lietotājs pieņēma vai noraidīja krātuves un kameras atļaujas.
-
-- **Data_Action** — šis lauks palīdz mums saprast, kāda veida atļauja tika lūgta lietotājam, piemēram, kamera vai krātuve
-
-- **Data_status** — iekļautas vērtības, piemēram, Allowed, Denied un DeniedForever, kas palīdz mums saprast, vai lietotājs akceptēja vai noraidīja krātuvi un kameras atļaujas.
-
-
 #### <a name="officelenslenssdksavemedia"></a>Office.Lens.LensSdk.SaveMedia
 
 Šis notikums tiek izsaukts, kad lietotājs noklikšķina uz pogas Gatavs un saglabā attēlus operētājsistēmā Android un iOS. Tas palīdz novērtēt lietotāju iesaistīšanās līmeni, nosakot skaitliskās iespējas lietotājiem, kuri saglabā attēlus, izmantojot mūsu lietojumprogrammu.
@@ -5349,105 +5348,22 @@ iOS ierīcē tiek apkopoti tālāk norādītie lauki.
 
 #### <a name="officelenslenssdkserviceidmapping"></a>Office.Lens.LensSdk.ServiceIDMapping
 
-Kad attēls ir veiksmīgi augšupielādēts pakalpojumā, šis notikums tiek apkopots. Tas norāda, ka pakalpojums tagad palaiž vienu vai vairākus uzdevumus, lai apstrādātu attēlu un ietvertu atbilstošus IT uzdevumus, lai palīdzētu novērst šo procesu. Tā arī palīdz analizēt dažādu pakalpojuma līdzekļu lietojumu.
+Šis notikums tiek apkopots, kad Lens SDK mijiedarbojas ar Microsoft pakalpojumu Image-to-document (I2D). Tas nozīmē, ka šis notikums tiek izsaukts:
 
-Tiek apkopoti šādi lauki.
+- Kad attēls tiek augšupielādēts mūsu pakalpojumā I2D failu konvertēšanai un izvilkšanai (OCR).
+- Kad lietotājam ir jālabo pakalpojuma izvade, mēs nosūtām atsauksmes, lai uzlabotu kvalitāti.
 
-- **CloudConnectorRequestId** — virkne, kura identificē pakalpojuma pieprasījumu, kas tika veikts, lai pārveidotu attēlus, izmantojot pakalpojumu.
-
-- **I2DserviceProcessID** — virkne, kura identificē pakalpojuma darbu, kas palaiž noteiktu apakšpakalpojumu 
-
-
-#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
-
-Šī kritiskā lietojuma telemetrija tiek apkopota, kad lietotājam tiek parādīta Paywall vadīkla, un šo telemetriju izmanto, lai izprastu lietotāju pieredzi, veicot pirkumus programmā, un lai to optimizētu nākamajās versijās.
+Dati tiek izmantoti, lai analizētu lietojumu un novērstu problēmas pakalpojuma pusē.  
 
 Tiek apkopoti šādi lauki:
 
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”
+- **CloudConnectorRequestId** — virkne, kas identificē pakalpojumu pieprasījumus klienta programmā gan konvertēšanas, gan atsauksmju scenārijos.
 
-- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
+- **CustomerId** — šī virkne palīdz kartēt lietotājus uz pakalpojumu pieprasījumiem un palīdz mums izsekot lietojumu. Lietotāja ID ir nepieciešams, lai izpildītu VDAR prasības, jo pakalpojums netiek tieši rādīts lietotājiem, bet, izmantojot klientus, un identificējot to lietotāju kopskaitu, kas izmanto šo pakalpojumu, tā palīdzot pakalpojumam izsekot to lietotāju apjomu, kuri izmanto produktu. 
 
-#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
+- **I2DFeedbackAPICorrelationId** — virkne, kas identificē atsauksmju pieprasījumu pakalpojumā I2D, kad lietotājs labo pakalpojuma izvadi.
 
-Šie sesijā balstītie meta dati tiek apkopoti, kad lietotājam tiek parādīts Paywall interfeiss, un tie norāda mijiedarbības ilgumu un to, vai pirkuma veikšanas mēģinājums izdevās vai neizdevās.  Šie dati tiek izmantoti, lai izprastu visas maksājuma veikšanas pieredzes lietojumu un darbspēju un veiktu atkļūdošanu, optimizētu un novērstu problēmas programmas pirkumu pieredzē nākamajās versijās. 
-
-Tiek apkopoti šādi lauki.
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
-
-- **status**— virkne — Paywall izejas statuss. Piemēram, “initiated”, “paymentDone”, “provisionFailed”
-
-- **userDuration** — datu tips Double — lietotāja Paywall veltītais laiks milisekundēs
-
-
-#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Kritiska tehniskā telemetrija ar Microsoft mazumtirdzniecības federācijas pakalpojumu (RFS), lai apkopotu šajā notikumā sniegto informāciju. RFS ir iekšējais pakalpojums, kas tiek izmantots Microsoft ietvaros, lai pārbaudītu pirkumu. Dati tiek izmantoti, lai iegūtu RFS veiktās API izsaukšanas darbspēju un palīdzētu izprast izdošanās ātrumu un atkļūdošanu kļūmju gadījumā.
-
-Tiek apkopoti šādi lauki.
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz RFS nodrošināšanas atbilde.
-
-- **productId** — virkne — lietojumprogrammas veikala pieprasītā produkta ID
-
-- **status** — virkne — veiksme vai kļūme, norādot, vai pieprasījums ir izdevies vai nav izdevies
-
-
-#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Kritisko lietojumu telemetrijas, kas norāda, kad lietotājs pieskaras pogai Pirkums/Pirkt. Izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
-
-Tiek apkopoti šādi lauki:
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
-
-- **productId** — virkne — lietojumprogrammu veikala produkta ID, kam nospiesta poga Pirkt
-
-- **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
-
-
-#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
-
-Šis notikums apkopo līdzekļus un programmas, kuras lietotājs izvērš no sadaļas “Skatīt papildu priekšrocības”, un lietotāja veltītā laika ilgumu.  Šie dati tiek izmantoti, lai izprastu līdzekļa “Skatīt visas priekšrocības” lietojumu un optimizētu tā lietošanas pieredzi nākamajās versijās.
-
-Tiek apkopoti šādi lauki:
-
-- **appsExpanded** — virkne — ar komatiem atdalītu pakalpojumu/programmu, kurām tika paplašinātas priekšrocības, saraksts.
-
-- **productId** — virkne — produkta, kuram lietotājs skata papildu piedāvātās priekšrocības, App Store ID
-
-- **userDuration**— datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
-
-
-### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSwitched
-
-Lietošanas telemetrijas dati, lai parādītu, cik reizes lietotājs pārslēdzas starp dažādiem SKU pirms pirkuma veikšanas mēģinājuma.
-
-Tiek apkopoti šādi lauki.
-
-- **productId** — virkne — App Store ID tam produktam, kuru lietotājs tikko pārslēdza uz skatīšanu no pieejamajiem produktiem SKU izvēlē.
-
-
-#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
-
-Šī lietojuma telemetrija tiek apkopota, lai redzētu, kā lietotājs ienāca SKU izvēlē, cik daudz laika lietotājs pavadīja SKU izvēles ekrānā un kāpēc lietotājs izgāja no SKU izvēles.  Šie dati tiek izmantoti, lai izprastu SKU izvēles lietojumu un optimizētu pirkumu pieredzi programmā nākamajās versijās.
-
-Tiek apkopoti šādi lauki:
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **exitReason** — virkne — iemesls iziešanai no SKU izvēles. Piemēram, “BuyButton”, “CloseButton”.
-
-- **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
-
-- **userDuration** — datu tips Double — laika, ko lietotājs pavadīja SKU izvēlē, ilgums milisekundēs
+- **I2DServiceProcessID** — virkne, kas identificē pakalpojuma pieprasījumu pakalpojumā I2D, kad lietotājs augšupielādē attēlus konvertēšanai.
 
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office.LivePersonaCard.ConfigurationSetAction
@@ -9049,6 +8965,33 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **RMS.Url** — tiesību pārvaldības pakalpojuma servera vietrādis URL
 
+
+#### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
+
+Seko, kad ierīce ir izpildījusi kritērijus, lai parādītu aptauju. Tiek izmantoti, lai novērtētu aptaujas aktivizācijas procesa darbspēju, kā arī, lai nodrošinātu, ka, lai analizētu klientu problēmas un veselību, darbojas pareizi.
+
+Tiek apkopoti šādi lauki: 
+
+- **CampaignId** — kampaņu piegādājušā pakalpojuma identifikators
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **SurveyType** — identificē aptaujas veidu
+
+
+#### <a name="surveyuiformsubmit"></a>Survey.UI.Form.Submit
+
+Izseko, kad aptauja tiek iesniegta. Tiek izmantots, lai novērtētu aptaujas iesniegšanas procesa darbspēju, kā arī, lai nodrošinātu pareizu tā signāla darbību, kas tiek izmantots, lai analizētu klientu problēmas un darbspēju.
+
+Tiek apkopoti šādi lauki: 
+
+- **CampaignId** — kampaņu piegādājušā pakalpojuma identifikators
+
+- **SurveyId** — unikāla kampaņas instance
+
+- **SurveyType** — identificē aptaujas veidu
+
+
 #### <a name="watchappv2"></a>watchAppV2
 
 Šis notikums ļauj mums atklāt un novērst iespējamās problēmas ar jūsu Apple Watch, piemēram, ziņojumu saņemšana vai atbildēšana uz e-pasta ziņojumiem.
@@ -12511,16 +12454,6 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **TypeId** — interfeisa GUID, uz kura šī metode tiek izsaukta.
 
-#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
-
-Šī lietojuma telemetrija tiek apkopota, lai noteiktu, kad neizdodas pirkuma/nodrošināšanas/aktivizēšanas darbība un lietotājs pieskaras pogai “Mēģināt vēlreiz”.  Izmanto, lai veiktu pirkšanas kļūdu scenāriju, kas izraisa atkārtošanu, problēmu novēršanu un uzlabotu procesa uzticamību.
-
-Tiek apkopoti šādi lauki:
-
-- **failureReason** — virkne — norāda kļūmi, kuru lietotājs mēģina atkārtot vēlreiz. Piemēram, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
-
-- **productid**— virkne — produkta, kuram lietotājs mēģina vēlreiz nesekmīgo pieprasījumu, App Store ID
-
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -12650,6 +12583,8 @@ Tiek apkopoti šādi lauki:
   
 - **BootToStart** — vai lietotājs ir izvēlējies sākuma ekrāna parādīšanu lietojumprogrammas startēšanas laikā.
 
+- **ChildProcessCount** — programmas palaisto bērnprocesu skaits. (Tikai Windows)
+
 - **ColdBoot** — norāda, vai šī ir pirmā reize, kad Office lietojumprogramma tika palaista pēc sistēmas restartēšanas, vai programmas binārs bija jāielādē no diska. (tikai macOS/iOS)
 
 - **DeviceModel** — ierīces modelis. (tikai macOS/iOS)
@@ -12664,6 +12599,10 @@ Tiek apkopoti šādi lauki:
 
 - **FreeMemoryPercentage** — cik liela atmiņas daļa ierīcē ir brīva. (tikai Windows)
 
+- **HandleCount** — procesa atvērto operētājsistēmas turu skaits. (Tikai Windows)
+
+- **HardFaultCount** — procesa stingro lapas kļūmju skaits. (tikai Windows)
+
 - **InitializationDuration** — laiks milisekundēs, kas bija nepieciešams, lai vispirms inicializētu Office procesu.
 
 - **InterruptionMessageId** — vai palaišanu pārtrauca dialogs, pieprasot lietotāja ievadi, kā arī šī dialoga ID.
@@ -12672,13 +12611,23 @@ Tiek apkopoti šādi lauki:
 
 - **OpenAsNew** — vai programma tika startēta, atverot esošu dokumentu kā jaunu veidni.
 
+- **OtherOperationCount** — veikto to ievadizvades darbību skaits, kas nav lasīšanas un rakstīšanas darbības. (Tikai Windows)
+
+- **OtherTransferCount** — pārsūtīto baitu skaits to darbību laikā, kas nav lasīšanas un rakstīšanas darbības. (Tikai Windows)
+
 - **PageFaultCount** — procesa lapu kļūdu skaits. (tikai Windows)
 
 - **PrimaryDiskType** — neatkarīgi no tā, vai primārā atmiņas ierīce ir cietais disks vai rotācijas disks un tā rotācijas ātrums, ja piemērojams. (tikai macOS/iOS)
 
 - **PrivateCommitUsageMB** — saistību izpilde (t.i., atmiņas apjoms, ko atmiņas pārvaldnieks ir piešķīris šim procesam) megabaitos šim procesam. (tikai Windows)
 
+- **PrivateWorkingSetMB** — tas atmiņas apjoms megabaitos procesa darba kopā, kas netiek koplietots ar citiem procesiem. (tikai Windows)
+
 - **ProcessorCount** — procesoru skaits ierīcē. (tikai macOS/iOS)
+
+- **ReadOperationCount** — izpildīto lasīšanas darbību skaits. (Tikai Windows)
+
+- **ReadTransferCount** — lasīto baitu skaits.
 
 - **TotalPhysicalMemory** — kopējais fiziskās atmiņas apjoms ierīcē. (tikai macOS/iOS)
 
@@ -12687,6 +12636,10 @@ Tiek apkopoti šādi lauki:
 - **VirtualSetMB** — atmiņas apjoms megabaitos procesa virtuālajā kopā. (tikai macOS/iOS)
 
 - **WorkingSetPeakMB** — vislielākais atmiņas apjoms megabaitos, kas līdz šim ir bijis procesa darba kopā.
+
+- **WriteOperationCount** — izpildīto rakstīšanas darbību skaits. (Tikai Windows)
+
+- **WriteTransferCount** — rakstīto baitu skaits. (Tikai Windows)
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -13886,6 +13839,30 @@ Tiek apkopoti tālāk norādītie lauki.
   - **Data\_TagCount** — katras radušās kļūmes skaits
 
   - **Data\_TagID** — radušās kļūmes identifikators
+
+
+#### <a name="officeofficemobilepersonalizedcampaigningerrors"></a>Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+Lai sekmētu to Office mobilo programmu līdzekļu apzināšanos, kurus lietotāji vēl nav izpētījuši, Office mobilā programma tiek integrēta ar IRIS, lai atbalstītu programmā esošos un pašpiegādes paziņojumus. Programmā esošo paziņojumu gadījumā tas tver kļūdas, kas rodas, atgādājot vai attēlojot paziņojumu, arī tad, kad lietotājs mijiedarbojas ar šo paziņojumu, kā arī sniedz atsauksmes IRIS serverim. Pašpiegādes paziņojumu gadījumā tas tver kļūdas, kas rodas, kad tiek parādīts paziņojums un kad lietotājs mijiedarbojas ar šo paziņojumu.
+
+Tiek apkopoti šādi lauki:
+
+- **Class** — tās klases nosaukums, kurā radās kļūda
+
+- **CreativeId** — paziņojuma ID, kas unikāli identificē paziņojumu un tā saturu.
+
+- **ErrorDetails** — detalizēta informācija par kļūdu
+
+- **ErrorMessage** — kļūdas ziņojums.
+
+- **ErrorReason** — kļūdas pamatā esošais iemesls
+
+- **Method** — tās funkcijas nosaukums, kurā radās kļūda.
+
+- **RequestParams** — pieprasījuma parametri, kas tiek izmantoti, sazinoties ar IRIS serveri, lai atgādātu paziņojumu.
+
+- **SurfaceId** — tās virsmas ID, kurā tiks rādīts paziņojums.
+
 
 #### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
