@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
-ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
+ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
+ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031990"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51891211"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -3410,6 +3410,92 @@ Tiek apkopoti šādi lauki:
 - **context** – virkne – plūsma, caur kuru lietotājs nonāca lietojumprogrammas pirkumu lapā
 
 
+### <a name="officeapplelicensingcommonpaywallcontrol"></a>Office.Apple.Licensing.CommonPaywallControl
+
+Šis notikums tiek izmantots, lai izprastu lietotāja programmā veiktā pirkuma (in-app purchase — IAP) pieredzi. Tas ļauj mums nodrošināt, lai IAP darbotos, kā paredzēts, un palīdz izprast lietotāju problēmas, lai mēs varētu optimizēt šo IAP līdzekli.  Apkopošana notiek, izmantojot kādu no tālāk norādītajiem apakšnotikumiem.
+
+- **Office.iOS.Paywall.Paywall.Presented** — dati tiek apkopoti, kad lietotājam tiek parādīta Paywall vadīkla. Dati tiek izmantoti, lai veidotu skatu, kurā katrā darbībā tiek mērīts konvertēšanas ātrums, un nodrošinātu, ka lietotāja interfeiss darbojas, kā paredzēts un lietotājiem pēc iespējas nerastos problēmu iegādes laikā.
+
+   Tiek apkopoti šādi lauki.
+
+  - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”
+  - **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
+
+- **Office.iOS.Paywall.Paywall.Stats** — dati tiek apkopoti, kad lietotājam tiek parādīts Paywall lietotāja interfeiss, un tie norāda mijiedarbības ilgumu un to, vai notika pirkuma veikšanas mēģinājums, tas izdevās vai neizdevās. Dati tiek izmantoti, lai mērītu lietotāja interfeisa veiktspēju un pārliecinātos, vai tas darbojas, kā paredzēts. 
+
+   Tiek apkopoti šādi lauki.
+
+   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+   - **isFRE** — Būla vērtība — pārbaude, vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss.
+   - **status** — virkne — Paywall izejas statuss. Piemērs: “initiated”, “paymentDone”, “provisionFailed”.
+   - **userDuration** — datu tips Double — lietotāja līdzeklim Paywall veltītais laiks milisekundēs
+  
+- **Office.iOS.Paywall.SKUChooser.BuyButtonButton** — dati tiek apkopoti, kad lietotājs pieskaras pogai Iegādāties. Dati tiek izmantoti, lai mērītu pogas veiktspēju un pārliecinātos, vai tā darbojas, kā paredzēts.
+
+   Tiek apkopoti šādi lauki.
+
+   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+   - **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
+   - **productId** — virkne — tā veikala App Store produkta ID, kuram tika nospiesta poga Iegādāties.
+   - **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
+
+- **Office.iOS.Paywall.SKUChooser.Stats** — dati tiek apkopoti, lai noskaidrotu, kā lietotājs ienāca SKU izvēlē, cik daudz laika pavadīja SKU izvēles ekrānā un kāpēc izgāja no SKU izvēles. Izmantojot šo informāciju, varam nodrošināt, ka SKU izvēle darbojas, kā paredzēts, un varēsim optimizēt un uzlabot lietotāju ērtības.
+
+   Tiek apkopoti šādi lauki.
+
+   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+   - **exitReason** — virkne — iemesls iziešanai no SKU izvēles. Piemērs: “BuyButton”, “CloseButton”.
+   - **isFRE** — Būla vērtība — vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss?
+   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja SKU izvēlē, ilgums milisekundēs.
+
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** — dati tiek apkopoti, ja neizdodas iegāde/nodrošināšana/aktivizēšana un lietotājs pieskārās pogai Mēģināt vēlreiz. Dati tiek izmantoti, lai novērstu problēmas iegādes kļūdu scenārijos un veiktu labojumus, nodrošinot darbību, kāda ir paredzēta.
+
+   Tiek apkopoti šādi lauki:
+
+   - **failureReason** — virkne — norāda, kāda kļūme bija par iemeslu tam, ka lietotājs mēģina vēlreiz; piemēram, "provisioningFailed", "purchaseFailed", "activationFailed".
+   - **productid** — virkne — tā produkta App Store ID, kuram lietotājs mēģina vēlreiz veikt nesekmīgo pieprasījumu.
+
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** — dati, kas apkopoti, kad lietotāji pieskaras pie "Skatīt citas priekšrocības", lai skatītu visus pirkumā iekļautos pakalpojumus, programmas un līdzekļus. Tiem ir jāizvērš sadaļas ar detalizētu informāciju par katras programmas līdzekļiem. Šis notikums apkopo tos līdzekļus un programmas, ko tie izvērsa, kā arī veltītā laika ilgumu. Dati tiek izmantoti, lai nodrošinātu, ka lietotāja interfeiss (kas tiek piedāvāts lietotājiem, lai uzzinātu, kādas ir priekšrocības) darbojas, kā paredzēts. 
+
+   Tiek apkopoti šādi lauki:
+
+   - **appsExpanded** — virkne — komatatdalīts to pakalpojumu/programmu saraksts, kuru priekšrocības tika izvērstas.
+   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās papildu piedāvātās priekšrocības
+   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** — šis notikums tiek apkopots, kad lietotājs pēc sekmīgas iegādes pieskaras pie "Skatīt visas priekšrocības", lai skatītu pirkumā iekļautās programmas un līdzekļus. Dati tiek izmantoti, lai mērītu, vai lietotāja interfeiss darbojas, kā paredzēts.
+
+   Tiek apkopoti šādi lauki:
+
+   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās visas piedāvātās priekšrocības.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** — lietojuma telemetrija, lai skatītu lietotāja mijiedarbību ar lietotāja interfeisu, kas nodrošināts, lai pārslēgtos starp dažādiem SKU, un nodrošinātu, ka darbība notiek, kā paredzēts. 
+
+   Tiek apkopoti šādi lauki:
+
+  - **productId** — virkne — tā produkta App Store ID, uz kura skatīšanu lietotājs tikko pārslēdzās no pieejamajiem produktiem SKU izvēlē.
+
+- **Office.iOS.Paywall.StoreKit.Response** — kritiska inženierijas telemetrija, lai reģistrētu tā iegādes mēģinājuma rezultātu, ko manuāli izraisīja lietotājs, un veikala App Store atbildi uz šo notikumu. Dati tiek izmantoti, lai novērtētu pirkšanas mēģinājuma statusu un kļūmes (ja rodas) iemeslus, kā arī veiktu labojošas darbības, lai nodrošinātu, ka IAP un visi ieejas punkti darbojas, kā paredzēts.
+
+   Tiek apkopoti šādi lauki.
+
+   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+   - **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas atbildi, ko sniedz veikala App Store atbilde.
+   - **productId** — virkne — tikai "MakePurchase", "PendingPurchase", tā produkta ID lietojumprogrammu veikalā, par kuru tiek iesniegts pieprasījums.
+   - **productsCount** — Int — tikai "ProductsFetch" — veikalā atgriezto produktu skaits.
+   - **requestType** — virkne — StoreKit pieprasījuma tips. Piemēram, "ProductsFetch", "PendingPurchase"
+   - **status** — virkne — “Success” vai “Failure”, kas norāda pieprasījuma sekmīgu izpilde vai kļūmi.
+
+- **Office.iOS.Paywall.Provisioning.Response** — kritiska inženierijas telemetrija un līgums ar mazumtirdzniecības federācijas pakalpojumu (Retail Federation Service — RFS), lai apkopotu tajā sniegto informāciju. RFS ir iekšējais pakalpojums, kas tiek izmantots Microsoft ietvaros, lai veiktu pirkuma šķērspārbaudi. Tas tiek izmantots, lai iegūtu pakalpojumam RFS veiktā API izsaukuma darbspēju un palīdzētu saprast, vai integrācijas veiktspēja ir tāda, kā paredzēts.  
+
+   Tiek apkopoti šādi lauki.
+
+   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
+   - **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz RFS nodrošināšanas atbilde.
+   - **productId** — virkne — lietojumprogrammas veikala pieprasītā produkta ID
+   - **status** — virkne — veiksme vai kļūme, norādot, vai pieprasījums ir izdevies vai nav izdevies
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Piemēram, iegādes programmā plūsmai, kad lietotājs izvēlas iegādāties Microsoft 365 abonementu no Office lietojumprogrammas darbam ar Android vai ierīcēs, kurās darbojas operētājsistēma Windows.
@@ -3496,29 +3582,6 @@ Tiek apkopoti šādi lauki:
 Tiek apkopoti šādi lauki:
 
 - **featureId** – maksas līdzekļa, kuram pieskaras lietotājs TCID
-
-
-### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Kritisko lietojumu telemetrijas tiek apkopots, lai norādītu, kad lietotājs pieskaras pogai Pirkums/Pirkt.  Datus izmanto, lai secinātu par izmantošanas modeli un reklāmguvumu metriku lietotājiem, kuri mēģina iegādāties abonementu lietojumprogrammā.
-
-Tiek apkopoti šādi lauki:
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
-
-- **productId** — virkne — lietojumprogrammu veikala produkta ID, kam nospiesta poga Pirkt
-
-- **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
-
-### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Izmantojiet telemetriju, lai uzzinātu, kad pēc veiksmīga pirkuma lietotājs pieskaras pogai “Skatīt visus ieguvumus”, lai skatītu tikko veiktajā pirkumā iekļautās programmas un līdzekļus. Dati tiek izmantoti, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā.
-
-Tiek apkopoti šādi lauki.
-
-- **productId** — virkne — produkta, kuram lietotājs skata visas piedāvātās priekšrocības, App Store ID
 
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
@@ -3675,7 +3738,7 @@ Tiek apkopoti šādi lauki:
 
 - **ErrorType** — kļūmes iemesls, piemēram, "AlreadyRedeemedByOther".
 
-- **InAFOFlow** — Būla izteiksme, kas norāda, vai mēs esam AFO izpirkšanas plūsmā.
+- **InAFOFlow** — Būla vērtība, kas norāda, vai mēs esam Office aktivizācijas izmantošanas plūsmā.
 
 - **StatusCode** — viena vārda pakalpojuma zvana rezultāts, piemēram, "Izveidots".
 
@@ -3831,6 +3894,107 @@ Ja kāda iemesla dēļ nevaram aktivizēt lietotāju un tam ir jārāda dialogs,
 
 Šis notikums neapkopo laukus.
 
+### <a name="officelicensingoobehandledigitalattachfailure"></a>Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+Šis notikums tiek izraisīts, ja pakalpojuma pārbaude (skatiet Office.Licensing.OOBE.SearchForDigitalAttach) neatrada pieprasāmu digitālās pievienošanas piedāvājumu šajā ierīcē. Atkarībā no dažādiem ierīces nosacījumiem lietotājam parādīsim dažādus dialogus. Šis notikums reģistrēs dažādus scenārijus par to, kā mēs apstrādājam digitālās pievienošanas kļūmi.
+
+Tiek apkopoti šādi lauki:
+
+- **Activity_Result_Tag** norāda mums, kā notiek lietotāja pāreja uz dažādiem kļūdas stāvokļiem.
+   - 0x222e318f — jāturpina meklēt Office piedāvājuma aktivizācija.
+   - 0x222e318e — šajā sesijā veiksim atgriešanos OEM režīmā, ja šai ierīcei nav neviena digitālās pievienošanas piedāvājuma.
+   - 0x222e318d — nav interneta savienojamības, kas liks lietotājam rādīt dialogu NoInternetConnectivity 
+   - 0 — atkarībā no konkrētā kļūdas koda lietotājam rādīsim dažādus kļūdas UI.
+
+- **Data_DigitalAttachErrorType** — norāda mums, kāds konkrēts kļūdas kods ir nācis no pakalpojuma izsaukuma.
+
+- **Data_FallbackFlight** — norāda mums, vai UseAFOAsFallBack testējamais variants ir ieslēgts.
+
+
+### <a name="officelicensingoobehandledigitalattachsuccess"></a>Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+Šis notikums tiek izraisīts, ja pakalpojuma pārbaude šajā ierīcē atrod pieprasāmu digitālās pievienošanas piedāvājumu. Atkarībā no dažādiem ierīces nosacījumiem lietotājam parādīsim dažādus dialogus. Šis notikums reģistrēs dažādus scenārijus par to, kā mēs apstrādājam sekmīgu digitālo pievienošanu.
+
+Tiek apkopoti šādi lauki:
+
+- **Activity_Result_Tag** — norāda, kā mēs apstrādājam sekmīgas digitālās pievienošanas scenārijus.
+   - 0 – varam automātiski ielādēt identitāti, un lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (ar kontu).
+   - 0x222e3191 — nevaram automātiski ielādēt identitāti, tāpēc parādīsim lietotāja interfeisu “Jūs ieguvāt Office” (bez konta).
+   - 0x222e3193 — lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (bez konta), vai lietotājam nebija jārāda lietotāja interfeiss “Jūs ieguvāt Office”, jo tas ir no ierīces atkarīgs piedāvājums.
+
+- **Data_IsClaimTypeDevice** — norāda mums, vai digitālās pievienošanas piedāvājuma prasības veids ir atkarīgs no ierīces.
+
+### <a name="officelicensingoobepopulatedigitalattachoffersignindex"></a>Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts Office (viena gada abonementi vai pastāvīgās versijas), kas tiek apmaksāts tad, kad klients iegādājas savu datoru. Šis notikums tiek izsekots, ja ierīcei tiek atrasta sākotnēja Office pilnvara un lietotājs jau ir pierakstījies ar Microsoft kontu, lai ļautu mums pārraudzīt sistēmas un pakalpojumu darbspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
+
+- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
+
+- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
+
+
+### <a name="officelicensingoobesearchfordigitalattach"></a>Office.Licensing.OOBE.SearchForDigitalAttach
+
+Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts Office (viena gada abonementi vai pastāvīgās versijas), kas tiek apmaksāts tad, kad klients iegādājas savu datoru. Mašīnām, kuras ir iestatītas ar īpašu reģistra atslēgu (OOBEMode: OEMTA), iespējams, ir digitāli piesaistīts Office piedāvājums. Palaižot Office, mēs veicam pakalpojuma pārbaudes, lai noskaidrotu, vai ir atrasts digitāli pievienots Office piedāvājums. Šī darbība ir veidota, lai to izsekotu. 
+
+Tiek apkopoti šādi lauki:
+
+- **Activity_Result_Tag** — norāda mums kopējo pakalpojuma pārbaudes rezultātu. 
+   - 0x222e318c — digitālais pievienošanas testējamais variants ir izslēgts, tāpēc pakalpojuma pārbaude netiek veikta.
+   - 0x222e318b — klientam nav interneta, tāpēc pakalpojuma pārbaude netiek veikta.
+   - 0x222e318a — atrasts izmantojams digitālās pievienošanas piedāvājums
+   - 0x222e3189 — atrasts neizmantojams digitālās pievienošanas piedāvājums
+
+- **Data_EnableDAFlight** — norāda mums, vai ir ieslēgts digitālais pievienošanas testējamais variants, kas iespējo šī pakalpojuma pārbaudi.
+
+
+### <a name="officelicensingoobeshowtouchlessattachfailuredialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts Office (viena gada abonementi vai pastāvīgās versijas), kas tiek apmaksāts tad, kad klients iegādājas savu datoru. Šis notikums tiek izraisīts, ja rodas kļūda digitālās pievienošanas izmantošanas un aktivizēšanas plūsmā OEM datoriem, kuriem ir sākotnējas tiesības uz Office.  Mēs izmantojam šos datus, lai pārraudzītu sistēmu un pakalpojumu darbspēju un novērstu problēmas, kas saistītas ar OEM Office aktivizācijas plūsmu.
+
+Tiek apkopoti šādi lauki:
+
+- **Data_Continue** — informē mūs, vai lietotājs dialogā noklikšķina uz Turpināt.
+
+- **Activity_Result_Tag** — norāda mums, uz kādas pogas lietotājs ir noklikšķinājis dialogā.
+   - 0x222e319d — lietotājs dialogā noklikšķina uz Mēģināt vēlreiz
+   - 0x222e319c — lietotājs dialogā noklikšķina uz Turpināt
+   - 0 — lietotājs iziet no dialoga
+
+- **Data_IsForDigitalAttach** — norāda mums, kurā platformā un darbplūsmā lietotājs atrodas — mantotajā (Office aktivizācija (AFO)) vai modernajā (digitālā pievienošana).
+
+- **Data_Retry** — informē mūs, vai lietotājs dialogā noklikšķina uz Mēģināt vēlreiz.
+
+
+### <a name="officelicensingoobeshowtouchlessattachofferdialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts Office (viena gada abonementi vai pastāvīgās versijas), kas tiek apmaksāts tad, kad klients iegādājas savu datoru. Šis notikums tiek izsekots, ja ierīcei tiek atrasta sākotnēja Office pilnvara un lietotājs nav pierakstījies ar Microsoft kontu, lai ļautu mums pārraudzīt sistēmas un pakalpojumu darbspēju.
+
+Tiek apkopoti šādi lauki:
+
+- **Activity_Result_Tag** — norāda mums, vai lietotājam tika atrasta identitāte
+   - 0x222e3194 — mēs nevaram iegūt lietotāja identitāti (tas atcēla pierakstīšanos, vai autentifikācija neizdevās).
+   - 0 — no lietotāja ieguvām identitāti.
+
+- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
+
+- **Data_IsCentennial** — norāda mums, vai Office programmas darbināšana Centennial platformā
+
+- **Data_IsForDigitalAttach** — norāda mums, vai šis dialogs ir izraisīts no digitālās pievienošanas plūsmas vai Office aktivizācijas plūsmas.
+
+- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
+
+- **Data_OExType** — informē mūs, vai lietotājs iziet no dialoga pēc tam, kad noklikšķina uz saites ChangeAccount
+
+- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
+
+- **Data_UseInAppRedemption** — norāda, vai lietojam tīmekļa izmantošanas programmā iekļauto izmantošanu; attiecas tikai uz Office aktivizācijas plūsmu.
+
+
 ### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
 
 Lietotāji, kuriem ir sākotnēji instalēta sistēma Office jaunos datoros, kuriem nav tiesību uz Office, tiek parādīts dialoglodziņš, ar ko viņi var izmēģināt, iegādāties vai ievadīt produkta kodu, lai saņemtu licenci. Šis notikums ietver lietotāja darbību dialoglodziņā. Šis notikums tiek lietots, lai izsekotu lietotāja darbību, kas tiek veikta, kad tiek parādīts dialoglodziņš lietotājiem, kuriem nav Office tiesību, kur sistēma Office tika sākotnēji instalēta datorā, un tas palīdz noteikt, vai lietotājs ir licencēts vai nelicencēts, izmantojot noformēšanu.
@@ -3965,7 +4129,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-Pēc sekmīgas Office PIN iegūšanas, kas ir saistīts ar iekārtu un iepriekš sasaistīts ar Office, mēs parādīsim lietotājam pierakstīšanās dialogu vai izpirkšanas dialogu.  Kad PIN kods ir izpirkts, tiek parādīts dialoglodziņš EULA.  Kā daļu no mūsu modernizācijas AFO līdzekļa mēs atsvaidzinājām abus dialogus, lai sniegtu papildinformāciju par Office produktu, kas ir komplektā ar iekārtu.  Šie telemetrijas dati seko, ja mūsu līdzeklis sekmīgi samazina lietotāju neērtības, izsekojot izpirkšanas procesa plūsmas un iziešanas punktus (kurš dialoglodziņš ir noraidīts).
+Pēc sekmīgas Office PIN iegūšanas, kas ir saistīts ar iekārtu un iepriekš sasaistīts ar Office, mēs parādīsim lietotājam pierakstīšanās dialogu vai izpirkšanas dialogu.  Kad PIN kods ir izpirkts, tiek parādīts dialoglodziņš EULA.  Mūsu Office aktivizācijas līdzekļa modernizācijas ietvaros atsvaidzinājām abus dialogus, lai sniegtu vairāk informācijas par Office produktu, kas ir iekļauts komplektā ar mašīnu.  Šie telemetrijas dati seko, ja mūsu līdzeklis sekmīgi samazina lietotāju neērtības, izsekojot izpirkšanas procesa plūsmas un iziešanas punktus (kurš dialoglodziņš ir noraidīts).
 
 Tiek apkopoti šādi lauki:
 
@@ -3981,9 +4145,9 @@ Tiek apkopoti šādi lauki:
 
 - **DialogEULA** — signāls, kas parādīja dialogu ‘Accept EULA’ (Akceptēt EULA). 
 
-- **DialogRedemption** — signāls, kas parādīja AFO izpirkšanas dialogu.
+- **DialogRedemption** — signāls, ka parādījām Office aktivizācijas izmantošanas dialogu.
 
-- **DialogSignIn** — signāls, kas parādīja AFO pierakstīšanās dialogu.
+- **DialogSignIn** — signāls, ka parādījām Office aktivizācijas pierakstīšanās dialogu.
 
 - **EmptyRedemptionDefaults** — signāls, ka nav izdevies saņemt noklusējuma izpirkšanas informāciju.
  
@@ -3995,7 +4159,7 @@ Tiek apkopoti šādi lauki:
 
 - **OExType** — detalizēta informācija par kļūdu, kas tiek atgriezta, kad tiek noraidīts identitātes pierakstīšanās dialogs.
 
-- **Tag** — norāda, kurā solī lietotājs iziet no AFO izpirkšanas procesa. Iespējamie tagi:
+- **Tag** — norāda mums, kurā darbībā lietotājs iziet no Office aktivizācijas izmantošanas procesa. Iespējamie tagi:
     - 0x0311380b    lietotājs noraidīja identitātes pierakstīšanās dialoglodziņu no izpirkšanas dialoglodziņa
     - 0x0311380c    neizdevās automātiski ielādēt identitāti pēc lietotāja pierakstīšanās no izpirkšanas dialoglodziņa
     - 0x03113810    neizdevās ielādēt konta demogrāfisko informāciju (valsts kodu, valodu, valūtu, izmēģinājuma piedāvājumu un mārketinga preferences)
@@ -4010,13 +4174,13 @@ Tiek apkopoti šādi lauki:
     - 0x2370e3c1      doties uz tīmekli, lai saņemtu PIN izpirkšanu
     - 0x2370e3a1      doties uz tīmekli, lai saņemtu PIN izpirkšanu
     - 0x2370e3c0      dialoga secība tika cikliski atkārtota, ko izraisa lietotājs, pārejot uz priekšu un atpakaļ dialogā plūsma
-    - 0x2370e3a3      lietotājs noklikšķināja uz hipersaites “Not now” (Ne tagad), kas izlaiž AFO piedāvājumu tai sesijai
-    - 0x2370e3a2      lietotājs noklikšķināja uz hipersaiti “Never show this to me” (Nekad nerādīt šo iespēju), kas atspējo AFO piedāvājumu
+    - 0x2370e3a3      lietotājs noklikšķināja uz hipersaites “Ne tagad”, kas izlaiž Office aktivizācijas piedāvājumu šai sesijai
+    - 0x2370e3a2      lietotājs noklikšķināja uz hipersaites “Nekad šo man nerādīt”, kas atspējo Office aktivizācijas piedāvājumu
 
 
-- **UseInAppRedemption** — norāda mums, vai mēs palīdzam lietotājiem programmā izpirkšanai vai nosūtīšanai uz tīmekļa vietni, lai izmantotu to ienesto PIN (iepriekš aizpildītu).
+- **UseInAppRedemption** — norāda mums, vai paturam lietotājus programmā piedāvājuma izmantošanai vai nosūtām tos uz tīmekļa vietni to ienesto PIN (iepriekš aizpildīts) izmantošanai.
 
-- **UseModernAFO** — norāda mums, vai izmantojat jauno vai veco AFO pieredzi.
+- **UseModernAFO** — norāda mums, vai izmantojam jauno vai veco Office aktivizācijas līdzekli.
 
 ### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4026,7 +4190,7 @@ Tiek apkopoti šādi lauki:
 
 - **ActiveView** — norāda lietotājam redzamā dialoglodziņa ID
 
-- **CurrentOOBEMode** — norāda pirmsinstalēšanas režīmu (OOBE režīmu, piemēram, AFO, OEM u.c.)
+- **CurrentOOBEMode** — norāda pirmsinstalēšanas režīmu (OOBE režīmu, piemēram, Office aktivizācija, OEM u.c.)
 
 - **NotInitializedBeforeWhileAdding** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties
 
@@ -10704,6 +10868,55 @@ Tiek apkopoti šādi lauki:
 - **SessionId** — sesijas identifikators
 
 
+### <a name="installedapprespondedcoreappleevent"></a>installedapp.respondedcoreappleevent
+
+Šis notikums norāda, ka Microsoft Auto Update (MAU) saņēma Apple notikuma atbildes kodu no reģistrētas programmas, lai izbeigtu programmas darbību un veiktu ar gaidošo programmas atjaunināšanu. Šis notikums pašlaik tiek izmantots, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā. 
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppID** — programmas, kas tiek atjaunināta, identifikators
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppleEventClass** — norāda notikuma, kas tiek nosūtīts/apstiprināts, tipu
+
+- **AppleEventID** — notikuma, kas tiek nosūtīts/apstiprināts, unikālais identifikators
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowToCheck** — kā pārbaudīt iestatījumu
+
+- **Payload** — satur atkārtoto mēģinājumu skaitu
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
+- **UpdateID** — atjauninājuma identifikators
+
+
 ### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Šis notikums norāda, ka Microsoft Auto Update (MAU) nosūta Apple notikumu uz reģistrētu programmu, lai izbeigtu programmas darbību, lai turpinātu gaidošo programmas atjaunināšanu. Šis notikums pašlaik tiek izmantots, lai palīdzētu izstrādāt uzlabojumus nākotnē, kas samazinātu lietotāju traucēšanu programmu atjaunināšanas laikā. 
@@ -15764,39 +15977,6 @@ Tiek apkopoti tālāk norādītie lauki.
 Tiek apkopoti šādi lauki:
 
 - **Data_EventId** – kods, kas norāda lietotāja atlasītu diagnostikas datu vākšanas preferenci.
-
-### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Produktu telemetriju, kas tiek izmantoti, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības. Izmanto, lai atvieglotu darījumu reģistrēšanu un abonēšanas nodrošināšanu turpmākai uzziņai un iekšējai saskaņošanai.
-
-Tiek apkopoti šādi lauki.
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz RFS nodrošināšanas atbilde.
-
-- **productId** — virkne — lietojumprogrammas veikala pieprasītā produkta ID
-
-- **status** — virkne — veiksme vai kļūme, norādot, vai pieprasījums ir izdevies vai nav izdevies
-
-
-### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
-
-Dati tiek apkopoti kā kritiski tehniskās telemetrijas dati, lai reģistrētu pirkšanas mēģinājuma rezultātus, ko lietotājs aktivizējis manuāli. Produktu telemetrija tiek izmantota, lai saistītu pirkumu darbību informāciju ar Microsoft tirdzniecības sistēmu un iespējotu saistīto abonementu priekšrocības.
-
-Tiek apkopoti šādi lauki.
-
-- **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-
-- **failureReason** — virkne — tiek pievienota tikai tad, ja statuss ir "kļūme". Norāda kļūdas reakciju, ko sniedz lietojumprogrammu veikala atbilde.
-
-- **productId** — virkne — tikai "MakePurchase", "PendingPurchase", tā produkta ID lietojumprogrammu veikalā, par kuru tiek iesniegts pieprasījums.
-
-- **productsCount** — Int — tikai "ProductsFetch" — veikalā atgriezto produktu skaits.
-
-- **requestType** — virkne — StoreKit pieprasījuma tips. Piemēram, "ProductsFetch", "PendingPurchase"
-
-- **status** — virkne — sekmīga izpilde vai kļūme, norādot pieprasījuma veiksmīgumu vai kļūmi
 
 ### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
 
