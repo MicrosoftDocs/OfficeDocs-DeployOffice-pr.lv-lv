@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181738"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51914952"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -43,6 +43,7 @@ Bing nodrošina tālāk minētos līdzekļus programmām Outlook darbam ar iOS u
 - **Atrašanās vietas ieteikumi:** pievienojot publisku vietu ar ielas nosaukumu kalendāra ierakstam, laukā Atrašanās vieta tiek noradīta pilna adrese.
 - **Interesanti kalendāri:** varat [abonēt](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) savu mīļāko sporta komandu vai TV pārraižu kalendārus.
 - **Ceļojuma laiks opcijā Nākošais:** nākamais plānotais pasākums tiks apkopots jūsu e-pasta iesūtnes augšdaļā ar nosaukumu [Nākošais](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Lai iegūtu aptuveno ceļojuma laiku programmā Outlook darbam ar Android, tad šim līdzeklim nepieciešamas Bing kartes.
+- **Laikapstākļu prognoze kalendārā.** Kalendāra ekrāna augšpusē tiks parādīti [laikapstākļu prognoze](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) jūsu pašreizējā atrašanās vietā.
 
  Šo Bing līdzekļu lietošanas licence jums ir piešķirta saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) noteikumiem, un uz šiem līdzekļiem attiecas [paziņojums par konfidencialitāti](https://privacy.microsoft.com/). Visi meklēšanas vaicājumi, ko sniedzat Microsoft 365 programmās lieluzņēmumiem organizācijā šo pakalpojumu izmantošanas laikā, tiek nosūtīti uz Microsoft Bing. Bing organizācija tos nesaista ar jums.
 
