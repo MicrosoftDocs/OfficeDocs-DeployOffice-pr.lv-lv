@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
-ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
+ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
+ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51891211"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308152"
 ---
 # <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
@@ -47,7 +47,7 @@ Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katr
 
 | **Pakalpojums**  | **Apraksts**  |
 | ------ | ---- |
-| [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti.   Tā ir nepieciešama, lai jums sniegtu iespēju pierakstīties sistēmā Office, aktivizēt jūsu Office licenci, piekļūtu jūsu mākonī saglabātajiem failiem, kā arī nodrošinātu konsekventu pieredzi vairākās Office sesijās un jūsu ierīcēs.    |
+| [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti. Tā ir nepieciešama, lai jūs varētu pierakstīties sistēmā Office, aktivizēt Office licenci, piekļūt saviem mākonī saglabātajiem failiem, kā arī nodrošina konsekventu pieredzi visās Office sesijās un ierīcēs.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to.  Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
 | [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
@@ -898,7 +898,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
-Šis notikums tiek reģistrēts, ja tiek atrasts derīgs atsvaidzināšanas marķieris kontu sarakstā, ko nodrošina TokenSharingManager.  Šis scenārijs attiecas uz vienoto pierakstīšanos (SSO).
+Šis notikums tiek reģistrēts, ja kontu sarakstā, ko nodrošina TokenSharingManager, tiek atrasts konts ar derīgu atsvaidzināšanas marķieri. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
  
 Tiek apkopoti tālāk norādītie lauki:
  
@@ -908,7 +908,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
 
-Šis notikums tiek reģistrēts, ja radās kļūda, mēģinot iegūt konta atsvaidzināšanas marķieri kontu sarakstā, ko nodrošina TokenSharingManager. Šis scenārijs attiecas uz vienoto pierakstīšanos (SSO)
+Šis notikums tiek reģistrēts, ja, kontu sarakstā, ko nodrošina TokenSharingManager, esošam kontam mēģinot iegūt atsvaidzināšanas marķieri, radās kļūda. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
  
 Tiek apkopoti tālāk norādītie lauki:
  
@@ -1168,7 +1168,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1266,7 +1266,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs instalē licences un reģistra iestatījumus. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs instalē licences un reģistra iestatījumus. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1320,7 +1320,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1342,7 +1342,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs instalē fontus. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs instalē fontus. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1418,7 +1418,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs veidot iestatījumus, lai atjauninājumi darbotos pareizi. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs veido iestatījumus pareizai atjauninājumu darbībai. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1472,7 +1472,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1548,7 +1548,7 @@ Tiek apkopoti šādi lauki:
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1570,7 +1570,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officeclicktorunscenarioinstalltasklastrun"></a>Office.ClickToRun.Scenario.InstallTaskLastrun
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs pabeidz instalēšanu, piesprauž saīsnes un veido gala reģistra iestatījumus. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs pabeidz instalēšanu, piesprauž saīsnes un veido galīgos reģistra iestatījumus. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1624,7 +1624,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1700,7 +1700,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1722,7 +1722,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskpublishrsod"></a>Office.ClickToRun.Scenario.InstallTaskPublishrsod
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs publicē virtuālo reģistru AppV virtualizācijas slānim. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs publicē virtuālo reģistru AppV virtualizācijas slānim. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1852,7 +1852,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1874,7 +1874,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs lejupielādē jaunus Office failus. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs lejupielādē jaunus Office failus. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -1928,7 +1928,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -1950,7 +1950,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioinstalltaskuninstallcentennial"></a>Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšējo Office versiju, kas instalēta no Microsoft Store. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšējo Office versiju, kas instalēta no veikala Microsoft Store. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2004,7 +2004,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2080,7 +2080,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2102,7 +2102,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenariorepairtaskfullrepair"></a>Office.ClickToRun.Scenario.RepairTaskFullrepair
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients lejupielādē visjaunāko Click-to-Run klienta versiju, lai sagatavotu datoru atinstalēšanai un atkārtotai instalēšanai. Tiek izmantots, lai mērītu Office labošanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients lejupielādē visjaunāko Click-to-Run klienta versiju, lai sagatavotu datoru atinstalēšanai un atkārtotai instalēšanai. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2156,7 +2156,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2178,7 +2178,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenariorepairtaskintegraterepair"></a>Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients mēģina labot dažus zināmus problemātiskos reģistra ierakstus. Tiek izmantots, lai mērītu Office labošanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients mēģina labot dažus zināmus problemātiskos reģistra ierakstus. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2232,7 +2232,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2254,7 +2254,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients noņem Office no ierīces, sagatavotos atkārtotai instalēšanai, veicot labošanu. Tiek izmantots, lai mērītu Office labošanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients noņem Office no ierīces, sagatavotos atkārtotai instalēšanai, veicot labošanu. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2308,7 +2308,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2384,7 +2384,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2460,7 +2460,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2482,7 +2482,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients izslēdz palaistās lietojumprogrammas, ja nepieciešams, un instalē jaunos failus, kas tika lejupielādēti. Tiek izmantots, lai mērītu Office atjaunināšanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients izslēdz palaistās programmas, ja nepieciešams, un instalē jaunos failus, kas tika lejupielādēti. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2546,7 +2546,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2708,7 +2708,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2796,7 +2796,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -2818,7 +2818,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veic tīrīšanu no atjaunināšanas un atjaunošanas lietojumprogrammām, kas iepriekš tika atvērtas. Tiek izmantots, lai mērītu Office atjaunināšanas sekmīgu vai kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients veic tīrīšanu pēc atjaunināšanas un atjauno programmas, kas iepriekš bija atvērtas. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -2872,7 +2872,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
   - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
@@ -3053,7 +3053,7 @@ Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectPar
 
 ### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
 
-Atskaites par darbībām, kas lasa atzīmēto ievadi no .exe faila iegultā paraksta.  Šī ir nepierādīta koncepcija, kuru iepriekšējā programmas setup.exe versija neimplementēja, un uz to mēs paļaujamies, lai pārnestu lietotāja produkta/valodas/bitu skaita izvēles no tīmekļa lapas uz iekšējo procesu programmā setup.exe.
+Ziņo par darbību, kas no .exe faila iegultā paraksta lasa ievadi ar pievienotām atzīmēm. Šī ir nepierādīta koncepcija, kura iepriekšējā programmas setup.exe versijā nebija ieviesta un uz kuru mēs paļaujamies, lai pārnestu lietotāja produkta/valodas/bitu skaita izvēli no tīmekļa lapas uz programmas setup.exe iekšējo procesu.
  
 - **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
@@ -3277,7 +3277,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
 
-Kritisko lietojumu telemetriju, kad lietotājam tiek rādīta Paywall vadīkla. Tiek izmantoti, lai saprastu lietojumprogrammas iegādes pieredzi lietotājam un optimizētu to pašu turpmākajām versijām.
+Kritiskā lietojuma telemetrija izmantošanai, kad lietotājam tiek parādīta Paywall vadīkla. Telemetrija tiek izmantota, lai izprastu lietotāju pieredzi, veicot pirkumus programmā, un lai to optimizētu nākamajās versijās.
 
 Tiek apkopoti šādi lauki:
 
@@ -3598,7 +3598,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
-Pēc licences iestatīšanas datorā mēs mēģinām aktivizēt licenci, izsaucot AVS pakalpojumu. Tādējādi tiek norādīts aktivizācijas izsaukuma rezultāts
+Pēc licences iestatīšanas datorā mēs mēģinām aktivizēt licenci, izsaucot AVS pakalpojumu. Šis ziņo par aktivizācijas izsaukuma rezultātu
 
 Tas ir kritiski svarīgi, lai noteiktu, cik lietotājiem rodas aktivizācijas problēmas. Lai konstatētu regresiju, izmantojam anomāliju noteikšanu. Tas ir ārkārtīgi svarīgi, jo mums ir ārēja atkarība no AVS, un šis signāls norāda, vai mūsu ārējie partneri ir darbspējīgi. Tas tiek izmantots arī diagnostikas mērķiem un sistēmas darbspējai, ja lietotājs ziņo par problēmu ar savu datoru
 
@@ -3644,7 +3644,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
  
-Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notika pirkuma programmā līdzekļa ielādes mēģinājums, taču notika kļūda, kuras rezultātā dialoglodziņš netiek parādīts. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notika līdzekļa pirkumu veikšanai programmā ielādes mēģinājums, taču radās kļūda, kuras dēļ dialogs netika parādīts. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju un nodrošinātu tās paredzēto darbību.  
  
 Tiek apkopoti tālāk norādītie lauki.
   
@@ -3652,7 +3652,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
  
-Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka fonā tiek ielādēts līdzeklis pirkumu veikšanai programmā. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notiek līdzekļa pirkumu veikšanai programmā ielāde fona režīmā. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju un nodrošinātu tās paredzēto darbību.  
  
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3660,7 +3660,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
  
-Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka lietotājam tiek parādīts līdzeklis pirkumu veikšanai programmā. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju.  
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notiek līdzekļa pirkumu veikšanai programmā rādīšana lietotājam. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju.  
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3685,7 +3685,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Tas tiek apkopots, kad tiek parādīts dialoglodziņš derīguma beigu datums lietotājam, kurš norāda, ka viņu licences derīguma termiņš ir beidzies. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
+Tas tiek apkopots, kad lietotājam rādām derīguma beigu dialogu, kurā norādīts, ka lietotāja licencei ir beidzies derīgums. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir labā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3718,6 +3718,29 @@ Tiek apkopoti tālāk norādītie lauki:
 - **EntitlementCount** — lietotājam piešķirto pilnvaru skaits
 
 
+### <a name="officelicensinggetnextuserlicense"></a>Office.Licensing.GetNextUserLicense
+
+Šis notikums tiek izraisīts, ienesot izvēlētās lietotāja Office pilnvaras licenci, kad notiek aktivizācijas pirmās palaišanas pieredze. Mēs izmantojam šos datus, lai pārraudzītu sistēmu un pakalpojumu darbspēju.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Activity_Success** — Būla vērtība: informē mūs, vai esam sekmīgi ienesuši tās ierīces licenci, kas jāaktivizē Office programmā.
+
+- **Data_AllowNULPerpetual** — Būla vērtība: norāda mums, vai ir ieslēgts testējamais variants, lai iespējotu vNext Perpetual.
+
+- **Data_AttemptNulReactivation** — Būla vērtība: norāda mums, vai šis ir atkārtotas aktivizēšanas scenārijs.
+
+- **Data_CurrentMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks).
+
+- **Data_HasError** — Būla vērtība: informē mūs, vai, mēģinot iegūt izvēlētās lietotāja pilnvaras licenci, radās kļūda.
+
+- **Data_IsSubscription** — Būla vērtība: informē mūs, vai atkārtotā aktivizēšana ir abonējamam Office produktam.
+
+- **Data_NewMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks). Vairākumā gadījumu vajadzētu būt 2.
+
+- **Data_SkuToSkuNeeded** —Būla vērtība: norāda mums, vai ir jāveic SKU uz SKU konvertēšana, jo atļautais Office SKU neatbilst instalētajam Office SKU.
+
+
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
 Katrā sesijā pārbaudām, vai ir pagājušas 72 stundas kopš pēdējās licences atjaunošanas, un mēģinām pagarināt pašreizējās licences derīguma termiņu. Šis notikums ziņo par izsaukuma, ko veicam, lai nodrošinātu, ka varam pagarināt licences derīguma termiņu un uzturēt lietotāja Office instalācijas funkcionalitāti, sekmīgu izpildi vai kļūmi. Tas ir kritiski svarīgi, lai diagnosticētu ar abonementu saistītas problēmas un pakalpojumu problēmas lietotājam, kā arī ir kritiski svarīgi, lai noteiktu regresiju jau aktivizēto abonementu lietotājiem.
@@ -3748,7 +3771,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
-Ja ierīce pāriet samazinātas funkcionalitātes režīmā, mēs izsūtām šo signālu, lai norādītu, ka iekārta nav darbspējīgā stāvoklī. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam trūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
+Ja šī ierīce pāriet samazinātas funkcionalitātes režīmā, mēs izsūtām šo signālu, lai norādītu, ka mašīna nav darbspējīgā stāvoklī. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir labā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā mašīnā.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3774,7 +3797,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Ja rodas problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licenču vedni un nosūtīsim šo signālu, lai norādītu vienu un to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
+Ja redzam problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licences vedni un izsūtām šo signālu, lai to norādītu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir labā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā mašīnā.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -3798,7 +3821,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
-Ja sistēmas Office darbība tiek beigta vai tā avarē licencēšanas kļūdas dēļ, mēs izsūtām šo signālu, lai norādītu to pašu. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā.
+Ja licencēšanas problēmas dēļ esam spiesti aizvērt Office vai izraisīt Office avāriju, mēs izsūtām šo signālu, lai to norādītu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir labā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā mašīnā.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -4228,7 +4251,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
-Ja kāda iemesla dēļ nevaram lietotāju licencēt, instalējam pagarinājuma atslēgu un izsūtām signālu, kas to paziņo. Tas ir kritiski svarīgs, lai noteiktu, vai lietotājs ir piemērotā stāvoklī un vai tam trūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā datorā
+Ja kāda iemesla pēc nevaram licencēt lietotāju, mēs instalējam pagarinājuma atslēgu un izsūtām šo signālu, lai par to paziņotu. Tas ir kritiski svarīgi, lai noteiktu, vai lietotājs ir labā stāvoklī un vai tam netrūkst funkcionalitātes, kas tiek izmantota sistēmas darbspējai un diagnostikas mērķiem, ja lietotājs ziņo par problēmu savā mašīnā
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -4246,7 +4269,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="skuproductpricenullevent"></a>SKU.PRODUCT.PRICE.NULL.EVENT
 
-Šis notikums tiek izmantots, lai uzskaitītu notikumus un izmērītu kļūdas ietekmi, kuras dēļ lietotāji šodien SKU izvēles ekrānā redz “Null” nevis cenu.  Šī kļūda tiks diagnosticēta, lai noteiktu tās labojumu. 
+Šis notikums tiek izmantots, lai tvertu notikumus un izmērītu tās blusas ietekmi, kuras dēļ lietotāji šodien SKU izvēles ekrānā redz “Null” nevis cenu. Notiks tālāka blusas diagnostika, lai noteiktu labojumu. 
 
 Tiek apkopoti šādi lauki:
 
@@ -4542,7 +4565,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="appregistryinfo"></a>appregistry.info
 
-Šis notikums norāda, ka programma ir palaista. Šis notikums tiek izmantots, lai uzskaitītu programmas, kurām MAU var kontrolēt atjauninājumus, pieejamo kopiju skaitu, kā arī to versiju un instalācijas atrašanās vietu (noklusējuma vai cita).
+Šis notikums norāda uz programmas palaišanu. Šo notikumu izmantojam, lai uzskaitītu programmas, kurām MAU var kontrolēt atjauninājumus, pieejamo kopiju skaitu, kā arī to versiju un instalācijas atrašanās vietu (noklusējuma vai cita).
 
 Tiek apkopoti šādi lauki:
 
@@ -4670,9 +4693,9 @@ Tiek apkopoti šādi lauki.
 
 ### <a name="cloningtaskbegin"></a>cloningtask.begin
 
-Šis notikums norāda uz klonēšanas uzdevuma sākšanu pirms programmas atjaunināšanas. Šis notikums tiek izmantots kopā ar notikumu cloningtask.status, lai noteiktu klonēšanas kļūmju skaitu, lai noteiktu, vai klonēšanas līdzeklis ir jāierobežo citos auditorijas kanālos. 
+Šis notikums norāda klonēšanas uzdevuma sākšanu pirms programmas atjaunināšanas. Šo notikumu izmantojam kopā ar notikumu cloningtask.status, lai noteiktu klonēšanas kļūmju apjomu, kas ļauj noteikt, vai klonēšanas līdzeklis ir jāierobežo citos auditorijas kanālos.
  
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -5127,7 +5150,7 @@ Tiek apkopoti šādi lauki:
     
 ### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
-Šis notikums norāda, ka tika veikta pārbaude, kam netika atrasti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+Šis notikums norāda, ka, veicot pārbaudi, vai nav atjauninājumu, neviens atjauninājums netika atrasts. Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt mūsu pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atkarībā no tā, kad lietotāji vēlas saņemt atjauninājumus.
 
 Tiek apkopoti šādi lauki:
 
@@ -5294,7 +5317,7 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesa rezultātā tika atrasti atjauninājumi.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -5333,9 +5356,9 @@ Tiek apkopoti šādi lauki.
     
 ### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
-Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, veikšanas procesā netika atrasti atjauninājumi, jo ierīcē esošās programmas ir atjauninātas.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, veikšanas procesā netika atrasti atjauninājumi, jo ierīcē esošās programmas ir atjauninātas. Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -5458,7 +5481,7 @@ Tiek apkopoti šādi lauki:
 
 Šis notikums norāda, ka, mēģinot lietot atjauninājumu, radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -5499,7 +5522,7 @@ Tiek apkopoti šādi lauki.
 
 Šis notikums norāda, ka lejupielādes procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki.
+Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
@@ -6932,7 +6955,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
 
-Šis notikums ziņo par kļūdu Microsoft Auto Update (MAU) konfigurācijā, kas var būt gan pielāgotā servera iestatījumu preferencēs vai Update Assistant galapunktu definīcijās instalētajos MAU komponentos. Mēs izmantojam šo notikumu, lai informētu IT administratorus par pareiziem manifesta servera galapunktiem.
+Šis notikums ziņo par kļūdu Microsoft Auto Update (MAU) konfigurācijā, kas var būt gan pielāgotā servera iestatījumu preferencēs vai atjaunināšanas palīga galapunktu definīcijās instalētajos MAU komponentos. Šo notikumu izmantojam, lai IT administratoriem ieteiktu iestatīt pareizus manifestu servera galapunktus.
  
 Tiek apkopoti šādi lauki:
 
@@ -7929,7 +7952,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
-Šis notikums norāda, ka atjauninājumu pieejamības pārbaude ir piespiedu. Šis notikums tiek izmantots, lai noteiktu skaitu piespiedu atjauninājumu pieejamības pārbaudēm, kas notiek ārpus normālā atjauninājumu pieejamības pārbaudes cikla.
+Šis notikums norāda piespiedu pārbaudi, vai nav atjauninājumu. Šo notikumu izmantoujam, lai noteiktu to piespiedu atjauninājumu pieejamības pārbaužu apjomu, kas notiek ārpus parastā atjauninājumu pieejamības pārbaudes cikla.
 
 Tiek apkopoti šādi lauki:
 
@@ -8009,7 +8032,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="fbainstallpending"></a>fba.installpending
 
-Šis notikums norāda, ka Microsoft Auto Update (MAU) nosūtīja paziņojumu par gaidošajiem atjauninājumiem. Šis notikums tika izmantots, lai noteiktu atjauninājumu, kas tiek uzsākti no paziņojumiem lietotājam, skaitu un lai paaugstinātu lietotāju ērtību, samazinot traucējumus lietotājam nākotnes laidienos. 
+Šis notikums norāda, ka Microsoft Auto Update (MAU) nosūtīja paziņojumu par gaidošiem atjauninājumiem. Šis notikums tiek izmantots, lai noteiktu to atjauninājumu apjomu, kas tiek uzsākti no paziņojumiem lietotājam, un lai uzlabotu lietotāju ērtības, samazinot lietotāja traucēšanu turpmākajos laidienos.
 
 Tiek apkopoti šādi lauki:
 
@@ -8255,7 +8278,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
-Šis notikums norāda, ka Microsoft Update Assistant iniciē klusos atjauninājumus. Šis notikums tiek izmantots, lai noteiktu atjauninājumu, kas tiek instalēti bez lietotāja dalības, skaitu, lai veicinātu paaugstinātu lietotāju ērtību.
+Šis notikums norāda, ka Microsoft Update Assistant uzsāk kluso atjaunināšanu. Šis notikums tiek izmantots, lai noteiktu to atjauninājumu apjomu, kas tiek instalēti bez lietotāja iejaukšanās, un palīdzētu uzlabot lietotāju ērtības.
 
 Tiek apkopoti šādi lauki:
 
@@ -10017,7 +10040,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
-Šis notikums norāda, ka atjaunināšanas režīms tika mainīts ar lietotāja interfeisa vadīklas palīdzību. Šis notikums tiek izmantots, lai noteiktu ierīču, kas pāriet no viena režīma citā, skaitu, un tiek izmantots, lai palīdzētu noteikt, kāpēc klienti atsakās no automātiskajiem atjauninājumiem.  
+Šis notikums norāda atjaunināšanas režīmu, kas tika mainīts no UI vadīklas. Šis notikums tiek izmantots, lai noteiktu to ierīču apjomu, kas pāriet no viena režīma citā, un lai palīdzētu noteikt, kāpēc klienti atsakās no automātiskajiem atjauninājumiem. 
 
 Tiek apkopoti šādi lauki:
 
@@ -11733,7 +11756,7 @@ Tiek apkopoti šādi lauki.
 
 ### <a name="lifecyclelaunch"></a>Lifecycle.launch
 
-Šis notikums norāda uz Microsoft AutoUpdate vai Microsoft Update palīga palaišanu. Šis notikums tiek arī izmantots, lai ziņotu par jebkādām palaišanas procesa laikā atklātajām problēmām, kā arī ziņošanai par izmantoto Microsoft Update palīga palaišanas metodi.
+Šis notikums norāda Microsoft AutoUpdate vai Microsoft Update Assistant startēšanu. Šis notikums tiek arī izmantots, lai ziņotu par jebkādām palaišanas procesa laikā atklātajām problēmām, kā arī ziņošanai par izmantoto Microsoft Update Assistant palaišanas metodi.
 
 *[Šis notikums aizstāj fba.launch un appdelegate.launch notikumus.]*
 
@@ -12038,7 +12061,7 @@ Tiek apkopoti šādi lauki:
     
 ### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
 
-Šis notikums norāda, ka atjauninājumi ir lejupielādēti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka tika lejupielādēti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
@@ -13918,7 +13941,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
 
-Šis notikums ziņo par kļūdu, norādot, ka nevar atrast no tīmekļa atbildes izgūtajam programmas ID atbilstošus manifesta failus. Šis notikums tiek izmantots, lai izpētītu ziņoto kļūdu.
+Šis notikums ziņo par kļūdu, norādot, ka nevar atrast no tīmekļa atbildes izgūtajam programmas ID atbilstošus manifesta failus. Šis notikums tiek izmantots, lai pētītu ziņoto kļūdu.
 
 Tiek apkopoti šādi lauki: 
 
@@ -13958,7 +13981,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
-Šis notikums ziņo par kļūdu, kas norāda, ka no tīmekļa atbildes izgūtais programmas ID nav paredzētajā formātā. Šis notikums tiek izmantots, lai izpētītu ziņoto kļūdu.
+Šis notikums ziņo par kļūdu, kas norāda, ka no tīmekļa atbildes izgūtais programmas ID nav paredzētajā formātā. Šis notikums tiek izmantots, lai pētītu ziņoto kļūdu.
 
 Tiek apkopoti šādi lauki:
 
@@ -15026,7 +15049,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="updatemanagernetwork"></a>updatemanager.network
 
-Šis notikums uzskaita tīkla pieejamību. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē tīkla pieejamību. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
@@ -15908,7 +15931,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
  
-Šis notikums tiek reģistrēts, ja lietotājam, veicot pirmās palaišanas darbības ierīcē, neizdevās sinhronizēt ātrās piezīmes.  Šis ir raksturīgs pirmās palaišanas scenārijam.
+Šis notikums tiek reģistrēts, ja lietotājam, veicot pirmās palaišanas darbības ierīcē, neizdevās sinhronizēt ātrās piezīmes. Tas attiecas uz pirmās palaišanas scenāriju.
  
 Tiek apkopoti tālāk norādītie lauki.
  
@@ -15924,7 +15947,7 @@ Pakalpojumu konfigurācija neapkopo nepieciešamos pakalpojumu datu notikumus.
 
 ### <a name="appdeeplink"></a>app.deep.link
 
-Šis notikums palīdz izsekot kalendāra sapulču palaišanu dažādos gala punktos. Šis notikums ļauj mums noteikt, vai sapulce tiek palaista no Skype darbam, un tad, kad sapulce tiek palaista no Teams, un, vai lietojumprogramma Teams ir instalēta.
+Šis notikums palīdz mums izsekot kalendāra sapulces palaišanas lietojumam dažādos galapunktos. Šis notikums ļauj mums noteikt, vai sapulce tiek palaista, izmantojot Skype darbam vai Teams, kā arī to, vai ir instalēta programma Teams.
 
 Tiek apkopoti šādi lauki: 
 
@@ -15933,6 +15956,10 @@ Tiek apkopoti šādi lauki:
 - **action_type** – veiktās darbības veids, piemēram, sapulces palaišana vai lietojumprogrammas instalēšana
 
 - **application** – lietojumprogramma, kas tika palaista ar dziļo saiti, piemēram, Teams vai Skype darbam
+
+- **context** — līdzeklis, uz kuru notika pārvietošanās programmā, piemēram, office_union — word, office_union — excel utt.
+
+- **source** — darbības izcelsme, piemēram, inicēja lietotājs, automātiski inicēja klients utt.
 
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
@@ -15953,7 +15980,7 @@ Tiek apkopoti šādi lauki.
 
 *[Šī notikuma iepriekšējais nosaukums bija Office.Android.DocsUI.Views.PaywallSessionData.]*
 
-Sesijas metadati, kad lietotājam tiek parādīts Paywall lietotāja interfeiss. Microsoft izmanto šo opciju, lai iegūtu lietotāja pieredzi un saprastu ierīces un operētājsistēmas versijas, ko lietotājs izmanto, lai palīdzētu pieņemt lēmumus par investīcijām, lai uzlabotu pieredzi šajos apgabalos.
+Sesijas metadati, kad lietotājam tiek rādīts Paywall UI. Microsoft tos izmanto, lai noskaidrotu lietotāja pieredzi un izprastu ierīces un operētājsistēmas versijas, ko lietotājs izmanto, kas palīdz pieņemt lēmumus par investīcijām, lai uzlabotu atbilstošo pieredzi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -16791,15 +16818,17 @@ Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzd
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
+  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppMajorVer —** būvējuma galvenās versijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppMajorVer** — ietekmētā procesa būvējuma papildversijas identifikators. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **AffectedProcessAppName —** ietekmētā procesa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  
+  - **AffectedProcessAppVersion** — ietekmētā procesa versijas identifikators.
 
   - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
@@ -16985,6 +17014,8 @@ Tiek apkopoti tālāk norādītie lauki.
   - **BucketId** — Watson avārijas intervāla identifikators
  
   - **CabGuid** — Watson .cab faila unikālais identifikators (GUID).
+
+  - **CallStack** — Microsoft iekšējā izsaukuma steks, kas izraisa avāriju.
 
   - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
@@ -17433,7 +17464,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officetelemetryrulesenginediskthrottled"></a>Office.Telemetry.RulesEngineDiskThrottled
 
-Ierobežošanas DQ metrika. Nepieciešama, lai nodrošinātu uzticamību visiem pārējiem datiem.
+DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem pārējiem datiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -17447,13 +17478,13 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officetelemetryrulesenginemediumcostthrottled"></a>Office.Telemetry.RulesEngineMediumCostThrottled
 
-Ierobežošanas DQ metrika. Nepieciešama, lai nodrošinātu uzticamību visiem pārējiem datiem.
+DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem pārējiem datiem.
 
 Šis notikums neapkopo laukus.
 
 ### <a name="officetelemetryrulesenginespikethrottled"></a>Office.Telemetry.RulesEngineSpikeThrottled
 
-Ierobežošanas DQ metrika. Nepieciešama, lai nodrošinātu uzticamību visiem pārējiem datiem.
+DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem pārējiem datiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
@@ -17475,7 +17506,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 ### <a name="officetelemetryrulesenginethrottled"></a>Office.Telemetry.RulesEngineThrottled
 
-Ierobežošanas DQ metrika. Nepieciešama, lai nodrošinātu uzticamību visiem pārējiem datiem.
+DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem pārējiem datiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
