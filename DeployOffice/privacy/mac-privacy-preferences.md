@@ -14,16 +14,19 @@ ms.custom:
 - Ent_Office_Mac
 description: Nodrošina Office administratoriem informāciju par to, kā pārvaldīt konfidencialitātes kontroles līdzekļus Office darbam ar Mac.
 hideEdit: true
-ms.openlocfilehash: d23d1288adf823888c900b44acd5bc905037cd94
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: b7beda7409cff00d54f36851eb21e4d66a8cacce
+ms.sourcegitcommit: 9b5f18c543c286c95e546e22fc8edb60ef541030
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992880"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52578379"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>Preferenču izmantošana Office darbam ar Mac konfidencialitātes kontroles līdzekļu pārvaldībai
 
-Sākot ar Office versiju 16.28 darbam ar Mac, ir jauni politikas iestatījumi, kuri nodrošina iespēju kontrolēt ar šo saistītus iestatījumus:
+> [!NOTE]
+> Sarakstu ar Office produktiem, uz kuriem attiecas šī konfidencialitātes informācija, skatiet rakstā [Konfidencialitātes kontroles līdzekļi, kas pieejami Office produktiem](products-versions-privacy-controls.md).
+
+Sākot ar Office versiju 16.28 darbam ar Mac, ir jauni politikas iestatījumi, kuri nodrošina iespēju kontrolēt ar šo saistītus iestatījumus:
 
 - ***Diagnostikas dati***, kas tiek apkopoti un nosūtīti korporācijai Microsoft par izmantoto Office klienta programmatūru.
 
@@ -54,21 +57,20 @@ Papildinformāciju par diagnostikas datiem un saistītajiem līdzekļiem skatiet
 
 ## <a name="preference-setting-for-diagnostic-data"></a>Diagnostikas datu preferenču iestatījums
 
-Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
+Diagnostikas dati tiek izmantoti, lai uzturētu Office drošu un atjauninātu, noteiktu, diagnosticētu un novērstu problēmas, kā arī uzlabotu produktu. Papildinformāciju skatiet rakstā [Diagnostikas dati, kas no Microsoft 365 programmām lieluzņēmumiem tiek nosūtīti Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.office` |
 |**Taustiņš**  | `DiagnosticDataTypePreference`  |
 |**Datu tips**  | Virkne |
-|**Iespējamās vērtības**  | `BasicDiagnosticData` *(tiek iestatīts līmenis, kas nepieciešams)* <br/> `FullDiagnosticData` *(tiek iestatīts līmenis kā neobligāts)* <br/> `ZeroDiagnosticData` *(līmenis netiek iestatīts)* |
+|**Iespējamās vērtības**  | `BasicDiagnosticData` *(šī vērtība iestata līmeni, kas nepieciešams)* <br/> `FullDiagnosticData` *(šī vērtība iestata līmeni, kas ir neobligāts)* <br/> `ZeroDiagnosticData` *(šī vērtība iestata līmeni, kas ir neviens)* |
 |**Pieejamība** |16.28 un jaunākas versijas |
 
-Sākot ar jaunām versijas 16.30 instalācijām: ja jūs neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti tikai obligātie diagnostikas dati, ja Office 365 (vai Microsoft 365) abonementa lietotāji tiek pierakstīti ar darba vai mācību kontu vai ja lietotāji izmanto Office 2019 darbam ar Mac lielapjoma licencēšanas versiju. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
+Ja jūs neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti gan obligātie, gan neobligātie diagnostikas dati, ja Office 365 (vai Microsoft 365) abonementa lietotāji tiek pierakstīti ar darba vai mācību kontu vai ja lietotāji izmanto Office 2019 darbam ar Mac lielapjoma licencēšanas versiju. Tāpat šie lietotāji nevar mainīt diagnostikas datu līmeni neatkarīgi no tā, kā iestatāt šo preferenci.
 
 > [!NOTE]
-> - Ja instalējat versiju 16.28 vai 16.29 un neiestatāt šo preferenci, korporācijai Microsoft tiek sūtīti neobligātie un obligātie diagnostikas dati. Ja pēc tam jaunināt uz versiju 16.30 vai jaunāku, neobligātie un obligātie diagnostikas dati joprojām tiek sūtīti korporācijai Microsoft, ja vien neizmantojat šo preferenci, lai iestatītu citu vērtību.
-> - Ja iestatāt šo preferenci, tas attiecas arī uz Teams darbam ar Mac versiju 1.00.217856 un jaunākām versijām, kā arī uz Skype darbam Mac datoriem versiju 16.28 un jaunākām versijām.
+> Esam atjauninājuši iepriekšējo rindkopu, lai precizētu, ka neobligāti diagnostikas dati tiek nosūtīti arī Microsoft, ja neietatat šo preferenci.
 
 Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft 365) abonementu, tiek sūtīti tikai obligātie diagnostikas dati, izņemot gadījumus, kad lietotājs izvēlas sūtīt arī neobligātos diagnostikas datus, atverot **Preferences** > **Konfidencialitāte**.
 
@@ -76,7 +78,7 @@ Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft
 
 Saistīti līdzekļi, kas analizē jūsu saturu ir līdzekļi, kas izmanto jūsu Office saturu, lai sniegtu noformējuma ieteikumus, rediģēšanas ieteikumus, datu ieskatus un līdzīgus līdzekļus. Piemēram, PowerPoint noformētājs vai redaktors programmā Word. Saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.office` |
 |**Taustiņš**  | `OfficeExperiencesAnalyzingContentPreference`  |
@@ -94,7 +96,7 @@ Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft
 
 Saistīti līdzekļi, kas lejupielādē tiešsaistes saturu, ir līdzekļi, kas jums ļauj meklēt un lejupielādēt tiešsaistes saturu, tostarp veidnes, attēlus, 3D modeļus, video un atsauces materiālus, lai uzlabotu jūsu dokumentus. Piemēram, Office veidnes vai PowerPoint ātrais sākums. Pilnīgāku saistīto līdzekļu sarakstu skatiet rakstā [Office saistītie līdzekļi](connected-experiences.md).
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.office` |
 |**Taustiņš**  | `OfficeExperiencesDownloadingContentPreference`  |
@@ -112,7 +114,7 @@ Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft
 
 Papildus iepriekš minētajiem saistītajiem līdzekļiem, pastāv daži papildu saistītie līdzekļi, kurus varat atļaut lietotājiem izmantot, lietojot organizācijas kontu, kas dažkārt tiek dēvēts par darba vai mācību kontu. Piemēram, CV palīga LinkedIn līdzekļi programmā Word vai laikapstākļu josla programmā Outlook, kas izmanto MSN laika ziņas. Citus piemērus skatiet rakstā [Pārskats par Office neobligātajiem saistītajiem līdzekļiem](optional-connected-experiences.md).
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.office` |
 |**Taustiņš**  | `OptionalConnectedExperiencesPreference`  |
@@ -128,7 +130,7 @@ Citiem lietotājiem, piemēram, mājas lietotājiem ar Office 365 (vai Microsoft
 
 Šo preferenci varat izmantot, lai kontrolētu, vai lietotājiem ir pieejamas visvairāk saistītie līdzekļi.
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.office` |
 |**Taustiņš**  | `ConnectedOfficeExperiencesPreference`  |
@@ -157,7 +159,7 @@ Microsoft AutoUpdate (MAU) pirmo reizi tiek palaista versija 4.12 vai jaunāka v
 
 Ja nevēlaties, lai lietotāji redzētu šo **pieprasīto datu paziņojumu** dialoglodziņu Microsoft AutoUpdate, varat iestatīt tālāk norādīto preferenci. Neatkarīgi no tā, kuru vērtību iestatāt, šis dialoglodziņš netiks rādīts jūsu lietotājiem.
 
-|||
+|Kategorija|Detalizēta informācija|
 |:-----|:-----|
 |**Preferenču domēns**  | `com.microsoft.autoupdate2` |
 |**Taustiņš**  | `AcknowledgedDataCollectionPolicy`  |
@@ -168,7 +170,7 @@ Ja nevēlaties, lai lietotāji redzētu šo **pieprasīto datu paziņojumu** dia
 Ja ļaujat lietotājiem redzēt šo dialoglodziņu, pēc tam, kad lietotājs izvēlas **Labi**, tiek ierakstīta `AcknowledgedDataCollectionPolicy` vērtība `RequiredDataOnly`, un dialoglodziņš lietotājam netiks rādīts vēlreiz.
 
 
-## <a name="related-topics"></a>Saistītās tēmas
+## <a name="related-articles"></a>Saistītie raksti
 
 - [Konfigurācijas profila atsauce (Apple Developer dokumentācija)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [Office darbam ar Mac preferenču izvietošana](../mac/deploy-preferences-for-office-for-mac.md)
