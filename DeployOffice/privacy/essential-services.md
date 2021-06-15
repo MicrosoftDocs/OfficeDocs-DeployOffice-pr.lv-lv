@@ -1,5 +1,5 @@
 ---
-title: Office būtiskie pakalpojumi
+title: Office būtiskie pakalpojumi
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,14 +13,14 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par būtiskajiem pakalpojumiem sistēmā Office, piemēram, Click-to-Run un licencēšanu, kā arī nodrošina notikumu un datu lauku sarakstu šiem būtiskajiem pakalpojumiem.
 hideEdit: true
-ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
-ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
+ms.openlocfilehash: 6dede4fdc57074aa5a9daaf28a20a736c813d626
+ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308152"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907361"
 ---
-# <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
+# <a name="essential-services-for-office"></a>Office būtiskie pakalpojumi
 
 > [!NOTE]
 > Office produktu, uz kuriem attiecas šī konfidencialitātes informācija, saraksts ir pieejams [Konfidencialitātes kontroles līdzekļi Office produktiem](products-versions-privacy-controls.md).
@@ -41,20 +41,20 @@ Ja esat organizācijas administrators, iespējams, jūs interesēs arī šie rak
 - [Politikas iestatījumu izmantošana Office konfidencialitātes kontroles līdzekļu pārvaldībai Android ierīcēs](android-privacy-controls.md)
 - [Politikas iestatījumu izmantošana konfidencialitātes kontroles līdzekļus Office programmās tīmeklim](office-web-privacy-controls.md)
 
-## <a name="list-of-essential-services-for-office"></a>Office būtisko pakalpojumu saraksts 
+## <a name="list-of-essential-services-for-office"></a>Office būtisko pakalpojumu saraksts 
 
 Tālāk esošajā tabulā ir Office būtisko pakalpojumu saraksts, kā arī katra pakalpojuma apraksts.
 
 | **Pakalpojums**  | **Apraksts**  |
 | ------ | ---- |
 | [Autentifikācija](#authentication-events) | Autentifikācija ir vairāku platformu pakalpojums, kas pārbauda jūsu Office lietotāja identitāti. Tā ir nepieciešama, lai jūs varētu pierakstīties sistēmā Office, aktivizēt Office licenci, piekļūt saviem mākonī saglabātajiem failiem, kā arī nodrošina konsekventu pieredzi visās Office sesijās un ierīcēs.    |
-| [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to.  Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
+| [Click-to-Run](#click-to-run-events) | Click-to-Run ir instalēšanas tehnoloģija, kas tiek izmantota, lai instalētu un atjauninātu sistēmu Office operētājsistēmā Windows. Tā meklē jaunas Office versijas un, kad jauna versija ir pieejama, lejupielādē un instalē to.  Click-to-Run noteiks Office atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.     |
 | [Uzlabotās konfigurācijas pakalpojums (ECS)](#enhanced-configuration-service-ecs-events) | ECS nodrošina korporācijai Microsoft iespēju atkārtoti konfigurēt Office instalācijas tā, lai jums nebūtu atkārtoti jāizvieto Office. Tā tiek izmantota, lai kontrolētu pakāpenisko līdzekļu vai atjauninājumu ieviešanu, kamēr ieviešanas ietekme tiek pārraudzīta no diagnostikas datiem, kas tiek apkopoti. Tā arī tiek izmantota, lai mazinātu drošības vai veiktspējas problēmas ar līdzekli vai atjauninājumu. Turklāt ECS atbalsta konfigurācijas izmaiņas, kas saistītas ar diagnostikas datiem, lai nodrošinātu, ka tiek apkopoti atbilstošie notikumi. |
 | [Licencēšana](#licensing-events)     | Licencēšana ir mākoņpakalpojums, kas atbalsta jūsu Office aktivizāciju jaunām instalācijām, kā arī uztur licenci jūsu ierīcēs pēc Office aktivizēšanas. Tā reģistrē katru jūsu ierīci un aktivizē Office, pārbauda jūsu Office abonementa statusu un pārvalda jūsu produktu atslēgas.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) ir tehnoloģija, kas tiek lietota, lai atjauninātu Microsoft programmas, piemēram, Office, kuras tiek veidotas MacOS operētājsistēmām. MAU noteiks programmu atjauninājumu (tostarp drošības atjauninājumu) nepieciešamību, veiks to lejupielādi un instalēšanu.|
-|[OneNote sinhronizācija](#onenote-sync-events)|Programma OneNote darbam ar Mac atbalsta tikai tādas piezīmju grāmatiņas, kas tiek glabātas internetā — OneDrive krātuvē vai SharePoint Online. Programma OneNote darbam ar Mac pastāvīgi sinhronizē visas lietotāja piezīmes ar OneDrive krātuvi vai SharePoint Online. Tādējādi lietotāji var atvērt, skatīt un rediģēt savas piezīmju grāmatiņas visās savās ierīcēs, un viņu piezīmju grāmatiņas vienmēr ir atjauninātas.
+|[OneNote sinhronizācija](#onenote-sync-events)|Programma OneNote darbam ar Mac atbalsta tikai tādas piezīmju grāmatiņas, kas tiek glabātas internetā — OneDrive krātuvē vai SharePoint Online. Programma OneNote darbam ar Mac pastāvīgi sinhronizē visas lietotāja piezīmes ar OneDrive krātuvi vai SharePoint Online. Tādējādi lietotāji var atvērt, skatīt un rediģēt savas piezīmju grāmatiņas visās savās ierīcēs, un viņu piezīmju grāmatiņas vienmēr ir atjauninātas.
  [Pakalpojumu konfigurācija](#services-configuration-events)  | Pakalpojumu konfigurācija nodrošina iespēju veikt atjauninājumus Office konfigurācijas iestatījumos, lai iespējotu vai atspējotu klientu līdzekļus. Tā tiek izsaukta ikreiz, kad Office lietojumprogramma tiek startēta, un nodrošina detalizētu informāciju par citām Office konfigurācijām un pakalpojumiem. Pakalpojumu konfigurācija kontrolē arī to, kuri pakalpojumi ir paredzēti kā būtiskie pakalpojumi.  |
-| [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Atbild par atsevišķu obligāto Office pakalpojumu datu apkopošanu.  |
+| [Telemetrijas dati ](#telemetry-events)  | Telemetrijas datu pakalpojums tiek izmantots, lai apkopotu diagnostikas datus no Office lietojumprogrammām. Tas nodrošina Office ģenerēto diagnostikas datu apkopošanu — gan obligāto, gan papildu diagnostikas datu. Atbild par atsevišķu obligāto Office pakalpojumu datu apkopošanu.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Office būtisko pakalpojumu notikumu un datu lauki
 
@@ -91,27 +91,27 @@ Uz veidlapām balstītās autentifikācijas (FBA) pierakstīšanās uzvednes tie
 
 Tiek apkopoti šādi lauki:
 
-  - **AuthScheme** — izmantotā autentifikācijas shēma
+  - **AuthScheme** — izmantotā autentifikācijas shēma
 
-  - **DocumentUrlHash** — šifrēta URL pieprasīšana
+  - **DocumentUrlHash** — šifrēta URL pieprasīšana
 
-  - **EndTag** — tags, kur FBA veidlapa tiek aizpildīta
+  - **EndTag** — tags, kur FBA veidlapa tiek aizpildīta
 
-  - **Flags** — novecojis
+  - **Flags** — novecojis
 
-  - **FlowTag** — tags, kur FBA veidlapa tiek startēta
+  - **FlowTag** — tags, kur FBA veidlapa tiek startēta
 
-  - **LastError** — atgrieztais kļūdas kods
+  - **LastError** — atgrieztais kļūdas kods
 
-  - **PromptEndTime** — laiks, kad uzvedne tika beigta
+  - **PromptEndTime** — laiks, kad uzvedne tika beigta
 
-  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
+  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
 
-  - **Result** — vai autentifikācija izdevās
+  - **Result** — vai autentifikācija izdevās
 
-  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
+  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
 
-  - **Timeout** — laiks, kad uzvednei iestājās taimauts
+  - **Timeout** — laiks, kad uzvednei iestājās taimauts
 
 ### <a name="officeidentitysignoutevent"></a>Office.Identity.SignOutEvent
 
@@ -121,25 +121,25 @@ Zinot, ka lietotājs ir izrakstījies, kļūst iespējams klasificēt citus noti
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **FlowEndTime** — laiks, kad izrakstīšanās darbība beidzās
+  - **FlowEndTime** — laiks, kad izrakstīšanās darbība beidzās
 
-  - **FlowStartTime** — laiks, kad izrakstīšanās darbība sākās
+  - **FlowStartTime** — laiks, kad izrakstīšanās darbība sākās
 
-  - **IdentityErrorState** — jebkāds identitātes kļūdas stāvoklis izrakstīšanās laikā
+  - **IdentityErrorState** — jebkāds identitātes kļūdas stāvoklis izrakstīšanās laikā
 
-  - **IdentityHashedUniqueId** — šifrētais identitātes ID, kam tiek veikta izrakstīšanās
+  - **IdentityHashedUniqueId** — šifrētais identitātes ID, kam tiek veikta izrakstīšanās
 
-  - **IdentityProviderType** — tās identitātes nodrošinātājs, kurai tiek veikta izrakstīšanās
+  - **IdentityProviderType** — tās identitātes nodrošinātājs, kurai tiek veikta izrakstīšanās
 
-  - **IdentityUniqueID** — identitātes ID, kam tiek veikta izrakstīšanās
+  - **IdentityUniqueID** — identitātes ID, kam tiek veikta izrakstīšanās
 
-  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
+  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
 
-  - **SignOutUserAction** — norāda, ka lietotājs sāk izrakstīšanās darbību
+  - **SignOutUserAction** — norāda, ka lietotājs sāk izrakstīšanās darbību
 
 ### <a name="officeidentitysspipromptwin32"></a>Office.Identity.SspiPromptWin32
 
-Tiek apkopots, kad Office rāda lietotājam Windows SSPI pierakstīšanās uzvedni. Kopā ar kluso pilnvaru iegūšanu autentifikācijas uzvednes nosaka, vai lietotājs ir bojātā autentifikācijas stāvoklī, kas izraisa bezsaistes klienta stāvokli. Bojāta autentifikācija var traucēt licences iegūšanu, kā arī izraisīt pilnībā nelietojamu klientu.
+Tiek apkopots, kad Office rāda lietotājam Windows SSPI pierakstīšanās uzvedni. Kopā ar kluso pilnvaru iegūšanu autentifikācijas uzvednes nosaka, vai lietotājs ir bojātā autentifikācijas stāvoklī, kas izraisa bezsaistes klienta stāvokli. Bojāta autentifikācija var traucēt licences iegūšanu, kā arī izraisīt pilnībā nelietojamu klientu.
 
 Windows SSPI uzvednes tiek izmantotas autentifikācijai ar Exchange (pasta sinhronizēšanai), ja lietotāja Exchange resurss nav iestatīts daudzfaktoru autentifikācijai.
 
@@ -155,45 +155,45 @@ Windows SSPI uzvednes tiek izmantotas autentifikācijai ar Exchange (pasta sinhr
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AllowSavedCreds** — vai jaunie akreditācijas dati ir pastāvīgi
+  - **AllowSavedCreds** — vai jaunie akreditācijas dati ir pastāvīgi
 
-  - **AuthScheme** — izmantotā autentifikācijas shēma
+  - **AuthScheme** — izmantotā autentifikācijas shēma
 
-  - **CredsSaved** — vai jaunie akreditācijas dati ir saglabāti
+  - **CredsSaved** — vai jaunie akreditācijas dati ir saglabāti
 
-  - **DocumentUrlHash** — šifrētā URL pieprasīšana
+  - **DocumentUrlHash** — šifrētā URL pieprasīšana
 
-  - **EndTag** — tags, kur uzvedne beidzās
+  - **EndTag** — tags, kur uzvedne beidzās
 
-  - **NewIdentity**\_ErrorState — vai jaunā identitāte ir derīga
+  - **NewIdentity**\_ErrorState — vai jaunā identitāte ir derīga
 
-  - **NewIdentity\_HashedUniqueId** — šifrētais jaunais identitātes ID pēc uzvednes pabeigšanas
+  - **NewIdentity\_HashedUniqueId** — šifrētais jaunais identitātes ID pēc uzvednes pabeigšanas
 
-  - **NewIdentity\_ProviderType** — jaunais identitātes nodrošinātājs pēc uzvednes pabeigšanas
+  - **NewIdentity\_ProviderType** — jaunais identitātes nodrošinātājs pēc uzvednes pabeigšanas
 
-  - **NewIdentity\_UniqueID** — jaunais identitātes ID pēc uzvednes pabeigšanas
+  - **NewIdentity\_UniqueID** — jaunais identitātes ID pēc uzvednes pabeigšanas
 
-  - **OutStatus** — vai uzvednes izvade ir derīga
+  - **OutStatus** — vai uzvednes izvade ir derīga
 
-  - **PromptEndTime** — laiks, kad uzvedne tika beigta
+  - **PromptEndTime** — laiks, kad uzvedne tika beigta
 
-  - **PromptFailedTag** — tags, kas norāda SSPI uzvednes kļūmi
+  - **PromptFailedTag** — tags, kas norāda SSPI uzvednes kļūmi
 
-  - **PromptFlow** — tags, kas izsauca SSPI uzvedni
+  - **PromptFlow** — tags, kas izsauca SSPI uzvedni
 
-  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
+  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
 
-  - **Proxy** — vai tiek izmantots starpniekserveris
+  - **Proxy** — vai tiek izmantots starpniekserveris
 
-  - **ServerHash** — šifrētā servera adrese
+  - **ServerHash** — šifrētā servera adrese
 
-  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
+  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
 
-  - **Timeout** — laiks, kad uzvednei iestājas taimauts
+  - **Timeout** — laiks, kad uzvednei iestājas taimauts
 
-  - **UiMessage** — UI ziņojums uzvednē
+  - **UiMessage** — UI ziņojums uzvednē
 
-  - **UserNameHash** — šifrētais lietotājvārds
+  - **UserNameHash** — šifrētais lietotājvārds
 
 ### <a name="officeidentitywin32prompt"></a>Office.Identity.Win32Prompt
 
@@ -211,43 +211,43 @@ Tiek apkopots, kad Office rāda lietotājam daudzfaktoru autentifikācijas piera
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AdalWAMUsed** — tags, kas norāda rezultātu, ja tiek izmantots ADAL-atop-WAM
+  - **AdalWAMUsed** — tags, kas norāda rezultātu, ja tiek izmantots ADAL-atop-WAM
 
-  - **CallTag** — tags, kas norāda pierakstīšanās UI izsaucēju
+  - **CallTag** — tags, kas norāda pierakstīšanās UI izsaucēju
 
-  - **Context** — uzvednes pierakstīšanās konteksts
+  - **Context** — uzvednes pierakstīšanās konteksts
 
-  - **EndTagIdentityProviderRequested** — tags, kur tiek pieprasīts identitātes nodrošinātājs
+  - **EndTagIdentityProviderRequested** — tags, kur tiek pieprasīts identitātes nodrošinātājs
 
-  - **HrdShownTag** — tags, kur tiek rādīts HRD pierakstīšanās dialogs
+  - **HrdShownTag** — tags, kur tiek rādīts HRD pierakstīšanās dialogs
 
-  - **IdentityProviderResulted** — identitātes nodrošinātāja tips, ko tas pieprasa
+  - **IdentityProviderResulted** — identitātes nodrošinātāja tips, ko tas pieprasa
 
-  - **IdPFlowTag** — tags, kas norāda identitātes pieprasījuma rezultātu
+  - **IdPFlowTag** — tags, kas norāda identitātes pieprasījuma rezultātu
 
-  - **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās
+  - **LastLoginDelta** — laika delta no pēdējās sekmīgās pieteikšanās
 
-  - **NewIdentity\_ErrorState** — vai identitāte ir derīga pēc uzvednes
+  - **NewIdentity\_ErrorState** — vai identitāte ir derīga pēc uzvednes
 
-  - **NewIdentity\_ProviderType** — jaunā identitātes nodrošinātāja tips pēc uzvednes
+  - **NewIdentity\_ProviderType** — jaunā identitātes nodrošinātāja tips pēc uzvednes
 
-  - **NewIdentity\_UniqueID** — jaunais identitātes ID, kas tiek atgriezts pēc uzvednes
+  - **NewIdentity\_UniqueID** — jaunais identitātes ID, kas tiek atgriezts pēc uzvednes
 
-  - **PromptCorrelation** — uzvednes korelācijas ID diagnostikas mērķim
+  - **PromptCorrelation** — uzvednes korelācijas ID diagnostikas mērķim
 
-  - **PromptEndTime** — laiks, kad uzvedne tika beigta
+  - **PromptEndTime** — laiks, kad uzvedne tika beigta
 
-  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
+  - **PromptStartTime** — laiks, kad uzvedne tiek sākta
 
-  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
+  - **SessionEndTime** — laiks, kad notikuma sesija beidzās
 
-  - **ShowUIResult** — rezultāta kods, kas atgriezts no uzvednes UI
+  - **ShowUIResult** — rezultāta kods, kas atgriezts no uzvednes UI
 
-  - **StartTag** — tags, kur Win32 uzvedne tika sākta
+  - **StartTag** — tags, kur Win32 uzvedne tika sākta
 
-  - **Timeout** — laiks, kad uzvednei iestājas taimauts
+  - **Timeout** — laiks, kad uzvednei iestājas taimauts
 
-  - **WasIdentitySignedOut** — vai lietotājs ir izrakstījies
+  - **WasIdentitySignedOut** — vai lietotājs ir izrakstījies
 
 ### <a name="officematsactionofficewin32-officematsactionofficewinrt"></a>Office.MATS.actionofficewin32, Office.MATS.actionofficewinrt
 
@@ -265,33 +265,33 @@ Microsoft autentifikācijas telemetrijas sistēma (MATS) tiek apkopota, kad Offi
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Actiontype** — kura autentifikācijas bibliotēka tiek izmantota
+  - **Actiontype** — kura autentifikācijas bibliotēka tiek izmantota
 
-  - **Appaudience** — vai lietojumprogrammas būvējums ir paredzēts iekšējai vai ārējai lietošanai
+  - **Appaudience** — vai lietojumprogrammas būvējums ir paredzēts iekšējai vai ārējai lietošanai
 
-  - **Appforcedprompt** — vai lietojumprogramma ignorēja kešatmiņu un nodrošināja uzvednes rādīšanu piespiedu kārtā
+  - **Appforcedprompt** — vai lietojumprogramma ignorēja kešatmiņu un nodrošināja uzvednes rādīšanu piespiedu kārtā
 
-  - **Appname** — tās lietojumprogrammas nosaukums, kas veic autentifikāciju
+  - **Appname** — tās lietojumprogrammas nosaukums, kas veic autentifikāciju
 
-  - **Appver** — tās lietojumprogrammas versija, kas veic autentifikāciju
+  - **Appver** — tās lietojumprogrammas versija, kas veic autentifikāciju
 
-  - **Askedforcreds** — vai lietojumprogramma pieprasīja lietotājam ievadīt akreditācijas datus šai darbībai
+  - **Askedforcreds** — vai lietojumprogramma pieprasīja lietotājam ievadīt akreditācijas datus šai darbībai
 
-  - **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
+  - **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
 
-  - **Blockingprompt** — vai lietojumprogramma parādīja uzvedni, kur bija nepieciešama lietotāja mijiedarbība
+  - **Blockingprompt** — vai lietojumprogramma parādīja uzvedni, kur bija nepieciešama lietotāja mijiedarbība
 
-  - **Correlationid** — GUID, kas tiek izmantots savienošanai ar pakalpojumu datiem
+  - **Correlationid** — GUID, kas tiek izmantots savienošanai ar pakalpojumu datiem
 
-  - **Count** — notikumu skaits apkopojuma gadījumos
+  - **Count** — notikumu skaits apkopojuma gadījumos
 
-  - **Data\_accounttype** — patērētāja vai organizācijas konts
+  - **Data\_accounttype** — patērētāja vai organizācijas konts
 
-  - **Devicenetworkstate** — vai lietotājs bija tiešsaistē
+  - **Devicenetworkstate** — vai lietotājs bija tiešsaistē
 
-  - **Deviceprofiletelemetryid** — anonīmais ierīces ID, kas tika izmantots, lai mērītu ierīces pieredzi
+  - **Deviceprofiletelemetryid** — anonīmais ierīces ID, kas tika izmantots, lai mērītu ierīces pieredzi
 
-  - **Duration** — cik ilga bija autentifikācija
+  - **Duration** — cik ilga bija autentifikācija
 
   - **Duration_Max** — ja šis signāls ir apkopots, tad tas ir jebkura apkopotā notikuma maksimālais ilgums.
 
@@ -299,147 +299,147 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **Duration_Sum** — ja šis signāls tiek apkopots, tad tas ir visu apkopoto notikumu ilgumu summa.
 
-  - **Endtime** — kad autentifikācijas notikums beidzās
+  - **Endtime** — kad autentifikācijas notikums beidzās
 
-  - **Error** — kļūdas kods, ja autentifikācija neizdevās
+  - **Error** — kļūdas kods, ja autentifikācija neizdevās
 
-  - **Errordescription** — īss kļūdas apraksts
+  - **Errordescription** — īss kļūdas apraksts
 
-  - **Errorsource** — vai kļūda radās pakalpojumā, autentifikācijas bibliotēkā vai lietojumprogrammā
+  - **Errorsource** — vai kļūda radās pakalpojumā, autentifikācijas bibliotēkā vai lietojumprogrammā
 
-  - **Identityservice** — vai tika izsaukts Microsoft pakalpojuma konts (MSA) vai Azure Active Directory (AAD) pakalpojums
+  - **Identityservice** — vai tika izsaukts Microsoft pakalpojuma konts (MSA) vai Azure Active Directory (AAD) pakalpojums
 
-  - **Interactiveauthcontainer** — kāda veida uzvedne tika rādīta
+  - **Interactiveauthcontainer** — kāda veida uzvedne tika rādīta
 
-  - **Issilent** — vai uzvedne tika rādīta
+  - **Issilent** — vai uzvedne tika rādīta
 
-  - **Microsoft**\_**ADAL**\_**adal**\_**version** — Azure Active Directory Authentication Library (ADAL) versija
+  - **Microsoft**\_**ADAL**\_**adal**\_**version** — Azure Active Directory Authentication Library (ADAL) versija
 
-  - **Microsoft\_ADAL\_api\_error\_code** — kļūdas kods, ko raidīja autentifikācijas bibliotēka šim autentifikācijas mēģinājumam
+  - **Microsoft\_ADAL\_api\_error\_code** — kļūdas kods, ko raidīja autentifikācijas bibliotēka šim autentifikācijas mēģinājumam
 
-  - **Microsoft\_ADAL\_api\_id** — šim autentifikācijas mēģinājumam izsauktais API
+  - **Microsoft\_ADAL\_api\_id** — šim autentifikācijas mēģinājumam izsauktais API
 
-  - **Microsoft\_ADAL\_authority** — Azure Active Directory tās iestādes URL, kas atbildīga par lietotāja autentifikāciju
+  - **Microsoft\_ADAL\_authority** — Azure Active Directory tās iestādes URL, kas atbildīga par lietotāja autentifikāciju
 
-  - **Microsoft\_ADAL\_authority\_type** — patērētāja/Microsoft pakalpojuma līgums (MSA) attiecībā pret organizāciju/Azure Active Directory (AAD); pašlaik vienmēr AAD
+  - **Microsoft\_ADAL\_authority\_type** — patērētāja/Microsoft pakalpojuma līgums (MSA) attiecībā pret organizāciju/Azure Active Directory (AAD); pašlaik vienmēr AAD
 
-  - **Microsoft\_ADAL\_authority\_validation\_status** — norāda, vai autentifikācija tika pabeigta pakalpojuma pusē
+  - **Microsoft\_ADAL\_authority\_validation\_status** — norāda, vai autentifikācija tika pabeigta pakalpojuma pusē
 
-  - **Microsoft\_ADAL\_broker\_app** — norāda, vai ADAL autentifikācijai izmantoja starpnieku
+  - **Microsoft\_ADAL\_broker\_app** — norāda, vai ADAL autentifikācijai izmantoja starpnieku
 
-  - **Microsoft\_ADAL\_broker\_app\_used** — norāda starpnieka nosaukumu (piemēram, Windows kontu pārvaldība)
+  - **Microsoft\_ADAL\_broker\_app\_used** — norāda starpnieka nosaukumu (piemēram, Windows kontu pārvaldība)
 
-  - **Microsoft\_ADAL\_broker\_version** — norāda starpnieka versiju, ja tas tiek izmantots
+  - **Microsoft\_ADAL\_broker\_version** — norāda starpnieka versiju, ja tas tiek izmantots
 
-  - **Microsoft\_ADAL\_cache\_event\_count** — kešatmiņas notikumu skaits, ko ADAL veica, izgūstot marķieri
+  - **Microsoft\_ADAL\_cache\_event\_count** — kešatmiņas notikumu skaits, ko ADAL veica, izgūstot marķieri
 
-  - **Microsoft\_ADAL\_cache\_event\_count\_max** — ja šis signāls tiek apkopots, maksimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+  - **Microsoft\_ADAL\_cache\_event\_count\_max** — ja šis signāls tiek apkopots, maksimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
 
-  - **Microsoft\_ADAL\_cache\_event\_count\_min** — ja šis signāls tiek apkopots, minimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+  - **Microsoft\_ADAL\_cache\_event\_count\_min** — ja šis signāls tiek apkopots, minimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
 
-  - **Microsoft\_ADAL\_cache\_event\_count\_sum** — ja šis signāls tiek apkopots, visu apkopoto notikumu kešatmiņas notikumu summa.
+  - **Microsoft\_ADAL\_cache\_event\_count\_sum** — ja šis signāls tiek apkopots, visu apkopoto notikumu kešatmiņas notikumu summa.
 
-  - **Microsoft\_ADAL\_cache\_read\_count** — cik reižu API lasīja no diska kešatmiņas. Spēkā, ja ir bijusi vismaz viena lasīšana.
+  - **Microsoft\_ADAL\_cache\_read\_count** — cik reižu API lasīja no diska kešatmiņas. Spēkā, ja ir bijusi vismaz viena lasīšana.
 
-  - **Microsoft\_ADAL\_cache\_read\_error\_count** — cik reižu diska kešatmiņas lasīšana neizdevās. Ir spēkā, ja ir bijusi vismaz viena kļūme.
+  - **Microsoft\_ADAL\_cache\_read\_error\_count** — cik reižu diska kešatmiņas lasīšana neizdevās. Ir spēkā, ja ir bijusi vismaz viena kļūme.
 
-  - **Microsoft\_ADAL\_cache\_read\_last\_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena lasīšanas kļūme.
+  - **Microsoft\_ADAL\_cache\_read\_last\_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena lasīšanas kļūme.
 
-  - **Microsoft\_ADAL\_cache\_read\_last\_system\_error** — sistēmas kļūdas kods. Ir spēkā, ja ir bijusi vismaz viena lasīšanas kļūme.
+  - **Microsoft\_ADAL\_cache\_read\_last\_system\_error** — sistēmas kļūdas kods. Ir spēkā, ja ir bijusi vismaz viena lasīšanas kļūme.
 
-  - **Microsoft\_ADAL\_cache\_write\_count** — cik reižu API rakstīja diska kešatmiņā. Spēkā, ja ir bijusi vismaz viena rakstīšana.
+  - **Microsoft\_ADAL\_cache\_write\_count** — cik reižu API rakstīja diska kešatmiņā. Spēkā, ja ir bijusi vismaz viena rakstīšana.
 
-  - **Microsoft\_ADAL\_cache\_write\_error\_count** — cik reižu diska kešatmiņas rakstīšana neizdevās. Spēkā, ja ir bijusi vismaz viena kļūme.
+  - **Microsoft\_ADAL\_cache\_write\_error\_count** — cik reižu diska kešatmiņas rakstīšana neizdevās. Spēkā, ja ir bijusi vismaz viena kļūme.
 
-  - **Microsoft\_ADAL\_cache\_write\_last\_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme.
+  - **Microsoft\_ADAL\_cache\_write\_last\_error** — ADAL kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme.
 
-  - **Microsoft\_ADAL\_cache\_write\_last\_system\_error** — sistēmas kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme.
+  - **Microsoft\_ADAL\_cache\_write\_last\_system\_error** — sistēmas kļūdas kods. Spēkā, ja ir bijusi vismaz viena rakstīšanas kļūme.
 
-  - **Microsoft\_ADAL\_client\_id** — jauktais AAD lietojumprogrammas ID
+  - **Microsoft\_ADAL\_client\_id** — jauktais AAD lietojumprogrammas ID
 
-  - **Microsoft\_ADAL\_extended\_expires\_on\_setting** — patiess/aplams norāda, vai marķierim ir pagarināts kalpošanas laiks.
+  - **Microsoft\_ADAL\_extended\_expires\_on\_setting** — patiess/aplams norāda, vai marķierim ir pagarināts kalpošanas laiks.
 
-  - **Microsoft\_ADAL\_http\_event\_coun** t — HTTP izsaukumu skaits, ko veica ADAL.
+  - **Microsoft\_ADAL\_http\_event\_coun** t — HTTP izsaukumu skaits, ko veica ADAL.
 
-  - **Microsoft\_ADAL\_http\_event\_count\_max** — ja šis signāls ir apkopots, maksimālais HTTP izsaukumu skaits, ko ADAL veic jebkuram apkopotajam notikumam.
+  - **Microsoft\_ADAL\_http\_event\_count\_max** — ja šis signāls ir apkopots, maksimālais HTTP izsaukumu skaits, ko ADAL veic jebkuram apkopotajam notikumam.
 
-  - **Microsoft\_ADAL\_http\_event\_count\_min** — ja šis signāls ir apkopots, minimālais HTTP izsaukumu skaits, ko ADAL veic jebkuram apkopotajam notikumam.
+  - **Microsoft\_ADAL\_http\_event\_count\_min** — ja šis signāls ir apkopots, minimālais HTTP izsaukumu skaits, ko ADAL veic jebkuram apkopotajam notikumam.
 
-  - **Microsoft\_ADAL\_http\_event\_count\_sum** — ja šis signāls ir apkopots, HTTP izsaukumu summa, ko ADAL veic visiem apkopotajiem notikumiem.
+  - **Microsoft\_ADAL\_http\_event\_count\_sum** — ja šis signāls ir apkopots, HTTP izsaukumu summa, ko ADAL veic visiem apkopotajiem notikumiem.
 
-  - **Microsoft\_ADAL\_is\_silent\_ui** — patiess/aplams norāda, vai UI ADAL rādīja UI (uzvedni).
+  - **Microsoft\_ADAL\_is\_silent\_ui** — patiess/aplams norāda, vai UI ADAL rādīja UI (uzvedni).
 
-  - **Microsoft\_ADAL\_is\_successful** — patiess/aplams norāda, vai ADAL API izdevās.
+  - **Microsoft\_ADAL\_is\_successful** — patiess/aplams norāda, vai ADAL API izdevās.
 
-  - **Microsoft\_ADAL\_logging\_pii\_enabled** — patiess/aplams norāda, vai ADAL pilnās reģistrēšanas režīms ir iespējots. Šie dati tiek reģistrēti tikai lokāli, netiek raidīti telemetrijā.
+  - **Microsoft\_ADAL\_logging\_pii\_enabled** — patiess/aplams norāda, vai ADAL pilnās reģistrēšanas režīms ir iespējots. Šie dati tiek reģistrēti tikai lokāli, netiek raidīti telemetrijā.
 
-  - **Microsoft\_ADAL\_oauth\_error\_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums.
+  - **Microsoft\_ADAL\_oauth\_error\_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums.
 
-  - **Microsoft\_ADAL\_prompt\_behavior** — pieteikšanās vai nekāds HTTP parametrs tiek nodots pakalpojumam, lai norādītu, vai var rādīt lietotāja interfeisu.
+  - **Microsoft\_ADAL\_prompt\_behavior** — pieteikšanās vai nekāds HTTP parametrs tiek nodots pakalpojumam, lai norādītu, vai var rādīt lietotāja interfeisu.
 
-  - **Microsoft\_ADAL\_request\_id** — transakcijas GUID pieprasījumam, ko ADAL raida pakalpojumam.
+  - **Microsoft\_ADAL\_request\_id** — transakcijas GUID pieprasījumam, ko ADAL raida pakalpojumam.
 
-  - **Microsoft\_ADAL\_response\_code** — HTTP atbildes kods no pakalpojuma.
+  - **Microsoft\_ADAL\_response\_code** — HTTP atbildes kods no pakalpojuma.
 
-  - **Microsoft\_ADAL\_response\_time** — cik ilgi pakalpojums atgrieza ADAL.
+  - **Microsoft\_ADAL\_response\_time** — cik ilgi pakalpojums atgrieza ADAL.
 
-  - **Microsoft\_ADAL\_response\_time\_max** — ja signāls ir apkopots, maksimālais laiks, cik ilgi ADAL atgriezās no API kādā no apkopotajiem notikumiem.
+  - **Microsoft\_ADAL\_response\_time\_max** — ja signāls ir apkopots, maksimālais laiks, cik ilgi ADAL atgriezās no API kādā no apkopotajiem notikumiem.
 
-  - **Microsoft\_ADAL\_response\_time\_min** — ja signāls ir apkopots, minimālais laiks, cik ilgi pakalpojums atbildēja ADAL kādā no apkopotajiem notikumiem.
+  - **Microsoft\_ADAL\_response\_time\_min** — ja signāls ir apkopots, minimālais laiks, cik ilgi pakalpojums atbildēja ADAL kādā no apkopotajiem notikumiem.
 
-  - **Microsoft\_ADAL\_response\_time\_sum** — ja signāls ir apkopots, laika summa, cik ilgi ADAL atgriezās no API visos apkopotajos notikumos.
+  - **Microsoft\_ADAL\_response\_time\_sum** — ja signāls ir apkopots, laika summa, cik ilgi ADAL atgriezās no API visos apkopotajos notikumos.
 
-  - **Microsoft\_ADAL\_rt\_age** — atsvaidzināšanas marķiera vecums
+  - **Microsoft\_ADAL\_rt\_age** — atsvaidzināšanas marķiera vecums
 
-  - **Microsoft\_ADAL\_server\_error\_code** — servera atgrieztais kļūdas kods
+  - **Microsoft\_ADAL\_server\_error\_code** — servera atgrieztais kļūdas kods
 
-  - **Microsoft\_ADAL\_server\_sub\_error\_code** — servera atgrieztais pakārtotais kļūdas kods, lai norādītu, kāpēc pieprasījums neizdevās.
+  - **Microsoft\_ADAL\_server\_sub\_error\_code** — servera atgrieztais pakārtotais kļūdas kods, lai norādītu, kāpēc pieprasījums neizdevās.
 
-  - **Microsoft\_ADAL\_spe\_ring** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki).
+  - **Microsoft\_ADAL\_spe\_ring** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki).
 
-  - **Microsoft\_ADAL\_start\_time** — laiks, kad ADAL API izsaukums tika veikts
+  - **Microsoft\_ADAL\_start\_time** — laiks, kad ADAL API izsaukums tika veikts
 
-  - **Microsoft\_ADAL\_stop\_time** — laiks, kad ADAL API izsaukums tika atgriezts
+  - **Microsoft\_ADAL\_stop\_time** — laiks, kad ADAL API izsaukums tika atgriezts
 
-  - **Microsoft\_ADAL\_telemetry\_pii\_enabled** — patiess/aplams norāda, vai ADAL pilnās telemetrijas režīms ir iespējots. Nosaukums ir misnomer, jo PII/EUII netiek raidīts.
+  - **Microsoft\_ADAL\_telemetry\_pii\_enabled** — patiess/aplams norāda, vai ADAL pilnās telemetrijas režīms ir iespējots. Nosaukums ir misnomer, jo PII/EUII netiek raidīts.
 
-  - **Microsoft\_ADAL\_tenant\_id** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder.
+  - **Microsoft\_ADAL\_tenant\_id** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder.
 
-  - **Microsoft\_ADAL\_token\_acquisition\_from\_context** — apraksta ADAL uzvedību, ņemot vērā marķierus autentifikācijas kontekstā.
+  - **Microsoft\_ADAL\_token\_acquisition\_from\_context** — apraksta ADAL uzvedību, ņemot vērā marķierus autentifikācijas kontekstā.
 
-  - **Microsoft\_ADAL\_token\_type** — atsvaidzināšanas marķieris (RT) vai vairāku resursu atsvaidzināšanas marķieris (MRRT).
+  - **Microsoft\_ADAL\_token\_type** — atsvaidzināšanas marķieris (RT) vai vairāku resursu atsvaidzināšanas marķieris (MRRT).
 
-  - **Microsoft\_ADAL\_ui\_event\_count** — uzvedņu skaits, kas tiek rādītas lietotājam. Var būt klusas.
+  - **Microsoft\_ADAL\_ui\_event\_count** — uzvedņu skaits, kas tiek rādītas lietotājam. Var būt klusas.
 
-  - **Microsoft\_ADAL\_user\_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts.
+  - **Microsoft\_ADAL\_user\_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts.
 
   - **Microsoft_ADAL_was_request_throttled** — patiess/aplams, kas norāda, vai ADAL ierobežoja šo notikumu pārāk daudzu pieprasījumu dēļ.
  
-  - **Microsoft\_ADAL\_x\_ms\_request\_id** — papildu pieprasījuma ID, ko HTTP galvenē pakalpojumam nodrošina ADAL.
+  - **Microsoft\_ADAL\_x\_ms\_request\_id** — papildu pieprasījuma ID, ko HTTP galvenē pakalpojumam nodrošina ADAL.
 
-  - **Platform** — Win32/WinRT/Android/iOS/Mac
+  - **Platform** — Win32/WinRT/Android/iOS/Mac
 
   - **Promptreasoncorrelationid** — uzvednes gadījumā tas ir cita notikuma korelācijas ID, kas izskaidro, kāpēc lietotājam, iespējams, ir redzama autentifikācijas uzvedne.
 
   - **Resource** — resurss, kuram lietotājs pieprasa marķieri, piemēram, Exchange vai SharePoint.
 
-  - **Scenarioid** — GUID. Vairāki notikumi var piederēt vienam scenārijam, piemēram, scenārijs var pievienot jaunu kontu, bet pastāv vairākas uzvednes, kas rodas kā daļa no šī scenārija. Šis ID nodrošina korelācijas iespējamību.
+  - **Scenarioid** — GUID. Vairāki notikumi var piederēt vienam scenārijam, piemēram, scenārijs var pievienot jaunu kontu, bet pastāv vairākas uzvednes, kas rodas kā daļa no šī scenārija. Šis ID nodrošina korelācijas iespējamību.
 
   - **Scenarioname** — scenārija nosaukums, kuram pieder šis autentifikācijas notikums.
 
-  - **Sessionid** — GUID, kas identificē sāknēšanas sesiju
+  - **Sessionid** — GUID, kas identificē sāknēšanas sesiju
 
-  - **Skdver** — MATS klienta SDK versija, kas tiek izmantota, lai radītu šos datus
+  - **Skdver** — MATS klienta SDK versija, kas tiek izmantota, lai radītu šos datus
 
-  - **Starttime** — laiks, kad Start\*Action MATS API tika izsaukts
+  - **Starttime** — laiks, kad Start\*Action MATS API tika izsaukts
 
-  - **Tenantid** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder (ar ADAL nesaistītos gadījumos).
+  - **Tenantid** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder (ar ADAL nesaistītos gadījumos).
 
-  - **Uploadid** — unikālais GUID šim notikumam, tiek izmantots dublikātu likvidēšanai
+  - **Uploadid** — unikālais GUID šim notikumam, tiek izmantots dublikātu likvidēšanai
 
-  - **Wamapi** — norāda, kurš WAM API ir izsaukts
+  - **Wamapi** — norāda, kurš WAM API ir izsaukts
 
-  - **Wamtelemetrybatch** — pašlaik netiek izmantots. Nākotnē sniedz WAM komponentam iespēju izsūtīt papildinformāciju par autentifikācijas notikumu.
+  - **Wamtelemetrybatch** — pašlaik netiek izmantots. Nākotnē sniedz WAM komponentam iespēju izsūtīt papildinformāciju par autentifikācijas notikumu.
 
 
 ### <a name="officematsoneauthactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
@@ -458,23 +458,23 @@ Tiek apkopoti šādi lauki:
 
 - **Accounttype** — šim autentifikācijas notikumam izmantotais konta tips, piemēram, patērētājs vai organizācijas konts.
 
-- **Actionname** — draudzīgs nosaukums šim notikumam, ja tāds tika norādīts.
+- **Actionname** — draudzīgs nosaukums šim notikumam, ja tāds tika norādīts.
 
 - **Actiontype** — norāda, kāda veida autentifikācijas bibliotēku izmantojat.
 
-- **Appaudience** — vai lietojumprogrammas būvējums ir paredzēts iekšējai vai ārējai lietošanai
+- **Appaudience** — vai lietojumprogrammas būvējums ir paredzēts iekšējai vai ārējai lietošanai
 
-- **Appforcedprompt** — vai lietojumprogramma ignorēja kešatmiņu un nodrošināja uzvednes rādīšanu piespiedu kārtā
+- **Appforcedprompt** — vai lietojumprogramma ignorēja kešatmiņu un nodrošināja uzvednes rādīšanu piespiedu kārtā
 
-- **Appname** — tās lietojumprogrammas nosaukums, kas veic autentifikāciju
+- **Appname** — tās lietojumprogrammas nosaukums, kas veic autentifikāciju
 
-- **Appver** — tās lietojumprogrammas versija, kas veic autentifikāciju
+- **Appver** — tās lietojumprogrammas versija, kas veic autentifikāciju
 
-- **Askedforcreds** — vai lietojumprogramma pieprasīja lietotājam ievadīt akreditācijas datus šai darbībai
+- **Askedforcreds** — vai lietojumprogramma pieprasīja lietotājam ievadīt akreditācijas datus šai darbībai
 
-- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
+- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
 
-- **Blockingprompt** — vai lietojumprogramma parādīja uzvedni, kur bija nepieciešama lietotāja mijiedarbība
+- **Blockingprompt** — vai lietojumprogramma parādīja uzvedni, kur bija nepieciešama lietotāja mijiedarbība
 
 - **Correlationid** — identifikators, ko izmanto, lai saistītu informāciju par šo atsevišķo notikumu ar pakalpojumu datiem
 
@@ -482,9 +482,9 @@ Tiek apkopoti šādi lauki:
 
 - **Devicenetworkstate** — vai ierīce ir savienota ar internetu.
 
-- **Deviceprofiletelemetryid** — anonīms ierīces ID, ko izmanto, lai mērītu visas ierīces autentifikācijas pieredzi un uzticamību.
+- **Deviceprofiletelemetryid** — anonīms ierīces ID, ko izmanto, lai mērītu visas ierīces autentifikācijas pieredzi un uzticamību.
 
-- **Duration** — cik ilga bija autentifikācija
+- **Duration** — cik ilga bija autentifikācija
 
 - **duration_max** — maksimālais jebkura no apkopotajiem notikumiem ilgums
 
@@ -492,11 +492,11 @@ Tiek apkopoti šādi lauki:
 
 - **duration_sum** — visu apkopoto notikumu ilguma summa
 
-- **endtime** — kad autentifikācijas notikums beidzās
+- **endtime** — kad autentifikācijas notikums beidzās
 
-- **error** — kļūdas kods, ja autentifikācija neizdevās
+- **error** — kļūdas kods, ja autentifikācija neizdevās
 
-- **errordescription** — īss kļūdas apraksts
+- **errordescription** — īss kļūdas apraksts
 
 - **errorsource** — vai kļūda radās pakalpojumā, autentifikācijas bibliotēkā vai lietojumprogrammā
 
@@ -506,15 +506,15 @@ Tiek apkopoti šādi lauki:
 
 - **hasadaltelemetry** — norāda, vai Azure Active Directory Authentication Library (ADAL) nodrošināja šim notikumam telemetriju.
 
-- **Identityservice** — vai tika izsaukts Microsoft pakalpojuma konts (MSA) vai Azure Active Directory (AAD) pakalpojums
+- **Identityservice** — vai tika izsaukts Microsoft pakalpojuma konts (MSA) vai Azure Active Directory (AAD) pakalpojums
 
-- **Interactiveauthcontainer** — kāda veida uzvedne tika rādīta
+- **Interactiveauthcontainer** — kāda veida uzvedne tika rādīta
 
 - **Issilent** — vai tika parādīta uzvedne vai arī šis bija kluss (fona) autentifikācijas notikums.
 
-- **Microsoft_ADAL_adal_version** — Azure Active Directory Authentication Library (ADAL) versija
+- **Microsoft_ADAL_adal_version** — Azure Active Directory Authentication Library (ADAL) versija
 
-- **Microsoft_ADAL_api_error_code** — kļūdas kods, ko raidīja autentifikācijas bibliotēka šim autentifikācijas mēģinājumam
+- **Microsoft_ADAL_api_error_code** — kļūdas kods, ko raidīja autentifikācijas bibliotēka šim autentifikācijas mēģinājumam
 
 - **Microsoft_ADAL_api_id** — šim autentifikācijas mēģinājumam izsauktais API
 
@@ -522,25 +522,25 @@ Tiek apkopoti šādi lauki:
 
 - **Microsoft_ADAL_application_version** — lietojumprogrammas versija, izmantojot ADAL.
 
-- **Microsoft_ADAL_authority** — Azure Active Directory tās iestādes URL, kas atbildīga par lietotāja autentifikāciju
+- **Microsoft_ADAL_authority** — Azure Active Directory tās iestādes URL, kas atbildīga par lietotāja autentifikāciju
 
-- **Microsoft_ADAL_authority_type** — patērētāja/Microsoft pakalpojuma līgums (MSA) attiecībā pret organizāciju/Azure Active Directory (AAD); pašlaik vienmēr AAD
+- **Microsoft_ADAL_authority_type** — patērētāja/Microsoft pakalpojuma līgums (MSA) attiecībā pret organizāciju/Azure Active Directory (AAD); pašlaik vienmēr AAD
 
 - **Microsoft_ADAL_authority_validation_status** — norāda, vai autentifikācija tika pabeigta pakalpojuma pusē
 
-- **Microsoft_ADAL_broker_app** — norāda, vai ADAL autentifikācijai izmantoja starpnieku
+- **Microsoft_ADAL_broker_app** — norāda, vai ADAL autentifikācijai izmantoja starpnieku
 
-- **Microsoft_ADAL_broker_app_used** — norāda starpnieka nosaukumu (piemēram, Windows kontu pārvaldība)
+- **Microsoft_ADAL_broker_app_used** — norāda starpnieka nosaukumu (piemēram, Windows kontu pārvaldība)
 
-- **Microsoft_ADAL_broker_version** — norāda starpnieka versiju, ja tas tiek izmantots
+- **Microsoft_ADAL_broker_version** — norāda starpnieka versiju, ja tas tiek izmantots
 
-- **Microsoft_ADAL_cache_event_count** — kešatmiņas notikumu skaits, ko ADAL veica, izgūstot marķieri
+- **Microsoft_ADAL_cache_event_count** — kešatmiņas notikumu skaits, ko ADAL veica, izgūstot marķieri
 
-- **Microsoft_ADAL_cache_event_count_max** — ja šis signāls tiek apkopots, maksimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+- **Microsoft_ADAL_cache_event_count_max** — ja šis signāls tiek apkopots, maksimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
 
-- **Microsoft_ADAL_cache_event_count_min** — ja šis signāls tiek apkopots, minimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
+- **Microsoft_ADAL_cache_event_count_min** — ja šis signāls tiek apkopots, minimālais jebkura apkopotā notikuma kešatmiņas notikumu skaits.
 
-- **Microsoft_ADAL_cache_event_count_sum** — ja šis signāls tiek apkopots, visu apkopoto notikumu kešatmiņas notikumu summa
+- **Microsoft_ADAL_cache_event_count_sum** — ja šis signāls tiek apkopots, visu apkopoto notikumu kešatmiņas notikumu summa
 
 - **Microsoft_ADAL_cache_read_count** — cik reižu API lasīja no diska kešatmiņas. Spēkā, ja ir bijusi vismaz viena lasīšana
 
@@ -588,39 +588,39 @@ Tiek apkopoti šādi lauki:
 
 - **Microsoft_ADAL_is_silent_ui** — patiess/aplams norāda, vai UI ADAL rādīja UI (uzvedni)
 
-- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās (macOS)
+- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās (macOS)
 
-- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās
+- **Microsoft_ADAL_is_successfull** — patiess/aplams norāda, vai ADAL API izdevās
 
-- **Microsoft_ADAL_logging_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās reģistrēšanas režīms ir iespējots. Šie dati tiek reģistrēti tikai lokāli, netiek raidīti telemetrijā
+- **Microsoft_ADAL_logging_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās reģistrēšanas režīms ir iespējots. Šie dati tiek reģistrēti tikai lokāli, netiek raidīti telemetrijā
 
 - **Microsoft_ADAL_ntlm** — patiess/aplams, norādot, vai ADAL izmanto pamata autentifikāciju (NTLM).
 
-- **Microsoft_ADAL_oauth_error_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums
+- **Microsoft_ADAL_oauth_error_code** — OAuth protokola kļūdas kods, ko atgrieza pakalpojums
 
-- **Microsoft_ADAL_prompt_behavior** — pieteikšanās vai neviens tīkla parametrs nav nodots pakalpojumam, lai norādītu, vai var parādīt lietotāja interfeisu
+- **Microsoft_ADAL_prompt_behavior** — pieteikšanās vai neviens tīkla parametrs nav nodots pakalpojumam, lai norādītu, vai var parādīt lietotāja interfeisu
 
-- **Microsoft_ADAL_request_id** — transakcijas GUID pieprasījumam, ko ADAL raida pakalpojumam
+- **Microsoft_ADAL_request_id** — transakcijas GUID pieprasījumam, ko ADAL raida pakalpojumam
 
 - **Microsoft_ADAL_response_code** — tīkla atbildes kods no pakalpojuma
 
 - **Microsoft_ADAL_response_time** — cik ilgi pakalpojums atgrieza ADAL
 
-- **Microsoft_ADAL_response_time_max** — ja signāls ir apkopots, maksimālais laiks, cik ilgi ADAL atgriezās no API kādā no apkopotajiem notikumiem
+- **Microsoft_ADAL_response_time_max** — ja signāls ir apkopots, maksimālais laiks, cik ilgi ADAL atgriezās no API kādā no apkopotajiem notikumiem
 
-- **Microsoft_ADAL_response_time_min** — ja signāls ir apkopots, minimālais laiks, cik ilgi pakalpojums atbildēja ADAL kādā no apkopotajiem notikumiem
+- **Microsoft_ADAL_response_time_min** — ja signāls ir apkopots, minimālais laiks, cik ilgi pakalpojums atbildēja ADAL kādā no apkopotajiem notikumiem
 
-- **Microsoft_ADAL_response_time_sum** — ja signāls ir apkopots, laika summa, cik ilgi ADAL atgriezās no API visos apkopotajos notikumos
+- **Microsoft_ADAL_response_time_sum** — ja signāls ir apkopots, laika summa, cik ilgi ADAL atgriezās no API visos apkopotajos notikumos
 
-- **Microsoft_ADAL_rt_age** — atsvaidzināšanas marķiera vecums
+- **Microsoft_ADAL_rt_age** — atsvaidzināšanas marķiera vecums
 
-- **Microsoft_ADAL_server_error_code** — servera atgrieztais kļūdas kods
+- **Microsoft_ADAL_server_error_code** — servera atgrieztais kļūdas kods
 
-- **Microsoft_ADAL_server_sub_error_code** — servera atgrieztais pakārtotais kļūdas kods, lai norādītu, kāpēc pieprasījums neizdevās
+- **Microsoft_ADAL_server_sub_error_code** — servera atgrieztais pakārtotais kļūdas kods, lai norādītu, kāpēc pieprasījums neizdevās
 
-- **Microsoft_ADAL_spe_info** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
+- **Microsoft_ADAL_spe_info** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
 
-- **Microsoft_ADAL_spe_ring** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
+- **Microsoft_ADAL_spe_ring** — patiess/aplams norāda, vai lietotājs izmantoja Secure Production Enterprise iekšējo apli (tikai Microsoft darbinieki)
 
 - **Microsoft_ADAL_start_time** — laiks, kad ADAL API izsaukums tika veikts
 
@@ -628,11 +628,11 @@ Tiek apkopoti šādi lauki:
 
 - **Microsoft_ADAL_stop_time** — laiks, kad tiek atgriezts ADAL API izsaukums
 
-- **Microsoft_ADAL_telemetry_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās telemetrijas režīms ir iespējots. Nosaukums ir misnomer, jo PII/EUII netiek raidīts
+- **Microsoft_ADAL_telemetry_pii_enabled** — patiess/aplams norāda, vai ADAL pilnās telemetrijas režīms ir iespējots. Nosaukums ir misnomer, jo PII/EUII netiek raidīts
 
 - **Microsoft_ADAL_tenant_id** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder
 
-- **Microsoft_ADAL_token_acquisition_from_context** — apraksta ADAL uzvedību, ņemot vērā marķierus autentifikācijas kontekstā
+- **Microsoft_ADAL_token_acquisition_from_context** — apraksta ADAL uzvedību, ņemot vērā marķierus autentifikācijas kontekstā
 
 - **Microsoft_ADAL_token_frt_status** — atsvaidzināšanas marķiera statuss: vai tas ir izmēģināts, nav nepieciešams, nav atrasts vai izdzēsts.
 
@@ -640,13 +640,13 @@ Tiek apkopoti šādi lauki:
 
 - **Microsoft_ADAL_token_rt_status** — atsvaidzināšanas marķiera statuss: vai tas ir izmēģināts, nav nepieciešams, nav atrasts vai izdzēsts.
 
-- **Microsoft_ADAL_token_type** — atsvaidzināšanas marķieris (RT) vai vairāku resursu atsvaidzināšanas marķieris (MRRT).
+- **Microsoft_ADAL_token_type** — atsvaidzināšanas marķieris (RT) vai vairāku resursu atsvaidzināšanas marķieris (MRRT).
 
-- **Microsoft_ADAL_ui_event_count** — uzvedņu skaits, kas tiek rādītas lietotājam. Var būt klusas
+- **Microsoft_ADAL_ui_event_count** — uzvedņu skaits, kas tiek rādītas lietotājam. Var būt klusas
 
-- **Microsoft_ADAL_user_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts
+- **Microsoft_ADAL_user_cancel** — patiess/aplams, ja lietotāja interfeisa logs tika atcelts
 
-- **Microsoft_ADAL_x_ms_request_id** — papildu pieprasījuma ID, kas tiek nodrošināts tīkla galvenē pakalpojumā, izmantojot ADAL
+- **Microsoft_ADAL_x_ms_request_id** — papildu pieprasījuma ID, kas tiek nodrošināts tīkla galvenē pakalpojumā, izmantojot ADAL
 
 - **Microsoft_ADAL_x_client_cpu** — informācija, kas attiecas uz ierīces centrālā procesora arhitektūru
 
@@ -740,13 +740,13 @@ Tiek apkopoti šādi lauki:
 
 - **Sdkver** — Microsoft autentifikācijas telemetrijas sistēmas bibliotēkas versija, kas tiek lietota, lai izveidotu šos datus
 
-- **Sessionid** — sāknēšanas sesijas identifikators
+- **Sessionid** — sāknēšanas sesijas identifikators
 
 - **Starttime** — laiks, kad sākās autentifikācijas notikums.
 
-- **Tenantid** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder (ar ADAL nesaistītos gadījumos)
+- **Tenantid** — GUID, kas identificē nomnieku, kam autentificētais lietotājs pieder (ar ADAL nesaistītos gadījumos)
 
-- **Uploadid** — unikālais GUID šim notikumam, tiek izmantots dublikātu likvidēšanai
+- **Uploadid** — unikālais GUID šim notikumam, tiek izmantots dublikātu likvidēšanai
 
 - **wamapi** — nosaka, kurš Windows tīmekļa konta pārvaldības (WAM) API tiek izsaukts
 
@@ -788,7 +788,7 @@ Tiek apkopoti šādi lauki:
 
 - **WAM_resource** — resurss, kuram tiek pieprasīts marķieris.
 
-- **WAM_server_error_code** — kļūdas kods, kuru pakalpojums atgrieza WAM.
+- **WAM_server_error_code** — kļūdas kods, kuru pakalpojums atgrieza WAM.
 
 - **WAM_server_sub_code** — papildu kļūdas kods, ko izmanto, lai sīkāk sadalītu kļūmes cēloņus, ko atgriezis pakalpojums.
 
@@ -829,7 +829,7 @@ Tiek apkopoti šādi lauki:
 
 - **Appver** — lietojumprogrammas versija
 
-- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
+- **Authoutcome** — vai autentifikācijas mēģinājums izdevās, neizdevās vai tika atcelts
 
 - **Correlationid** — identifikators, ko izmanto, lai saistītu informāciju par šo atsevišķo notikumu ar pakalpojumu datiem
 
@@ -898,7 +898,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
-Šis notikums tiek reģistrēts, ja kontu sarakstā, ko nodrošina TokenSharingManager, tiek atrasts konts ar derīgu atsvaidzināšanas marķieri. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
+Šis notikums tiek reģistrēts, ja kontu sarakstā, ko nodrošina TokenSharingManager, tiek atrasts konts ar derīgu atsvaidzināšanas marķieri. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
  
 Tiek apkopoti tālāk norādītie lauki:
  
@@ -908,7 +908,7 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
 
-Šis notikums tiek reģistrēts, ja, kontu sarakstā, ko nodrošina TokenSharingManager, esošam kontam mēģinot iegūt atsvaidzināšanas marķieri, radās kļūda. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
+Šis notikums tiek reģistrēts, ja, kontu sarakstā, ko nodrošina TokenSharingManager, esošam kontam mēģinot iegūt atsvaidzināšanas marķieri, radās kļūda. Šis scenārijs attiecas uz vienoto pierakstīšanos (Single Sign-on — SSO).
  
 Tiek apkopoti tālāk norādītie lauki:
  
@@ -931,25 +931,25 @@ Tiek apkopoti tālāk norādītie lauki:
 
 ### <a name="officeclicktorunbootstrapper"></a>Office.ClickToRun.Bootstrapper 
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad lietotājs palaiž failu Office setup.exe, lai modificētu savus instalētos Office produktus. Tiek izmantots, lai mērītu pilnas lietotāja uzsāktas Office instalēšanas sekmīgu izpildi/kļūmi, tostarp priekšnoteikumu pārbaudes.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad lietotājs palaiž failu Office setup.exe, lai modificētu savus instalētos Office produktus. Tiek izmantots, lai mērītu pilnas lietotāja uzsāktas Office instalēšanas sekmīgu izpildi/kļūmi, tostarp priekšnoteikumu pārbaudes.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_BootStrapperStateFailure\_ErrorCode** — kļūdas kods, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_ErrorCode** — kļūdas kods, ar kuru radās problēmas
 
-  - **Data\_BootStrapperStateFailure\_ErrorSource** — funkcija, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_ErrorSource** — funkcija, ar kuru radās problēmas
 
-  - **Data\_BootStrapperStateFailure\_FailingState** — daļa, kas neizdevās boostrapperbootstrapper
+  - **Data\_BootStrapperStateFailure\_FailingState** — daļa, kas neizdevās boostrapperbootstrapper
 
-  - **Data\_BootStrapperStateFailure\_OExceptionType** — izņēmuma veids, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_OExceptionType** — izņēmuma veids, ar kuru radās problēmas
 
-  - **Data\_Culture** — kultūra, ar kuru izmantojam šo exe failu, t.i., en-us
+  - **Data\_Culture** — kultūra, ar kuru izmantojam šo exe failu, t.i., en-us
 
-  - **Data\_HashedOLSToken** — marķiera sha-256 jaukšanas vērtība, ko OLS pakalpojums mums piešķir
+  - **Data\_HashedOLSToken** — marķiera sha-256 jaukšanas vērtība, ko OLS pakalpojums mums piešķir
 
-  - **Data\_Platform** — x64 vai x86 instalācija
+  - **Data\_Platform** — x64 vai x86 instalācija
 
-  - **Data\_PrereqFailure\_Type** — priekšnoteikumu kļūme, kāda rodas, t.i., operētājsistēma netiek atbalstīta
+  - **Data\_PrereqFailure\_Type** — priekšnoteikumu kļūme, kāda rodas, t.i., operētājsistēma netiek atbalstīta
 
   - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Microsoft 365 programmas lieluzņēmumiem
 
@@ -959,83 +959,83 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti šādi lauki:
 
-  - **Data\_Active —** pašreizējais straumes manifests, ko pārbaudām diskā
+  - **Data\_Active —** pašreizējais straumes manifests, ko pārbaudām diskā
 
-  - **Data\_ActivePackages —** kādas pakotnes manifests satur
+  - **Data\_ActivePackages —** kādas pakotnes manifests satur
 
-  - **Data\_ActiveVersion —** manifesta versija
+  - **Data\_ActiveVersion —** manifesta versija
 
-  - **Data\_AddFileCount —** cik failu pievienojam
+  - **Data\_AddFileCount —** cik failu pievienojam
 
-  - **Data\_AddFileFiles —** failu, ko pievienojam, paraugs
+  - **Data\_AddFileFiles —** failu, ko pievienojam, paraugs
 
-  - **Data\_CompressionLevel —** kā faili tiek saspiesti
+  - **Data\_CompressionLevel —** kā faili tiek saspiesti
 
-  - **Data\_CorruptionCheckLevel —** cik dziļi meklējam bojājumus, pakāpes
+  - **Data\_CorruptionCheckLevel —** cik dziļi meklējam bojājumus, pakāpes
 
-  - **Data\_CorruptSizeCount —** cik failiem ir bojāts lielums
+  - **Data\_CorruptSizeCount —** cik failiem ir bojāts lielums
 
-  - **Data\_CorruptSizeFiles —** failu, kam ir bojāts lielums, paraugs
+  - **Data\_CorruptSizeFiles —** failu, kam ir bojāts lielums, paraugs
 
-  - **Data\_CorruptVersionCount —** cik failiem ir bojāta versija
+  - **Data\_CorruptVersionCount —** cik failiem ir bojāta versija
 
-  - **Data\_CorruptVersionFiles —** failu, kam ir bojāta versija, paraugs
+  - **Data\_CorruptVersionFiles —** failu, kam ir bojāta versija, paraugs
 
-  - **Data\_FileBadDigestCount —** cik failus neizdevās atvērt
+  - **Data\_FileBadDigestCount —** cik failus neizdevās atvērt
 
-  - **Data\_FileBadDigestFiles —** failu, ko nevaram atvērt, paraugs
+  - **Data\_FileBadDigestFiles —** failu, ko nevaram atvērt, paraugs
 
-  - **Data\_FileNotSignedCount —** cik faili nav parakstīti
+  - **Data\_FileNotSignedCount —** cik faili nav parakstīti
 
-  - **Data\_FileNotSignedFiles —** failu, kas nav parakstīti, paraugs
+  - **Data\_FileNotSignedFiles —** failu, kas nav parakstīti, paraugs
 
-  - **Data\_FileNotTrustedCount —** cik faili nav uzticami
+  - **Data\_FileNotTrustedCount —** cik faili nav uzticami
 
-  - **Data\_FileNotTrustedFiles —** failu, kam neuzticamies, paraugs
+  - **Data\_FileNotTrustedFiles —** failu, kam neuzticamies, paraugs
 
-  - **Data\_IncompleteFileCount —** cik faili šķiet nepilnīgi
+  - **Data\_IncompleteFileCount —** cik faili šķiet nepilnīgi
 
-  - **Data\_IncompleteFileFiles —** nepilnīgo failu paraugs
+  - **Data\_IncompleteFileFiles —** nepilnīgo failu paraugs
 
-  - **Data\_KeepFileCount —** ar cik failiem neko nedarām
+  - **Data\_KeepFileCount —** ar cik failiem neko nedarām
 
-  - **Data\_KeepFileFiles —** failu, ko paturam, paraugs
+  - **Data\_KeepFileFiles —** failu, ko paturam, paraugs
 
-  - **Data\_KeepIncompleteFileCount —** cik failus nemainām, neskatoties uz to, ka tie ir nepilnīgi
+  - **Data\_KeepIncompleteFileCount —** cik failus nemainām, neskatoties uz to, ka tie ir nepilnīgi
 
-  - **Data\_KeepIncompleteFileFiles —** failu, ko paturam un kuri ir nepilnīgi, paraugs
+  - **Data\_KeepIncompleteFileFiles —** failu, ko paturam un kuri ir nepilnīgi, paraugs
 
-  - **Data\_MismatchSizeCount —** cik failu izmērs neatbilst mūsu manifestam
+  - **Data\_MismatchSizeCount —** cik failu izmērs neatbilst mūsu manifestam
 
-  - **Data\_MismatchSizeFiles —** failu, kam ir neatbilstošs lielums, paraugs
+  - **Data\_MismatchSizeFiles —** failu, kam ir neatbilstošs lielums, paraugs
 
-  - **Data\_MismatchVersionCount —** cik failiem versija atšķiras no mūsu manifesta
+  - **Data\_MismatchVersionCount —** cik failiem versija atšķiras no mūsu manifesta
 
-  - **Data\_MismatchVersionFiles —** failu, kam ir neatbilstošas versijas, paraugs
+  - **Data\_MismatchVersionFiles —** failu, kam ir neatbilstošas versijas, paraugs
 
-  - **Data\_MissingFileCount —** cik failu trūkst
+  - **Data\_MissingFileCount —** cik failu trūkst
 
-  - **Data\_MissingFileFiles —** trūkstošo failu paraugs
+  - **Data\_MissingFileFiles —** trūkstošo failu paraugs
 
-  - **Data\_NotToBeStreamedFileCount —** cik failus nestraumējam
+  - **Data\_NotToBeStreamedFileCount —** cik failus nestraumējam
 
-  - **Data\_RemoveFileCount —** cik failu noņemam
+  - **Data\_RemoveFileCount —** cik failu noņemam
 
-  - **Data\_RemoveFileFiles —** failu, ko noņemam, paraugs
+  - **Data\_RemoveFileFiles —** failu, ko noņemam, paraugs
 
-  - **Data\_StreamUnitsMismatchCount —** cik failiem ir vienības, kas neatbilst manifestam
+  - **Data\_StreamUnitsMismatchCount —** cik failiem ir vienības, kas neatbilst manifestam
 
-  - **Data\_StreamUnitsMismatchFiles —** failu, kam ir straume ar neatbilstošām vienībām, paraugs
+  - **Data\_StreamUnitsMismatchFiles —** failu, kam ir straume ar neatbilstošām vienībām, paraugs
 
-  - **Data\_TimeElapsed —** cik ilga bija bojājumu meklēšana
+  - **Data\_TimeElapsed —** cik ilga bija bojājumu meklēšana
 
-  - **Data\_UpdateFileCount —** cik failu atjauninām
+  - **Data\_UpdateFileCount —** cik failu atjauninām
 
-  - **Data\_UpdateFileFiles —** failu, ko pievienojam, paraugs
+  - **Data\_UpdateFileFiles —** failu, ko pievienojam, paraugs
 
-  - **Data\_Working —** jaunais manifests, ko pārbaudām
+  - **Data\_Working —** jaunais manifests, ko pārbaudām
 
-  - **Data\_WorkingVersion —** jaunā manifesta versija
+  - **Data\_WorkingVersion —** jaunā manifesta versija
 
 ### <a name="officeclicktorunmachinemetadata"></a>Office.ClickToRun.MachineMetadata
 
@@ -1043,51 +1043,51 @@ Office iestatīšanas un krājumu dati, kas nodrošina nepieciešamos metadatus 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_C2RClientVer** — OfficeClickToRun.exe versija datorā
+  - **Data\_C2RClientVer** — OfficeClickToRun.exe versija datorā
 
-  - **Data\_OfficeBitness** — bitu skaits, kādā sistēma Office ir instalēta, x86 vai x64
+  - **Data\_OfficeBitness** — bitu skaits, kādā sistēma Office ir instalēta, x86 vai x64
 
-  - **Data\_OfficeVersion** — versija, kādā sistēma Office ir instalēta
+  - **Data\_OfficeVersion** — versija, kādā sistēma Office ir instalēta
 
   - **Data\_Sku** — instalētais SKU, piemēram,Microsoft 365 programmas lieluzņēmumiem
 
-  - **Data\_SqmMachineID** — unikālais datora ID, ko izmanto Windows SQM Data\_SusClientID- datora Office atjaunināšanas identifikators
+  - **Data\_SqmMachineID** — unikālais datora ID, ko izmanto Windows SQM Data\_SusClientID- datora Office atjaunināšanas identifikators
 
 ### <a name="officeclicktorunodt"></a>Office.ClickToRun.ODT
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad IT administrators palaiž Office izvietošanas rīka Click-to-Run failu setup.exe, lai modificētu savu lietotāju instalētos Office produktus. Tie tiek izmantoti, lai mērītu pilnas IT administratora uzsāktas Office instalēšanas sekmīgu izpildi/kļūmi, tostarp priekšnoteikumu pārbaudes.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad IT administrators palaiž Office izvietošanas rīka Click-to-Run failu setup.exe, lai modificētu savu lietotāju instalētos Office produktus. Tie tiek izmantoti, lai mērītu pilnas IT administratora uzsāktas Office instalēšanas sekmīgu izpildi/kļūmi, tostarp priekšnoteikumu pārbaudes.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_BootStrapperStateFailure\_ErrorCode —** kļūdas kods, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_ErrorCode —** kļūdas kods, ar kuru radās problēmas
 
-  - **Data\_BootStrapperStateFailure\_ErrorSource —** funkcija, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_ErrorSource —** funkcija, ar kuru radās problēmas
 
-  - **Data\_BootStrapperStateFailure\_FailingState —** daļa, kas neizdevās boot-strapper
+  - **Data\_BootStrapperStateFailure\_FailingState —** daļa, kas neizdevās boot-strapper
 
-  - **Data\_BootStrapperStateFailure\_OExceptionType —** izņēmuma veids, ar kuru radās problēmas
+  - **Data\_BootStrapperStateFailure\_OExceptionType —** izņēmuma veids, ar kuru radās problēmas
 
-  - **Data\_ConfigurationHost —** resursdators, no kura nācis fails configuration.xml
+  - **Data\_ConfigurationHost —** resursdators, no kura nācis fails configuration.xml
 
-  - **Data\_ConfigurationId —** ID, ko iegūstam no faila configuration.xml
+  - **Data\_ConfigurationId —** ID, ko iegūstam no faila configuration.xml
 
-  - **Data\_ConfigurationSource —** no kurienes nācis fails configuration.xml
+  - **Data\_ConfigurationSource —** no kurienes nācis fails configuration.xml
 
-  - **Data\_Culture —** kultūra, ar kuru izmantojam šo exe failu, t.i., en-us
+  - **Data\_Culture —** kultūra, ar kuru izmantojam šo exe failu, t.i., en-us
 
-  - **Data\_HashedOLSToken —** marķiera sha-256 jaukšanas vērtība, ko OLS pakalpojums mums piešķir
+  - **Data\_HashedOLSToken —** marķiera sha-256 jaukšanas vērtība, ko OLS pakalpojums mums piešķir
 
-  - **Data\_MigrateArchRequest —** vai migrējam lietotāju no x86 uz x64 vai pretēji
+  - **Data\_MigrateArchRequest —** vai migrējam lietotāju no x86 uz x64 vai pretēji
 
-  - **Data\_MigrateArchRequestValid —** vai uzskatām, ka migrēšanas pieprasījums ir derīgs
+  - **Data\_MigrateArchRequestValid —** vai uzskatām, ka migrēšanas pieprasījums ir derīgs
 
-  - **Data\_Platform —** x64 vai x86 instalācija
+  - **Data\_Platform —** x64 vai x86 instalācija
 
-  - **Data\_PlatformMigratedFrom —** sākuma platforma, t.i., x86
+  - **Data\_PlatformMigratedFrom —** sākuma platforma, t.i., x86
 
-  - **Data\_PlatformMigratedTo —** beigu platforma, t.i., x64
+  - **Data\_PlatformMigratedTo —** beigu platforma, t.i., x64
 
-  - **Data\_PrereqFailure\_Type —** priekšnosacījumu kļūme, kas rodas
+  - **Data\_PrereqFailure\_Type —** priekšnosacījumu kļūme, kas rodas
 
   - **Data\_ProductReleaseId** — produkts, ko instalējam, piemēram, Microsoft 365 programmas lieluzņēmumiem
 
@@ -1101,11 +1101,11 @@ Tiek apkopoti šādi lauki:
   
   - **DownloadSucceeded —** patiess, ja konveijers veiksmīgi lietoja Office atjauninājumu, pretējā gadījumā — aplams.
 
-  - **ErrorCode —** pēdējās kļūdas kods, kura radās Click-to-Run Repoman konveijerā.
+  - **ErrorCode —** pēdējās kļūdas kods, kura radās Click-to-Run Repoman konveijerā.
 
-  - **ErrorDetails —** papildu informācija par kļūdu, kura radās Click-to-Run Repoman konveijerā.
+  - **ErrorDetails —** papildu informācija par kļūdu, kura radās Click-to-Run Repoman konveijerā.
  
-  - **ErrorMessage —** pēdējās kļūdas ziņa, kura radās Click-to-Run Repoman konveijerā.
+  - **ErrorMessage —** pēdējās kļūdas ziņa, kura radās Click-to-Run Repoman konveijerā.
 
   - **OpenStreamSessionSucceeded —** patiess, ja konveijerā veiksmīgi tiek radīta sesija Office atjauninājuma straumēšanai, pretējā gadījumā — aplams.
 
@@ -1114,79 +1114,79 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs izvieto no jauna lejupielādētos failus. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs izvieto no jauna lejupielādētus failus. Tiek izmantots, lai mērītu Office instalācijas izdošanos vai neizdošanos.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigurelight"></a>Office.ClickToRun.Scenario.InstallTaskConfigurelight
 
@@ -1194,75 +1194,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
@@ -1270,75 +1270,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskfonts"></a>Office.ClickToRun.Scenario.InstallTaskFonts
 
@@ -1346,75 +1346,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
@@ -1422,151 +1422,151 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskintegrateinstall"></a>Office.ClickToRun.Scenario.InstallTaskIntegrateinstall
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs veido reģistra ierakstus Office lietojumprogrammām. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs veido reģistra ierakstus Office lietojumprogrammām. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
 
 Tiek apkopoti šādi lauki:
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltasklastrun"></a>Office.ClickToRun.Scenario.InstallTaskLastrun
 
@@ -1574,151 +1574,151 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs migrē iestatījumus no vecākām Office versijām. Tiek izmantots, lai mērītu Office instalācijas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs migrē iestatījumus no vecākām Office versijām. licences un reģistra iestatījumus. Tiek izmantots, lai mērītu Office instalācijas izdošanos vai neizdošanos.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskpublishrsod"></a>Office.ClickToRun.Scenario.InstallTaskPublishrsod
 
@@ -1726,75 +1726,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskremoveinstallation"></a>Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
 
@@ -1802,75 +1802,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office atinstalē
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
@@ -1878,227 +1878,227 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalēt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioinstalltaskuninstallcentennial"></a>Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšējo Office versiju, kas instalēta no veikala Microsoft Store. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office instalētājs atinstalē iepriekšējo Office versiju, kas instalēta no veikala Microsoft Store. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskfinalintegrate"></a>Office.ClickToRun.Scenario.RepairTaskFinalintegrate
 
-Office iestatīšanas un krājumu dati, kas apkopoti, kad Office labošanas klients atkārtoti publicē .msi failus un Office paplašinājumus. Tiek izmantots, lai mērītu Office labošanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas apkopoti, kad Office labošanas klients atkārtoti publicē .msi failus un Office paplašinājumus. Tiek izmantots, lai mērītu Office labošanas sekmīgu/kļūdainu darbību.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskfullrepair"></a>Office.ClickToRun.Scenario.RepairTaskFullrepair
 
@@ -2106,75 +2106,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskintegraterepair"></a>Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2182,227 +2182,227 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kodu var ignorēt 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenariorepairtaskremoveinstallation"></a>Office.ClickToRun.Scenario.RepairTaskRemoveinstallation
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients noņem Office no ierīces, sagatavotos atkārtotai instalēšanai, veicot labošanu. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Office labošanas klients noņem Office no ierīces, sagatavotos atkārtotai instalēšanai, veicot labošanu. Tiek izmantots, lai mērītu Office instalācijas sekmes/kļūmi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients atjaunina licences, ja nepieciešams. Tiek izmantots, lai mērītu Office atjaunināšanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients izslēdz palaistās programmas, ja nepieciešams, un instalē jaunos failus, kas tika lejupielādēti. Tiek izmantots, lai mērītu Office atjaunināšanas veiksmīgu vai neveiksmīgu izpildi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskpublishrsod"></a>Office.ClickToRun.Scenario.UpdateTaskPublishrsod
 
@@ -2410,75 +2410,75 @@ Office iestatīšana un krājumi, kas tiek apkopoti, kad Click-to-Run klients at
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
@@ -2486,87 +2486,87 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_AvailableVersion to —** kāda Office versija ir pieejama atjaunināšanai
+  - **Data\_AvailableVersion to —** kāda Office versija ir pieejama atjaunināšanai
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
+  - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_HardlinkingException —** izņēmums, kas radās, mēģinot izveidot stingrās saites
+  - **Data\_HardlinkingException —** izņēmums, kas radās, mēģinot izveidot stingrās saites
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
+  - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
-  - **Data\_WorkstationLockState —** patiess, ja uzskatām, ka dators ir bloķēts
+  - **Data\_WorkstationLockState —** patiess, ja uzskatām, ka dators ir bloķēts
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateclientdownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload
 
@@ -2574,75 +2574,75 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots. t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedetection"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2650,171 +2650,171 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
+  - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
-  - **Data\_ComAction —** int, kas atspoguļo com darbību, ko veicam
+  - **Data\_ComAction —** int, kas atspoguļo com darbību, ko veicam
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_PackageUpdateAvailable —** patiess, ja ir pieejama jauna Office versija
+  - **Data\_PackageUpdateAvailable —** patiess, ja ir pieejama jauna Office versija
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
-Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients lejupielādē jaunu atjauninājumu. Tiek izmantots, lai mērītu Office atjaunināšanas sekmīgu/kļūdainu darbību.
+Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klients lejupielādē jaunu atjauninājumu. Tiek izmantots, lai mērītu Office atjaunināšanas veiksmīgu vai neveiksmīgu izpildi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
+  - **Data\_AvailableVersion —** uz kādu Office versiju ir pieejams atjauninājums
 
-  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
+  - **Data\_CompletedWithoutActionInfo —** kāpēc nepabeidzām scenāriju, piem., lietojumprogrammas bija atvērtas
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
+  - **Data\_CorruptionChecksOnly —** vai tikai meklējam bojājumus un neveicam atjaunināšanu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās
+  - **Data\_ErrorSource —** kur kļūda radās
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_FoundCorruptFiles —** patiess, ja esam atraduši bojātus failus
+  - **Data\_FoundCorruptFiles —** patiess, ja esam atraduši bojātus failus
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
+  - **Data\_PackageOperationSuccessful —** patiess, ja sekmīgi veicām savu uzdevumu ar Office pakotni
 
-  - **Data\_PipelineExitCode —** izejas kods, ko mūsu failu konveijers atgrieza
+  - **Data\_PipelineExitCode —** izejas kods, ko mūsu failu konveijers atgrieza
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
@@ -2822,118 +2822,118 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_15\_SourceType —** kur Office 15 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
+  - **Data\_15\_UpdatesEnabled —** ja Office 15 atjauninājumi ir iespējoti 
 
-  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
+  - **Data\_15\_UpdateVersion —** uz kādu Office 15 versiju veicam atjaunināšanu 
 
-  - **Data\_15\_Version —** Office 15 versija 
+  - **Data\_15\_Version —** Office 15 versija 
 
-  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
+  - **Data\_16\_SourceType —** kur Office 16 avots atrodas, t.i., CDN vai lokāls 
 
-  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
+  - **Data\_16\_UpdatesEnabled —** ja Office 16 atjauninājumi ir iespējoti 
 
-  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
+  - **Data\_16\_UpdateVersion —** uz kādu Office 16 versiju veicam atjaunināšanu 
 
-  - **Data\_16\_Version —** Office 16 versija 
+  - **Data\_16\_Version —** Office 16 versija 
 
-  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
+  - **Data\_AddingFixedProducts —** produkti, ko pievienojam 
 
-  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
+  - **Data\_AddingProducts —** kādus produktus mums tiek lūgts pievienot 
 
-  - **Data\_CompletionState —** vai pabeidzām uzdevumu
+  - **Data\_CompletionState —** vai pabeidzām uzdevumu
 
-  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
+  - **Data\_ErrorCode —** kļūdas kods, ar kuru radās problēmas 
 
-  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
+  - **Data\_ErrorDetails —** papildu detalizēta informācija par kļūdu 
 
-  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
+  - **Data\_ErrorMessage —** kļūdas ziņojums par to, kāda problēma radās 
 
-  - **Data\_ErrorSource —** kur kļūda radās 
+  - **Data\_ErrorSource —** kur kļūda radās 
 
-  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
+  - **Data\_ExceptionType —** izņēmums, ar kuru radās problēmas 
 
-  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
+  - **Data\_IsErrorCodeIgnorable —** vai kļūdas kods, ar kuru radās problēmas, ir ignorējams 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth —** ja uzskatām, ka kļūdas kods ir ignorējams 
 
-  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
+  - **Data\_NewestPackageVersion —** jaunākā Office versija datorā 
 
-  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
+  - **Data\_OldestPackageVersion —** vecākā Office versija datorā 
 
-  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
+  - **Data\_ProductsToAdd —** kādus Office produktus pievienojam 
 
-  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
+  - **Data\_ProductsToRemove —** kādus Office produktus noņemam 
 
-  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
+  - **Data\_RemovingFixedProducts —** produkti, ko noņemam 
 
-  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
+  - **Data\_RemovingProducts —** produkti, kurus mums tiek lūgts noņemt 
 
-  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
+  - **Data\_ScenarioInstanceID —** unikāls GUID darbības scenārijam 
 
-  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
+  - **Data\_ScenarioName —** kāds scenārijs tiek izmantots, t.i., instalēšana 
 
-  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
+  - **Data\_ScenarioSubType —** kāda veida scenāriju izmantojam, t.i., atinstalēšana, atkārtota instalēšana 
 
-  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
+  - **Data\_SourceType —** kur ir mūsu avots, t.i., CDN 
 
-  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
+  - **Data\_SqmMachineID —** unikālais datora ID, ko izmanto Windows SQM 
 
-  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
+  - **Data\_SusClientID —** datora Office atjaunināšanas identifikators 
 
-  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
+  - **Data\_TaskState —** kādā stāvoklī ir uzdevums, piemēram, darbojas vai atcelts 
 
-  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
+  - **Data\_TotalClientCabSize —** mūsu klienta kabinetfaila lielums 
 
-  - **Data\_TriggeringUI —** kas aktivizēja UI 
+  - **Data\_TriggeringUI —** kas aktivizēja UI 
 
-  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
+  - **Data\_UpdatesEnabled —** ja Office atjauninājumi ir iespējoti 
 
-  - **Data\_Version —** Office versija 
+  - **Data\_Version —** Office versija 
 
 ### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
 
 Ziņo par failu lejupielādes darbībām, lai noteiktu operācijas sekmīgumu, veiktās lejupielādes tipu un diagnostikas informāciju.
 
 
-- **BytesFromGroupPeers —** baiti no grupas vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju
+- **BytesFromGroupPeers —** baiti no grupas vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju
 
-- **BytesFromHttp —** baiti no http, tikai lejupielādēm, izmantojot piegādes optimizāciju
+- **BytesFromHttp —** baiti no http, tikai lejupielādēm, izmantojot piegādes optimizāciju
 
-- **ByteFromInternetPeers —** baiti no interneta vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
+- **ByteFromInternetPeers —** baiti no interneta vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
 
-- **BytesFromLanPeers —** baiti no LAN vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
+- **BytesFromLanPeers —** baiti no LAN vienranga dalībniekiem, tikai lejupielādēm, izmantojot piegādes optimizāciju 
 
-- **canceledJobs —** atcelto pieprasījumu skaits sesijā
+- **canceledJobs —** atcelto pieprasījumu skaits sesijā
 
-- **Connected —** vai ir izveidots savienojums ar avotu
+- **Connected —** vai ir izveidots savienojums ar avotu
 
-- **ErrorCode —** pēdējās kļūdas kods
+- **ErrorCode —** pēdējās kļūdas kods
 
-- **ErrorDetails —** pēdējās kļūdas detalizētā informācija
+- **ErrorDetails —** pēdējās kļūdas detalizētā informācija
 
-- **ErrorMessage —** pēdējās kļūdas ziņojums 
+- **ErrorMessage —** pēdējās kļūdas ziņojums 
 
-- **ErrorSource —** pēdējās kļūdas cēlonis, piemēram, Connection, LoadFile vai LoadRange
+- **ErrorSource —** pēdējās kļūdas cēlonis, piemēram, Connection, LoadFile vai LoadRange
 
-- **FailedJob —** neizdevušos pieprasījumu skaits sesijā
+- **FailedJob —** neizdevušos pieprasījumu skaits sesijā
 
-- **FileSize —** resursa lielums
+- **FileSize —** resursa lielums
 
-- **SourcePathNoFilePath —** resursa avota ceļš, tiek ziņots tikai par http avotu, lokālā faila ceļš un UNC ceļš tiek filtrēts
+- **SourcePathNoFilePath —** resursa avota ceļš, tiek ziņots tikai par http avotu, lokālā faila ceļš un UNC ceļš tiek filtrēts
 
-- **SucceededJobs —** sekmīgu pieprasījumu skaits sesijā
+- **SucceededJobs —** sekmīgu pieprasījumu skaits sesijā
 
-- **TotalJobs —** kopējais pieprasījumu skaits sesijā
+- **TotalJobs —** kopējais pieprasījumu skaits sesijā
 
-- **TotalRequestedBytes —** kopējais pieprasīto baitu skaits sesijā
+- **TotalRequestedBytes —** kopējais pieprasīto baitu skaits sesijā
 
-- **TotalTransferTime —** kopējais pārsūtīšanas laiks sesijā
+- **TotalTransferTime —** kopējais pārsūtīšanas laiks sesijā
 
-- **TransferredBytes —** kopējais pārsūtīto baitu skaits sesijā
+- **TransferredBytes —** kopējais pārsūtīto baitu skaits sesijā
 
-- **TransportType —** transporta veids, piemēram, piegādes optimizācija atmiņā, HTTP, fona režīma viedās pārsūtīšanas pakalpojums
+- **TransportType —** transporta veids, piemēram, piegādes optimizācija atmiņā, HTTP, fona režīma viedās pārsūtīšanas pakalpojums
 
 
 
@@ -2943,13 +2943,13 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_IsForeGroundStreaming** — vai straumējam priekšplānā vai fonā
+  - **Data\_IsForeGroundStreaming** — vai straumējam priekšplānā vai fonā
 
-  - **Data\_IsInstallMode** — 1 — ja instalējam un lejupielādējam failus, 0 — ja to nedarām
+  - **Data\_IsInstallMode** — 1 — ja instalējam un lejupielādējam failus, 0 — ja to nedarām
 
-  - **Data\_SourceProtocol —** ja veicam lejupielādi no satura datu tīkla, CDN, datora, kurā veicam instalēšanu, lokāli vai resursa lokālajā tīklā,
+  - **Data\_SourceProtocol —** ja veicam lejupielādi no satura datu tīkla, CDN, datora, kurā veicam instalēšanu, lokāli vai resursa lokālajā tīklā,
 
-  - **Data\_Status** — sekmīga izpilde vai kļūme 
+  - **Data\_Status** — sekmīga izpilde vai kļūme 
 
 ### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
@@ -2957,213 +2957,213 @@ Office iestatīšanas un krājumu dati, kas tiek apkopoti, kad Click-to-Run klie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Data\_build** — pašlaik instalētā Office versija
+  - **Data\_build** — pašlaik instalētā Office versija
 
-  - **Data\_channel** — kanāls, kurā lietotājs atrodas
+  - **Data\_channel** — kanāls, kurā lietotājs atrodas
 
-  - **Data\_errorCode** — vesela skaitļa kods, kas norāda, kāda veida kļūda radās, ja tāda radās
+  - **Data\_errorCode** — vesela skaitļa kods, kas norāda, kāda veida kļūda radās, ja tāda radās
 
-  - **Data\_errorMessage** — virkne, kas nodrošina radušās kļūdas aprakstu, ja tāda radās
+  - **Data\_errorMessage** — virkne, kas nodrošina radušās kļūdas aprakstu, ja tāda radās
 
-  - **Data\_status** — īss statuss par to, kas notika atjaunināšanas laikā, piemēram, Izdevās vai Lejupielādēts
+  - **Data\_status** — īss statuss par to, kas notika atjaunināšanas laikā, piemēram, Izdevās vai Lejupielādēts
 
-  - **Data\_targetBuild —** Office versija, uz kuru mēģinām veikt atjaunināšanu
+  - **Data\_targetBuild —** Office versija, uz kuru mēģinām veikt atjaunināšanu
 
 
 ### <a name="officeclicktorununiversalbootstrapperapplication"></a>Office.ClickToRun.UniversalBootstrapper.Application
 
 Ziņo par gala-gala instalācijas mēģinājuma rezultātu
 
- - **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+ - **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
- - **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+ - **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
- - **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+ - **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
- - **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+ - **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
 
- - **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
+ - **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
 
 ### <a name="officeclicktorununiversalbootstrappercalculateparameters"></a>Office.ClickToRun.UniversalBootstrapper.CalculateParameters
 
 Atskaites par darbību, kas ir pamats apkopotajai ievadei, izmantojot CollectParameters
 
-- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
+- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
 
 - **ChannelID —**    vesels skaitlis, kas norāda uzskaitītā atjauninājuma/instalācijas kanāla uzskaitījuma vērtību. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums), pusgada uzņēmuma kanāls vai nederīgs.
 
-- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos.
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos.
 
-- **C2RClientUICulture —** instalējamā C2R klienta kultūra
+- **C2RClientUICulture —** instalējamā C2R klienta kultūra
 
-- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
-- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
-- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
-- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
 
-- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
+- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
 
-- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
+- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
 
-- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
+- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
 
-- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
 
-- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
+- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
 
-- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
+- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
 
-- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
 
-- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
+- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
 
-- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
+- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
 
-- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
 
-- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
+- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
 
-- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
+- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
 
-- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
+- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
 
-- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
 
-- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
+- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
 
 - **PridsToMigrateFromCentennial —** Office produktu virkne, lai migrētu no veikala instalācijām uz noklikšķināt, lai palaistu
 
-- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
+- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
 
 - **ProductsToMigrateFromO15C2R —**  Office produktu un kultūru virkne, lai migrētu no Office 2013 noklikšķināt, lai palaistu instalācijas
 
-- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
+- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
 
-- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
+- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
 
-- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
 
 - **ShouldUninstallCentennial —** Būla karodziņš, kas norāda, vai Office produkti no veikala ir jāatinstalē
 
-- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
  
 
 ### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
 
 Ziņo par darbību, kas no .exe faila iegultā paraksta lasa ievadi ar pievienotām atzīmēm. Šī ir nepierādīta koncepcija, kura iepriekšējā programmas setup.exe versijā nebija ieviesta un uz kuru mēs paļaujamies, lai pārnestu lietotāja produkta/valodas/bitu skaita izvēli no tīmekļa lapas uz programmas setup.exe iekšējo procesu.
  
-- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
-- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
-- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
-- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
 
 ### <a name="officeclicktorununiversalbootstrappercollectparameters"></a>Office.ClickToRun.UniversalBootstrapper.CollectParameters
 
 Ziņo par Office instalēšanai izmantotajiem parametriem
 
-- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
+- **BitField  —**    argumenta BitField vesela skaitļa vērtība, kas norāda, vai ir pieprasīts konkrēts instalēšanas/atjaunināšanas kanāls. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums) vai pusgada uzņēmuma kanāls.
 
 - **ChannelID —**    vesels skaitlis, kas norāda uzskaitītā atjauninājuma/instalācijas kanāla uzskaitījuma vērtību. Piemēram, beta kanāls, pašreizējais kanāls (priekšskatījums), pašreizējais kanāls, ikmēneša uzņēmuma kanāls, pusgada uzņēmuma kanāls (priekšskatījums), pusgada uzņēmuma kanāls vai nederīgs.
 
-- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
 
-- **C2RClientUICulture —** instalējamā C2R klienta kultūra
+- **C2RClientUICulture —** instalējamā C2R klienta kultūra
 
-- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
-- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
-- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
-- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
 
-- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
+- **ExcludedApps —** virkne, kurā uzskaitīti to atsevišķo Office programmu nosaukumi, kurām tika pieprasīta izslēgšana no instalētajiem Office komplektiem
 
-- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
+- **InstalledCabVersion —** jau instalētā Office C2R klienta versija formātā “16.0.xxxxx.yyyyy”
 
-- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
+- **InstalledProductVersion —** jau instalētā Office C2R produkta versija formātā “16.0.xxxxx.yyyyy”
 
-- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+- **IsC2RServiceRunning —** Būla karodziņš, kas norāda, vai modernā C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
 
-- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
+- **IsElevatedFlagSet —** Būla karodziņš, kas norāda, vai sāknēšanas programma jau ir mēģinājusi iegūt administratora privilēģiju palielināšanu
 
-- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
+- **IsFireFlyInstalled —** Būla karodziņš, kas norāda, vai šobrīd ir instalēts Office 2013 RTM C2R klients
 
-- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
+- **IsFireflyServiceRunning —** Būla karodziņš, kas norāda, vai 2013 RTM C2R klienta lokālā datora pakalpojums ierīcē ir ieslēgts un darbojas
 
-- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
+- **IsOfficeInstalled —** Būla karodziņš, kas norāda, vai modernais Office klients jau ir instalēts
 
-- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
+- **OfficeCultures —** instalējamo Office kultūru sērijas saraksts
 
-- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+- **OfficeSourceType —** draudzīga virkne, kas saistīta ar instalēšanas avota uzskaitījuma vērtību (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
 
-- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
+- **Origin —** virknes vērtība, kas norāda, kura no atbalstītajām izcelsmes vietām (Puertoriko [PR], Singapūra [SG], Dublina [DB]) ir jāizmanto sākotnējai instalācijas straumēšanai
 
-- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
+- **PlatformFromLink —** virkne, kas norāda no C2R iestatīšanas pakalpojuma pieprasīto Office x86|x64|noklusējuma bitu daudzumu
 
-- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
+- **PlatformOfExistingInstallation —** virkne, kas norāda, vai ierīcē bija jau instalēta x86 vai x64 sistēma Office
 
-- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office
+- **PlatformToInstall —** virkne, kas norāda galīgo lēmumu par to, vai ir jāinstalē x86 vai x64 Office
 
-- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
+- **PRID —**    virknes vērtība, kas norāda pieprasītā produkta laidiena ID patērētāja instalēšanas gadījumā (piemēram, O365ProPlusRetail)
 
 - **PridsToMigrateFromCentennial —** Office produktu virkne, lai migrētu no veikala instalācijām uz noklikšķināt, lai palaistu
 
-- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
+- **ProductsToAdd —**   sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tā ir jāinstalē
 
 - **ProductsToMigrateFromO15C2R —** Office produktu un kultūru virkne, lai migrētu no Office 2013 noklikšķināt, lai palaistu instalācijas
 
-- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
+- **ProductsToRemove —** sērijas virkne, kas C2R klientam norāda, kurās produkta/kultūra kombinācijās tas ir jāatinstalē
 
-- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
+- **SharedComputerLicensing —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis iestatīšanu, lai iespējotu līdzekli SharedComputerLicensing
 
-- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
+- **ShouldActivate —** Būla vērtība, kas norāda, vai IT administrators ir pieprasījis automātisko licencēšanas aktivizācijas mēģinājumu savā konfigurācijas .xml failā
 
 - **ShouldUninstallCentennial —** Būla karodziņš, kas norāda, vai Office produkti no veikala ir jāatinstalē
 
-- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
 ### <a name="officeclicktorununiversalbootstrapperexecute"></a>Office.ClickToRun.UniversalBootstrapper.Execute
 
 Ziņo par veiktajām darbībām, kas ietekmē datoru, kā to nosaka apspriestie dati no CalculateParameters
 
-- **AvailableClientVersionText —** tās C2R klienta versijas formātā “16.0.xxxxx.yyyyy” virknes vērtība, kas atrasta versijas deskriptora XML failā, kurš tiek izmantots, lai noteiktu, vai šobrīd instalētais C2R klients ir jāatjaunina
+- **AvailableClientVersionText —** tās C2R klienta versijas formātā “16.0.xxxxx.yyyyy” virknes vērtība, kas atrasta versijas deskriptora XML failā, kurš tiek izmantots, lai noteiktu, vai šobrīd instalētais C2R klients ir jāatjaunina
 
-- **CleanFireflyAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanFireflyAction izpilde
+- **CleanFireflyAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanFireflyAction izpilde
 
-- **CleanO15Action —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanO15Action izpilde
+- **CleanO15Action —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma CleanO15Action izpilde
 
-- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
+- **CMDMode —** draudzīgā virkne, kas atbilst tam, kāds vispārējā režīma pārslēgs tika noteikts .exe failam nodotajos cmd argumentos. Iespējas ir: automātiskā palaišana, konfigurēšana, patērētājs, lejupielāde, palīdzība, pakotājs
 
-- **DeliveryMechanism —** “FFNRoot” GUID, kas izvilkts no versijas deskriptora XML faila (apzīmogots ar RDX), kurš norāda, no kuras auditorijas/kanāla ir nācis būvējuma avots
+- **DeliveryMechanism —** “FFNRoot” GUID, kas izvilkts no versijas deskriptora XML faila (apzīmogots ar RDX), kurš norāda, no kuras auditorijas/kanāla ir nācis būvējuma avots
 
-- **DownloadC2RClientAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma DownloadC2RClientAction izpilde
+- **DownloadC2RClientAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma DownloadC2RClientAction izpilde
 
-- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
+- **ErrorCode —** vesels skaitlis, kas saistīts ar neapstrādātu izņēmumu
 
-- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
+- **ErrorDetails —** virkne, kas apraksta atrašanās vietu, kur radās neapstrādāts izņēmums (funkcija, fails, rindiņas numurs, metēja iestatītie papildu parametri)
 
-- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
+- **ErrorMessage —** virkne, kas definēta punktā, kurā tika izmests neapstrādāts izņēmums, aprakstot kļūmes būtību
 
-- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
+- **ErrorType —** virkne, kas apraksta neapstrādāta izņēmuma kategoriju
 
-- **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas izpildes fāzes darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
+- **ExitCode —** vesela skaitļa vērtība, kas saistīta ar sāknēšanas programmas izpildes fāzes darbības rezultātu, norādot sekmes vai konkrētus kļūmju tipus
 
-- **LaunchAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchAction izpilde
+- **LaunchAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchAction izpilde
 
-- **LaunchUpdateAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchUpdateAction izpilde
+- **LaunchUpdateAction —** “patiess”, ja šīs instalēšanas laikā ir ieplānota uzdevuma LaunchUpdateAction izpilde
 
-- **PreReqResult —** rezultāta vesela skaitļa uzskaitījuma vērtība, ja tika veiktas PreReq pārbaudes (izturēja/neizturēja/atkārtota palaišana)
+- **PreReqResult —** rezultāta vesela skaitļa uzskaitījuma vērtība, ja tika veiktas PreReq pārbaudes (izturēja/neizturēja/atkārtota palaišana)
 
-- **UnexpectedAction —**“patiess”, ja uzdevumam UnexpectedAction (kļūdas gadījums) ir ieplānota veikšana šīs instalēšanas laikā
+- **UnexpectedAction —**“patiess”, ja uzdevumam UnexpectedAction (kļūdas gadījums) ir ieplānota veikšana šīs instalēšanas laikā
 
-- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
+- **VersionToInstall —** instalējamās Office versijas virknes vērtība formātā “16.0.xxxxx.yyyyy”
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
@@ -3223,11 +3223,11 @@ Apkopo informāciju par līdzekļu vārtejām/maiņas vārtejām, kam izpildīta
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Count** — līdzekļu ar vaicājumiem vārteju skaits šajā partijā iekļautajā notikumā
+  - **Count** — līdzekļu ar vaicājumiem vārteju skaits šajā partijā iekļautajā notikumā
 
-  - **Features** — informācija par vārteju, kam izveidots vaicājums.
+  - **Features** — informācija par vārteju, kam izveidots vaicājums.
 
-  - **Sequence** — secībā, kādā FeatureGate tika veidoti vaicājumi
+  - **Sequence** — secībā, kādā FeatureGate tika veidoti vaicājumi
 
 ### <a name="officeexperimentationflightnumberline"></a>Office.Experimentation.FlightNumberLine
 
@@ -3235,15 +3235,15 @@ Apkopo konfigurāciju sarakstu, ko klients saņēmis no ECS
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ECSConfigs** — komatatdalīts ECS konfigurāciju saraksts
+  - **ECSConfigs** — komatatdalīts ECS konfigurāciju saraksts
 
-  - **LockType** — FlightManager bloķēšanas veids.
+  - **LockType** — FlightManager bloķēšanas veids.
 
-  - **TasFlightingVersion** — versijas numurs
+  - **TasFlightingVersion** — versijas numurs
 
-  - **TimeToLock** — laiks starp liblet uzsākšanu un FlightManager bloķēšanu
+  - **TimeToLock** — laiks starp liblet uzsākšanu un FlightManager bloķēšanu
 
-  - **UnmergedConfigs** — nesapludināto konfigurāciju saraksts
+  - **UnmergedConfigs** — nesapludināto konfigurāciju saraksts
 
 ### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
 
@@ -3359,19 +3359,19 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officeandroiddocsuiviewsdimeerror"></a>Office.Android.DocsUI.Views.DimeError
 
-Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android (izlaista Huawei un Ķīnas veikalos). Šis notikums norāda, ka mēģinājums iegādāties Microsoft 365 abonementu, izmantojot Dime (klienta tīmekļa skatā ielādēts tīmekļa vietrādis URL), neizdevās. Tiek tverti tikai kļūdu scenāriji. Šī notikuma dati ir tikai kļūdas dati un tie tiek izmantoti, lai nodrošinātu Dime pirkumu plūsmas darbspēju klientā.
+Šis notikums tiek apkopots Office lietojumprogrammai darbam ar Android (izlaista Huawei un Ķīnas veikalos). Šis notikums norāda, ka mēģinājums iegādāties Microsoft 365 abonementu, izmantojot Dime (klienta tīmekļa skatā ielādēts tīmekļa vietrādis URL), neizdevās. Tiek tverti tikai kļūdu scenāriji. Šī notikuma dati ir tikai kļūdas dati un tie tiek izmantoti, lai nodrošinātu Dime pirkumu plūsmas darbspēju klientā.
 
 Tiek apkopoti šādi lauki:
 
-- **CorrelationID** — ID, kas unikāli identificē Dime pirkuma sesiju.
+- **CorrelationID** — ID, kas unikāli identificē Dime pirkuma sesiju.
 
-- **ErrorReason** — norāda kļūdas rašanās iemeslu.
-  - 0 — nezināma kļūda
-  - 1 — internets nav pieejams
-  - 2 — vispārēji unikālā identifikatora (UUID) validācija neizdevās
-  - 3 — vispārēji unikāls identifikators (UUID) ir null vai tukšs
-  - 4 — JavaScript injekcijas kļūda, kur Office lietojumprogramma darbam ar Android nevar padot authToken uz Dime
-  - 5 — bāzes tīmekļa URL, kas ielādēts klientā, ir nederīgs
+- **ErrorReason** — norāda kļūdas rašanās iemeslu.
+  - 0 — nezināma kļūda
+  - 1 — internets nav pieejams
+  - 2 — vispārēji unikālā identifikatora (UUID) validācija neizdevās
+  - 3 — vispārēji unikāls identifikators (UUID) ir null vai tukšs
+  - 4 — JavaScript injekcijas kļūda, kur Office lietojumprogramma darbam ar Android nevar padot authToken uz Dime
+  - 5 — bāzes tīmekļa URL, kas ielādēts klientā, ir nederīgs
 
 
 ### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
@@ -3412,70 +3412,70 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officeapplelicensingcommonpaywallcontrol"></a>Office.Apple.Licensing.CommonPaywallControl
 
-Šis notikums tiek izmantots, lai izprastu lietotāja programmā veiktā pirkuma (in-app purchase — IAP) pieredzi. Tas ļauj mums nodrošināt, lai IAP darbotos, kā paredzēts, un palīdz izprast lietotāju problēmas, lai mēs varētu optimizēt šo IAP līdzekli.  Apkopošana notiek, izmantojot kādu no tālāk norādītajiem apakšnotikumiem.
+Šis notikums tiek izmantots, lai izprastu lietotāja programmā veiktā pirkuma (in-app purchase — IAP) pieredzi. Tas ļauj mums nodrošināt, lai IAP darbotos, kā paredzēts, un palīdz izprast lietotāju problēmas, lai mēs varētu optimizēt šo IAP līdzekli.  Apkopošana notiek, izmantojot kādu no tālāk norādītajiem apakšnotikumiem.
 
-- **Office.iOS.Paywall.Paywall.Presented** — dati tiek apkopoti, kad lietotājam tiek parādīta Paywall vadīkla. Dati tiek izmantoti, lai veidotu skatu, kurā katrā darbībā tiek mērīts konvertēšanas ātrums, un nodrošinātu, ka lietotāja interfeiss darbojas, kā paredzēts un lietotājiem pēc iespējas nerastos problēmu iegādes laikā.
+- **Office.iOS.Paywall.Paywall.Presented** — dati tiek apkopoti, kad lietotājam tiek parādīta Paywall vadīkla. Dati tiek izmantoti, lai veidotu skatu, kurā katrā darbībā tiek mērīts konvertēšanas ātrums, un nodrošinātu, ka lietotāja interfeiss darbojas, kā paredzēts un lietotājiem pēc iespējas nerastos problēmu iegādes laikā.
 
    Tiek apkopoti šādi lauki.
 
   - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”
   - **isFRE** — Būla — vai tiek rādīts pirmās palaišanas pieredzes lietotāja interfeiss vai standarta lietotāja interfeiss?
 
-- **Office.iOS.Paywall.Paywall.Stats** — dati tiek apkopoti, kad lietotājam tiek parādīts Paywall lietotāja interfeiss, un tie norāda mijiedarbības ilgumu un to, vai notika pirkuma veikšanas mēģinājums, tas izdevās vai neizdevās. Dati tiek izmantoti, lai mērītu lietotāja interfeisa veiktspēju un pārliecinātos, vai tas darbojas, kā paredzēts. 
+- **Office.iOS.Paywall.Paywall.Stats** — dati tiek apkopoti, kad lietotājam tiek parādīts Paywall lietotāja interfeiss, un tie norāda mijiedarbības ilgumu un to, vai notika pirkuma veikšanas mēģinājums, tas izdevās vai neizdevās. Dati tiek izmantoti, lai mērītu lietotāja interfeisa veiktspēju un pārliecinātos, vai tas darbojas, kā paredzēts. 
 
    Tiek apkopoti šādi lauki.
 
    - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
-   - **isFRE** — Būla vērtība — pārbaude, vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss.
-   - **status** — virkne — Paywall izejas statuss. Piemērs: “initiated”, “paymentDone”, “provisionFailed”.
-   - **userDuration** — datu tips Double — lietotāja līdzeklim Paywall veltītais laiks milisekundēs
+   - **isFRE** — Būla vērtība — pārbaude, vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss.
+   - **status** — virkne — Paywall izejas statuss. Piemērs: “initiated”, “paymentDone”, “provisionFailed”.
+   - **userDuration** — datu tips Double — lietotāja līdzeklim Paywall veltītais laiks milisekundēs
   
-- **Office.iOS.Paywall.SKUChooser.BuyButtonButton** — dati tiek apkopoti, kad lietotājs pieskaras pogai Iegādāties. Dati tiek izmantoti, lai mērītu pogas veiktspēju un pārliecinātos, vai tā darbojas, kā paredzēts.
+- **Office.iOS.Paywall.SKUChooser.BuyButtonButton** — dati tiek apkopoti, kad lietotājs pieskaras pogai Iegādāties. Dati tiek izmantoti, lai mērītu pogas veiktspēju un pārliecinātos, vai tā darbojas, kā paredzēts.
 
    Tiek apkopoti šādi lauki.
 
    - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
    - **isDefaultSKU** — Būla vērtība, ja lietotājs iegādājas produktu, iesakām to darīt, parādot to pēc noklusējuma.
-   - **productId** — virkne — tā veikala App Store produkta ID, kuram tika nospiesta poga Iegādāties.
+   - **productId** — virkne — tā veikala App Store produkta ID, kuram tika nospiesta poga Iegādāties.
    - **toggleCount** — Int — to reižu skaits, kad lietotājs pārslēdzās starp dažādu produktu skatīšanu, pirms viņš pieskārās pogai Pirkt, pašreizējā Paywall sesijā.
 
-- **Office.iOS.Paywall.SKUChooser.Stats** — dati tiek apkopoti, lai noskaidrotu, kā lietotājs ienāca SKU izvēlē, cik daudz laika pavadīja SKU izvēles ekrānā un kāpēc izgāja no SKU izvēles. Izmantojot šo informāciju, varam nodrošināt, ka SKU izvēle darbojas, kā paredzēts, un varēsim optimizēt un uzlabot lietotāju ērtības.
+- **Office.iOS.Paywall.SKUChooser.Stats** — dati tiek apkopoti, lai noskaidrotu, kā lietotājs ienāca SKU izvēlē, cik daudz laika pavadīja SKU izvēles ekrānā un kāpēc izgāja no SKU izvēles. Izmantojot šo informāciju, varam nodrošināt, ka SKU izvēle darbojas, kā paredzēts, un varēsim optimizēt un uzlabot lietotāju ērtības.
 
    Tiek apkopoti šādi lauki.
 
    - **entryPoint** — virkne — poga/plūsma, no kuras tika parādīts Paywall. Piemēram, “Premium jaunināšanas poga” vai “Pirmās palaišanas plūsma”.
    - **exitReason** — virkne — iemesls iziešanai no SKU izvēles. Piemērs: “BuyButton”, “CloseButton”.
-   - **isFRE** — Būla vērtība — vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss?
-   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja SKU izvēlē, ilgums milisekundēs.
+   - **isFRE** — Būla vērtība — vai tiek rādīts pirmās palaišanas pieredzes vai parastais lietotāja interfeiss?
+   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja SKU izvēlē, ilgums milisekundēs.
 
-- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** — dati tiek apkopoti, ja neizdodas iegāde/nodrošināšana/aktivizēšana un lietotājs pieskārās pogai Mēģināt vēlreiz. Dati tiek izmantoti, lai novērstu problēmas iegādes kļūdu scenārijos un veiktu labojumus, nodrošinot darbību, kāda ir paredzēta.
-
-   Tiek apkopoti šādi lauki:
-
-   - **failureReason** — virkne — norāda, kāda kļūme bija par iemeslu tam, ka lietotājs mēģina vēlreiz; piemēram, "provisioningFailed", "purchaseFailed", "activationFailed".
-   - **productid** — virkne — tā produkta App Store ID, kuram lietotājs mēģina vēlreiz veikt nesekmīgo pieprasījumu.
-
-- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** — dati, kas apkopoti, kad lietotāji pieskaras pie "Skatīt citas priekšrocības", lai skatītu visus pirkumā iekļautos pakalpojumus, programmas un līdzekļus. Tiem ir jāizvērš sadaļas ar detalizētu informāciju par katras programmas līdzekļiem. Šis notikums apkopo tos līdzekļus un programmas, ko tie izvērsa, kā arī veltītā laika ilgumu. Dati tiek izmantoti, lai nodrošinātu, ka lietotāja interfeiss (kas tiek piedāvāts lietotājiem, lai uzzinātu, kādas ir priekšrocības) darbojas, kā paredzēts. 
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** — dati tiek apkopoti, ja neizdodas iegāde/nodrošināšana/aktivizēšana un lietotājs pieskārās pogai Mēģināt vēlreiz. Dati tiek izmantoti, lai novērstu problēmas iegādes kļūdu scenārijos un veiktu labojumus, nodrošinot darbību, kāda ir paredzēta.
 
    Tiek apkopoti šādi lauki:
 
-   - **appsExpanded** — virkne — komatatdalīts to pakalpojumu/programmu saraksts, kuru priekšrocības tika izvērstas.
-   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās papildu piedāvātās priekšrocības
-   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
+   - **failureReason** — virkne — norāda, kāda kļūme bija par iemeslu tam, ka lietotājs mēģina vēlreiz; piemēram, "provisioningFailed", "purchaseFailed", "activationFailed".
+   - **productid** — virkne — tā produkta App Store ID, kuram lietotājs mēģina vēlreiz veikt nesekmīgo pieprasījumu.
 
-- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** — šis notikums tiek apkopots, kad lietotājs pēc sekmīgas iegādes pieskaras pie "Skatīt visas priekšrocības", lai skatītu pirkumā iekļautās programmas un līdzekļus. Dati tiek izmantoti, lai mērītu, vai lietotāja interfeiss darbojas, kā paredzēts.
-
-   Tiek apkopoti šādi lauki:
-
-   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās visas piedāvātās priekšrocības.
-
-- **Office.iOS.Paywall.SKUChooser.ProductSwitched** — lietojuma telemetrija, lai skatītu lietotāja mijiedarbību ar lietotāja interfeisu, kas nodrošināts, lai pārslēgtos starp dažādiem SKU, un nodrošinātu, ka darbība notiek, kā paredzēts. 
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** — dati, kas apkopoti, kad lietotāji pieskaras pie "Skatīt citas priekšrocības", lai skatītu visus pirkumā iekļautos pakalpojumus, programmas un līdzekļus. Tiem ir jāizvērš sadaļas ar detalizētu informāciju par katras programmas līdzekļiem. Šis notikums apkopo tos līdzekļus un programmas, ko tie izvērsa, kā arī veltītā laika ilgumu. Dati tiek izmantoti, lai nodrošinātu, ka lietotāja interfeiss (kas tiek piedāvāts lietotājiem, lai uzzinātu, kādas ir priekšrocības) darbojas, kā paredzēts. 
 
    Tiek apkopoti šādi lauki:
 
-  - **productId** — virkne — tā produkta App Store ID, uz kura skatīšanu lietotājs tikko pārslēdzās no pieejamajiem produktiem SKU izvēlē.
+   - **appsExpanded** — virkne — komatatdalīts to pakalpojumu/programmu saraksts, kuru priekšrocības tika izvērstas.
+   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās papildu piedāvātās priekšrocības
+   - **userDuration** — datu tips Double — laika, ko lietotājs pavadīja priekšrocību ekrānā, ilgums milisekundēs.
 
-- **Office.iOS.Paywall.StoreKit.Response** — kritiska inženierijas telemetrija, lai reģistrētu tā iegādes mēģinājuma rezultātu, ko manuāli izraisīja lietotājs, un veikala App Store atbildi uz šo notikumu. Dati tiek izmantoti, lai novērtētu pirkšanas mēģinājuma statusu un kļūmes (ja rodas) iemeslus, kā arī veiktu labojošas darbības, lai nodrošinātu, ka IAP un visi ieejas punkti darbojas, kā paredzēts.
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** — šis notikums tiek apkopots, kad lietotājs pēc sekmīgas iegādes pieskaras pie "Skatīt visas priekšrocības", lai skatītu pirkumā iekļautās programmas un līdzekļus. Dati tiek izmantoti, lai mērītu, vai lietotāja interfeiss darbojas, kā paredzēts.
+
+   Tiek apkopoti šādi lauki:
+
+   - **productId** — virkne — tā produkta App Store ID, kuram lietotājs skatās visas piedāvātās priekšrocības.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** — lietojuma telemetrija, lai skatītu lietotāja mijiedarbību ar lietotāja interfeisu, kas nodrošināts, lai pārslēgtos starp dažādiem SKU, un nodrošinātu, ka darbība notiek, kā paredzēts. 
+
+   Tiek apkopoti šādi lauki:
+
+  - **productId** — virkne — tā produkta App Store ID, uz kura skatīšanu lietotājs tikko pārslēdzās no pieejamajiem produktiem SKU izvēlē.
+
+- **Office.iOS.Paywall.StoreKit.Response** — kritiska inženierijas telemetrija, lai reģistrētu tā iegādes mēģinājuma rezultātu, ko manuāli izraisīja lietotājs, un veikala App Store atbildi uz šo notikumu. Dati tiek izmantoti, lai novērtētu pirkšanas mēģinājuma statusu un kļūmes (ja rodas) iemeslus, kā arī veiktu labojošas darbības, lai nodrošinātu, ka IAP un visi ieejas punkti darbojas, kā paredzēts.
 
    Tiek apkopoti šādi lauki.
 
@@ -3484,9 +3484,9 @@ Tiek apkopoti šādi lauki:
    - **productId** — virkne — tikai "MakePurchase", "PendingPurchase", tā produkta ID lietojumprogrammu veikalā, par kuru tiek iesniegts pieprasījums.
    - **productsCount** — Int — tikai "ProductsFetch" — veikalā atgriezto produktu skaits.
    - **requestType** — virkne — StoreKit pieprasījuma tips. Piemēram, "ProductsFetch", "PendingPurchase"
-   - **status** — virkne — “Success” vai “Failure”, kas norāda pieprasījuma sekmīgu izpilde vai kļūmi.
+   - **status** — virkne — “Success” vai “Failure”, kas norāda pieprasījuma sekmīgu izpilde vai kļūmi.
 
-- **Office.iOS.Paywall.Provisioning.Response** — kritiska inženierijas telemetrija un līgums ar mazumtirdzniecības federācijas pakalpojumu (Retail Federation Service — RFS), lai apkopotu tajā sniegto informāciju. RFS ir iekšējais pakalpojums, kas tiek izmantots Microsoft ietvaros, lai veiktu pirkuma šķērspārbaudi. Tas tiek izmantots, lai iegūtu pakalpojumam RFS veiktā API izsaukuma darbspēju un palīdzētu saprast, vai integrācijas veiktspēja ir tāda, kā paredzēts.  
+- **Office.iOS.Paywall.Provisioning.Response** — kritiska inženierijas telemetrija un līgums ar mazumtirdzniecības federācijas pakalpojumu (Retail Federation Service — RFS), lai apkopotu tajā sniegto informāciju. RFS ir iekšējais pakalpojums, kas tiek izmantots Microsoft ietvaros, lai veiktu pirkuma šķērspārbaudi. Tas tiek izmantots, lai iegūtu pakalpojumam RFS veiktā API izsaukuma darbspēju un palīdzētu saprast, vai integrācijas veiktspēja ir tāda, kā paredzēts.  
 
    Tiek apkopoti šādi lauki.
 
@@ -3498,7 +3498,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
-Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Piemēram, iegādes programmā plūsmai, kad lietotājs izvēlas iegādāties Microsoft 365 abonementu no Office lietojumprogrammas darbam ar Android vai ierīcēs, kurās darbojas operētājsistēma Windows.
+Šis notikums tver datus, kas palīdz veikt Dime komponentu darbpsējas pārraudzību.  Piemēram, iegādes programmā plūsmai, kad lietotājs izvēlas iegādāties Microsoft 365 abonementu no Office lietojumprogrammas darbam ar Android vai ierīcēs, kurās darbojas operētājsistēma Windows.
 
 Tiek apkopoti šādi lauki:
 
@@ -3550,23 +3550,23 @@ Tiek apkopoti šādi lauki:
 
 - **Data_QosLevel** — nozīmīguma pakāpe 0/1/2
 
-- **Data_SDX_AssetId** — pakalpojuma nodrošinātā līdzekļa (SDX), kurā ir izvietots saturs sistēmai Win32, līdzekļa ID
+- **Data_SDX_AssetId** — pakalpojuma nodrošinātā līdzekļa (SDX), kurā ir izvietots saturs sistēmai Win32, līdzekļa ID
 
-- **Data_SDX_BrowserToken** — pārlūkprogrammas sistēmai Win32 marķieris
+- **Data_SDX_BrowserToken** — pārlūkprogrammas sistēmai Win32 marķieris
 
-- **Data_SDX_HostJsVersion** — JavaScript bibliotēkas versija sistēmai Win32
+- **Data_SDX_HostJsVersion** — JavaScript bibliotēkas versija sistēmai Win32
 
-- **Data_SDX_Id** — pakalpojuma nodrošinātā līdzekļa ID sistēmai Win32
+- **Data_SDX_Id** — pakalpojuma nodrošinātā līdzekļa ID sistēmai Win32
 
-- **Data_SDX_InstanceId** — SDX sistēmai Win32 instances ID
+- **Data_SDX_InstanceId** — SDX sistēmai Win32 instances ID
 
-- **Data_SDX_MarketplaceType** — SDX tirgus veids sistēmai Win32
+- **Data_SDX_MarketplaceType** — SDX tirgus veids sistēmai Win32
 
-- **Data_SDX_OfficeJsVersion** — Office JS versija sistēmai Win32
+- **Data_SDX_OfficeJsVersion** — Office JS versija sistēmai Win32
 
-- **Data_SDX_SessionId** — SDX sistēmai Win32 sesijas ID
+- **Data_SDX_SessionId** — SDX sistēmai Win32 sesijas ID
 
-- **Data_SDX_Version** — SDX versija sistēmai Win32
+- **Data_SDX_Version** — SDX versija sistēmai Win32
 
 - **CollectionTime** — notikuma laikspiedols
 
@@ -3592,9 +3592,27 @@ Tas tiek izmantots, lai noteiktu, vai lietotājs ir piemērotā stāvoklī, kas 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
+  - **ACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **DwEulaId** — EULA tipa, ko akceptēja lietotājs, skaitliskais identifikators
+  - **DwEulaId** — EULA tipa, ko akceptēja lietotājs, skaitliskais identifikators
+
+
+### <a name="officelicensingactivatedeviceentitlement"></a>Office.Licensing.ActivateDeviceEntitlement
+
+Šis notikums tiek aktivizēts tad, kad mēģināt aktivizēt ierīcē esošu beztermiņa Office piedāvājumu lietotājam.  Mēs izmantojam šos datus, lai pārraudzītu sistēmu un pakalpojumu darbspēju.
+
+Tiek apkopoti tālāk norādītie lauki. 
+
+- **Activity_Success** — norāda, vai ierīce ir licencēta, izmantojot ierīcē esošu beztermiņa Office piedāvājumu.
+
+- **Data_Count** — norāda ar konkrēto ierīci saistīto beztermiņa Office piedāvājumu skaitu. Tehniski nevajadzētu būt vairāk par vienu.
+
+- **Data_EligibleEntitlementsCount** — sniedz informāciju par derīgu piedāvājumu skaitu. Pakalpojums atgriezīs informāciju par visiem ar ierīci saistītajiem piedāvājumiem, bet mums ir jāpārbauda piedāvājumi, kas ir saistīti ar palaisto Office līdzekli.
+
+- **Data_Errors** — virkne, kurā ir norādīts kļūdu, kas notika piedāvājumu licenču ienešanas laikā, skaitu; atdalīts ar komatu.
+
+- **Data_LicensedEntitlementsCount** — norāda piedāvājumu skaitu, kuriem ir veiksmīgi ienesta licence. Ir iespējamas piedāvājumu kļūdas, kas neļauj mums iegūt licenci. 
+
 
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
@@ -3604,9 +3622,9 @@ Tas ir kritiski svarīgi, lai noteiktu, cik lietotājiem rodas aktivizācijas pr
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
+  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **ReferralData** — OEM, kas datorā instalēja sistēmu Office, identifikators
+  - **ReferralData** — OEM, kas datorā instalēja sistēmu Office, identifikators
 
 ### <a name="officelicensingactivationwizard"></a>Office.Licensing.ActivationWizard 
 
@@ -3636,7 +3654,7 @@ Tiek apkopoti šādi lauki:
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
-Šis notikums tiek izmantots kā signāls, kas informē mūs par to, ka pirkumu veikšanas programmā līdzekli aizver lietotājs vai programma. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju, lai nodrošinātu tās darbību atbilstoši paredzētajam.  
+Šis notikums tiek izmantots kā signāls, lai informētu mūs par to, ka notiek līdzekļa pirkumu veikšanai aizvēršana, ko veic lietotājs vai programma. Šie dati tiek izmantoti, lai pārraudzītu un brīdinātu par pirkumu programmā plūsmas darbspēju un nodrošinātu tās paredzēto darbību.  
  
 Tiek apkopoti šādi lauki:
  
@@ -3681,7 +3699,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Qualified** — norāda, vai lietotājs kvalificējās pierakstīšanās uzspiešanai
+  - **Qualified** — norāda, vai lietotājs kvalificējās pierakstīšanās uzspiešanai
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
@@ -3689,7 +3707,7 @@ Tas tiek apkopots, kad lietotājam rādām derīguma beigu dialogu, kurā norād
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **LicNotificationState** — skaitītājs, kas mums norāda, kāda veida paziņojums tiek rādīts lietotājam
+  - **LicNotificationState** — skaitītājs, kas mums norāda, kāda veida paziņojums tiek rādīts lietotājam
 
 ### <a name="officelicensingfullvalidation"></a>Office.Licensing.FullValidation 
 
@@ -3697,17 +3715,17 @@ Tas tiek apkopots katrā sesijā, kas ziņo datora licencēšanas stāvokli un k
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
+  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
   
   - **ActivationAttributes** — lietotāja izmantotā aktivizācijas mehānisma veids.
 
-  - **IsSessionLicensing** — vai pašlaik strādājam koplietojamā datora aktivizācijas režīmā 
+  - **IsSessionLicensing** — vai pašlaik strādājam koplietojamā datora aktivizācijas režīmā 
 
-  - **LicenseCategory** — lietotāja izmantotās Office licences kategorija 
+  - **LicenseCategory** — lietotāja izmantotās Office licences kategorija 
 
-  - **Licenses** — visu datorā esošo Office licenču nosaukumu saraksts 
+  - **Licenses** — visu datorā esošo Office licenču nosaukumu saraksts 
 
-  - **LicenseStatuses** — visu datorā esošo Office licenču statuss 
+  - **LicenseStatuses** — visu datorā esošo Office licenču statuss 
 
 ### <a name="officelicensinggetentitlement"></a>Office.Licensing.GetEntitlement 
 
@@ -3724,30 +3742,30 @@ Tiek apkopoti tālāk norādītie lauki:
 
 Tiek apkopoti tālāk norādītie lauki.
 
-- **Activity_Success** — Būla vērtība: informē mūs, vai esam sekmīgi ienesuši tās ierīces licenci, kas jāaktivizē Office programmā.
+- **Activity_Success** — Būla vērtība: informē mūs, vai esam sekmīgi ienesuši tās ierīces licenci, kas jāaktivizē Office programmā.
 
-- **Data_AllowNULPerpetual** — Būla vērtība: norāda mums, vai ir ieslēgts testējamais variants, lai iespējotu vNext Perpetual.
+- **Data_AllowNULPerpetual** — Būla vērtība: norāda mums, vai ir ieslēgts testējamais variants, lai iespējotu vNext Perpetual.
 
-- **Data_AttemptNulReactivation** — Būla vērtība: norāda mums, vai šis ir atkārtotas aktivizēšanas scenārijs.
+- **Data_AttemptNulReactivation** — Būla vērtība: norāda mums, vai šis ir atkārtotas aktivizēšanas scenārijs.
 
-- **Data_CurrentMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks).
+- **Data_CurrentMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks).
 
-- **Data_HasError** — Būla vērtība: informē mūs, vai, mēģinot iegūt izvēlētās lietotāja pilnvaras licenci, radās kļūda.
+- **Data_HasError** — Būla vērtība: informē mūs, vai, mēģinot iegūt izvēlētās lietotāja pilnvaras licenci, radās kļūda.
 
-- **Data_IsSubscription** — Būla vērtība: informē mūs, vai atkārtotā aktivizēšana ir abonējamam Office produktam.
+- **Data_IsSubscription** — Būla vērtība: informē mūs, vai atkārtotā aktivizēšana ir abonējamam Office produktam.
 
-- **Data_NewMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks). Vairākumā gadījumu vajadzētu būt 2.
+- **Data_NewMode** — 0 nozīmē GMT (mantotās licencēšanas steks), 2 nozīmē vNext (modernās licencēšanas steks). Vairākumā gadījumu vajadzētu būt 2.
 
-- **Data_SkuToSkuNeeded** —Būla vērtība: norāda mums, vai ir jāveic SKU uz SKU konvertēšana, jo atļautais Office SKU neatbilst instalētajam Office SKU.
+- **Data_SkuToSkuNeeded** —Būla vērtība: norāda mums, vai ir jāveic SKU uz SKU konvertēšana, jo atļautais Office SKU neatbilst instalētajam Office SKU.
 
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
-Katrā sesijā pārbaudām, vai ir pagājušas 72 stundas kopš pēdējās licences atjaunošanas, un mēģinām pagarināt pašreizējās licences derīguma termiņu. Šis notikums ziņo par izsaukuma, ko veicam, lai nodrošinātu, ka varam pagarināt licences derīguma termiņu un uzturēt lietotāja Office instalācijas funkcionalitāti, sekmīgu izpildi vai kļūmi. Tas ir kritiski svarīgi, lai diagnosticētu ar abonementu saistītas problēmas un pakalpojumu problēmas lietotājam, kā arī ir kritiski svarīgi, lai noteiktu regresiju jau aktivizēto abonementu lietotājiem.
+Katrā sesijā pārbaudām, vai ir pagājušas 72 stundas kopš pēdējās licences atjaunošanas, un mēģinām pagarināt pašreizējās licences derīguma termiņu. Šis notikums ziņo par izsaukuma, ko veicam, lai nodrošinātu, ka varam pagarināt licences derīguma termiņu un uzturēt lietotāja Office instalācijas funkcionalitāti, sekmīgu izpildi vai kļūmi. Tas ir kritiski svarīgi, lai diagnosticētu ar abonementu saistītas problēmas un pakalpojumu problēmas lietotājam, kā arī ir kritiski svarīgi, lai noteiktu regresiju jau aktivizēto abonementu lietotājiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Mode** — šajā datorā izmantotā Office licencēšanas steka skaitītāja attēlojums
+  - **Mode** — šajā datorā izmantotā Office licencēšanas steka skaitītāja attēlojums
 
 ### <a name="officelicensinginclientpinredemptioncallpinredemptionapi"></a>Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
 
@@ -3761,7 +3779,7 @@ Tiek apkopoti šādi lauki:
 
 - **ErrorType** — kļūmes iemesls, piemēram, "AlreadyRedeemedByOther".
 
-- **InAFOFlow** — Būla vērtība, kas norāda, vai mēs esam Office aktivizācijas izmantošanas plūsmā.
+- **InAFOFlow** — Būla vērtība, kas norāda, vai mēs esam Office aktivizācijas izmantošanas plūsmā.
 
 - **StatusCode** — viena vārda pakalpojuma zvana rezultāts, piemēram, "Izveidots".
 
@@ -3775,15 +3793,15 @@ Ja šī ierīce pāriet samazinātas funkcionalitātes režīmā, mēs izsūtām
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
+  - **ACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **DaysRemaining** — atlikušais dienu skaits pirms pašreizējās Office licences derīguma beigām
+  - **DaysRemaining** — atlikušais dienu skaits pirms pašreizējās Office licences derīguma beigām
 
-  - **Mode** — šajā datorā izmantotā Office licencēšanas steka skaitītāja attēlojums
+  - **Mode** — šajā datorā izmantotā Office licencēšanas steka skaitītāja attēlojums
 
-  - **ProductName** — produkta, ko lietotājs pašlaik izmanto, nosaukums
+  - **ProductName** — produkta, ko lietotājs pašlaik izmanto, nosaukums
 
-  - **Reason** — kļūdas kods, kas norāda pašreizējā licences statusa iemeslu
+  - **Reason** — kļūdas kods, kas norāda pašreizējā licences statusa iemeslu
 
 ### <a name="officelicensinginstallkey"></a>Office.Licensing.InstallKey
 
@@ -3791,9 +3809,9 @@ Tas tiek apkopots, kad mēģinām ierīcē instalēt atslēgu, lai datoru licenc
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Prid** — produktu grupas, kurai tiek instalēta atslēga, nosaukums
+  - **Prid** — produktu grupas, kurai tiek instalēta atslēga, nosaukums
 
-  - **SkuId** — GUID identifikators, kas atspoguļo Office produktu, kuram tiek instalēta atslēga 
+  - **SkuId** — GUID identifikators, kas atspoguļo Office produktu, kuram tiek instalēta atslēga 
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
@@ -3801,11 +3819,24 @@ Ja redzam problēmas ar aktivizācijas darbplūsmu, mēs aktivizējam licences v
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
+  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **LicenseStatus** — lietotāja izmantotās Office licences statuss
+  - **LicenseStatus** — lietotāja izmantotās Office licences statuss
 
-  - **MachineKey** — lietotājam izsniegtās licences atslēgas burtciparu identifikators
+  - **MachineKey** — lietotājam izsniegtās licences atslēgas burtciparu identifikators
+
+### <a name="officelicensinglaunchsetupoffice"></a>Office.Licensing.LaunchSetupOffice
+
+Šis notikums tiek aktivizēts, kad mēs izmantojam Office piedāvājumu lietotājam, kas iegādājās ierīces komplektu, kurā ir iekļauts OEM Office priekšpiedāvājums, vai ievadīja produkta atslēgu. Mēs izmantojam šos datus, lai pārraudzītu sistēmu un pakalpojumu darbspēju.
+
+Tiek apkopoti tālāk norādītie lauki.
+
+- **Activity_Result_Tag** — informē par to, kā mēs pabeidzām šo notikumu.
+
+- **Data_DialogResult** — informē mūs par izpirkšanas procesa kopējo rezultātu.
+
+- **Data_Scenario** — informē mūs par scenāriju, kuram notika izpirkšana.
+
 
 ### <a name="officelicensinglicensingbar"></a>Office.Licensing.LicensingBar
 
@@ -3813,11 +3844,11 @@ Ja ierīcei rodas licencēšanas problēmas un lietotājam tiek rādīta kopnes 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **SuppressNotification** — norāda, vai apspiedām licencēšanas kopnes joslu
+  - **SuppressNotification** — norāda, vai apspiedām licencēšanas kopnes joslu
 
-  - **Title** — licencēšanas kopnes joslas, kas tika rādīta lietotājam, nosaukums
+  - **Title** — licencēšanas kopnes joslas, kas tika rādīta lietotājam, nosaukums
 
-  - **Type** — licencēšanas kopnes joslas, kas tiek rādīta lietotājam, veids
+  - **Type** — licencēšanas kopnes joslas, kas tiek rādīta lietotājam, veids
 
 ### <a name="officelicensinglicexitofficeprocess"></a>Office.Licensing.LicExitOfficeProcess 
 
@@ -3825,7 +3856,7 @@ Ja licencēšanas problēmas dēļ esam spiesti aizvērt Office vai izraisīt Of
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ExitCode** — iekšējais kods, kas izraisīja lietojumprogrammas izeju
+  - **ExitCode** — iekšējais kods, kas izraisīja lietojumprogrammas izeju
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
@@ -3833,9 +3864,9 @@ Mēģinot ierīci licencēt, lietojumprogramma mēģina ielādēt lietotāja ide
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **FederationProvider** — virkne, kas norāda federācijas nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
+  - **FederationProvider** — virkne, kas norāda federācijas nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
 
-  - **IdentityProvider** — virkne, kas norāda identitātes nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
+  - **IdentityProvider** — virkne, kas norāda identitātes nodrošinātāju lietotājam, kurš pašlaik ir pieteicies
 
 ### <a name="officelicensinglvuxeulaexplicitcrash"></a>Office.Licensing.LVUX.EULAExplicitCrash 
 
@@ -3843,9 +3874,9 @@ Tas tiek apkopots, ja lietotājam tika rādīts EULA un lietotājs izvēlējās 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
+  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence
 
-  - **OptInShown** — norāda, vai piekrišanas dialogs, kas tiek rādīts lietojumprogrammas pirmajā sāknēšanas reizē, jau ir rādīts
+  - **OptInShown** — norāda, vai piekrišanas dialogs, kas tiek rādīts lietojumprogrammas pirmajā sāknēšanas reizē, jau ir rādīts
 
 ### <a name="officelicensingnextuserlicensingeligible"></a>Office.Licensing.NextUserLicensingEligible 
 
@@ -3859,9 +3890,9 @@ Ja ierīce izmanto moderno licencēšanas steku, mēģinām iegūt licences fail
 
 Tiek apkopoti šādi lauki:
 
-  - **MetadataValidationResult** — licences metadatu pārbaudes rezultāts, lai verificētu, ka tā nav ietekmēta
+  - **MetadataValidationResult** — licences metadatu pārbaudes rezultāts, lai verificētu, ka tā nav ietekmēta
 
-  - **SignatureValidationResult** — licences paraksta pārbaudes rezultāts, lai verificētu, ka tā nav ietekmēta
+  - **SignatureValidationResult** — licences paraksta pārbaudes rezultāts, lai verificētu, ka tā nav ietekmēta
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
@@ -3869,17 +3900,17 @@ Tas tiek apkopots katrā ierīces sesijā, kas darbojas modernajā licencēšana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
+  - **Acid** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
 
-  - **AllAcids** — visu produkta GUID saraksts, kam lietotājam pašlaik ir licence 
+  - **AllAcids** — visu produkta GUID saraksts, kam lietotājam pašlaik ir licence 
 
-  - **Category** — lietotāja izmantotās Office licences kategorija 
+  - **Category** — lietotāja izmantotās Office licences kategorija 
 
-  - **DaysRemaining** — atlikušais dienu skaits pirms pašreizējās Office licences derīguma beigām 
+  - **DaysRemaining** — atlikušais dienu skaits pirms pašreizējās Office licences derīguma beigām 
 
-  - **LicenseId** — lietotājam izsniegtās licences burtciparu identifikators 
+  - **LicenseId** — lietotājam izsniegtās licences burtciparu identifikators 
 
-  - **LicenseType** — lietotāja izmantotās Office licences veids 
+  - **LicenseType** — lietotāja izmantotās Office licences veids 
 
 ### <a name="officelicensingofficeclientlicensingdolicensevalidation"></a>Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
@@ -3887,29 +3918,29 @@ Tie ir licencēšanas metadati, kas tiek apkopoti no ierīces katrā sāknēšan
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **FullValidationMode** — režīms, kas norāda, ka veicam pilnīgu licences verifikācijas pārbaudi 
+  - **FullValidationMode** — režīms, kas norāda, ka veicam pilnīgu licences verifikācijas pārbaudi 
 
-  - **IsRFM** — norāda, vai lietotājam ir samazinātas funkcionalitātes līmenis 
+  - **IsRFM** — norāda, vai lietotājam ir samazinātas funkcionalitātes līmenis 
 
-  - **IsSCA** — norāda, vai strādājam koplietojamā datora aktivizācijas režīmā 
+  - **IsSCA** — norāda, vai strādājam koplietojamā datora aktivizācijas režīmā 
 
-  - **IsSubscription** — norāda, vai lietotājs izmanto abonementa licenci 
+  - **IsSubscription** — norāda, vai lietotājs izmanto abonementa licenci 
 
-  - **IsvNext** — norāda, vai izmantojam jauno moderno licencēšanas steku 
+  - **IsvNext** — norāda, vai izmantojam jauno moderno licencēšanas steku 
 
-  - **LicenseCategory** — lietotāja izmantotās Office licences kategorija 
+  - **LicenseCategory** — lietotāja izmantotās Office licences kategorija 
 
-  - **LicenseStatus** — lietotāja izmantotās Office licences statuss 
+  - **LicenseStatus** — lietotāja izmantotās Office licences statuss 
 
-  - **LicenseType** — lietotāja izmantotās Office licences veids 
+  - **LicenseType** — lietotāja izmantotās Office licences veids 
 
-  - **LicensingACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
+  - **LicensingACID** — GUID identifikators, kas norāda Office produktu, kuram lietotājam ir licence 
 
-  - **OlsLicenseId** — lietotājam izsniegtās licences burtciparu identifikators 
+  - **OlsLicenseId** — lietotājam izsniegtās licences burtciparu identifikators 
 
-  - **SkuIdIsNull** — norāda, vai radās kļūda un nezinām produktu, ko lietotājs izmanto 
+  - **SkuIdIsNull** — norāda, vai radās kļūda un nezinām produktu, ko lietotājs izmanto 
 
-  - **SlapiIsNull** — norāda, vai radās problēma, aizpildot kādu licencēšanas objektu 
+  - **SlapiIsNull** — norāda, vai radās problēma, aizpildot kādu licencēšanas objektu 
 
 ### <a name="officelicensingonlinerepair"></a>Office.Licensing.OnlineRepair 
 
@@ -3924,14 +3955,14 @@ Ja kāda iemesla dēļ nevaram aktivizēt lietotāju un tam ir jārāda dialogs,
 Tiek apkopoti šādi lauki:
 
 - **Activity_Result_Tag** norāda mums, kā notiek lietotāja pāreja uz dažādiem kļūdas stāvokļiem.
-   - 0x222e318f — jāturpina meklēt Office piedāvājuma aktivizācija.
-   - 0x222e318e — šajā sesijā veiksim atgriešanos OEM režīmā, ja šai ierīcei nav neviena digitālās pievienošanas piedāvājuma.
-   - 0x222e318d — nav interneta savienojamības, kas liks lietotājam rādīt dialogu NoInternetConnectivity 
-   - 0 — atkarībā no konkrētā kļūdas koda lietotājam rādīsim dažādus kļūdas UI.
+   - 0x222e318f — jāturpina meklēt Office piedāvājuma aktivizācija.
+   - 0x222e318e — šajā sesijā veiksim atgriešanos OEM režīmā, ja šai ierīcei nav neviena digitālās pievienošanas piedāvājuma.
+   - 0x222e318d — nav interneta savienojamības, kas liks lietotājam rādīt dialogu NoInternetConnectivity 
+   - 0 — atkarībā no konkrētā kļūdas koda lietotājam rādīsim dažādus kļūdas UI.
 
-- **Data_DigitalAttachErrorType** — norāda mums, kāds konkrēts kļūdas kods ir nācis no pakalpojuma izsaukuma.
+- **Data_DigitalAttachErrorType** — norāda mums, kāds konkrēts kļūdas kods ir nācis no pakalpojuma izsaukuma.
 
-- **Data_FallbackFlight** — norāda mums, vai UseAFOAsFallBack testējamais variants ir ieslēgts.
+- **Data_FallbackFlight** — norāda mums, vai UseAFOAsFallBack testējamais variants ir ieslēgts.
 
 
 ### <a name="officelicensingoobehandledigitalattachsuccess"></a>Office.Licensing.OOBE.HandleDigitalAttachSuccess
@@ -3940,12 +3971,12 @@ Tiek apkopoti šādi lauki:
 
 Tiek apkopoti šādi lauki:
 
-- **Activity_Result_Tag** — norāda, kā mēs apstrādājam sekmīgas digitālās pievienošanas scenārijus.
-   - 0 – varam automātiski ielādēt identitāti, un lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (ar kontu).
-   - 0x222e3191 — nevaram automātiski ielādēt identitāti, tāpēc parādīsim lietotāja interfeisu “Jūs ieguvāt Office” (bez konta).
-   - 0x222e3193 — lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (bez konta), vai lietotājam nebija jārāda lietotāja interfeiss “Jūs ieguvāt Office”, jo tas ir no ierīces atkarīgs piedāvājums.
+- **Activity_Result_Tag** — norāda, kā mēs apstrādājam sekmīgas digitālās pievienošanas scenārijus.
+   - 0 – varam automātiski ielādēt identitāti, un lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (ar kontu).
+   - 0x222e3191 — nevaram automātiski ielādēt identitāti, tāpēc parādīsim lietotāja interfeisu “Jūs ieguvāt Office” (bez konta).
+   - 0x222e3193 — lietotājam parādījām lietotāja interfeisu “Jūs ieguvāt Office” (bez konta), vai lietotājam nebija jārāda lietotāja interfeiss “Jūs ieguvāt Office”, jo tas ir no ierīces atkarīgs piedāvājums.
 
-- **Data_IsClaimTypeDevice** — norāda mums, vai digitālās pievienošanas piedāvājuma prasības veids ir atkarīgs no ierīces.
+- **Data_IsClaimTypeDevice** — norāda mums, vai digitālās pievienošanas piedāvājuma prasības veids ir atkarīgs no ierīces.
 
 ### <a name="officelicensingoobepopulatedigitalattachoffersignindex"></a>Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
 
@@ -3953,11 +3984,11 @@ Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts
 
 Tiek apkopoti šādi lauki:
 
-- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
+- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
 
-- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
+- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
 
-- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
+- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
 
 
 ### <a name="officelicensingoobesearchfordigitalattach"></a>Office.Licensing.OOBE.SearchForDigitalAttach
@@ -3966,13 +3997,13 @@ Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts
 
 Tiek apkopoti šādi lauki:
 
-- **Activity_Result_Tag** — norāda mums kopējo pakalpojuma pārbaudes rezultātu. 
-   - 0x222e318c — digitālais pievienošanas testējamais variants ir izslēgts, tāpēc pakalpojuma pārbaude netiek veikta.
-   - 0x222e318b — klientam nav interneta, tāpēc pakalpojuma pārbaude netiek veikta.
-   - 0x222e318a — atrasts izmantojams digitālās pievienošanas piedāvājums
-   - 0x222e3189 — atrasts neizmantojams digitālās pievienošanas piedāvājums
+- **Activity_Result_Tag** — norāda mums kopējo pakalpojuma pārbaudes rezultātu. 
+   - 0x222e318c — digitālais pievienošanas testējamais variants ir izslēgts, tāpēc pakalpojuma pārbaude netiek veikta.
+   - 0x222e318b — klientam nav interneta, tāpēc pakalpojuma pārbaude netiek veikta.
+   - 0x222e318a — atrasts izmantojams digitālās pievienošanas piedāvājums
+   - 0x222e3189 — atrasts neizmantojams digitālās pievienošanas piedāvājums
 
-- **Data_EnableDAFlight** — norāda mums, vai ir ieslēgts digitālais pievienošanas testējamais variants, kas iespējo šī pakalpojuma pārbaudi.
+- **Data_EnableDAFlight** — norāda mums, vai ir ieslēgts digitālais pievienošanas testējamais variants, kas iespējo šī pakalpojuma pārbaudi.
 
 
 ### <a name="officelicensingoobeshowtouchlessattachfailuredialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
@@ -3981,16 +4012,16 @@ Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts
 
 Tiek apkopoti šādi lauki:
 
-- **Data_Continue** — informē mūs, vai lietotājs dialogā noklikšķina uz Turpināt.
+- **Data_Continue** — informē mūs, vai lietotājs dialogā noklikšķina uz Turpināt.
 
-- **Activity_Result_Tag** — norāda mums, uz kādas pogas lietotājs ir noklikšķinājis dialogā.
-   - 0x222e319d — lietotājs dialogā noklikšķina uz Mēģināt vēlreiz
-   - 0x222e319c — lietotājs dialogā noklikšķina uz Turpināt
-   - 0 — lietotājs iziet no dialoga
+- **Activity_Result_Tag** — norāda mums, uz kādas pogas lietotājs ir noklikšķinājis dialogā.
+   - 0x222e319d — lietotājs dialogā noklikšķina uz Mēģināt vēlreiz
+   - 0x222e319c — lietotājs dialogā noklikšķina uz Turpināt
+   - 0 — lietotājs iziet no dialoga
 
-- **Data_IsForDigitalAttach** — norāda mums, kurā platformā un darbplūsmā lietotājs atrodas — mantotajā (Office aktivizācija (AFO)) vai modernajā (digitālā pievienošana).
+- **Data_IsForDigitalAttach** — norāda mums, kurā platformā un darbplūsmā lietotājs atrodas — mantotajā (Office aktivizācija (AFO)) vai modernajā (digitālā pievienošana).
 
-- **Data_Retry** — informē mūs, vai lietotājs dialogā noklikšķina uz Mēģināt vēlreiz.
+- **Data_Retry** — informē mūs, vai lietotājs dialogā noklikšķina uz Mēģināt vēlreiz.
 
 
 ### <a name="officelicensingoobeshowtouchlessattachofferdialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
@@ -3999,23 +4030,23 @@ Oriģinālā aprīkojuma ražotāji (OEM) pārdod datorus, kuros jau ir produkts
 
 Tiek apkopoti šādi lauki:
 
-- **Activity_Result_Tag** — norāda mums, vai lietotājam tika atrasta identitāte
-   - 0x222e3194 — mēs nevaram iegūt lietotāja identitāti (tas atcēla pierakstīšanos, vai autentifikācija neizdevās).
-   - 0 — no lietotāja ieguvām identitāti.
+- **Activity_Result_Tag** — norāda mums, vai lietotājam tika atrasta identitāte
+   - 0x222e3194 — mēs nevaram iegūt lietotāja identitāti (tas atcēla pierakstīšanos, vai autentifikācija neizdevās).
+   - 0 — no lietotāja ieguvām identitāti.
 
-- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
+- **Data_ExpirationDate** — ļauj mums uzzināt abonementa piedāvājuma derīguma beigu datumu
 
-- **Data_IsCentennial** — norāda mums, vai Office programmas darbināšana Centennial platformā
+- **Data_IsCentennial** — norāda mums, vai Office programmas darbināšana Centennial platformā
 
-- **Data_IsForDigitalAttach** — norāda mums, vai šis dialogs ir izraisīts no digitālās pievienošanas plūsmas vai Office aktivizācijas plūsmas.
+- **Data_IsForDigitalAttach** — norāda mums, vai šis dialogs ir izraisīts no digitālās pievienošanas plūsmas vai Office aktivizācijas plūsmas.
 
-- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
+- **Data_IsSubscription** — ļauj mums uzzināt, vai pieprasāmais produkts ir abonementa SKU vai pastāvīgais SKU
 
-- **Data_OExType** — informē mūs, vai lietotājs iziet no dialoga pēc tam, kad noklikšķina uz saites ChangeAccount
+- **Data_OExType** — informē mūs, vai lietotājs iziet no dialoga pēc tam, kad noklikšķina uz saites ChangeAccount
 
-- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
+- **Data_ProductName** — ļauj mums uzzināt digitālās pievienošanas piedāvājuma produkta nosaukumu
 
-- **Data_UseInAppRedemption** — norāda, vai lietojam tīmekļa izmantošanas programmā iekļauto izmantošanu; attiecas tikai uz Office aktivizācijas plūsmu.
+- **Data_UseInAppRedemption** — norāda, vai lietojam tīmekļa izmantošanas programmā iekļauto izmantošanu; attiecas tikai uz Office aktivizācijas plūsmu.
 
 
 ### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
@@ -4046,7 +4077,7 @@ Veicam eksperimentu, kas lietotājam sniedz iespēju izmēģināt un iestatīt a
 
 Tiek apkopoti šādi lauki:
 
-  - **StorePurchaseStatus** — atspoguļo pirkuma izsaukuma, kas tika veikts, izmantojot Windows Store, kļūdas kodu/sekmīgas izpildes kodu
+  - **StorePurchaseStatus** — atspoguļo pirkuma izsaukuma, kas tika veikts, izmantojot Windows Store, kļūdas kodu/sekmīgas izpildes kodu
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
@@ -4054,11 +4085,11 @@ Ja lietotājs strādā koplietojama datora aktivizācijas režīmā, mēs mēģi
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **LoadLicenseResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām ielādēt licences pašreizējam lietotājam
+  - **LoadLicenseResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām ielādēt licences pašreizējam lietotājam
 
-  - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām atjaunot lietotāja sesijas marķieri oportūnistiski
+  - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām atjaunot lietotāja sesijas marķieri oportūnistiski
 
-  - **SetAcidResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām iestatīt ACID uz paredzēto vērtību
+  - **SetAcidResult** — atspoguļo kļūdas kodu/sekmīgas izpildes kodu attiecībā uz to, vai spējām iestatīt ACID uz paredzēto vērtību
 
 ### <a name="officelicensingshownewdeviceactivationdialog"></a>Office.Licensing.ShowNewDeviceActivationDialog
 
@@ -4066,7 +4097,7 @@ Office lietojumprogrammas pirmajā sāknēšanas reizē mēs mēģināsim rādī
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **UserAction** — lietotāja veiktās darbības, kad tiek parādīts šis dialogs, identifikators.
+  - **UserAction** — lietotāja veiktās darbības, kad tiek parādīts šis dialogs, identifikators.
 
 ### <a name="officelicensingskutoskuconversion"></a>Office.Licensing.SkuToSkuConversion
 
@@ -4074,13 +4105,13 @@ Licencējot lietotāju, ja mums ir jāmaina lietotāja SKU uz citu, mēs izsūt�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DestinationSku** — tās SKU nosaukums, uz kuru pašlaik instalētais produkts ir jākonvertē
+  - **DestinationSku** — tās SKU nosaukums, uz kuru pašlaik instalētais produkts ir jākonvertē
 
-  - **PendingAcid** — tā produkta ID, kam ir nepabeigta SKU konvertēšana
+  - **PendingAcid** — tā produkta ID, kam ir nepabeigta SKU konvertēšana
 
-  - **SourceSku** — sākotnējās SKU, kas tika instalēta datorā, nosaukums
+  - **SourceSku** — sākotnējās SKU, kas tika instalēta datorā, nosaukums
 
-  - **UninstallProduct** — norāda, vai vecais produkts konvertēšanas ietvaros tiks atinstalēts
+  - **UninstallProduct** — norāda, vai vecais produkts konvertēšanas ietvaros tiks atinstalēts
 
 ### <a name="officelicensingtelemetryflowolsresults"></a>Office.Licensing.TelemetryFlow.OLSResults
 
@@ -4168,9 +4199,9 @@ Tiek apkopoti šādi lauki:
 
 - **DialogEULA** — signāls, kas parādīja dialogu ‘Accept EULA’ (Akceptēt EULA). 
 
-- **DialogRedemption** — signāls, ka parādījām Office aktivizācijas izmantošanas dialogu.
+- **DialogRedemption** — signāls, ka parādījām Office aktivizācijas izmantošanas dialogu.
 
-- **DialogSignIn** — signāls, ka parādījām Office aktivizācijas pierakstīšanās dialogu.
+- **DialogSignIn** — signāls, ka parādījām Office aktivizācijas pierakstīšanās dialogu.
 
 - **EmptyRedemptionDefaults** — signāls, ka nav izdevies saņemt noklusējuma izpirkšanas informāciju.
  
@@ -4182,7 +4213,7 @@ Tiek apkopoti šādi lauki:
 
 - **OExType** — detalizēta informācija par kļūdu, kas tiek atgriezta, kad tiek noraidīts identitātes pierakstīšanās dialogs.
 
-- **Tag** — norāda mums, kurā darbībā lietotājs iziet no Office aktivizācijas izmantošanas procesa. Iespējamie tagi:
+- **Tag** — norāda mums, kurā darbībā lietotājs iziet no Office aktivizācijas izmantošanas procesa. Iespējamie tagi:
     - 0x0311380b    lietotājs noraidīja identitātes pierakstīšanās dialoglodziņu no izpirkšanas dialoglodziņa
     - 0x0311380c    neizdevās automātiski ielādēt identitāti pēc lietotāja pierakstīšanās no izpirkšanas dialoglodziņa
     - 0x03113810    neizdevās ielādēt konta demogrāfisko informāciju (valsts kodu, valodu, valūtu, izmēģinājuma piedāvājumu un mārketinga preferences)
@@ -4201,9 +4232,9 @@ Tiek apkopoti šādi lauki:
     - 0x2370e3a2      lietotājs noklikšķināja uz hipersaites “Nekad šo man nerādīt”, kas atspējo Office aktivizācijas piedāvājumu
 
 
-- **UseInAppRedemption** — norāda mums, vai paturam lietotājus programmā piedāvājuma izmantošanai vai nosūtām tos uz tīmekļa vietni to ienesto PIN (iepriekš aizpildīts) izmantošanai.
+- **UseInAppRedemption** — norāda mums, vai paturam lietotājus programmā piedāvājuma izmantošanai vai nosūtām tos uz tīmekļa vietni to ienesto PIN (iepriekš aizpildīts) izmantošanai.
 
-- **UseModernAFO** — norāda mums, vai izmantojam jauno vai veco Office aktivizācijas līdzekli.
+- **UseModernAFO** — norāda mums, vai izmantojam jauno vai veco Office aktivizācijas līdzekli.
 
 ### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4213,7 +4244,7 @@ Tiek apkopoti šādi lauki:
 
 - **ActiveView** — norāda lietotājam redzamā dialoglodziņa ID
 
-- **CurrentOOBEMode** — norāda pirmsinstalēšanas režīmu (OOBE režīmu, piemēram, Office aktivizācija, OEM u.c.)
+- **CurrentOOBEMode** — norāda pirmsinstalēšanas režīmu (OOBE režīmu, piemēram, Office aktivizācija, OEM u.c.)
 
 - **NotInitializedBeforeWhileAdding** — šis ir tikai informatīvs, un norāda, vai notikums ir pievienots telemetrijas pārvaldnieka kartei tieši nereģistrējoties
 
@@ -4255,9 +4286,9 @@ Ja kāda iemesla pēc nevaram licencēt lietotāju, mēs instalējam pagarināju
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām oportūnistisku atjaunošanu lietotājam koplietojamā datora aktivizācijas režīmā
+  - **OpportunisticTokenRenewalAttempted** — norāda, vai mēģinājām oportūnistisku atjaunošanu lietotājam koplietojamā datora aktivizācijas režīmā
 
-  - **ReArmResult** — norāda instalētās atslēgas atkārtotu aktivizēšanu, kas var pagarināt pašreizējās licences derīgumu
+  - **ReArmResult** — norāda instalētās atslēgas atkārtotu aktivizēšanu, kas var pagarināt pašreizējās licences derīgumu
 
 ### <a name="onenoteenrollmentresult"></a>OneNote.EnrollmentResult
  
@@ -4288,35 +4319,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
 - **Reason** — detalizēta informācija par nederīgu ievadi preferencēs
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="appdelegatelaunch"></a>appdelegate.launch
 
@@ -4326,37 +4357,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kādā darbojas programma
+- **AppInfo_Language** — valoda, kādā darbojas programma
 
 - **AppversionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statiska teksta kopa, kas norāda palaišanas statusu.
+- **Payload** — statiska teksta kopa, kas norāda palaišanas statusu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="appdelegateterminate"></a>appdelegate.terminate
@@ -4367,37 +4398,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
     
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
     
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts, kas norāda Microsoft AutoUpdate darbības pārtraukšanu.
+- **Payload** — statisks teksts, kas norāda Microsoft AutoUpdate darbības pārtraukšanu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="appinstallconnecttoxpc"></a>appinstall.connecttoxpc
@@ -4408,37 +4439,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver kļūdas informāciju par savienojuma problēmu.
+- **Payload** — ietver kļūdas informāciju par savienojuma problēmu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="appinstalllogscanned"></a>appinstall.logscanned
 
@@ -4448,37 +4479,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — ziņo par kļūdām, kas tiek atklātas programmas instalēšanas laikā un/vai parāda skenēšanas pabeigšanas statusu 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="appinstallxpcremoteobjecterror"></a>appinstall.xpcremoteobjecterror
 
@@ -4490,37 +4521,37 @@ Tiek apkopoti šādi lauki.
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur informāciju par programmas reģistrēšanas laikā notikušās starpniekservera kļūdas dabu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="appregistryconfig"></a>appregistry.config
@@ -4531,37 +4562,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur informāciju par programmas reģistrēšanas laikā notikušās kļūdas dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="appregistryinfo"></a>appregistry.info
 
@@ -4571,37 +4602,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver informāciju par identifikatoru sarakstu, ko programma izmanto, lai reģistrētos Microsoft AutoUpdate pakalpojumos, un programmai reģistrēto instalāciju skaitu.
+- **Payload** — ietver informāciju par identifikatoru sarakstu, ko programma izmanto, lai reģistrētos Microsoft AutoUpdate pakalpojumos, un programmai reģistrēto instalāciju skaitu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="appregistryremove"></a>appregistry.remove
@@ -4612,37 +4643,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — noņemamās programmas nosaukums un identifikators neatkarīgi no tā, vai programma joprojām pastāv reģistrētajā atrašanās vietā un vai programma tika instalēta no AppStore.
+- **Payload** — noņemamās programmas nosaukums un identifikators neatkarīgi no tā, vai programma joprojām pastāv reģistrētajā atrašanās vietā un vai programma tika instalēta no AppStore.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="catalogerrorsignature"></a>catalog.errorsignature
@@ -4653,27 +4684,27 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **FileHash** — lejupielādētā faila jaukšanas vērtība
 
@@ -4681,15 +4712,57 @@ Tiek apkopoti šādi lauki.
 
 - **HashInCatalog** — jaukšanas vērtības ieraksts atbilstošajā kataloga failā
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Lietderīgās** — iekļauta informācija par lietojumprogrammu, kas ziņo par problēmu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
+
+
+### <a name="cataloginvalid"></a>catalog.invalid
+
+Šis notikums reģistrē kļūdas nosacījumu, kas norāda uz lejupielādēto nederīgu manifesta katalogu. Mēs izmantojam šo notikumu, lai garantētu to, ka publicētajos manifesta failos nav kļūdu. 
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **CatalogFile** — kataloga faila, kas izraisīja kļūdas nosacījumu, nosaukums.
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **SessionId** — sesijas identifikators
+
 
 ### <a name="cloningtaskbegin"></a>cloningtask.begin
 
@@ -4701,35 +4774,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators.
 
@@ -4742,37 +4815,37 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver ID, kas identificē vienu atjaunināšanas darbību, un klonēšanas procesa laikā ziņoto starpniekservera kļūdu.
+- **Payload** — ietver ID, kas identificē vienu atjaunināšanas darbību, un klonēšanas procesa laikā ziņoto starpniekservera kļūdu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="cloningtaskstatus"></a>cloningtask.status
 
@@ -4784,37 +4857,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — virkne, kas satur kļūdas informāciju, ja kļūda notika klonēšanas uzdevuma laikā.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — Būla mainīgā attēlojums virknē.
 
@@ -4830,33 +4903,33 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda uz klonēšanas uzdevuma sekmīgu izpildi
 
@@ -4871,37 +4944,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver atlasītā kanāla nosaukumu.
+- **Payload** — ietver atlasītā kanāla nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="configurationmetadata"></a>configuration.metadata
@@ -4912,37 +4985,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts, kurš norāda, ka tiek inicializēti atsevišķi metadati vai ka tiek inicializēta konfigurācija.
+- **Payload** — statisks teksts, kurš norāda, ka tiek inicializēti atsevišķi metadati vai ka tiek inicializēta konfigurācija.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators.
+- **SessionId** — sesijas identifikators.
 
 ### <a name="configurationsystemversion"></a>configuration.systemVersion
 
@@ -4952,37 +5025,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur informāciju par kļūdu, kas notika macOS sistēmas versijas virknes izgūšanas laikā.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="controlleralertmanagerreinstallresponse"></a>controller.alertmanager.reinstallresponse
 
@@ -4992,37 +5065,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur uzskaitīto lietotāju atlasi.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controlleralertmanagertmpdiskfull"></a>controller.alertmanager.tmpdiskfull
@@ -5033,37 +5106,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controlleralertmanagertmpdiskfullretry"></a>controller.alertmanager.tmpdiskfullretry
@@ -5074,37 +5147,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
     
 
 ### <a name="controlleralertmanagertmpdiskfullretrycancel"></a>controller.alertmanager.tmpdiskfullretrycancel
@@ -5115,37 +5188,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
     
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
@@ -5156,202 +5229,202 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 
 ### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
-Šis notikums norāda, ka tika veikta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+Šis notikums norāda, vai tika veikta atjauninājumu pārbaude. Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt mūsu pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atkarībā no tā, kad lietotāji vēlas saņemt atjauninājumus.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
     
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
-Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, process tika atcelts (to izdarīja lietotājs vai sistēma). Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+Šis notikums norāda, ka atjauninājumu pārbaudes process tika atcelts (atcēla lietotājs vai sistēma). Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt mūsu pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atkarībā no tā, kad lietotāji vēlas saņemt atjauninājumus.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
-Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atbilstoši lietotāju gaidām saistībā ar atjauninājumiem.
+Šis notikums norāda, ka atjauninājumu pārbaudes procesu atcēla lietotājs. Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību, optimizētu pakalpojumu noslodzi un definētu, cik biežām ir jābūt mūsu pārbaudēm, vai nav atjauninājumu. Vēlamies arī optimizēt savu laidienu biežumu atkarībā no tā, kad lietotāji vēlas saņemt atjauninājumus.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
     
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
-Šis notikums norāda, ka pārbaudes, vai nav atjauninājumu, procesa rezultātā tika atrasti atjauninājumi.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
+Šis notikums norāda, ka atjauninājumu pārbaudes rezultātā tika atrasti atjauninājumi. Šo notikumu izmantojam, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
@@ -5362,37 +5435,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowapplaunchwithpendingupdate"></a>controller.downloadwindow.applaunchwithpendingupdate
@@ -5403,37 +5476,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
     
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindowcloseapplicationdialog"></a>controller.downloadwindow.closeapplicationdialog
@@ -5444,119 +5517,119 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
 Šis notikums norāda, ka, mēģinot lietot atjauninājumu, radās neparedzēta kļūda. Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindowdownloadcancel"></a>controller.downloadwindow.downloadcancel
 
 Šis notikums norāda, ka lejupielādes procesu atcēla lietotājs.  Šis notikums tiek izmantots, lai nodrošinātu atjauninājumu piedāvāšanas pareizību.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — statisks teksts. 
+- **Payload** — statisks teksts. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindowdownloadfailed"></a>controller.downloadwindow.downloadfailed
@@ -5567,37 +5640,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindowdownloadfailedok"></a>controller.downloadwindow.downloadfailedok
@@ -5608,37 +5681,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowdownloadpathmissing"></a>controller.downloadwindow.downloadpathmissing
@@ -5649,37 +5722,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowdownloadtasknull"></a>controller.downloadwindow.downloadtasknull
@@ -5690,37 +5763,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowfilesignaturenotverified"></a>controller.downloadwindow.filesignaturenotverified
@@ -5731,37 +5804,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kurā ir iekļauts lejupielādes vietrādis URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — teksts, kurā ir iekļauts lejupielādes vietrādis URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowinstallcomplete"></a>controller.downloadwindow.installcomplete
@@ -5772,78 +5845,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
-Šis notikums norāda, ka, lejupielādējot atjauninājumus, ir zudusi tīkla savienojamība.  Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka atjauninājumu lejupielādes laikā tika zaudēts tīkla savienojums. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindownetworkunavailablealertok"></a>controller.downloadwindow.networkunavailablealertok
@@ -5854,37 +5927,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerdownloadwindownoconnectionok"></a>controller.downloadwindow.noconnectionok
@@ -5895,37 +5968,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowrepairrequired"></a>controller.downloadwindow.repairrequired
@@ -5936,37 +6009,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
     
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="controllerdownloadwindowupdateaborted"></a>controller.downloadwindow.updateaborted
 
@@ -5976,37 +6049,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowupdatefailed"></a>controller.downloadwindow.updatefailed
@@ -6017,119 +6090,119 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
-Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka visi pašreizējās kopas atjauninājumi bija veiksmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
-Šis notikums norāda, ka visi pašreizējās paketes atjauninājumi bija sekmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka visi pašreizējās kopas atjauninājumi bija veiksmīgi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
 
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerdownloadwindowuserresumed"></a>controller.downloadwindow.userresumed
@@ -6140,37 +6213,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllermainwindowsetautomaticchecking"></a>controller.mainwindow.setautomaticchecking
@@ -6181,37 +6254,37 @@ Tiek apkopoti šādi lauki:
 
  - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
@@ -6222,37 +6295,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllermainwindowsetmanualchecking"></a>controller.mainwindow.setmanualchecking
@@ -6263,37 +6336,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllertemplateawindowcancel"></a>controller.templateawindow.cancel
@@ -6304,37 +6377,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllertemplateawindowenroll"></a>controller.templateawindow.enroll
@@ -6345,37 +6418,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
     
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 
@@ -6387,37 +6460,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerupdatewindowbegindownloadingapps"></a>controller.updatewindow.begindownloadingapps
@@ -6428,37 +6501,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un norādi, vai lietotājs ir izvēlējās instalētu atbilstošo ierakstu.
+- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un norādi, vai lietotājs ir izvēlējās instalētu atbilstošo ierakstu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerupdatewindownetworkretry"></a>controller.updatewindow.networkretry
@@ -6469,37 +6542,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerupdatewindownetworkretrycancel"></a>controller.updatewindow.networkretrycancel
@@ -6510,37 +6583,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerupdatewindownetworkunavailable"></a>controller.updatewindow.networkunavailable
@@ -6551,37 +6624,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerupdatewindownoupdateavailable"></a>controller.updatewindow.noupdateavailable
@@ -6592,37 +6665,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerupdatewindownoupdatestoselect"></a>controller.updatewindow.noupdatestoselect
@@ -6633,37 +6706,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="controllerupdatewindowupdateavailable"></a>Controller.UpdateWindow.UpdateAvailable
@@ -6674,37 +6747,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un katras pakotnes lietotāja atlases statusu.
+- **Payload** — satur pieejamo atjauninājumu pakotņu vārdnīcu un katras pakotnes lietotāja atlases statusu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
@@ -6715,37 +6788,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadactorpause"></a>downloadactor.pause
@@ -6756,37 +6829,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadactorredirect"></a>downloadactor.redirect
@@ -6797,37 +6870,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur novirzītu vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — satur novirzītu vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="downloadactorresume"></a>downloadactor.resume
@@ -6838,37 +6911,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadactorresumeerror"></a>downloadactor.resumeerror
@@ -6879,37 +6952,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādes vietrāža URL ceļu. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — satur lejupielādes vietrāža URL ceļu. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="downloadactorstatus"></a>downloadactor.status
@@ -6920,37 +6993,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes vietrādi URL un kļūdas kodu kļūmes gadījumā. Lejupielādes vietrādis URL ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes vietrādi URL un kļūdas kodu kļūmes gadījumā. Lejupielādes vietrādis URL ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
@@ -6961,35 +7034,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **Payload** — norāda, vai kļūda ir pielāgotā servera iestatījumos vai instalētajos MAU komponentos
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestdownloadcatalogfail"></a>downloadmanifest.downloadcatalogfail
@@ -7000,37 +7073,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="downloadmanifestdownloadcatalogsuccess"></a>downloadmanifest.downloadcatalogsuccess
@@ -7041,37 +7114,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestdownloadfail"></a>downloadmanifest.downloadfail
@@ -7082,37 +7155,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestdownloadfromurl"></a>downloadmanifest.downloadfromurl
@@ -7123,37 +7196,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestdownloading"></a>downloadmanifest.downloading
@@ -7164,37 +7237,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestdownloadsuccess"></a>downloadmanifest.downloadsuccess
@@ -7205,37 +7278,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="downloadmanifestdownloadurl"></a>downloadmanifest.downloadurl
@@ -7246,37 +7319,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
+- **Payload** — ietver lejupielādes kļūdas kodu un lejupielādes faila vietrādi URL. Šī ir Microsoft lejupielādes atrašanās vieta, izņemot, ja kanāls ir iestatīts kā pielāgots. Pielāgotajam kanālam šī vērtība ir iestatīta kā “Pielāgota atrašanās vieta”.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestfilenameerror"></a>downloadmanifest.filenameerror
@@ -7287,37 +7360,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestinvalidhash"></a>downloadmanifest.invalidhash
@@ -7328,37 +7401,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
+- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestmissingdaemon"></a>downloadmanifest.missingdaemon
@@ -7369,37 +7442,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifestsignatureerror"></a>downloadmanifest.signatureerror
@@ -7410,37 +7483,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
+- **Payload** — satur tā lejupielādētā faila nosaukumu, kuram ir nederīga jaukšanas vērtība.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmanifeststatus"></a>downloadmanifest.status
@@ -7451,37 +7524,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
+- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmgrdownloadend"></a>downloadmgr.downloadend
@@ -7492,78 +7565,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
+- **Payload** — satur informāciju, tostarp vietrādi URL (Microsoft adrese), lejupielādējamā faila prefiksu, visas radušās kļūdas utt.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
-Šis notikums reģistrē atjauninājumu, kas tūlīt tiks lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē atjauninājumu, kas tiks lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu.
+- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="downloadtaskdownloadbegin"></a>downloadtask.downloadbegin
 
@@ -7575,37 +7648,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
 - **BundleVersion** — programmas, kas tiek atjaunināta, versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
 - **PreviousUpdateID** — programmas atjauninājuma identifikators
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -7624,39 +7697,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kurai ir lejupielādes kļūme, identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — lejupielādes laikā novērotā kļūda.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu un novēroto kļūdu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — satur lejupielādējamā atjauninājuma nosaukumu un novēroto kļūdu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — lejupielādējamā atjauninājuma identifikators.
 
@@ -7671,37 +7744,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur sekmīgas lejupielādes atjauninājuma ceļu.
+- **Payload** — satur sekmīgas lejupielādes atjauninājuma ceļu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — lejupielādētā atjauninājuma identifikators.
 
@@ -7715,39 +7788,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
 - **UpdaterType** — lejupielādētajā manifesta failā noradītā atjauninātāja tips
 
-- **UpdateURL** — instalējamās pakotnes URL saite
+- **UpdateURL** — instalējamās pakotnes URL saite
 
 ### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
@@ -7757,39 +7830,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **Error** — norāda notikušās kļūdas būtību
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
-- **UpdateURL** — instalējamās pakotnes URL saite
+- **UpdateURL** — instalējamās pakotnes URL saite
 
 ### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
@@ -7799,76 +7872,76 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **Payload** — satur laiku un datumu, kad MAU pārbaudīja atjauninājumu pieejamību
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
-Šis notikums norāda, ka fona process pārbauda, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka fona process pārbauda, vai ir atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbacheckforupdateskip"></a>fba.checkforupdateskip
@@ -7879,37 +7952,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbaforceinstallmsgsent"></a>fba.forceinstallmsgsent
@@ -7920,35 +7993,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
@@ -7958,37 +8031,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbaguiappopen"></a>fba.guiappopen
 
@@ -7998,37 +8071,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbainstallpending"></a>fba.installpending
 
@@ -8038,37 +8111,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbalaunch"></a>fba.launch
 
@@ -8078,37 +8151,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbalaunchbyagent"></a>fba.launchbyagent
 
@@ -8118,37 +8191,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbalaunchfromprotocol"></a>fba.launchfromprotocol
 
@@ -8158,37 +8231,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par URL shēmu un URL viesotāju
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbalaunchgui"></a>fba.launchgui
 
@@ -8198,80 +8271,80 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbalaunchstatus"></a>fba.launchstatus
 
-Šis notikums reģistrē MAU dēmona kļūmes, mēģinot veikt palaišanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē MAU dēmona darbības traucējumus palaišanas mēģinājuma laikā. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — satur OSStatus (Apple statusa kodu), kas atspoguļo palaišanas statusu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — Būla virkne, kas norāda, vai MAU dēmona process tika palaists veiksmīgi.
 
@@ -8284,39 +8357,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
  
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
 - **Reason** — statisks teksts, kas norāda, ka klusais atjauninājums nevar turpināties, kad lietotāja interfeiss ir atvērts
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbamoreinfofromappnotification"></a>fba.moreinfofromappnotification
 
@@ -8328,37 +8401,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **NotificationEvent** — statisks teksts, kas norāda uz lietotā paziņojuma tipu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbamultipledaemon"></a>fba.multipledaemon
 
@@ -8368,37 +8441,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbanofifyappclosed"></a>fba.nofifyappclosed
 
@@ -8408,37 +8481,37 @@ Tiek apkopoti šādi lauki:
     
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
     
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
     
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
     
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
     
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
     
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
     
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
     
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
     
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
     
 - **HowToCheck** — kā pārbaudīt iestatījumu
     
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
     
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbanofifyappopen"></a>fba.nofifyappopen
 
@@ -8448,37 +8521,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
     
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
     
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbasettimerfail"></a>fba.settimerfail  
 
@@ -8488,78 +8561,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par pēdējās atjaunināšanas laiku un izmantoto kalendāru
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
-Šis notikums norāda, ka lietotājs piekrīt klusajai atjaunināšanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka lietotājs izvēlas veikt kluso atjaunināšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbaskipforcedupdate"></a>fba.skipforcedupdate
 
@@ -8569,37 +8642,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbastartforcedupdate"></a>fba.startforcedupdate
@@ -8610,119 +8683,119 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbaterminate"></a>fba.terminate
 
-Šis notikums norāda, ka MAU dēmona darbība tika izbeigta normāli. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka MAU dēmona darbība tika pārtraukta standarta veidā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbaupdatefound"></a>fba.updatefound
 
-Šis notikums norāda, ka MAU dēmons ir atradis pieejamus atjauninājumus, ko piedāvāt. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka MAU dēmons atrada pieejamus atjauninājumus piedāvāšanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
+- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="fbaupdatetimer"></a>fba.updatetimer
@@ -8733,37 +8806,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur pašreizējo datuma un laika informāciju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateallappsclosed"></a>fbasilentupdate.allappsclosed
@@ -8774,37 +8847,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
     
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateapplaunchafterupdate"></a>fbasilentupdate.applaunchafterupdate
@@ -8817,39 +8890,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — detalizēta informācija par kļūdu, kas notika programmas palaišanas brīdī pēc atjaunināšanas.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un palaižamās programmas nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un palaižamās programmas nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
     
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateapplaunchwileinstalling"></a>fbasilentupdate.applaunchwileinstalling
@@ -8860,37 +8933,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateappneedtoclose"></a>fbasilentupdate.appneedtoclose
@@ -8901,37 +8974,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un programmu komplekta ID.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un programmu komplekta ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateappterminationeventreceived"></a>fbasilentupdate.appterminationeventreceived
@@ -8944,39 +9017,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — detalizēta informācija par kļūdu, kas notika programmas izbeigšanas brīdī.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID. Var saturēt arī kļūdas virkni, ja Microsoft AutoUpdate nosaka, ka programma joprojām darbojas, lai gan tika saņemts darbības pārtraukšanas notikums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID. Var saturēt arī kļūdas virkni, ja Microsoft AutoUpdate nosaka, ka programma joprojām darbojas, lai gan tika saņemts darbības pārtraukšanas notikums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators.
 
@@ -8989,37 +9062,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — norāda, kuru atjaunināšanas sesiju (lejupielāde vai instalēšana) sistēma pašlaik apstrādā.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdatecodesignfailure"></a>fbasilentupdate.codesignfailure
@@ -9030,80 +9103,80 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur koda paraksta verifikācijas darbības rezultātu.
+- **Payload** — satur koda paraksta verifikācijas darbības rezultātu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
-Šis notikums norāda, ka atjauninājums tiek lejupielādēts. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka tika lejupielādēti atjauninājumi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **ScreenLocked** — norāde, vai lejupielāde tiek sākta aiz bloķēta ekrāna
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdatedownloadfailed"></a>fbasilentupdate.downloadfailed
@@ -9116,39 +9189,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — detalizēta informācija par kļūdu, kas notika programmas atjauninājuma lejupielādes brīdī.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators.
 
@@ -9163,37 +9236,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur rindā iekļauto atjauninājumu skaitu.
+- **Payload** — satur rindā iekļauto atjauninājumu skaitu.
 
-    - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+    - **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdatedownloadingrepairupdate"></a>fbasilentupdate.downloadingrepairupdate
@@ -9204,39 +9277,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
 - **ScreenLocked** — norāde, vai lejupielāde tiek sākta aiz bloķēta ekrāna
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateduplicatedownloadattempted"></a>fbasilentupdate.duplicatedownloadattempted
@@ -9247,37 +9320,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateinstallattemptfailed"></a>fbasilentupdate.installattemptfailed
@@ -9288,78 +9361,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
-Šis notikums norāda, ka visu paketē iekļauto atjauninājumu instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka visu pašreizējās kopas atjauninājumu instalēšana tika pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateinstalled"></a>fbasilentupdate.installed
@@ -9370,37 +9443,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu. Ietver atjauninājuma identifikatoru.
+- **Payload** — teksts, kas norāda notikuma dabu. Ietver atjauninājuma identifikatoru.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="fbasilentupdateinstalling"></a>fbasilentupdate.installing
@@ -9411,37 +9484,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un atjauninājumu pakotnes nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un atjauninājumu pakotnes nosaukumu.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbasilentupdateinstallstatus"></a>fbasilentupdate.installstatus
 
@@ -9453,37 +9526,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par to, vai tiek parādīts izpildes skats
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai programmas atjaunināšana bija sekmīga
 
@@ -9501,39 +9574,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
  
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **ErrType** — norāda notikušās kļūdas būtību
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Message** — paziņojuma saturs
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Title** — paziņojuma virsraksts
 
@@ -9547,37 +9620,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver iepriekš bloķētas programmas ID (identifikators, ko programma izmanto, lai reģistrētos pakalpojumā Microsoft AutoUpdate)
+- **Payload** — ietver iepriekš bloķētas programmas ID (identifikators, ko programma izmanto, lai reģistrētos pakalpojumā Microsoft AutoUpdate)
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdatequeueinstall"></a>fbasilentupdate.queueinstall
@@ -9588,37 +9661,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdaterequiredappsclosed"></a>fbasilentupdate.requiredappsclosed
@@ -9629,37 +9702,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un programmu komplekta ID.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbasilentupdatetimerforapptermination"></a>FBASilentUpdate.TimerForAppTermination
 
@@ -9669,37 +9742,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** –— norāda, vai atvērtajai programmai bija iestatīts taimeris, kad tika sākta tās atjauninājuma instalēšana. 
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="fbasilentupdateupdateavailablenotification"></a>fbasilentupdate.updateavailablenotification
 
@@ -9709,39 +9782,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
 - **CustomNotification** — Būla vērtība, kas norāda, vai tika izmantots pielāgots paziņojums.
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — teksts, kas norāda notikuma dabu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateuserclicknotification"></a>fbasilentupdate.userclicknotification
@@ -9752,37 +9825,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateuserselectinstalllater"></a>fbasilentupdate.userselectinstalllater
@@ -9793,37 +9866,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="fbasilentupdateuserselectinstallnow"></a>fbasilentupdate.userselectinstallnow
@@ -9834,37 +9907,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="guidashboardrowviewupdatestate"></a>gui.dashboardrowview.updatestate
@@ -9877,37 +9950,37 @@ Tiek apkopoti šādi lauki.
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur informāciju par programmas reģistrēšanas laikā notikušās kļūdas dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
@@ -9920,35 +9993,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -9964,37 +10037,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
 - **ButtonType** — izlaist vai mēģināt vēlreiz
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators 
+- **DeviceID** — ierīces identifikators 
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -10008,35 +10081,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
@@ -10046,37 +10119,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
  
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — norāda, vai automātiskā lejupielāde ir izslēgta
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guifeedbackwindowbuttonclicked"></a>gui.feedbackwindow.buttonclicked
 
@@ -10086,37 +10159,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
 - **ButtonType** — norāda, vai atsauksmes tiek nosūtītas vai atceltas
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
  
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guipreferenceviewconsentsheetdisplay"></a>gui.preferenceview.consentsheet.display
 
@@ -10126,37 +10199,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **ChannelName** — kanāls, kuram tiek parādīts piekrišanas dialoglodziņš
+- **ChannelName** — kanāls, kuram tiek parādīts piekrišanas dialoglodziņš
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guipreferenceviewconsentsheetlicenseerror"></a>gui.preferenceview.consentsheet.licenseerror
 
@@ -10166,39 +10239,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **ErrorCode** — notikušās kļūdas kods
 
 - **ErrorDomain** — kļūdas domēns
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guipreferenceviewswitchchannel"></a>gui.preferenceview.switchchannel
 
@@ -10208,27 +10281,27 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
@@ -10236,11 +10309,11 @@ Tiek apkopoti šādi lauki:
 
 - **PickedTo** — jaunais kanāls
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="guiupdatemanagerapplaunchduringupdate"></a>gui.updatemanager.applaunchduringupdate
 
@@ -10252,35 +10325,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — atjaunināšanas laikā palaistās programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — virknes Būla vērtība, kas norāda, vai programmas darbība tika sekmīgi izbeigta.
 
@@ -10296,37 +10369,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **IsRepair** — virknes Būla, kas norāda, vai konkrētais atjauninājums ir labojuma lejupielāde.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **isRepair** — norāda, vai lejupielāde bija labojuma lejupielāde iepriekš neveiksmīgam atjauninājumam.
 
@@ -10343,37 +10416,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur informāciju par kļūdu, kas notikusi programmas atjaunināšanas laikā.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — virknes Būla vērtība, kas norāda, vai programmas darbība tika sekmīgi izbeigta.
 
@@ -10387,37 +10460,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppState** — vesels skaitlis, kas norāda programmas stāvokli pēc atjaunināšanas mēģinājuma.
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators.
 
@@ -10432,35 +10505,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — virknes Būla, kas norāda, vai atjauninājumi tika instalēti sekmīgi.
 
@@ -10476,35 +10549,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators.
 
@@ -10518,35 +10591,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators.
 
@@ -10560,35 +10633,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — virknes Būla vērtība, kas norāda, vai programmas darbība tika sekmīgi izbeigta.
 
@@ -10604,37 +10677,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installdatacleanup"></a>installdata.cleanup
@@ -10645,37 +10718,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādētā faila nosaukumu un detalizētu informāciju par kļūdu.
+- **Payload** — satur lejupielādētā faila nosaukumu un detalizētu informāciju par kļūdu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installedappacknowledgedcoreappleevent"></a>installedapp.acknowledgedcoreappleevent
@@ -10688,41 +10761,41 @@ Tiek apkopoti šādi lauki.
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppleEventClass** — norāda notikuma, kas tiek nosūtīts/apstiprināts, tipu
 
 - **AppleEventID** — notikuma, kas tiek nosūtīts/apstiprināts, unikālais identifikators
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur atkārtoto mēģinājumu skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators
 
@@ -10735,37 +10808,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver programmas nosaukumu.
+- **Payload** — ietver programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installedappinvalidpreference"></a>installedapp.invalidpreference
@@ -10776,37 +10849,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installedappnilbundleid"></a>installedapp.nilbundleid
@@ -10817,37 +10890,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver programmas nosaukumu.
+- **Payload** — ietver programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installedappnilbundlename"></a>installedapp.nilbundlename
@@ -10858,37 +10931,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver programmas nosaukumu.
+- **Payload** — ietver programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installedapprespondedcoreappleevent"></a>installedapp.respondedcoreappleevent
@@ -10901,41 +10974,41 @@ Tiek apkopoti šādi lauki.
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppleEventClass** — norāda notikuma, kas tiek nosūtīts/apstiprināts, tipu
 
 - **AppleEventID** — notikuma, kas tiek nosūtīts/apstiprināts, unikālais identifikators
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur atkārtoto mēģinājumu skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — atjauninājuma identifikators
 
@@ -10952,41 +11025,41 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppleEventClass** — norāda notikuma, kas tiek nosūtīts/apstiprināts, tipu
 
 - **AppleEventID** — notikuma, kas tiek nosūtīts/apstiprināts, unikālais identifikators
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur atkārtoto mēģinājumu skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai attiecīgā programma ziņoja par sekmīgu darbības izpildi
 
@@ -10994,131 +11067,131 @@ Tiek apkopoti šādi lauki:
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
-Šis notikums reģistrē operētājsistēmas binārā koda paraksta statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē OS paraksta binārā faila statusu. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installstatusdaemon"></a>installstatus.daemon
 
-Šis notikums reģistrē Microsoft AutoUpdate dēmona statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē Microsoft AutoUpdate dēmona statusu. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
 - **BundleReachable** — Būla vērtība, kas norāda, vai pastāv problēma, piekļūstot Microsoft AutoUpdate lietojumprogrammu komplektam.
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
 - **Codesigned** — Būla vērtība, kas norāda, vai atjaunināšanas palīgs tika pareizi piešķirts kodā.
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **Exists** — Būla vērtība, kas norāda, vai diskā ir atjaunināšanas palīgs.
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur norādi, vai dēmona komponents pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — satur norādi, vai dēmona komponents pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installstatushelper"></a>installstatus.helper
 
-Šis notikums reģistrē Microsoft AutoUpdate palīdzības rīka statusu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē Microsoft AutoUpdate palīga rīka statusu. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur norādi, vai komponents PrivilegedHelperTool pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts.
+- **Payload** — satur norādi, vai komponents PrivilegedHelperTool pastāv paredzamajā atrašanās vietā un vai tā kods ir parakstīts.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installupdatestaskapplaunched"></a>installupdatestask.applaunched
@@ -11129,37 +11202,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur palaistās programmas nosaukumu.
+- **Payload** — satur palaistās programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installupdatestaskapplaunchwithpendingupdate"></a>installupdatestask.applaunchwithpendingupdate
@@ -11170,37 +11243,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installupdatestaskcodesignverificationfail"></a>installupdatestask.codesignverificationfail
@@ -11211,37 +11284,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninātās programmas nosaukumu un kļūmes kodu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninātās programmas nosaukumu un kļūmes kodu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestaskcodesignverificationstart"></a>installupdatestask.codesignverificationstart
@@ -11252,37 +11325,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestaskcodesignverificationsuccess"></a>installupdatestask.codesignverificationsuccess
@@ -11293,37 +11366,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninātās programmas nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestaskfailsilentinstall"></a>installupdatestask.failsilentinstall
@@ -11334,37 +11407,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
     
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma tipu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma tipu.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installupdatestaskmultiplerelocatablepackage"></a>installupdatestask.multiplerelocatablepackage
@@ -11375,37 +11448,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību un atjauninājuma nosaukumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="installupdatestaskremoveclone"></a>installupdatestask.removeclone
@@ -11416,202 +11489,202 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, atjauninājumu pakotnes nosaukumu, klona noņemšanas statusu/detalizētu informāciju par kļūdu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, atjauninājumu pakotnes nosaukumu, klona noņemšanas statusu/detalizētu informāciju par kļūdu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
-Šis notikums norāda, ka atkārtota instalēšanas mēģinājuma laikā radās kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka instalēšanas atkārtošanas laikā notika kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un informāciju par to, vai instalēšana ir jāveic, izmantojot instalēšanu klonā
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un informāciju par to, vai instalēšana ir jāveic, izmantojot instalēšanu klonā
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
    
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
-Šis notikums reģistrē iekšējā procesa saziņas kļūdas (saziņa ar MAU palīga rīku). Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē procesa iekšējās komunikācijas kļūdas (komunikācija ar MAU palīga rīku). Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un detalizētu informācija par ziņoto starpniekservera kļūdu.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu un detalizētu informācija par ziņoto starpniekservera kļūdu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 
 ### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
-Šis notikums reģistrē atkārtota mēģinājuma neizdošanos. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē, ka atkārtošana nedarbojās. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā, vai instalēšana notika sekmīgi, kā arī kļūmes gadījumā visas ziņotās kļūdas.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā, vai instalēšana notika sekmīgi, kā arī kļūmes gadījumā visas ziņotās kļūdas.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
-Šis notikums reģistrē sekmīgu atjauninājumu instalēšanu pēc atkārtota mēģinājuma. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē veiksmīgu atjauninājuma instalēšanu pēc atkārtošanas. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, atjauninājuma nosaukumu, programmas versijai, atjauninājumu pakotnes nosaukumu un norādi par to, vai bija ieslēgta instalēšana klonā.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="installupdatestasksetreopengui"></a>installupdatestask.setreopengui
@@ -11622,37 +11695,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda darbības sekmīgumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **Payload** — teksts, kas norāda darbības sekmīgumu. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** – būla, kas norāda uz darbības veiksmīgu izpildi.
 
@@ -11666,29 +11739,29 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — norāda kļūdas, kas notika atjaunināšanas procesa laikā, ja aizpildīts.
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
@@ -11696,11 +11769,11 @@ Tiek apkopoti šādi lauki:
 
 - **Payload** — statisks teksts, kas norāda uz instalēšanas procesa sākumu, ja ir
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai instalēšanas process tika sekmīgi pabeigts
 
@@ -11718,39 +11791,39 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — jebkura kļūda, par kuru tiek ziņots palaišanas mēģinājuma laikā
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
 - **Reason** — iemesls mēģinājumam palaist papildu procesu
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai programmas atjaunināšana bija sekmīga
 
@@ -11764,39 +11837,39 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — jebkura palaišanas laikā atklātā kļūda
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **LaunchedBy** — Microsoft Update palīga palaišanai izmantotā metode, ja attiecināms
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
@@ -11806,29 +11879,29 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
 - **dataCollectionDialog** — Būla vērtība, norādot, vai process gaida lietotāja atbildi datu apkopošanas dialoglodziņā
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **forcedUpdateDialog** — Būla vērtība, norādot, vai process gaida, kad lietotājs reaģēs uz dialoglodziņu piespiedu atjaunināšana
 
@@ -11840,11 +11913,11 @@ Tiek apkopoti šādi lauki.
 
 - **isWaiting** — Būla vērtība, norādot, vai process gaida lietotāja atbildi uz paziņojumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **SessionLength** — pašreizējās procesa sesijas ilgums sekundēs
 
@@ -11859,35 +11932,35 @@ Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **SessionLength** — pašreizējās procesa sesijas ilgums sekundēs
 
@@ -11901,39 +11974,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppID** — programmas, kas nosūta komandrindas interfeisa API uz MAU, identifikators.
+- **AppID** — programmas, kas nosūta komandrindas interfeisa API uz MAU, identifikators.
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **EventType** — notikuma, kuru programma sūta uz MAU komandrindas interfeisa API, tips.
+- **EventType** — notikuma, kuru programma sūta uz MAU komandrindas interfeisa API, tips.
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="msupdateclieventhandlerapplyupdatesappids"></a>msupdate.cli.eventhandler.applyupdates.appids
@@ -11944,37 +12017,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atjaunināmo programmu ID sarakstu.
+- **Payload** — satur atjaunināmo programmu ID sarakstu.
     
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="msupdateclieventhandlerconfig"></a>msupdate.cli.eventhandler.config
@@ -11985,37 +12058,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="msupdateclieventhandlerupdates"></a>msupdate.cli.eventhandler.updates
@@ -12026,37 +12099,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
@@ -12067,37 +12140,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur lejupielādēto atjauninājumu sarakstus
+- **Payload** — satur lejupielādēto atjauninājumu sarakstus
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="msupdatemonitorprogressfailure"></a>msupdate.monitor.progress.failure
@@ -12108,119 +12181,119 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atjauninājumu sarakstus.
+- **Payload** — satur atjauninājumu sarakstus.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
-Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem, kuru instalēšana ir pabeigta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē rindā iekļautos atjauninājumus, kas pabeidza instalēšanu. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atjauninājumu sarakstus.
+- **Payload** — satur atjauninājumu sarakstus.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
-Šis notikums reģistrē sarakstu ar rindā iekļautajiem atjauninājumiem. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē rindā esošos atjauninājumus. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atjauninājumu sarakstus.
+- **Payload** — satur atjauninājumu sarakstus.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="optinnotificationaction"></a>Optinnotificationaction
@@ -12231,37 +12304,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur statisku tekstu, kas norāda lietotāja atlasi piekrišanai automātiski lejupielādēt un instalēt.
+- **Payload** — satur statisku tekstu, kas norāda lietotāja atlasi piekrišanai automātiski lejupielādēt un instalēt.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="sauforcedupdateautodismiss"></a>sauforcedupdate.autodismiss
@@ -12272,39 +12345,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
   
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **Reason** — statisks teksts
+- **Reason** — statisks teksts
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateclose"></a>sauforcedupdate.close
 
@@ -12314,37 +12387,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatecompleteautodismiss"></a>sauforcedupdate.completeautodismiss
 
@@ -12354,37 +12427,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatecompleteclose"></a>sauforcedupdate.completeclose
 
@@ -12394,37 +12467,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatedisplay"></a>sauforcedupdate.display
 
@@ -12434,37 +12507,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatedisplayfinalhour"></a>sauforcedupdate.displayfinalhour
 
@@ -12474,37 +12547,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatedone"></a>sauforcedupdate.done
 
@@ -12514,37 +12587,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateenabled"></a>sauforcedupdate.enabled
 
@@ -12554,39 +12627,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Enabled** — norāda, vai ir iespējota piespiedu atjaunināšana
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **InvalidUpdates** — piespiedu atjauninājumu ar nederīgām atjauninājumu versijām skaits
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateforcedupdatedismiss"></a>sauforcedupdate.forcedupdatedismiss
 
@@ -12596,39 +12669,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **Reason** — statisks teksts
+- **Reason** — statisks teksts
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateforcequitandupdatenow"></a>sauforcedupdate.forcequitandupdatenow
 
@@ -12638,37 +12711,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators 
+- **SessionId** — sesijas identifikators 
 
 ### <a name="sauforcedupdateforceterminate"></a>sauforcedupdate.forceterminate
 
@@ -12678,37 +12751,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur programmu, kuru darbība ir jāizbeidz, skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatequitandupdatenow"></a>sauforcedupdate.quitandupdatenow
 
@@ -12718,37 +12791,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdatesnooze"></a>sauforcedupdate.snooze
 
@@ -12758,39 +12831,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Duration** – teksts, kas norāda miega ilgumu
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statiskais teksts *[Šis lauks ir noņemts no pašreizējiem Office būvējumiem, bet, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateterminate"></a>sauforcedupdate.terminate
 
@@ -12800,37 +12873,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur programmu, kuru darbība ir jāizbeidz, skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="sauforcedupdateupdatenow"></a>sauforcedupdate.updatenow
 
@@ -12840,37 +12913,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="sauupdateinfoprovider"></a>sauupdateinfoprovider
@@ -12881,37 +12954,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur virkni, kas izmantota, lai meklētu atjauninājuma atrašanās vietu vai lielumu.
+- **Payload** — satur virkni, kas izmantota, lai meklētu atjauninājuma atrašanās vietu vai lielumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updateapplaunchdetected"></a>update.applaunchdetected
@@ -12924,35 +12997,35 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai palaistās programmas darbība tika sekmīgi izbeigta
 
@@ -12968,39 +13041,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — norāda, vai vēl ir programmas eksemplāri, kas joprojām darbojas un neļauj MAU turpināt darbību
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statisks teksts, kas norāda, ka MAU turpina atjaunināšanu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13014,37 +13087,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija.
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija.
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums.
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums.
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums. 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums. 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13058,37 +13131,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par notikušo kļūdu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updateclientsession"></a>update.clientsession
 
@@ -13098,37 +13171,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — norāda, vai Microsoft Auto Update (MAU) veic atsākšanu vai pauzēšanu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
+
+### <a name="updateclonedisablereason"></a>update.clonedisablereason
+
+Šis notikums reģistrē nosacījumu, ka līdzeklis Install-On-Clone ir atspējots konkrētajam atjauninājumam. Mēs izmantojam šo notikumu, lai uzraudzītu līdzekļa Install-On-Clone darbspēju un sniegtu uzlaboto pakalpojumu.
+
+Tiek apkopoti šādi lauki.
+
+- **App** — programmas process, kas sūta notikumu
+
+- **AppInfo_Language** — valoda, kurā darbojas programma
+
+- **AppVersionLong** — programmas versija
+
+- **Channel** — auditorijas preference
+
+- **Device_NetworkCountry** — ierīces reģions (atbilstoši IP adresei)
+
+- **DeviceID** — ierīces identifikators
+
+- **DeviceInfo_Model** — ierīces aparatūras modelis
+
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
+
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+
+- **Reason** — Install-On-Clone atspējošanas šim atjauninājumam iemesls.
+
+- **SessionId** — sesijas identifikators
+
 
 ### <a name="updatedownloadbegin"></a>update.download.begin 
 
@@ -13140,27 +13254,27 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
@@ -13168,11 +13282,11 @@ Tiek apkopoti šādi lauki:
 
 - **Payload** — norāda, vai iepriekš tika mēģināts veikt lejupielādi
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateName** — atjauninājuma nosaukums, kā norādīts lejupielādētajā manifesta failā
 
@@ -13186,37 +13300,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **IsRepair** — norāda, vai atjaunināšanas mērķis ir labot neizdevušos atjaunināšanu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13232,37 +13346,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — norāda notikušās kļūdas būtību
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13274,39 +13388,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Payload** — satur informāciju par notikušās kļūdas būtību
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par notikušās kļūdas būtību
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updateinstallcleanupforapp"></a>update.installcleanupforapp
 
@@ -13318,37 +13432,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
 - **AppState** — reģistrētas programmas statuss. Var norādīt kā kļūda, gaida labojumus utt.
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13362,37 +13476,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — notikušās kļūdas, ja ir
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13408,37 +13522,39 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+
+- **ForcedUpdate** — virknes apzīmējums, kas norāda, vai atjaunināšanu noteica IT administrators piespiedu kārtā
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — norāda, vai instalēšanas procesa laikā tika parādīts procesa skats
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — instalēšanas uzdevums atgrieza norādi par sekmīgu izpildi
 
@@ -13452,37 +13568,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — satur programmu ID sarakstu un tām atbilstošo instalēšanas prioritāti, kas ir norādīta skaitļos.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatemultipleappupdates"></a>update.multipleappupdates 
 
@@ -13492,37 +13608,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators 
+- **DeviceID** — ierīces identifikators 
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par atjaunināmo programmu skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatepreviousidnil"></a>update.previousidnil
 
@@ -13534,37 +13650,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — norāda notikušās kļūdas būtību
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatequeueinstallforapp"></a>update.queueinstallforapp 
 
@@ -13576,37 +13692,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — statisks teksts, kas norāda, ka programmu ir jāaizver, ja ir
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13622,37 +13738,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — satur informāciju par kļūdām, kas ir notikušas, mēģinot atkārtoti palaist programmu
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **UpdateID** — programmas atjauninājuma identifikators
 
@@ -13664,119 +13780,119 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — norāda, vai taimeris tika pievienots vai noņemts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
-Šis notikums reģistrē mēģinājumus reģistrēt programmu un rezultātu/iemeslu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē mēģinājums reģistrēt programmu un rezultātu/iemeslu. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, norādi par to, vai ir pieejama preference, norādi par to, vai tā ir atkārtota reģistrācija, un norādi par to, vai ir nepieciešama reģistrācija.
+- **Payload** — ietver identifikatoru, kas tiek lietots, lai izsekotu atjaunināšanas darbību, norādi par to, vai ir pieejama preference, norādi par to, vai tā ir atkārtota reģistrācija, un norādi par to, vai ir nepieciešama reģistrācija.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
-Šis notikums norāda palaišanas aģenta ielādi. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka tiek ielādēts palaišanas aģents. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatecorerunnstaskcommand"></a>updatecore.runnstaskcommand
 
@@ -13786,77 +13902,77 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur ceļu uz komandu, kas tiek izpildīta
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
-Šis notikums reģistrē kļūdas, kas rodas, sazinoties ar CDN. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē kļūdas, kas notika sazinoties ar CDN. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver informāciju par servera nosaukumu, vai serveris ir derīgs un vai serveris ir sasniedzams.
+- **Payload** — ietver informāciju par servera nosaukumu, vai serveris ir derīgs un vai serveris ir sasniedzams.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatecoreservernullurl"></a>updatecore.server.nullurl
 
@@ -13866,37 +13982,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
@@ -13906,37 +14022,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur programmas ID.
+- **Payload** — satur programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
@@ -13947,37 +14063,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur tīmekļa atbildē norādīto programmas ID
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
@@ -13987,37 +14103,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **Payload** — statisks teksts
+- **Payload** — statisks teksts
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
@@ -14027,37 +14143,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
     
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur programmas ID.
+- **Payload** — satur programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
@@ -14068,37 +14184,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur programmas ID.
+- **Payload** — satur programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
@@ -14109,37 +14225,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur programmas ID.
+- **Payload** — satur programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindercheckerror"></a>updatefinder.check.error
@@ -14150,80 +14266,80 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
 - **Code** — kļūdas kods 
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Domain** — kļūdas domēns
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
  
 ### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
-Šis notikums reģistrē gadījumus, kad tiek sākta pārbaude, vai nav atjauninājumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē, vai tiek inicializēta atjauninājumu pārbaudes darbība. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
     
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
+- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindercheckstatus"></a>updatefinder.check.status
@@ -14234,37 +14350,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
+- **Payload** — satur informāciju par piedāvājamajiem atjauninājumiem, reģistrētajām programmām un pagaidu atrašanās vietu, kur tiks saglabāti lejupielādētie faili.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindercheckupdatefound"></a>updatefinder.check.updatefound
@@ -14275,37 +14391,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindercheckupdatenotfound"></a>updatefinder.check.updatenotfound
@@ -14316,37 +14432,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindercheckuptodate"></a>updatefinder.check.uptodate
@@ -14357,37 +14473,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefinderofferupdatesinvalidappid"></a>updatefinder.offerupdates.invalidappid
@@ -14398,39 +14514,39 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
 - **CatalogID** — kataloga, kuram piekļūts, identifikators
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **IsNullID** — norāda, vai ID ir null
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefinderofferupdatesminoscheckfail"></a>updatefinder.offerupdates.minoscheckfail
 
@@ -14440,37 +14556,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver minimālo nepieciešamo operētājsistēmas versiju, kā tas ir norādīts lejupielādētā manifesta failā.
+- **Payload** — ietver minimālo nepieciešamo operētājsistēmas versiju, kā tas ir norādīts lejupielādētā manifesta failā.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefinderofferupdatesmissingtrigger"></a>updatefinder.offerupdates.missingtrigger
 
@@ -14480,35 +14596,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **TriggerKey** — manifestā norādītā trigera atslēga
 
@@ -14522,37 +14638,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur programmas ID.
+- **Payload** — satur programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefinderofferupdatesupdaterulematched"></a>updatefinder.offerupdates.updaterulematched
@@ -14563,37 +14679,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — ietver programmas ID un komplekta versijas informāciju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="updatefinderregisteredapps"></a>updatefinder.registeredapps
@@ -14604,37 +14720,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
 - **Payload** — ietver programmas ID un komplekta versijas informāciju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatefindersuiteinvalidsuiteversion"></a>updatefinder.suite.invalidsuiteversion
 
@@ -14644,35 +14760,35 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Suite** — konkrētā komplekta nosaukums
 
@@ -14686,324 +14802,324 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators 
+- **SessionId** — sesijas identifikators 
 
 - **Suite** — komplekta, kuram tiks pievienota programma, nosaukums
 
     
 ### <a name="updatefindersuitemissingcollateral"></a>updatefinder.suite.missingcollateral
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo trūkst papildmateriālu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo trūkst papildmateriālu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — teksts, kas norāda notikuma dabu.
+- **Payload** — teksts, kas norāda notikuma dabu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindersuitestaleversion"></a>updatefinder.suite.staleversion
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo bāzes versija ir pārāk veca. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana nav lietojama, jo bāzes versija ir pārāk veca. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu.
+- **Payload** — ietver komplekta nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindersuiteupdateapplicable"></a>updatefinder.suite.updateapplicable
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana ir lietojama. Reģistrējam bāzlīnijas versiju un komplekta AppId. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana ir lietojama. Reģistrējam bāzlīnijas versiju un komplekta AppId. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindersuiteupdatenotapplicabledefaultpath"></a>updatefinder.suite.updatenotapplicabledefaultpath
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas tiek instalētas, izmantojot noklusējuma ceļu. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas tiek instalētas, izmantojot noklusējuma ceļu. Reģistrējam bāzlīnijas versiju un komplekta AppId. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="updatefindersuiteupdatenotapplicableversion"></a>updatefinder.suite.updatenotapplicableversion
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas ir vienā bāzes versijā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo ne visas komplekta programmas ir vienā bāzes versijā. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindersuiteupdatenotoffered"></a>updatefinder.suite.updatenotoffered
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo komplekta lielums pārsniedz atsevišķo atjauninājumu lielumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana netiek piedāvāta, jo komplekta lielums pārsniedz atsevišķo atjauninājumu lielumu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu.
+- **Payload** — ietver komplekta nosaukumu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatefindersuiteupdateoffered"></a>updatefinder.suite.updateoffered
 
-Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana tiek piedāvāta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Komplekta atjaunināšana — reģistrējam gadījumus, kad komplekta atjaunināšana tiek piedāvāta. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
 Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
+- **Payload** — ietver komplekta nosaukumu, bāzlīniju un atjauninājuma versiju.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatemanagercheckupdate"></a>updatemanager.checkupdate
@@ -15014,37 +15130,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
+- **Payload** — satur atrasto pieejamo atjauninājumu skaitu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="updatemanagernetwork"></a>updatemanager.network
@@ -15055,78 +15171,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **ServerReacheable** – būla, kas norāda, ai tīkls ir pieejams.
 
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
-Šis notikums norāda, ka atjauninājumi ir atrasti un gaida instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka tika atrasti atjauninājumi un tie gaida instalēšanu. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur norādi, vai uzdevums tiek izpildīts galvenajā pavedienā, un gaidāmo atjauninājumu skaitu.
+- **Payload** — satur norādi, vai uzdevums tiek izpildīts galvenajā pavedienā, un gaidāmo atjauninājumu skaitu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="updatestatuscodesign"></a>UpdateStatus.Codesign
 
@@ -15138,37 +15254,37 @@ Tiek apkopoti šādi lauki:
 
 - **AppID** — programmas, kas tiek atjaunināta, identifikators
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
 - **Error** — kļūdas, kas tika pamanītas koda paraksta verifikācijas procesa laikā
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 - **Success** — norāda, vai koda paraksta verifikācija bija sekmīga
 
@@ -15186,77 +15302,77 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par notikušo kļūdu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
    
 ### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
-Šis notikums norāda, ka ir atrasti klusās atjaunināšanas kandidāti. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums norāda, ka tika atjauninājumi klusās atjaunināšanas veikšanai. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — ietver atrasto atjauninājumu skaitu un programmas ID.
+- **Payload** — ietver atrasto atjauninājumu skaitu un programmas ID.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="webservicesdeltaupdater"></a>webservices.deltaupdater
@@ -15267,37 +15383,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur atbildi no tīmekļa pakalpojumiem un lietojamā atjauninātāja tipu.
+- **Payload** — satur atbildi no tīmekļa pakalpojumiem un lietojamā atjauninātāja tipu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="webservicesserviceaction"></a>webservices.serviceaction
@@ -15308,78 +15424,78 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur detalizētu informāciju par darbībām, kas tiek stumtas no tīmekļa pakalpojumiem.
+- **Payload** — satur detalizētu informāciju par darbībām, kas tiek stumtas no tīmekļa pakalpojumiem.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
-Šis notikums reģistrē pieprasījumus MAU pakalpojumam, atbilžu laikus un kļūdas. Šis notikums tiek izmantots, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
+Šis notikums reģistrē MAU pakalpojuma pieprasījumus, atbildes laikus un kļūdas. Šo notikumu izmantojam, lai nodrošinātu paredzēto atjaunināšanas procesa darbību un lai palīdzētu novērst kļūdas.
  
-Tiek apkopoti šādi lauki:
+Tiek apkopoti šādi lauki.
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
+- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
     
 ### <a name="webservicessilentupdate"></a>webservices.silentupdate
@@ -15390,37 +15506,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
+- **Payload** — satur pieprasījuma ID, programmas nosaukumu, atbildes laiku un/vai statusa kodu.
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="webservicesupdatefiltering"></a>webservices.updatefiltering
 
@@ -15430,37 +15546,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par ar tīmekļa pakalpojumu palīdzību bloķēto atjauninājumu skaitu
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="webserviceswebcontent"></a>webservices.webcontent
 
@@ -15470,37 +15586,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
-- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
+- **HowTocheck** — pārbaudes, vai nav atjauninājumu, preference
 
-- **Payload** — satur tīmekļa pakalpojuma izsaucēja ID
+- **Payload** — satur tīmekļa pakalpojuma izsaucēja ID
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie 3 okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ### <a name="webserviceswhatsnew"></a>webservices.whatsnew
 
@@ -15510,37 +15626,37 @@ Tiek apkopoti šādi lauki:
 
 - **App** — programmas process, kas sūta notikumu
 
-- **AppInfo_Language** — valoda, kurā darbojas programma
+- **AppInfo_Language** — valoda, kurā darbojas programma
 
-- **AppVersionLong** — programmas versija
+- **AppVersionLong** — programmas versija
 
-- **Channel** — auditorijas preference
+- **Channel** — auditorijas preference
 
-- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **Device_NetworkCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **DeviceID** — ierīces identifikators
+- **DeviceID** — ierīces identifikators
 
-- **DeviceInfo_Model** — ierīces aparatūras modelis
+- **DeviceInfo_Model** — ierīces aparatūras modelis
 
-- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
+- **DeviceInfo_NetworkType** — tīkla tips (Wi-Fi, vadu, nezināms)
 
-- **DeviceInfo_OsBuild** — operētājsistēmas versija
+- **DeviceInfo_OsBuild** — operētājsistēmas versija
 
-- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
+- **Event_ReceivedTime** — laiks, kad tika saņemta telemetrija
 
-- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
+- **EventInfo_Name** — reģistrējamā telemetrijas notikuma nosaukums
 
-- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
+- **EventInfo_Time** — laiks, kad notika reģistrētais notikums 
 
 - **HowToCheck** — kā pārbaudīt iestatījumu
 
 - **Payload** — satur informāciju par programmu skaitu ar “kas jauns” informāciju
 
-- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
+- **PipelineInfo_ClientCountry** — ierīces valsts/reģions (atbilstoši IP adresei)
 
-- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
+- **PipelineInfo_ClientIp** — IP adreses pirmie trīs okteti
 
-- **SessionId** — sesijas identifikators
+- **SessionId** — sesijas identifikators
 
 ## <a name="onenote-sync-events"></a>OneNote sinhronizācijas notikumi
 
@@ -15554,75 +15670,75 @@ Tiek apkopoti tālāk norādītie lauki
 
 - **CachedError_Description** — kešatmiņā saglabātās kļūdas apraksts
 
-- **CachedError_Tag** — norāda, kur kodā rodas kešatmiņā saglabātā kļūda
+- **CachedError_Tag** — norāda, kur kodā rodas kešatmiņā saglabātā kļūda
 
-- **CachedError_Type** — kešatmiņā saglabātās kļūdas tips, piemēram, Win32Error u.tml.
+- **CachedError_Type** — kešatmiņā saglabātās kļūdas tips, piemēram, Win32Error u.tml.
 
-- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu piezīmju grāmatiņu
+- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu piezīmju grāmatiņu
 
-- **Gosid** — globālais objektu telpas ID
+- **Gosid** — globālais objektu telpas ID
 
-- **IdentityType** — identitātes tips, piemēram, Windows Live, organizācijas ID utt.
+- **IdentityType** — identitātes tips, piemēram, Windows Live, organizācijas ID utt.
 
-- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
+- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
 
-- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
+- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
 
-- **IsCachedErrorSuppressed** — norāda, vai kešatmiņā saglabātā kļūda tiek apspiesta
+- **IsCachedErrorSuppressed** — norāda, vai kešatmiņā saglabātā kļūda tiek apspiesta
 
-- **IsCachedErrorUnexpected** — norāda, vai kešatmiņā saglabātā kļūda ir neparedzēta
+- **IsCachedErrorUnexpected** — norāda, vai kešatmiņā saglabātā kļūda ir neparedzēta
 
-- **IsNotebookErrorSuppressed** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda tiek apspiesta
+- **IsNotebookErrorSuppressed** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda tiek apspiesta
 
-- **IsNotebookErrorUnexpected** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda ir neparedzēta
+- **IsNotebookErrorUnexpected** — norāda, vai piezīmju grāmatiņas līmeņa sinhronizācijas kļūda ir neparedzēta
 
-- **IsSectionErrorSuppressed** — norāda, vai sadaļu sinhronizācijas kļūdas tiek apspiestas
+- **IsSectionErrorSuppressed** — norāda, vai sadaļu sinhronizācijas kļūdas tiek apspiestas
 
-- **IsSectionErrorUnexpected** — norāda, vai sadaļas sinhronizācijas kļūda bija paredzēta
+- **IsSectionErrorUnexpected** — norāda, vai sadaļas sinhronizācijas kļūda bija paredzēta
 
-- **IsUsingRealtimeSync** — norāda, vai piezīmju grāmatiņas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
+- **IsUsingRealtimeSync** — norāda, vai piezīmju grāmatiņas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
 
-- **LastAttemptedSync** — laikspiedols, kad piezīmju grāmatiņu tika mēģināts sinhronizēt iepriekšējo reizi
+- **LastAttemptedSync** — laikspiedols, kad piezīmju grāmatiņu tika mēģināts sinhronizēt iepriekšējo reizi
 
-- **LastBackgroundSync** — laikspiedols, kad notika pēdējais mēģinājums veikt sinhronizāciju fona režīmā
+- **LastBackgroundSync** — laikspiedols, kad notika pēdējais mēģinājums veikt sinhronizāciju fona režīmā
 
-- **LastNotebookViewedDate** — datums, kad piezīmju grāmatiņa pēdējoreiz tika skatīta
+- **LastNotebookViewedDate** — datums, kad piezīmju grāmatiņa pēdējoreiz tika skatīta
 
-- **LastSuccessfulSync** — laikspiedols, kad piezīmju grāmatiņa iepriekš sekmīgi sinhronizēta
+- **LastSuccessfulSync** — laikspiedols, kad piezīmju grāmatiņa iepriekš sekmīgi sinhronizēta
 
-- **NeedToRestartBecauseOfInconsistencies** — norāda, vai sinhronizācija ir jārestartē, jo pastāv nekonsekvences
+- **NeedToRestartBecauseOfInconsistencies** — norāda, vai sinhronizācija ir jārestartē, jo pastāv nekonsekvences
 
-- **NotebookErrorCode** — piezīmju grāmatiņas līmeņa sinhronizācijas kļūdas kods, kas saglabāts piezīmju grāmatiņas diagrammas apgabalā
+- **NotebookErrorCode** — piezīmju grāmatiņas līmeņa sinhronizācijas kļūdas kods, kas saglabāts piezīmju grāmatiņas diagrammas apgabalā
 
-- **NotebookId** — piezīmju grāmatiņas ID
+- **NotebookId** — piezīmju grāmatiņas ID
 
-- **NotebookType** — piezīmju grāmatiņas tips
+- **NotebookType** — piezīmju grāmatiņas tips
 
-- **ReplicatingAgainBecauseOfInconsistencies** — norāda, vai sinhronizācija tiek restartēta nekonsekvenču dēļ
+- **ReplicatingAgainBecauseOfInconsistencies** — norāda, vai sinhronizācija tiek restartēta nekonsekvenču dēļ
 
 - **SectionError_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu sadaļas sinhronizācijas kļūdas raksturu un/vai to, kāpēc tā radās
 
-- **SectionError_Description** — sadaļas sinhronizācijas kļūdas apraksts
+- **SectionError_Description** — sadaļas sinhronizācijas kļūdas apraksts
 
-- **SectionError_Tag** — norāda, kur kodā rodas sadaļas sinhronizācijas kļūda
+- **SectionError_Tag** — norāda, kur kodā rodas sadaļas sinhronizācijas kļūda
 
-- **SectionError_Type** — sadaļas sinhronizācijas kļūdas tips, piemēram, Win32Error u.tml.
+- **SectionError_Type** — sadaļas sinhronizācijas kļūdas tips, piemēram, Win32Error u.tml.
 
-- **Success** — norāda, vai piezīmju grāmatiņas sinhronizācija izdevās
+- **Success** — norāda, vai piezīmju grāmatiņas sinhronizācija izdevās
 
-- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
+- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
 
-- **SyncId** — katrai piezīmju grāmatiņas sinhronizācijai unikāls numurs
+- **SyncId** — katrai piezīmju grāmatiņas sinhronizācijai unikāls numurs
 
-- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
+- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
 
-- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
+- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
 
-- **TenantId** — SharePoint nomnieka ID
+- **TenantId** — SharePoint nomnieka ID
 
-- **TimeSinceLastAttemptedSync** — laiks, kas pagājis kopš pēdējā piezīmju grāmatiņas sinhronizācijas mēģinājuma
+- **TimeSinceLastAttemptedSync** — laiks, kas pagājis kopš pēdējā piezīmju grāmatiņas sinhronizācijas mēģinājuma
 
-- **TimeSinceLastSuccessfulSync** — laiks, kas pagājis kopš pēdējās sekmīgās piezīmju grāmatiņas sinhronizēšanas
+- **TimeSinceLastSuccessfulSync** — laiks, kas pagājis kopš pēdējās sekmīgās piezīmju grāmatiņas sinhronizēšanas
 
 ### <a name="officeonenotestoragerealtimewebsocketsessioninfo"></a>Office.OneNote.Storage.RealTime.WebSocketSessionInfo
  
@@ -15630,111 +15746,111 @@ Tiek apkopoti tālāk norādītie lauki
  
 Tiek apkopoti šādi lauki:
  
-- **CloseReason** — WebSocket aizvēršanas iemesls, piemēram, anormāla aizvēršana utt.
+- **CloseReason** — WebSocket aizvēršanas iemesls, piemēram, anormāla aizvēršana utt.
 
-- **DataIsFreshCount** — sekmīgo atgādāšanas pieprasījumu skaits WebSocket sesijā
+- **DataIsFreshCount** — sekmīgo atgādāšanas pieprasījumu skaits WebSocket sesijā
 
-- **DeviceSessionId** — ierīces sesijas ID
+- **DeviceSessionId** — ierīces sesijas ID
 
-- **DownloadCount** — lejupielāžu skaits WebSocket sesijā
+- **DownloadCount** — lejupielāžu skaits WebSocket sesijā
 
-- **Error** — tas pamatā ir Exception_Type+Exception_Description+Exception_Code+Exception_Tag
+- **Error** — tas pamatā ir Exception_Type+Exception_Description+Exception_Code+Exception_Tag
 
-- **Exception_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+- **Exception_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
 
-- **Exception_Description** — kļūdas apraksts
+- **Exception_Description** — kļūdas apraksts
 
-- **Exception_Tag** — norāda, kur kodā rodas kļūda
+- **Exception_Tag** — norāda, kur kodā rodas kļūda
 
-- **Exception_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+- **Exception_Type** — kļūdas tips, piemēram, Win32Error u.tml.
 
-- **FirstUpdateSize** — pirmā atjaunināšanas ziņojuma garums
+- **FirstUpdateSize** — pirmā atjaunināšanas ziņojuma garums
 
-- **HasError** — norāda, vai WebSocket sesijas laikā radās kļūda 
+- **HasError** — norāda, vai WebSocket sesijas laikā radās kļūda 
 
-- **IsEducationNotebook** — norāda, vai pašreizējā piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
+- **IsEducationNotebook** — norāda, vai pašreizējā piezīmju grāmatiņa ir piezīmju grāmatiņa izglītības iestādēm
 
-- **IsHierarchyResource** — norāda, vai pašreizējais resurss ir lapa vai sadaļa
+- **IsHierarchyResource** — norāda, vai pašreizējais resurss ir lapa vai sadaļa
 
-- **NotebookId** — OneNote piezīmju grāmatiņas ID
+- **NotebookId** — OneNote piezīmju grāmatiņas ID
 
-- **OperationWithError** — kuras operācijas laikā notika kļūda, piemēram, WebSocket.Close, WebSocket.Open u.tml.
+- **OperationWithError** — kuras operācijas laikā notika kļūda, piemēram, WebSocket.Close, WebSocket.Open u.tml.
 
-- **ResourceId** — OneNote lapas vai sadaļas resursa ID
+- **ResourceId** — OneNote lapas vai sadaļas resursa ID
 
-- **SectionId** — OneNote sadaļas ID
+- **SectionId** — OneNote sadaļas ID
 
-- **ServerSessionId** — sesijas ID, kas tiek izmantota savstarpējai WebSocket pieprasījuma un onenote.com saistīšanai
+- **ServerSessionId** — sesijas ID, kas tiek izmantota savstarpējai WebSocket pieprasījuma un onenote.com saistīšanai
 
-- **SessionDurationInMs** — WebSocket sesijas ilgums milisekundēs
+- **SessionDurationInMs** — WebSocket sesijas ilgums milisekundēs
 
-- **TenantId** — SharePoint nomnieka ID
+- **TenantId** — SharePoint nomnieka ID
 
-- **TimeToFirstUpdateInMs** — laiks milisekundēs, kas bija nepieciešams, lai saņemtu pirmo atjauninājumu no servera puses pēc tam, kad tika izveidota WebSocket sesija
+- **TimeToFirstUpdateInMs** — laiks milisekundēs, kas bija nepieciešams, lai saņemtu pirmo atjauninājumu no servera puses pēc tam, kad tika izveidota WebSocket sesija
 
-- **UploadAckCount** — augšupielādes apstiprinājumu skaits WebSocket sesijā
+- **UploadAckCount** — augšupielādes apstiprinājumu skaits WebSocket sesijā
 
-- **Web URL** — PII notīrītais tīmekļa vietrādis URL 
+- **Web URL** — PII notīrītais tīmekļa vietrādis URL 
 
 ### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
  
-Šis notikums reģistrē sadaļas sinhronizācijas rezultātu. Tas tiek lietots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu. Tas tiek izmantots arī OneNote modernās sinhronizācijas veiktspējas informācijas paneļa vajadzībām.
+Šis notikums reģistrē sekcijas sinhronizēšanas rezultātus. Tas tiek izmantots, lai, aprēķinot OneNote sinhronizācijas vērtējumu, noteiktu, cik daudz ir unikālu sinhronizācijas mērķu. Tas tiek izmantots arī OneNote modernās sinhronizācijas veiktspējas informācijas paneļa vajadzībām.
  
 Tiek apkopoti tālāk norādītie lauki
 
-- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
 
-- **Error_Description** — kļūdas apraksts
+- **Error_Description** — kļūdas apraksts
 
-- **Error_Tag** — norāda, kur kodā rodas kļūda
+- **Error_Tag** — norāda, kur kodā rodas kļūda
 
-- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
 
-- **ErrorLast** — pēdējās radušās kļūdas kods 
+- **ErrorLast** — pēdējās radušās kļūdas kods 
 
-- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu sadaļu
+- **ExecutionTime** — laiks milisekundēs, kas bija nepieciešams, lai replicētu sadaļu
 
-- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
+- **InitialReplicationInSession** — norāda, vai šī replicēšana ir pirmā piezīmju grāmatiņas replicēšana pēc atvēršanas
 
-- **IsAttachedViaShortcut** — norāda, vai sadaļa tika pievienota, izmantojot saīsni
+- **IsAttachedViaShortcut** — norāda, vai sadaļa tika pievienota, izmantojot saīsni
 
-- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
+- **IsBackgroundSync** — norāda, vai tā ir fona sinhronizācija
 
-- **IsEncrypted** — norāda, vai sadaļa ir šifrēta
+- **IsEncrypted** — norāda, vai sadaļa ir šifrēta
 
-- **IsErrorSuppressed** — norāda, vai šī kļūda tika apspiesta 
+- **IsErrorSuppressed** — norāda, vai šī kļūda tika apspiesta 
 
-- **IsErrorTransient** — norāda, vai šī kļūda ir pārejoša
+- **IsErrorTransient** — norāda, vai šī kļūda ir pārejoša
 
-- **IsErrorUnexpected** — norāda, vai šī kļūda ir neparedzēta
+- **IsErrorUnexpected** — norāda, vai šī kļūda ir neparedzēta
 
-- **IsUsingRealtimeSync** — norāda, vai sadaļas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
+- **IsUsingRealtimeSync** — norāda, vai sadaļas sinhronizēšana notiek, izmantojot moderno lapas satura sinhronizāciju
 
-- **NotebookId** — piezīmju grāmatiņas ID
+- **NotebookId** — piezīmju grāmatiņas ID
 
-- **NotebookPath** — PII notīrītais piezīmju grāmatiņas vietrādis URL
+- **NotebookPath** — PII notīrītais piezīmju grāmatiņas vietrādis URL
 
-- **SectionPath** — PII notīrītais sadaļas vietrādis URL
+- **SectionPath** — PII notīrītais sadaļas vietrādis URL
 
-- **SectionReplicatingIsOutbound** — norāda, vai šī ir izejošā replicēšana
+- **SectionReplicatingIsOutbound** — norāda, vai šī ir izejošā replicēšana
 
-- **SectionReplicatingIsSameIdentity** — norāda, vai šīs replicēšanas pamatā ir tā paša pašu faila identitāte
+- **SectionReplicatingIsSameIdentity** — norāda, vai šīs replicēšanas pamatā ir tā paša pašu faila identitāte
 
-- **SectionResourceId** — OneNote sadaļas resursa ID
+- **SectionResourceId** — OneNote sadaļas resursa ID
 
-- **Success** — norāda, vai sadaļas sinhronizācija izdevās
+- **Success** — norāda, vai sadaļas sinhronizācija izdevās
 
-- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
+- **SyncDestinationType** — sinhronizācijas galamērķa tips, t.i., OneDrive vai SharePoint Online
 
-- **SyncId** — katrai sadaļas sinhronizācijai unikāls numurs
+- **SyncId** — katrai sadaļas sinhronizācijai unikāls numurs
 
-- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
+- **SyncWasFirstInSession** — norāda, vai šī ir pirmo sinhronizācija pašreizējā sesijā
 
-- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
+- **SyncWasUserInitiated** — norāda, vai šo sinhronizāciju uzsāka lietotājs
 
-- **TenantId** — SharePoint nomnieka ID
+- **TenantId** — SharePoint nomnieka ID
 
-- **UnmappedGosid** — sadaļas ID pirms kartēšanas GUID lietošanas
+- **UnmappedGosid** — sadaļas ID pirms kartēšanas GUID lietošanas
 
 
 ### <a name="officeonenotestoragesyncscore"></a>Office.OneNote.Storage.SyncScore
@@ -15743,39 +15859,39 @@ Tiek apkopoti tālāk norādītie lauki
  
 Tiek apkopoti tālāk norādītie lauki
 
-- **AutoShowSyncStatus** — norāda, vai sinhronizācijas statuss tiek rādīts automātiski
+- **AutoShowSyncStatus** — norāda, vai sinhronizācijas statuss tiek rādīts automātiski
 
-- **Cause** — kas izraisīja OneNote lapu/sadaļu pārvietošanu uz nesakārtotām sadaļām
+- **Cause** — kas izraisīja OneNote lapu/sadaļu pārvietošanu uz nesakārtotām sadaļām
 
-- **Context** — uzskaitījums kategorizē, ko lietotājs cenšas veikt, piemēram, sadaļas pārdēvēšana, piezīmju grāmatiņas atkārtota atvēršana utt.
+- **Context** — uzskaitījums kategorizē, ko lietotājs cenšas veikt, piemēram, sadaļas pārdēvēšana, piezīmju grāmatiņas atkārtota atvēršana utt.
 
-- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
+- **Error_Code** — numurēts vai burtciparu kods, kas tiek lietots, lai noteiktu kļūdas raksturu un/vai to, kāpēc tā radās
 
-- **Error_Description** — kļūdas apraksts
+- **Error_Description** — kļūdas apraksts
 
-- **Error_Tag** — norāda, kur kodā rodas kļūda
+- **Error_Tag** — norāda, kur kodā rodas kļūda
 
-- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
+- **Error_Type** — kļūdas tips, piemēram, Win32Error u.tml.
 
-- **ErrorText** — kļūdas teksts, kas redzams lietotāja interfeisā
+- **ErrorText** — kļūdas teksts, kas redzams lietotāja interfeisā
 
-- **Explanation** — paskaidro, kāda veida ir gaidošas izejošās izmaiņas, kas ir jāpārvieto uz nesakārtotām sadaļām
+- **Explanation** — paskaidro, kāda veida ir gaidošas izejošās izmaiņas, kas ir jāpārvieto uz nesakārtotām sadaļām
 
-- **fishbowlType** — akvārija tips, piemēram, lapas akvārijs, sadaļas akvārijs utt.
+- **fishbowlType** — akvārija tips, piemēram, lapas akvārijs, sadaļas akvārijs utt.
 
-- **IDS** — lietotāja interfeisā redzamā teksta vesela skaitļa identifikators
+- **IDS** — lietotāja interfeisā redzamā teksta vesela skaitļa identifikators
 
-- **idsFishbowl** — lietotāja interfeisā redzamās akvārija kļūdas vesela skaitļa identifikators
+- **idsFishbowl** — lietotāja interfeisā redzamās akvārija kļūdas vesela skaitļa identifikators
 
-- **IsUsingRealtimeHierarchySync** — norāda, vai tiek izmantota modernās hierarhijas sinhronizācija
+- **IsUsingRealtimeHierarchySync** — norāda, vai tiek izmantota modernās hierarhijas sinhronizācija
 
-- **NotebookId** — piezīmju grāmatiņas ID
+- **NotebookId** — piezīmju grāmatiņas ID
 
-- **PageSyncUIState** — lapas sinhronizācijas statusa virkne, piemēram, UpToDate, Syncing, SaveOffline, SyncError utt. 
+- **PageSyncUIState** — lapas sinhronizācijas statusa virkne, piemēram, UpToDate, Syncing, SaveOffline, SyncError utt. 
 
-- **ServerGosid** — jaunizveidotās konflikta lapas resursa ID
+- **ServerGosid** — jaunizveidotās konflikta lapas resursa ID
 
-- **Source** — uzskaitījums, kas norāda, kurš notikums izraisīja UI, t.i., izveidoja jaunu redx attēlu, sinhronizācijas kļūda sinhronizācijas lietotāja interfeisā, parādīja kļūdas dialogu utt.
+- **Source** — uzskaitījums, kas norāda, kurš notikums izraisīja UI, t.i., izveidoja jaunu redx attēlu, sinhronizācijas kļūda sinhronizācijas lietotāja interfeisā, parādīja kļūdas dialogu utt.
 
 ### <a name="onenoteappprovisioningmovelocalnotebooktoonlinenotebookfailed"></a>OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
  
@@ -15957,9 +16073,9 @@ Tiek apkopoti šādi lauki:
 
 - **application** – lietojumprogramma, kas tika palaista ar dziļo saiti, piemēram, Teams vai Skype darbam
 
-- **context** — līdzeklis, uz kuru notika pārvietošanās programmā, piemēram, office_union — word, office_union — excel utt.
+- **context** — līdzeklis, uz kuru notika pārvietošanās programmā, piemēram, office_union — word, office_union — excel utt.
 
-- **source** — darbības izcelsme, piemēram, inicēja lietotājs, automātiski inicēja klients utt.
+- **source** — darbības izcelsme, piemēram, inicēja lietotājs, automātiski inicēja klients utt.
 
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
@@ -15986,7 +16102,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **App Version** — patērējošās lietojumprogrammas versijas kods
 
-- **ClientId** — anonīms identifikators, kas nav PII unikāls ierīces identifikators (GUID/virkne)
+- **ClientId** — anonīms identifikators, kas nav PII unikāls ierīces identifikators (GUID/virkne)
 
 - **Entry Point** — unikāls kontekstuālo vai nemainīgo ievadīšanas punktu identifikators no patērējošās lietojumprogrammas
 
@@ -16054,19 +16170,19 @@ Tiek apkopoti šādi lauki:
 
 - **AppBuild** — būvējuma versijas identifikators ietekmētajam procesam.
 - **AppMajor** — galvenās versijas identifikators ietekmētajam procesam.
-- **AppMinor** — papildversijas identifikators ietekmētajam procesam.
-- **AppRevision** —būvējuma versijas identifikators ietekmētajam procesam.
+- **AppMinor** — papildversijas identifikators ietekmētajam procesam.
+- **AppRevision** —būvējuma versijas identifikators ietekmētajam procesam.
 - **BootCompleted** — norāda, vai Office process pabeidza sāknēšanu.
-- **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja.
-- **EcsETag** — procesa eksperimenta identifikators.
+- **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja.
+- **EcsETag** — procesa eksperimenta identifikators.
 - **HasEdit** — norāda, vai dokumenta rediģēšana notika Office procesa laikā.
 - **HasOpen** — norāda, vai dokuments tika atvērts Office procesa laikā.
-- **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+- **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 - **OfficeUILang** — Office procesa valoda.
-- **PreviousBuild** — iepriekš instalētā būvējuma versija.
+- **PreviousBuild** — iepriekš instalētā būvējuma versija.
 - **SafeMode** — norāda, vai Office process bija drošajā režīmā.
 - **SessionId** — procesa unikālais identifikators.
-- **SessionInitTime** — ietekmētā procesa sākuma laiks.
+- **SessionInitTime** — ietekmētā procesa sākuma laiks.
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
@@ -16074,9 +16190,9 @@ Lietotāja identitātes informācija, kas nepieciešama, lai izpildītu datu sub
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **IdentityChanged** — vienmēr patiess. Identitāte ir mainīta.
+  - **IdentityChanged** — vienmēr patiess. Identitāte ir mainīta.
 
-  - **TimerDetectedChange** — vai izmaiņas konstatēja regulāra laika programma Ping.
+  - **TimerDetectedChange** — vai izmaiņas konstatēja regulāra laika programma Ping.
 
 ### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
 
@@ -16092,63 +16208,63 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
+  - **AppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
 
-  - **ApplicationArchitecture —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
+  - **ApplicationArchitecture —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
 
-  - **AppVersionBuild —** Office lietojumprogrammas būvējuma versija.
+  - **AppVersionBuild —** Office lietojumprogrammas būvējuma versija.
 
-  - **AppVersionMajor —** Office lietojumprogrammas galvenā versija.
+  - **AppVersionMajor —** Office lietojumprogrammas galvenā versija.
 
-  - **AppVersionMinor —** Office lietojumprogrammas papildversija.
+  - **AppVersionMinor —** Office lietojumprogrammas papildversija.
 
-  - **AppVersionUpdate —** Office lietojumprogrammas būvējuma pārskatījums.
+  - **AppVersionUpdate —** Office lietojumprogrammas būvējuma pārskatījums.
 
-  - **CollectorVersion —** klienta apkopošanas loģikas versijas identifikators.
+  - **CollectorVersion —** klienta apkopošanas loģikas versijas identifikators.
 
   - **DeviceHash —** operētājsistēmas ierīces identifikatora vienvirziena jaukšanas vērtība.
 
-  - **DeviceName —** ierīces, kurā Office darbojas, nosaukums.
+  - **DeviceName —** ierīces, kurā Office darbojas, nosaukums.
 
-  - **Domain —** ierīces, kurā Office darbojas, domēns.
+  - **Domain —** ierīces, kurā Office darbojas, domēns.
 
-  - **IsCeip —** vai Office instalācija tika reģistrēta novecojušā klientu pieredzes uzlabošanas programmā.
+  - **IsCeip —** vai Office instalācija tika reģistrēta novecojušā klientu pieredzes uzlabošanas programmā.
 
-  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
+  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
 
-  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
+  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsMicrosoftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMicrosoftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
 
-  - **IsO365 —** vai Office instalēšana ir daļa no novecojušas Outlook 365 programmas.
+  - **IsO365 —** vai Office instalēšana ir daļa no novecojušas Outlook 365 programmas.
 
-  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
+  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
 
-  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
+  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
 
-  - **MaxMemory —** maksimālais brīvpiekļuves atmiņas apjoms, kas ir pieejams ierīcei, kurā darbojas Office.
+  - **MaxMemory —** maksimālais brīvpiekļuves atmiņas apjoms, kas ir pieejams ierīcei, kurā darbojas Office.
 
-  - **OsArchitecture —** centrālā procesora arhitektūra, kam operētājsistēma, kurā darbojas Office, ir paredzēta,
+  - **OsArchitecture —** centrālā procesora arhitektūra, kam operētājsistēma, kurā darbojas Office, ir paredzēta,
 
-  - **OsVersionBuild —** operētājsistēmas būvējuma versija.
+  - **OsVersionBuild —** operētājsistēmas būvējuma versija.
 
-  - **OsVersionMajor —** operētājsistēmas galvenā versija.
+  - **OsVersionMajor —** operētājsistēmas galvenā versija.
 
-  - **OsVersionMinor —** operētājsistēmas papildversija.
+  - **OsVersionMinor —** operētājsistēmas papildversija.
 
-  - **OsVersionUpdate —** OS būvējuma pārskatījums
+  - **OsVersionUpdate —** OS būvējuma pārskatījums
 
-  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
+  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
 
-  - **ProcessorArchitecture —** kādā procesora arhitektūrā Office darbojas.
+  - **ProcessorArchitecture —** kādā procesora arhitektūrā Office darbojas.
 
-  - **ProcessorFrequency —** procesora ātrums megahercos ierīcēs, kur Office darbojas.
+  - **ProcessorFrequency —** procesora ātrums megahercos ierīcēs, kur Office darbojas.
 
-  - **SessionStart —** laiks, kad aktīvais Office process tika startēts.
+  - **SessionStart —** laiks, kad aktīvais Office process tika startēts.
 
-  - **UserName —** konta, kas izmanto Office, nosaukums.
+  - **UserName —** konta, kas izmanto Office, nosaukums.
 
 ### <a name="officesystemsystemhealthcoremetadata"></a>Office.System.SystemHealthCoreMetadata
 
@@ -16156,67 +16272,67 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
+  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
 
-  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
+  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
 
-  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
+  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
 
-  - **AppMinorVer —** Office lietojumprogrammas papildversija.
+  - **AppMinorVer —** Office lietojumprogrammas papildversija.
 
-  - **CID —** pseidonimizēta lietotāja identitāte
+  - **CID —** pseidonimizēta lietotāja identitāte
 
-  - **CollectibleClassifications —** datu klasifikāciju kopa, ko var apkopot.
+  - **CollectibleClassifications —** datu klasifikāciju kopa, ko var apkopot.
 
-  - **CollectionTime —** laiks, kad metadati tika apkopoti.
+  - **CollectionTime —** laiks, kad metadati tika apkopoti.
 
-  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
+  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
 
-  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
+  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
 
-  - **FirstRunTime —** pirmā reize, kad Office lietojumprogramma tika palaista.
+  - **FirstRunTime —** pirmā reize, kad Office lietojumprogramma tika palaista.
 
-  - **IsClickToRunInstall —** vai Office lietojumprogramma tika instalēta, izmantojot Click -To-Run
+  - **IsClickToRunInstall —** vai Office lietojumprogramma tika instalēta, izmantojot Click -To-Run
 
-  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
+  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
 
-  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
+  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
 
-  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
+  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
 
-  - **IsTerminalServer —** vai sistēma Office tiek izmantota termināļa serverī.
+  - **IsTerminalServer —** vai sistēma Office tiek izmantota termināļa serverī.
 
-  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
+  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
 
-  - **OfficeArchitectureText —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
+  - **OfficeArchitectureText —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
 
-  - **OsBuild —** operētājsistēmas būvējuma versija.
+  - **OsBuild —** operētājsistēmas būvējuma versija.
 
-  - **OsBuildRevision —** OS būvējuma pārskatījums
+  - **OsBuildRevision —** OS būvējuma pārskatījums
 
-  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
+  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
-  - **OsMajorVer —** operētājsistēmas galvenā versija.
+  - **OsMajorVer —** operētājsistēmas galvenā versija.
 
-  - **OsMinorVer —** operētājsistēmas papildversija.
+  - **OsMinorVer —** operētājsistēmas papildversija.
 
-  - **OSVersionString —** operētājsistēmas versija kā virkne.
+  - **OSVersionString —** operētājsistēmas versija kā virkne.
 
-  - **ProcessorArchitecture —** kādā procesora arhitektūrā Office darbojas.
+  - **ProcessorArchitecture —** kādā procesora arhitektūrā Office darbojas.
 
-  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
+  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
 
-  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcēs, kur Office darbojas.
+  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcēs, kur Office darbojas.
 
-  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
+  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
 
-  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
+  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
 
 ### <a name="officesystemsystemhealthdesktopsessionlifecycleandheartbeat"></a>Office.System.SystemHealthDesktopSessionLifecycleAndHeartbeat
 
@@ -16224,15 +16340,15 @@ Nodrošina informāciju par sistēmas darbspējas datiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
   - **OfficeArchitectureText** — Office produkta arhitektūra kā virkne (piem., x86, arm).
 
-  - **PreviousBuild** — Office versija, uz kuru šis būvējums tika jaunināts vai no kura tas tika atritināts.
+  - **PreviousBuild** — Office versija, uz kuru šis būvējums tika jaunināts vai no kura tas tika atritināts.
 
-  - **State** — stāvoklis, uz kuru sesija veica maiņu.
+  - **State** — stāvoklis, uz kuru sesija veica maiņu.
 
-  - **Time** — sesijas stāvokļa maiņas laiks.
+  - **Time** — sesijas stāvokļa maiņas laiks.
 
 ### <a name="officesystemsystemhealthessentialidentitycount"></a>Office.System.SystemHealthEssentialIdentityCount
 
@@ -16240,9 +16356,9 @@ Apkopo parakstīto lietotāja identitāšu skaitu
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AllIdentityCount** — visu identitāšu skaits
+  - **AllIdentityCount** — visu identitāšu skaits
 
-  - **ValidIdentityCount** — pārbaudīto identitāšu skaits
+  - **ValidIdentityCount** — pārbaudīto identitāšu skaits
 
 ### <a name="officesystemsystemhealthessentialmetadataallidentities"></a>Office.System.SystemHealthEssentialMetadataAllIdentities
 
@@ -16250,13 +16366,13 @@ Pārrauga to kontu stāvokli, ko sistēma Office atpazina šajā sesijā. Tiek i
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CollectionTime** — laiks, kad identitātes informācija tika apkopota.
+  - **CollectionTime** — laiks, kad identitātes informācija tika apkopota.
 
-  - **IdentityType** — autentifikācijas vai konta veids
+  - **IdentityType** — autentifikācijas vai konta veids
 
-  - **IdentityUniqueId** — pseidonimizētās identitātes nodrošinātājs
+  - **IdentityUniqueId** — pseidonimizētās identitātes nodrošinātājs
 
-  - **IdentityUniqueIdHashed** — identitātes unikālā ID vienvirziena jaukšanas vērtība
+  - **IdentityUniqueIdHashed** — identitātes unikālā ID vienvirziena jaukšanas vērtība
 
 ### <a name="officesystemsystemhealthmetadataapplicationadditional"></a>Office.System.SystemHealthMetadataApplicationAdditional
 
@@ -16264,87 +16380,87 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Alias —** ja lietotājs, kurš izmanto Office, ir Microsoft darbinieks, viņa uzņēmuma iekšējais aizstājvārds.
+  - **Alias —** ja lietotājs, kurš izmanto Office, ir Microsoft darbinieks, viņa uzņēmuma iekšējais aizstājvārds.
 
-  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
+  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
 
-  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
+  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
 
-  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
+  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
 
-  - **AppMinorVer —** Office lietojumprogrammas papildversija.
+  - **AppMinorVer —** Office lietojumprogrammas papildversija.
 
-  - **CID —** pseidonimizēta lietotāja identitāte
+  - **CID —** pseidonimizēta lietotāja identitāte
 
-  - **CollectibleClassifications —** datu klasifikāciju kopa, ko var apkopot.
+  - **CollectibleClassifications —** datu klasifikāciju kopa, ko var apkopot.
 
-  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
+  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
 
-  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
+  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
 
-  - **DeviceProcessorModel —** ierīces, kurā Office darbojas, procesora modelis.
+  - **DeviceProcessorModel —** ierīces, kurā Office darbojas, procesora modelis.
 
-  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
+  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
 
-  - **DomainName —** domēna, ar kuru ir savienots dators, kurā darbojas Office (ja tāds ir), nosaukums.
+  - **DomainName —** domēna, ar kuru ir savienots dators, kurā darbojas Office (ja tāds ir), nosaukums.
 
-  - **FirstRunTime —** pirmā reize, kad Office lietojumprogramma tika palaista.
+  - **FirstRunTime —** pirmā reize, kad Office lietojumprogramma tika palaista.
 
-  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
+  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
 
-  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
+  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
 
-  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
+  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
 
-  - **IsJoinedToDomain —** vai ierīce, kurā darbojas Office, ir pievienota domēnam.
+  - **IsJoinedToDomain —** vai ierīce, kurā darbojas Office, ir pievienota domēnam.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
 
-  - **IsOEMInstalled —** vai palaisto Office lietojumprogrammu instalēja OEM.
+  - **IsOEMInstalled —** vai palaisto Office lietojumprogrammu instalēja OEM.
 
-  - **IsRunAsAdmin —** vai Office lietojumprogramma darbojas kā administratora.
+  - **IsRunAsAdmin —** vai Office lietojumprogramma darbojas kā administratora.
 
-  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
+  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
 
-  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
+  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
 
-  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
+  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
 
-  - **OfficeBuild —** Office koplietojamo bibliotēku būvējuma versija.
+  - **OfficeBuild —** Office koplietojamo bibliotēku būvējuma versija.
 
-  - **OfficeBuildRevision —** Office koplietojamo bibliotēku būvējuma pārskatījuma versija.
+  - **OfficeBuildRevision —** Office koplietojamo bibliotēku būvējuma pārskatījuma versija.
 
-  - **OfficeMajorVer —** Office koplietojamo bibliotēku galvenā versija.
+  - **OfficeMajorVer —** Office koplietojamo bibliotēku galvenā versija.
 
-  - **OfficeMinorVer —** Office koplietojamo bibliotēku papildversija.
+  - **OfficeMinorVer —** Office koplietojamo bibliotēku papildversija.
 
-  - **OsBuild —** operētājsistēmas būvējuma versija.
+  - **OsBuild —** operētājsistēmas būvējuma versija.
 
-  - **OsBuildRevision —** OS būvējuma pārskatījums
+  - **OsBuildRevision —** OS būvējuma pārskatījums
 
-  - **OsMajorVer —** operētājsistēmas galvenā versija.
+  - **OsMajorVer —** operētājsistēmas galvenā versija.
 
-  - **OsMinorVer —** operētājsistēmas papildversija.
+  - **OsMinorVer —** operētājsistēmas papildversija.
 
-  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
+  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
 
-  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
+  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
 
-  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
+  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
 
-  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
+  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
 
-  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
+  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
 
-  - **StudyId —** programmatūras kvalitātes metrikas pētījuma identifikators.
+  - **StudyId —** programmatūras kvalitātes metrikas pētījuma identifikators.
 
-  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
+  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
 
-  - **WinUserActType —** vai Windows lietotājs, kas izmanto Office, ir lokālais administrators, prasmīgs lietotājs vai parasts lietotājs.
+  - **WinUserActType —** vai Windows lietotājs, kas izmanto Office, ir lokālais administrators, prasmīgs lietotājs vai parasts lietotājs.
 
 ### <a name="officesystemsystemhealthmetadataapplicationandlanguage"></a>Office.System.SystemHealthMetadataApplicationAndLanguage
 
@@ -16352,67 +16468,67 @@ Metadati ir nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
+  - **AppBuild —** Office lietojumprogrammas būvējuma versija.
 
-  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
+  - **AppBuildRevision —** Office lietojumprogrammas būvējuma pārskatījums.
 
-  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
+  - **AppMajorVer —** Office lietojumprogrammas galvenā versija.
 
-  - **AppMinorVer —** Office lietojumprogrammas papildversija.
+  - **AppMinorVer —** Office lietojumprogrammas papildversija.
 
-  - **AppState —** Office lietojumprogrammas stāvokļa identifikators.
+  - **AppState —** Office lietojumprogrammas stāvokļa identifikators.
 
-  - **Click2RunPackageVersionBuild —** Click-to-Run instalētāja pakotnes būvējuma versija.
+  - **Click2RunPackageVersionBuild —** Click-to-Run instalētāja pakotnes būvējuma versija.
 
-  - **Click2RunPackageVersionMajor —** Click-to-Run instalētāja pakotnes galvenā versija.
+  - **Click2RunPackageVersionMajor —** Click-to-Run instalētāja pakotnes galvenā versija.
 
-  - **Click2RunPackageVersionMinor —** Click-to-Run instalētāja pakotnes papildversija.
+  - **Click2RunPackageVersionMinor —** Click-to-Run instalētāja pakotnes papildversija.
 
-  - **Click2RunPackageVersionRevision —** Click-to-Run instalētāja pakotnes būvējuma pārskatījums.
+  - **Click2RunPackageVersionRevision —** Click-to-Run instalētāja pakotnes būvējuma pārskatījums.
 
-  - **DistributionChannel —** Office izplatīšanas kanāls.
+  - **DistributionChannel —** Office izplatīšanas kanāls.
 
-  - **InstallType —** Office instalēšanas metodes identifikators.
+  - **InstallType —** Office instalēšanas metodes identifikators.
 
-  - **IsClickToRunInstall —** vai Office lietojumprogramma tika instalēta, izmantojot Click-to-Run
+  - **IsClickToRunInstall —** vai Office lietojumprogramma tika instalēta, izmantojot Click-to-Run
 
-  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
+  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
 
-  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
+  - **IsImmersive —** vai Office lietojumprogramma ir universāla Windows vai tīrskata lietojumprogramma.
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
 
-  - **IsOEMInstalled —** vai palaisto Office lietojumprogrammu instalēja OEM.
+  - **IsOEMInstalled —** vai palaisto Office lietojumprogrammu instalēja OEM.
 
-  - **IsRunAsAdmin —** vai Office lietojumprogramma darbojas kā administratora.
+  - **IsRunAsAdmin —** vai Office lietojumprogramma darbojas kā administratora.
 
-  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
+  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
 
-  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
+  - **MsoAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
 
-  - **OfficeArchitectureText —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
+  - **OfficeArchitectureText —** kādai procesora arhitektūrai sistēma Office ir paredzēta.
 
-  - **OfficeBuild —** Office koplietojamo bibliotēku būvējuma versija.
+  - **OfficeBuild —** Office koplietojamo bibliotēku būvējuma versija.
 
-  - **OfficeBuildRevision —** Office koplietojamo bibliotēku būvējuma pārskatījuma versija.
+  - **OfficeBuildRevision —** Office koplietojamo bibliotēku būvējuma pārskatījuma versija.
 
-  - **OfficeMajorVer —** Office koplietojamo bibliotēku galvenā versija.
+  - **OfficeMajorVer —** Office koplietojamo bibliotēku galvenā versija.
 
-  - **OfficeMinorVer —** Office koplietojamo bibliotēku papildversija.
+  - **OfficeMinorVer —** Office koplietojamo bibliotēku papildversija.
 
-  - **OfficeMuiCount —** instalēto Office valodu pakotņu skaits.
+  - **OfficeMuiCount —** instalēto Office valodu pakotņu skaits.
 
-  - **OfficeSkuLanguage —** instalētā SKU valoda.
+  - **OfficeSkuLanguage —** instalētā SKU valoda.
 
-  - **OfficeSkuLanguageTag —** instalētā SKU valoda.
+  - **OfficeSkuLanguageTag —** instalētā SKU valoda.
 
-  - **OfficeUiLang —** Office lietojumprogrammas lietotāja interfeisa valoda.
+  - **OfficeUiLang —** Office lietojumprogrammas lietotāja interfeisa valoda.
 
-  - **OfficeUiLangTag —** Office lietojumprogrammas lietotāja interfeisa valoda.
+  - **OfficeUiLangTag —** Office lietojumprogrammas lietotāja interfeisa valoda.
 
-  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
+  - **ProcessFileName —** darbojošās lietojumprogrammas izpildāmais nosaukums.
 
-  - **SqmAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
+  - **SqmAppId —** identifikators, uz kādu Office lietojumprogrammu šie dati attiecas.
 
 ### <a name="officesystemsystemhealthmetadatadelayedlogin"></a>Office.System.SystemHealthMetadataDelayedLogin
 
@@ -16420,7 +16536,7 @@ Lietotāja identitātes informācija, kas nepieciešama, lai izpildītu datu sub
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CID** — pseidonimizēta lietotāja identitāte
+  - **CID** — pseidonimizēta lietotāja identitāte
 
 ### <a name="officesystemsystemhealthmetadatadevice"></a>Office.System.SystemHealthMetadataDevice
 
@@ -16428,63 +16544,63 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CollectionTime —** laiks, kad metadati tika apkopoti.
+  - **CollectionTime —** laiks, kad metadati tika apkopoti.
 
-  - **ComputerSystemProductUuidHash —** mātesplates UUID vienvirziena jaukšanas vērtība.
+  - **ComputerSystemProductUuidHash —** mātesplates UUID vienvirziena jaukšanas vērtība.
 
-  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
+  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
 
-  - **DeviceMake —** ierīces, kurā Office darbojas, aparatūras sistēmas saimes identifikators.
+  - **DeviceMake —** ierīces, kurā Office darbojas, aparatūras sistēmas saimes identifikators.
 
-  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
+  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
 
-  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
+  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
 
-  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
+  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
+  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
 
-  - **LicensingACID —** Office instalācijas licencēšanas identifikators.
+  - **LicensingACID —** Office instalācijas licencēšanas identifikators.
 
-  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
+  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
 
-  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
+  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
 
-  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
 
-  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
 
-  - **OlsLicenseId —** Office instalācijas licencēšanas pakalpojuma identifikators.
+  - **OlsLicenseId —** Office instalācijas licencēšanas pakalpojuma identifikators.
 
-  - **Platform —** identifikators, kādā vidē Office darbojas.
+  - **Platform —** identifikators, kādā vidē Office darbojas.
 
-  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
+  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
 
-  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
+  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
 
-  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
+  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
 
-  - **ProcType —** procesora arhitektūra.
+  - **ProcType —** procesora arhitektūra.
 
-  - **ProcTypeText —** procesora veids ierīcē, kurā darbojas Office.
+  - **ProcTypeText —** procesora veids ierīcē, kurā darbojas Office.
 
-  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
+  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
 
-  - **SusClientId —** tās ierīces Windows Update ID, kurā Office darbojas.
+  - **SusClientId —** tās ierīces Windows Update ID, kurā Office darbojas.
 
-  - **SystemFamily —** ierīces, kurā Office darbojas, aparatūras sistēmas saimes identifikators.
+  - **SystemFamily —** ierīces, kurā Office darbojas, aparatūras sistēmas saimes identifikators.
 
-  - **SystemSKU —** ierīces, kurā Office darbojas, aparatūras sistēmas SKU identifikators.
+  - **SystemSKU —** ierīces, kurā Office darbojas, aparatūras sistēmas SKU identifikators.
 
-  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
+  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
 
-  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
+  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
 
-  - **WindowsErrorReportingMachineId —** ierīces, kurā Office darbojas, Windows kļūdu uzrādīšanas piešķirtais datora identifikators.
+  - **WindowsErrorReportingMachineId —** ierīces, kurā Office darbojas, Windows kļūdu uzrādīšanas piešķirtais datora identifikators.
 
-  - **WindowsSqmMachineId —** ierīces, kurā Office darbojas, Windows piešķirtais datora identifikators.
+  - **WindowsSqmMachineId —** ierīces, kurā Office darbojas, Windows piešķirtais datora identifikators.
 
 ### <a name="officesystemsystemhealthmetadatadeviceconsolidated"></a>Office.System.SystemHealthMetadataDeviceConsolidated
 
@@ -16492,61 +16608,61 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **BootDiskType —** disks vai cietvielu disks
+  - **BootDiskType —** disks vai cietvielu disks
 
-  - **ComputerSystemProductUuidHash —** mātesplates UUID vienvirziena jaukšanas vērtība.
+  - **ComputerSystemProductUuidHash —** mātesplates UUID vienvirziena jaukšanas vērtība.
 
-  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
+  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
 
-  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
+  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
 
-  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
+  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
 
-  - **DeviceProcessorModel —** ierīces, kurā Office darbojas, procesora modelis.
+  - **DeviceProcessorModel —** ierīces, kurā Office darbojas, procesora modelis.
 
-  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
+  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
 
-  - **HasSpectreFix —** vai ierīces, kurā Office darbojas, procesoram ir Spectre labojums.
+  - **HasSpectreFix —** vai ierīces, kurā Office darbojas, procesoram ir Spectre labojums.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
+  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
 
-  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
+  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
 
-  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
+  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
 
-  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
 
-  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
 
-  - **Platform —** identifikators, kādā vidē Office darbojas.
+  - **Platform —** identifikators, kādā vidē Office darbojas.
 
-  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
+  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
 
-  - **powerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
+  - **powerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
 
-  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
+  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
 
-  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
+  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
 
-  - **ProcType —** procesora arhitektūra.
+  - **ProcType —** procesora arhitektūra.
 
-  - **ProcTypeText —** procesora veids ierīcē, kurā darbojas Office.
+  - **ProcTypeText —** procesora veids ierīcē, kurā darbojas Office.
 
-  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
+  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
 
-  - **SusClientId —** tās ierīces Windows Update ID, kurā Office darbojas.
+  - **SusClientId —** tās ierīces Windows Update ID, kurā Office darbojas.
 
-  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
+  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
 
-  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
+  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
 
-  - **sysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
+  - **sysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
 
-  - **WindowsErrorReportingMachineId** — ierīces, kurā Office darbojas, Windows kļūdu uzrādīšanas piešķirtais datora identifikators.
+  - **WindowsErrorReportingMachineId** — ierīces, kurā Office darbojas, Windows kļūdu uzrādīšanas piešķirtais datora identifikators.
 
-  - **WindowsSqmMachineId** — ierīces, kurā Office darbojas, Windows piešķirtais datora identifikators.
+  - **WindowsSqmMachineId** — ierīces, kurā Office darbojas, Windows piešķirtais datora identifikators.
 
 ### <a name="officesystemsystemhealthmetadataoperatingsystem"></a>Office.System.SystemHealthMetadataOperatingSystem
 
@@ -16554,31 +16670,31 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CollectionTime** — laiks, kad šis notikums tika ierindots augšupielādei
+  - **CollectionTime** — laiks, kad šis notikums tika ierindots augšupielādei
 
-  - **IsTerminalServer** — aplams/patiess ir termināļa servera klients
+  - **IsTerminalServer** — aplams/patiess ir termināļa servera klients
 
-  - **OsBuild** — operētājsistēmas būvējuma versija.
+  - **OsBuild** — operētājsistēmas būvējuma versija.
 
-  - **OsBuildRevision** — OS būvējuma pārskatījums
+  - **OsBuildRevision** — OS būvējuma pārskatījums
 
-  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
+  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
 
-  - **OsMajorVer** — operētājsistēmas galvenā versija.
+  - **OsMajorVer** — operētājsistēmas galvenā versija.
 
-  - **OsMinorVer** — operētājsistēmas papildversija.
+  - **OsMinorVer** — operētājsistēmas papildversija.
 
-  - **OSSDKVersionCode** — operētājsistēmas SDK versijas identifikators.
+  - **OSSDKVersionCode** — operētājsistēmas SDK versijas identifikators.
 
-  - **OsSku** — OS SKU
+  - **OsSku** — OS SKU
 
-  - **OsSuite2** — operētājsistēmas komplekta identifikators.
+  - **OsSuite2** — operētājsistēmas komplekta identifikators.
 
-  - **OSVersionString** — operētājsistēmas versijas identifikators.
+  - **OSVersionString** — operētājsistēmas versijas identifikators.
 
-  - **ServicePackMajorVer** — OS servisa pakotnes galvenā versija
+  - **ServicePackMajorVer** — OS servisa pakotnes galvenā versija
 
-  - **ServicePackMinorVer** — OS servisa pakotnes papildversija
+  - **ServicePackMinorVer** — OS servisa pakotnes papildversija
 
 ### <a name="officesystemsystemhealthmetadataoperatingsystemdevice"></a>Office.System.SystemHealthMetadataOperatingSystemDevice
 
@@ -16586,67 +16702,67 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CollectionTime —** laiks, kad šis notikums tika ierindots augšupielādei
+  - **CollectionTime —** laiks, kad šis notikums tika ierindots augšupielādei
 
-  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
+  - **DeviceClass —** ierīces, kurā Office darbojas, tipa identifikators.
 
-  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
+  - **DeviceManufacturer —** ierīces, kurā Office darbojas, ražotājs.
 
-  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
+  - **DeviceModel —** ierīces, kurā Office darbojas, modelis.
 
-  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
+  - **DigitizerInfo —** informācija par ciparotāju, kas pievienots ierīcei, kurā Office darbojas.
 
-  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
+  - **IsLaptop —** vai ierīce, kurā Office darbojas, ir klēpjdators.
 
-  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
+  - **IsTablet —** vai ierīce, kurā Office darbojas, ir planšetdators.
 
-  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
+  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
 
-  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
+  - **MachineName —** ierīces, kurā Office darbojas, nosaukums.
 
-  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
+  - **NumProcPhysCores —** fizisko kodolu skaits procesorā.
 
-  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCache —** procesoru skaits, kas koplieto vienu kešatmiņu ierīcē, kurā Office darbojas.
 
-  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
+  - **NumProcShareSingleCore —** procesoru skaits katrā fiziskajā kodolā ierīcē, kurā Office darbojas.
 
-  - **OsBuild —** operētājsistēmas būvējuma versija.
+  - **OsBuild —** operētājsistēmas būvējuma versija.
 
-  - **OsBuildRevision —** OS būvējuma pārskatījums
+  - **OsBuildRevision —** OS būvējuma pārskatījums
 
-  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
+  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
 
-  - **OsMajorVer —** operētājsistēmas galvenā versija.
+  - **OsMajorVer —** operētājsistēmas galvenā versija.
 
-  - **OsMinorVer —** operētājsistēmas papildversija.
+  - **OsMinorVer —** operētājsistēmas papildversija.
 
-  - **OSSDKVersionCode —** operētājsistēmas SDK versijas identifikators.
+  - **OSSDKVersionCode —** operētājsistēmas SDK versijas identifikators.
 
-  - **OsSku —** OS SKU
+  - **OsSku —** OS SKU
 
-  - **OsSuite2 —** operētājsistēmas komplekta identifikators.
+  - **OsSuite2 —** operētājsistēmas komplekta identifikators.
 
-  - **OSVersionString —** operētājsistēmas versijas identifikators.
+  - **OSVersionString —** operētājsistēmas versijas identifikators.
 
-  - **Platform —** identifikators, kādā vidē Office darbojas.
+  - **Platform —** identifikators, kādā vidē Office darbojas.
 
-  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
+  - **PowerPlatformRole —** ierīces, kurā Office darbojas, OEM vēlamās datora lomas identifikators.
 
-  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
+  - **ProcessorCount —** procesoru skaits ierīcē, kurā Office darbojas.
 
-  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
+  - **ProcSpeedMHz —** procesora ātrums megahercos ierīcē, kur Office darbojas.
 
-  - **ProcTypeText —** procesora veids
+  - **ProcTypeText —** procesora veids
 
-  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
+  - **RamMB —** RAM apjoms, kas pieejams ierīcē, kur Office darbojas.
 
-  - **ServicePackMajorVer —** OS servisa pakotnes galvenā versija
+  - **ServicePackMajorVer —** OS servisa pakotnes galvenā versija
 
-  - **ServicePackMinorVer —** OS servisa pakotnes papildversija
+  - **ServicePackMinorVer —** OS servisa pakotnes papildversija
 
-  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
+  - **SysVolFreeSpaceMB —** sistēmas sējumā pieejamās brīvās vietas apjoms megabaitos.
 
-  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
+  - **SysVolSizeMB —** sistēmas sējumā pieejamās vietas apjoms megabaitos.
 
 ### <a name="officesystemsystemhealthmetadataos"></a>Office.System.SystemHealthMetadataOS
 
@@ -16654,57 +16770,57 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CountryRegion —** valsts/reģiona identifikatora operētājsistēmas iestatījums.
+  - **CountryRegion —** valsts/reģiona identifikatora operētājsistēmas iestatījums.
 
-  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
+  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
 
-  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
+  - **IsTerminalServer —** aplams/patiess ir termināļa servera klients
 
-  - **KeyboardLanguage —** ierīces tastatūras valodas identifikators
+  - **KeyboardLanguage —** ierīces tastatūras valodas identifikators
 
-  - **KeyboardLanguageTag —** ierīces tastatūras valodas identifikators
+  - **KeyboardLanguageTag —** ierīces tastatūras valodas identifikators
 
-  - **OfficeWvd —** norāda, kādā stāvoklī ir Windows virtuālais dators.
+  - **OfficeWvd —** norāda, kādā stāvoklī ir Windows virtuālais dators.
 
-  - **OsBuild —** operētājsistēmas būvējuma versija.
+  - **OsBuild —** operētājsistēmas būvējuma versija.
 
-  - **OsBuildRevision —** OS būvējuma pārskatījums
+  - **OsBuildRevision —** OS būvējuma pārskatījums
 
-  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
+  - **OSEnvironment —** Windows, iOS, Mac, Android utt.
 
-  - **OsLocale —** operētājsistēmas lokalizācijas identifikators.
+  - **OsLocale —** operētājsistēmas lokalizācijas identifikators.
 
-  - **OsLocaleTag —** operētājsistēmas lokalizācijas identifikators.
+  - **OsLocaleTag —** operētājsistēmas lokalizācijas identifikators.
 
-  - **OsMajorVer —** operētājsistēmas galvenā versija.
+  - **OsMajorVer —** operētājsistēmas galvenā versija.
 
-  - **OsMinorVer —** operētājsistēmas papildversija.
+  - **OsMinorVer —** operētājsistēmas papildversija.
 
-  - **OSSDKVersionCode —** operētājsistēmas SDK versijas identifikators.
+  - **OSSDKVersionCode —** operētājsistēmas SDK versijas identifikators.
 
-  - **OsSku —** operētājsistēmas SKU identifikators.
+  - **OsSku —** operētājsistēmas SKU identifikators.
 
-  - **OsSuite2 —** operētājsistēmas komplekta identifikators.
+  - **OsSuite2 —** operētājsistēmas komplekta identifikators.
 
-  - **OsUiLang —** operētājsistēmas lietotāja interfeisa valoda.
+  - **OsUiLang —** operētājsistēmas lietotāja interfeisa valoda.
 
-  - **OSVersionString —** operētājsistēmas versijas identifikators.
+  - **OSVersionString —** operētājsistēmas versijas identifikators.
 
-  - **ScreenDepth —** ekrāna dziļums
+  - **ScreenDepth —** ekrāna dziļums
 
-  - **ScreenDpi —** ekrāna DPI
+  - **ScreenDpi —** ekrāna DPI
 
-  - **ServicePackMajorVer —** OS servisa pakotnes galvenā versija
+  - **ServicePackMajorVer —** OS servisa pakotnes galvenā versija
 
-  - **ServicePackMinorVer —** OS servisa pakotnes papildversija
+  - **ServicePackMinorVer —** OS servisa pakotnes papildversija
 
-  - **SystemLocale —** operētājsistēmas noklusējuma lokalizācija
+  - **SystemLocale —** operētājsistēmas noklusējuma lokalizācija
 
-  - **SystemLocaleTag —** operētājsistēmas noklusējuma lokalizācija
+  - **SystemLocaleTag —** operētājsistēmas noklusējuma lokalizācija
 
-  - **TimeZoneBiasInMinutes —** starpība minūtēs starp vietējo laiku un UTC.
+  - **TimeZoneBiasInMinutes —** starpība minūtēs starp vietējo laiku un UTC.
 
-  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
+  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
 
 ### <a name="officesystemsystemhealthmetadatascreencultureusersqmid"></a>Office.System.SystemHealthMetadataScreenCultureUserSqmId
 
@@ -16712,61 +16828,61 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Alias —** Microsoft darbinieka vai automatizētā lietotāja aizstājvārds
+  - **Alias —** Microsoft darbinieka vai automatizētā lietotāja aizstājvārds
 
-  - **CID —** pseidonimizēta lietotāja identitāte
+  - **CID —** pseidonimizēta lietotāja identitāte
 
-  - **CollectibleClassifications —** datu klasifikācijas, ko var apkopot atbilstoši klienta konfidencialitātes iestatījumiem
+  - **CollectibleClassifications —** datu klasifikācijas, ko var apkopot atbilstoši klienta konfidencialitātes iestatījumiem
 
-  - **CollectionTime —** laiks, kad šis notikums tika ierindots augšupielādei
+  - **CollectionTime —** laiks, kad šis notikums tika ierindots augšupielādei
 
-  - **CountryRegion —** valsts/reģiona identifikatora operētājsistēmas iestatījums.
+  - **CountryRegion —** valsts/reģiona identifikatora operētājsistēmas iestatījums.
 
-  - **DomainName —** Microsoft domēna nosaukums
+  - **DomainName —** Microsoft domēna nosaukums
 
-  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
+  - **HorizontalResolution —** horizontālā ekrāna izšķirtspēja
 
-  - **IntegratedScreenSize —** integrētā ekrāna lielums.
+  - **IntegratedScreenSize —** integrētā ekrāna lielums.
 
-  - **IsJoinedToDomain —** patiess/aplams, vai klienta domēns ir savienots
+  - **IsJoinedToDomain —** patiess/aplams, vai klienta domēns ir savienots
 
-  - **IsLabMachine —** ir Microsoft testēšanas laboratorijas dators
+  - **IsLabMachine —** ir Microsoft testēšanas laboratorijas dators
 
-  - **IsMsftInternal —** patiess/aplams, vai dators ir Microsoft uzņēmuma domēnā
+  - **IsMsftInternal —** patiess/aplams, vai dators ir Microsoft uzņēmuma domēnā
 
-  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
+  - **IsSubscription —** vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
 
-  - **KeyboardLanguage —** ierīces tastatūras valodas identifikators
+  - **KeyboardLanguage —** ierīces tastatūras valodas identifikators
 
-  - **KeyboardLanguageTag —** ierīces tastatūras valodas identifikators
+  - **KeyboardLanguageTag —** ierīces tastatūras valodas identifikators
 
-  - **OsLocale —** operētājsistēmas lokalizācijas identifikators.
+  - **OsLocale —** operētājsistēmas lokalizācijas identifikators.
 
-  - **OsLocaleTag —** operētājsistēmas lokalizācijas identifikators.
+  - **OsLocaleTag —** operētājsistēmas lokalizācijas identifikators.
 
-  - **OsUiLang —** operētājsistēmas lietotāja interfeisa valoda.
+  - **OsUiLang —** operētājsistēmas lietotāja interfeisa valoda.
 
-  - **ScreenDepth —** ekrāna dziļums
+  - **ScreenDepth —** ekrāna dziļums
 
-  - **ScreenDpi —** ekrāna DPI
+  - **ScreenDpi —** ekrāna DPI
 
-  - **ScreenXDpi —** ekrāna X DPI
+  - **ScreenXDpi —** ekrāna X DPI
 
-  - **ScreenYDpi —** ekrāna Y DPI
+  - **ScreenYDpi —** ekrāna Y DPI
 
-  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
+  - **SqmUserId —** Office instalēšanas nejaušs identifikators.
 
-  - **StudyId —** programmatūras kvalitātes metrikas pētījuma identifikators.
+  - **StudyId —** programmatūras kvalitātes metrikas pētījuma identifikators.
 
-  - **SystemLocale —** operētājsistēmas noklusējuma lokalizācija
+  - **SystemLocale —** operētājsistēmas noklusējuma lokalizācija
 
-  - **SystemLocaleTag —** operētājsistēmas noklusējuma lokalizācija
+  - **SystemLocaleTag —** operētājsistēmas noklusējuma lokalizācija
 
-  - **TimeZoneBiasInMinutes —** starpība minūtēs starp vietējo laiku un UTC.
+  - **TimeZoneBiasInMinutes —** starpība minūtēs starp vietējo laiku un UTC.
 
-  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
+  - **VerticalResolution —** vertikālā ekrāna izšķirtspēja
 
-  - **WinUserActType —** vai Windows lietotājs, kas izmanto Office, ir lokālais administrators, prasmīgs lietotājs vai parasts lietotājs.
+  - **WinUserActType —** vai Windows lietotājs, kas izmanto Office, ir lokālais administrators, prasmīgs lietotājs vai parasts lietotājs.
 
 ### <a name="officesystemsystemhealthofficelensidentity"></a>Office.System.SystemHealthOfficeLensIdentity
 
@@ -16774,7 +16890,7 @@ Lietotāja identitātes informācija, kas nepieciešama, lai izpildītu datu sub
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CID** — pseidonimizēta lietotāja identitāte
+  - **CID** — pseidonimizēta lietotāja identitāte
 
 ### <a name="officesystemsystemhealthrollbacksessionmetadata"></a>Office.System.SystemHealthRollbackSessionMetadata
 
@@ -16782,11 +16898,11 @@ Metadati, kas nepieciešami, lai izolētu kļūmes atkārtošanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **InstallMethod** — jauna instalēšana, atjaunināšana vai atrite
+  - **InstallMethod** — jauna instalēšana, atjaunināšana vai atrite
 
-  - **IsSubscription** — vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
+  - **IsSubscription** — vai Office lietojumprogramma ir instalēta atbilstoši abonementa licencei.
 
-  - **PreviousBuild** — iepriekš instalētā būvējuma versija
+  - **PreviousBuild** — iepriekš instalētā būvējuma versija
 
 ### <a name="officesystemsystemhealthsessionlifecycleandheartbeat"></a>Office.System.SystemHealthSessionLifecycleAndHeartbeat
 
@@ -16794,15 +16910,15 @@ Nodrošina informāciju par sistēmas darbspējas datiem.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **InstallMethod** — vai pašreizējā Office instalācija tika jaunināta, atritināta vai svaigi instalēta.
+  - **InstallMethod** — vai pašreizējā Office instalācija tika jaunināta, atritināta vai svaigi instalēta.
 
-  - **InteractionSessionID** — sesijas identifikators.
+  - **InteractionSessionID** — sesijas identifikators.
 
-  - **PreviousBuild** — Office versija, uz kuru šis būvējums tika jaunināts vai no kura tas tika atritināts.
+  - **PreviousBuild** — Office versija, uz kuru šis būvējums tika jaunināts vai no kura tas tika atritināts.
 
-  - **State** — stāvoklis, uz kuru sesija veica maiņu.
+  - **State** — stāvoklis, uz kuru sesija veica maiņu.
 
-  - **Time** — brīdis, kad sesijas stāvoklis tika mainīts.
+  - **Time** — brīdis, kad sesijas stāvoklis tika mainīts.
 
 ### <a name="officesystemsystemhealthsessionstarttime"></a>Office.System.SystemHealthSessionStartTime
 
@@ -16810,7 +16926,7 @@ Tiek izmantots kopā ar avārijas datiem, lai atdalītu agrīnās avārijas no v
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **SessionStart** — laiks, kad telemetrija sāk datu apstrādi.
+  - **SessionStart** — laiks, kad telemetrija sāk datu apstrādi.
 
 ### <a name="officesystemsystemhealthungracefulappexitdesktop"></a>Office.System.SystemHealthUngracefulAppExitDesktop
 
@@ -16818,33 +16934,33 @@ Notikumu izraisa abnormāla lietojumprogrammas apture (piemēram, likvidēts uzd
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppMajorVer** — ietekmētā procesa būvējuma papildversijas identifikators. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessAppMajorVer** — ietekmētā procesa būvējuma papildversijas identifikators. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam. *[Šis lauks jaunākajos Office būvējumos ir noņemts, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessAppName —** ietekmētā procesa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessAppName —** ietekmētā procesa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
   
-  - **AffectedProcessAppVersion** — ietekmētā procesa versijas identifikators.
+  - **AffectedProcessAppVersion** — ietekmētā procesa versijas identifikators.
 
-  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **AppName —** ietekmētās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **AppName —** ietekmētās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **AppUsedVirtualMemory** — Office programmas izmantota virtuālā atmiņa
 
@@ -16854,74 +16970,74 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **CallStack** – Microsoft iekšējā izsaukuma steks, kas izraisa avāriju.
 
-- **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
+- **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
 
-- **CrashedImpressionId —** avarējušā procesa seansa identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **CrashedImpressionId —** avarējušā procesa seansa identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **CrashedModuleName —** kļūdainā moduļa nosaukums.
+- **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
-- **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators. 
+- **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators. 
 
-- **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts. 
+- **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts. 
 
-- **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+- **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
 - **HexCrashTag —** unikālais avārijas koda identifikators.
 
-- **CrashType —** avārijas veida intervāla identifikators.
+- **CrashType —** avārijas veida intervāla identifikators.
 
-- **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ErrorString —** kļūdas apraksts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ErrorString —** kļūdas apraksts. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ExceptionCode —** izņēmuma intervāla identifikators.
+- **ExceptionCode —** izņēmuma intervāla identifikators.
 
 - **ExceptionInfo** — izņēmuma sistēmas informācija.
 
-- **FaultAppName —** kļūdainās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **FaultAppName —** kļūdainās lietojumprogrammas nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 - **HangTypeCode** — atspoguļo reaģēšana pārtraukšanas klasi, ja process pārstāja reaģēt izpildes laikā.
 
-- **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+- **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
-- **InstallType —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **InstallType —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **InstallTypeName —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **InstallTypeName —** Office instalēšanas metodes identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleBuildVersion —** kļūdainā moduļa būvējuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleMajorVersion —** kļūdainā moduļa galvenās versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleMinorVersion —** kļūdainā moduļa papildversijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleName —** kļūdainā moduļa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleName —** kļūdainā moduļa nosaukums. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
+- **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
 
-- **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleRevisionVersion —** kļūdainā moduļa būvējuma pārskatījuma versijas numurs. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-- **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **ModuleVersion** — par avāriju atbildīgā kļūmes moduļa versija.
 
 - **OfficeArchitectureText** — instalācijas arhitektūra: x64, x86 utt.
 
-- **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
+- **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 
-- **OSEnvironment —** identifikators, kādā vidē Office darbojas.
+- **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
-- **PreviousBuild —** iepriekš instalētā būvējuma versija
+- **PreviousBuild —** iepriekš instalētā būvējuma versija
 
 - **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
 
@@ -16931,7 +17047,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
 - **SystemAvailableMemory** — operētājsistēmā pieejamā atmiņā
 
-- **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+- **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
 - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
 
@@ -16947,57 +17063,57 @@ Tiek izmantots, lai tvertu avāriju metriku.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppBuild —** būvējuma versijas identifikators ietekmētajam procesam.
 
-  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
+  - **AffectedProcessAppBuildRevision —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
 
-  - **AffectedProcessAppMajorVer —** būvējuma galvenās versijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppMajorVer —** būvējuma galvenās versijas identifikators ietekmētajam procesam.
 
-  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam.
+  - **AffectedProcessAppMinorVer —** būvējuma papildversijas identifikators ietekmētajam procesam.
 
-  - **AffectedProcessAppName —** ietekmētā procesa nosaukums.
+  - **AffectedProcessAppName —** ietekmētā procesa nosaukums.
 
-  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs.
+  - **AffectedProcessExeBuildVersion —** ietekmētā procesa būvējuma versijas numurs.
 
-  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs.
+  - **AffectedProcessExeMajorVersion —** ietekmētā procesa galvenās versijas numurs.
 
-  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs.
+  - **AffectedProcessExeMinorVersion —** ietekmētā procesa papildversijas numurs.
 
-  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs.
+  - **AffectedProcessExeRevisionVersion —** ietekmētā procesa būvējuma pārskatījuma versijas numurs.
 
-  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums.
+  - **AffectedProcessIsDebug —** vai ietekmētais process ir atkļūdošanas būvējums.
 
-  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā.
+  - **AffectedProcessIsLabMachine —** vai ietekmētais process ir Microsoft laboratorijā.
 
-  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators.
+  - **AffectedProcessOsEnvironment —** ietekmētā procesa operētājsistēmas identifikators.
 
-  - **AppName —** ietekmētās lietojumprogrammas nosaukums.
+  - **AppName —** ietekmētās lietojumprogrammas nosaukums.
 
-  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi.
+  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi.
 
-  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
+  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
 
-  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
+  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
 
-  - **CrashedInteractionSessionID —** mijiedarbības sesijas identifikators ietekmētajam procesam.
+  - **CrashedInteractionSessionID —** mijiedarbības sesijas identifikators ietekmētajam procesam.
 
-  - **CrashedInteractionSessionTime —** laiks, kad ar ietekmēto procesu var mijiedarboties.
+  - **CrashedInteractionSessionTime —** laiks, kad ar ietekmēto procesu var mijiedarboties.
 
-  - **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators.
+  - **CrashedProcessSessionID —** avarējušā procesa unikāls identifikators.
 
-  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
-  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja.
+  - **DetectionTime —** laiks, kad tika konstatēta neparedzētā izeja.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
 
-  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
+  - **IsMsftInternal —** vai Windows lietotājs, kurš izmanto Office, ir Microsoft darbinieks.
 
-  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
+  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
-  - **PreviousLifecycleState —** ietekmētā procesa stāvoklis, kad tas avarēja.
+  - **PreviousLifecycleState —** ietekmētā procesa stāvoklis, kad tas avarēja.
 
-  - **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi.
+  - **UAETypeName —** intervāla identifikators par to, kā izeja no lietojumprogrammas notika negraciozi.
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
@@ -17015,37 +17131,37 @@ Tiek apkopoti tālāk norādītie lauki.
  
   - **CabGuid** — Watson .cab faila unikālais identifikators (GUID).
 
-  - **CallStack** — Microsoft iekšējā izsaukuma steks, kas izraisa avāriju.
+  - **CallStack** — Microsoft iekšējā izsaukuma steks, kas izraisa avāriju.
 
-  - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **CrashedAppBuild —** būvējuma versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashedAppMajor —** galvenās versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **CrashedAppMajor —** galvenās versijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
  
-  - **CrashedAppMinor —** papildversijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **CrashedAppMinor —** papildversijas identifikators ietekmētajam procesam. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **CrashedAppVersion** — avarējuša procesa programmas versijas identifikators.
 
-  - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
+  - **CrashedEcsETag —** avarējušā procesa eksperimenta identifikators.
 
-  - **CrashedModuleName —** kļūdainā moduļa nosaukums.
+  - **CrashedModuleName —** kļūdainā moduļa nosaukums.
 
-  - **CrashedProcessSessionId —** avarējušā procesa unikāls identifikators.
+  - **CrashedProcessSessionId —** avarējušā procesa unikāls identifikators.
 
-  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+  - **CrashedProcessSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
-  - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
+  - **CrashedSessionInitTime —** laiks, kad ietekmētais process tika sākts.
 
   - **HexCrashTag —** unikālais avārijas koda identifikators.
 
   - **CrashTime —** laiks, kad klienta darbība tika pārtraukta neatbilstošā veidā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **CrashType —** avārijas veida intervāla identifikators.
+  - **CrashType —** avārijas veida intervāla identifikators.
 
-  - **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **DetectionTime** — laiks, kad tika konstatēta neparedzētā izeja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **ExceptionAddress —** adrese programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ExceptionCode —** izņēmuma intervāla identifikators.
+  - **ExceptionCode —** izņēmuma intervāla identifikators.
 
   - **ExceptionInfo** — izņēmuma sistēmas informācija.
 
@@ -17059,27 +17175,27 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **HexCrashTag —** unikālais avārijas koda identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexExceptionAddress —** adrese heksadecimālā formātā programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **HexExceptionAddress —** adrese heksadecimālā formātā programmā, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexExceptionCode —** izņēmuma intervāla identifikators heksadecimālajā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **HexExceptionCode —** izņēmuma intervāla identifikators heksadecimālajā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleBaseAddress —** kļūdainā moduļa bāzes adrese heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **HexModuleBaseAddress —** kļūdainā moduļa bāzes adrese heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleSize —** kļūdainā moduļa izmērs baitos heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **HexModuleSize —** kļūdainā moduļa izmērs baitos heksadecimālā formātā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **HexVerifyElseCrashTag —** unikālais identifikators heksadecimālajā formātā par to, kur lietojumprogramma avarēja. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+  - **InstallMethod** — vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
-  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
+  - **HexModuleOffset —** nobīde baitos (heksadecimālajā formātā) no bāzes adreses, kur kļūme radās.
 
-  - **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **ModuleSize —** kļūdainā moduļa izmērs baitos. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **ModuleStamp** — kļūmes moduļa spiedogs.
 
@@ -17087,9 +17203,9 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **OfficeArchitectureText** — Office produkta arhitektūra kā virkne (piem., x86, arm).
 
-  - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
+  - **OfficeUiLang —** Office lietojumprogrammas lietotāja saskarnes valoda.
 
-  - **PreviousBuild** — iepriekš instalētā būvējuma versija
+  - **PreviousBuild** — iepriekš instalētā būvējuma versija
 
   - **ProcessorArchitecture** — apstrādātāja arhitektūra videi: x64, x86, utt.
 
@@ -17101,7 +17217,7 @@ Tiek apkopoti tālāk norādītie lauki.
 
   - **SystemAvailableMemory** — operētājsistēmā pieejamā atmiņā
 
-  - **UAEOSEnvironment —** operētājsistēmas vides identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
+  - **UAEOSEnvironment —** operētājsistēmas vides identifikators. *[Šis lauks ir dzēsts jaunākajos Office būvējumos, taču, iespējams, joprojām tiek rādīts vecākos būvējumos.]*
 
   - **UninitLibletId –** kļūdainā avārijas komponenta unikālais identifikators.
 
@@ -17118,65 +17234,65 @@ Tiek izmantots, lai tvertu avāriju metriku.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AppBuildVersion —** būvējuma versijas identifikators ietekmētajam procesam.
+  - **AppBuildVersion —** būvējuma versijas identifikators ietekmētajam procesam.
 
-  - **AppMajorVersion —** ietekmētā procesa galvenās versijas numurs.
+  - **AppMajorVersion —** ietekmētā procesa galvenās versijas numurs.
 
-  - **AppMinorVersion —** papildversijas identifikators ietekmētajam procesam.
+  - **AppMinorVersion —** papildversijas identifikators ietekmētajam procesam.
 
-  - **AppName —** ietekmētās lietojumprogrammas nosaukums.
+  - **AppName —** ietekmētās lietojumprogrammas nosaukums.
 
-  - **AppRevisionVersion —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
+  - **AppRevisionVersion —** būvējuma pārskatījuma identifikators ietekmētajam procesam.
 
-  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi.
+  - **CrashedAssignedFlights —** avarējušajam procesam piešķirtie lidojumi.
 
-  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
+  - **CrashedConfigIds —** avarējušajam procesam piešķirtā konfigurācija.
 
-  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
+  - **CrashedImpressionId —** avarējušā procesa seansa identifikators.
 
-  - **CrashedInteractionSessionId —** avarējušā procesa mijiedarbības sesijas identifikators.
+  - **CrashedInteractionSessionId —** avarējušā procesa mijiedarbības sesijas identifikators.
 
-  - **CrashedProcessSessionId —** avarējušā procesa unikāls identifikators.
+  - **CrashedProcessSessionId —** avarējušā procesa unikāls identifikators.
 
-  - **CrashType —** avārijas veida intervāla identifikators.
+  - **CrashType —** avārijas veida intervāla identifikators.
 
-  - **ErrorString —** kļūdas apraksts.
+  - **ErrorString —** kļūdas apraksts.
 
-  - **ExceptionAddress —** adrese programmā, kur kļūme radās.
+  - **ExceptionAddress —** adrese programmā, kur kļūme radās.
 
-  - **ExceptionCode —** izņēmuma intervāla identifikators.
+  - **ExceptionCode —** izņēmuma intervāla identifikators.
 
-  - **FaultAppName —** kļūdainās lietojumprogrammas nosaukums.
+  - **FaultAppName —** kļūdainās lietojumprogrammas nosaukums.
 
-  - **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
+  - **InstallMethod —** vai pašreizējais Office būvējums tika jaunināts, atritināts vai svaigi instalēts.
 
-  - **InstallType —** Office instalēšanas metodes identifikators.
+  - **InstallType —** Office instalēšanas metodes identifikators.
 
-  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
+  - **IsDebug —** vai šis ir Office atkļūdošanas būvējums.
 
-  - **IsHandledCrash —** vai avāriju apstrādātājs tika izsaukts avārijas sesijā.
+  - **IsHandledCrash —** vai avāriju apstrādātājs tika izsaukts avārijas sesijā.
 
-  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
+  - **IsLabMachine —** vai sistēma Office tiek izmantota Microsoft laboratorijā.
 
-  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese.
+  - **ModuleBaseAddress —** kļūdainā moduļa bāzes adrese.
 
-  - **ModuleName —** kļūdainā moduļa nosaukums.
+  - **ModuleName —** kļūdainā moduļa nosaukums.
 
-  - **ModuleOffset —** nobīde baitos no bāzes adreses, kur kļūme radās.
+  - **ModuleOffset —** nobīde baitos no bāzes adreses, kur kļūme radās.
 
-  - **ModuleSize —** kļūdainā moduļa izmērs baitos.
+  - **ModuleSize —** kļūdainā moduļa izmērs baitos.
 
-  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
+  - **OSEnvironment —** identifikators, kādā vidē Office darbojas.
 
-  - **PreviousBuild —** iepriekš instalētā būvējuma versija
+  - **PreviousBuild —** iepriekš instalētā būvējuma versija
 
-  - **PreviousInteractionSessionTime —** laiks, kad iepriekšējā mijiedarbības sesija tika sākta.
+  - **PreviousInteractionSessionTime —** laiks, kad iepriekšējā mijiedarbības sesija tika sākta.
 
-  - **PreviousLifecycleState —** iepriekšējās sesijas dzīves cikla stāvokļa identifikators.
+  - **PreviousLifecycleState —** iepriekšējās sesijas dzīves cikla stāvokļa identifikators.
 
-  - **PreviousSessionInitTime —** laiks, kad iepriekšējā sesija tika sākta.
+  - **PreviousSessionInitTime —** laiks, kad iepriekšējā sesija tika sākta.
 
-  - **StackHash —** identifikators, kas norāda, kur kodā ietekmētais process avarēja.
+  - **StackHash —** identifikators, kas norāda, kur kodā ietekmētais process avarēja.
 
   - **VerifyElseCrashTag —** unikālais identifikators par to, kur lietojumprogramma avarēja.
 
@@ -17198,7 +17314,7 @@ Microsoft konta pakalpojuma nepieejamības signāls.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **RetryCount** — atkārtotu savienojumu mēģinājumu skaits ar MSA pakalpojumu.
+  - **RetryCount** — atkārtotu savienojumu mēģinājumu skaits ar MSA pakalpojumu.
 
 ### <a name="officetelemetryariaeventsinkrequestmsadevicetoken"></a>Office.Telemetry.AriaEventSink.RequestMsaDeviceToken
 
@@ -17206,7 +17322,7 @@ Microsoft konta pakalpojuma nepieejamības signāls.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **RetryCount** — atkārtotu savienojumu mēģinājumu skaits ar Microsoft konta pakalpojumu.
+  - **RetryCount** — atkārtotu savienojumu mēģinājumu skaits ar Microsoft konta pakalpojumu.
 
 ### <a name="officetelemetryclientsamplingoverridden"></a>Office.Telemetry.ClientSamplingOverridden
 
@@ -17214,19 +17330,19 @@ Nepieciešams, lai nodrošinātu precīzu atveidošanas ātrumu. Parasti neattie
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **OverriddenMeasureEnabled** — vai klients ir iestatīts nosūtīt vairāk nekā nesavākto paraugu notikumus
+  - **OverriddenMeasureEnabled** — vai klients ir iestatīts nosūtīt vairāk nekā nesavākto paraugu notikumus
 
-  - **OverriddenNumberlinePosition** — jaunā numura rindas pozīcija paraugu ņemšanai
+  - **OverriddenNumberlinePosition** — jaunā numura rindas pozīcija paraugu ņemšanai
 
-  - **OverriddenReportedSampleRate** — jaunais norādītais parauga ātrums
+  - **OverriddenReportedSampleRate** — jaunais norādītais parauga ātrums
 
-  - **OverriddenSampleRate** — jaunais parauga ātrums
+  - **OverriddenSampleRate** — jaunais parauga ātrums
 
-  - **PreviousNumberlinePosition** — paraugu ņemšanas pozīcija numura rindā.
+  - **PreviousNumberlinePosition** — paraugu ņemšanas pozīcija numura rindā.
 
-  - **PreviousSampleRate** — parauga ātrums pirms ignorēšanas.
+  - **PreviousSampleRate** — parauga ātrums pirms ignorēšanas.
 
-  - **WasMeasureEnabled** — vai klients tika iestatīts nosūtīt vairāk nekā nesavākto paraugu notikumus
+  - **WasMeasureEnabled** — vai klients tika iestatīts nosūtīt vairāk nekā nesavākto paraugu notikumus
 
 ### <a name="officetelemetrycomplianceeventnotinbasicallowlist"></a>Office.Telemetry.Compliance.EventNotInBasicAllowList
 
@@ -17234,7 +17350,7 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventName** — notikuma nosaukums, kas nav sarakstā
+  - **EventName** — notikuma nosaukums, kas nav sarakstā
 
 ### <a name="officetelemetrycompliancemissingdatacategory"></a>Office.Telemetry.Compliance.MissingDataCategory
 
@@ -17242,9 +17358,9 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventName** — notikuma nosaukums, kam trūkst kategorijas
+  - **EventName** — notikuma nosaukums, kam trūkst kategorijas
 
-  - **IsFromRule** — vai notikums bija no telemetrijas kārtulas
+  - **IsFromRule** — vai notikums bija no telemetrijas kārtulas
 
 ### <a name="officetelemetrycompliancemissingdatacategoryinrule"></a>Office.Telemetry.Compliance.MissingDataCategoryInRule
 
@@ -17252,9 +17368,9 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **RuleId** — kārtulas ID, kam trūkst datu kategorijas
+  - **RuleId** — kārtulas ID, kam trūkst datu kategorijas
 
-  - **RuleVersion** — kārtulas versija, kam trūkst datu kategorijas
+  - **RuleVersion** — kārtulas versija, kam trūkst datu kategorijas
 
 ### <a name="officetelemetrydiagnosticdataviewerstatechanged"></a>Office.Telemetry.DiagnosticDataViewerStateChanged
 
@@ -17262,11 +17378,11 @@ Pārbauda, vai patērētāji var skatīt datus, kad tie tiek izvadīti no datora
 
 Tiek apkopoti šādi lauki:
 
-  - **Dialogcanceled** — vai diagnostikas datu skatītāja dialogs tika atcelts
+  - **Dialogcanceled** — vai diagnostikas datu skatītāja dialogs tika atcelts
 
-  - **NewState** — jaunais diagnostikas datu skatītāja stāvoklis
+  - **NewState** — jaunais diagnostikas datu skatītāja stāvoklis
 
-  - **WasDialogUsed** — vai diagnostikas datu skatītāja dialogs tika izmantots
+  - **WasDialogUsed** — vai diagnostikas datu skatītāja dialogs tika izmantots
 
 ### <a name="officetelemetrydynamicconfigfetchconfigs"></a>Office.Telemetry.DynamicConfig.FetchConfigs
 
@@ -17274,15 +17390,15 @@ Dati, kas nepieciešami, lai izmērītu telemetrijas konfigurācijas pakalpojuma
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ParsedConfigCount** — parsēto dinamisko konfigurāciju skaits
+  - **ParsedConfigCount** — parsēto dinamisko konfigurāciju skaits
 
-  - **ParsedConfigs** — parsēto dinamisko konfigurāciju skaits
+  - **ParsedConfigs** — parsēto dinamisko konfigurāciju skaits
 
-  - **RejectedConfigCount** — noraidīto konfigurāciju skaits
+  - **RejectedConfigCount** — noraidīto konfigurāciju skaits
 
-  - **RejectedConfigs** — noraidīto konfigurāciju skaits
+  - **RejectedConfigs** — noraidīto konfigurāciju skaits
 
-  - **RejectedConfigsList** — komatatdalīts noraidīto konfigurāciju saraksts.
+  - **RejectedConfigsList** — komatatdalīts noraidīto konfigurāciju saraksts.
 
 ### <a name="officetelemetrydynamicconfigparsejsonconfig"></a>Office.Telemetry.DynamicConfig.ParseJsonConfig
 
@@ -17290,9 +17406,9 @@ Dati, kas nepieciešami, lai izmērītu telemetrijas konfigurācijas pakalpojuma
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ErrorMessage** — parsēšanas kļūdas ziņojums
+  - **ErrorMessage** — parsēšanas kļūdas ziņojums
 
-  - **NodeName** — mezgls, kuru neizdevās parsēt
+  - **NodeName** — mezgls, kuru neizdevās parsēt
 
 ### <a name="officetelemetrydynamicconfigpopulatedrequestignored"></a>Office.Telemetry.DynamicConfig.PopulatedRequestIgnored
 
@@ -17312,9 +17428,9 @@ Tiek izmantots, lai verificētu, vai citi NSD notikumi darbojas pareizi.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventName** — karantīnā ievietotā notikuma nosaukums
+  - **EventName** — karantīnā ievietotā notikuma nosaukums
 
-  - **Reason** — karantīnas iemesls
+  - **Reason** — karantīnas iemesls
 
 ### <a name="officetelemetryflusheventbuffer"></a>Office.Telemetry.FlushEventBuffer 
 
@@ -17322,11 +17438,11 @@ Norāda notikuma bufera lielumu un var norādīt telemetrijas kļūmes, kas sais
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventCount** — notikumu skaits buferī
+  - **EventCount** — notikumu skaits buferī
 
-  - **FirstPassCount** — pirmās nodošanas notikumu skaits
+  - **FirstPassCount** — pirmās nodošanas notikumu skaits
 
-  - **SecondPassCount** — otrās nodošanas notikumu skaits
+  - **SecondPassCount** — otrās nodošanas notikumu skaits
 
 ### <a name="officetelemetrygetfilteredpayloadsfromdisk"></a>Office.Telemetry.GetFilteredPayloadsFromDisk
 
@@ -17340,11 +17456,11 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DataContractName** — telemetrijas datu līguma nosaukums
+  - **DataContractName** — telemetrijas datu līguma nosaukums
 
-  - **EventName** — notikuma ar nederīgo datu līgumu nosaukums
+  - **EventName** — notikuma ar nederīgo datu līgumu nosaukums
 
-  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula
+  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula
 
 ### <a name="officetelemetryinvaliddatafieldname"></a>Office.Telemetry.InvalidDataFieldName 
 
@@ -17352,11 +17468,11 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DataFieldName** — telemetrijas datu lauka nosaukums
+  - **DataFieldName** — telemetrijas datu lauka nosaukums
 
-  - **EventName** — notikuma ar nederīgo lauku nosaukums
+  - **EventName** — notikuma ar nederīgo lauku nosaukums
 
-  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula.
+  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula.
 
 ### <a name="officetelemetryinvalideventcontractname"></a>Office.Telemetry.InvalidEventContractName 
 
@@ -17364,11 +17480,11 @@ Atskaišu nederīgā telemetrijas ieviešana vai izvietošana
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventContractName** — nederīgā telemetrijas līguma nosaukums
+  - **EventContractName** — nederīgā telemetrijas līguma nosaukums
 
-  - **EventName** — notikuma ar nederīgo līguma nosaukumu nosaukums
+  - **EventName** — notikuma ar nederīgo līguma nosaukumu nosaukums
 
-  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula
+  - **IsRuleEvent** — patiess/aplams, vai šo notikumu ieviesa telemetrijas kārtula
 
 ### <a name="officetelemetryloadxmlrules"></a>Office.Telemetry.LoadXmlRules
 
@@ -17376,7 +17492,7 @@ Norāda, vai parsēšanas telemetrijas kārtulu izpilde izdevās
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
+  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
 
 ### <a name="officetelemetrymissingfielddetails"></a>Office.Telemetry.MissingFieldDetails
 
@@ -17384,17 +17500,17 @@ Atskaitēm trūkst lauku informācijas, lai diagnosticētu drukas kļūdas telem
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ErrorRuleId** — telemetrijas kārtulas ID, kas pieprasīja trūkstošo lauku
+  - **ErrorRuleId** — telemetrijas kārtulas ID, kas pieprasīja trūkstošo lauku
 
-  - **ErrorRuleVersion** — telemetrijas kārtulas versija, kas pieprasīja trūkstošo lauku
+  - **ErrorRuleVersion** — telemetrijas kārtulas versija, kas pieprasīja trūkstošo lauku
 
-  - **EtwEventGuid** — pieprasītā lauka ETW GUID
+  - **EtwEventGuid** — pieprasītā lauka ETW GUID
 
-  - **EtwEventId** — pieprasītā lauka ETW notikuma ID
+  - **EtwEventId** — pieprasītā lauka ETW notikuma ID
 
-  - **MissingFieldName** — pieprasītais lauka nosaukums
+  - **MissingFieldName** — pieprasītais lauka nosaukums
 
-  - **UlsTagId** — trūkstošā lauka koda tags
+  - **UlsTagId** — trūkstošā lauka koda tags
 
 ### <a name="officetelemetryprocessidlequeuejob"></a>Office.Telemetry.ProcessIdleQueueJob
 
@@ -17402,9 +17518,9 @@ Norāda, ka telemetrijas dīkstāves apstrāde tika sākta, kā paredzēts.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
+  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
 
-  - **FailureDiagnostic** — kļūdainā darbība
+  - **FailureDiagnostic** — kļūdainā darbība
 
 ### <a name="officetelemetryredstoneinboxsampling"></a>Office.Telemetry.RedstoneInboxSampling
 
@@ -17412,13 +17528,13 @@ Klienta paraugu ņemšanas stāvoklis, kas nepieciešams, lai precīzi interpret
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
+  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
 
-  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
+  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
 
-  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
+  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
 
-  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
+  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
 
 ### <a name="officetelemetryredstoneinboxsamplingcritical"></a>Office.Telemetry.RedstoneInboxSamplingCritical
 
@@ -17426,13 +17542,13 @@ Klienta paraugu ņemšanas stāvoklis var būt nepieciešams, lai precīzi inter
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
+  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
 
-  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
+  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
 
-  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
+  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
 
-  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
+  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
 
 ### <a name="officetelemetryruleerrorsaggregated"></a>Office.Telemetry.RuleErrorsAggregated
 
@@ -17440,27 +17556,27 @@ Telemetrijas darbspējas kļūdu uzrādīšana. Nepieciešama, lai pārbaudītu 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ErrorCount** — šīs kļūdas skaits apkopošanas laika periodā
+  - **ErrorCount** — šīs kļūdas skaits apkopošanas laika periodā
 
-  - **ErrorInfo** — kļūdas diagnostikas informācijas numurs
+  - **ErrorInfo** — kļūdas diagnostikas informācijas numurs
 
-  - **ErrorRuleId** — telemetrijas kārtulas ID, kas izraisīja kļūdu
+  - **ErrorRuleId** — telemetrijas kārtulas ID, kas izraisīja kļūdu
 
-  - **ErrorRuleVersion** — telemetrijas kārtulas versija, kas izraisīja kļūdu
+  - **ErrorRuleVersion** — telemetrijas kārtulas versija, kas izraisīja kļūdu
 
-  - **WarningInfo** — brīdinājuma diagnostikas informācijas numurs
+  - **WarningInfo** — brīdinājuma diagnostikas informācijas numurs
 
-  - **QueueFlushCount** — ierindoto pludināšanas gadījumu skaits
+  - **QueueFlushCount** — ierindoto pludināšanas gadījumu skaits
 
-  - **QueueFlushDueToSizeLimit** — lielums, kura gadījumā telemetrija pludina rindu
+  - **QueueFlushDueToSizeLimit** — lielums, kura gadījumā telemetrija pludina rindu
 
-  - **QueueFlushesDueToSize** — rindas pludināšanas gadījumu skaits, ko izraisīja bufera lielums
+  - **QueueFlushesDueToSize** — rindas pludināšanas gadījumu skaits, ko izraisīja bufera lielums
 
-  - **QueueHardLimit** — telemetrijas izslēgšanas ierobežojums
+  - **QueueHardLimit** — telemetrijas izslēgšanas ierobežojums
 
-  - **QueueLimitHitTime** — kad izslēgšanas ierobežojums tika sasniegts
+  - **QueueLimitHitTime** — kad izslēgšanas ierobežojums tika sasniegts
 
-  - **ResultTime** — šī notikuma laiks
+  - **ResultTime** — šī notikuma laiks
 
 ### <a name="officetelemetryrulesenginediskthrottled"></a>Office.Telemetry.RulesEngineDiskThrottled
 
@@ -17468,13 +17584,13 @@ DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem p�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DiskWriteLimit** — telemetrijas datu diska lieluma ierobežojums
+  - **DiskWriteLimit** — telemetrijas datu diska lieluma ierobežojums
 
-  - **DiskWriteTotal** — telemetrijas datu diska rakstīšanas kopsumma
+  - **DiskWriteTotal** — telemetrijas datu diska rakstīšanas kopsumma
 
-  - **SessionDiskWriteTotal** — telemetrijas datu sesijas diska rakstīšanas kopsumma
+  - **SessionDiskWriteTotal** — telemetrijas datu sesijas diska rakstīšanas kopsumma
 
-  - **ThrottlingTimestamp** — laiks, kad sesija tika ierobežota
+  - **ThrottlingTimestamp** — laiks, kad sesija tika ierobežota
 
 ### <a name="officetelemetryrulesenginemediumcostthrottled"></a>Office.Telemetry.RulesEngineMediumCostThrottled
 
@@ -17488,21 +17604,21 @@ DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem p�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CurrentLimit** — pašreizējais smaiļu ierobežojums
+  - **CurrentLimit** — pašreizējais smaiļu ierobežojums
 
-  - **Duration** — smailes ilgums
+  - **Duration** — smailes ilgums
 
-  - **Factor** — smailes faktors
+  - **Factor** — smailes faktors
 
-  - **HighestImpactingRuleBytes** — baitu maksimums, ko reģistrēja telemetrijas kārtula
+  - **HighestImpactingRuleBytes** — baitu maksimums, ko reģistrēja telemetrijas kārtula
 
-  - **HighestImpactingRuleId** — kārtulas ID, kas reģistrēja visvairāk baitu
+  - **HighestImpactingRuleId** — kārtulas ID, kas reģistrēja visvairāk baitu
 
-  - **HighestImpactingRuleVersion** — kārtulas versija, kas reģistrēja visvairāk baitu
+  - **HighestImpactingRuleVersion** — kārtulas versija, kas reģistrēja visvairāk baitu
 
-  - **MaxLimit** — maksimālais ierobežojums
+  - **MaxLimit** — maksimālais ierobežojums
 
-  - **ThrottlingTimestamp** — kad telemetrija tika ierobežota
+  - **ThrottlingTimestamp** — kad telemetrija tika ierobežota
 
 ### <a name="officetelemetryrulesenginethrottled"></a>Office.Telemetry.RulesEngineThrottled
 
@@ -17510,7 +17626,7 @@ DQ metrikas ierobežošana. Nepieciešama, lai nodrošinātu ticamību visiem p�
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ThrottlingTimestamp** — kad telemetrija tika ierobežota
+  - **ThrottlingTimestamp** — kad telemetrija tika ierobežota
 
 ### <a name="officetelemetryrulesengineulsqueuesizebackgroundprocessinglevelreached"></a>Office.Telemetry.RulesEngineUlsQueueSizeBackgroundProcessingLevelReached
 
@@ -17518,13 +17634,13 @@ Norāda, ka ir pārāk daudz notikumu rindā, ko apstrādāt lietojumprogrammas 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **BackgroundProcessingLevelInBytes** — rindas lielums, lai sāktu apstrādi fonā.
+  - **BackgroundProcessingLevelInBytes** — rindas lielums, lai sāktu apstrādi fonā.
 
-  - **CurrentQueueSize** — notikumu skaits nULS rindā.
+  - **CurrentQueueSize** — notikumu skaits nULS rindā.
 
-  - **CurrentQueueSizeInBytes** — nULS rindas lielums baitos.
+  - **CurrentQueueSizeInBytes** — nULS rindas lielums baitos.
 
-  - **ReachedTimestamp** — laiks, kad tika sākta apstrāde fonā.
+  - **ReachedTimestamp** — laiks, kad tika sākta apstrāde fonā.
 
 ### <a name="officetelemetryrulesresultuploadlatencyrule"></a>Office.Telemetry.RulesResultUploadLatencyRule
 
@@ -17532,23 +17648,23 @@ Katras stundas kārtulu rezultātu lietderīgo datu augšupielādes vidējais, m
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AverageLatency** — vidējais augšupielādes latentums.
+  - **AverageLatency** — vidējais augšupielādes latentums.
 
-  - **CollectionTime** — laiks, kad dati par kārtulu augšupielādi tika apkopoti.
+  - **CollectionTime** — laiks, kad dati par kārtulu augšupielādi tika apkopoti.
 
-  - **LatencyGE201LE400** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 201 ms un mazāks vai vienāds ar 400 ms
+  - **LatencyGE201LE400** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 201 ms un mazāks vai vienāds ar 400 ms
 
-  - **LatencyGE3001** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 3001 ms.
+  - **LatencyGE3001** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 3001 ms.
 
-  - **LatencyGE401LE600** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 401 ms un mazāks vai vienāds ar 600 ms
+  - **LatencyGE401LE600** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 401 ms un mazāks vai vienāds ar 600 ms
 
-  - **LatencyGE601LE800** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 601 ms un mazāks vai vienāds ar 800 ms
+  - **LatencyGE601LE800** — augšupielādes gadījumu skaits ar latentumu, kas ir lielāks vai vienāds ar 601 ms un mazāks vai vienāds ar 800 ms
 
-  - **LatencyLE200** — augšupielādes gadījumu skaits ar latentumu, kas ir mazāks par 200 milisekundēm.
+  - **LatencyLE200** — augšupielādes gadījumu skaits ar latentumu, kas ir mazāks par 200 milisekundēm.
 
-  - **MaxLatency** — lielākais novērotais latentums.
+  - **MaxLatency** — lielākais novērotais latentums.
 
-  - **MinLatency** — mazākais novērotais latentums.
+  - **MinLatency** — mazākais novērotais latentums.
 
 ### <a name="officetelemetrysamplingpolicy"></a>Office.Telemetry.SamplingPolicy
 
@@ -17556,13 +17672,13 @@ Klienta paraugu ņemšanas stāvoklis, kas nepieciešams, lai precīzi interpret
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
+  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
 
-  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
+  - **SamplingClientIdValue** — paraugu ņemšanas vērtība šim klientam
 
-  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
+  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
 
-  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
+  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
 
 ### <a name="officetelemetrysamplingpolicyeventtrigger"></a>Office.Telemetry.SamplingPolicyEventTrigger
 
@@ -17570,11 +17686,11 @@ Klienta paraugu ņemšanas stāvoklis, kas nepieciešams, lai precīzi interpret
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
+  - **MeasuresEnabled** — vai šajā sesijā ir iespējoti mērījumi?
 
-  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
+  - **SamplingKey** — paraugu ņemšanas atslēga šim klientam
 
-  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
+  - **SamplingMethod** — paraugu ņemšanas metode šim klientam
 
 ### <a name="officetelemetrysessiontelemetryruleschanged"></a>Office.Telemetry.SessionTelemetryRulesChanged
 
@@ -17582,11 +17698,11 @@ Norāda, ka telemetrijas kārtulu kopa ir mainīta
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **ChangedRuleId** — telemetrijas kārtulas ID, kas mainījās pašreizējā atjauninājumā
+  - **ChangedRuleId** — telemetrijas kārtulas ID, kas mainījās pašreizējā atjauninājumā
 
-  - **ChangedRuleVersion** — telemetrijas kārtulas versija, kas mainījās pašreizējā atjauninājumā
+  - **ChangedRuleVersion** — telemetrijas kārtulas versija, kas mainījās pašreizējā atjauninājumā
 
-  - **OperationType** — pievienot vai noņemt darbības tagu
+  - **OperationType** — pievienot vai noņemt darbības tagu
 
 ### <a name="officetelemetrysessiontelemetryrulescount"></a>Office.Telemetry.SessionTelemetryRulesCount
 
@@ -17594,9 +17710,9 @@ Norāda ielādēto telemetrijas kārtulu skaitu
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **CountOfLoadedRules** — cik telemetrijas kārtulas ir ielādētas
+  - **CountOfLoadedRules** — cik telemetrijas kārtulas ir ielādētas
 
-  - **HadRuleFileAtBoot** — vai sāknējot lietojumprogrammu bija pieejams telemetrijas kārtulu fails
+  - **HadRuleFileAtBoot** — vai sāknējot lietojumprogrammu bija pieejams telemetrijas kārtulu fails
 
 ### <a name="officetelemetrysessiontelemetryrulesinitialstate"></a>Office.Telemetry.SessionTelemetryRulesInitialState
 
@@ -17604,11 +17720,11 @@ Norāda telemetrijas kārtulas, kas tika ielādētas sesijas sākumā
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **HadRuleFileAtBoot** — vai sāknējot lietojumprogrammu bija pieejams telemetrijas kārtulu fails
+  - **HadRuleFileAtBoot** — vai sāknējot lietojumprogrammu bija pieejams telemetrijas kārtulu fails
 
-  - **LoadedRulesCount** — cik telemetrijas kārtulas ir ielādētas
+  - **LoadedRulesCount** — cik telemetrijas kārtulas ir ielādētas
 
-  - **LoadedRulesList** — ielādēto telemetrijas kārtulu skaits
+  - **LoadedRulesList** — ielādēto telemetrijas kārtulu skaits
 
 ### <a name="officetelemetrysystemhealthmetadatanetworkcost"></a>Office.Telemetry.SystemHealthMetadataNetworkCost
 
@@ -17616,11 +17732,11 @@ Tīkla maksa norāda mūsu spēju iegūt datus.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **NetworkCost** — jaunā tīkla izmērītā vai neizmērītā maksa
+  - **NetworkCost** — jaunā tīkla izmērītā vai neizmērītā maksa
 
-  - **OldNetworkCost** — iepriekšējā tīkla izmērītā vai neizmērītā maksa
+  - **OldNetworkCost** — iepriekšējā tīkla izmērītā vai neizmērītā maksa
 
-  - **Tag** — avota koda tags, kas konstatēja izmaiņas
+  - **Tag** — avota koda tags, kas konstatēja izmaiņas
 
 ### <a name="officetelemetrysystemhealthmetadatanetworkcostchange"></a>Office.Telemetry.SystemHealthMetadataNetworkCostChange
 
@@ -17628,11 +17744,11 @@ Tīkla maksa norāda mūsu spēju iegūt datus.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **NewNetworkCost** — jaunā tīkla izmērītā vai neizmērītā maksa
+  - **NewNetworkCost** — jaunā tīkla izmērītā vai neizmērītā maksa
 
-  - **OldNetworkCost** — iepriekšējā tīkla izmērītā vai neizmērītā maksa
+  - **OldNetworkCost** — iepriekšējā tīkla izmērītā vai neizmērītā maksa
 
-  - **Tag** — avota koda tags, kas konstatēja izmaiņas
+  - **Tag** — avota koda tags, kas konstatēja izmaiņas
 
 ### <a name="officetelemetrytelemetryactivityaggregationwindowstatistics"></a>Office.Telemetry.TelemetryActivityAggregationWindowStatistics
 
@@ -17640,9 +17756,9 @@ Norāda apkopoto darbību grupu un instanču skaitu katrā darbībā, kas tiek a
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **GroupCount** — apkopoto darbību, kas sūta datus, skaits.
+  - **GroupCount** — apkopoto darbību, kas sūta datus, skaits.
 
-  - **InstancesToSend** — apkopoto darbību, kas sūta datus, instanču skaits.
+  - **InstancesToSend** — apkopoto darbību, kas sūta datus, instanču skaits.
 
 ### <a name="officetelemetrytelemetryulsqueueusage"></a>Office.Telemetry.TelemetryUlsQueueUsage
 
@@ -17650,15 +17766,15 @@ Telemetrijas darbspējas kļūdu uzrādīšana. Nepieciešama, lai pārbaudītu 
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **AverageEventCount** — vidējais notikumu skaits rindā
+  - **AverageEventCount** — vidējais notikumu skaits rindā
 
-  - **AverageQueueCB** — vidējais rindas atmiņas lielums
+  - **AverageQueueCB** — vidējais rindas atmiņas lielums
 
-  - **PeakEventCount** — maksimālais rindas notikumu skaits
+  - **PeakEventCount** — maksimālais rindas notikumu skaits
 
-  - **PeakQueueCB** — maksimālais rindas atmiņas lielums
+  - **PeakQueueCB** — maksimālais rindas atmiņas lielums
 
-  - **QueueDisableRuleLimit** — ierobežojums, kura gadījumā telemetrijas kārtulas tiek atspējotas
+  - **QueueDisableRuleLimit** — ierobežojums, kura gadījumā telemetrijas kārtulas tiek atspējotas
 
 ### <a name="officetelemetryulsqueuetopthrottlingtags"></a>Office.Telemetry.UlsQueueTopThrottlingTags
 
@@ -17666,65 +17782,65 @@ Norāda galvenos tagus, kas veicināja ULS rindas izslēgšanu.
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **Tag0 —** tags, kas patērēja lielāko rindas daļu
+  - **Tag0 —** tags, kas patērēja lielāko rindas daļu
 
-  - **Tag0Percent —** tag0 izmantotā procentuālā rindas daļa
+  - **Tag0Percent —** tag0 izmantotā procentuālā rindas daļa
 
-  - **Tag1 —** tags, kas patērēja 2. lielāko rindas apjomu
+  - **Tag1 —** tags, kas patērēja 2. lielāko rindas apjomu
 
-  - **Tag10 —** tags, kas patērēja 11. lielāko rindas apjomu
+  - **Tag10 —** tags, kas patērēja 11. lielāko rindas apjomu
 
-  - **Tag10Percent —** tag10 izmantotā procentuālā rindas daļa
+  - **Tag10Percent —** tag10 izmantotā procentuālā rindas daļa
 
-  - **Tag11 —** tags, kas patērēja 12. lielāko rindas apjomu
+  - **Tag11 —** tags, kas patērēja 12. lielāko rindas apjomu
 
-  - **Tag11Percent —** tag11 izmantotā procentuālā rindas daļa
+  - **Tag11Percent —** tag11 izmantotā procentuālā rindas daļa
 
-  - **Tag12 —** tags, kas patērēja 13. lielāko rindas apjomu
+  - **Tag12 —** tags, kas patērēja 13. lielāko rindas apjomu
 
-  - **Tag12Percent —** tag12 izmantotā procentuālā rindas daļa
+  - **Tag12Percent —** tag12 izmantotā procentuālā rindas daļa
 
-  - **Tag13 —** tags, kas patērēja 14. lielāko rindas apjomu
+  - **Tag13 —** tags, kas patērēja 14. lielāko rindas apjomu
 
-  - **Tag13Percent —** tag13 izmantotā procentuālā rindas daļa
+  - **Tag13Percent —** tag13 izmantotā procentuālā rindas daļa
 
-  - **Tag14 —** tags, kas patērēja 15. lielāko rindas apjomu
+  - **Tag14 —** tags, kas patērēja 15. lielāko rindas apjomu
 
-  - **Tag14Percent —** tag14 izmantotā procentuālā rindas daļa
+  - **Tag14Percent —** tag14 izmantotā procentuālā rindas daļa
 
-  - **Tag1Percent —** tag1 izmantotā procentuālā rindas daļa
+  - **Tag1Percent —** tag1 izmantotā procentuālā rindas daļa
 
-  - **Tag2 —** tags, kas patērēja trešo lielāko rindas apjomu
+  - **Tag2 —** tags, kas patērēja trešo lielāko rindas apjomu
 
-  - **Tag2Percent —** tag2 izmantotā procentuālā rindas daļa
+  - **Tag2Percent —** tag2 izmantotā procentuālā rindas daļa
 
-  - **Tag3 —** tags, kas patērēja ceturto lielāko rindas apjomu
+  - **Tag3 —** tags, kas patērēja ceturto lielāko rindas apjomu
 
-  - **Tag3Percent —** tag3 izmantotā procentuālā rindas daļa
+  - **Tag3Percent —** tag3 izmantotā procentuālā rindas daļa
 
-  - **Tag4 —** tags, kas patērēja piekto lielāko rindas apjomu
+  - **Tag4 —** tags, kas patērēja piekto lielāko rindas apjomu
 
-  - **Tag4Percent —** tag4 izmantotā procentuālā rindas daļa
+  - **Tag4Percent —** tag4 izmantotā procentuālā rindas daļa
 
-  - **Tag5 —** tags, kas patērēja sesto lielāko rindas apjomu
+  - **Tag5 —** tags, kas patērēja sesto lielāko rindas apjomu
 
-  - **Tag5Percent —** tag5 izmantotā procentuālā rindas daļa
+  - **Tag5Percent —** tag5 izmantotā procentuālā rindas daļa
 
-  - **Tag6 —** tags, kas patērēja septīto lielāko rindas apjomu
+  - **Tag6 —** tags, kas patērēja septīto lielāko rindas apjomu
 
-  - **Tag6Percent —** tag6 izmantotā procentuālā rindas daļa
+  - **Tag6Percent —** tag6 izmantotā procentuālā rindas daļa
 
-  - **Tag7 —** tags, kas patērēja astoto lielāko rindas apjomu
+  - **Tag7 —** tags, kas patērēja astoto lielāko rindas apjomu
 
-  - **Tag7Percent —** tag7 izmantotā procentuālā rindas daļa
+  - **Tag7Percent —** tag7 izmantotā procentuālā rindas daļa
 
-  - **Tag8 —** tags, kas patērēja devīto lielāko rindas apjomu
+  - **Tag8 —** tags, kas patērēja devīto lielāko rindas apjomu
 
-  - **Tag8Percent —** tag8 izmantotā procentuālā rindas daļa
+  - **Tag8Percent —** tag8 izmantotā procentuālā rindas daļa
 
-  - **Tag9 —** tags, kas patērēja desmito lielāko rindas apjomu
+  - **Tag9 —** tags, kas patērēja desmito lielāko rindas apjomu
 
-  - **Tag9Percent —** tag9 izmantotā procentuālā rindas daļa
+  - **Tag9Percent —** tag9 izmantotā procentuālā rindas daļa
 
 ### <a name="officetelemetryvolumetrackingdata"></a>Office.Telemetry.VolumeTrackingData
 
@@ -17732,17 +17848,17 @@ Notikumu apjoma izsekošanas metrika telemetrijas notikumiem
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **EventThreshold** — maksimālais viena notikuma instanču skaits, ko var nosūtīt laika periodā.
+  - **EventThreshold** — maksimālais viena notikuma instanču skaits, ko var nosūtīt laika periodā.
 
-  - **HighestEventCount** — lielākais viena notikuma instanču skaits, kas nosūtīts šajā periodā.
+  - **HighestEventCount** — lielākais viena notikuma instanču skaits, kas nosūtīts šajā periodā.
 
-  - **HighestEventName** — notikuma ar vislielāko instanču skaitu šajā periodā nosaukums.
+  - **HighestEventName** — notikuma ar vislielāko instanču skaitu šajā periodā nosaukums.
 
-  - **TimeWindowInSeconds** — perioda ilgums sekundēs.
+  - **TimeWindowInSeconds** — perioda ilgums sekundēs.
 
-  - **TotalEvents** — kopējais periodā nosūtītais notikumu skaits.
+  - **TotalEvents** — kopējais periodā nosūtītais notikumu skaits.
 
-  - **UniqueEvents** — periodā nosūtīto unikālo notikumu skaits.
+  - **UniqueEvents** — periodā nosūtīto unikālo notikumu skaits.
 
 ### <a name="officetelemetrywritepayloadstodisk"></a>Office.Telemetry.WritePayloadsToDisk
 
@@ -17750,4 +17866,4 @@ Verificē, vai noteiktas mantotā konveijera daļas darbojas platformās, kas to
 
 Tiek apkopoti tālāk norādītie lauki.
 
-  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
+  - **DetachedDuration** — atvienošanas ilgums mikrosekundēs
