@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Sniedz Office administratoriem informāciju par neobligātajiem saistītajiem līdzekļiem, tostarp spēkā esošajiem lietošanas noteikumiem.
 hideEdit: true
-ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 3583b22e9df50a3cdaff5e4cd3f6e695ab447498
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: lv-LV
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51914952"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957654"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pārskats par Office neobligātajiem saistītajiem līdzekļiem
 
@@ -28,7 +28,8 @@ ms.locfileid: "51914952"
 Ja jums ir darba vai mācību konts, jūsu organizācijas administrators, iespējams, ir sniedzis jums iespēju izmantot vienu vai vairākus mākoņa pakalpojumus (tiek dēvēti arī par “neobligātajiem saistītajiem līdzekļiem”), izmantojot Office programmas, piemēram, Word vai Excel, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem (iepriekš ar nosaukumu Office 365 ProPlus). Šie mākoņa pakalpojumi ir neobligāti. To izmantošana ir pēc jūsu izvēles. Tie ir pieejami jums saskaņā ar [Microsoft pakalpojumu līguma](https://www.microsoft.com/servicesagreement) un [paziņojuma par konfidencialitāti](https://privacy.microsoft.com/) noteikumiem. Dažos gadījumos var būt spēkā arī citi nosacījumi. Šajā rakstā ir norādīti mākoņa pakalpojumi, detalizēti izskaidroti to lietošanas noteikumi un aprakstīts, kā varat tos izslēgt vai ieslēgt jebkurā laikā.
 
 > [!NOTE]
-> Ja esat administrators, skatiet rakstu [Administratora vadīklas neobligātajiem saistītajiem līdzekļiem](#admin-controls-for-optional-connected-experiences).
+> - Ja esat administrators, skatiet rakstu [Administratora vadīklas neobligātajiem saistītajiem līdzekļiem](#admin-controls-for-optional-connected-experiences).
+> - Informācijas saņemšanai par pakalpojumu Microsoft Teams skatiet rakstu [Pārskats par Microsoft Teams neobligātajiem saistītajiem līdzekļiem](/microsoftteams/teams-privacy-oce-overview).
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Ja izmantojat šos pakalpojumus, kādiem lietošanas noteikumiem ir jāpiekrīt?
 
@@ -96,22 +97,22 @@ Programmā Outlook darbam ar iOS nākamais plānotais pasākums tiks apkopots j�
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kā noteikt, vai administrators ir jums piešķīris iespēju izmantot neobligātos saistītos līdzekļus
 
-Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
+Lai noteiktu, vai administrators ir jums piešķīris iespēju izmantot jebkuru neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**. Ja administrators nav jums piešķīris kontroli, redzēsit ziņojumu, kurā norādīts, ka jūsu organizācijas administrators pārvalda jūsu konfidencialitātes iestatījumus un ir izlēmis atspējot neobligātos saistītos līdzekļus.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Ar šo darbību tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
-Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi**, kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
 
 ## <a name="your-privacy-settings"></a>Jūsu konfidencialitātes iestatījumi
 
-Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, jūs varat dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā laikā pārvaldītu jūsu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
+Ja administrators ir jums piešķīris iespēju izmantot neobligāto saistīto līdzekli jūsu Office programmās, kas ir iekļautas Microsoft 365 programmās lieluzņēmumiem Windows ierīcē, jūs varat dodieties uz **Fails** > **Konts** > **Konta privātums** un atlasiet **Iestatījumu pārvaldība**, lai jebkurā laikā pārvaldītu jūsu iestatījumus. Ja šis iestatījums ir iespējots, jums ir iespēja izmantot šajā rakstā aprakstītos pakalpojumus. Ja tas ir atspējots, tie nebūs pieejami.
 
 Ja izmantojat Office darbam ar Mac, atveriet jebkuru Office programmu un atlasiet programmas izvēlni (piemēram, Word vai Excel) > **Preferences** > **Konfidencialitāte**. Ar šo darbību tiks atvērts dialoglodziņš Konta konfidencialitātes iestatījumi, kurā varat skatīt konfidencialitātes opcijas.
 
-Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Papildinformāciju skatiet rakstā [Konta konfidencialitātes iestatījumi](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Ja jūsu organizācijas administrators jums ir piešķīris Office 2019, Project 2019 vai Visio 2019 lielapjoma licencēto versiju, dodieties uz **Fails** > **Opcijas** > **Drošības kontroles centrs** > **Drošības kontroles centra iestatījumi** > **Privātuma opcijas**. Tur ir jābūt redzamai izvēles rūtiņai **Ieslēgt neobligātos saistītos līdzekļus**. Ja neredzat šo izvēles rūtiņu programmā Project 2019 vai Visio 2019, izvēlieties **Privātuma iestatījumi...** tajā dialoglodziņā **Drošības kontroles centrs**. Pēc tam ir jābūt redzamam dialoglodziņam **Privātuma iestatījumi**, kas parādās ar izvēles rūtiņu **Iespējot neobligātos saistītos līdzekļus**.
